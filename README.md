@@ -68,7 +68,7 @@ The testing examples HTML tags start here...
   <h3>Checkbox Example</h3>
 
   <label for="checkbox-example-1-id">Checkbox Example 1</label>
-  <input type="checkbox" name="checkbox-example-1-id" value="1" />
+  <input type="checkbox" id="checkbox-example-1-id" name="checkbox-example-1-name" value="1" />
 
   <h3>Radio Example</h3>
 
