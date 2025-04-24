@@ -44,11 +44,11 @@ The testing examples HTML tags start here...
 
 <h2>Unordered List Example</h2>
 
-<ol id="ul-example-1">
+<ul id="ul-example-1">
  <li id="ul-example-1-li-1">alfa</li>
  <li id="ul-example-1-li-2">bravo</li>
  <li id="ul-example-1-li-2">charlie</li>
-</ol>
+</ul>
 
 <h2>Form Input Examples</h2>
 
