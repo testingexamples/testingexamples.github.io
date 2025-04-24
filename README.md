@@ -10,7 +10,11 @@ This web page contains HTML tags that any developer can try, such as for experim
 
 * Inspect HTML lists by ordered list or unordered lists.
 
-* Interact with form inputs, such as a text input, checkbox input, select input, radio input, 
+* Interact with form inputs, such as a text input, checkbox input, select input, etc.
+
+The testing examples HTML tags start here...
+
+<hr>
 
 <h2>Id Example</h2>
 
