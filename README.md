@@ -32,7 +32,7 @@ The testing examples HTML tags start here...
 
 <p class="class-example-1">Class Example 1</p>
 <p class="class-example-2">Class Example 2</p>
-<p class="class-example-1">Class Example 3</p>
+<p class="class-example-3">Class Example 3</p>
 
 <h2>Link Examples</h2>
 
@@ -70,6 +70,12 @@ The testing examples HTML tags start here...
   <label for="checkbox-example-1-id">Checkbox Example 1</label>
   <input type="checkbox" name="checkbox-example-1-id" value="1" />
 
+  <h3>Radio Example</h3>
+
+  <input type="radio" id="radio-example-1-option-1-id" name="radio-example-1-name" value="1" />1
+  <input type="radio" id="radio-example-1-option-2-id" name="radio-example-1-name" value="2" />2
+  <input type="radio" id="radio-example-1-option-3-id" name="radio-example-1-name" value="3" />3
+
   <h3>Select Example</h3>
 
   <select id="select-example-1-id" name="select-example-1-name">
@@ -77,12 +83,6 @@ The testing examples HTML tags start here...
     <option id="select-example-1-option-2-id" value="b">bravo</option>
     <option id="select-example-1-option-3-id" value="c">charlie</option>
   </select>
-
-  <h3>Radio Example</h3>
-
-  <input type="radio" id="radio-example-1-option-1-id" name="radio-example-1-name" value="1" />1
-  <input type="radio" id="radio-example-1-option-2-id" name="radio-example-1-name" value="2" />2
-  <input type="radio" id="radio-example-1-option-3-id" name="radio-example-1-name" value="3" />3
 
   <h3>Submit Example</h3>
 
