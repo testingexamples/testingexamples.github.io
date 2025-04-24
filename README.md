@@ -78,9 +78,8 @@ The testing examples HTML tags start here...
   <input type="radio" id="radio-example-1-option-2-id" name="radio-example-1-name" value="2" />2
   <input type="radio" id="radio-example-1-option-3-id" name="radio-example-1-name" value="3" />3
 
+  <h3>Submit Example</h3>
+
   <input type="submit" value="Submit">
 
 </form>
-
-</body>
-</html>
