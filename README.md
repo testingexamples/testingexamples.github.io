@@ -16,23 +16,29 @@ The testing examples HTML tags start here...
 
 <hr>
 
-<h2>Id Example</h2>
+<h2>Id Examples</h2>
 
 <p id="id-example-1">Id Example 1</p>
 <p id="id-example-2">Id Example 2</p>
 <p id="id-example-3">Id Example 3</p>
 
-<h2>Name Example</h2>
+<h2>Name Examples</h2>
 
 <p name="name-example-1">Name Example 1</p>
 <p name="name-example-2">Name Example 2</p>
 <p name="name-example-3">Name Example 3</p>
 
-<h2>Class Example</h2>
+<h2>Class Examples</h2>
 
 <p class="class-example-1">Class Example 1</p>
 <p class="class-example-2">Class Example 2</p>
 <p class="class-example-1">Class Example 3</p>
+
+<h2>Link Examples</h2>
+
+<p><a href="https://1.example.com">Link Example 1</a></p>
+<p><a href="https://2.example.com">Link Example 2</a></p>
+<p><a href="https://3.example.com">Link Example 3</a></p>
 
 <h2>Ordered List Example</h2>
 
