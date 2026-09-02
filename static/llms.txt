@@ -1,0 +1,42 @@
+# Testing Examples
+
+> Free open source HTML fixtures for practicing browser automation. The home
+> page is a deliberately plain, stable page of elements with known ids,
+> names, classes, link text, lists, and form inputs, meant to be found by
+> Selenium WebDriver, WebdriverIO, Playwright, and similar tools.
+
+Eleven sibling repositories exercise this site or a real-world site with
+those tools. Five of them — the generic locator-strategy walkthroughs — drive
+a browser directly against this site's home page, and its fixture markup
+(the ids, names, classes, and text under "Id Examples" through "Form Input
+Examples") is a contract those five repos depend on exactly. The other six
+drive the same kinds of tools against a real public site, nhs.wales, instead.
+
+## Start here
+
+- [Home](https://testingexamples.github.io/): the fixture page itself — ids, names, classes, links, lists, and form inputs
+- [About](https://testingexamples.github.io/about/): what this project is, the eleven sibling demo repos, and how the site is built
+- [Repository](https://github.com/testingexamples/testingexamples.github.io): source for this site, including `spec/index.md`, the normative fixture contract
+
+## Locator-strategy walkthroughs (target this site)
+
+- [demo-playwright-javascript](https://github.com/testingexamples/demo-playwright-javascript): Playwright browser automation walkthrough, written in JavaScript
+- [demo-playwright-python](https://github.com/testingexamples/demo-playwright-python): Playwright browser automation walkthrough, written in Python
+- [demo-playwright-typescript](https://github.com/testingexamples/demo-playwright-typescript): Playwright browser automation walkthrough, written in TypeScript
+- [demo-selenium-javascript](https://github.com/joelparkerhenderson/demo-selenium-javascript): Selenium WebDriver browser automation walkthrough, written in JavaScript
+- [demo-webdriver-javascript](https://github.com/joelparkerhenderson/demo-webdriver-javascript): WebdriverIO test suite with real assertions, written in JavaScript
+
+## Real-world demos (target nhs.wales)
+
+- [demo-playwright-javascript-for-nhs-wales](https://github.com/joelparkerhenderson/demo-playwright-javascript-for-nhs-wales): Playwright browser automation against nhs.wales, written in JavaScript
+- [demo-playwright-python-for-nhs-wales](https://github.com/joelparkerhenderson/demo-playwright-python-for-nhs-wales): Playwright browser automation against nhs.wales, written in Python
+- [demo-selenium-javascript-for-nhs-wales](https://github.com/joelparkerhenderson/demo-selenium-javascript-for-nhs-wales): Selenium WebDriver browser automation against nhs.wales, written in JavaScript
+- [demo-selenium-python-for-nhs-wales](https://github.com/joelparkerhenderson/demo-selenium-python-for-nhs-wales): Selenium WebDriver browser automation against nhs.wales, written in Python
+- [demo-webdriver-javascript-for-nhs-wales](https://github.com/joelparkerhenderson/demo-webdriver-javascript-for-nhs-wales): WebdriverIO browser automation against nhs.wales, written in JavaScript
+- [demo-webdriver-python-for-nhs-wales](https://github.com/joelparkerhenderson/demo-webdriver-python-for-nhs-wales): WebdriverIO-style browser automation against nhs.wales, written in Python
+
+## Optional
+
+- [spec/index.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/index.md): the exact fixture contract — every id, name, class, href, and visible text
+- [AGENTS.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/AGENTS.md): instructions for AI coding agents working on this repo
+- License: unspecified — no LICENSE file is present in this repository

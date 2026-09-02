@@ -1,0 +1,60 @@
+/* Testing Examples site — light theme
+ *
+ * Attribute-scoped, multi-stylesheet setup: both this file and dark.css are
+ * always linked (see src/app.html), and each scopes its custom properties
+ * to :root[data-theme="…"] rather than bare :root, so only the file whose
+ * slug matches <html>'s data-theme attribute contributes any properties —
+ * switching is instant, no stylesheet swap or network round-trip involved.
+ * This is ThemePicker's own documented "preloading for zero-flicker
+ * switching" recipe (lily-design-system-svelte-theme-picker's index.md).
+ *
+ * Every custom property consumed anywhere in static/assets/style.css must
+ * be defined in both this file and dark.css, under each one's own selector
+ * — style.css itself carries no colour of its own.
+ *
+ * Contrast ratios (WCAG 2.2), computed against this file's own --page-bg
+ * (#faf9f7) unless noted otherwise:
+ *   --text on --page-bg                    16.62:1
+ *   --text-muted on --page-bg               7.25:1
+ *   --text-subtle on --page-bg              4.56:1
+ *   --accent on --page-bg                   5.20:1   (links, headings)
+ *   --accent on --card-bg (white)           5.47:1
+ *   --accent-hover on --page-bg             7.21:1
+ *   --accent2 (amber) on --page-bg          4.77:1
+ *   white on --button-fill                  7.58:1   (button-primary text)
+ *   white on --button-fill-hover            9.79:1
+ * All clear WCAG AA (4.5:1 text / 3:1 large text); most clear AAA (7:1).
+ */
+
+:root[data-theme="light"] {
+  --accent: #0f766e;
+  --accent-hover: #115e59;
+  --accent-tint: #f0fdfa;
+  --accent2: #b45309;
+
+  /* Filled surfaces with white text on top (button-primary) need their own
+   * pair, decoupled from --accent/--accent-hover, so a text-role change
+   * never accidentally weakens button contrast. Deliberately darker than
+   * --accent here for a wider contrast margin. */
+  --button-fill: #115e59;
+  --button-fill-hover: #0f4c47;
+
+  --page-bg: #faf9f7;
+  --card-bg: #ffffff;
+  --text: #1c1917;
+  --text-muted: #57534e;
+  --text-subtle: #78716c;
+  --border: #e7e5e4;
+  --border-strong: #d6d3d1;
+
+  --shadow: 0 1px 3px 0 rgba(28, 25, 23, 0.08), 0 1px 2px 0 rgba(28, 25, 23, 0.04);
+  --shadow-lg: 0 10px 25px -5px rgba(28, 25, 23, 0.10), 0 8px 10px -6px rgba(28, 25, 23, 0.04);
+
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --content-max: 64rem;
+  --prose-max: 44rem;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}

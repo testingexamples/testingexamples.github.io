@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://testingexamples.github.io/sitemap.xml

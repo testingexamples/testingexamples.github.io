@@ -1,0 +1,49 @@
+{
+  "name": "Testing Examples",
+  "summary": "Free open source HTML fixtures for practicing browser automation, plus eleven sibling demo repos that exercise them.",
+  "description": "The home page is a deliberately plain, stable page of elements with known ids, names, classes, link text, lists, and form inputs, meant to be found by Selenium WebDriver, WebdriverIO, Playwright, and similar tools. Five sibling repositories — generic locator-strategy walkthroughs — drive a browser directly against this site's home page, and its fixture markup (the ids, names, classes, and text under \"Id Examples\" through \"Form Input Examples\") is a contract those five repos depend on exactly. Six further sibling repos drive the same kinds of tools against a real public site, nhs.wales, instead, and do not depend on this site's markup.",
+  "homepage": "https://testingexamples.github.io",
+  "repository": "https://github.com/testingexamples/testingexamples.github.io",
+  "license": "Unspecified — no LICENSE file is present in this repository",
+  "canonical_source": "https://testingexamples.github.io/llms.json",
+  "sections": [
+    {
+      "title": "Start here",
+      "links": [
+        { "title": "Home", "url": "https://testingexamples.github.io/", "description": "The fixture page itself — ids, names, classes, links, lists, and form inputs." },
+        { "title": "About", "url": "https://testingexamples.github.io/about/", "description": "What this project is, the eleven sibling demo repos, and how the site is built." },
+        { "title": "Repository", "url": "https://github.com/testingexamples/testingexamples.github.io", "description": "Source for this site, including spec/index.md, the normative fixture contract." }
+      ]
+    },
+    {
+      "title": "Locator-strategy walkthroughs (target this site)",
+      "description": "Each drives a browser against this site's home page and depends on its fixture markup exactly.",
+      "links": [
+        { "title": "demo-playwright-javascript", "url": "https://github.com/testingexamples/demo-playwright-javascript", "description": "Playwright browser automation walkthrough, written in JavaScript." },
+        { "title": "demo-playwright-python", "url": "https://github.com/testingexamples/demo-playwright-python", "description": "Playwright browser automation walkthrough, written in Python." },
+        { "title": "demo-playwright-typescript", "url": "https://github.com/testingexamples/demo-playwright-typescript", "description": "Playwright browser automation walkthrough, written in TypeScript." },
+        { "title": "demo-selenium-javascript", "url": "https://github.com/joelparkerhenderson/demo-selenium-javascript", "description": "Selenium WebDriver browser automation walkthrough, written in JavaScript." },
+        { "title": "demo-webdriver-javascript", "url": "https://github.com/joelparkerhenderson/demo-webdriver-javascript", "description": "WebdriverIO test suite with real assertions, written in JavaScript." }
+      ]
+    },
+    {
+      "title": "Real-world demos (target nhs.wales)",
+      "description": "Each drives a browser against https://www.nhs.wales/ instead of this site, so none depend on this site's fixture markup.",
+      "links": [
+        { "title": "demo-playwright-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-playwright-javascript-for-nhs-wales", "description": "Playwright browser automation against nhs.wales, written in JavaScript." },
+        { "title": "demo-playwright-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-playwright-python-for-nhs-wales", "description": "Playwright browser automation against nhs.wales, written in Python." },
+        { "title": "demo-selenium-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-selenium-javascript-for-nhs-wales", "description": "Selenium WebDriver browser automation against nhs.wales, written in JavaScript." },
+        { "title": "demo-selenium-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-selenium-python-for-nhs-wales", "description": "Selenium WebDriver browser automation against nhs.wales, written in Python." },
+        { "title": "demo-webdriver-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-webdriver-javascript-for-nhs-wales", "description": "WebdriverIO browser automation against nhs.wales, written in JavaScript." },
+        { "title": "demo-webdriver-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-webdriver-python-for-nhs-wales", "description": "WebdriverIO-style browser automation against nhs.wales, written in Python." }
+      ]
+    },
+    {
+      "title": "Optional",
+      "links": [
+        { "title": "spec/index.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/index.md", "description": "The exact fixture contract — every id, name, class, href, and visible text." },
+        { "title": "AGENTS.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/AGENTS.md", "description": "Instructions for AI coding agents working on this repo." }
+      ]
+    }
+  ]
+}
