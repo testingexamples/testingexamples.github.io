@@ -7,10 +7,9 @@
 export const SITE_NAME = 'Testing Examples';
 export const REPO = 'https://github.com/testingexamples/testingexamples.github.io';
 
-// No LICENSE file exists in this repo (or in any of the sibling demo repos)
-// at the time this site was built. Stated honestly rather than invented —
-// see AGENTS.md's "Known gap" note and README.md's License section.
-export const LICENSE = 'Unspecified (no LICENSE file present — all rights reserved by default)';
+// See LICENSE.md at this repo's root (and each sibling demo repo's own
+// LICENSE.md) for the full multi-license text and SPDX expression.
+export const LICENSE = 'MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause';
 
 /** One sibling demo repo, grouped by which real site it targets. */
 export type SiblingRepo = {

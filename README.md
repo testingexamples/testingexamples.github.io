@@ -54,7 +54,6 @@ Pages by GitHub Actions (`.github/workflows/deploy.yml`) on every push to
 
 ## License
 
-No `LICENSE` file is currently present in this repository (or in any of its
-sibling demo repos). Until one is added, the code defaults to all rights
-reserved. This is a known gap — see `AGENTS.md`'s "Known gap" note — and
-should be resolved by the maintainer rather than assumed.
+Free open source software: MIT, Apache-2.0, GPL-2.0-only, GPL-3.0-only, or
+BSD-3-Clause, at your option — see [`LICENSE.md`](LICENSE.md). Every sibling
+demo repo carries the same choice in its own `LICENSE.md`.

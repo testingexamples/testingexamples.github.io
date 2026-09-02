@@ -34,13 +34,6 @@ else.
 Playwright test that visits `/` and asserts every selector the five sibling
 repos use still resolves. Keep it passing.
 
-## Known gap
-
-No `LICENSE` file exists in this repo (or in any of the sibling demo repos)
-as of this writing. `src/lib/site.ts`'s `LICENSE` constant and `README.md`
-state this honestly rather than inventing a license. Flag this to the
-maintainer — it should be resolved, not silently assumed.
-
 ## Working rules
 
 - Only the home page's fixture section is kept as plain HTML deliberately;
