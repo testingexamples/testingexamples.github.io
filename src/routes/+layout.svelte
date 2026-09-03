@@ -8,6 +8,39 @@
 
   let { children } = $props();
 
+  // Every theme in the Lily Design System's own themes/ directory (copied
+  // verbatim into static/assets/themes/ — see AGENTS.md's "Theming"
+  // section). 38 are DaisyUI-derived palettes whose slugs already read
+  // fine through ThemePicker's default title-casing (e.g. "dracula" ->
+  // "Dracula"); the 7 long public-sector slugs below get a shorter label
+  // so the list stays scannable.
+  const LILY_THEMES = [
+    'light', 'dark', 'dim', 'nord', 'dracula', 'abyss', 'black', 'night',
+    'forest', 'garden', 'aqua', 'lofi', 'pastel', 'fantasy', 'wireframe',
+    'cmyk', 'autumn', 'business', 'acid', 'lemonade', 'coffee', 'winter',
+    'corporate', 'emerald', 'cupcake', 'bumblebee', 'caramellatte', 'silk',
+    'sunset', 'retro', 'cyberpunk', 'synthwave', 'valentine', 'halloween',
+    'luxury', 'adobe-spectrum', 'mozilla-protocol',
+    'united-kingdom-government-digital-service',
+    'united-kingdom-national-health-service-england-for-patients',
+    'united-kingdom-national-health-service-england-for-practitioners',
+    'united-kingdom-national-health-service-scotland-for-patients',
+    'united-kingdom-national-health-service-scotland-for-practitioners',
+    'united-kingdom-national-health-service-wales-for-patients',
+    'united-kingdom-national-health-service-wales-for-practitioners',
+    'united-states-web-design-system'
+  ];
+  const LILY_THEME_LABELS: Record<string, string> = {
+    'united-kingdom-government-digital-service': 'UK Gov Design System',
+    'united-kingdom-national-health-service-england-for-patients': 'NHS England (Patients)',
+    'united-kingdom-national-health-service-england-for-practitioners': 'NHS England (Practitioners)',
+    'united-kingdom-national-health-service-scotland-for-patients': 'NHS Scotland (Patients)',
+    'united-kingdom-national-health-service-scotland-for-practitioners': 'NHS Scotland (Practitioners)',
+    'united-kingdom-national-health-service-wales-for-patients': 'NHS Wales (Patients)',
+    'united-kingdom-national-health-service-wales-for-practitioners': 'NHS Wales (Practitioners)',
+    'united-states-web-design-system': 'US Web Design System'
+  };
+
   // Each href builder targets that network's real share/compose endpoint —
   // no tracking pixel, no first-party analytics call.
   const SHARE_TARGETS = [
@@ -76,7 +109,8 @@
       <ThemePicker
         label="Theme"
         themesUrl="/assets/themes/"
-        themes={['light', 'dark']}
+        themes={LILY_THEMES}
+        themeLabels={LILY_THEME_LABELS}
         storageKey="testingexamples-theme"
         detectFromSystem
       />

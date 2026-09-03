@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { SectionHeading, CallToAction } from 'lily-design-system-svelte-headless';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
@@ -13,27 +14,48 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>Testing Examples</h1>
-  <p>Testing Examples provides free open source testing examples.</p>
+  <h1>Welcome to Testing Examples</h1>
+  <p>Free, open source browser automation examples — and a stable page to practice on.</p>
 </div>
 
 <section class="section prose">
   <p>
-    We're starting with browser automation testing examples, such as for Selenium
-    WebDriver and Playwright browser automation tests.
+    If you're new to browser automation, you're in the right place. Testing Examples is a small,
+    free, open source site built for anyone learning to make a browser do things automatically —
+    click, type, search, wait, assert — whether you've never written a line of code or you already
+    know the ropes and just want a quick reference or somewhere reliable to try something out.
   </p>
   <p>
-    This web page contains HTML tags that any developer can try, such as for
-    experimenting with Selenium WebDriver or Playwright to find HTML tags in
-    various ways.
+    The site has grown a bit since it started as just the fixture page below. There's now a
+    <a href="/learn/">Learn</a> section covering what automatic testing actually is, a step-by-step
+    path for getting started, the everyday tools and concepts that surround it, and where AI fits
+    in today. There's an <a href="/examples/">Examples</a> section with nine real implementations
+    each of a Google Search and a Google Maps walkthrough, spread across three testing tools and
+    three programming languages, so you can compare the same task written different ways. There's
+    an <a href="/about/">About</a> page describing the project and the eleven-plus sibling demo
+    repos that build on it. And right below this welcome, there's the fixture playground this site
+    started as — a page built to be practiced on.
   </p>
-  <ul>
-    <li>Find a HTML tag by id, name, class, etc.</li>
-    <li>Inspect HTML lists by ordered list or unordered list.</li>
-    <li>Interact with form inputs, such as a text input, checkbox input, select input, etc.</li>
-  </ul>
+  <p style="margin-top: 2rem;">
+    <CallToAction class="button button-primary" href="/learn/">New here? Start with Learn</CallToAction>
+    <CallToAction class="button button-secondary" href="/checklist/" style="margin-left: 0.75rem;"
+      >Not sure what to learn first? Try the Checklist</CallToAction
+    >
+  </p>
+</section>
+
+<section class="section prose">
+  <SectionHeading
+    class="section-heading-start"
+    eyebrow="Hands-on"
+    heading="Practice on this page"
+    level={2}
+  />
   <p>
-    The exact contract this page must keep is documented in this repo's
+    Everything below is a stable fixture playground: fixed ids, names, classes, and text that
+    automation tools can reliably find every time, which is exactly what makes it useful to
+    practice on directly — point your script at it, find an element, interact with it, and see
+    what happens. The exact contract this page keeps is documented in this repo's
     <code>spec/index.md</code>.
   </p>
 </section>

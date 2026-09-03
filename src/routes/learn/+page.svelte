@@ -18,12 +18,18 @@
   <p>
     Four short articles: what automatic testing is and why it matters, a practical path for
     getting hands-on with browser automation yourself, the everyday tools and practices that
-    surround it, and where AI fits into all of that today.
+    surround it, and where AI fits into all of that today — plus a checklist if you're not sure
+    what to learn first.
   </p>
 </div>
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Start here" heading="Four articles" level={2} />
+  <SectionHeading
+    class="section-heading-start"
+    eyebrow="Start here"
+    heading="Four articles, and a checklist"
+    level={2}
+  />
 
   <SummaryList label="Learn articles">
     <SummaryListItem term="What is automatic testing?">
@@ -43,6 +49,11 @@
       <a href="/learn/artificial-intelligence/">Artificial Intelligence and Testing</a> — how and
       why AI shows up in writing tests, CI/CD, and agile discovery today, and the one caveat that
       applies to all three.
+    </SummaryListItem>
+    <SummaryListItem term="Not sure what to learn first?">
+      <a href="/checklist/">Checklist</a> — a short checklist of what's worth learning first: a
+      programming language, a testing tool, and an AI agent helper, each with an example prompt to
+      ask an AI assistant.
     </SummaryListItem>
   </SummaryList>
 </section>
