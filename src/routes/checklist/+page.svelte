@@ -127,17 +127,16 @@
     produced.
   </p>
   <p>
-    <strong>Claude</strong> is what this whole site was built with — see
-    <a href={aiStatementUrl}><code>AI_STATEMENT.md</code></a> for the honest account of how, under a
-    human maintainer's direction. For testing specifically, Claude Code (the agent that built this
-    site) can run a test suite itself, read the actual failure output, and keep iterating — closer
-    to a contributor working through a task than a chat window suggesting a snippet.
+    <strong>Google Gemini</strong> is integrated into Google products, such as Google Cloud,
+    Drive, Android, etc. For testing, Gemini is especially good for turning work that is already
+    living in a Google Workspace or Google Antigravity into a first draft of a script. Gemini
+    offers strong creative storytelling and image generation.
   </p>
   <p>
-    <strong>Gemini</strong> is Google's general-purpose AI assistant, integrated into Google's
-    own products and Workspace. For testing specifically, that makes it well placed for turning a
-    test plan or bug report already living in a Google Doc or Sheet into a first draft of a script
-    — less commonly the one actually running your test suite for you.
+    <strong>Microsoft Copilot</strong> is integrated into Microsoft products, such as Microsoft
+    Azure, Office, GitHub, etc. For testing, Copilot is especially good for turning work that
+    involves workplace productivity, strict daily tasks inside business applications, and
+    reader-ready professional summaries.
   </p>
   <p>
     Each is a general-purpose AI assistant from a major vendor, integrated differently into that
