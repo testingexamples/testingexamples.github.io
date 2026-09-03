@@ -12,7 +12,7 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="Not sure what to learn first? Three things worth learning before you go much further with browser automation: a programming language, a testing tool, and an AI agent helper — plus an example prompt for each."
+    content="Not sure what to learn first? Three things worth learning before you go much further with browser automation: a testing tool, a programming language, and an AI agent helper — plus an example prompt for each."
   />
 </svelte:head>
 
@@ -20,74 +20,20 @@
   <h1>Checklist</h1>
   <p>
     Not sure what to learn first? Here are three things worth learning before you go much further
-    with browser automation — a programming language, a testing tool, and an AI agent helper —
+    with browser automation — a testing tool, a programming language, and an AI agent helper —
     each with a few honest options and a concrete prompt you can hand to an AI assistant if you'd
     like a starting point.
   </p>
 </div>
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" heading="Learn about a programming language" level={2} />
-
-  <p>
-    <strong>JavaScript</strong> is the language every browser runs natively, which gives it a huge
-    ecosystem and means there's almost always an example to learn from. This site's JavaScript demos
-    (Selenium, WebdriverIO, and Playwright) all run on it.
-  </p>
-  <p>
-    <strong>TypeScript</strong> is JavaScript with types checked before you run it — it catches a
-    whole class of mistakes (a typo'd property, a function called with the wrong shape of argument)
-    at write time instead of at test time. This site's TypeScript demo uses it.
-  </p>
-  <p>
-    <strong>Python</strong> has famously readable syntax and a huge standard library, and it's both a
-    very common first programming language and a very common choice for testing, automation, and
-    data work specifically. This site's Python demos use it.
-  </p>
-  <p>
-    <strong>Rust</strong> is compiled and has no garbage collector, and its compiler catches whole
-    categories of bugs — data races, null dereferences — before the program ever runs. That comes
-    with a steeper learning curve, and this site's own Rust demos are honest that the ecosystem for
-    browser automation is younger here than in the other three languages above.
-  </p>
-
-  <InformationCallout label="For ideas, ask AI">
-    <p><strong>For ideas ask AI: </strong></p>
-    <ul>
-      <li>
-        <strong>New to programming:</strong>
-        <em
-          >"I've never written a line of code before. Could you explain, in plain terms, what
-          JavaScript, TypeScript, Python, and Rust are each generally used for, and recommend one
-          to start with?"</em
-        >
-      </li>
-      <li>
-        <strong>Know a bit already:</strong>
-        <em
-          >"I already know JavaScript a little — what are the biggest differences I'd hit learning
-          Rust, and what's a small real project to try first?"</em
-        >
-      </li>
-      <li>
-        <strong>Using this site's demos:</strong>
-        <em
-          >"Here's <code>src/demo.js</code> from testingexamples.github.io's
-          <a href="https://github.com/testingexamples/demo-playwright-javascript"
-            >demo-playwright-javascript</a
-          > repo — can you help me rewrite it in Python so I can compare the two side by
-          side?"</em
-        >
-      </li>
-    </ul>
-  </InformationCallout>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
   <SectionHeading class="section-heading-start" heading="Learn about an automatic testing tool" level={2} />
 
+  <p>
+    All three drive a real browser to click, type, and read a page the way a person would — they
+    differ mainly in which languages they support, how much test-framework structure comes built
+    in, and how much waiting-for-the-page-to-be-ready they handle for you automatically.
+  </p>
   <p>
     <strong>Selenium</strong> is the longest-established of the three: browser automation via the
     W3C WebDriver protocol, with the widest cross-language support of any tool here. This site's
@@ -105,32 +51,121 @@
   </p>
 
   <InformationCallout label="For ideas, ask AI">
-    <p><strong>For ideas ask AI: </strong></p>
-    <ul>
-      <li>
-        <strong>New to browser automation:</strong>
-        <em
-          >"I've never automated a browser before. In plain terms, what do Selenium, WebdriverIO,
-          and Playwright each actually do, and which one is easiest to get running today?"</em
-        >
-      </li>
-      <li>
-        <strong>Written a script or two:</strong>
-        <em
-          >"I want to test a login form with a 2FA step — which of Selenium, WebdriverIO, or
-          Playwright handles that most simply, and what would a first script look like?"</em
-        >
-      </li>
-      <li>
-        <strong>Using this site's demos:</strong>
-        <em
-          >"Here's <code>testingexamples.github.io</code>'s home page — it has elements with known
-          ids, names, classes, and link text under headings like Id Examples and Form Input
-          Examples. Can you help me write a Playwright script that finds one element by each of
-          those five strategies?"</em
-        >
-      </li>
-    </ul>
+    <!-- Lily's .information-callout is `display: flex` (an icon-plus-
+         message row pattern) — a bare <h3> and <ul> as direct siblings
+         would each become their own flex item and land side by side as
+         two narrow columns. Wrapping both in one div makes the callout's
+         content a single flex item that fills the row normally. -->
+    <div class="checklist-ai-ideas">
+      <h3>For ideas ask AI</h3>
+      <ul>
+        <li>
+          <strong>New to browser automation:</strong>
+          <em
+            >"I've never automated a browser before. In plain terms, what do Selenium, WebdriverIO,
+            and Playwright each actually do, and which one is easiest to get running today?"</em
+          >
+        </li>
+        <li>
+          <strong>Written a script or two:</strong>
+          <em
+            >"I want to test a login form with a 2FA step — which of Selenium, WebdriverIO, or
+            Playwright handles that most simply, and what would a first script look like?"</em
+          >
+        </li>
+        <li>
+          <strong>Using this site's demos:</strong>
+          <em
+            >"Here's <code>testingexamples.github.io</code>'s home page — it has elements with known
+            ids, names, classes, and link text under headings like Id Examples and Form Input
+            Examples. Can you help me write a Playwright script that finds one element by each of
+            those five strategies?"</em
+          >
+        </li>
+      </ul>
+    </div>
+  </InformationCallout>
+</section>
+
+<Separator label="Section break" />
+
+<section class="section prose">
+  <SectionHeading class="section-heading-start" heading="Learn about a programming language" level={2} />
+
+  <p>
+    Any of these four can drive any of the testing tools above — the right one is usually whichever
+    you're already a little comfortable with, or whichever this site's own demos already show you
+    a working example in.
+  </p>
+  <p>
+    <strong>JavaScript</strong> is the language every browser runs natively, which gives it a huge
+    ecosystem and means there's almost always an example to learn from. This site's JavaScript demos
+    (Selenium, WebdriverIO, and Playwright) all run on it. For testing specifically, this is also
+    why every browser-automation tool gets its newest features in JavaScript first — it's each
+    tool's home ecosystem, not a port.
+  </p>
+  <p>
+    <strong>TypeScript</strong> is JavaScript with types checked before you run it — it catches a
+    whole class of mistakes (a typo'd property, a function called with the wrong shape of argument)
+    at write time instead of at test time. This site's TypeScript demo uses it. For testing
+    specifically, that means your editor can tell you a locator method doesn't exist, or that
+    you've passed a number where a selector string belongs, before you ever run the suite and wait
+    for a browser to fail partway through.
+  </p>
+  <p>
+    <strong>Python</strong> has famously readable syntax and a huge standard library, and it's both a
+    very common first programming language and a very common choice for testing, automation, and
+    data work specifically. This site's Python demos use it. For testing specifically, pytest's
+    fixture system — used by this site's own NHS Wales pytest demos — makes setting up and tearing
+    down a browser session for each test explicit and reusable, rather than copy-pasted at the top
+    of every test.
+  </p>
+  <p>
+    <strong>Rust</strong> is compiled and has no garbage collector, and its compiler catches whole
+    categories of bugs — data races, null dereferences — before the program ever runs. For testing
+    specifically, the compiler also forces you to handle every <code>Result</code> a browser-driver
+    call returns, so a test is less likely to silently report "passed" when a step actually failed
+    partway through and its error just went unchecked. That comes
+    with a steeper learning curve, and this site's own Rust demos are honest that the ecosystem for
+    browser automation is younger here than in the other three languages above.
+  </p>
+
+  <InformationCallout label="For ideas, ask AI">
+    <!-- Lily's .information-callout is `display: flex` (an icon-plus-
+         message row pattern) — a bare <h3> and <ul> as direct siblings
+         would each become their own flex item and land side by side as
+         two narrow columns. Wrapping both in one div makes the callout's
+         content a single flex item that fills the row normally. -->
+    <div class="checklist-ai-ideas">
+      <h3>For ideas ask AI</h3>
+      <ul>
+        <li>
+          <strong>New to programming:</strong>
+          <em
+            >"I've never written a line of code before. Could you explain, in plain terms, what
+            JavaScript, TypeScript, Python, and Rust are each generally used for, and recommend one
+            to start with?"</em
+          >
+        </li>
+        <li>
+          <strong>Know a bit already:</strong>
+          <em
+            >"I already know JavaScript a little — what are the biggest differences I'd hit learning
+            Rust, and what's a small real project to try first?"</em
+          >
+        </li>
+        <li>
+          <strong>Using this site's demos:</strong>
+          <em
+            >"Here's <code>src/demo.js</code> from testingexamples.github.io's
+            <a href="https://github.com/testingexamples/demo-playwright-javascript"
+              >demo-playwright-javascript</a
+            > repo — can you help me rewrite it in Python so I can compare the two side by
+            side?"</em
+          >
+        </li>
+      </ul>
+    </div>
   </InformationCallout>
 </section>
 
@@ -139,6 +174,11 @@
 <section class="section prose">
   <SectionHeading class="section-heading-start" heading="Learn about an AI agent helper" level={2} />
 
+  <p>
+    None of these write your tests for you unsupervised — each is a tool that can draft, explain,
+    or review code faster than doing it alone, with a human still checking what it actually
+    produced.
+  </p>
   <p>
     <strong>Anthropic Claude</strong> is what this whole site was built with — see
     <a href={aiStatementUrl}><code>AI_STATEMENT.md</code></a> for the honest account of how, under a
@@ -159,32 +199,39 @@
   </p>
 
   <InformationCallout label="For ideas, ask AI">
-    <p><strong>For ideas ask AI: </strong></p>
-    <ul>
-      <li>
-        <strong>New to AI assistants:</strong>
-        <em
-          >"I don't really understand what an 'AI agent' or 'AI coding assistant' actually does —
-          can you explain it simply, in plain terms, and how it's different from just asking a
-          chatbot a question?"</em
-        >
-      </li>
-      <li>
-        <strong>Used one a little:</strong>
-        <em
-          >"I've used an AI assistant to autocomplete a few lines of code before. How could I use
-          one to help plan out and write a whole small test script from scratch?"</em
-        >
-      </li>
-      <li>
-        <strong>Using this site's demos:</strong>
-        <em
-          >"Here's <a href={aiStatementUrl}>AI_STATEMENT.md</a> from testingexamples.github.io — could
-          you help me write something similar for my own project, disclosing how AI was used and
-          what a human still checked?"</em
-        >
-      </li>
-    </ul>
+    <!-- Lily's .information-callout is `display: flex` (an icon-plus-
+         message row pattern) — a bare <h3> and <ul> as direct siblings
+         would each become their own flex item and land side by side as
+         two narrow columns. Wrapping both in one div makes the callout's
+         content a single flex item that fills the row normally. -->
+    <div class="checklist-ai-ideas">
+      <h3>For ideas ask AI</h3>
+      <ul>
+        <li>
+          <strong>New to AI assistants:</strong>
+          <em
+            >"I don't really understand what an 'AI agent' or 'AI coding assistant' actually does —
+            can you explain it simply, in plain terms, and how it's different from just asking a
+            chatbot a question?"</em
+          >
+        </li>
+        <li>
+          <strong>Used one a little:</strong>
+          <em
+            >"I've used an AI assistant to autocomplete a few lines of code before. How could I use
+            one to help plan out and write a whole small test script from scratch?"</em
+          >
+        </li>
+        <li>
+          <strong>Using this site's demos:</strong>
+          <em
+            >"Here's <a href={aiStatementUrl}>AI_STATEMENT.md</a> from testingexamples.github.io — could
+            you help me write something similar for my own project, disclosing how AI was used and
+            what a human still checked?"</em
+          >
+        </li>
+      </ul>
+    </div>
   </InformationCallout>
 
   <p>
