@@ -142,6 +142,42 @@ break):
 - `#select-example-1-id` (select with option value `a`, text `alfa`, as the
   first/index-0 option)
 
+## Content areas
+
+Besides the home page's fixture contract (above) and the `/about/` page, the
+site has two further sections. Neither depends on or affects the fixture
+contract; they can change freely.
+
+- `/learn/` — hub page linking to the four articles below.
+  - `/learn/what-is-automatic-testing/` — what automated testing is, why it
+    matters, and where browser automation fits in the testing pyramid
+    alongside unit and integration tests.
+  - `/learn/getting-started/` — a step-by-step path for learning browser
+    automation: pick a language, pick a tool (Playwright, Selenium, or
+    WebdriverIO), run a first script against this site's own home page,
+    learn the four core concepts (locating, acting, waiting, asserting),
+    then practice on the sibling demo repos and this site's own
+    `/examples/` pages.
+  - `/learn/related-concepts/` — code editors, version control (git and
+    GitHub), CI/CD, and agile discovery: the everyday tools and practices
+    that surround automated testing, for a reader who just wrote their
+    first script.
+  - `/learn/artificial-intelligence/` — how and why AI shows up in writing
+    and maintaining tests, in CI/CD and DevOps, and in turning agile
+    discovery into concrete test scenarios, plus an explicit caveat about
+    trusting AI-written assertions without reading them. Links to
+    `AI_STATEMENT.md` (repo root, linked via its GitHub blob URL since only
+    `build/` is deployed) as a live example of the disclosure it describes
+    — this site itself was built with AI assistance under the maintainer's
+    direction.
+- `/examples/` — hub page linking to the two example pages below.
+  - `/examples/google-search/` — the same handful of interactions
+    (searching, reading results, following a link) implemented across
+    Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust.
+  - `/examples/google-maps/` — the same handful of interactions (browsing a
+    map, searching for a place) implemented across the same three tools and
+    three languages.
+
 ## Acceptance criteria
 
 - Every id/selector referenced by the five sibling repos (listed in

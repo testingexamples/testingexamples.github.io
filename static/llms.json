@@ -4,7 +4,7 @@
   "description": "The home page is a deliberately plain, stable page of elements with known ids, names, classes, link text, lists, and form inputs, meant to be found by Selenium WebDriver, WebdriverIO, Playwright, and similar tools. Five sibling repositories — generic locator-strategy walkthroughs — drive a browser directly against this site's home page, and its fixture markup (the ids, names, classes, and text under \"Id Examples\" through \"Form Input Examples\") is a contract those five repos depend on exactly. Six further sibling repos drive the same kinds of tools against a real public site, nhs.wales, instead, and do not depend on this site's markup.",
   "homepage": "https://testingexamples.github.io",
   "repository": "https://github.com/testingexamples/testingexamples.github.io",
-  "license": "Unspecified — no LICENSE file is present in this repository",
+  "license": "MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause",
   "canonical_source": "https://testingexamples.github.io/llms.json",
   "sections": [
     {
@@ -12,7 +12,27 @@
       "links": [
         { "title": "Home", "url": "https://testingexamples.github.io/", "description": "The fixture page itself — ids, names, classes, links, lists, and form inputs." },
         { "title": "About", "url": "https://testingexamples.github.io/about/", "description": "What this project is, the eleven sibling demo repos, and how the site is built." },
+        { "title": "Learn", "url": "https://testingexamples.github.io/learn/", "description": "Hub page linking to the four Learn articles." },
+        { "title": "Examples", "url": "https://testingexamples.github.io/examples/", "description": "Hub page linking to the two Examples pages." },
         { "title": "Repository", "url": "https://github.com/testingexamples/testingexamples.github.io", "description": "Source for this site, including spec/index.md, the normative fixture contract." }
+      ]
+    },
+    {
+      "title": "Learn",
+      "description": "What automated testing is and how to get started with browser automation tools.",
+      "links": [
+        { "title": "What Is Automatic Testing?", "url": "https://testingexamples.github.io/learn/what-is-automatic-testing/", "description": "What automated testing is, why it matters, and where browser automation fits in the testing pyramid." },
+        { "title": "How to Start Learning Automatic Testing", "url": "https://testingexamples.github.io/learn/getting-started/", "description": "A step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples." },
+        { "title": "Related Concepts", "url": "https://testingexamples.github.io/learn/related-concepts/", "description": "Friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery." },
+        { "title": "Artificial Intelligence and Testing", "url": "https://testingexamples.github.io/learn/artificial-intelligence/", "description": "How and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three." }
+      ]
+    },
+    {
+      "title": "Examples",
+      "description": "The same handful of real-world interactions implemented nine ways: three tools (Selenium, WebdriverIO, Playwright) times three languages (JavaScript, Python, Rust).",
+      "links": [
+        { "title": "Google Search examples", "url": "https://testingexamples.github.io/examples/google-search/", "description": "Searching, reading results, and following a link, implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust." },
+        { "title": "Google Maps examples", "url": "https://testingexamples.github.io/examples/google-maps/", "description": "Browsing a map and searching for a place, implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust." }
       ]
     },
     {
@@ -42,7 +62,9 @@
       "title": "Optional",
       "links": [
         { "title": "spec/index.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/index.md", "description": "The exact fixture contract — every id, name, class, href, and visible text." },
-        { "title": "AGENTS.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/AGENTS.md", "description": "Instructions for AI coding agents working on this repo." }
+        { "title": "AGENTS.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/AGENTS.md", "description": "Instructions for AI coding agents working on this repo." },
+        { "title": "AI_STATEMENT.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/AI_STATEMENT.md", "description": "How AI was used to build this site, and what stayed a human responsibility." },
+        { "title": "LICENSE.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/LICENSE.md", "description": "MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause, at your option." }
       ]
     }
   ]

@@ -200,6 +200,36 @@ pre code {
   margin: 0 0 0.4rem;
 }
 
+/* Lily: Details — a native <details>/<summary> disclosure with one class
+ * hook on the root. Used on /examples/ pages to keep nine code examples per
+ * page from overwhelming the reader: one per language, collapsed by
+ * default. The browser's own default triangle marker is kept (just
+ * repositioned/coloured) rather than replaced with a custom one, since it's
+ * already an accessible, well-understood disclosure affordance. */
+.details {
+  margin: 0.75rem 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  overflow: hidden;
+}
+.details > summary {
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style-position: inside;
+  transition: background 150ms;
+}
+.details > summary:hover { background: var(--row-hover-bg); }
+.details > summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+.details[open] > summary { border-bottom: 1px solid var(--border); }
+.details > :not(summary) { padding: 0 1rem; }
+.details > .code-block:first-of-type { margin-top: 1rem; }
+.details > .code-block:last-child { margin-bottom: 1rem; }
+
 /* Lily: SummaryList */
 .summary-list {
   margin: 1.5rem 0;
