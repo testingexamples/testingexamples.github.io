@@ -179,9 +179,11 @@ contract; they can change freely.
 - `/examples/` — hub page linking to the two example pages below.
   - `/examples/google-search/` — the same handful of interactions
     (searching, reading results, following a link) implemented across
-    Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust.
+    Selenium and Playwright in JavaScript, Python, and Rust. WebdriverIO
+    examples were removed from this page (kept as demo repos — see the
+    table on `/about/` — but not as illustrative code here).
   - `/examples/google-maps/` — the same handful of interactions (browsing a
-    map, searching for a place) implemented across the same three tools and
+    map, searching for a place) implemented across the same two tools and
     three languages.
 
 ## Content page conventions

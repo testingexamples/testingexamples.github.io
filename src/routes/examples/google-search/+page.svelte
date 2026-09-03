@@ -16,7 +16,7 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="The same browse, search, submit, and follow-link interactions against Google Search, implemented nine ways: Selenium, WebdriverIO, and Playwright, each in JavaScript, Python, and Rust."
+    content="The same browse, search, submit, and follow-link interactions against Google Search, implemented six ways: Selenium and Playwright, each in JavaScript, Python, and Rust."
   />
 </svelte:head>
 
@@ -24,14 +24,14 @@
   <h1>Google Search Examples</h1>
   <p>
     One familiar scenario — browse to a site, use its search box, submit the
-    search, follow a result link — implemented nine ways.
+    search, follow a result link — implemented six ways.
   </p>
 </div>
 
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    heading="The same four interactions, nine implementations"
+    heading="The same four interactions, six implementations"
     level={2}
   />
 
@@ -39,9 +39,9 @@
     This page shows one scenario — <strong>browse to the site</strong>, <strong
       >follow a link</strong
     >, <strong>use the search box</strong>, and <strong>click a button</strong>
-    — implemented nine ways: three browser-automation tools (Selenium, WebdriverIO,
+    — implemented six ways: two browser-automation tools (Selenium and
     Playwright), each in three languages (JavaScript, Python, Rust). The target
-    for all nine is Google Search, because it is a search box and results page
+    for all six is Google Search, because it is a search box and results page
     that almost every reader already knows how to use, which makes it easy to
     see what each tool's syntax is doing without having to first learn the page
     itself.
@@ -50,7 +50,7 @@
   <InformationCallout label="Read before running any of these">
     <p>
       Google's <a href="https://www.google.com/policies/terms/">Terms of Service</a
-      > restrict automated querying of Google Search. These nine examples exist
+      > restrict automated querying of Google Search. These six examples exist
       to show the syntax and interaction <em>patterns</em> of each tool side by
       side — they are not meant to be run repeatedly, or at all, against the live
       <code>google.com</code>. If you want to practise these same patterns hands-on,
@@ -223,133 +223,6 @@ async fn main() -> anyhow::Result<()> {
 
     driver.quit().await?;
     Ok(())
-}
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading="WebdriverIO" level={2} />
-
-  <p>
-    WebdriverIO itself is a JavaScript/Node.js project only — there is no
-    WebdriverIO for Python or Rust. This page follows the same convention as
-    its own sibling repo,
-    <code>demo-webdriver-python-for-nhs-wales</code>: the JavaScript example
-    below is real WebdriverIO, and the Python and Rust examples use the
-    closest real equivalent — a plain WebDriver protocol client — structured
-    as a real assertion-based test, matching WebdriverIO's own test-framework
-    style rather than a bare walkthrough script.
-  </p>
-
-  <Details summary="JavaScript — WebdriverIO" open>
-    <CodeBlock label="WebdriverIO · JavaScript · webdriverio + Mocha">
-      <pre><code>{`describe('Google Search', () => {
-  before(async () => {
-    // 1. Browse to the site.
-    await browser.url('https://www.google.com');
-  });
-
-  it('should search and follow the first result', async () => {
-    // 2. Use the search box.
-    // Google's search input has drifted between <input> and <textarea>
-    // over the years, but has commonly carried name="q".
-    const searchBox = await $('[name="q"]');
-    await searchBox.setValue('testing examples');
-
-    // 3. Click a button / submit.
-    // Pressing Enter is generally more reliable than locating the submit
-    // button, which autocomplete suggestions can obscure.
-    await browser.keys('Enter');
-
-    // 4. Follow a link.
-    const firstResult = await $('a');
-    await firstResult.click();
-
-    await expect(browser).toHaveTitle(expect.stringContaining('testing examples'));
-  });
-});
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Python — selenium + pytest (WebDriver equivalent, not WebdriverIO)">
-    <CodeBlock label="WebDriver equivalent · Python · selenium + pytest">
-      <pre><code>{`import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-
-
-@pytest.fixture
-def driver():
-    d = webdriver.Chrome()
-    yield d
-    d.quit()
-
-
-def test_search(driver):
-    """Search Google and follow the first result."""
-
-    # 1. Browse to the site.
-    driver.get("https://www.google.com")
-
-    # 2. Use the search box.
-    # Google's search input has drifted between <input> and <textarea>
-    # over the years, but has commonly carried name="q".
-    search_box = driver.find_element(By.NAME, "q")
-    search_box.send_keys("testing examples")
-
-    # 3. Click a button / submit.
-    # Pressing Enter is generally more reliable than locating the submit
-    # button, which autocomplete suggestions can obscure.
-    search_box.send_keys(Keys.RETURN)
-
-    assert "testing examples" in driver.title.lower()
-
-    # 4. Follow a link.
-    first_result = driver.find_element(By.CSS_SELECTOR, "a")
-    first_result.click()
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Rust — fantoccini (WebDriver equivalent, not WebdriverIO)">
-    <CodeBlock label="WebDriver equivalent · Rust · fantoccini (crates.io)">
-      <pre><code>{`use fantoccini::{ClientBuilder, Locator};
-
-#[tokio::test]
-async fn search_google() -> Result<(), fantoccini::error::CmdError> {
-    let c = ClientBuilder::native()
-        .connect("http://localhost:4444")
-        .await
-        .expect("failed to connect to WebDriver");
-
-    // 1. Browse to the site.
-    c.goto("https://www.google.com").await?;
-
-    // 2. Use the search box.
-    // Google's search input has drifted between <input> and <textarea>
-    // over the years, but has commonly carried name="q".
-    // 3. Click a button / submit.
-    // A trailing "\\n" submits, which is generally more reliable than
-    // locating the submit button, which autocomplete suggestions can
-    // obscure.
-    c.find(Locator::Css("[name='q']"))
-        .await?
-        .send_keys("testing examples\\n")
-        .await?;
-
-    let title = c.title().await?;
-    assert!(title.to_lowercase().contains("testing examples"));
-
-    // 4. Follow a link.
-    c.find(Locator::Css("a")).await?.click().await?;
-
-    c.close().await
 }
 `}</code></pre>
     </CodeBlock>

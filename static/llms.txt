@@ -35,8 +35,8 @@ automated querying — see /about/ for the complete table.
 
 ## Examples
 
-- [Google Search examples](https://testingexamples.github.io/examples/google-search/): the same search-and-follow-a-link walkthrough implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust
-- [Google Maps examples](https://testingexamples.github.io/examples/google-maps/): the same map-browsing walkthrough implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust
+- [Google Search examples](https://testingexamples.github.io/examples/google-search/): the same search-and-follow-a-link walkthrough implemented across Selenium and Playwright in JavaScript, Python, and Rust
+- [Google Maps examples](https://testingexamples.github.io/examples/google-maps/): the same map-browsing walkthrough implemented across Selenium and Playwright in JavaScript, Python, and Rust
 
 ## Locator-strategy walkthroughs (target this site)
 

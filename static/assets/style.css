@@ -246,17 +246,6 @@ p { margin: 0 0 1rem; }
   font-size: 0.9em;
 }
 
-/* /checklist/'s "For ideas ask AI" callouts wrap an <h3> + <ul> in one
- * div (see that page's own comment) so they read as this callout's single
- * flex item, not two side-by-side ones. flex/min-width here just makes
- * that item fill the row's available width instead of shrinking to
- * content, a normal flex-item default that would otherwise leave the
- * list oddly narrow. */
-.checklist-ai-ideas { flex: 1 1 auto; min-width: 0; }
-.checklist-ai-ideas h3 { margin: 0 0 0.5rem; font-size: 1.125rem; }
-.checklist-ai-ideas ul { margin: 0; padding-left: 1.25rem; }
-.checklist-ai-ideas li + li { margin-top: 0.5rem; }
-
 /* ---------------------------------------------------------------- *
  * Site layout (this site's own hooks — not Lily components)
  * ---------------------------------------------------------------- */

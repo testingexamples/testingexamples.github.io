@@ -70,17 +70,17 @@
     },
     {
       "title": "Examples",
-      "description": "The same handful of real-world interactions implemented nine ways: three tools (Selenium, WebdriverIO, Playwright) times three languages (JavaScript, Python, Rust).",
+      "description": "The same handful of real-world interactions implemented six ways: two tools (Selenium and Playwright) times three languages (JavaScript, Python, Rust).",
       "links": [
         {
           "title": "Google Search examples",
           "url": "https://testingexamples.github.io/examples/google-search/",
-          "description": "Searching, reading results, and following a link, implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust."
+          "description": "Searching, reading results, and following a link, implemented across Selenium and Playwright in JavaScript, Python, and Rust."
         },
         {
           "title": "Google Maps examples",
           "url": "https://testingexamples.github.io/examples/google-maps/",
-          "description": "Browsing a map and searching for a place, implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust."
+          "description": "Browsing a map and searching for a place, implemented across Selenium and Playwright in JavaScript, Python, and Rust."
         }
       ]
     },

@@ -16,7 +16,7 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="Six interactions with Google Maps — visit, search, click a result, scroll, zoom, and toggle a layer — implemented nine ways: Selenium, WebdriverIO, and Playwright, each in JavaScript, Python, and Rust."
+    content="Six interactions with Google Maps — visit, search, click a result, scroll, zoom, and toggle a layer — implemented six ways: Selenium and Playwright, each in JavaScript, Python, and Rust."
   />
 </svelte:head>
 
@@ -24,8 +24,8 @@
   <h1>Google Maps Examples</h1>
   <p>
     This page shows six interactions with Google Maps — visit, search, click a link or result,
-    scroll, zoom, and toggle a layer — implemented nine ways: three browser-automation tools
-    (Selenium, WebdriverIO, Playwright) times three languages (JavaScript, Python, Rust).
+    scroll, zoom, and toggle a layer — implemented six ways: two browser-automation tools
+    (Selenium and Playwright) times three languages (JavaScript, Python, Rust).
   </p>
 </div>
 
@@ -321,183 +321,6 @@ async fn main() -> anyhow::Result<()> {
   </Details>
 </section>
 
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading
-    class="section-heading-start"
-    heading="WebdriverIO"
-    level={2}
-  />
-
-  <p>
-    WebdriverIO itself is JavaScript/Node.js only. Following the same convention as this project's
-    own sibling repo <code>demo-webdriver-python-for-nhs-wales</code>, the Python and Rust examples
-    below use the closest real equivalent — a plain WebDriver protocol client — structured as a
-    real assertion-based test rather than a plain walkthrough.
-  </p>
-
-  <Details summary="WebdriverIO — JavaScript (webdriverio)">
-    <CodeBlock label="webdriverio, JavaScript">
-      <pre><code
-          >{`describe('Google Maps', () => {
-  it('searches, opens a result, zooms in, and toggles traffic', async () => {
-    // 1. Visit
-    await browser.url('https://www.google.com/maps');
-
-    // 2. Search
-    const searchBox = await $('[aria-label="Search Google Maps"]');
-    await searchBox.setValue('Cardiff Castle');
-    await browser.keys('Enter');
-
-    // 3. Click the first result
-    const firstResult = await $('[role="feed"] a');
-    await firstResult.waitForClickable();
-    await firstResult.click();
-
-    // 4. Scroll: pan the map with WebdriverIO's multi-action wheel API,
-    // scrolling over the canvas element's bounding box rather than the
-    // whole page. execute() dispatching a synthetic wheel event (see the
-    // Selenium examples above) is the documented fallback on older
-    // WebdriverIO versions.
-    const canvas = await $('canvas');
-    await browser
-      .action('wheel')
-      .scroll({ origin: canvas, deltaY: 200, duration: 200 })
-      .perform();
-
-    // 5. Zoom in
-    await $('[aria-label="Zoom in"]').click();
-
-    // 6. Toggle the traffic layer
-    await $('[aria-label="Layers"]').click();
-    const trafficOption = await $('*=Traffic');
-    await trafficOption.click();
-  });
-});
-`}</code
-        ></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="WebdriverIO equivalent — Python (selenium + pytest)">
-    <CodeBlock label="selenium + pytest, Python">
-      <pre><code
-          >{`"""
-WebDriver-protocol equivalent of the WebdriverIO JavaScript example above.
-There is no direct Python equivalent to the JavaScript "webdriverio"
-package, so — following demo-webdriver-python-for-nhs-wales — this uses
-the \`selenium\` package structured as a real pytest suite: a \`driver\`
-fixture (see conftest.py) and real assert statements, rather than a plain
-walkthrough script.
-"""
-
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-
-
-def test_search_opens_cardiff_castle(driver):
-    """Visit Google Maps, search for Cardiff Castle, and open the first
-    result."""
-
-    driver.get('https://www.google.com/maps')
-
-    search_box = driver.find_element(By.CSS_SELECTOR, '[aria-label="Search Google Maps"]')
-    search_box.send_keys('Cardiff Castle')
-    search_box.send_keys(Keys.RETURN)
-
-    first_result = driver.find_element(By.CSS_SELECTOR, '[role="feed"] a')
-    first_result.click()
-
-    assert 'Cardiff Castle' in driver.title
-
-
-def test_zoom_in_button_is_present(driver):
-    """The zoom-in control has a stable aria-label, unlike the canvas map
-    it sits beside."""
-
-    driver.get('https://www.google.com/maps')
-
-    zoom_in = driver.find_element(By.CSS_SELECTOR, '[aria-label="Zoom in"]')
-    assert zoom_in.is_displayed()
-    zoom_in.click()
-
-
-def test_traffic_layer_toggle_is_reachable(driver):
-    """Open the Layers panel and confirm the traffic layer toggle can be
-    found and clicked."""
-
-    driver.get('https://www.google.com/maps')
-
-    driver.find_element(By.CSS_SELECTOR, '[aria-label="Layers"]').click()
-    traffic_option = driver.find_element(By.XPATH, "//*[contains(text(), 'Traffic')]")
-
-    assert traffic_option.is_displayed()
-    traffic_option.click()
-`}</code
-        ></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="WebdriverIO equivalent — Rust (fantoccini)">
-    <CodeBlock label="fantoccini, Rust">
-      <pre><code
-          >{`use fantoccini::{ClientBuilder, Locator};
-
-#[tokio::test]
-async fn search_zoom_and_toggle_traffic() -> Result<(), fantoccini::error::CmdError> {
-    let c = ClientBuilder::native()
-        .connect("http://localhost:4444")
-        .await
-        .expect("failed to connect to WebDriver");
-
-    // 1. Visit
-    c.goto("https://www.google.com/maps").await?;
-
-    // 2. Search, then submit with Enter to open the first result
-    c.find(Locator::Css("[aria-label='Search Google Maps']"))
-        .await?
-        .send_keys("Cardiff Castle\\n")
-        .await?;
-
-    // 4. Scroll: dispatch a synthetic wheel event over the map canvas,
-    // mirroring the execute-script fallback used elsewhere on this page.
-    c.execute(
-        r#"const el = document.querySelector('canvas');
-           const rect = el.getBoundingClientRect();
-           el.dispatchEvent(new WheelEvent('wheel', {
-               deltaY: 200,
-               clientX: rect.x + rect.width / 2,
-               clientY: rect.y + rect.height / 2,
-               bubbles: true
-           }));"#,
-        vec![],
-    )
-    .await?;
-
-    // 5. Zoom in (the pragmatic, reliable choice over pinch/scroll-zoom)
-    c.find(Locator::Css("[aria-label='Zoom in']"))
-        .await?
-        .click()
-        .await?;
-
-    // 6. Toggle the traffic layer
-    c.find(Locator::Css("[aria-label='Layers']")).await?.click().await?;
-    let traffic = c
-        .find(Locator::XPath("//*[contains(text(), 'Traffic')]"))
-        .await?;
-    traffic.click().await?;
-
-    let url = c.current_url().await?;
-    assert!(url.as_str().contains("google.com/maps"));
-
-    c.close().await
-}
-`}</code
-        ></pre>
-    </CodeBlock>
-  </Details>
-</section>
 
 <Separator label="Section break" />
 

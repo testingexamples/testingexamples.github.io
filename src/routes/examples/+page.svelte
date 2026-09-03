@@ -9,7 +9,7 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="Real-world browser automation examples: the same handful of interactions, implemented nine ways across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust."
+    content="Real-world browser automation examples: the same handful of interactions, implemented six ways across Selenium and Playwright in JavaScript, Python, and Rust."
   />
 </svelte:head>
 
@@ -17,7 +17,7 @@
   <h1>Examples</h1>
   <p>
     This section shows the same handful of real-world interactions — browsing, searching, clicking,
-    scrolling — implemented nine ways: three tools (Selenium, WebdriverIO, Playwright) times three
+    scrolling — implemented six ways: two tools (Selenium and Playwright) times three
     languages (JavaScript, Python, Rust), against two well-known real sites.
   </p>
 </div>
@@ -28,11 +28,11 @@
   <SummaryList label="Example pages">
     <SummaryListItem term="Google Search">
       <a href="/examples/google-search/">Google Search examples</a> — searching, reading results,
-      and following a link, the same walkthrough written nine ways.
+      and following a link, the same walkthrough written six ways.
     </SummaryListItem>
     <SummaryListItem term="Google Maps">
       <a href="/examples/google-maps/">Google Maps examples</a> — browsing a map, searching for a
-      place, and interacting with the page, the same walkthrough written nine ways.
+      place, and interacting with the page, the same walkthrough written six ways.
     </SummaryListItem>
   </SummaryList>
 
