@@ -54,6 +54,44 @@
  *      secondary one, e.g. on the home page and `/checklist/`) still needs
  *      its own `.button-secondary` modifier class — a genuine site-local
  *      addition, not a duplicate of a Lily hook.
+ *   6. A third deliberate exception: `.share-picker-status` back to
+ *      visually-hidden. Lily's theme CSS deliberately keeps this element
+ *      in normal flow (`margin-block-start`, real font-size) so a "Link
+ *      copied" message is visible below the share button in most
+ *      contexts — a reasonable default. But in this site's compact header
+ *      icon-row, that extra in-flow element makes `.share-picker`'s own
+ *      box taller than `.theme-picker`'s/`.text-size-picker`'s (which have
+ *      no such element), and `.site-controls`'s `align-items: center`
+ *      then centers the taller box differently, visibly shifting the
+ *      share button up relative to its two neighbours — confirmed via
+ *      computed styles in a real browser: identical button height (40px)
+ *      on all three, but `.share-picker-button`'s `top` sat 8px above the
+ *      other two's shared `top`. The status is still announced to screen
+ *      readers via `aria-live` either way; only its visible placement
+ *      changes here. Fixed below by restoring it to the same
+ *      visually-hidden treatment this site used before the theme
+ *      migration.
+ *
+ * A note on a bug that WAS in the alias layer itself, not a Lily
+ * exception: the alias originally named its border-colour token `--border`
+ * — but every Lily theme file already defines a raw `--border` token of
+ * its own, meaning "border WIDTH" (`--border: 1px`), consumed across ~44
+ * places as `border: var(--border) solid transparent`. Because this file
+ * loads after the theme file, the alias's colour value silently replaced
+ * that width value everywhere on the page — not just in this file — and a
+ * `border` shorthand with an invalid <line-width> component (a colour
+ * string, here) is dropped by the browser entirely, so EVERY Lily button
+ * on the site (all three header pickers included) had a genuinely
+ * zero-width, invisible border the whole time; it wasn't noticed sooner
+ * because their background-colour fill still read as a "box" without one.
+ * Confirmed via computed styles (`border: 0px none …` on `.theme-picker-
+ * button` itself, not just this site's own CSS) before concluding it was
+ * a naming collision rather than a missing rule. Fixed by renaming the
+ * alias to `--border-color`, which cannot collide with any of Lily's raw
+ * tokens (`--radius-selector`, `--radius-field`, `--radius-box`,
+ * `--size-selector`, `--size-field`, `--border`, `--depth`, `--noise`) or
+ * its `--lily-*`/`--color-*` layers — checked against that full list, not
+ * just patched and hoped.
  */
 
 :root {
@@ -66,7 +104,7 @@
   --text: var(--lily-text);
   --text-muted: var(--lily-text-muted);
   --text-subtle: var(--lily-text-muted);
-  --border: var(--lily-border);
+  --border-color: var(--lily-border);
   --border-strong: var(--lily-border-strong);
   --accent: var(--color-primary);
   --accent-hover: color-mix(in oklch, var(--color-primary) 82%, black);
@@ -148,6 +186,20 @@ a.button-secondary:hover {
   border-color: var(--accent-hover);
 }
 
+/* Exception 6 (see file-header comment) — keep the copy-feedback status
+ * out of flow in this site's compact header icon-row, without silencing
+ * it for screen readers (aria-live announces mutations regardless of
+ * visibility here). */
+.share-picker-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
@@ -200,7 +252,7 @@ p { margin: 0 0 1rem; }
 
 .site-header {
   background: var(--card-bg);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -242,7 +294,7 @@ p { margin: 0 0 1rem; }
   font-size: 0.95rem;
   transition: background 150ms;
 }
-.site-nav a:hover { background: var(--border); color: var(--text); }
+.site-nav a:hover { background: var(--border-color); color: var(--text); }
 .site-nav a[aria-current="page"] {
   color: var(--accent);
   font-weight: 600;
@@ -289,13 +341,13 @@ p { margin: 0 0 1rem; }
 }
 .repo-list li {
   padding: 0.6rem 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-color);
 }
 .repo-list li:last-child { border-bottom: none; }
 
 .site-footer {
   background: var(--card-bg);
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-color);
   margin-top: 4rem;
   padding: 2rem 1.5rem;
 }
@@ -329,7 +381,7 @@ p { margin: 0 0 1rem; }
   grid-template-columns: minmax(9rem, 14rem) 1fr;
   gap: 0.25rem 1.5rem;
   padding: 0.6rem 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-color);
 }
 .summary-list-item dt { font-weight: 600; margin: 0; }
 .summary-list-item dd { margin: 0; }
@@ -349,7 +401,7 @@ p { margin: 0 0 1rem; }
 .site-fixtures h2 {
   margin-top: 2.5rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-color);
 }
 .site-fixtures h2:first-child {
   margin-top: 0;

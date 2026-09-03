@@ -10,17 +10,21 @@
 
   // Every theme in the Lily Design System's own themes/ directory (copied
   // verbatim into static/assets/themes/ — see AGENTS.md's "Theming"
-  // section). 38 are DaisyUI-derived palettes whose slugs already read
-  // fine through ThemePicker's default title-casing (e.g. "dracula" ->
-  // "Dracula"); the 7 long public-sector slugs below get a shorter label
-  // so the list stays scannable.
+  // section). Sorted alphabetically by slug, with one deliberate
+  // exception: the 8 public-sector slugs (UK Gov Design System, the six
+  // NHS England/Scotland/Wales variants, US Web Design System) are held
+  // back to the end of the list as their own alphabetical group, since
+  // they're a visually distinct "official government theme" set a reader
+  // is more likely to be looking for together rather than interleaved
+  // alphabetically among the DaisyUI-derived palettes. They also get a
+  // shorter label below so the list stays scannable.
   const LILY_THEMES = [
-    'light', 'dark', 'dim', 'nord', 'dracula', 'abyss', 'black', 'night',
-    'forest', 'garden', 'aqua', 'lofi', 'pastel', 'fantasy', 'wireframe',
-    'cmyk', 'autumn', 'business', 'acid', 'lemonade', 'coffee', 'winter',
-    'corporate', 'emerald', 'cupcake', 'bumblebee', 'caramellatte', 'silk',
-    'sunset', 'retro', 'cyberpunk', 'synthwave', 'valentine', 'halloween',
-    'luxury', 'adobe-spectrum', 'mozilla-protocol',
+    'abyss', 'acid', 'adobe-spectrum', 'aqua', 'autumn', 'black',
+    'bumblebee', 'business', 'caramellatte', 'cmyk', 'coffee', 'corporate',
+    'cupcake', 'cyberpunk', 'dark', 'dim', 'dracula', 'emerald', 'fantasy',
+    'forest', 'garden', 'halloween', 'lemonade', 'light', 'lofi', 'luxury',
+    'mozilla-protocol', 'night', 'nord', 'pastel', 'retro', 'silk',
+    'sunset', 'synthwave', 'valentine', 'winter', 'wireframe',
     'united-kingdom-government-digital-service',
     'united-kingdom-national-health-service-england-for-patients',
     'united-kingdom-national-health-service-england-for-practitioners',

@@ -27,12 +27,7 @@
 </div>
 
 <section class="section prose">
-  <SectionHeading
-    class="section-heading-start"
-    eyebrow="1. Language"
-    heading="Learn about a programming language"
-    level={2}
-  />
+  <SectionHeading class="section-heading-start" heading="Learn about a programming language" level={2} />
 
   <p>
     <strong>JavaScript</strong> is the language every browser runs natively, which gives it a huge
@@ -57,25 +52,41 @@
   </p>
 
   <InformationCallout label="For ideas, ask AI">
-    <p>
-      <strong>For ideas ask AI: </strong>
-      <em
-        >"I already know JavaScript — what are the biggest differences I'd hit learning Rust, and
-        what's a small real project to try first?"</em
-      >
-    </p>
+    <p><strong>For ideas ask AI: </strong></p>
+    <ul>
+      <li>
+        <strong>New to programming:</strong>
+        <em
+          >"I've never written a line of code before. Could you explain, in plain terms, what
+          JavaScript, TypeScript, Python, and Rust are each generally used for, and recommend one
+          to start with?"</em
+        >
+      </li>
+      <li>
+        <strong>Know a bit already:</strong>
+        <em
+          >"I already know JavaScript a little — what are the biggest differences I'd hit learning
+          Rust, and what's a small real project to try first?"</em
+        >
+      </li>
+      <li>
+        <strong>Using this site's demos:</strong>
+        <em
+          >"Here's <code>src/demo.js</code> from testingexamples.github.io's
+          <a href="https://github.com/testingexamples/demo-playwright-javascript"
+            >demo-playwright-javascript</a
+          > repo — can you help me rewrite it in Python so I can compare the two side by
+          side?"</em
+        >
+      </li>
+    </ul>
   </InformationCallout>
 </section>
 
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading
-    class="section-heading-start"
-    eyebrow="2. Tool"
-    heading="Learn about an automatic testing tool"
-    level={2}
-  />
+  <SectionHeading class="section-heading-start" heading="Learn about an automatic testing tool" level={2} />
 
   <p>
     <strong>Selenium</strong> is the longest-established of the three: browser automation via the
@@ -94,25 +105,39 @@
   </p>
 
   <InformationCallout label="For ideas, ask AI">
-    <p>
-      <strong>For ideas ask AI: </strong>
-      <em
-        >"I want to test a login form with a 2FA step — which of Selenium, WebdriverIO, or
-        Playwright handles that most simply, and what would a first script look like?"</em
-      >
-    </p>
+    <p><strong>For ideas ask AI: </strong></p>
+    <ul>
+      <li>
+        <strong>New to browser automation:</strong>
+        <em
+          >"I've never automated a browser before. In plain terms, what do Selenium, WebdriverIO,
+          and Playwright each actually do, and which one is easiest to get running today?"</em
+        >
+      </li>
+      <li>
+        <strong>Written a script or two:</strong>
+        <em
+          >"I want to test a login form with a 2FA step — which of Selenium, WebdriverIO, or
+          Playwright handles that most simply, and what would a first script look like?"</em
+        >
+      </li>
+      <li>
+        <strong>Using this site's demos:</strong>
+        <em
+          >"Here's <code>testingexamples.github.io</code>'s home page — it has elements with known
+          ids, names, classes, and link text under headings like Id Examples and Form Input
+          Examples. Can you help me write a Playwright script that finds one element by each of
+          those five strategies?"</em
+        >
+      </li>
+    </ul>
   </InformationCallout>
 </section>
 
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading
-    class="section-heading-start"
-    eyebrow="3. AI helper"
-    heading="Learn about an AI agent helper"
-    level={2}
-  />
+  <SectionHeading class="section-heading-start" heading="Learn about an AI agent helper" level={2} />
 
   <p>
     <strong>Anthropic Claude</strong> is what this whole site was built with — see
@@ -134,14 +159,32 @@
   </p>
 
   <InformationCallout label="For ideas, ask AI">
-    <p>
-      <strong>For ideas ask AI: </strong>
-      <em
-        >"Here's a repetitive part of my testing workflow: writing a new Playwright test for every
-        similar form on our site — could an AI assistant help draft, review, or maintain this, and
-        what would I still need to check myself?"</em
-      >
-    </p>
+    <p><strong>For ideas ask AI: </strong></p>
+    <ul>
+      <li>
+        <strong>New to AI assistants:</strong>
+        <em
+          >"I don't really understand what an 'AI agent' or 'AI coding assistant' actually does —
+          can you explain it simply, in plain terms, and how it's different from just asking a
+          chatbot a question?"</em
+        >
+      </li>
+      <li>
+        <strong>Used one a little:</strong>
+        <em
+          >"I've used an AI assistant to autocomplete a few lines of code before. How could I use
+          one to help plan out and write a whole small test script from scratch?"</em
+        >
+      </li>
+      <li>
+        <strong>Using this site's demos:</strong>
+        <em
+          >"Here's <a href={aiStatementUrl}>AI_STATEMENT.md</a> from testingexamples.github.io — could
+          you help me write something similar for my own project, disclosing how AI was used and
+          what a human still checked?"</em
+        >
+      </li>
+    </ul>
   </InformationCallout>
 
   <p>
