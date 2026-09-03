@@ -1,11 +1,8 @@
 <script lang="ts">
   import { SectionHeading } from 'lily-design-system-svelte-headless';
-  import { REPO } from '$lib/site';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
-
-  const aiStatementUrl = `${REPO}/blob/main/AI_STATEMENT.md`;
 </script>
 
 <svelte:head>
@@ -48,21 +45,20 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>New to browser automation:</strong>
+      <strong>Novice:</strong>
       "I've never automated a browser before. In plain terms, what do Selenium and Playwright
       each actually do, and which one is easiest to get running today?"
     </li>
     <li>
-      <strong>Written a script or two:</strong>
+      <strong>Intermediate:</strong>
       "I want to test a login form with a 2FA step — which of Selenium or Playwright handles
       that most simply, and what would a first script look like?"
     </li>
     <li>
-      <strong>Using this site's demos:</strong>
-      "Here's <code>testingexamples.github.io</code>'s home page — it has elements with known
-      ids, names, classes, and link text under headings like Id Examples and Form Input
-      Examples. Can you help me write a Playwright script that finds one element by each of
-      those five strategies?"
+      <strong>Advanced:</strong>
+      "I need my test suite to run in parallel across multiple browsers, retry only genuinely
+      flaky failures, and fail fast on the rest — how would I set that up with Selenium's or
+      Playwright's own tooling, without a lot of custom infrastructure?"
     </li>
   </ul>
 </section>
@@ -94,21 +90,20 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>New to programming:</strong>
+      <strong>Novice:</strong>
       "I've never written a line of code before. Could you explain, in plain terms, what
       JavaScript and Python are each generally used for, and recommend one to start with?"
     </li>
     <li>
-      <strong>Know a bit already:</strong>
+      <strong>Intermediate:</strong>
       "I already know JavaScript a little — what are the biggest differences I'd hit learning
       Python, and what's a small real project to try first?"
     </li>
     <li>
-      <strong>Using this site's demos:</strong>
-      "Here's <code>src/demo.js</code> from testingexamples.github.io's
-      <a href="https://github.com/testingexamples/demo-playwright-javascript"
-        >demo-playwright-javascript</a
-      > repo — can you help me rewrite it in Python so I can compare the two side by side?"
+      <strong>Advanced:</strong>
+      "My JavaScript test suite has grown slow and hard to maintain — what are the concrete
+      signs it's time to introduce type-checking or restructure it, and how would I do that
+      incrementally instead of rewriting it all at once?"
     </li>
   </ul>
 </section>
@@ -142,21 +137,21 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>New to AI assistants:</strong>
+      <strong>Novice:</strong>
       "I don't really understand what an 'AI agent' or 'AI coding assistant' actually does —
       can you explain it simply, in plain terms, and how it's different from just asking a
       chatbot a question?"
     </li>
     <li>
-      <strong>Used one a little:</strong>
+      <strong>Intermediate:</strong>
       "I've used an AI assistant to autocomplete a few lines of code before. How could I use
       one to help plan out and write a whole small test script from scratch?"
     </li>
     <li>
-      <strong>Using this site's demos:</strong>
-      "Here's <a href={aiStatementUrl}>AI_STATEMENT.md</a> from testingexamples.github.io — could
-      you help me write something similar for my own project, disclosing how AI was used and
-      what a human still checked?"
+      <strong>Advanced:</strong>
+      "I want an AI assistant to review a batch of pull requests for missing or weak test
+      coverage before a human reviewer looks at them — what's a reliable way to set that up,
+      and what should a human still double-check afterward?"
     </li>
   </ul>
 </section>
