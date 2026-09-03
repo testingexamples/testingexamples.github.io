@@ -47,8 +47,8 @@ export const GENERIC_DEMO_REPOS: SiblingRepo[] = [
     description: 'Selenium WebDriver browser automation walkthrough, written in JavaScript.'
   },
   {
-    name: 'demo-webdriver-javascript',
-    url: 'https://github.com/joelparkerhenderson/demo-webdriver-javascript',
+    name: 'demo-webdriverio-javascript',
+    url: 'https://github.com/joelparkerhenderson/demo-webdriverio-javascript',
     description:
       'WebdriverIO test suite with real Mocha assertions (not just a console.log walkthrough), written in JavaScript.'
   }
@@ -81,13 +81,13 @@ export const NHS_WALES_DEMO_REPOS: SiblingRepo[] = [
     description: 'Selenium WebDriver browser automation against nhs.wales, written in Python.'
   },
   {
-    name: 'demo-webdriver-javascript-for-nhs-wales',
-    url: 'https://github.com/joelparkerhenderson/demo-webdriver-javascript-for-nhs-wales',
+    name: 'demo-webdriverio-javascript-for-nhs-wales',
+    url: 'https://github.com/joelparkerhenderson/demo-webdriverio-javascript-for-nhs-wales',
     description: 'WebdriverIO browser automation against nhs.wales, written in JavaScript.'
   },
   {
-    name: 'demo-webdriver-python-for-nhs-wales',
-    url: 'https://github.com/joelparkerhenderson/demo-webdriver-python-for-nhs-wales',
+    name: 'demo-webdriverio-python-for-nhs-wales',
+    url: 'https://github.com/joelparkerhenderson/demo-webdriverio-python-for-nhs-wales',
     description: 'WebdriverIO-style browser automation against nhs.wales, written in Python.'
   }
 ];

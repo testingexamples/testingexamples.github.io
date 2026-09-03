@@ -14,8 +14,8 @@ markup under the headings "Id Examples" through "Form Input Examples": every
 - `../demo-playwright-javascript/src/demo.js`
 - `../demo-playwright-python/src/demo.py`
 - `../demo-selenium-javascript/src/demo.js`
-- `../demo-webdriver-javascript/test/specs/demo.js`
-- `../demo-playwright-typescript-for-nhs-wales/demo-playwright-typescript/src/demo.ts`
+- `../demo-webdriverio-javascript/test/specs/demo.js`
+- `../demo-playwright-typescript/src/demo.ts`
 
 If you change any fixture id, name, class, or visible text, **you must
 first check every one of those five repos' source for that selector and

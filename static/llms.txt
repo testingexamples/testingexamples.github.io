@@ -39,7 +39,7 @@ drive the same kinds of tools against a real public site, nhs.wales, instead.
 - [demo-playwright-python](https://github.com/testingexamples/demo-playwright-python): Playwright browser automation walkthrough, written in Python
 - [demo-playwright-typescript](https://github.com/testingexamples/demo-playwright-typescript): Playwright browser automation walkthrough, written in TypeScript
 - [demo-selenium-javascript](https://github.com/joelparkerhenderson/demo-selenium-javascript): Selenium WebDriver browser automation walkthrough, written in JavaScript
-- [demo-webdriver-javascript](https://github.com/joelparkerhenderson/demo-webdriver-javascript): WebdriverIO test suite with real assertions, written in JavaScript
+- [demo-webdriverio-javascript](https://github.com/joelparkerhenderson/demo-webdriverio-javascript): WebdriverIO test suite with real assertions, written in JavaScript
 
 ## Real-world demos (target nhs.wales)
 
@@ -47,8 +47,8 @@ drive the same kinds of tools against a real public site, nhs.wales, instead.
 - [demo-playwright-python-for-nhs-wales](https://github.com/joelparkerhenderson/demo-playwright-python-for-nhs-wales): Playwright browser automation against nhs.wales, written in Python
 - [demo-selenium-javascript-for-nhs-wales](https://github.com/joelparkerhenderson/demo-selenium-javascript-for-nhs-wales): Selenium WebDriver browser automation against nhs.wales, written in JavaScript
 - [demo-selenium-python-for-nhs-wales](https://github.com/joelparkerhenderson/demo-selenium-python-for-nhs-wales): Selenium WebDriver browser automation against nhs.wales, written in Python
-- [demo-webdriver-javascript-for-nhs-wales](https://github.com/joelparkerhenderson/demo-webdriver-javascript-for-nhs-wales): WebdriverIO browser automation against nhs.wales, written in JavaScript
-- [demo-webdriver-python-for-nhs-wales](https://github.com/joelparkerhenderson/demo-webdriver-python-for-nhs-wales): WebdriverIO-style browser automation against nhs.wales, written in Python
+- [demo-webdriverio-javascript-for-nhs-wales](https://github.com/joelparkerhenderson/demo-webdriverio-javascript-for-nhs-wales): WebdriverIO browser automation against nhs.wales, written in JavaScript
+- [demo-webdriverio-python-for-nhs-wales](https://github.com/joelparkerhenderson/demo-webdriverio-python-for-nhs-wales): WebdriverIO-style browser automation against nhs.wales, written in Python
 
 ## Optional
 

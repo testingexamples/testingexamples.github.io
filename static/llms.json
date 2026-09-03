@@ -44,7 +44,7 @@
         { "title": "demo-playwright-python", "url": "https://github.com/testingexamples/demo-playwright-python", "description": "Playwright browser automation walkthrough, written in Python." },
         { "title": "demo-playwright-typescript", "url": "https://github.com/testingexamples/demo-playwright-typescript", "description": "Playwright browser automation walkthrough, written in TypeScript." },
         { "title": "demo-selenium-javascript", "url": "https://github.com/joelparkerhenderson/demo-selenium-javascript", "description": "Selenium WebDriver browser automation walkthrough, written in JavaScript." },
-        { "title": "demo-webdriver-javascript", "url": "https://github.com/joelparkerhenderson/demo-webdriver-javascript", "description": "WebdriverIO test suite with real assertions, written in JavaScript." }
+        { "title": "demo-webdriverio-javascript", "url": "https://github.com/joelparkerhenderson/demo-webdriverio-javascript", "description": "WebdriverIO test suite with real assertions, written in JavaScript." }
       ]
     },
     {
@@ -55,8 +55,8 @@
         { "title": "demo-playwright-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-playwright-python-for-nhs-wales", "description": "Playwright browser automation against nhs.wales, written in Python." },
         { "title": "demo-selenium-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-selenium-javascript-for-nhs-wales", "description": "Selenium WebDriver browser automation against nhs.wales, written in JavaScript." },
         { "title": "demo-selenium-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-selenium-python-for-nhs-wales", "description": "Selenium WebDriver browser automation against nhs.wales, written in Python." },
-        { "title": "demo-webdriver-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-webdriver-javascript-for-nhs-wales", "description": "WebdriverIO browser automation against nhs.wales, written in JavaScript." },
-        { "title": "demo-webdriver-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-webdriver-python-for-nhs-wales", "description": "WebdriverIO-style browser automation against nhs.wales, written in Python." }
+        { "title": "demo-webdriverio-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-webdriverio-javascript-for-nhs-wales", "description": "WebdriverIO browser automation against nhs.wales, written in JavaScript." },
+        { "title": "demo-webdriverio-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-webdriverio-python-for-nhs-wales", "description": "WebdriverIO-style browser automation against nhs.wales, written in Python." }
       ]
     },
     {
