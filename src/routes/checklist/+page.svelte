@@ -182,15 +182,22 @@
   <p>
     <strong>Anthropic Claude</strong> is what this whole site was built with — see
     <a href={aiStatementUrl}><code>AI_STATEMENT.md</code></a> for the honest account of how, under a
-    human maintainer's direction.
+    human maintainer's direction. For testing specifically, Claude Code (the agent that built this
+    site) can run a test suite itself, read the actual failure output, and keep iterating — closer
+    to a contributor working through a task than a chat window suggesting a snippet.
   </p>
   <p>
     <strong>Google Gemini</strong> is Google's general-purpose AI assistant, integrated into Google's
-    own products and Workspace.
+    own products and Workspace. For testing specifically, that makes it well placed for turning a
+    test plan or bug report already living in a Google Doc or Sheet into a first draft of a script
+    — less commonly the one actually running your test suite for you.
   </p>
   <p>
     <strong>Microsoft Copilot</strong> is Microsoft's general-purpose AI assistant, integrated into
-    Microsoft's own products and into GitHub.
+    Microsoft's own products and into GitHub. For testing specifically, that GitHub integration
+    means it can see your repo's actual context — open files, a pull request's real diff — while
+    suggesting or reviewing test code, which matters when a test needs to match code that just
+    changed in the same PR.
   </p>
   <p>
     Each is a general-purpose AI assistant from a major vendor, integrated differently into that
