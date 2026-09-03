@@ -64,7 +64,11 @@
 
   <p>
     <a href="https://code.visualstudio.com/">Visual Studio Code</a> is free, extremely widely used, and
-    a very reasonable default if you don't already have a favourite editor.
+    a very reasonable default if you don't already have a favourite editor. For a video introduction,
+    watch
+    <a href="https://www.youtube.com/watch?v=rPITZvwyoMc"
+      >"Master Visual Studio Code Crash Course for beginners in just 15 min"</a
+    > (Learn Web Dev with Norbert, 15 min).
   </p>
 </section>
 
@@ -102,7 +106,10 @@
 
   <p>
     Learn more at <a href="https://git-scm.com/">git-scm.com</a> and
-    <a href="https://docs.github.com/get-started">GitHub's own "Get started" docs</a>.
+    <a href="https://docs.github.com/get-started">GitHub's own "Get started" docs</a>, or watch
+    GitHub's own
+    <a href="https://www.youtube.com/watch?v=r8jQ9hVA2qs">"A brief introduction to Git for beginners"</a>
+    for a video introduction.
   </p>
 </section>
 
@@ -142,7 +149,9 @@
     Learn more at <a href="https://docs.github.com/actions">GitHub Actions documentation</a> and
     <a href="https://www.atlassian.com/continuous-delivery/continuous-integration"
       >Atlassian's introduction to continuous integration</a
-    >.
+    >, or watch
+    <a href="https://www.youtube.com/watch?v=JxqfiBHBzl8">"CI/CD Explained in 7 minutes"</a> for a
+    video introduction.
   </p>
 </section>
 
@@ -182,7 +191,11 @@
 
   <p>
     Learn more at the <a href="https://agilemanifesto.org/">Agile Manifesto</a> and the Nielsen
-    Norman Group's <a href="https://www.nngroup.com/articles/user-research/">introduction to user research</a>.
+    Norman Group's <a href="https://www.nngroup.com/articles/user-research/">introduction to user research</a>,
+    or watch
+    <a href="https://www.youtube.com/watch?v=vLpQg-al2RU"
+      >"Agile Methodology Explained in 5 Minutes"</a
+    > for a video introduction.
   </p>
 </section>
 
@@ -215,7 +228,10 @@
 
   <p>
     Learn more at Software Carpentry's
-    <a href="https://swcarpentry.github.io/shell-novice/">Unix shell lesson</a>.
+    <a href="https://swcarpentry.github.io/shell-novice/">Unix shell lesson</a>, or watch NetworkChuck's
+    <a href="https://www.youtube.com/watch?v=gd7BXuUQ91w"
+      >"60 Linux Commands you NEED to know (in 10 minutes)"</a
+    > for a fast-paced video introduction.
   </p>
 </section>
 
@@ -241,7 +257,11 @@
 
   <p>
     Learn more at AWS's
-    <a href="https://aws.amazon.com/what-is-cloud-computing/">introduction to cloud computing</a>.
+    <a href="https://aws.amazon.com/what-is-cloud-computing/">introduction to cloud computing</a>, or
+    watch
+    <a href="https://www.youtube.com/watch?v=8sNAPqJ_c7c"
+      >"A Beginner's Guide To Cloud Computing In Under 8 Minutes"</a
+    > for a video introduction.
   </p>
 </section>
 
@@ -265,7 +285,10 @@
   </p>
 
   <p>
-    Learn more at AWS's <a href="https://aws.amazon.com/devops/what-is-devops/">introduction to DevOps</a>.
+    Learn more at AWS's <a href="https://aws.amazon.com/devops/what-is-devops/">introduction to DevOps</a>,
+    or watch edureka!'s
+    <a href="https://www.youtube.com/watch?v=gc7_f3NmKQU">"DevOps Explained in 10 Minutes"</a> for a
+    video introduction.
   </p>
 </section>
 
@@ -289,7 +312,10 @@
   </p>
 
   <p>
-    Learn more at Atlassian's <a href="https://www.atlassian.com/agile/kanban">guide to Kanban</a>.
+    Learn more at Atlassian's <a href="https://www.atlassian.com/agile/kanban">guide to Kanban</a>, or
+    watch ProKanban's
+    <a href="https://www.youtube.com/watch?v=3Nd2e1lD8ng">"The Kanban Guide - Kanban Metrics"</a> for a
+    video introduction to the metrics themselves.
   </p>
 </section>
 
@@ -315,7 +341,10 @@
 
   <p>
     Learn more at iSixSigma's
-    <a href="https://www.isixsigma.com/new-to-six-sigma/getting-started/">getting-started guide</a>.
+    <a href="https://www.isixsigma.com/new-to-six-sigma/getting-started/">getting-started guide</a>, or
+    watch Simplilearn's
+    <a href="https://www.youtube.com/watch?v=s2HCrhNVfak">"Lean Six Sigma In 8 Minutes"</a> for a video
+    introduction.
   </p>
 </section>
 
