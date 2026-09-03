@@ -30,19 +30,14 @@
   <SectionHeading class="section-heading-start" heading="Learn about an automatic testing tool" level={2} />
 
   <p>
-    All three drive a real browser to click, type, and read a page the way a person would — they
+    Both drive a real browser to click, type, and read a page the way a person would — they
     differ mainly in which languages they support, how much test-framework structure comes built
     in, and how much waiting-for-the-page-to-be-ready they handle for you automatically.
   </p>
   <p>
-    <strong>Selenium</strong> is the longest-established of the three: browser automation via the
+    <strong>Selenium</strong> is the longest-established of the two: browser automation via the
     W3C WebDriver protocol, with the widest cross-language support of any tool here. This site's
     demos use it in four languages.
-  </p>
-  <p>
-    <strong>WebdriverIO</strong> is a JavaScript/Node.js framework built on the WebDriver protocol,
-    with a real test runner and assertions baked in rather than left for you to wire up yourself.
-    See this site's WebdriverIO demos.
   </p>
   <p>
     <strong>Playwright</strong> is Microsoft's newer tool, with auto-waiting built in so tests flake
@@ -54,13 +49,13 @@
   <ul>
     <li>
       <strong>New to browser automation:</strong>
-      "I've never automated a browser before. In plain terms, what do Selenium, WebdriverIO,
-      and Playwright each actually do, and which one is easiest to get running today?"
+      "I've never automated a browser before. In plain terms, what do Selenium and Playwright
+      each actually do, and which one is easiest to get running today?"
     </li>
     <li>
       <strong>Written a script or two:</strong>
-      "I want to test a login form with a 2FA step — which of Selenium, WebdriverIO, or
-      Playwright handles that most simply, and what would a first script look like?"
+      "I want to test a login form with a 2FA step — which of Selenium or Playwright handles
+      that most simply, and what would a first script look like?"
     </li>
     <li>
       <strong>Using this site's demos:</strong>
@@ -83,7 +78,7 @@
   <p>
     <strong>JavaScript</strong> is the language every browser runs natively, which gives it a huge
     ecosystem and means there's almost always an example to learn from. This site's JavaScript demos
-    (Selenium, WebdriverIO, and Playwright) all run on it. For testing specifically, this is also
+    (Selenium and Playwright) all run on it. For testing specifically, this is also
     why every browser-automation tool gets its newest features in JavaScript first — it's each
     tool's home ecosystem, not a port.
   </p>
