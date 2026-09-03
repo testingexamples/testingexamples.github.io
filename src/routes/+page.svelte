@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { SectionHeading, CallToAction } from 'lily-design-system-svelte-headless';
+  import { SectionHeading } from 'lily-design-system-svelte-headless';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
@@ -25,12 +25,28 @@
     click, type, search, wait, assert — whether you've never written a line of code or you already
     know the ropes and just want a quick reference or somewhere reliable to try something out.
   </p>
-  <p style="margin-top: 2rem;">
-    <CallToAction class="button button-primary" href="/learn/">New here? Start with Learn</CallToAction>
-    <CallToAction class="button button-secondary" href="/checklist/" style="margin-left: 0.75rem;"
-      >Not sure what to learn first? Try the Checklist</CallToAction
-    >
-  </p>
+
+  <h3>Learn</h3>
+  <ul class="repo-list">
+    <li><a href="/learn/">Learn</a> — hub page for the four articles below</li>
+    <li><a href="/learn/what-is-automatic-testing/">What Is Automatic Testing?</a></li>
+    <li><a href="/learn/getting-started/">How to Start Learning Automatic Testing</a></li>
+    <li><a href="/learn/related-concepts/">Related Concepts</a> — editors, git, CI/CD, agile discovery</li>
+    <li><a href="/learn/artificial-intelligence/">Artificial Intelligence and Testing</a></li>
+  </ul>
+
+  <h3>Examples</h3>
+  <ul class="repo-list">
+    <li><a href="/examples/">Examples</a> — hub page for the two pages below</li>
+    <li><a href="/examples/google-search/">Google Search Examples</a></li>
+    <li><a href="/examples/google-maps/">Google Maps Examples</a></li>
+  </ul>
+
+  <h3>More</h3>
+  <ul class="repo-list">
+    <li><a href="/checklist/">Checklist</a> — not sure what to learn first?</li>
+    <li><a href="/about/">About</a> — the project and the sibling demo repos</li>
+  </ul>
 </section>
 
 <section class="section prose">
