@@ -25,17 +25,6 @@
     click, type, search, wait, assert — whether you've never written a line of code or you already
     know the ropes and just want a quick reference or somewhere reliable to try something out.
   </p>
-  <p>
-    The site has grown a bit since it started as just the fixture page below. There's now a
-    <a href="/learn/">Learn</a> section covering what automatic testing actually is, a step-by-step
-    path for getting started, the everyday tools and concepts that surround it, and where AI fits
-    in today. There's an <a href="/examples/">Examples</a> section with nine real implementations
-    each of a Google Search and a Google Maps walkthrough, spread across three testing tools and
-    three programming languages, so you can compare the same task written different ways. There's
-    an <a href="/about/">About</a> page describing the project and the eleven-plus sibling demo
-    repos that build on it. And right below this welcome, there's the fixture playground this site
-    started as — a page built to be practiced on.
-  </p>
   <p style="margin-top: 2rem;">
     <CallToAction class="button button-primary" href="/learn/">New here? Start with Learn</CallToAction>
     <CallToAction class="button button-secondary" href="/checklist/" style="margin-left: 0.75rem;"
