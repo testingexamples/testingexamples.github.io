@@ -9,7 +9,7 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="A beginner-friendly tour of four things that surround automatic testing: code editors, version control, CI/CD, and agile discovery — and why each one matters once your test script grows up."
+    content="A beginner-friendly tour of nine things that surround automatic testing: code editors, version control, CI/CD, agile discovery, Unix commands, cloud hosting, DevOps, flow metrics, and Lean Six Sigma — and why each one matters once your test script grows up."
   />
 </svelte:head>
 
@@ -29,7 +29,7 @@
     track how that code changes over time, a way to make sure the tests actually get run, and — easy
     to forget, but just as real — a way of checking that the tests are protecting something a real
     person actually cares about. None of these are testing tools specifically. All of them make
-    testing work. Below are four to know about, each explained in plain language, each with a link
+    testing work. Below are nine to know about, each explained in plain language, each with a link
     or two if you want to go deeper.
   </p>
 </section>
@@ -189,13 +189,147 @@
 <Separator label="Section break" />
 
 <section class="section prose">
+  <SectionHeading
+    class="section-heading-start"
+    heading="Unix commands — the command line"
+    level={2}
+  />
+
   <p>
-    None of these four are required to write your first script — see
+    <strong>Unix commands</strong> — <code>ls</code>, <code>cd</code>, <code>cat</code>,
+    <code>grep</code>, <code>curl</code>, <code>chmod</code>, and a few dozen others — are the
+    toolkit almost every dev environment, CI runner, and Docker container speaks natively, no GUI
+    required. You don't need to master all of them; a working knowledge of a couple dozen goes a
+    very long way.
+  </p>
+
+  <p>
+    Here's why that belongs on a testing page: <code>grep</code> and <code>sed</code> are how you
+    find one specific failure in thousands of lines of test output or a log file, instead of
+    scrolling. <code>curl</code> is how you sanity-check an API by hand — the same endpoint a UI
+    test might also exercise — before writing the real test. <code>chmod +x</code> is how a test
+    script becomes directly runnable. And piping a few commands together is often how a CI step
+    gets built without reaching for a "real" programming language just to glue two tools
+    together.
+  </p>
+
+  <p>
+    Learn more at Software Carpentry's
+    <a href="https://swcarpentry.github.io/shell-novice/">Unix shell lesson</a>.
+  </p>
+</section>
+
+<Separator label="Section break" />
+
+<section class="section prose">
+  <SectionHeading class="section-heading-start" heading="Cloud hosting for testing" level={2} />
+
+  <p>
+    <strong>Cloud hosting</strong> means running infrastructure — servers, browsers, CI runners —
+    on someone else's computers instead of ones you own, paying for what you actually use rather
+    than buying and maintaining hardware yourself.
+  </p>
+
+  <p>
+    Here's why that belongs on a testing page: cloud browser farms let a test suite run against
+    real devices and dozens of real browser and operating-system combinations that nobody could
+    reasonably install and maintain locally. And cloud CI providers (GitHub Actions, mentioned
+    below under CI/CD, is one) give every test run a fresh, disposable machine — so a test can't
+    quietly pass only because of state a previous run happened to leave behind, a subtle bug class
+    that's much harder to hide once every run starts from nothing.
+  </p>
+
+  <p>
+    Learn more at AWS's
+    <a href="https://aws.amazon.com/what-is-cloud-computing/">introduction to cloud computing</a>.
+  </p>
+</section>
+
+<Separator label="Section break" />
+
+<section class="section prose">
+  <SectionHeading class="section-heading-start" heading="DevOps for testing" level={2} />
+
+  <p>
+    <strong>DevOps</strong> is the broader practice CI/CD sits inside: breaking down the wall
+    between the people who write software and the people who run it in production, so both groups
+    share responsibility for whether it actually works once real users touch it.
+  </p>
+
+  <p>
+    Here's why that belongs on a testing page: DevOps is why "testing in production" — canary
+    releases to a small slice of real traffic, feature flags, watching real error rates right
+    after a deploy — is a legitimate complement to pre-release testing, not a replacement for it.
+    No test suite can cover every real-world condition in advance; DevOps practices are the second,
+    live safety net for the ones it missed.
+  </p>
+
+  <p>
+    Learn more at AWS's <a href="https://aws.amazon.com/devops/what-is-devops/">introduction to DevOps</a>.
+  </p>
+</section>
+
+<Separator label="Section break" />
+
+<section class="section prose">
+  <SectionHeading class="section-heading-start" heading="Flow metrics for testing" level={2} />
+
+  <p>
+    <strong>Flow metrics</strong> — a core Kanban and Lean idea — measure how work actually moves
+    through a process: cycle time (how long one item takes end to end), lead time, throughput, and
+    work in progress. The point is measuring what's actually moving, not how busy people look.
+  </p>
+
+  <p>
+    Here's why that belongs on a testing page: "time from a bug being reported to a regression
+    test existing for it" is a concrete, trackable cycle time. And a growing pile of skipped,
+    ignored, or flaky tests is itself a flow-metric signal — work in progress that isn't actually
+    moving — meaning testing debt is piling up faster than it's being paid down, whether or not
+    anyone's tracking it on a board.
+  </p>
+
+  <p>
+    Learn more at Atlassian's <a href="https://www.atlassian.com/agile/kanban">guide to Kanban</a>.
+  </p>
+</section>
+
+<Separator label="Section break" />
+
+<section class="section prose">
+  <SectionHeading class="section-heading-start" heading="Lean Six Sigma for testing" level={2} />
+
+  <p>
+    <strong>Lean Six Sigma</strong> combines Lean (eliminate waste) with Six Sigma (reduce defects
+    and variation through statistical process control). It started in manufacturing and now gets
+    applied to any repeatable process — software delivery included.
+  </p>
+
+  <p>
+    Here's why that belongs on a testing page: a flaky test is, literally, variation in Six Sigma
+    terms — the same input doesn't reliably produce the same output — and treating that as a
+    defect worth root-causing, rather than a nuisance to re-run until it goes green, is a direct
+    application of the mindset. Lean's "eliminate waste" lens is useful too: five different tests
+    all asserting the same thing five different ways costs real CI time without adding any real
+    protection.
+  </p>
+
+  <p>
+    Learn more at iSixSigma's
+    <a href="https://www.isixsigma.com/new-to-six-sigma/getting-started/">getting-started guide</a>.
+  </p>
+</section>
+
+<Separator label="Section break" />
+
+<section class="section prose">
+  <p>
+    None of these nine are required to write your first script — see
     <a href="/learn/getting-started/">How to Start Learning Automatic Testing</a> for that. But each
     one is worth picking up as your testing code grows past a single file on your own machine: a
-    shared editor setup, a git history, a CI pipeline, and an honest connection to what users actually
-    need. Each is also a large, well-documented subject in its own right — this page is a map, not
-    the territory.
+    shared editor setup, a git history, a CI pipeline, an honest connection to what users actually
+    need, and — once a whole team depends on your tests — the shared vocabulary for talking about
+    where testing infrastructure, process, and quality actually live. Each is also a large,
+    well-documented subject in its own right — this page is a map, not the territory.
   </p>
 
   <p style="margin-top: 2rem;">
