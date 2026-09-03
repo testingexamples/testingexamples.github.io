@@ -39,7 +39,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Writing the code"
     heading="Code editors — e.g. Visual Studio Code"
     level={2}
   />
@@ -74,7 +73,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Tracking changes"
     heading="Version control — git and GitHub"
     level={2}
   />
@@ -113,7 +111,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Running the tests"
     heading="Continuous integration / continuous delivery — CI/CD"
     level={2}
   />
@@ -154,7 +151,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Testing the right thing"
     heading="Agile and working with users — discovery"
     level={2}
   />

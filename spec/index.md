@@ -184,6 +184,25 @@ contract; they can change freely.
     map, searching for a place) implemented across the same three tools and
     three languages.
 
+## Content page conventions
+
+Rules for how `+page.svelte` files under `src/routes/` (everything except
+the home page's fixture section, which follows the contract above instead)
+use headings:
+
+- **One `<h2>` headline per section.** `SectionHeading` (from
+  `lily-design-system-svelte-headless`) takes `heading` and an optional
+  `eyebrow`. Do not set `eyebrow` on a page's own section headings — it
+  renders as a second, smaller line of text sitting right above the `<h2>`,
+  which reads as two competing headlines for one section rather than one
+  clear one. **Do not use multiple straggler headlines** (an eyebrow label,
+  a numbered prefix like "1. Language", or any other second heading-like
+  line) where a single, clear `<h2>` says the same thing on its own. This
+  was found and fixed on `/checklist/` and `/learn/related-concepts/` — both
+  previously had an `eyebrow` (`"1. Language"`, `"Writing the code"`, and
+  similar) on every section heading; both were removed down to a plain
+  `<h2>`, once and for all, not just for those two pages.
+
 ## Acceptance criteria
 
 - Every id/selector referenced by the five sibling repos (listed in

@@ -23,7 +23,7 @@
 </div>
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Step 1" heading="Pick one language you already know a little of" level={2} />
+  <SectionHeading class="section-heading-start" heading="Pick one language you already know a little of" level={2} />
 
   <p>
     Learning browser automation means learning a new tool <em>and</em> a testing mindset at the same
@@ -40,7 +40,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Step 2" heading="Pick one browser automation tool to start" level={2} />
+  <SectionHeading class="section-heading-start" heading="Pick one browser automation tool to start" level={2} />
 
   <p>Start with exactly one of these — you can learn the others later once the core ideas click:</p>
   <ul>
@@ -64,7 +64,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Step 3" heading="Install it and run one script against this site" level={2} />
+  <SectionHeading class="section-heading-start" heading="Install it and run one script against this site" level={2} />
 
   <p>
     Follow your chosen tool's own "getting started" guide to install it, then point your very first
@@ -82,7 +82,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Step 4" heading="Learn the four core concepts" level={2} />
+  <SectionHeading class="section-heading-start" heading="Learn the four core concepts" level={2} />
 
   <ul>
     <li>
@@ -114,7 +114,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Step 5" heading="Practice on real, deliberately-friendly examples" level={2} />
+  <SectionHeading class="section-heading-start" heading="Practice on real, deliberately-friendly examples" level={2} />
 
   <p>
     Once the basics click, read other people's working code line by line. This project's sibling
@@ -156,7 +156,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Step 6" heading="A note on real third-party sites" level={2} />
+  <SectionHeading class="section-heading-start" heading="A note on real third-party sites" level={2} />
 
   <InformationCallout label="Read, don't repeatedly run">
     <p>

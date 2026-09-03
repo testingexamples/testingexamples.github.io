@@ -31,7 +31,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="What this page is"
     heading="The same four interactions, nine implementations"
     level={2}
   />
@@ -105,7 +104,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Tool 1 of 3" heading="Selenium" level={2} />
+  <SectionHeading class="section-heading-start" heading="Selenium" level={2} />
 
   <p>
     Selenium is the longest-established cross-language browser automation
@@ -233,7 +232,7 @@ async fn main() -> anyhow::Result<()> {
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Tool 2 of 3" heading="WebdriverIO" level={2} />
+  <SectionHeading class="section-heading-start" heading="WebdriverIO" level={2} />
 
   <p>
     WebdriverIO itself is a JavaScript/Node.js project only — there is no
@@ -360,7 +359,7 @@ async fn search_google() -> Result<(), fantoccini::error::CmdError> {
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Tool 3 of 3" heading="Playwright" level={2} />
+  <SectionHeading class="section-heading-start" heading="Playwright" level={2} />
 
   <p>
     Playwright has official bindings in JavaScript, Python, .NET, and Java;

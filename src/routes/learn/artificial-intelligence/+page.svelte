@@ -29,7 +29,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Writing tests"
     heading="AI for writing and maintaining tests"
     level={2}
   />
@@ -65,7 +64,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Running tests at scale"
     heading="AI in CI/CD and DevOps"
     level={2}
   />
@@ -105,7 +103,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Deciding what to test"
     heading="AI in agile discovery — turning user ideas into tests"
     level={2}
   />
@@ -137,7 +134,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="The catch" heading="The honest caveat" level={2} />
+  <SectionHeading class="section-heading-start" heading="The honest caveat" level={2} />
 
   <InformationCallout label="Read what a test asserts before you trust it">
     <p>

@@ -23,7 +23,7 @@
 </div>
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Two example pages" heading="Google Search and Google Maps" level={2} />
+  <SectionHeading class="section-heading-start" heading="Google Search and Google Maps" level={2} />
 
   <SummaryList label="Example pages">
     <SummaryListItem term="Google Search">

@@ -32,7 +32,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Read first"
     heading="Two things to know before you start"
     level={2}
   />
@@ -67,7 +66,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Defined once"
     heading="The six interactions"
     level={2}
   />
@@ -114,7 +112,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="Tool 1 of 3" heading="Selenium" level={2} />
+  <SectionHeading class="section-heading-start" heading="Selenium" level={2} />
 
   <p>
     All three languages below use aria-label-based locators throughout, per the lesson above. The
@@ -328,7 +326,6 @@ async fn main() -> anyhow::Result<()> {
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Tool 2 of 3"
     heading="WebdriverIO"
     level={2}
   />
@@ -507,7 +504,6 @@ async fn search_zoom_and_toggle_traffic() -> Result<(), fantoccini::error::CmdEr
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Tool 3 of 3"
     heading="Playwright"
     level={2}
   />

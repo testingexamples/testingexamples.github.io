@@ -24,7 +24,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="The basics"
     heading="Manual testing vs. automatic testing"
     level={2}
   />
@@ -61,7 +60,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Why it matters"
     heading="What automated tests buy you"
     level={2}
   />
@@ -106,7 +104,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Structure"
     heading="The testing pyramid"
     level={2}
   />
@@ -149,7 +146,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Being honest"
     heading="The trade-offs of browser tests"
     level={2}
   />

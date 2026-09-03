@@ -52,7 +52,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Hands-on"
     heading="Practice on this page"
     level={2}
   />

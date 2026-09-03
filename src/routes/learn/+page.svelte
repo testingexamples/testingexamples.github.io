@@ -26,7 +26,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Start here"
     heading="Four articles, and a checklist"
     level={2}
   />

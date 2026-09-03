@@ -43,7 +43,7 @@
 </div>
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="The project" heading="What this site is for" level={2} />
+  <SectionHeading class="section-heading-start" heading="What this site is for" level={2} />
 
   <p>
     This home page is a deliberately plain page of HTML fixtures — elements with
@@ -69,7 +69,6 @@
 <section class="section prose">
   <SectionHeading
     class="section-heading-start"
-    eyebrow="Sibling repos"
     heading="{DEMO_MATRIX_COUNT} demo repos, three tools times up to four languages times up to four targets"
     level={2}
   />
@@ -164,7 +163,7 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" eyebrow="This site" heading="How the site is built" level={2} />
+  <SectionHeading class="section-heading-start" heading="How the site is built" level={2} />
 
   <p>
     This site is a <a href="https://kit.svelte.dev/">SvelteKit</a> project using
