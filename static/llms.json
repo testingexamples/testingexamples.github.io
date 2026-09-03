@@ -1,7 +1,7 @@
 {
   "name": "Testing Examples",
-  "summary": "Free open source HTML fixtures for practicing browser automation, plus eleven sibling demo repos that exercise them.",
-  "description": "The home page is a deliberately plain, stable page of elements with known ids, names, classes, link text, lists, and form inputs, meant to be found by Selenium WebDriver, WebdriverIO, Playwright, and similar tools. Five sibling repositories — generic locator-strategy walkthroughs — drive a browser directly against this site's home page, and its fixture markup (the ids, names, classes, and text under \"Id Examples\" through \"Form Input Examples\") is a contract those five repos depend on exactly. Six further sibling repos drive the same kinds of tools against a real public site, nhs.wales, instead, and do not depend on this site's markup.",
+  "summary": "Free open source HTML fixtures for practicing browser automation, plus 46 sibling demo repos that exercise them.",
+  "description": "The home page is a deliberately plain, stable page of elements with known ids, names, classes, link text, lists, and form inputs, meant to be found by Selenium WebDriver, WebdriverIO, Playwright, and similar tools. Five of the 46 sibling repositories \u2014 generic locator-strategy walkthroughs \u2014 drive a browser directly against this site's home page, and its fixture markup (the ids, names, classes, and text under \"Id Examples\" through \"Form Input Examples\") is a contract those five repos depend on exactly. Six more sibling repos drive the same kinds of tools against a real public site, nhs.wales, instead, and do not depend on this site's markup. The remaining 35 pair the same tools and languages against Google Search or Google Maps, illustratively only, and are never executed against the live sites \u2014 see /about/ for the complete table.",
   "homepage": "https://testingexamples.github.io",
   "repository": "https://github.com/testingexamples/testingexamples.github.io",
   "license": "MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause",
@@ -10,62 +10,170 @@
     {
       "title": "Start here",
       "links": [
-        { "title": "Home", "url": "https://testingexamples.github.io/", "description": "The fixture page itself — ids, names, classes, links, lists, and form inputs." },
-        { "title": "About", "url": "https://testingexamples.github.io/about/", "description": "What this project is, the eleven sibling demo repos, and how the site is built." },
-        { "title": "Learn", "url": "https://testingexamples.github.io/learn/", "description": "Hub page linking to the four Learn articles." },
-        { "title": "Examples", "url": "https://testingexamples.github.io/examples/", "description": "Hub page linking to the two Examples pages." },
-        { "title": "Repository", "url": "https://github.com/testingexamples/testingexamples.github.io", "description": "Source for this site, including spec/index.md, the normative fixture contract." }
+        {
+          "title": "Home",
+          "url": "https://testingexamples.github.io/",
+          "description": "The fixture page itself \u2014 ids, names, classes, links, lists, and form inputs."
+        },
+        {
+          "title": "About",
+          "url": "https://testingexamples.github.io/about/",
+          "description": "What this project is, the full 46-repo demo family, and how the site is built."
+        },
+        {
+          "title": "Learn",
+          "url": "https://testingexamples.github.io/learn/",
+          "description": "Hub page linking to the four Learn articles."
+        },
+        {
+          "title": "Examples",
+          "url": "https://testingexamples.github.io/examples/",
+          "description": "Hub page linking to the two Examples pages."
+        },
+        {
+          "title": "Repository",
+          "url": "https://github.com/testingexamples/testingexamples.github.io",
+          "description": "Source for this site, including spec/index.md, the normative fixture contract."
+        }
       ]
     },
     {
       "title": "Learn",
       "description": "What automated testing is and how to get started with browser automation tools.",
       "links": [
-        { "title": "What Is Automatic Testing?", "url": "https://testingexamples.github.io/learn/what-is-automatic-testing/", "description": "What automated testing is, why it matters, and where browser automation fits in the testing pyramid." },
-        { "title": "How to Start Learning Automatic Testing", "url": "https://testingexamples.github.io/learn/getting-started/", "description": "A step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples." },
-        { "title": "Related Concepts", "url": "https://testingexamples.github.io/learn/related-concepts/", "description": "Friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery." },
-        { "title": "Artificial Intelligence and Testing", "url": "https://testingexamples.github.io/learn/artificial-intelligence/", "description": "How and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three." },
-        { "title": "Checklist", "url": "https://testingexamples.github.io/checklist/", "description": "A short checklist of what's worth learning first — a programming language, a testing tool, and an AI agent helper — each ending with an example prompt to ask an AI assistant." }
+        {
+          "title": "What Is Automatic Testing?",
+          "url": "https://testingexamples.github.io/learn/what-is-automatic-testing/",
+          "description": "What automated testing is, why it matters, and where browser automation fits in the testing pyramid."
+        },
+        {
+          "title": "How to Start Learning Automatic Testing",
+          "url": "https://testingexamples.github.io/learn/getting-started/",
+          "description": "A step-by-step path \u2014 pick a language, pick a tool, run a first script against this site, then practice on real examples."
+        },
+        {
+          "title": "Related Concepts",
+          "url": "https://testingexamples.github.io/learn/related-concepts/",
+          "description": "Friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery."
+        },
+        {
+          "title": "Artificial Intelligence and Testing",
+          "url": "https://testingexamples.github.io/learn/artificial-intelligence/",
+          "description": "How and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three."
+        },
+        {
+          "title": "Checklist",
+          "url": "https://testingexamples.github.io/checklist/",
+          "description": "A short checklist of what's worth learning first \u2014 a programming language, a testing tool, and an AI agent helper \u2014 each ending with an example prompt to ask an AI assistant."
+        }
       ]
     },
     {
       "title": "Examples",
       "description": "The same handful of real-world interactions implemented nine ways: three tools (Selenium, WebdriverIO, Playwright) times three languages (JavaScript, Python, Rust).",
       "links": [
-        { "title": "Google Search examples", "url": "https://testingexamples.github.io/examples/google-search/", "description": "Searching, reading results, and following a link, implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust." },
-        { "title": "Google Maps examples", "url": "https://testingexamples.github.io/examples/google-maps/", "description": "Browsing a map and searching for a place, implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust." }
+        {
+          "title": "Google Search examples",
+          "url": "https://testingexamples.github.io/examples/google-search/",
+          "description": "Searching, reading results, and following a link, implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust."
+        },
+        {
+          "title": "Google Maps examples",
+          "url": "https://testingexamples.github.io/examples/google-maps/",
+          "description": "Browsing a map and searching for a place, implemented across Selenium, WebdriverIO, and Playwright in JavaScript, Python, and Rust."
+        }
       ]
     },
     {
       "title": "Locator-strategy walkthroughs (target this site)",
       "description": "Each drives a browser against this site's home page and depends on its fixture markup exactly.",
       "links": [
-        { "title": "demo-playwright-javascript", "url": "https://github.com/testingexamples/demo-playwright-javascript", "description": "Playwright browser automation walkthrough, written in JavaScript." },
-        { "title": "demo-playwright-python", "url": "https://github.com/testingexamples/demo-playwright-python", "description": "Playwright browser automation walkthrough, written in Python." },
-        { "title": "demo-playwright-typescript", "url": "https://github.com/testingexamples/demo-playwright-typescript", "description": "Playwright browser automation walkthrough, written in TypeScript." },
-        { "title": "demo-selenium-javascript", "url": "https://github.com/joelparkerhenderson/demo-selenium-javascript", "description": "Selenium WebDriver browser automation walkthrough, written in JavaScript." },
-        { "title": "demo-webdriverio-javascript", "url": "https://github.com/joelparkerhenderson/demo-webdriverio-javascript", "description": "WebdriverIO test suite with real assertions, written in JavaScript." }
+        {
+          "title": "demo-playwright-javascript",
+          "url": "https://github.com/testingexamples/demo-playwright-javascript",
+          "description": "Playwright browser automation walkthrough, written in JavaScript."
+        },
+        {
+          "title": "demo-playwright-python",
+          "url": "https://github.com/testingexamples/demo-playwright-python",
+          "description": "Playwright browser automation walkthrough, written in Python."
+        },
+        {
+          "title": "demo-playwright-typescript",
+          "url": "https://github.com/testingexamples/demo-playwright-typescript",
+          "description": "Playwright browser automation walkthrough, written in TypeScript."
+        },
+        {
+          "title": "demo-selenium-javascript",
+          "url": "https://github.com/joelparkerhenderson/demo-selenium-javascript",
+          "description": "Selenium WebDriver browser automation walkthrough, written in JavaScript."
+        },
+        {
+          "title": "demo-webdriverio-javascript",
+          "url": "https://github.com/joelparkerhenderson/demo-webdriverio-javascript",
+          "description": "WebdriverIO test suite with real assertions, written in JavaScript."
+        }
       ]
     },
     {
       "title": "Real-world demos (target nhs.wales)",
       "description": "Each drives a browser against https://www.nhs.wales/ instead of this site, so none depend on this site's fixture markup.",
       "links": [
-        { "title": "demo-playwright-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-playwright-javascript-for-nhs-wales", "description": "Playwright browser automation against nhs.wales, written in JavaScript." },
-        { "title": "demo-playwright-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-playwright-python-for-nhs-wales", "description": "Playwright browser automation against nhs.wales, written in Python." },
-        { "title": "demo-selenium-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-selenium-javascript-for-nhs-wales", "description": "Selenium WebDriver browser automation against nhs.wales, written in JavaScript." },
-        { "title": "demo-selenium-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-selenium-python-for-nhs-wales", "description": "Selenium WebDriver browser automation against nhs.wales, written in Python." },
-        { "title": "demo-webdriverio-javascript-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-webdriverio-javascript-for-nhs-wales", "description": "WebdriverIO browser automation against nhs.wales, written in JavaScript." },
-        { "title": "demo-webdriverio-python-for-nhs-wales", "url": "https://github.com/joelparkerhenderson/demo-webdriverio-python-for-nhs-wales", "description": "WebdriverIO-style browser automation against nhs.wales, written in Python." }
+        {
+          "title": "demo-playwright-javascript-for-nhs-wales",
+          "url": "https://github.com/joelparkerhenderson/demo-playwright-javascript-for-nhs-wales",
+          "description": "Playwright browser automation against nhs.wales, written in JavaScript."
+        },
+        {
+          "title": "demo-playwright-python-for-nhs-wales",
+          "url": "https://github.com/joelparkerhenderson/demo-playwright-python-for-nhs-wales",
+          "description": "Playwright browser automation against nhs.wales, written in Python."
+        },
+        {
+          "title": "demo-selenium-javascript-for-nhs-wales",
+          "url": "https://github.com/joelparkerhenderson/demo-selenium-javascript-for-nhs-wales",
+          "description": "Selenium WebDriver browser automation against nhs.wales, written in JavaScript."
+        },
+        {
+          "title": "demo-selenium-python-for-nhs-wales",
+          "url": "https://github.com/joelparkerhenderson/demo-selenium-python-for-nhs-wales",
+          "description": "Selenium WebDriver browser automation against nhs.wales, written in Python."
+        },
+        {
+          "title": "demo-webdriverio-javascript-for-nhs-wales",
+          "url": "https://github.com/joelparkerhenderson/demo-webdriverio-javascript-for-nhs-wales",
+          "description": "WebdriverIO browser automation against nhs.wales, written in JavaScript."
+        },
+        {
+          "title": "demo-webdriverio-python-for-nhs-wales",
+          "url": "https://github.com/joelparkerhenderson/demo-webdriverio-python-for-nhs-wales",
+          "description": "WebdriverIO-style browser automation against nhs.wales, written in Python."
+        }
       ]
     },
     {
       "title": "Optional",
       "links": [
-        { "title": "spec/index.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/index.md", "description": "The exact fixture contract — every id, name, class, href, and visible text." },
-        { "title": "AGENTS.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/AGENTS.md", "description": "Instructions for AI coding agents working on this repo." },
-        { "title": "AI_STATEMENT.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/AI_STATEMENT.md", "description": "How AI was used to build this site, and what stayed a human responsibility." },
-        { "title": "LICENSE.md", "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/LICENSE.md", "description": "MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause, at your option." }
+        {
+          "title": "spec/index.md",
+          "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/index.md",
+          "description": "The exact fixture contract \u2014 every id, name, class, href, and visible text."
+        },
+        {
+          "title": "AGENTS.md",
+          "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/AGENTS.md",
+          "description": "Instructions for AI coding agents working on this repo."
+        },
+        {
+          "title": "AI_STATEMENT.md",
+          "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/AI_STATEMENT.md",
+          "description": "How AI was used to build this site, and what stayed a human responsibility."
+        },
+        {
+          "title": "LICENSE.md",
+          "url": "https://github.com/testingexamples/testingexamples.github.io/blob/main/LICENSE.md",
+          "description": "MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause, at your option."
+        }
       ]
     }
   ]

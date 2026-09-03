@@ -5,17 +5,22 @@
 > names, classes, link text, lists, and form inputs, meant to be found by
 > Selenium WebDriver, WebdriverIO, Playwright, and similar tools.
 
-Eleven sibling repositories exercise this site or a real-world site with
-those tools. Five of them — the generic locator-strategy walkthroughs — drive
-a browser directly against this site's home page, and its fixture markup
-(the ids, names, classes, and text under "Id Examples" through "Form Input
-Examples") is a contract those five repos depend on exactly. The other six
-drive the same kinds of tools against a real public site, nhs.wales, instead.
+46 sibling repositories pair three browser-automation tools (Selenium,
+WebdriverIO, Playwright) with up to four languages (JavaScript, Python,
+Rust, TypeScript) against up to four targets. Five of them — the generic
+locator-strategy walkthroughs — drive a browser directly against this
+site's home page, and its fixture markup (the ids, names, classes, and
+text under "Id Examples" through "Form Input Examples") is a contract
+those five repos depend on exactly. Six more drive the same kinds of
+tools against a real public site, nhs.wales, instead. The remaining 35
+target Google Search or Google Maps illustratively only — never executed
+against the live sites, since Google's Terms of Service restrict
+automated querying — see /about/ for the complete table.
 
 ## Start here
 
 - [Home](https://testingexamples.github.io/): the fixture page itself — ids, names, classes, links, lists, and form inputs
-- [About](https://testingexamples.github.io/about/): what this project is, the eleven sibling demo repos, and how the site is built
+- [About](https://testingexamples.github.io/about/): what this project is, the full sibling demo repo family, and how the site is built
 - [Learn](https://testingexamples.github.io/learn/): hub page linking to the four Learn articles below
 - [Examples](https://testingexamples.github.io/examples/): hub page linking to the two Examples pages below
 - [Repository](https://github.com/testingexamples/testingexamples.github.io): source for this site, including `spec/index.md`, the normative fixture contract

@@ -92,5 +92,145 @@ export const NHS_WALES_DEMO_REPOS: SiblingRepo[] = [
   }
 ];
 
-/** All eleven sibling demo repos, generic family first, then NHS Wales family. */
+/**
+ * These eleven were this project's original sibling repos, kept as their
+ * own constants because /learn/getting-started/ and
+ * /learn/artificial-intelligence/ each reference this specific, smaller
+ * set for a specific reason (the five fixture-contract-bearing repos; one
+ * concrete NHS Wales worked example) — not because they're the complete
+ * repo family any more. For the complete, current family (46 repos as of
+ * this writing), see DEMO_MATRIX below, which /about/ renders in full.
+ */
 export const SIBLING_DEMO_REPOS: SiblingRepo[] = [...GENERIC_DEMO_REPOS, ...NHS_WALES_DEMO_REPOS];
+
+/**
+ * The complete demo repo family: three browser-automation tools, times up
+ * to four languages each, times up to four targets each (this site's own
+ * fixture page; a real NHS Wales government site; and two illustrative,
+ * deliberately-never-executed repos against Google Search and Google Maps
+ * — see AGENTS.md and each such repo's own AGENTS.md for why). Two cells
+ * are deliberately absent (Selenium TypeScript and WebdriverIO TypeScript
+ * have no NHS Wales variant) rather than padded out to a full 4x4x3 grid.
+ *
+ * `org` varies per repo, not per family: repos already at
+ * github.com/joelparkerhenderson/... before this family grew stayed
+ * there; every repo created new goes under github.com/testingexamples/...
+ * (see AGENTS.md's "Where facts live"-style note, if present, or this
+ * repo's own git history for why the split isn't uniform).
+ */
+export type DemoFamilyEntry = { name: string; org: string };
+export type DemoFamily = {
+  tool: string;
+  language: string;
+  generic?: DemoFamilyEntry;
+  googleSearch?: DemoFamilyEntry;
+  googleMaps?: DemoFamilyEntry;
+  nhsWales?: DemoFamilyEntry;
+};
+
+export function demoRepoUrl(entry: DemoFamilyEntry): string {
+  return `https://github.com/${entry.org}/${entry.name}`;
+}
+
+export const DEMO_MATRIX: DemoFamily[] = [
+  {
+    tool: 'Playwright',
+    language: 'JavaScript',
+    generic: { name: 'demo-playwright-javascript', org: 'joelparkerhenderson' },
+    googleSearch: { name: 'demo-playwright-javascript-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-playwright-javascript-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-playwright-javascript-for-nhs-wales', org: 'joelparkerhenderson' },
+  },
+  {
+    tool: 'Playwright',
+    language: 'Python',
+    generic: { name: 'demo-playwright-python', org: 'joelparkerhenderson' },
+    googleSearch: { name: 'demo-playwright-python-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-playwright-python-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-playwright-python-for-nhs-wales', org: 'joelparkerhenderson' },
+  },
+  {
+    tool: 'Playwright',
+    language: 'Rust',
+    generic: { name: 'demo-playwright-rust', org: 'testingexamples' },
+    googleSearch: { name: 'demo-playwright-rust-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-playwright-rust-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-playwright-rust-for-nhs-wales', org: 'testingexamples' },
+  },
+  {
+    tool: 'Playwright',
+    language: 'TypeScript',
+    generic: { name: 'demo-playwright-typescript', org: 'testingexamples' },
+    googleSearch: { name: 'demo-playwright-typescript-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-playwright-typescript-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-playwright-typescript-for-nhs-wales', org: 'testingexamples' },
+  },
+  {
+    tool: 'Selenium',
+    language: 'JavaScript',
+    generic: { name: 'demo-selenium-javascript', org: 'joelparkerhenderson' },
+    googleSearch: { name: 'demo-selenium-javascript-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-selenium-javascript-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-selenium-javascript-for-nhs-wales', org: 'joelparkerhenderson' },
+  },
+  {
+    tool: 'Selenium',
+    language: 'Python',
+    generic: { name: 'demo-selenium-python', org: 'testingexamples' },
+    googleSearch: { name: 'demo-selenium-python-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-selenium-python-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-selenium-python-for-nhs-wales', org: 'joelparkerhenderson' },
+  },
+  {
+    tool: 'Selenium',
+    language: 'Rust',
+    generic: { name: 'demo-selenium-rust', org: 'testingexamples' },
+    googleSearch: { name: 'demo-selenium-rust-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-selenium-rust-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-selenium-rust-for-nhs-wales', org: 'testingexamples' },
+  },
+  {
+    tool: 'Selenium',
+    language: 'TypeScript',
+    generic: { name: 'demo-selenium-typescript', org: 'testingexamples' },
+    googleSearch: { name: 'demo-selenium-typescript-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-selenium-typescript-for-google-maps', org: 'testingexamples' },
+  },
+  {
+    tool: 'WebdriverIO',
+    language: 'JavaScript',
+    generic: { name: 'demo-webdriverio-javascript', org: 'joelparkerhenderson' },
+    googleSearch: { name: 'demo-webdriverio-javascript-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-webdriverio-javascript-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-webdriverio-javascript-for-nhs-wales', org: 'joelparkerhenderson' },
+  },
+  {
+    tool: 'WebdriverIO',
+    language: 'Python',
+    generic: { name: 'demo-webdriverio-python', org: 'testingexamples' },
+    googleSearch: { name: 'demo-webdriverio-python-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-webdriverio-python-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-webdriverio-python-for-nhs-wales', org: 'joelparkerhenderson' },
+  },
+  {
+    tool: 'WebdriverIO',
+    language: 'Rust',
+    generic: { name: 'demo-webdriverio-rust', org: 'testingexamples' },
+    googleSearch: { name: 'demo-webdriverio-rust-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-webdriverio-rust-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-webdriverio-rust-for-nhs-wales', org: 'testingexamples' },
+  },
+  {
+    tool: 'WebdriverIO',
+    language: 'TypeScript',
+    generic: { name: 'demo-webdriverio-typescript', org: 'testingexamples' },
+    googleSearch: { name: 'demo-webdriverio-typescript-for-google-search', org: 'testingexamples' },
+    googleMaps: { name: 'demo-webdriverio-typescript-for-google-maps', org: 'testingexamples' },
+  },
+];
+
+/** Total repos in DEMO_MATRIX — computed, not hand-counted, so it can't drift. */
+export const DEMO_MATRIX_COUNT: number = DEMO_MATRIX.reduce(
+  (n, f) => n + [f.generic, f.googleSearch, f.googleMaps, f.nhsWales].filter(Boolean).length,
+  0
+);

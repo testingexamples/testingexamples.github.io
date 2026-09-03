@@ -356,6 +356,40 @@ p { margin: 0 0 1rem; }
 }
 .repo-list li:last-child { border-bottom: none; }
 
+/* /about/'s full 46-repo matrix — a plain semantic <table>, not a Lily
+ * component, both because Lily ships no table component in this version
+ * of the headless package and because a real <table> is exactly the right
+ * element for genuinely tabular data (screen readers announce row/column
+ * headers for free with `scope`). .table-scroll lets it scroll
+ * horizontally on narrow screens instead of squeezing six columns into a
+ * phone width or breaking the page's own horizontal scroll. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.demo-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.demo-matrix th, .demo-matrix td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  text-align: left;
+  white-space: nowrap;
+}
+.demo-matrix thead th {
+  background: var(--card-bg);
+  font-weight: 600;
+}
+.demo-matrix tbody th[scope="row"] {
+  font-weight: 600;
+  background: var(--card-bg);
+}
+.demo-matrix tbody tr:hover { background: var(--row-hover-bg); }
+.demo-matrix a { font-size: 0.85em; }
+.demo-matrix code { font-size: 0.85em; }
+
 .site-footer {
   background: var(--card-bg);
   border-top: 1px solid var(--border-color);
