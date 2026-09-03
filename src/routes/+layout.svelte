@@ -90,7 +90,41 @@
         copyLabel="Copy link"
         copiedLabel="Link copied"
         copyFailedLabel="Could not copy link"
-      />
+      >
+        {#snippet children({ open, url })}
+          <!-- The package's default glyph is the Unicode character ➤
+               (U+27A4), rendered in the page's own font like the other
+               pickers' ◑ and "A". In practice browsers resolve that
+               specific codepoint to a different fallback font than ◑ or
+               plain Latin letters on some platforms (observed on macOS),
+               and that fallback font's glyph metrics don't sit centered
+               the same way — so the *box* the three buttons sit in stays
+               pixel-identical (confirmed via getBoundingClientRect: all
+               three are top:36px/height:36px, byte-for-byte the same
+               computed border/background), but the arrow's ink looks
+               shifted relative to the other two icons. An inline SVG has
+               no font fallback to vary by platform, so it replaces the
+               default glyph here — same visual weight, guaranteed
+               alignment everywhere. `display: block` on the <svg> itself
+               avoids the separate, unrelated few-px gap inline SVGs get
+               from baseline alignment by default. -->
+          <svg
+            class="share-picker-icon"
+            viewBox="0 0 16 16"
+            width="1.05rem"
+            height="1.05rem"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            style="display: block;"
+          >
+            <path d="M2.5 8h11M9 3.5 13.5 8 9 12.5" />
+          </svg>
+        {/snippet}
+      </SharePicker>
     </div>
   </div>
 </header>
