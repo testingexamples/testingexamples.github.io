@@ -513,7 +513,7 @@
   <ul>
     <li>
       <strong>Novice:</strong>
-      "What does 'Six Sigma' actually mean, in plain terms, and why would that idea apply to
+      "What does 'Lean Six Sigma' actually mean, in plain terms, and why would that idea apply to
       software testing at all?"
     </li>
     <li>
