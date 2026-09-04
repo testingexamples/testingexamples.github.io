@@ -39,6 +39,7 @@
     <li><a href="/examples/google-search/">Google Search Examples</a></li>
     <li><a href="/examples/google-maps/">Google Maps Examples</a></li>
     <li><a href="/given-when-then/">Given-When-Then Examples</a></li>
+    <li><a href="/app/">Demo App</a> — sign in, nav icons, search, and tabs to practice on</li>
   </ul>
 
   <h3>More</h3>

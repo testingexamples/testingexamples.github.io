@@ -188,6 +188,13 @@ contract; they can change freely.
   first as a Given-When-Then (Gherkin/BDD) sentence, then as the
   equivalent Selenium and Playwright code in JavaScript and Python.
   Linked from the home page's Examples list.
+- `/app/` — a small interactive demo application (a Lily Design System
+  Grail layout: simulated sign-in, a post-sign-in nav bar with a search
+  box, and a three-tab panel), built as another stable target to practice
+  browser automation on — this time a realistic app shell with client-side
+  state, rather than a static fixture page. `tests/app.spec.ts` exercises
+  its full behaviour (sign-in success/failure, each nav icon, the search
+  box, each tab). Linked from the home page's Examples list.
 
 ## Content page conventions
 
