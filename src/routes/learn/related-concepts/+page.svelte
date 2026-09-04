@@ -292,6 +292,15 @@
     very long way.
   </p>
 
+  <ul>
+    <li><code>ls</code> = list files and directories</li>
+    <li><code>cd</code> = change directory</li>
+    <li><code>mv</code> = move a file or directory</li>
+    <li><code>more</code> = view a file's text, one page at a time</li>
+    <li><code>nano</code> = edit a file's text, with simple commands</li>
+    <li><code>claude</code> = AI agent</li>
+  </ul>
+
   <p>
     Here's why that belongs on a testing page: <code>grep</code> and <code>sed</code> are how you
     find one specific failure in thousands of lines of test output or a log file, instead of
