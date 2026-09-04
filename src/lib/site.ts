@@ -28,12 +28,12 @@ export type SiblingRepo = {
 export const GENERIC_DEMO_REPOS: SiblingRepo[] = [
   {
     name: 'demo-playwright-javascript',
-    url: 'https://github.com/testingexamples/demo-playwright-javascript',
+    url: 'https://github.com/joelparkerhenderson/demo-playwright-javascript',
     description: 'Playwright browser automation walkthrough, written in JavaScript.'
   },
   {
     name: 'demo-playwright-python',
-    url: 'https://github.com/testingexamples/demo-playwright-python',
+    url: 'https://github.com/joelparkerhenderson/demo-playwright-python',
     description: 'Playwright browser automation walkthrough, written in Python.'
   },
   {
@@ -51,6 +51,39 @@ export const GENERIC_DEMO_REPOS: SiblingRepo[] = [
     url: 'https://github.com/joelparkerhenderson/demo-webdriverio-javascript',
     description:
       'WebdriverIO test suite with real Mocha assertions (not just a console.log walkthrough), written in JavaScript.'
+  }
+];
+
+/**
+ * A deliberately minimal four-repo subset — two tools (Playwright,
+ * Selenium) times two languages (JavaScript, Python), no WebdriverIO and
+ * no TypeScript — used only by `/learn/getting-started/` as the simplest
+ * possible "practice on real examples" starting point for a beginner.
+ * `GENERIC_DEMO_REPOS` above remains the authoritative five-repo
+ * fixture-contract list (see AGENTS.md and spec/index.md) and is what
+ * `/about/` still shows in full; this narrower list is just a friendlier
+ * first stop, not a replacement for that contract.
+ */
+export const GETTING_STARTED_DEMO_REPOS: SiblingRepo[] = [
+  {
+    name: 'demo-playwright-javascript',
+    url: 'https://github.com/joelparkerhenderson/demo-playwright-javascript',
+    description: 'Demonstration of Playwright automation and JavaScript language.'
+  },
+  {
+    name: 'demo-playwright-python',
+    url: 'https://github.com/joelparkerhenderson/demo-playwright-python',
+    description: 'Demonstration of Playwright automation and Python language.'
+  },
+  {
+    name: 'demo-selenium-javascript',
+    url: 'https://github.com/joelparkerhenderson/demo-selenium-javascript',
+    description: 'Demonstration of Selenium automation and JavaScript language.'
+  },
+  {
+    name: 'demo-selenium-python',
+    url: 'https://github.com/testingexamples/demo-selenium-python',
+    description: 'Demonstration of Selenium automation and Python language.'
   }
 ];
 

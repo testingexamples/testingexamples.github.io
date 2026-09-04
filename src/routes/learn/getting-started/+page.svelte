@@ -1,6 +1,6 @@
 <script lang="ts">
   import { SectionHeading, Separator, InformationCallout, CallToAction } from 'lily-design-system-svelte-headless';
-  import { GENERIC_DEMO_REPOS, NHS_WALES_DEMO_REPOS } from '$lib/site';
+  import { GETTING_STARTED_DEMO_REPOS } from '$lib/site';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
@@ -212,20 +212,7 @@
 
   <h3>Locator-strategy walkthroughs (target this site)</h3>
   <ul class="repo-list">
-    {#each GENERIC_DEMO_REPOS as repo (repo.url)}
-      <li>
-        <a href={repo.url}><code>{repo.name}</code></a> — {repo.description}
-      </li>
-    {/each}
-  </ul>
-
-  <h3>Real-world demos with real assertions (target nhs.wales)</h3>
-  <p>
-    These show the same patterns applied against a real government website — nhs.wales — with real
-    pass/fail assertions rather than a walkthrough that only logs what it found.
-  </p>
-  <ul class="repo-list">
-    {#each NHS_WALES_DEMO_REPOS as repo (repo.url)}
+    {#each GETTING_STARTED_DEMO_REPOS as repo (repo.url)}
       <li>
         <a href={repo.url}><code>{repo.name}</code></a> — {repo.description}
       </li>
