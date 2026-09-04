@@ -62,7 +62,7 @@
 
   <h3>The four interactions, defined once</h3>
   <p>
-    Rather than repeat these per example, here is what each of the nine
+    Rather than repeat these per example, here is what each of the six
     scripts below does:
   </p>
   <ol>

@@ -171,11 +171,10 @@ contract; they can change freely.
     — this site itself was built with AI assistance under the maintainer's
     direction.
 - `/checklist/` — a short checklist of what's worth learning first: a
-  programming language (JavaScript, TypeScript, Python, or Rust), an
-  automatic testing tool (Selenium, WebdriverIO, or Playwright), and an AI
-  agent helper (Claude, Gemini, or Copilot), each ending with an example
-  prompt to ask an AI assistant. Linked from the home page and from
-  `/learn/`.
+  programming language (JavaScript or Python), an automatic testing tool
+  (Selenium or Playwright), and an AI agent helper (Gemini or Copilot),
+  each ending with three example prompts (Novice, Intermediate, Advanced)
+  to ask an AI assistant. Linked from the home page and from `/learn/`.
 - `/examples/` — hub page linking to the two example pages below.
   - `/examples/google-search/` — the same handful of interactions
     (searching, reading results, following a link) implemented across
@@ -185,6 +184,10 @@ contract; they can change freely.
   - `/examples/google-maps/` — the same handful of interactions (browsing a
     map, searching for a place) implemented across the same two tools and
     three languages.
+- `/given-when-then/` — one scenario (search Google, see results) written
+  first as a Given-When-Then (Gherkin/BDD) sentence, then as the
+  equivalent Selenium and Playwright code in JavaScript and Python.
+  Linked from the home page's Examples list.
 
 ## Content page conventions
 

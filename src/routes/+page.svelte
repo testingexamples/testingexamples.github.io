@@ -38,6 +38,7 @@
   <ul class="repo-list">
     <li><a href="/examples/google-search/">Google Search Examples</a></li>
     <li><a href="/examples/google-maps/">Google Maps Examples</a></li>
+    <li><a href="/given-when-then/">Given-When-Then Examples</a></li>
   </ul>
 
   <h3>More</h3>
