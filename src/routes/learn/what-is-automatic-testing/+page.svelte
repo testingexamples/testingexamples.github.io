@@ -53,6 +53,25 @@
     both: automation for the checks that must never regress, and human judgement for everything a
     checklist cannot anticipate.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "What's the practical difference between manual testing and automatic testing, and why
+      would a team bother writing a script instead of just clicking through the app by hand?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "My team does everything by manual testing right now — how do we decide which checks are
+      worth automating first?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do experienced teams decide what to deliberately keep as manual, exploratory testing
+      even after most of their checks are automated?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -97,6 +116,25 @@
       one wrote a script for.
     </li>
   </ul>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "In plain terms, what's a 'regression', and why do automated tests catch it better than a
+      person checking by hand?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "My team ships several times a week but still finds bugs in production — what's the actual
+      connection between automated testing and safer, more frequent releases?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do I make the business case, with real numbers, for investing more engineering time in
+      automated tests versus manual QA?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -139,6 +177,25 @@
     through the real, assembled application — front end, back end, and everything wired together —
     rather than one isolated piece of it.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "Can you explain the testing pyramid simply — what's the actual difference between a unit
+      test, an integration test, and an end-to-end test?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "My project has plenty of end-to-end browser tests but almost no unit tests — is that
+      actually a problem, and how would I start fixing the balance?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do I decide, for a specific new feature, which layer of the pyramid a new test belongs
+      in rather than defaulting to another end-to-end test?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -168,6 +225,25 @@
     precise unit and integration tests, and reserve browser automation for the handful of flows
     where only a real browser, doing what a real user does, will tell you the truth.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "Why are browser tests slower and more fragile than other kinds of automated tests, in
+      plain terms?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "My browser test suite has gotten flaky and slow — what are the first things worth checking
+      to make it more reliable?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do I decide which user journeys genuinely deserve a browser test versus being covered
+      lower down the pyramid instead?"
+    </li>
+  </ul>
 
   <p style="margin-top: 2rem;">
     <CallToAction class="button button-primary" href="/learn/getting-started/"

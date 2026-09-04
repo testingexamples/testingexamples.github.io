@@ -70,6 +70,25 @@
       >"Master Visual Studio Code Crash Course for beginners in just 15 min"</a
     > (Learn Web Dev with Norbert, 15 min).
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "I've never used a proper code editor before — what's the real difference between a code
+      editor and something like Notepad, and is Visual Studio Code a reasonable place to start?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "I already use VS Code casually — what extensions or features would actually help me write
+      and debug browser automation tests specifically?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do I set up a shared VS Code configuration — extensions, settings, debugger config —
+      so my whole team gets a consistent test-writing experience, not just me?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -111,6 +130,25 @@
     <a href="https://www.youtube.com/watch?v=r8jQ9hVA2qs">"A brief introduction to Git for beginners"</a>
     for a video introduction.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "I've never used git before — what does 'committing' and 'pushing' actually mean, in plain
+      terms, and why do I need either one just to write a test script?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "I accidentally committed a change I want to undo — what's a safe way to undo it without
+      losing other work?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How should a team structure git branches and pull requests specifically around test code,
+      so a flaky or broken test doesn't block unrelated changes?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -153,6 +191,25 @@
     <a href="https://www.youtube.com/watch?v=JxqfiBHBzl8">"CI/CD Explained in 7 minutes"</a> for a
     video introduction.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "What's the difference between continuous integration and continuous delivery, in plain
+      terms, and why can't I just run my tests myself before I push?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "I want to add my test suite to a GitHub Actions workflow for the first time — what's a
+      minimal first version worth starting with?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "My CI pipeline is slow because the whole test suite reruns on every commit — how do teams
+      typically speed that up without losing confidence?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -197,6 +254,25 @@
       >"Agile Methodology Explained in 5 Minutes"</a
     > for a video introduction.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "What does 'discovery' actually mean in agile, and why would that matter to someone who
+      just writes test scripts?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "How do I turn a vague user story into a concrete, testable scenario before I start
+      automating it?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do experienced teams keep discovery and test-writing connected on an ongoing basis,
+      rather than discovery happening once up front and the tests drifting from it later?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -233,6 +309,25 @@
       >"60 Linux Commands you NEED to know (in 10 minutes)"</a
     > for a fast-paced video introduction.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "I've never used a command line before — what are the handful of Unix commands actually
+      worth learning first for someone getting into testing?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "How would I use grep to find every failing test in a huge CI log without scrolling through
+      it by hand?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do I chain a few Unix commands together into a small, reliable script for a CI step,
+      instead of reaching for a full programming language?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -263,6 +358,25 @@
       >"A Beginner's Guide To Cloud Computing In Under 8 Minutes"</a
     > for a video introduction.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "What does 'the cloud' actually mean in plain terms, and why would a test suite need it
+      instead of just running on my own laptop?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "What's the practical difference between running my tests on my own machine versus a cloud
+      browser farm, for a small team?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do I decide whether a growing test suite is genuinely ready to move to a cloud CI
+      provider, and what should I check before making that switch?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -290,6 +404,25 @@
     <a href="https://www.youtube.com/watch?v=gc7_f3NmKQU">"DevOps Explained in 10 Minutes"</a> for a
     video introduction.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "What does 'DevOps' actually mean, in plain terms, and how is it different from just
+      testing before release?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "What's a canary release, and how would testing fit alongside one instead of being replaced
+      by it?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do mature teams decide which safety net — pre-release testing or a DevOps practice
+      like feature flags — should catch a given kind of failure?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -317,6 +450,25 @@
     <a href="https://www.youtube.com/watch?v=3Nd2e1lD8ng">"The Kanban Guide - Kanban Metrics"</a> for a
     video introduction to the metrics themselves.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "What do 'cycle time' and 'throughput' actually mean, in plain terms, for a team's
+      day-to-day work?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "How would I start tracking cycle time for bug fixes on my own team, without buying new
+      tooling?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do I use flow metrics to make a concrete case that a growing pile of flaky tests is
+      real, measurable technical debt?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />
@@ -346,6 +498,25 @@
     <a href="https://www.youtube.com/watch?v=s2HCrhNVfak">"Lean Six Sigma In 8 Minutes"</a> for a video
     introduction.
   </p>
+
+  <h3>For ideas ask AI</h3>
+  <ul>
+    <li>
+      <strong>Novice:</strong>
+      "What does 'Six Sigma' actually mean, in plain terms, and why would that idea apply to
+      software testing at all?"
+    </li>
+    <li>
+      <strong>Intermediate:</strong>
+      "How would I apply Six Sigma's idea of 'root-causing variation' to one specific flaky test,
+      instead of just re-running it until it passes?"
+    </li>
+    <li>
+      <strong>Advanced:</strong>
+      "How do I use Lean's 'eliminate waste' idea to identify redundant tests in a large, slow
+      test suite?"
+    </li>
+  </ul>
 </section>
 
 <Separator label="Section break" />

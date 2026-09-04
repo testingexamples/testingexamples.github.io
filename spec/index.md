@@ -153,10 +153,10 @@ contract; they can change freely.
     matters, and where browser automation fits in the testing pyramid
     alongside unit and integration tests.
   - `/learn/getting-started/` — a step-by-step path for learning browser
-    automation: pick a language, pick a tool (Playwright, Selenium, or
-    WebdriverIO), run a first script against this site's own home page,
-    learn the four core concepts (locating, acting, waiting, asserting),
-    then practice on the sibling demo repos and this site's own
+    automation: pick a language (JavaScript or Python), pick a tool
+    (Playwright or Selenium), run a first script against this site's own
+    home page, learn the four core concepts (locating, acting, waiting,
+    asserting), then practice on the sibling demo repos and this site's own
     `/examples/` pages.
   - `/learn/related-concepts/` — code editors, version control (git and
     GitHub), CI/CD, and agile discovery: the everyday tools and practices
