@@ -285,11 +285,9 @@
   />
 
   <p>
-    <strong>Unix commands</strong> — <code>ls</code>, <code>cd</code>, <code>cat</code>,
-    <code>grep</code>, <code>curl</code>, <code>chmod</code>, and a few dozen others — are the
-    toolkit almost every dev environment, CI runner, and Docker container speaks natively, no GUI
-    required. You don't need to master all of them; a working knowledge of a couple dozen goes a
-    very long way.
+    <strong>Unix commands</strong> are what almost every dev environment, CI runner, and Docker
+    container speaks natively, no GUI required. You don't need to master all of them; a working
+    knowledge of a couple dozen goes a very long way.
   </p>
 
   <ul>
@@ -298,6 +296,9 @@
     <li><code>mv</code> = move a file or directory</li>
     <li><code>more</code> = view a file's text, one page at a time</li>
     <li><code>nano</code> = edit a file's text, with simple commands</li>
+    <li><code>grep</code> = find text in files</li>
+    <li><code>chmod</code> = change mode of file permissions</li>
+    <li><code>curl</code> = call a URL such as an http web address</li>
     <li><code>claude</code> = AI agent</li>
   </ul>
 
