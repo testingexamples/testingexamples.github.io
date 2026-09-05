@@ -5,14 +5,15 @@
 > names, classes, link text, lists, and form inputs, meant to be found by
 > Selenium WebDriver, WebdriverIO, Playwright, and similar tools.
 
-46 sibling repositories pair three browser-automation tools (Selenium,
+47 sibling repositories pair three browser-automation tools (Selenium,
 WebdriverIO, Playwright) with up to four languages (JavaScript, Python,
-Rust, TypeScript) against up to four targets. Five of them — the generic
-locator-strategy walkthroughs — drive a browser directly against this
-site's home page, and its fixture markup (the ids, names, classes, and
-text under "Id Examples" through "Form Input Examples") is a contract
-those five repos depend on exactly. Six more drive the same kinds of
-tools against a real public site, nhs.wales, instead. The remaining 35
+Rust, TypeScript) against up to four targets. Of the 47, 12 are
+generic-target locator-strategy walkthroughs that drive a browser
+directly against this site's home page; five of those twelve
+additionally have this site's fixture markup (the ids, names, classes,
+and text under "Id Examples" through "Form Input Examples") as a
+contract they depend on exactly. Eleven more drive the same kinds of
+tools against a real public site, nhs.wales, instead. The remaining 24
 target Google Search or Google Maps illustratively only — never executed
 against the live sites, since Google's Terms of Service restrict
 automated querying — see /about/ for the complete table.

@@ -1,7 +1,7 @@
 {
   "name": "Testing Examples",
-  "summary": "Free open source HTML fixtures for practicing browser automation, plus 46 sibling demo repos that exercise them.",
-  "description": "The home page is a deliberately plain, stable page of elements with known ids, names, classes, link text, lists, and form inputs, meant to be found by Selenium WebDriver, WebdriverIO, Playwright, and similar tools. Five of the 46 sibling repositories \u2014 generic locator-strategy walkthroughs \u2014 drive a browser directly against this site's home page, and its fixture markup (the ids, names, classes, and text under \"Id Examples\" through \"Form Input Examples\") is a contract those five repos depend on exactly. Six more sibling repos drive the same kinds of tools against a real public site, nhs.wales, instead, and do not depend on this site's markup. The remaining 35 pair the same tools and languages against Google Search or Google Maps, illustratively only, and are never executed against the live sites \u2014 see /about/ for the complete table.",
+  "summary": "Free open source HTML fixtures for practicing browser automation, plus 47 sibling demo repos that exercise them.",
+  "description": "The home page is a deliberately plain, stable page of elements with known ids, names, classes, link text, lists, and form inputs, meant to be found by Selenium WebDriver, WebdriverIO, Playwright, and similar tools. Of the 47 sibling repositories, 12 are generic-target locator-strategy walkthroughs that drive a browser directly against this site's home page; five of those twelve additionally have this site's fixture markup (the ids, names, classes, and text under \"Id Examples\" through \"Form Input Examples\") as a contract they depend on exactly. Eleven more sibling repos drive the same kinds of tools against a real public site, nhs.wales, instead, and do not depend on this site's markup. The remaining 24 pair the same tools and languages against Google Search or Google Maps, illustratively only, and are never executed against the live sites \u2014 see /about/ for the complete table.",
   "homepage": "https://testingexamples.github.io",
   "repository": "https://github.com/testingexamples/testingexamples.github.io",
   "license": "MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause",
@@ -18,7 +18,7 @@
         {
           "title": "About",
           "url": "https://testingexamples.github.io/about/",
-          "description": "What this project is, the full 46-repo demo family, and how the site is built."
+          "description": "What this project is, the full 47-repo demo family, and how the site is built."
         },
         {
           "title": "Learn",

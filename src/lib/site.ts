@@ -131,7 +131,7 @@ export const NHS_WALES_DEMO_REPOS: SiblingRepo[] = [
  * /learn/artificial-intelligence/ each reference this specific, smaller
  * set for a specific reason (the five fixture-contract-bearing repos; one
  * concrete NHS Wales worked example) — not because they're the complete
- * repo family any more. For the complete, current family (46 repos as of
+ * repo family any more. For the complete, current family (47 repos as of
  * this writing), see DEMO_MATRIX below, which /about/ renders in full.
  */
 export const SIBLING_DEMO_REPOS: SiblingRepo[] = [...GENERIC_DEMO_REPOS, ...NHS_WALES_DEMO_REPOS];
@@ -141,9 +141,11 @@ export const SIBLING_DEMO_REPOS: SiblingRepo[] = [...GENERIC_DEMO_REPOS, ...NHS_
  * to four languages each, times up to four targets each (this site's own
  * fixture page; a real NHS Wales government site; and two illustrative,
  * deliberately-never-executed repos against Google Search and Google Maps
- * — see AGENTS.md and each such repo's own AGENTS.md for why). Two cells
- * are deliberately absent (Selenium TypeScript and WebdriverIO TypeScript
- * have no NHS Wales variant) rather than padded out to a full 4x4x3 grid.
+ * — see AGENTS.md and each such repo's own AGENTS.md for why). One cell is
+ * deliberately absent (WebdriverIO TypeScript has no NHS Wales variant)
+ * rather than padded out to a full 4x4x3 grid. Selenium TypeScript's own
+ * NHS Wales variant, demo-selenium-typescript-for-nhs-wales, was added on
+ * 2026-09-05, closing what was previously the only other gap.
  *
  * `org` varies per repo, not per family: repos already at
  * github.com/joelparkerhenderson/... before this family grew stayed
@@ -228,6 +230,7 @@ export const DEMO_MATRIX: DemoFamily[] = [
     generic: { name: 'demo-selenium-typescript', org: 'testingexamples' },
     googleSearch: { name: 'demo-selenium-typescript-for-google-search', org: 'testingexamples' },
     googleMaps: { name: 'demo-selenium-typescript-for-google-maps', org: 'testingexamples' },
+    nhsWales: { name: 'demo-selenium-typescript-for-nhs-wales', org: 'testingexamples' },
   },
   {
     tool: 'WebdriverIO',
