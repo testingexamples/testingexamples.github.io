@@ -28,14 +28,14 @@
 
   <h3>Learn</h3>
   <ul class="repo-list">
-    <li><a href="/learn/what-is-automatic-testing/">What Is Automatic Testing?</a></li>
-    <li><a href="/what-is-the-purpose-of-automatic-testing/">What Is the Purpose of Automatic Testing?</a></li>
-    <li><a href="/what-is-the-testing-pyramid/">What Is the Testing Pyramid?</a></li>
-    <li><a href="/what-is-browser-automation-testing/">What Is Browser Automation Testing?</a></li>
-    <li><a href="/what-is-continuous-integration-testing/">What Is Continuous Integration Testing?</a></li>
-    <li><a href="/learn/getting-started/">How to Start Learning Automatic Testing?</a></li>
-    <li><a href="/learn/artificial-intelligence/">How Does Artificial Intelligence Help Testing?</a></li>
-    <li><a href="/learn/related-concepts/">Related Concepts</a> — editors, git, CI/CD, agile discovery</li>
+    <li><a href="/learn/what-is-automatic-testing/">What is automatic testing?</a></li>
+    <li><a href="/what-is-the-purpose-of-automatic-testing/">What is the purpose of automatic testing?</a></li>
+    <li><a href="/what-is-the-testing-pyramid/">What is the testing pyramid?</a></li>
+    <li><a href="/what-is-browser-automation-testing/">What is browser automation testing?</a></li>
+    <li><a href="/what-is-continuous-integration-testing/">What is continuous integration testing?</a></li>
+    <li><a href="/learn/getting-started/">How to start learning automatic testing?</a></li>
+    <li><a href="/learn/artificial-intelligence/">How does artificial intelligence help testing?</a></li>
+    <li><a href="/learn/related-concepts/">What are related concepts, tools, and tactics for automatic testing?</a></li>
   </ul>
 
   <h3>Examples</h3>
@@ -48,7 +48,6 @@
 
   <h3>More</h3>
   <ul class="repo-list">
-    <li><a href="/start-learning/">Start learning</a> — not sure what to learn first?</li>
     <li><a href="/about/">About</a> — the project and the sibling demo repos</li>
   </ul>
 </section>

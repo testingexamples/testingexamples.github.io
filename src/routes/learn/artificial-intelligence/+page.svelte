@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>How Does Artificial Intelligence Help Testing?</h1>
+  <h1>How does artificial intelligence help testing?</h1>
   <p>
     AI tools have become a real part of how automatic testing, CI/CD, and agile discovery work
     today. This page covers three ways AI shows up in that work, and one honest caveat that
@@ -93,7 +93,7 @@
   </ul>
 
   <p>
-    See <a href="/learn/related-concepts/">Related Concepts</a> for what CI/CD is in the first
+    See <a href="/learn/related-concepts/">What are related concepts, tools, and tactics for automatic testing?</a> for what CI/CD is in the first
     place, if that term is new to you.
   </p>
 </section>
@@ -164,7 +164,7 @@
     <CallToAction
       class="button button-secondary"
       href="/learn/related-concepts/"
-      style="margin-left: 0.75rem;">Related Concepts →</CallToAction
+      style="margin-left: 0.75rem;">Next: what are related concepts, tools, and tactics for automatic testing? →</CallToAction
     >
   </p>
 </section>

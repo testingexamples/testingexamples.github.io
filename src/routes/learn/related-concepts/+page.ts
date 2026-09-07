@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = () => {
-  return { title: 'Related Concepts — Testing Examples' };
+  return { title: 'What are related concepts, tools, and tactics for automatic testing? — Testing Examples' };
 };

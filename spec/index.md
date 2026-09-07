@@ -177,30 +177,25 @@ contract; they can change freely.
     Linked from the home page's Learn list, from `/learn/`, and from
     `/what-is-browser-automation-testing/`'s closing call to action; its own
     call to action continues to `/learn/getting-started/`.
-  - `/learn/getting-started/` — ("How to Start Learning Automatic Testing?")
+  - `/learn/getting-started/` — ("How to start learning automatic testing?")
     a step-by-step path for learning browser automation: pick a language
     (JavaScript or Python), pick a tool (Playwright or Selenium), run a
     first script against this site's own home page, learn the four core
     concepts (locating, acting, waiting, asserting), then practice on the
     sibling demo repos and this site's own `/examples/` pages.
-  - `/learn/artificial-intelligence/` — ("How Does Artificial Intelligence
-    Help Testing?") how and why AI shows up in writing and maintaining
+  - `/learn/artificial-intelligence/` — ("How does artificial intelligence
+    help testing?") how and why AI shows up in writing and maintaining
     tests, in CI/CD and DevOps, and in turning agile discovery into
     concrete test scenarios, plus an explicit caveat about trusting
     AI-written assertions without reading them. Links to `AI_STATEMENT.md`
     (repo root, linked via its GitHub blob URL since only `build/` is
     deployed) as a live example of the disclosure it describes — this site
     itself was built with AI assistance under the maintainer's direction.
-  - `/learn/related-concepts/` — code editors, version control (git and
-    GitHub), CI/CD, and agile discovery: the everyday tools and practices
-    that surround automatic testing, for a reader who just wrote their
-    first script. Listed on the home page and `/learn/` after the eight
-    "what/how" articles above, since it isn't phrased as one of them.
-- `/start-learning/` — a short checklist of what's worth learning first: a
-  programming language (JavaScript or Python), an automatic testing tool
-  (Selenium or Playwright), and an AI agent helper (Gemini or Copilot),
-  each ending with three example prompts (Novice, Intermediate, Advanced)
-  to ask an AI assistant. Linked from the home page and from `/learn/`.
+  - `/learn/related-concepts/` — ("What are related concepts, tools, and
+    tactics for automatic testing?") code editors, version control (git
+    and GitHub), CI/CD, and agile discovery: the everyday tools and
+    practices that surround automatic testing, for a reader who just wrote
+    their first script.
 - `/examples/` — hub page linking to the two example pages below.
   - `/examples/google-search/` — the same handful of interactions
     (searching, reading results, following a link) implemented across
@@ -236,9 +231,9 @@ use headings:
   clear one. **Do not use multiple straggler headlines** (an eyebrow label,
   a numbered prefix like "1. Language", or any other second heading-like
   line) where a single, clear `<h2>` says the same thing on its own. This
-  was found and fixed on `/start-learning/` and `/learn/related-concepts/` — both
-  previously had an `eyebrow` (`"1. Language"`, `"Writing the code"`, and
-  similar) on every section heading; both were removed down to a plain
+  was found and fixed on `/learn/related-concepts/` and a since-removed page
+  — both previously had an `eyebrow` (`"1. Language"`, `"Writing the code"`,
+  and similar) on every section heading; both were removed down to a plain
   `<h2>`, once and for all, not just for those two pages.
 
 ## Acceptance criteria

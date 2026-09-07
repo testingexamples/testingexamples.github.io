@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>What Is the Testing Pyramid?</h1>
+  <h1>What is the testing pyramid?</h1>
   <p>
     Automatic tests come in layers, usually drawn as a pyramid because of how many of each kind a
     healthy project tends to have — many small, fast tests at the bottom, and progressively fewer,

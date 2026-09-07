@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>What Is Automatic Testing?</h1>
+  <h1>What is automatic testing?</h1>
   <p>
     A plain-language introduction to automatic testing, and how it differs from and complements
     manual testing.

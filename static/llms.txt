@@ -28,15 +28,14 @@ automated querying — see /about/ for the complete table.
 
 ## Learn
 
-- [What Is Automatic Testing?](https://testingexamples.github.io/learn/what-is-automatic-testing/): what automatic testing is, and how it differs from and complements manual testing
-- [What Is the Purpose of Automatic Testing?](https://testingexamples.github.io/what-is-the-purpose-of-automatic-testing/): what a team actually gets back for the effort of writing automatic tests — earlier bugs, tireless repetition, and the confidence to release often
-- [What Is the Testing Pyramid?](https://testingexamples.github.io/what-is-the-testing-pyramid/): the three layers of automatic tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top
-- [What Is Browser Automation Testing?](https://testingexamples.github.io/what-is-browser-automation-testing/): what it is, and the trade-offs that come with its realism — slower, more brittle, and harder to diagnose than a unit test
-- [What Is Continuous Integration Testing?](https://testingexamples.github.io/what-is-continuous-integration-testing/): running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after
-- [How to Start Learning Automatic Testing?](https://testingexamples.github.io/learn/getting-started/): a step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples
-- [How Does Artificial Intelligence Help Testing?](https://testingexamples.github.io/learn/artificial-intelligence/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
-- [Related Concepts](https://testingexamples.github.io/learn/related-concepts/): friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery
-- [Start learning](https://testingexamples.github.io/start-learning/): a short checklist of what's worth learning first — a programming language, a testing tool, and an AI agent helper — each ending with an example prompt to ask an AI assistant
+- [What is automatic testing?](https://testingexamples.github.io/learn/what-is-automatic-testing/): what automatic testing is, and how it differs from and complements manual testing
+- [What is the purpose of automatic testing?](https://testingexamples.github.io/what-is-the-purpose-of-automatic-testing/): what a team actually gets back for the effort of writing automatic tests — earlier bugs, tireless repetition, and the confidence to release often
+- [What is the testing pyramid?](https://testingexamples.github.io/what-is-the-testing-pyramid/): the three layers of automatic tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top
+- [What is browser automation testing?](https://testingexamples.github.io/what-is-browser-automation-testing/): what it is, and the trade-offs that come with its realism — slower, more brittle, and harder to diagnose than a unit test
+- [What is continuous integration testing?](https://testingexamples.github.io/what-is-continuous-integration-testing/): running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after
+- [How to start learning automatic testing?](https://testingexamples.github.io/learn/getting-started/): a step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples
+- [How does artificial intelligence help testing?](https://testingexamples.github.io/learn/artificial-intelligence/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
+- [What are related concepts, tools, and tactics for automatic testing?](https://testingexamples.github.io/learn/related-concepts/): friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery
 
 ## Examples
 

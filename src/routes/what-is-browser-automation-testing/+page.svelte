@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>What Is Browser Automation Testing?</h1>
+  <h1>What is browser automation testing?</h1>
   <p>
     Browser automation testing (also called end-to-end or UI testing) drives a real browser
     exactly the way a real user would — opening pages, clicking buttons, filling in forms — using

@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>What Is the Purpose of Automatic Testing?</h1>
+  <h1>What is the purpose of automatic testing?</h1>
   <p>
     Writing automatic tests takes real effort up front. Here's what a team actually gets back for
     that effort.
