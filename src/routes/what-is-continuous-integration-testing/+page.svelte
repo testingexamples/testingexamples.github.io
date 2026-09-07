@@ -9,14 +9,14 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="What continuous integration (CI) testing is: running your automated test suite automatically on every change, so broken code is caught before it merges rather than after."
+    content="What continuous integration (CI) testing is: running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after."
   />
 </svelte:head>
 
 <div class="page-header">
   <h1>What Is Continuous Integration Testing?</h1>
   <p>
-    Continuous integration (CI) testing is running your automated test suite automatically every
+    Continuous integration (CI) testing is running your automatic test suite automatically every
     time someone proposes a change, instead of relying on a person to remember to run it by hand.
   </p>
 </div>
@@ -32,7 +32,7 @@
   </p>
 
   <p>
-    This is what makes automated tests actually pay off. A test suite that only runs on one
+    This is what makes automatic tests actually pay off. A test suite that only runs on one
     developer's laptop, when they remember to run it, catches far less than a suite that runs on
     every single change, automatically, and blocks the merge if it fails. CI is the mechanism that
     turns "we have tests" into "broken code cannot reach the main branch" — and it's usually the

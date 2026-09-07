@@ -13,14 +13,14 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="A grounded, practical look at where AI shows up in automated testing today: writing and maintaining tests, CI/CD, and agile discovery — plus the honest caveat that applies to all three."
+    content="A grounded, practical look at where AI shows up in automatic testing today: writing and maintaining tests, CI/CD, and agile discovery — plus the honest caveat that applies to all three."
   />
 </svelte:head>
 
 <div class="page-header">
   <h1>How Does Artificial Intelligence Help Testing?</h1>
   <p>
-    AI tools have become a real part of how automated testing, CI/CD, and agile discovery work
+    AI tools have become a real part of how automatic testing, CI/CD, and agile discovery work
     today. This page covers three ways AI shows up in that work, and one honest caveat that
     applies to all three.
   </p>

@@ -15,8 +15,8 @@
 <div class="page-header">
   <h1>Learn</h1>
   <p>
-    Seven short articles: what automatic testing is and why it matters, the testing pyramid and
-    where browser automation fits in it, the trade-offs of browser tests, how continuous
+    Eight short articles: what automatic testing is and why it's worth doing, the testing pyramid
+    and where browser automation fits in it, the trade-offs of browser tests, how continuous
     integration runs those tests automatically, a practical path for getting hands-on with browser
     automation yourself, the everyday tools and practices that surround it, and where AI fits into
     all of that today — plus a checklist if you're not sure what to learn first.
@@ -25,12 +25,17 @@
 
 <section class="section prose">
   <p>
-    <a href="/learn/what-is-automatic-testing/">What Is Automatic Testing?</a> — what automated
-    testing is, why it matters, and what it buys a team over manual testing alone.
+    <a href="/learn/what-is-automatic-testing/">What Is Automatic Testing?</a> — what automatic
+    testing is, and how it differs from and complements manual testing.
+  </p>
+  <p>
+    <a href="/what-is-the-purpose-of-automatic-testing/">What Is the Purpose of Automatic Testing?</a>
+    — what a team actually gets back for the effort of writing automatic tests: earlier bugs,
+    tireless repetition, and the confidence to release often.
   </p>
   <p>
     <a href="/what-is-the-testing-pyramid/">What Is the Testing Pyramid?</a> — the three layers of
-    automated tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests
+    automatic tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests
     at the top.
   </p>
   <p>
@@ -40,7 +45,7 @@
   </p>
   <p>
     <a href="/what-is-continuous-integration-testing/">What Is Continuous Integration Testing?</a>
-    — running your automated test suite automatically on every change, so broken code is caught
+    — running your automatic test suite automatically on every change, so broken code is caught
     before it merges rather than after.
   </p>
   <p>

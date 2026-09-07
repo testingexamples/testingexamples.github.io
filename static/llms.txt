@@ -22,16 +22,17 @@ automated querying — see /about/ for the complete table.
 
 - [Home](https://testingexamples.github.io/): the fixture page itself — ids, names, classes, links, lists, and form inputs
 - [About](https://testingexamples.github.io/about/): what this project is, the full sibling demo repo family, and how the site is built
-- [Learn](https://testingexamples.github.io/learn/): hub page linking to the seven Learn articles below
+- [Learn](https://testingexamples.github.io/learn/): hub page linking to the eight Learn articles below
 - [Examples](https://testingexamples.github.io/examples/): hub page linking to the two Examples pages below
 - [Repository](https://github.com/testingexamples/testingexamples.github.io): source for this site, including `spec/index.md`, the normative fixture contract
 
 ## Learn
 
-- [What Is Automatic Testing?](https://testingexamples.github.io/learn/what-is-automatic-testing/): what automated testing is, why it matters, and what it buys a team over manual testing alone
-- [What Is the Testing Pyramid?](https://testingexamples.github.io/what-is-the-testing-pyramid/): the three layers of automated tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top
+- [What Is Automatic Testing?](https://testingexamples.github.io/learn/what-is-automatic-testing/): what automatic testing is, and how it differs from and complements manual testing
+- [What Is the Purpose of Automatic Testing?](https://testingexamples.github.io/what-is-the-purpose-of-automatic-testing/): what a team actually gets back for the effort of writing automatic tests — earlier bugs, tireless repetition, and the confidence to release often
+- [What Is the Testing Pyramid?](https://testingexamples.github.io/what-is-the-testing-pyramid/): the three layers of automatic tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top
 - [What Is Browser Automation Testing?](https://testingexamples.github.io/what-is-browser-automation-testing/): what it is, and the trade-offs that come with its realism — slower, more brittle, and harder to diagnose than a unit test
-- [What Is Continuous Integration Testing?](https://testingexamples.github.io/what-is-continuous-integration-testing/): running your automated test suite automatically on every change, so broken code is caught before it merges rather than after
+- [What Is Continuous Integration Testing?](https://testingexamples.github.io/what-is-continuous-integration-testing/): running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after
 - [How to Start Learning Automatic Testing?](https://testingexamples.github.io/learn/getting-started/): a step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples
 - [How Does Artificial Intelligence Help Testing?](https://testingexamples.github.io/learn/artificial-intelligence/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
 - [Related Concepts](https://testingexamples.github.io/learn/related-concepts/): friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery

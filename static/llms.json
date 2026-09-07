@@ -23,7 +23,7 @@
         {
           "title": "Learn",
           "url": "https://testingexamples.github.io/learn/",
-          "description": "Hub page linking to the six Learn articles."
+          "description": "Hub page linking to the eight Learn articles."
         },
         {
           "title": "Examples",
@@ -39,17 +39,22 @@
     },
     {
       "title": "Learn",
-      "description": "What automated testing is and how to get started with browser automation tools.",
+      "description": "What automatic testing is and how to get started with browser automation tools.",
       "links": [
         {
           "title": "What Is Automatic Testing?",
           "url": "https://testingexamples.github.io/learn/what-is-automatic-testing/",
-          "description": "What automated testing is, why it matters, and what it buys a team over manual testing alone."
+          "description": "What automatic testing is, and how it differs from and complements manual testing."
+        },
+        {
+          "title": "What Is the Purpose of Automatic Testing?",
+          "url": "https://testingexamples.github.io/what-is-the-purpose-of-automatic-testing/",
+          "description": "What a team actually gets back for the effort of writing automatic tests \u2014 earlier bugs, tireless repetition, and the confidence to release often."
         },
         {
           "title": "What Is the Testing Pyramid?",
           "url": "https://testingexamples.github.io/what-is-the-testing-pyramid/",
-          "description": "The three layers of automated tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top."
+          "description": "The three layers of automatic tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top."
         },
         {
           "title": "What Is Browser Automation Testing?",
@@ -59,7 +64,7 @@
         {
           "title": "What Is Continuous Integration Testing?",
           "url": "https://testingexamples.github.io/what-is-continuous-integration-testing/",
-          "description": "Running your automated test suite automatically on every change, so broken code is caught before it merges rather than after."
+          "description": "Running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after."
         },
         {
           "title": "How to Start Learning Automatic Testing?",

@@ -29,6 +29,7 @@
   <h3>Learn</h3>
   <ul class="repo-list">
     <li><a href="/learn/what-is-automatic-testing/">What Is Automatic Testing?</a></li>
+    <li><a href="/what-is-the-purpose-of-automatic-testing/">What Is the Purpose of Automatic Testing?</a></li>
     <li><a href="/what-is-the-testing-pyramid/">What Is the Testing Pyramid?</a></li>
     <li><a href="/what-is-browser-automation-testing/">What Is Browser Automation Testing?</a></li>
     <li><a href="/what-is-continuous-integration-testing/">What Is Continuous Integration Testing?</a></li>

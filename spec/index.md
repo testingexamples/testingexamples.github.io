@@ -4,7 +4,7 @@
 
 This site's home page (`/`) is a stable page of HTML fixtures for practicing
 browser automation. Its "Id Examples" through "Form Input Examples" sections
-are a contract: five sibling repos' automated tests and walkthroughs locate
+are a contract: five sibling repos' automatic tests and walkthroughs locate
 elements on this exact page by the ids, names, classes, link text, and XPath
 expressions documented below. This document is the single source of truth
 for that contract.
@@ -148,10 +148,19 @@ Besides the home page's fixture contract (above) and the `/about/` page, the
 site has two further sections. Neither depends on or affects the fixture
 contract; they can change freely.
 
-- `/learn/` — hub page linking to the seven articles below, in this order.
-  - `/learn/what-is-automatic-testing/` — what automated testing is, why it
-    matters, and what it buys a team over manual testing alone.
-  - `/what-is-the-testing-pyramid/` — the three layers of automated tests
+- `/learn/` — hub page linking to the eight articles below, in this order.
+  - `/learn/what-is-automatic-testing/` — what automatic testing is, and how
+    it differs from and complements manual testing.
+  - `/what-is-the-purpose-of-automatic-testing/` — what a team actually gets
+    back for the effort of writing automatic tests (catching regressions
+    early, tireless repetition, confident frequent releases, cheaper bugs,
+    freeing humans for what tests can't do), extracted from
+    `/learn/what-is-automatic-testing/`'s "What automated tests buy you"
+    section into its own page. Linked from the home page's Learn list and
+    from `/learn/`; `/learn/what-is-automatic-testing/`'s closing call to
+    action continues here, and this page's own call to action continues to
+    `/what-is-the-testing-pyramid/`.
+  - `/what-is-the-testing-pyramid/` — the three layers of automatic tests
     (unit, integration, end-to-end/browser), extracted from
     `/learn/what-is-automatic-testing/` into its own page. Linked from the
     home page's Learn list and from `/learn/`.
@@ -163,7 +172,7 @@ contract; they can change freely.
     `/what-is-the-testing-pyramid/`'s closing call to action; its own call
     to action continues to `/what-is-continuous-integration-testing/`.
   - `/what-is-continuous-integration-testing/` — what CI is (running the
-    automated test suite on every commit/pull request in a clean
+    automatic test suite on every commit/pull request in a clean
     environment) and why it's what makes a test suite actually pay off.
     Linked from the home page's Learn list, from `/learn/`, and from
     `/what-is-browser-automation-testing/`'s closing call to action; its own
@@ -184,8 +193,8 @@ contract; they can change freely.
     itself was built with AI assistance under the maintainer's direction.
   - `/learn/related-concepts/` — code editors, version control (git and
     GitHub), CI/CD, and agile discovery: the everyday tools and practices
-    that surround automated testing, for a reader who just wrote their
-    first script. Listed on the home page and `/learn/` after the seven
+    that surround automatic testing, for a reader who just wrote their
+    first script. Listed on the home page and `/learn/` after the eight
     "what/how" articles above, since it isn't phrased as one of them.
 - `/start-learning/` — a short checklist of what's worth learning first: a
   programming language (JavaScript or Python), an automatic testing tool

@@ -24,7 +24,7 @@
 
 <section class="section prose">
   <p>
-    Automated testing doesn't happen in isolation. Around every reliable test suite sits a small
+    Automatic testing doesn't happen in isolation. Around every reliable test suite sits a small
     cluster of ordinary software-development habits: a decent editor to write the code in, a way to
     track how that code changes over time, a way to make sure the tests actually get run, and — easy
     to forget, but just as real — a way of checking that the tests are protecting something a real

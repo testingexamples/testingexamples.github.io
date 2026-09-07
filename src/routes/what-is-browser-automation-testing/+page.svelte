@@ -47,7 +47,7 @@
   <ul>
     <li>
       <strong>Novice:</strong>
-      "Why are browser tests slower and more fragile than other kinds of automated tests, in
+      "Why are browser tests slower and more fragile than other kinds of automatic tests, in
       plain terms?"
     </li>
     <li>

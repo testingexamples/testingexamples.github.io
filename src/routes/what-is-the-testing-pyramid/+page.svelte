@@ -16,7 +16,7 @@
 <div class="page-header">
   <h1>What Is the Testing Pyramid?</h1>
   <p>
-    Automated tests come in layers, usually drawn as a pyramid because of how many of each kind a
+    Automatic tests come in layers, usually drawn as a pyramid because of how many of each kind a
     healthy project tends to have — many small, fast tests at the bottom, and progressively fewer,
     slower, broader tests toward the top.
   </p>
