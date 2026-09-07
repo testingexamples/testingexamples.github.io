@@ -534,7 +534,7 @@
 <section class="section prose">
   <p>
     None of these nine are required to write your first script — see
-    <a href="/learn/getting-started/">How to Start Learning Automatic Testing</a> for that. But each
+    <a href="/learn/getting-started/">How to Start Learning Automatic Testing?</a> for that. But each
     one is worth picking up as your testing code grows past a single file on your own machine: a
     shared editor setup, a git history, a CI pipeline, an honest connection to what users actually
     need, and — once a whole team depends on your tests — the shared vocabulary for talking about

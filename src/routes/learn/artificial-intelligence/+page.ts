@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = () => {
-  return { title: 'Artificial Intelligence and Testing — Testing Examples' };
+  return { title: 'How Does Artificial Intelligence Help Testing? — Testing Examples' };
 };

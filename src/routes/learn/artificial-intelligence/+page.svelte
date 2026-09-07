@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>Artificial Intelligence and Testing</h1>
+  <h1>How Does Artificial Intelligence Help Testing?</h1>
   <p>
     AI tools have become a real part of how automated testing, CI/CD, and agile discovery work
     today. This page covers three ways AI shows up in that work, and one honest caveat that

@@ -23,7 +23,7 @@
         {
           "title": "Learn",
           "url": "https://testingexamples.github.io/learn/",
-          "description": "Hub page linking to the four Learn articles."
+          "description": "Hub page linking to the six Learn articles."
         },
         {
           "title": "Examples",
@@ -44,12 +44,32 @@
         {
           "title": "What Is Automatic Testing?",
           "url": "https://testingexamples.github.io/learn/what-is-automatic-testing/",
-          "description": "What automated testing is, why it matters, and where browser automation fits in the testing pyramid."
+          "description": "What automated testing is, why it matters, and what it buys a team over manual testing alone."
         },
         {
-          "title": "How to Start Learning Automatic Testing",
+          "title": "What Is the Testing Pyramid?",
+          "url": "https://testingexamples.github.io/what-is-the-testing-pyramid/",
+          "description": "The three layers of automated tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top."
+        },
+        {
+          "title": "What Is Browser Automation Testing?",
+          "url": "https://testingexamples.github.io/what-is-browser-automation-testing/",
+          "description": "What it is, and the trade-offs that come with its realism \u2014 slower, more brittle, and harder to diagnose than a unit test."
+        },
+        {
+          "title": "What Is Continuous Integration Testing?",
+          "url": "https://testingexamples.github.io/what-is-continuous-integration-testing/",
+          "description": "Running your automated test suite automatically on every change, so broken code is caught before it merges rather than after."
+        },
+        {
+          "title": "How to Start Learning Automatic Testing?",
           "url": "https://testingexamples.github.io/learn/getting-started/",
           "description": "A step-by-step path \u2014 pick a language, pick a tool, run a first script against this site, then practice on real examples."
+        },
+        {
+          "title": "How Does Artificial Intelligence Help Testing?",
+          "url": "https://testingexamples.github.io/learn/artificial-intelligence/",
+          "description": "How and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three."
         },
         {
           "title": "Related Concepts",
@@ -57,13 +77,8 @@
           "description": "Friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery."
         },
         {
-          "title": "Artificial Intelligence and Testing",
-          "url": "https://testingexamples.github.io/learn/artificial-intelligence/",
-          "description": "How and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three."
-        },
-        {
-          "title": "Checklist",
-          "url": "https://testingexamples.github.io/checklist/",
+          "title": "Start learning",
+          "url": "https://testingexamples.github.io/start-learning/",
           "description": "A short checklist of what's worth learning first \u2014 a programming language, a testing tool, and an AI agent helper \u2014 each ending with an example prompt to ask an AI assistant."
         }
       ]

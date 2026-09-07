@@ -29,9 +29,12 @@
   <h3>Learn</h3>
   <ul class="repo-list">
     <li><a href="/learn/what-is-automatic-testing/">What Is Automatic Testing?</a></li>
-    <li><a href="/learn/getting-started/">How to Start Learning Automatic Testing</a></li>
+    <li><a href="/what-is-the-testing-pyramid/">What Is the Testing Pyramid?</a></li>
+    <li><a href="/what-is-browser-automation-testing/">What Is Browser Automation Testing?</a></li>
+    <li><a href="/what-is-continuous-integration-testing/">What Is Continuous Integration Testing?</a></li>
+    <li><a href="/learn/getting-started/">How to Start Learning Automatic Testing?</a></li>
+    <li><a href="/learn/artificial-intelligence/">How Does Artificial Intelligence Help Testing?</a></li>
     <li><a href="/learn/related-concepts/">Related Concepts</a> — editors, git, CI/CD, agile discovery</li>
-    <li><a href="/learn/artificial-intelligence/">Artificial Intelligence and Testing</a></li>
   </ul>
 
   <h3>Examples</h3>
@@ -44,7 +47,7 @@
 
   <h3>More</h3>
   <ul class="repo-list">
-    <li><a href="/checklist/">Checklist</a> — not sure what to learn first?</li>
+    <li><a href="/start-learning/">Start learning</a> — not sure what to learn first?</li>
     <li><a href="/about/">About</a> — the project and the sibling demo repos</li>
   </ul>
 </section>

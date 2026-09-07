@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>Checklist</h1>
+  <h1>Start learning</h1>
   <p>
     Not sure what to learn first? Here are three things worth learning before you go much further
     with browser automation — a testing tool, a programming language, and an AI agent helper —

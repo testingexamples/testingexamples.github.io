@@ -15,7 +15,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>How to Start Learning Automatic Testing</h1>
+  <h1>How to Start Learning Automatic Testing?</h1>
   <p>
     A practical path, not a theory dump. Six steps from "never written a browser test" to reading
     worked examples in two tools and three languages.

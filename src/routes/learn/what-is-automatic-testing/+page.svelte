@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { SectionHeading, Separator, CallToAction } from 'lily-design-system-svelte-headless';
+  import { SectionHeading, Separator } from 'lily-design-system-svelte-headless';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
@@ -9,15 +9,15 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="What automatic (automated) testing is, why it matters, and where browser automation fits in the testing pyramid alongside unit and integration tests."
+    content="What automatic (automated) testing is, why it matters, and what it buys a team over manual testing alone."
   />
 </svelte:head>
 
 <div class="page-header">
   <h1>What Is Automatic Testing?</h1>
   <p>
-    A plain-language introduction to automated testing, why teams rely on it, and where browser
-    automation — the whole subject of this site — fits alongside unit and integration tests.
+    A plain-language introduction to automated testing, why teams rely on it, and what it buys
+    them over manual testing alone.
   </p>
 </div>
 
@@ -135,119 +135,4 @@
       automated tests versus manual QA?"
     </li>
   </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading
-    class="section-heading-start"
-    heading="The testing pyramid"
-    level={2}
-  />
-
-  <p>
-    Automated tests come in layers, usually drawn as a pyramid because of how many of each kind a
-    healthy project tends to have — many small, fast tests at the bottom, and progressively fewer,
-    slower, broader tests toward the top.
-  </p>
-
-  <h3>Unit tests (the base)</h3>
-  <p>
-    A unit test checks one small piece of code — a single function or class — in isolation, with no
-    real database, network, or browser involved. Unit tests are fast (thousands can run in seconds),
-    cheap to write, and pinpoint failures precisely. A healthy project has a lot of these.
-  </p>
-
-  <h3>Integration tests (the middle)</h3>
-  <p>
-    An integration test checks that several pieces work correctly together — a function that talks
-    to a real database, or two internal services calling each other. These catch problems unit
-    tests can't see (the pieces individually work, but not together), at the cost of being slower
-    and a bit more involved to set up.
-  </p>
-
-  <h3>End-to-end / browser (UI) tests (the top)</h3>
-  <p>
-    An end-to-end test drives a real browser exactly the way a real user would: it opens a page,
-    clicks buttons, fills in forms, and checks that the page responds correctly. This is what
-    browser automation tools like Selenium WebDriver, WebdriverIO, and Playwright do — and it's what
-    every example on this site demonstrates. These tests sit at the top of the pyramid: there are
-    fewer of them, but each one gives high confidence, because it exercises a real user journey
-    through the real, assembled application — front end, back end, and everything wired together —
-    rather than one isolated piece of it.
-  </p>
-
-  <h3>For ideas ask AI</h3>
-  <ul>
-    <li>
-      <strong>Novice:</strong>
-      "Can you explain the testing pyramid simply — what's the actual difference between a unit
-      test, an integration test, and an end-to-end test?"
-    </li>
-    <li>
-      <strong>Intermediate:</strong>
-      "My project has plenty of end-to-end browser tests but almost no unit tests — is that
-      actually a problem, and how would I start fixing the balance?"
-    </li>
-    <li>
-      <strong>Advanced:</strong>
-      "How do I decide, for a specific new feature, which layer of the pyramid a new test belongs
-      in rather than defaulting to another end-to-end test?"
-    </li>
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading
-    class="section-heading-start"
-    heading="The trade-offs of browser tests"
-    level={2}
-  />
-
-  <p>
-    Browser tests are the most realistic layer of the pyramid, but that realism has a cost. They are
-    slower than unit tests, sometimes by orders of magnitude, because they involve starting a real
-    browser, loading real pages, and waiting for real rendering and network activity. They are more
-    brittle: a UI test can break simply because a button's label changed or an element moved on the
-    page, even though the underlying feature still works fine. They need real browsers available to
-    run, which adds setup and infrastructure that a unit test never requires. And when a browser test
-    fails, it can be harder to tell exactly why — was it a real bug, a timing issue, or just a
-    cosmetic change to the page? — compared to a unit test's precise, one-function failure.
-  </p>
-
-  <p>
-    The practical answer is not to avoid browser tests, but to use them for what they are uniquely
-    good at: verifying that real, critical user journeys — signing up, searching, checking out —
-    actually work end to end. Push everything else down the pyramid into faster, cheaper, more
-    precise unit and integration tests, and reserve browser automation for the handful of flows
-    where only a real browser, doing what a real user does, will tell you the truth.
-  </p>
-
-  <h3>For ideas ask AI</h3>
-  <ul>
-    <li>
-      <strong>Novice:</strong>
-      "Why are browser tests slower and more fragile than other kinds of automated tests, in
-      plain terms?"
-    </li>
-    <li>
-      <strong>Intermediate:</strong>
-      "My browser test suite has gotten flaky and slow — what are the first things worth checking
-      to make it more reliable?"
-    </li>
-    <li>
-      <strong>Advanced:</strong>
-      "How do I decide which user journeys genuinely deserve a browser test versus being covered
-      lower down the pyramid instead?"
-    </li>
-  </ul>
-
-  <p style="margin-top: 2rem;">
-    <CallToAction class="button button-primary" href="/learn/getting-started/"
-      >Next: how to start learning →</CallToAction
-    >
-  </p>
 </section>
