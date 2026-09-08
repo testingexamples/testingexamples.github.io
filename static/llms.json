@@ -79,7 +79,28 @@
         {
           "title": "What are related concepts for automatic testing?",
           "url": "https://testingexamples.github.io/what-are-related-concepts-for-automatic-testing/",
-          "description": "Friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery."
+          "description": "Friendly introductions to code editors, version control (git and GitHub), and agile discovery."
+        }
+      ]
+    },
+    {
+      "title": "Learn More",
+      "description": "Bonus topics extracted from the related concepts page.",
+      "links": [
+        {
+          "title": "What is DevOps for automatic testing?",
+          "url": "https://testingexamples.github.io/what-is-devops-for-automatic-testing/",
+          "description": "What DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it."
+        },
+        {
+          "title": "What are flow metrics for automatic testing?",
+          "url": "https://testingexamples.github.io/what-are-flow-metrics-for-automatic-testing/",
+          "description": "Cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal."
+        },
+        {
+          "title": "What is Lean Six Sigma for automatic testing?",
+          "url": "https://testingexamples.github.io/what-is-lean-six-sigma-for-automatic-testing/",
+          "description": "Lean and Six Sigma, and why a flaky test is literally \"variation\" worth root-causing rather than re-running until it goes green."
         }
       ]
     },

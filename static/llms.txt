@@ -35,7 +35,13 @@ automated querying — see /about/ for the complete table.
 - [What is continuous integration automatic testing?](https://testingexamples.github.io/what-is-continuous-integration-testing/): running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after
 - [How to start learning automatic testing?](https://testingexamples.github.io/how-to-start-learning-automatic-testing/): a step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples
 - [How does artificial intelligence help automatic testing?](https://testingexamples.github.io/how-does-artificial-intelligence-help-automatic-testing/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
-- [What are related concepts for automatic testing?](https://testingexamples.github.io/what-are-related-concepts-for-automatic-testing/): friendly introductions to code editors, version control (git and GitHub), CI/CD, and agile discovery
+- [What are related concepts for automatic testing?](https://testingexamples.github.io/what-are-related-concepts-for-automatic-testing/): friendly introductions to code editors, version control (git and GitHub), and agile discovery
+
+## Learn More
+
+- [What is DevOps for automatic testing?](https://testingexamples.github.io/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
+- [What are flow metrics for automatic testing?](https://testingexamples.github.io/what-are-flow-metrics-for-automatic-testing/): cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal
+- [What is Lean Six Sigma for automatic testing?](https://testingexamples.github.io/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
 
 ## Examples
 

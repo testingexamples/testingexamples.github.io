@@ -174,9 +174,11 @@ contract; they can change freely.
   - `/what-is-continuous-integration-testing/` — what CI is (running the
     automatic test suite on every commit/pull request in a clean
     environment) and why it's what makes a test suite actually pay off.
-    Linked from the home page's Learn list, from `/learn/`, and from
+    Linked from the home page's Learn More list, from `/learn/`, and from
     `/what-is-browser-automation-testing/`'s closing call to action; its own
     call to action continues to `/how-to-start-learning-automatic-testing/`.
+    Also the closing link in the Learn More chain below, which loops back
+    into this page.
   - `/how-to-start-learning-automatic-testing/` — ("How to start learning automatic testing?")
     a step-by-step path for learning browser automation: pick a language
     (JavaScript or Python), pick a tool (Playwright or Selenium), run a
@@ -194,9 +196,30 @@ contract; they can change freely.
     maintainer's direction.
   - `/what-are-related-concepts-for-automatic-testing/` — ("What are
     related concepts for automatic testing?") code editors, version
-    control (git and GitHub), CI/CD, and agile discovery: the everyday
-    tools and practices that surround automatic testing, for a reader who
-    just wrote their first script.
+    control (git and GitHub), and agile discovery: the everyday tools and
+    practices that surround automatic testing, for a reader who just wrote
+    their first script. Originally covered eight topics; three (DevOps,
+    flow metrics, Lean Six Sigma) were extracted into their own pages,
+    listed below.
+- The home page's "Learn More" list — bonus topics extracted from
+  `/what-are-related-concepts-for-automatic-testing/`, chained together by
+  their own closing calls to action, the last of which loops back to
+  `/what-is-continuous-integration-testing/` above.
+  - `/what-is-devops-for-automatic-testing/` — what DevOps is, and why
+    testing in production (canary releases, feature flags, watching real
+    error rates after a deploy) legitimately complements pre-release
+    testing rather than replacing it. Its call to action continues to
+    `/what-are-flow-metrics-for-automatic-testing/`.
+  - `/what-are-flow-metrics-for-automatic-testing/` — cycle time, lead
+    time, throughput, and work in progress, and why a growing pile of
+    flaky or skipped tests is itself a flow-metric signal of piling-up
+    testing debt. Its call to action continues to
+    `/what-is-lean-six-sigma-for-automatic-testing/`.
+  - `/what-is-lean-six-sigma-for-automatic-testing/` — Lean (eliminate
+    waste) and Six Sigma (reduce variation), and why a flaky test is
+    literally "variation" worth root-causing rather than re-running until
+    it goes green. Its call to action loops back to
+    `/what-is-continuous-integration-testing/`.
 - `/examples/` — hub page linking to the two example pages below.
   - `/examples/google-search/` — the same handful of interactions
     (searching, reading results, following a link) implemented across

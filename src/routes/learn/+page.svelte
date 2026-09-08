@@ -60,6 +60,6 @@
   </p>
   <p>
     <a href="/what-are-related-concepts-for-automatic-testing/">What are related concepts for automatic testing?</a> — friendly introductions to code
-    editors, version control (git and GitHub), CI/CD, and agile discovery.
+    editors, version control (git and GitHub), and agile discovery.
   </p>
 </section>

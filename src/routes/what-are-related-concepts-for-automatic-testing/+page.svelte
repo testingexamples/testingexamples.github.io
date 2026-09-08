@@ -9,7 +9,7 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="A beginner-friendly tour of nine things that surround automatic testing: code editors, version control, CI/CD, agile discovery, Unix commands, cloud hosting, DevOps, flow metrics, and Lean Six Sigma — and why each one matters once your test script grows up."
+    content="A beginner-friendly tour of five things that surround automatic testing: code editors, version control, agile discovery, Unix commands, and cloud hosting — and why each one matters once your test script grows up."
   />
 </svelte:head>
 
@@ -29,7 +29,7 @@
     track how that code changes over time, a way to make sure the tests actually get run, and — easy
     to forget, but just as real — a way of checking that the tests are protecting something a real
     person actually cares about. None of these are testing tools specifically. All of them make
-    testing work. Below are nine to know about, each explained in plain language, each with a link
+    testing work. Below are five to know about, each explained in plain language, each with a link
     or two if you want to go deeper.
   </p>
 </section>
@@ -147,67 +147,6 @@
       <strong>Advanced:</strong>
       "How should a team structure git branches and pull requests specifically around test code,
       so a flaky or broken test doesn't block unrelated changes?"
-    </li>
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading
-    class="section-heading-start"
-    heading="Continuous integration / continuous delivery — CI/CD"
-    level={2}
-  />
-
-  <p>
-    Go back to why automatic testing matters in the first place (see
-    <a href="/what-is-automatic-testing/">What is automatic testing?</a>): a test you have to
-    remember to run by hand eventually doesn't get run. Someone's in a hurry, someone forgets, someone
-    assumes "it probably still passes" — and the whole point of automating the check quietly
-    evaporates.
-  </p>
-
-  <p>
-    <strong>Continuous integration (CI)</strong> is the practice of having a server automatically run
-    your tests every time code changes — on every commit, or every pull request, with no human
-    needing to remember to click "run". <strong>Continuous delivery (CD)</strong> takes it one step
-    further: when those tests pass, the server automatically prepares or ships the change too, instead
-    of waiting for someone to do a manual release.
-  </p>
-
-  <p>
-    This site is itself a working example: every push to its <code>main</code> branch triggers a
-    GitHub Actions workflow that builds the site and republishes it automatically, with no one manually
-    uploading files. Exactly the same pattern — a server automatically doing the work on every change —
-    applies to running a test suite before code is allowed to merge.
-  </p>
-
-  <p>
-    Learn more at <a href="https://docs.github.com/actions">GitHub Actions documentation</a> and
-    <a href="https://www.atlassian.com/continuous-delivery/continuous-integration"
-      >Atlassian's introduction to continuous integration</a
-    >, or watch
-    <a href="https://www.youtube.com/watch?v=JxqfiBHBzl8">"CI/CD Explained in 7 minutes"</a> for a
-    video introduction.
-  </p>
-
-  <h3>For ideas ask AI</h3>
-  <ul>
-    <li>
-      <strong>Novice:</strong>
-      "What's the difference between continuous integration and continuous delivery, in plain
-      terms, and why can't I just run my tests myself before I push?"
-    </li>
-    <li>
-      <strong>Intermediate:</strong>
-      "I want to add my test suite to a GitHub Actions workflow for the first time — what's a
-      minimal first version worth starting with?"
-    </li>
-    <li>
-      <strong>Advanced:</strong>
-      "My CI pipeline is slow because the whole test suite reruns on every commit — how do teams
-      typically speed that up without losing confidence?"
     </li>
   </ul>
 </section>
@@ -392,151 +331,11 @@
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" heading="DevOps for testing" level={2} />
-
   <p>
-    <strong>DevOps</strong> is the broader practice CI/CD sits inside: breaking down the wall
-    between the people who write software and the people who run it in production, so both groups
-    share responsibility for whether it actually works once real users touch it.
-  </p>
-
-  <p>
-    Here's why that belongs on a testing page: DevOps is why "testing in production" — canary
-    releases to a small slice of real traffic, feature flags, watching real error rates right
-    after a deploy — is a legitimate complement to pre-release testing, not a replacement for it.
-    No test suite can cover every real-world condition in advance; DevOps practices are the second,
-    live safety net for the ones it missed.
-  </p>
-
-  <p>
-    Learn more at AWS's <a href="https://aws.amazon.com/devops/what-is-devops/">introduction to DevOps</a>,
-    or watch edureka!'s
-    <a href="https://www.youtube.com/watch?v=gc7_f3NmKQU">"DevOps Explained in 10 Minutes"</a> for a
-    video introduction.
-  </p>
-
-  <h3>For ideas ask AI</h3>
-  <ul>
-    <li>
-      <strong>Novice:</strong>
-      "What does 'DevOps' actually mean, in plain terms, and how is it different from just
-      testing before release?"
-    </li>
-    <li>
-      <strong>Intermediate:</strong>
-      "What's a canary release, and how would testing fit alongside one instead of being replaced
-      by it?"
-    </li>
-    <li>
-      <strong>Advanced:</strong>
-      "How do mature teams decide which safety net — pre-release testing or a DevOps practice
-      like feature flags — should catch a given kind of failure?"
-    </li>
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading="Flow metrics for testing" level={2} />
-
-  <p>
-    <strong>Flow metrics</strong> — a core Kanban and Lean idea — measure how work actually moves
-    through a process: cycle time (how long one item takes end to end), lead time, throughput, and
-    work in progress. The point is measuring what's actually moving, not how busy people look.
-  </p>
-
-  <p>
-    Here's why that belongs on a testing page: "time from a bug being reported to a regression
-    test existing for it" is a concrete, trackable cycle time. And a growing pile of skipped,
-    ignored, or flaky tests is itself a flow-metric signal — work in progress that isn't actually
-    moving — meaning testing debt is piling up faster than it's being paid down, whether or not
-    anyone's tracking it on a board.
-  </p>
-
-  <p>
-    Learn more at Atlassian's <a href="https://www.atlassian.com/agile/kanban">guide to Kanban</a>, or
-    watch ProKanban's
-    <a href="https://www.youtube.com/watch?v=3Nd2e1lD8ng">"The Kanban Guide - Kanban Metrics"</a> for a
-    video introduction to the metrics themselves.
-  </p>
-
-  <h3>For ideas ask AI</h3>
-  <ul>
-    <li>
-      <strong>Novice:</strong>
-      "What do 'cycle time' and 'throughput' actually mean, in plain terms, for a team's
-      day-to-day work?"
-    </li>
-    <li>
-      <strong>Intermediate:</strong>
-      "How would I start tracking cycle time for bug fixes on my own team, without buying new
-      tooling?"
-    </li>
-    <li>
-      <strong>Advanced:</strong>
-      "How do I use flow metrics to make a concrete case that a growing pile of flaky tests is
-      real, measurable technical debt?"
-    </li>
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading="Lean Six Sigma for testing" level={2} />
-
-  <p>
-    <strong>Lean Six Sigma</strong> combines Lean (eliminate waste) with Six Sigma (reduce defects
-    and variation through statistical process control). It started in manufacturing and now gets
-    applied to any repeatable process — software delivery included.
-  </p>
-
-  <p>
-    Here's why that belongs on a testing page: a flaky test is, literally, variation in Six Sigma
-    terms — the same input doesn't reliably produce the same output — and treating that as a
-    defect worth root-causing, rather than a nuisance to re-run until it goes green, is a direct
-    application of the mindset. Lean's "eliminate waste" lens is useful too: five different tests
-    all asserting the same thing five different ways costs real CI time without adding any real
-    protection.
-  </p>
-
-  <p>
-    Learn more at iSixSigma's
-    <a href="https://www.isixsigma.com/new-to-six-sigma/getting-started/">getting-started guide</a>, or
-    watch Simplilearn's
-    <a href="https://www.youtube.com/watch?v=s2HCrhNVfak">"Lean Six Sigma In 8 Minutes"</a> for a video
-    introduction.
-  </p>
-
-  <h3>For ideas ask AI</h3>
-  <ul>
-    <li>
-      <strong>Novice:</strong>
-      "What does 'Lean Six Sigma' actually mean, in plain terms, and why would that idea apply to
-      software testing at all?"
-    </li>
-    <li>
-      <strong>Intermediate:</strong>
-      "How would I apply Six Sigma's idea of 'root-causing variation' to one specific flaky test,
-      instead of just re-running it until it passes?"
-    </li>
-    <li>
-      <strong>Advanced:</strong>
-      "How do I use Lean's 'eliminate waste' idea to identify redundant tests in a large, slow
-      test suite?"
-    </li>
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <p>
-    None of these nine are required to write your first script — see
+    None of these five are required to write your first script — see
     <a href="/how-to-start-learning-automatic-testing/">How to start learning automatic testing?</a> for that. But each
     one is worth picking up as your testing code grows past a single file on your own machine: a
-    shared editor setup, a git history, a CI pipeline, an honest connection to what users actually
+    shared editor setup, a git history, an honest connection to what users actually
     need, and — once a whole team depends on your tests — the shared vocabulary for talking about
     where testing infrastructure, process, and quality actually live. Each is also a large,
     well-documented subject in its own right — this page is a map, not the territory.
