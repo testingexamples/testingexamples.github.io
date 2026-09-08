@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>How does artificial intelligence help testing?</h1>
+  <h1>How does artificial intelligence help automatic testing?</h1>
   <p>
     AI tools have become a real part of how automatic testing, CI/CD, and agile discovery work
     today. This page covers three ways AI shows up in that work, and one honest caveat that
@@ -69,7 +69,7 @@
   />
 
   <p>
-    Once a test suite is running in <a href="/learn/related-concepts/">CI/CD</a> on every commit,
+    Once a test suite is running in <a href="/what-are-related-concepts-for-automatic-testing/">CI/CD</a> on every commit,
     new problems show up that only exist at scale, and AI-based analysis has started to help with a
     few of them:
   </p>
@@ -93,7 +93,7 @@
   </ul>
 
   <p>
-    See <a href="/learn/related-concepts/">What are related concepts, tools, and tactics for automatic testing?</a> for what CI/CD is in the first
+    See <a href="/what-are-related-concepts-for-automatic-testing/">What are related concepts for automatic testing?</a> for what CI/CD is in the first
     place, if that term is new to you.
   </p>
 </section>
@@ -163,8 +163,8 @@
     <CallToAction class="button button-primary" href="/learn/">Back to Learn</CallToAction>
     <CallToAction
       class="button button-secondary"
-      href="/learn/related-concepts/"
-      style="margin-left: 0.75rem;">Next: what are related concepts, tools, and tactics for automatic testing? →</CallToAction
+      href="/what-are-related-concepts-for-automatic-testing/"
+      style="margin-left: 0.75rem;">Next: what are related concepts for automatic testing? →</CallToAction
     >
   </p>
 </section>

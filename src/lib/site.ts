@@ -57,7 +57,7 @@ export const GENERIC_DEMO_REPOS: SiblingRepo[] = [
 /**
  * A deliberately minimal four-repo subset — two tools (Playwright,
  * Selenium) times two languages (JavaScript, Python), no WebdriverIO and
- * no TypeScript — used only by `/learn/getting-started/` as the simplest
+ * no TypeScript — used only by `/how-to-start-learning-automatic-testing/` as the simplest
  * possible "practice on real examples" starting point for a beginner.
  * `GENERIC_DEMO_REPOS` above remains the authoritative five-repo
  * fixture-contract list (see AGENTS.md and spec/index.md) and is what
@@ -127,8 +127,8 @@ export const NHS_WALES_DEMO_REPOS: SiblingRepo[] = [
 
 /**
  * These eleven were this project's original sibling repos, kept as their
- * own constants because /learn/getting-started/ and
- * /learn/artificial-intelligence/ each reference this specific, smaller
+ * own constants because /how-to-start-learning-automatic-testing/ and
+ * /how-does-artificial-intelligence-help-automatic-testing/ each reference this specific, smaller
  * set for a specific reason (the five fixture-contract-bearing repos; one
  * concrete NHS Wales worked example) — not because they're the complete
  * repo family any more. For the complete, current family (47 repos as of

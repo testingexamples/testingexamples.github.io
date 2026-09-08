@@ -149,25 +149,25 @@ site has two further sections. Neither depends on or affects the fixture
 contract; they can change freely.
 
 - `/learn/` — hub page linking to the eight articles below, in this order.
-  - `/learn/what-is-automatic-testing/` — what automatic testing is, and how
+  - `/what-is-automatic-testing/` — what automatic testing is, and how
     it differs from and complements manual testing.
   - `/what-is-the-purpose-of-automatic-testing/` — what a team actually gets
     back for the effort of writing automatic tests (catching regressions
     early, tireless repetition, confident frequent releases, cheaper bugs,
     freeing humans for what tests can't do), extracted from
-    `/learn/what-is-automatic-testing/`'s "What automated tests buy you"
+    `/what-is-automatic-testing/`'s "What automated tests buy you"
     section into its own page. Linked from the home page's Learn list and
-    from `/learn/`; `/learn/what-is-automatic-testing/`'s closing call to
+    from `/learn/`; `/what-is-automatic-testing/`'s closing call to
     action continues here, and this page's own call to action continues to
     `/what-is-the-testing-pyramid/`.
   - `/what-is-the-testing-pyramid/` — the three layers of automatic tests
     (unit, integration, end-to-end/browser), extracted from
-    `/learn/what-is-automatic-testing/` into its own page. Linked from the
+    `/what-is-automatic-testing/` into its own page. Linked from the
     home page's Learn list and from `/learn/`.
-  - `/what-is-browser-automation-testing/` — what browser automation testing
+  - `/what-is-browser-automation-testing/` — what browser automatic testing
     is and the trade-offs of its realism (slower, more brittle, harder to
     diagnose than a unit test), extracted from
-    `/learn/what-is-automatic-testing/` into its own page. Linked from the
+    `/what-is-automatic-testing/` into its own page. Linked from the
     home page's Learn list, from `/learn/`, and from
     `/what-is-the-testing-pyramid/`'s closing call to action; its own call
     to action continues to `/what-is-continuous-integration-testing/`.
@@ -176,26 +176,27 @@ contract; they can change freely.
     environment) and why it's what makes a test suite actually pay off.
     Linked from the home page's Learn list, from `/learn/`, and from
     `/what-is-browser-automation-testing/`'s closing call to action; its own
-    call to action continues to `/learn/getting-started/`.
-  - `/learn/getting-started/` — ("How to start learning automatic testing?")
+    call to action continues to `/how-to-start-learning-automatic-testing/`.
+  - `/how-to-start-learning-automatic-testing/` — ("How to start learning automatic testing?")
     a step-by-step path for learning browser automation: pick a language
     (JavaScript or Python), pick a tool (Playwright or Selenium), run a
     first script against this site's own home page, learn the four core
     concepts (locating, acting, waiting, asserting), then practice on the
     sibling demo repos and this site's own `/examples/` pages.
-  - `/learn/artificial-intelligence/` — ("How does artificial intelligence
-    help testing?") how and why AI shows up in writing and maintaining
-    tests, in CI/CD and DevOps, and in turning agile discovery into
-    concrete test scenarios, plus an explicit caveat about trusting
-    AI-written assertions without reading them. Links to `AI_STATEMENT.md`
-    (repo root, linked via its GitHub blob URL since only `build/` is
-    deployed) as a live example of the disclosure it describes — this site
-    itself was built with AI assistance under the maintainer's direction.
-  - `/learn/related-concepts/` — ("What are related concepts, tools, and
-    tactics for automatic testing?") code editors, version control (git
-    and GitHub), CI/CD, and agile discovery: the everyday tools and
-    practices that surround automatic testing, for a reader who just wrote
-    their first script.
+  - `/how-does-artificial-intelligence-help-automatic-testing/` — ("How does
+    artificial intelligence help automatic testing?") how and why AI shows
+    up in writing and maintaining tests, in CI/CD and DevOps, and in
+    turning agile discovery into concrete test scenarios, plus an explicit
+    caveat about trusting AI-written assertions without reading them.
+    Links to `AI_STATEMENT.md` (repo root, linked via its GitHub blob URL
+    since only `build/` is deployed) as a live example of the disclosure
+    it describes — this site itself was built with AI assistance under the
+    maintainer's direction.
+  - `/what-are-related-concepts-for-automatic-testing/` — ("What are
+    related concepts for automatic testing?") code editors, version
+    control (git and GitHub), CI/CD, and agile discovery: the everyday
+    tools and practices that surround automatic testing, for a reader who
+    just wrote their first script.
 - `/examples/` — hub page linking to the two example pages below.
   - `/examples/google-search/` — the same handful of interactions
     (searching, reading results, following a link) implemented across
@@ -231,7 +232,7 @@ use headings:
   clear one. **Do not use multiple straggler headlines** (an eyebrow label,
   a numbered prefix like "1. Language", or any other second heading-like
   line) where a single, clear `<h2>` says the same thing on its own. This
-  was found and fixed on `/learn/related-concepts/` and a since-removed page
+  was found and fixed on `/what-are-related-concepts-for-automatic-testing/` and a since-removed page
   — both previously had an `eyebrow` (`"1. Language"`, `"Writing the code"`,
   and similar) on every section heading; both were removed down to a plain
   `<h2>`, once and for all, not just for those two pages.

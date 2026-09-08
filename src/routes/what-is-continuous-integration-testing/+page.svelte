@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>What is continuous integration testing?</h1>
+  <h1>What is continuous integration automatic testing?</h1>
   <p>
     Continuous integration (CI) testing is running your automatic test suite automatically every
     time someone proposes a change, instead of relying on a person to remember to run it by hand.
@@ -60,7 +60,7 @@
   </ul>
 
   <p style="margin-top: 2rem;">
-    <CallToAction class="button button-primary" href="/learn/getting-started/"
+    <CallToAction class="button button-primary" href="/how-to-start-learning-automatic-testing/"
       >Next: how to start learning automatic testing? →</CallToAction
     >
   </p>

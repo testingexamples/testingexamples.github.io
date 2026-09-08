@@ -135,8 +135,8 @@
     The five fixture-contract repos and one worked NHS Wales example — this
     site's original core, before the family grew to its current size — are
     listed again below with a sentence each, since they're the ones this
-    site's own <a href="/learn/getting-started/">Getting Started</a> guide
-    and <a href="/learn/artificial-intelligence/">Artificial Intelligence</a>
+    site's own <a href="/how-to-start-learning-automatic-testing/">Getting Started</a> guide
+    and <a href="/how-does-artificial-intelligence-help-automatic-testing/">Artificial Intelligence</a>
     page point to directly.
   </p>
 

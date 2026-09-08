@@ -77,7 +77,7 @@
 
   <p style="margin-top: 2rem;">
     <CallToAction class="button button-primary" href="/what-is-the-testing-pyramid/"
-      >Next: what is the testing pyramid? →</CallToAction
+      >Next: what is the automatic testing pyramid? →</CallToAction
     >
   </p>
 </section>

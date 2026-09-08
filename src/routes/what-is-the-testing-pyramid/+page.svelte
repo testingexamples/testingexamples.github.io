@@ -9,12 +9,12 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="What the testing pyramid is: unit tests at the base, integration tests in the middle, and end-to-end browser tests at the top — and why a healthy project has more of the fast layers and fewer of the slow ones."
+    content="What the automatic testing pyramid is: unit tests at the base, integration tests in the middle, and end-to-end browser tests at the top — and why a healthy project has more of the fast layers and fewer of the slow ones."
   />
 </svelte:head>
 
 <div class="page-header">
-  <h1>What is the testing pyramid?</h1>
+  <h1>What is the automatic testing pyramid?</h1>
   <p>
     Automatic tests come in layers, usually drawn as a pyramid because of how many of each kind a
     healthy project tends to have — many small, fast tests at the bottom, and progressively fewer,
@@ -53,7 +53,7 @@
   <ul>
     <li>
       <strong>Novice:</strong>
-      "Can you explain the testing pyramid simply — what's the actual difference between a unit
+      "Can you explain the automatic testing pyramid simply — what's the actual difference between a unit
       test, an integration test, and an end-to-end test?"
     </li>
     <li>
@@ -70,7 +70,7 @@
 
   <p style="margin-top: 2rem;">
     <CallToAction class="button button-primary" href="/what-is-browser-automation-testing/"
-      >Next: what is browser automation testing? →</CallToAction
+      >Next: what is browser automatic testing? →</CallToAction
     >
   </p>
 </section>

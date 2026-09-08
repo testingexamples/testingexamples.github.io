@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = () => {
-  return { title: 'What is browser automation testing? — Testing Examples' };
+  return { title: 'What is browser automatic testing? — Testing Examples' };
 };

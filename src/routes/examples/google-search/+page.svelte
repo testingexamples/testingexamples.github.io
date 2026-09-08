@@ -112,7 +112,7 @@
     tools on this page speak underneath.
   </p>
 
-  <Details summary="JavaScript — selenium-webdriver" open>
+  <Details summary="Selenium + JavaScript" open>
     <CodeBlock label="Selenium · JavaScript · selenium-webdriver (npm)">
       <pre><code>{`import { Builder, By, Key } from 'selenium-webdriver';
 
@@ -147,7 +147,7 @@ demo().catch((err) => console.error(err));
     </CodeBlock>
   </Details>
 
-  <Details summary="Python — selenium">
+  <Details summary="Selenium + Python">
     <CodeBlock label="Selenium · Python · selenium (PyPI)">
       <pre><code>{`from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -179,7 +179,7 @@ finally:
     </CodeBlock>
   </Details>
 
-  <Details summary="Rust — thirtyfour">
+  <Details summary="Selenium + Rust">
     <p>
       There's no official Rust binding from the Selenium project itself —
       <code>thirtyfour</code> (whose name nods to selenium's atomic number,
@@ -239,7 +239,7 @@ async fn main() -> anyhow::Result<()> {
     Rust support is community-maintained rather than official.
   </p>
 
-  <Details summary="JavaScript — playwright" open>
+  <Details summary="Playwright + JavaScript" open>
     <CodeBlock label="Playwright · JavaScript · playwright (npm)">
       <pre><code>{`import { chromium } from 'playwright';
 
@@ -270,7 +270,7 @@ try {
     </CodeBlock>
   </Details>
 
-  <Details summary="Python — playwright">
+  <Details summary="Playwright + Python">
     <CodeBlock label="Playwright · Python · playwright (PyPI)">
       <pre><code>{`from playwright.sync_api import sync_playwright
 
@@ -308,7 +308,7 @@ if __name__ == "__main__":
     </CodeBlock>
   </Details>
 
-  <Details summary="Rust — playwright-rs">
+  <Details summary="Playwright + Rust">
     <p>
       Be careful which crate you install. <code>playwright-rs</code>
       (<code>padamson/playwright-rust</code>) is actively maintained but

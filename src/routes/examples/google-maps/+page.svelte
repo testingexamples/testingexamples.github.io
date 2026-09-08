@@ -121,7 +121,7 @@
     to selenium's atomic number, 34.
   </p>
 
-  <Details summary="Selenium — JavaScript (selenium-webdriver)">
+  <Details summary="Selenium + JavaScript">
     <CodeBlock label="selenium-webdriver, JavaScript">
       <pre><code
           >{`const { Builder, By, Key, until } = require('selenium-webdriver');
@@ -182,7 +182,7 @@
     </CodeBlock>
   </Details>
 
-  <Details summary="Selenium — Python (selenium)">
+  <Details summary="Selenium + Python">
     <CodeBlock label="selenium, Python">
       <pre><code
           >{`from selenium import webdriver
@@ -242,7 +242,7 @@ finally:
     </CodeBlock>
   </Details>
 
-  <Details summary="Selenium — Rust (thirtyfour)">
+  <Details summary="Selenium + Rust">
     <CodeBlock label="thirtyfour, Rust">
       <pre><code
           >{`use thirtyfour::prelude::*;
@@ -339,7 +339,7 @@ async fn main() -> anyhow::Result<()> {
     <code>playwright</code>, has been abandoned since 2022.
   </p>
 
-  <Details summary="Playwright — JavaScript (playwright)">
+  <Details summary="Playwright + JavaScript">
     <CodeBlock label="playwright, JavaScript">
       <pre><code
           >{`const { chromium } = require('playwright');
@@ -379,7 +379,7 @@ async fn main() -> anyhow::Result<()> {
     </CodeBlock>
   </Details>
 
-  <Details summary="Playwright — Python (playwright)">
+  <Details summary="Playwright + Python">
     <CodeBlock label="playwright, Python">
       <pre><code
           >{`from playwright.sync_api import sync_playwright
@@ -416,7 +416,7 @@ with sync_playwright() as p:
     </CodeBlock>
   </Details>
 
-  <Details summary="Playwright — Rust (playwright-rs)">
+  <Details summary="Playwright + Rust">
     <CodeBlock label="playwright-rs, Rust">
       <pre><code
           >{`use playwright_rs::Playwright;

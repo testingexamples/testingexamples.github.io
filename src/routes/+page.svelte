@@ -15,7 +15,6 @@
 
 <div class="page-header">
   <h1>Welcome to Testing Examples</h1>
-  <p>Free, open source browser automation examples — and a stable page to practice on.</p>
 </div>
 
 <section class="section prose">
@@ -28,14 +27,14 @@
 
   <h3>Learn</h3>
   <ul class="repo-list">
-    <li><a href="/learn/what-is-automatic-testing/">What is automatic testing?</a></li>
+    <li><a href="/what-is-automatic-testing/">What is automatic testing?</a></li>
     <li><a href="/what-is-the-purpose-of-automatic-testing/">What is the purpose of automatic testing?</a></li>
-    <li><a href="/what-is-the-testing-pyramid/">What is the testing pyramid?</a></li>
-    <li><a href="/what-is-browser-automation-testing/">What is browser automation testing?</a></li>
-    <li><a href="/what-is-continuous-integration-testing/">What is continuous integration testing?</a></li>
-    <li><a href="/learn/getting-started/">How to start learning automatic testing?</a></li>
-    <li><a href="/learn/artificial-intelligence/">How does artificial intelligence help testing?</a></li>
-    <li><a href="/learn/related-concepts/">What are related concepts, tools, and tactics for automatic testing?</a></li>
+    <li><a href="/what-is-the-testing-pyramid/">What is the automatic testing pyramid?</a></li>
+    <li><a href="/what-is-browser-automation-testing/">What is browser automatic testing?</a></li>
+    <li><a href="/what-is-continuous-integration-testing/">What is continuous integration automatic testing?</a></li>
+    <li><a href="/how-to-start-learning-automatic-testing/">How to start learning automatic testing?</a></li>
+    <li><a href="/how-does-artificial-intelligence-help-automatic-testing/">How does artificial intelligence help automatic testing?</a></li>
+    <li><a href="/what-are-related-concepts-for-automatic-testing/">What are related concepts for automatic testing?</a></li>
   </ul>
 
   <h3>Examples</h3>
@@ -44,11 +43,6 @@
     <li><a href="/examples/google-maps/">Google Maps Examples</a></li>
     <li><a href="/given-when-then/">Given-When-Then Examples</a></li>
     <li><a href="/app/">Demo App</a> — sign in, nav icons, search, and tabs to practice on</li>
-  </ul>
-
-  <h3>More</h3>
-  <ul class="repo-list">
-    <li><a href="/about/">About</a> — the project and the sibling demo repos</li>
   </ul>
 </section>
 

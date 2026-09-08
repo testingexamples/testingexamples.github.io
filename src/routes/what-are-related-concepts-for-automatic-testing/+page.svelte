@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>What are related concepts, tools, and tactics for automatic testing?</h1>
+  <h1>What are related concepts for automatic testing?</h1>
   <p>
     You've just written your first browser automation script. It works — on your machine, right
     now. This page is about the handful of everyday tools and practices that turn that one script
@@ -162,7 +162,7 @@
 
   <p>
     Go back to why automatic testing matters in the first place (see
-    <a href="/learn/what-is-automatic-testing/">What is automatic testing?</a>): a test you have to
+    <a href="/what-is-automatic-testing/">What is automatic testing?</a>): a test you have to
     remember to run by hand eventually doesn't get run. Someone's in a hurry, someone forgets, someone
     assumes "it probably still passes" — and the whole point of automating the check quietly
     evaporates.
@@ -534,7 +534,7 @@
 <section class="section prose">
   <p>
     None of these nine are required to write your first script — see
-    <a href="/learn/getting-started/">How to start learning automatic testing?</a> for that. But each
+    <a href="/how-to-start-learning-automatic-testing/">How to start learning automatic testing?</a> for that. But each
     one is worth picking up as your testing code grows past a single file on your own machine: a
     shared editor setup, a git history, a CI pipeline, an honest connection to what users actually
     need, and — once a whole team depends on your tests — the shared vocabulary for talking about
@@ -546,7 +546,7 @@
     <CallToAction class="button button-primary" href="/learn/">Back to Learn</CallToAction>
     <CallToAction
       class="button button-secondary"
-      href="/learn/getting-started/"
+      href="/how-to-start-learning-automatic-testing/"
       style="margin-left: 0.75rem;">How to start learning →</CallToAction
     >
   </p>

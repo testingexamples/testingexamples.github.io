@@ -10,7 +10,7 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="A practical, step-by-step path for learning browser automation testing: pick a language, pick a tool, run your first script, learn the four core concepts, then practice on real examples."
+    content="A practical, step-by-step path for learning browser automatic testing: pick a language, pick a tool, run your first script, learn the four core concepts, then practice on real examples."
   />
 </svelte:head>
 

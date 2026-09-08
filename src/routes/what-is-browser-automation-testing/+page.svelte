@@ -9,17 +9,17 @@
   <title>{data.title}</title>
   <meta
     name="description"
-    content="What browser automation testing is, and the trade-offs that come with it: why it's the most realistic layer of the testing pyramid, and when to reach for it instead of a unit or integration test."
+    content="What browser automatic testing is, and the trade-offs that come with it: why it's the most realistic layer of the automatic testing pyramid, and when to reach for it instead of a unit or integration test."
   />
 </svelte:head>
 
 <div class="page-header">
-  <h1>What is browser automation testing?</h1>
+  <h1>What is browser automatic testing?</h1>
   <p>
-    Browser automation testing (also called end-to-end or UI testing) drives a real browser
+    Browser automatic testing (also called end-to-end or UI testing) drives a real browser
     exactly the way a real user would — opening pages, clicking buttons, filling in forms — using
     tools like Selenium WebDriver, WebdriverIO, and Playwright. It's the most realistic layer of
-    <a href="/what-is-the-testing-pyramid/">the testing pyramid</a>, but that realism has a cost.
+    <a href="/what-is-the-testing-pyramid/">the automatic testing pyramid</a>, but that realism has a cost.
   </p>
 </div>
 
@@ -64,7 +64,7 @@
 
   <p style="margin-top: 2rem;">
     <CallToAction class="button button-primary" href="/what-is-continuous-integration-testing/"
-      >Next: what is continuous integration testing? →</CallToAction
+      >Next: what is continuous integration automatic testing? →</CallToAction
     >
   </p>
 </section>

@@ -175,7 +175,7 @@
 
 <footer class="site-footer">
   <div class="site-footer-inner">
-    <p>{SITE_NAME} — free open source browser automation testing examples.</p>
+    <p>{SITE_NAME} — free open source browser automatic testing examples.</p>
     <div class="site-footer-links">
       <a href={REPO}>GitHub</a>
       <a href="/about/">About</a>

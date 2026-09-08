@@ -189,7 +189,7 @@
     <h2>Related</h2>
     <ul class="repo-list">
       <li><a href="/given-when-then/">Given-When-Then Examples</a></li>
-      <li><a href="/learn/getting-started/">How to start learning automatic testing?</a></li>
+      <li><a href="/how-to-start-learning-automatic-testing/">How to start learning automatic testing?</a></li>
       <li><a href="/examples/">Examples</a></li>
     </ul>
   </GrailLayoutRightAside>
