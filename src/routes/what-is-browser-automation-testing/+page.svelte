@@ -46,17 +46,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "Why are browser tests slower and more fragile than other kinds of automatic tests, in
       plain terms?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "My browser test suite has gotten flaky and slow — what are the first things worth checking
       to make it more reliable?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do I decide which user journeys genuinely deserve a browser test versus being covered
       lower down the pyramid instead?"
     </li>

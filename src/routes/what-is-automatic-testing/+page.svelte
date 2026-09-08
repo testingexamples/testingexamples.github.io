@@ -57,17 +57,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "What's the practical difference between manual testing and automatic testing, and why
       would a team bother writing a script instead of just clicking through the app by hand?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "My team does everything by manual testing right now — how do we decide which checks are
       worth automating first?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do experienced teams decide what to deliberately keep as manual, exploratory testing
       even after most of their checks are automated?"
     </li>

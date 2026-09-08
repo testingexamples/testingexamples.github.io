@@ -74,17 +74,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "I've never used a proper code editor before — what's the real difference between a code
       editor and something like Notepad, and is Visual Studio Code a reasonable place to start?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "I already use VS Code casually — what extensions or features would actually help me write
       and debug browser automation tests specifically?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do I set up a shared VS Code configuration — extensions, settings, debugger config —
       so my whole team gets a consistent test-writing experience, not just me?"
     </li>
@@ -134,17 +131,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "I've never used git before — what does 'committing' and 'pushing' actually mean, in plain
       terms, and why do I need either one just to write a test script?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "I accidentally committed a change I want to undo — what's a safe way to undo it without
       losing other work?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How should a team structure git branches and pull requests specifically around test code,
       so a flaky or broken test doesn't block unrelated changes?"
     </li>
@@ -197,17 +191,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "What does 'discovery' actually mean in agile, and why would that matter to someone who
       just writes test scripts?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "How do I turn a vague user story into a concrete, testable scenario before I start
       automating it?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do experienced teams keep discovery and test-writing connected on an ongoing basis,
       rather than discovery happening once up front and the tests drifting from it later?"
     </li>
@@ -262,17 +253,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "I've never used a command line before — what are the handful of Unix commands actually
       worth learning first for someone getting into testing?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "How would I use grep to find every failing test in a huge CI log without scrolling through
       it by hand?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do I chain a few Unix commands together into a small, reliable script for a CI step,
       instead of reaching for a full programming language?"
     </li>
@@ -311,17 +299,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "What does 'the cloud' actually mean in plain terms, and why would a test suite need it
       instead of just running on my own laptop?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "What's the practical difference between running my tests on my own machine versus a cloud
       browser farm, for a small team?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do I decide whether a growing test suite is genuinely ready to move to a cloud CI
       provider, and what should I check before making that switch?"
     </li>

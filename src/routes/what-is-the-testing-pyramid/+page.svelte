@@ -52,17 +52,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "Can you explain the automatic testing pyramid simply — what's the actual difference between a unit
       test, an integration test, and an end-to-end test?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "My project has plenty of end-to-end browser tests but almost no unit tests — is that
       actually a problem, and how would I start fixing the balance?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do I decide, for a specific new feature, which layer of the pyramid a new test belongs
       in rather than defaulting to another end-to-end test?"
     </li>

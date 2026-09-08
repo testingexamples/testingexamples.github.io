@@ -41,7 +41,7 @@ automated querying — see /about/ for the complete table.
 
 - [What is DevOps for automatic testing?](https://testingexamples.github.io/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
 - [What are flow metrics for automatic testing?](https://testingexamples.github.io/what-are-flow-metrics-for-automatic-testing/): cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal
-- [What is Lean Six Sigma for automatic testing?](https://testingexamples.github.io/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
+- [How does Six Sigma inform manual testing to automatic testing?](https://testingexamples.github.io/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
 
 ## Examples
 

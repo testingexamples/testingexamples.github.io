@@ -98,7 +98,7 @@
           "description": "Cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal."
         },
         {
-          "title": "What is Lean Six Sigma for automatic testing?",
+          "title": "How does Six Sigma inform manual testing to automatic testing?",
           "url": "https://testingexamples.github.io/what-is-lean-six-sigma-for-automatic-testing/",
           "description": "Lean and Six Sigma, and why a flaky test is literally \"variation\" worth root-causing rather than re-running until it goes green."
         }

@@ -32,16 +32,16 @@
     <li><a href="/what-is-the-testing-pyramid/">What is the automatic testing pyramid?</a></li>
     <li><a href="/what-is-browser-automation-testing/">What is browser automatic testing?</a></li>
     <li><a href="/how-to-start-learning-automatic-testing/">How to start learning automatic testing?</a></li>
-    <li><a href="/how-does-artificial-intelligence-help-automatic-testing/">How does artificial intelligence help automatic testing?</a></li>
     <li><a href="/what-are-related-concepts-for-automatic-testing/">What are related concepts for automatic testing?</a></li>
   </ul>
 
   <h3>Learn More</h3>
   <ul class="repo-list">
+    <li><a href="/how-does-artificial-intelligence-help-automatic-testing/">How does artificial intelligence help automatic testing?</a></li>
     <li><a href="/what-is-continuous-integration-testing/">What is continuous integration automatic testing?</a></li>
     <li><a href="/what-is-devops-for-automatic-testing/">What is DevOps for automatic testing?</a></li>
     <li><a href="/what-are-flow-metrics-for-automatic-testing/">What are flow metrics for automatic testing?</a></li>
-    <li><a href="/what-is-lean-six-sigma-for-automatic-testing/">What is Lean Six Sigma for automatic testing?</a></li>
+    <li><a href="/what-is-lean-six-sigma-for-automatic-testing/">How does Six Sigma inform manual testing to automatic testing?</a></li>
   </ul>
 
   <h3>Examples</h3>
@@ -153,3 +153,18 @@
   </form>
 
 </section>
+
+<style>
+  /* Override the shared .repo-list rule (static/assets/style.css) for this
+     page only: bullet points instead of the border-bottom line separator
+     between items. Scoped to this component, so /about/, /app/, and
+     /how-to-start-learning-automatic-testing/ keep the line-separator style. */
+  .repo-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  .repo-list li {
+    padding: 0.2rem 0;
+    border-bottom: none;
+  }
+</style>

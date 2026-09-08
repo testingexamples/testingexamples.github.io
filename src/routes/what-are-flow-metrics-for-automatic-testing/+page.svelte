@@ -41,17 +41,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "What do 'cycle time' and 'throughput' actually mean, in plain terms, for a team's
       day-to-day work?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "How would I start tracking cycle time for bug fixes on my own team, without buying new
       tooling?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do I use flow metrics to make a concrete case that a growing pile of flaky tests is
       real, measurable technical debt?"
     </li>

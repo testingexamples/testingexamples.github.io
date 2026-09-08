@@ -59,17 +59,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "In plain terms, what's a 'regression', and why do automatic tests catch it better than a
       person checking by hand?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "My team ships several times a week but still finds bugs in production — what's the actual
       connection between automatic testing and safer, more frequent releases?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do I make the business case, with real numbers, for investing more engineering time in
       automatic tests versus manual QA?"
     </li>

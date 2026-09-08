@@ -41,17 +41,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "What does 'DevOps' actually mean, in plain terms, and how is it different from just
       testing before release?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "What's a canary release, and how would testing fit alongside one instead of being replaced
       by it?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do mature teams decide which safety net — pre-release testing or a DevOps practice
       like feature flags — should catch a given kind of failure?"
     </li>

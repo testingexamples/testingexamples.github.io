@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="page-header">
-  <h1>What is Lean Six Sigma for automatic testing?</h1>
+  <h1>How does Six Sigma inform manual testing to automatic testing?</h1>
   <p>
     <strong>Lean Six Sigma</strong> combines Lean (eliminate waste) with Six Sigma (reduce defects
     and variation through statistical process control). It started in manufacturing and now gets
@@ -43,17 +43,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "What does 'Lean Six Sigma' actually mean, in plain terms, and why would that idea apply to
       software testing at all?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "How would I apply Six Sigma's idea of 'root-causing variation' to one specific flaky test,
       instead of just re-running it until it passes?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "How do I use Lean's 'eliminate waste' idea to identify redundant tests in a large, slow
       test suite?"
     </li>

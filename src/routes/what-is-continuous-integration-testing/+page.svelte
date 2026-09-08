@@ -43,17 +43,14 @@
   <h3>For ideas ask AI</h3>
   <ul>
     <li>
-      <strong>Novice:</strong>
       "What does 'CI' actually mean, in plain terms, and why would a team bother running tests
       automatically instead of just running them themselves before pushing?"
     </li>
     <li>
-      <strong>Intermediate:</strong>
       "I have a test suite that works locally — what's a simple way to get it running
       automatically on every pull request?"
     </li>
     <li>
-      <strong>Advanced:</strong>
       "My CI pipeline has gotten slow because it runs the full browser test suite on every commit
       — how do I restructure it to stay fast without losing confidence?"
     </li>
