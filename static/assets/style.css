@@ -6,9 +6,10 @@
  * https://github.com/LilyDesignSystem/lily-design-system's themes/
  * directory. Each of those files is a complete, self-contained stylesheet:
  * it styles every one of Lily's ~492 components (including all the Lily
- * components this site uses — SkipLink, ThemePicker, TextSizePicker,
- * SharePicker, SectionHeading, InformationCallout, CodeBlock, Details,
- * SummaryList, Separator, CallToAction/Button, and Tag) by targeting the
+ * components this site uses — SkipLink, ThemePicker, LocalePicker,
+ * TextSizePicker, SharePicker (composed together via PickerBar),
+ * SectionHeading, InformationCallout, CodeBlock, Details, SummaryList,
+ * Separator, CallToAction/Button, and Tag) by targeting the
  * exact same stable class hooks those components render. So THIS file no
  * longer styles any Lily component hook directly — that would just be a
  * smaller, worse duplicate of what the linked theme file already does.
@@ -304,18 +305,25 @@ p { margin: 0 0 1rem; }
 .site-controls {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
-/* Lily: ThemePicker, TextSizePicker, SharePicker — an icon button opening
- * an absolutely-positioned listbox/menu. The three share one visual
- * treatment; only the class-name prefix differs per component. */
+/* Lily: PickerBar composes ThemePicker, LocalePicker, TextSizePicker, and
+ * SharePicker — each an icon button opening an absolutely-positioned
+ * listbox/menu, sharing one visual treatment; only the class-name prefix
+ * differs per component. PickerBar itself renders no CSS beyond its own
+ * `.picker-bar` root wrapper (see that package's index.md), so this site
+ * supplies the row layout the four pickers sit in. */
+.picker-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 /* The SharePicker's default icon glyph is replaced with a fixed-geometry
  * inline SVG in +layout.svelte (font-fallback metrics for the default ➤
  * glyph don't align the same across platforms — see that file's comment).
  * The SVG carries its own size/display attributes directly, so it needs
  * no rule here; Lily's theme CSS handles the button/list chrome for all
- * three pickers. */
+ * four pickers. */
 
 .site-main {
   max-width: var(--content-max);

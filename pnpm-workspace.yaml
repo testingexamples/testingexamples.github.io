@@ -2,3 +2,5 @@
 # pnpm 10+ reads it instead of package.json's onlyBuiltDependencies.
 allowBuilds:
   esbuild: true
+minimumReleaseAgeExclude:
+  - lily-design-system-svelte-picker-bar@0.1.0

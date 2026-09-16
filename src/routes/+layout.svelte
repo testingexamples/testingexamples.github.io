@@ -1,39 +1,16 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { SkipLink } from 'lily-design-system-svelte-headless';
-  import { ThemePicker } from 'lily-design-system-svelte-theme-picker';
-  import { TextSizePicker } from 'lily-design-system-svelte-text-size-picker';
-  import { SharePicker } from 'lily-design-system-svelte-share-picker';
+  import PickerBar from 'lily-design-system-svelte-picker-bar';
   import { SITE_NAME, REPO } from '$lib/site';
 
   let { children } = $props();
 
-  // Every theme in the Lily Design System's own themes/ directory (copied
-  // verbatim into static/assets/themes/ — see AGENTS.md's "Theming"
-  // section). Sorted alphabetically by slug, with one deliberate
-  // exception: the 8 public-sector slugs (UK Gov Design System, the six
-  // NHS England/Scotland/Wales variants, US Web Design System) are held
-  // back to the end of the list as their own alphabetical group, since
-  // they're a visually distinct "official government theme" set a reader
-  // is more likely to be looking for together rather than interleaved
-  // alphabetically among the DaisyUI-derived palettes. They also get a
-  // shorter label below so the list stays scannable.
-  const LILY_THEMES = [
-    'abyss', 'acid', 'adobe-spectrum', 'aqua', 'autumn', 'black',
-    'bumblebee', 'business', 'caramellatte', 'cmyk', 'coffee', 'corporate',
-    'cupcake', 'cyberpunk', 'dark', 'dim', 'dracula', 'emerald', 'fantasy',
-    'forest', 'garden', 'halloween', 'lemonade', 'light', 'lofi', 'luxury',
-    'mozilla-protocol', 'night', 'nord', 'pastel', 'retro', 'silk',
-    'sunset', 'synthwave', 'valentine', 'winter', 'wireframe',
-    'united-kingdom-government-digital-service',
-    'united-kingdom-national-health-service-england-for-patients',
-    'united-kingdom-national-health-service-england-for-practitioners',
-    'united-kingdom-national-health-service-scotland-for-patients',
-    'united-kingdom-national-health-service-scotland-for-practitioners',
-    'united-kingdom-national-health-service-wales-for-patients',
-    'united-kingdom-national-health-service-wales-for-practitioners',
-    'united-states-web-design-system'
-  ];
+  // Short labels for the 8 public-sector theme slugs (UK Gov Design
+  // System, the six NHS England/Scotland/Wales variants, US Web Design
+  // System) — PickerBar's own DEFAULT_THEMES already lists all 45 Lily
+  // reference themes (see static/assets/themes/) in the right order, so
+  // only the label override is site-local.
   const LILY_THEME_LABELS: Record<string, string> = {
     'united-kingdom-government-digital-service': 'UK Gov Design System',
     'united-kingdom-national-health-service-england-for-patients': 'NHS England (Patients)',
@@ -50,33 +27,33 @@
   const SHARE_TARGETS = [
     {
       id: 'email',
-      label: 'Email',
+      label: 'Email Link',
       href: (url: string, title: string) =>
         `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`
     },
     {
       id: 'linkedin',
-      label: 'LinkedIn',
+      label: 'Share on LinkedIn',
       href: (url: string) =>
         `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`
     },
     {
-      id: 'mastodon',
-      label: 'Mastodon',
+      id: 'reddit',
+      label: 'Share on Reddit',
       href: (url: string, title: string) =>
-        `https://mastodonshare.com/?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`
+        `https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`
     },
     {
       id: 'bluesky',
-      label: 'Bluesky',
+      label: 'Share on Bluesky',
       href: (url: string, title: string) =>
         `https://bsky.app/intent/compose?text=${encodeURIComponent(`${title}\n${url}`)}`
     },
     {
-      id: 'reddit',
-      label: 'Reddit',
+      id: 'mastodon',
+      label: 'Share on Mastodon',
       href: (url: string, title: string) =>
-        `https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`
+        `https://mastodonshare.com/?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`
     }
   ];
 
@@ -110,64 +87,67 @@
       <a href={REPO}>GitHub</a>
     </nav>
     <div class="site-controls">
-      <ThemePicker
-        label="Theme"
+      <PickerBar
+        labels={{
+          theme: 'Theme',
+          locale: 'Language',
+          textSize: 'Text size',
+          share: 'Share this page'
+        }}
         themesUrl="/assets/themes/"
-        themes={LILY_THEMES}
-        themeLabels={LILY_THEME_LABELS}
-        storageKey="testingexamples-theme"
-        detectFromSystem
-      />
-      <TextSizePicker
-        label="Text size"
+        themeProps={{
+          themeLabels: LILY_THEME_LABELS,
+          storageKey: 'testingexamples-theme',
+          detectFromSystem: true
+        }}
+        locales={['en']}
+        localeProps={{ storageKey: 'testingexamples-locale' }}
         sizes={['small', 'medium', 'large', 'x-large']}
-        storageKey="testingexamples-text-size"
+        textSizeProps={{ defaultValue: 'medium', storageKey: 'testingexamples-text-size' }}
+        shareTargets={SHARE_TARGETS}
+        shareProps={{
+          title: page.data.title,
+          copyLabel: 'Copy Link',
+          copiedLabel: 'Link copied',
+          copyFailedLabel: 'Could not copy link',
+          children: shareIcon
+        }}
       />
-      <SharePicker
-        label="Share this page"
-        title={page.data.title}
-        targets={SHARE_TARGETS}
-        copyLabel="Copy link"
-        copiedLabel="Link copied"
-        copyFailedLabel="Could not copy link"
-      >
-        {#snippet children({ open, url })}
-          <!-- The package's default glyph is the Unicode character ➤
-               (U+27A4), rendered in the page's own font like the other
-               pickers' ◑ and "A". In practice browsers resolve that
-               specific codepoint to a different fallback font than ◑ or
-               plain Latin letters on some platforms (observed on macOS),
-               and that fallback font's glyph metrics don't sit centered
-               the same way — so the *box* the three buttons sit in stays
-               pixel-identical (confirmed via getBoundingClientRect: all
-               three are top:36px/height:36px, byte-for-byte the same
-               computed border/background), but the arrow's ink looks
-               shifted relative to the other two icons. An inline SVG has
-               no font fallback to vary by platform, so it replaces the
-               default glyph here — same visual weight, guaranteed
-               alignment everywhere. `display: block` on the <svg> itself
-               avoids the separate, unrelated few-px gap inline SVGs get
-               from baseline alignment by default. -->
-          <svg
-            class="share-picker-icon"
-            viewBox="0 0 16 16"
-            width="1.05rem"
-            height="1.05rem"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.6"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-            style="display: block;"
-          >
-            <path d="M2.5 8h11M9 3.5 13.5 8 9 12.5" />
-          </svg>
-        {/snippet}
-      </SharePicker>
     </div>
   </div>
 </header>
+
+{#snippet shareIcon({ open, url }: { open: boolean; url: string })}
+  <!-- The package's default glyph is the Unicode character ➤ (U+27A4),
+       rendered in the page's own font like the other pickers' ◑, 🌐︎, and
+       "A". In practice browsers resolve that specific codepoint to a
+       different fallback font than the others on some platforms
+       (observed on macOS), and that fallback font's glyph metrics don't
+       sit centered the same way — so the *box* the buttons sit in stays
+       pixel-identical (confirmed via getBoundingClientRect: all share the
+       same top/height, byte-for-byte the same computed border/
+       background), but the arrow's ink looks shifted relative to the
+       other icons. An inline SVG has no font fallback to vary by
+       platform, so it replaces the default glyph here — same visual
+       weight, guaranteed alignment everywhere. `display: block` on the
+       <svg> itself avoids the separate, unrelated few-px gap inline SVGs
+       get from baseline alignment by default. -->
+  <svg
+    class="share-picker-icon"
+    viewBox="0 0 16 16"
+    width="1.05rem"
+    height="1.05rem"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    style="display: block;"
+  >
+    <path d="M2.5 8h11M9 3.5 13.5 8 9 12.5" />
+  </svg>
+{/snippet}
 
 <main id="main" class="site-main">
   {@render children()}
