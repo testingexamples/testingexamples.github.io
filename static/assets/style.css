@@ -125,10 +125,13 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html[data-text-size="small"]   { font-size: 87.5%; }  /* 14px at a 16px default */
-html[data-text-size="medium"]  { font-size: 100%; }    /* 16px — same as no attribute */
-html[data-text-size="large"]   { font-size: 112.5%; }  /* 18px */
-html[data-text-size="x-large"] { font-size: 125%; }    /* 20px */
+html[data-text-size="smallest"] { font-size: 62.5%; }  /* 10px at a 16px default */
+html[data-text-size="smaller"]  { font-size: 75%; }    /* 12px */
+html[data-text-size="small"]    { font-size: 87.5%; }  /* 14px */
+html[data-text-size="normal"]   { font-size: 100%; }   /* 16px — same as no attribute */
+html[data-text-size="large"]    { font-size: 112.5%; } /* 18px */
+html[data-text-size="larger"]   { font-size: 125%; }   /* 20px */
+html[data-text-size="largest"]  { font-size: 137.5%; } /* 22px */
 
 html { scroll-behavior: smooth; }
 

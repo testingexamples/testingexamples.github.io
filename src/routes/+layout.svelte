@@ -102,8 +102,7 @@
         }}
         locales={['en']}
         localeProps={{ storageKey: 'testingexamples-locale' }}
-        sizes={['small', 'medium', 'large', 'x-large']}
-        textSizeProps={{ defaultValue: 'medium', storageKey: 'testingexamples-text-size' }}
+        textSizeProps={{ storageKey: 'testingexamples-text-size' }}
         shareTargets={SHARE_TARGETS}
         shareProps={{
           title: page.data.title,
