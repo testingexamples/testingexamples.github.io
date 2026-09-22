@@ -34,12 +34,31 @@ else.
 Playwright test that visits `/` and asserts every selector the five sibling
 repos use still resolves. Keep it passing.
 
+The fixture markup itself lives in `src/lib/components/SiteFixtures.svelte`
+and is imported, unmodified, by both `src/routes/+page.svelte` (this
+contract's real target, at `/`) and every locale's own home page (for
+completeness — never as a substitute for `/`, which sibling repos hit
+directly). The same "never translate, never change without coordinating"
+rule applies to that component regardless of which page imports it.
+
+## Locales
+
+The site is served at `/locales/<locale>/<slug>/` for six locales
+(`en-001` default, `en-gb`, `en-gb-oxendict`, `en-us`, `cy-gb`, `cy-001`).
+See `spec/locales/index.md` for the full contract — URL scheme, what's
+translated vs. kept as-is, and why the home page fixture section is
+exempt from all of it. Every page's own content and translations live in
+`src/lib/pages/<topicId>/Page.svelte`; `src/routes/<old-slug>/+page.ts` is
+now just a redirect to the new URL, kept so old links keep working. Start
+any change to a page's content or translations there, not under
+`src/routes/`.
+
 ## Working rules
 
 - Only the home page's fixture section is kept as plain HTML deliberately;
   everything else on the site should use Lily Design System components
   (`lily-design-system-svelte-headless` and friends) per the pattern in
-  `src/routes/+layout.svelte` and `src/routes/about/+page.svelte`.
+  `src/routes/+layout.svelte` and `src/lib/pages/about/Page.svelte`.
 - `static/llms.txt` and `static/llms.json` use **absolute** URLs
   (`https://testingexamples.github.io/...`, full `https://github.com/...`
   links) because they are read from the live domain, not from the repo.

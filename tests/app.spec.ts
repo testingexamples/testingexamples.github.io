@@ -1,16 +1,18 @@
 import { test, expect } from '@playwright/test';
 
-// Exercises the interactive demo app at /app/: the simulated sign-in, the
-// post-sign-in nav bar and search box, and the three-tab panel. Unlike
-// tests/fixtures.spec.ts (which mechanically enforces the home page's
-// fixture contract for the five sibling repos), this suite is this repo's
-// own functional check that /app/'s behaviour matches what it advertises.
+// Exercises the interactive demo app at /locales/en-001/app/ (the old
+// /app/ URL now just redirects here — see spec/locales/index.md): the
+// simulated sign-in, the post-sign-in nav bar and search box, and the
+// three-tab panel. Unlike tests/fixtures.spec.ts (which mechanically
+// enforces the home page's fixture contract for the five sibling repos),
+// this suite is this repo's own functional check that the demo app's
+// behaviour matches what it advertises.
 
 test.describe('Demo app sign-in', () => {
   test('an incorrect username/password shows a failure message and stays signed out', async ({
     page
   }) => {
-    await page.goto('/app/');
+    await page.goto('/locales/en-001/app/');
     await page.locator('#username-input').fill('wrong');
     await page.locator('#password-input').fill('wrong');
     await page.locator('#sign-in-submit').click();
@@ -22,7 +24,7 @@ test.describe('Demo app sign-in', () => {
   test('the correct username/password shows a success message and reveals the app', async ({
     page
   }) => {
-    await page.goto('/app/');
+    await page.goto('/locales/en-001/app/');
     await page.locator('#username-input').fill('guest');
     await page.locator('#password-input').fill('guest');
     await page.locator('#sign-in-submit').click();
@@ -35,7 +37,7 @@ test.describe('Demo app sign-in', () => {
 
 test.describe('Demo app nav bar', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/app/');
+    await page.goto('/locales/en-001/app/');
     await page.locator('#username-input').fill('guest');
     await page.locator('#password-input').fill('guest');
     await page.locator('#sign-in-submit').click();
@@ -67,7 +69,7 @@ test.describe('Demo app nav bar', () => {
 
 test.describe('Demo app tab bar', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/app/');
+    await page.goto('/locales/en-001/app/');
     await page.locator('#username-input').fill('guest');
     await page.locator('#password-input').fill('guest');
     await page.locator('#sign-in-submit').click();

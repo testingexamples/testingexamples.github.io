@@ -1,5 +1,6 @@
 <script lang="ts">
   import { SectionHeading } from 'lily-design-system-svelte-headless';
+  import SiteFixtures from '$lib/components/SiteFixtures.svelte';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
@@ -32,16 +33,16 @@
     <li><a href="/what-is-the-testing-pyramid/">What is the automatic testing pyramid?</a></li>
     <li><a href="/what-is-browser-automation-testing/">What is browser automatic testing?</a></li>
     <li><a href="/how-to-start-learning-automatic-testing/">How to start learning automatic testing?</a></li>
-    <li><a href="/what-are-related-concepts-for-automatic-testing/">What are related concepts for automatic testing?</a></li>
   </ul>
 
   <h3>Learn More</h3>
   <ul class="repo-list">
+    <li><a href="/what-are-related-concepts-for-automatic-testing/">What are related concepts for automatic testing?</a></li>
     <li><a href="/how-does-artificial-intelligence-help-automatic-testing/">How does artificial intelligence help automatic testing?</a></li>
     <li><a href="/what-is-continuous-integration-testing/">What is continuous integration automatic testing?</a></li>
     <li><a href="/what-is-devops-for-automatic-testing/">What is DevOps for automatic testing?</a></li>
-    <li><a href="/what-are-flow-metrics-for-automatic-testing/">What are flow metrics for automatic testing?</a></li>
-    <li><a href="/what-is-lean-six-sigma-for-automatic-testing/">How does Six Sigma inform manual testing to automatic testing?</a></li>
+    <li><a href="/what-are-flow-metrics-for-automatic-testing/">What metrics help automatic testing?</a></li>
+    <li><a href="/what-is-lean-six-sigma-for-automatic-testing/">How does Six Sigma lead manual testing into automatic testing?</a></li>
   </ul>
 
   <h3>Examples</h3>
@@ -70,89 +71,7 @@
 
 <hr />
 
-<section class="site-fixtures">
-
-  <h2>Id Examples</h2>
-
-  <p id="id-example-1">Id Example 1</p>
-  <p id="id-example-2">Id Example 2</p>
-  <p id="id-example-3">Id Example 3</p>
-
-  <h2>Name Examples</h2>
-
-  <!-- svelte-check flags `name` as an unknown attribute on <p> — it is not
-       a standard HTML attribute for this element, but it is exactly what
-       the fixture contract (spec/index.md) requires: sibling repos locate
-       this element with `[name="name-example-1"]`. The spread below emits
-       the identical DOM attribute while sidestepping the type error;
-       nothing about the rendered markup changes. -->
-  <p {...{ name: 'name-example-1' }}>Name Example 1</p>
-  <p {...{ name: 'name-example-2' }}>Name Example 2</p>
-  <p {...{ name: 'name-example-3' }}>Name Example 3</p>
-
-  <h2>Class Examples</h2>
-
-  <p class="class-example-1">Class Example 1</p>
-  <p class="class-example-2">Class Example 2</p>
-  <p class="class-example-3">Class Example 3</p>
-
-  <h2>Link Examples</h2>
-
-  <p><a href="https://1.example.com">Link Example 1</a></p>
-  <p><a href="https://2.example.com">Link Example 2</a></p>
-  <p><a href="https://3.example.com">Link Example 3</a></p>
-
-  <h2>Ordered List Example</h2>
-
-  <ol id="ol-example-1">
-   <li id="ol-example-1-li-1">alfa</li>
-   <li id="ol-example-1-li-2">bravo</li>
-   <li id="ol-example-1-li-3">charlie</li>
-  </ol>
-
-  <h2>Unordered List Example</h2>
-
-  <ul id="ul-example-1">
-   <li id="ul-example-1-li-1">alfa</li>
-   <li id="ul-example-1-li-2">bravo</li>
-   <li id="ul-example-1-li-3">charlie</li>
-  </ul>
-
-  <h2>Form Input Examples</h2>
-
-  <form id="form-1">
-
-    <h3>Text Example</h3>
-
-    <label for="text-example-1-id">Text Example 1</label>
-    <input type="text" id="text-example-1-id" name="text-example-1-name" value="Text Example 1 Value">
-
-    <h3>Checkbox Example</h3>
-
-    <label for="checkbox-example-1-id">Checkbox Example 1</label>
-    <input type="checkbox" id="checkbox-example-1-id" name="checkbox-example-1-name" value="1" />
-
-    <h3>Radio Example</h3>
-
-    <input type="radio" id="radio-example-1-option-1-id" name="radio-example-1-name" value="1" />1
-    <input type="radio" id="radio-example-1-option-2-id" name="radio-example-1-name" value="2" />2
-    <input type="radio" id="radio-example-1-option-3-id" name="radio-example-1-name" value="3" />3
-
-    <h3>Select Example</h3>
-
-    <select id="select-example-1-id" name="select-example-1-name">
-      <option id="select-example-1-option-1-id" value="a">alfa</option>
-      <option id="select-example-1-option-2-id" value="b">bravo</option>
-      <option id="select-example-1-option-3-id" value="c">charlie</option>
-    </select>
-
-    <h3>Submit Example</h3>
-
-    <input type="submit" value="Submit">
-
-  </form>
-
-</section>
+<SiteFixtures />
 
 <style>
   /* Override the shared .repo-list rule (static/assets/style.css) for this

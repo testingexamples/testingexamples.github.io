@@ -4,13 +4,17 @@ declare global {
     // interface Locals {}
     interface PageData {
       /**
-       * The page's `<title>` text, e.g. "About — Testing Examples". Each
-       * route's `+page.ts` sets this; `+page.svelte`'s `<svelte:head>`
-       * reads it back rather than repeating the string, and
-       * `+layout.svelte` reads `page.data.title` to pass to SharePicker —
-       * one value, not three copies. See AGENTS.md's "Working rules".
+       * The page's `<title>` text, e.g. "About — Testing Examples".
+       * Optional: only the legacy redirect-stub routes under
+       * src/routes/<old-slug>/ never set it (they redirect before
+       * rendering). Every real content page instead sets its own
+       * `<title>` via `<svelte:head>` inside src/lib/pages/<topicId>/
+       * Page.svelte, keyed by locale; `+layout.svelte` reads it back
+       * from `document.title` after navigation (see its `afterNavigate`
+       * call) to pass to SharePicker, rather than plumbing the same
+       * string through `load()` for all six locales of all 18 topics.
        */
-      title: string;
+      title?: string;
     }
     // interface PageState {}
     // interface Platform {}

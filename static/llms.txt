@@ -16,37 +16,44 @@ contract they depend on exactly. Eleven more drive the same kinds of
 tools against a real public site, nhs.wales, instead. The remaining 24
 target Google Search or Google Maps illustratively only — never executed
 against the live sites, since Google's Terms of Service restrict
-automated querying — see /about/ for the complete table.
+automated querying — see /locales/en-001/about/ for the complete table.
+
+This site is also available in five more locales — English (UK),
+English (UK, Oxford spelling), English (US), Welsh (UK), and Welsh
+(international) — at `/locales/<locale>/`; see
+[spec/locales/index.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/locales/index.md).
+The links below are the default locale, English (international,
+`en-001`).
 
 ## Start here
 
 - [Home](https://testingexamples.github.io/): the fixture page itself — ids, names, classes, links, lists, and form inputs
-- [About](https://testingexamples.github.io/about/): what this project is, the full sibling demo repo family, and how the site is built
-- [Learn](https://testingexamples.github.io/learn/): hub page linking to the eight Learn articles below
-- [Examples](https://testingexamples.github.io/examples/): hub page linking to the two Examples pages below
+- [About](https://testingexamples.github.io/locales/en-001/about/): what this project is, the full sibling demo repo family, and how the site is built
+- [Learn](https://testingexamples.github.io/locales/en-001/learn/): hub page linking to the eight Learn articles below
+- [Examples](https://testingexamples.github.io/locales/en-001/examples/): hub page linking to the two Examples pages below
 - [Repository](https://github.com/testingexamples/testingexamples.github.io): source for this site, including `spec/index.md`, the normative fixture contract
 
 ## Learn
 
-- [What is automatic testing?](https://testingexamples.github.io/what-is-automatic-testing/): what automatic testing is, and how it differs from and complements manual testing
-- [What is the purpose of automatic testing?](https://testingexamples.github.io/what-is-the-purpose-of-automatic-testing/): what a team actually gets back for the effort of writing automatic tests — earlier bugs, tireless repetition, and the confidence to release often
-- [What is the automatic testing pyramid?](https://testingexamples.github.io/what-is-the-testing-pyramid/): the three layers of automatic tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top
-- [What is browser automatic testing?](https://testingexamples.github.io/what-is-browser-automation-testing/): what it is, and the trade-offs that come with its realism — slower, more brittle, and harder to diagnose than a unit test
-- [What is continuous integration automatic testing?](https://testingexamples.github.io/what-is-continuous-integration-testing/): running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after
-- [How to start learning automatic testing?](https://testingexamples.github.io/how-to-start-learning-automatic-testing/): a step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples
-- [How does artificial intelligence help automatic testing?](https://testingexamples.github.io/how-does-artificial-intelligence-help-automatic-testing/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
-- [What are related concepts for automatic testing?](https://testingexamples.github.io/what-are-related-concepts-for-automatic-testing/): friendly introductions to code editors, version control (git and GitHub), and agile discovery
+- [What is automatic testing?](https://testingexamples.github.io/locales/en-001/what-is-automatic-testing/): what automatic testing is, and how it differs from and complements manual testing
+- [What is the purpose of automatic testing?](https://testingexamples.github.io/locales/en-001/what-is-the-purpose-of-automatic-testing/): what a team actually gets back for the effort of writing automatic tests — earlier bugs, tireless repetition, and the confidence to release often
+- [What is the automatic testing pyramid?](https://testingexamples.github.io/locales/en-001/what-is-the-testing-pyramid/): the three layers of automatic tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top
+- [What is browser automatic testing?](https://testingexamples.github.io/locales/en-001/what-is-browser-automation-testing/): what it is, and the trade-offs that come with its realism — slower, more brittle, and harder to diagnose than a unit test
+- [What is continuous integration automatic testing?](https://testingexamples.github.io/locales/en-001/what-is-continuous-integration-testing/): running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after
+- [How to start learning automatic testing?](https://testingexamples.github.io/locales/en-001/how-to-start-learning-automatic-testing/): a step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples
+- [How does artificial intelligence help automatic testing?](https://testingexamples.github.io/locales/en-001/how-does-artificial-intelligence-help-automatic-testing/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
+- [What are related concepts for automatic testing?](https://testingexamples.github.io/locales/en-001/what-are-related-concepts-for-automatic-testing/): friendly introductions to code editors, version control (git and GitHub), and agile discovery
 
 ## Learn More
 
-- [What is DevOps for automatic testing?](https://testingexamples.github.io/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
-- [What are flow metrics for automatic testing?](https://testingexamples.github.io/what-are-flow-metrics-for-automatic-testing/): cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal
-- [How does Six Sigma inform manual testing to automatic testing?](https://testingexamples.github.io/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
+- [What is DevOps for automatic testing?](https://testingexamples.github.io/locales/en-001/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
+- [What metrics help automatic testing?](https://testingexamples.github.io/locales/en-001/what-are-flow-metrics-for-automatic-testing/): cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal
+- [How does Six Sigma lead manual testing into automatic testing?](https://testingexamples.github.io/locales/en-001/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
 
 ## Examples
 
-- [Google Search examples](https://testingexamples.github.io/examples/google-search/): the same search-and-follow-a-link walkthrough implemented across Selenium and Playwright in JavaScript, Python, and Rust
-- [Google Maps examples](https://testingexamples.github.io/examples/google-maps/): the same map-browsing walkthrough implemented across Selenium and Playwright in JavaScript, Python, and Rust
+- [Google Search examples](https://testingexamples.github.io/locales/en-001/examples/google-search/): the same search-and-follow-a-link walkthrough implemented across Selenium and Playwright in JavaScript, Python, and Rust
+- [Google Maps examples](https://testingexamples.github.io/locales/en-001/examples/google-maps/): the same map-browsing walkthrough implemented across Selenium and Playwright in JavaScript, Python, and Rust
 
 ## Locator-strategy walkthroughs (target this site)
 
@@ -68,6 +75,7 @@ automated querying — see /about/ for the complete table.
 ## Optional
 
 - [spec/index.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/index.md): the exact fixture contract — every id, name, class, href, and visible text
+- [spec/locales/index.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/locales/index.md): the locale contract — URL scheme, supported locales, and what is and isn't translated
 - [AGENTS.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/AGENTS.md): instructions for AI coding agents working on this repo
 - [AI_STATEMENT.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/AI_STATEMENT.md): how AI was used to build this site, and what stayed a human responsibility
 - License: MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause, at your option — see [LICENSE.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/LICENSE.md)

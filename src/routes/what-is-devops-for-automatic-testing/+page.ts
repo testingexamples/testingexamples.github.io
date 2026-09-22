@@ -1,5 +1,7 @@
+import { redirect } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
+// This content moved to /locales/<locale>/... — see spec/locales/index.md.
 export const load: PageLoad = () => {
-  return { title: 'What is DevOps for automatic testing? — Testing Examples' };
+  redirect(308, '/locales/en-001/what-is-devops-for-automatic-testing/');
 };
