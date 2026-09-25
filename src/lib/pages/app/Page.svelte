@@ -179,13 +179,63 @@
     msgEnterSearchTerm: 'Rhowch derm chwilio.'
   };
 
+  const ZH: Messages = {
+    title: '演示应用',
+    metaDescription:
+      '一个小型交互式演示应用——一个 Lily Design System Grail 布局、一个模拟登录、一个带搜索框的图标导航栏，以及一个三标签面板——是另一个用于练习浏览器自动化的稳定目标。',
+    heading: '演示应用',
+    intro:
+      '一个小巧、自成一体的演示应用——登录、点击导航图标、搜索、切换标签页——使用 Lily Design System 组件构建，作为另一个用于练习浏览器自动化的稳定目标。这里的一切都不是真的：没有后端，你在此页面输入的任何内容都不会离开你的设备。',
+    demoAppLabel: '演示应用',
+    navHome: '首页',
+    navSettings: '设置',
+    navSignOut: '退出登录',
+    searchLabel: '搜索演示应用',
+    searchPlaceholder: '搜索…',
+    aboutHeading: '关于这个演示',
+    aboutP:
+      '这个页面上的一切都是在浏览器中模拟的：没有真实账户，也没有真实后端。它是一个小巧、逼真的应用外壳——登录、导航图标、搜索框和标签页——专门为了提供一个比测试夹具页面更像真实应用的对象来做自动化练习。',
+    signInHeading: '登录',
+    signInCredsPre: '使用用户名 ',
+    signInCredsMid: ' 和密码 ',
+    signInCredsPost: '。',
+    usernameLabel: '用户名',
+    passwordLabel: '密码',
+    signInSubmit: '登录',
+    welcomeHeading: '欢迎，guest',
+    welcomeP: '你已登录。试试下面的标签页，或者上面的导航图标和搜索框。',
+    tabsLabel: '演示标签页',
+    tabAlfa: 'Alfa',
+    tabBravo: 'Bravo',
+    tabCharlie: 'Charlie',
+    tabAlfaPanel: 'Alfa 标签面板',
+    tabBravoPanel: 'Bravo 标签面板',
+    tabCharliePanel: 'Charlie 标签面板',
+    relatedHeading: '相关内容',
+    relatedGivenWhenThen: 'Given-When-Then 示例',
+    relatedHowToStart: '如何开始学习自动化测试？',
+    relatedExamples: '示例',
+    footerNavLabel: '演示应用页脚导航',
+    privacyPolicy: '隐私政策',
+    termsOfService: '服务条款',
+    contact: '联系方式',
+    msgSignInSuccess: '登录成功。',
+    msgSignInFailure: '登录失败。',
+    msgHomePage: '首页',
+    msgSettingsPage: '设置页面',
+    msgSignOut: '已退出登录',
+    msgSearchResultsFor: (query) => `“${query}” 的搜索结果。`,
+    msgEnterSearchTerm: '请输入搜索词。'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_US,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

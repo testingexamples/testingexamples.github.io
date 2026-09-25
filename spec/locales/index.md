@@ -1,6 +1,6 @@
 # Locales
 
-This site supports six locales:
+This site supports seven locales:
 
 | Locale           | Label (see `LOCALE_META` in `src/lib/i18n/locales.ts`) | Slug group |
 | ----------------- | --------------------------------- | ---------- |
@@ -10,6 +10,15 @@ This site supports six locales:
 | `en-us`            | English - United States           | English    |
 | `cy-001`           | Cymraeg                           | Welsh      |
 | `cy-gb`            | Cymraeg - Great Britain           | Welsh      |
+| `zh-cn`            | 中文                               | Chinese    |
+
+`src/lib/i18n/locales.ts` also exports `PICKER_LOCALES`: what the header's
+LocalePicker actually offers, in display order (`cy-001` first, then the
+four English variants, then `zh-cn`). It omits `cy-gb`, since its content
+is identical to `cy-001` — see "Welsh" below — so showing both would just
+be two indistinguishable options. `cy-gb` still routes and renders for
+anyone who links to it directly; it's a picker-display choice, not a
+support decision.
 
 ## URL scheme
 
@@ -20,15 +29,17 @@ Every page lives at `https://testingexamples.github.io/locales/<locale>/<slug>/`
 
 **Slugs**: the four English locales share one English slug per page
 (`what-is-automatic-testing`, etc.). The two Welsh locales share one
-Welsh slug per page (`beth-yw-profi-awtomatig`, etc.) — translating the
-URL itself, not just a locale prefix. One exception: `given-when-then`
+Welsh slug per page (`beth-yw-profi-awtomatig`, etc.), and `zh-cn` has its
+own Chinese slug per page (`什么是自动化测试`, etc., in native characters,
+percent-encoded in the actual URL like any non-ASCII IRI) — translating
+the URL itself, not just a locale prefix. One exception: `given-when-then`
 keeps its English slug (and English heading term) in every locale,
 because Given-When-Then/Gherkin is BDD vocabulary, not ordinary prose —
 same treatment as any other technical proper noun on this site.
 
 The full slug table lives in `src/lib/i18n/topics.ts`, one entry per page,
-each carrying its English slug, its Welsh slug, and a lazy import of its
-Svelte component.
+each carrying its English slug, its Welsh slug, its Chinese slug, and a
+lazy import of its Svelte component.
 
 **Old flat URLs** (`/what-is-automatic-testing/`, `/about/`, etc.) still
 resolve: each one's route now does nothing but
@@ -47,8 +58,9 @@ external sibling repos' test suites depend on, hardcoded to
 unprefixed URL, unlocalized, byte-for-byte unchanged.
 
 That same fixture section is also rendered — identically, in English, on
-every locale including both Welsh ones — as part of each locale's own
-home page (`/locales/<locale>/`). It is never translated anywhere: it is
+every locale including both Welsh ones and `zh-cn` — as part of each
+locale's own home page (`/locales/<locale>/`). It is never translated
+anywhere: it is
 a contract/standard, not content, the same category as a code sample or a
 product name. Both the root page and every localized home page import it
 from one shared component, `src/lib/components/SiteFixtures.svelte`, so
@@ -81,6 +93,11 @@ is no meaningful content difference between them for this site (no
 currency, dates, or GB-specific facts in the prose), so splitting them
 would just be duplication. Machine-assisted, native-review-recommended —
 see the caveat in the top-level summary this spec accompanies.
+
+Chinese: `zh-cn` gets one Simplified Chinese translation per page, written
+directly (not machine-translated word-for-word), with the same proper-noun
+and code-sample exclusions as every other locale. Also machine-assisted,
+native-review-recommended.
 
 ## Implementation shape
 

@@ -140,13 +140,53 @@
     repoCta: "Yr ystorfa ar GitHub"
   };
 
+  const ZH: Messages = {
+    title: '关于',
+    metaDescription: `关于 Testing Examples：它是什么、它支持的 ${DEMO_MATRIX_COUNT} 个姐妹演示仓库，以及本站是如何构建的。`,
+    heading: '关于',
+    intro: 'Testing Examples 提供免费、开源的浏览器自动化测试示例。',
+    whatForHeading: '本站的用途',
+    whatForP:
+      '这个主页是一个刻意保持简单的 HTML 测试夹具页面——包含已知 id、name、class、链接文字、列表和表单输入的元素——供任何学习或使用 Selenium WebDriver、WebdriverIO 或 Playwright 等浏览器自动化工具的人使用。它的目的是成为一个稳定的目标：每次都是相同的标记、相同的标识符、相同的可见文字。',
+    factsLabel: '项目信息',
+    factName: '名称',
+    factLicence: '许可证',
+    factAuthor: '作者',
+    factRepository: '仓库',
+    factFixtureContract: '测试夹具约定',
+    factFixtureContractSuffix: '，在仓库中',
+    matrixHeading: `${DEMO_MATRIX_COUNT} 个演示仓库：三种工具 × 最多四种语言 × 最多四个目标`,
+    matrixP1:
+      '每个姐妹仓库都将一种浏览器自动化工具（Selenium、WebdriverIO 或 Playwright）与一种语言（JavaScript、Python、Rust 或 TypeScript）搭配，针对一个目标。有两个目标是真实、可运行的演示：本站自己的测试夹具页面（其中五个仓库——本站 AGENTS.md 和 spec/index.md 将它们的确切 id、name、class 和文字视为一种约定）以及真实、公开的 nhs.wales 政府网站。另外两个目标——谷歌搜索和谷歌地图——仅作说明用途：这些仓库各自的 AGENTS.md 都明确声明其代码绝不能针对真实站点运行，因为谷歌的服务条款限制自动化查询；请参阅',
+    matrixP2: '，了解本站上直接展示的相同模式。有两个单元格是刻意留空的——Selenium TypeScript 和 WebdriverIO TypeScript 没有 NHS Wales 版本。',
+    tableCaption: '完整的演示仓库家族，每行对应一种工具和语言，每列对应一个目标',
+    columnTool: '工具',
+    columnLanguage: '语言',
+    columnThisSite: '本站',
+    notBuilt: '尚未为该语言构建',
+    walkthroughsHeading: '定位策略演练（目标为本站）',
+    workedExampleHeading: '一个完整的真实案例（目标为 nhs.wales）',
+    workedExampleSuffix: '其余五个 NHS Wales 仓库遵循上表中相同的模式。',
+    builtHeading: '本站是如何构建的',
+    builtP:
+      '本站是一个 SvelteKit 项目，使用 @sveltejs/adapter-static 预渲染为纯 HTML，并由 GitHub Actions 在每次推送到 main 分支时部署到 GitHub Pages。',
+    designSystemLabel: '设计系统',
+    designSystemP:
+      '这些组件来自 Lily Design System——渲染语义化 HTML 和正确 ARIA 的 Svelte 组件，每个都带有一个稳定的类名钩子。本站也使用 Lily 自己的官方主题：static/assets/themes/ 下的全部 45 个文件，逐字复制自 Lily 的仓库，每一个都是完整、自包含的样式表，为 Lily 约 492 个组件中的每一个设置样式——而不仅仅是两种手选的颜色。因此 static/assets/style.css 已经完全不再为 Lily 自己的组件钩子设置样式；它只保留了一个小的别名层、本站自己的页眉/导航/页脚布局（不是 Lily 组件），以及少数几处明确记录的例外，说明 Lily 的默认样式在何处不适合本站的特定布局——具体是什么以及为什么，请参阅该文件自己的头部注释。Lily 的 ThemePicker 可以在这 45 个主题之间实时切换。',
+    exceptionP:
+      '唯一的例外是主页的测试夹具部分（从 Id Examples 到 Form Input Examples）：这些元素被保留为纯 HTML，而不是 Lily 组件，以确保它们的 id、name、class 和文字与姐妹演示仓库所期望的完全一致。',
+    runLocallyLabel: '在本地运行本站',
+    repoCta: 'GitHub 上的仓库'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_001,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

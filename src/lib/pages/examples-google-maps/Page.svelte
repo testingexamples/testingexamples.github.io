@@ -205,13 +205,72 @@
     googleSearchExamplesLinkText: 'Enghreifftiau Chwilio Google'
   };
 
+  const ZH: Messages = {
+    title: '谷歌地图示例',
+    metaDescription:
+      '与谷歌地图的六种交互——访问、搜索、点击结果、滚动、缩放，以及切换图层——用六种方式实现：Selenium 和 Playwright，各自使用 JavaScript、Python 和 Rust。',
+    heading: '谷歌地图示例',
+    intro:
+      '这个页面展示与谷歌地图的六种交互——访问、搜索、点击链接或结果、滚动、缩放，以及切换图层——用六种方式实现：两种浏览器自动化工具（Selenium 和 Playwright）乘以三种语言（JavaScript、Python、Rust）。',
+    section1Heading: '开始之前需要了解的两件事',
+    calloutLabel: '在运行这些代码之前',
+    calloutP1Pre: '谷歌的',
+    tosLinkText: '服务条款',
+    calloutP1Mid: '限制对其服务进行自动化查询。下面的代码讲解的是',
+    patternsLabel: '模式',
+    calloutP1Post: '——定位策略和交互技巧——而不是打算反复针对真实谷歌地图运行的脚本。',
+    calloutP2A: '谷歌地图也是一个比典型页面难得多的自动化目标。地图本身大部分渲染在一个',
+    calloutP2B:
+      '元素（或 WebGL）上，因此你通常无法像查找一段文字那样“找到”一条街道或一个图钉——你是通过坐标和鼠标事件（在某个 x/y 坐标上点击、在画布元素上滚动鼠标滚轮）与',
+    calloutP2C: '交互，而不是为它查找一个 DOM 元素。画布周围的 UI 外壳——搜索框、缩放按钮、图层菜单——则是普通的 DOM，而且很实用的是，谷歌为这套外壳中的大多数部分都提供了真实、相对稳定的',
+    calloutP2D: '属性以支持无障碍访问。这使得基于可访问名称的定位器（',
+    calloutP2E:
+      '）比生成或哈希化的 CSS 类名更好，因为后者在地图每次部署时都会改变。这是这个页面上最具通用性的一条经验：',
+    strongLessonLabel: '只要一个网站的标记不是你能控制的公共 API，就优先使用基于可访问名称的定位器，而不是基于类名的定位器',
+    calloutP2F: '——这是一个在任何地方都适用的良好实践，不仅限于这里。',
+    section2Heading: '六种交互',
+    section2Intro: '下面的每个示例都实现了同样的六个步骤。这里统一定义一次，而不是在每份代码示例中重复：',
+    item1Strong: '访问',
+    item1Pre: '——导航到',
+    item1Post: '。',
+    item2Strong: '搜索',
+    item2A: '——找到搜索框（在当前的谷歌地图标记中带有',
+    item2B: '——注意这一点可能会像任何第三方网站一样随时间漂移），并输入查询内容，例如',
+    item2C: '，然后提交（回车键，或搜索按钮，通常带有',
+    item2D: '）。',
+    item3Strong: '点击链接/结果',
+    item3Rest:
+      '——点击结果面板中的第一个搜索结果（结果通常是 DOM 列表项，而不是画布——即使地图本身是画布，也可以按角色或文字找到它们）。',
+    item4Strong: '滚动',
+    item4Rest:
+      '——在地图画布上模拟滚动/平移操作：对于拥有真实鼠标滚轮/滚动 API 的工具，向画布元素的边界框（而不是整个页面）派发一个滚轮事件或滚动手势。',
+    item5Strong: '缩放',
+    item5A: '——点击放大按钮（',
+    item5B: '）或缩小按钮（',
+    item5C: '）——这比试图以编程方式对画布进行双指缩放或滚轮缩放要可靠得多，值得作为务实的选择单独指出。',
+    item6Strong: '激活一个图层',
+    item6A: '——打开图层面板（按钮',
+    item6B:
+      '），然后选择一个图层，例如“Traffic”（面板打开后通常是一个带标签的选项或按钮——下文将其描述为“交通图层开关”，而不去过度声称一个确切、稳定的选择器）。',
+    seleniumIntroA: '按照上面的经验，下面所有三种语言都统一使用基于 aria-label 的定位器。Rust 示例使用',
+    seleniumIntroB: '，这是事实上的 Rust 版 Selenium/WebDriver 客户端——并没有官方版本，它的名字致敬了硒的原子序数 34。',
+    playwrightIntroA: 'Playwright 提供官方的 JavaScript、Python、.NET 和 Java 绑定。Rust 版由社区维护：',
+    playwrightIntroB: '（由',
+    playwrightIntroC: '积极开发，尚在 1.0 之前）是下面用到的示例。较旧的',
+    playwrightIntroD: ' crate，以',
+    playwrightIntroE: '发布在 crates.io 上，自 2022 年以来已被放弃维护。',
+    backToExamples: '返回示例',
+    googleSearchExamplesLinkText: '谷歌搜索示例'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_001,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

@@ -94,13 +94,44 @@
       " — cyflwyniadau cyfeillgar i olygyddion cod, rheoli fersiynau (git a GitHub), a darganfod ystwyth."
   };
 
+  const ZH: Messages = {
+    title: '学习',
+    metaDescription:
+      '了解什么是自动化测试，以及如何开始使用 Selenium、WebdriverIO 和 Playwright 等浏览器自动化工具。',
+    heading: '学习',
+    intro:
+      '八篇简短文章：什么是自动化测试以及为什么值得去做、自动化测试金字塔以及浏览器自动化在其中的位置、浏览器测试的取舍、持续集成如何自动运行这些测试、一条让你亲自上手浏览器自动化的实用路径、如今 AI 在这一切中扮演的角色，以及围绕这些内容的日常工具与实践。',
+    whatIsLinkText: '什么是自动化测试？',
+    whatIsDesc: '——什么是自动化测试，以及它与人工测试有何不同又如何互补。',
+    purposeLinkText: '自动化测试的目的是什么？',
+    purposeDesc:
+      '——团队为编写自动化测试所付出的努力实际能换来什么：更早发现缺陷、不知疲倦的重复，以及频繁发布的信心。',
+    pyramidLinkText: '什么是自动化测试金字塔？',
+    pyramidDesc:
+      '——自动化测试的三个层级，从底层快速、廉价的单元测试，到顶层贴近真实的端到端浏览器测试。',
+    browserLinkText: '什么是浏览器自动化测试？',
+    browserDesc:
+      '——它是什么，以及它的真实感所带来的取舍：比单元测试更慢、更脆弱、也更难诊断。',
+    ciLinkText: '什么是持续集成自动化测试？',
+    ciDesc: '——在每次改动时自动运行你的自动化测试套件，以便在合并之前而不是之后发现有问题的代码。',
+    howToStartLinkText: '如何开始学习自动化测试？',
+    howToStartDesc:
+      '——一条循序渐进的路径：选一门语言，选一个工具，对本站运行你的第一个脚本，然后在真实的示例上练习。',
+    aiLinkText: '人工智能如何帮助自动化测试？',
+    aiDesc:
+      '——如今 AI 是如何以及为何出现在编写测试、CI/CD 和敏捷探索中的，以及适用于这三者的同一个注意事项。',
+    relatedConceptsLinkText: '自动化测试的相关概念是什么？',
+    relatedConceptsDesc: '——对代码编辑器、版本控制（git 和 GitHub）以及敏捷探索的友好入门介绍。'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_001,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

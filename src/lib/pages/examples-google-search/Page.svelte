@@ -237,13 +237,78 @@
     googleMapsExamplesLinkText: 'enghreifftiau Mapiau Google'
   };
 
+  const ZH: Messages = {
+    title: '谷歌搜索示例',
+    metaDescription:
+      '针对谷歌搜索的同样的浏览、搜索、提交和跟踪链接交互，用六种方式实现：Selenium 和 Playwright，各自使用 JavaScript、Python 和 Rust。',
+    heading: '谷歌搜索示例',
+    intro: '一个熟悉的场景——浏览到一个网站、使用它的搜索框、提交搜索、跟踪一个结果链接——用六种方式实现。',
+    section1Heading: '同样的四个交互，六种实现',
+    scenarioPre: '这个页面展示一个场景——',
+    strongBrowse: '浏览到网站',
+    scenarioMid1: '、',
+    strongFollow: '跟踪一个链接',
+    scenarioMid2: '、',
+    strongSearch: '使用搜索框',
+    scenarioMid3: '，以及',
+    strongClick: '点击一个按钮',
+    scenarioPost:
+      '——用六种方式实现：两种浏览器自动化工具（Selenium 和 Playwright），各自使用三种语言（JavaScript、Python、Rust）。这六个示例的目标都是谷歌搜索，因为它是一个几乎每位读者都已经知道怎么用的搜索框和结果页面，这样就能更容易看清每种工具的语法在做什么，而不必先去学习这个页面本身。',
+    calloutLabel: '运行这些示例之前请先阅读',
+    readBeforePre: '谷歌的',
+    tosLinkText: '服务条款',
+    readBeforeMid1: '限制对谷歌搜索进行自动化查询。这六个示例的存在是为了并排展示每种工具的语法和交互',
+    patternsLabel: '模式',
+    readBeforeMid2: '——它们不打算被反复运行，甚至根本不应该针对真实的',
+    readBeforeMid3: '运行。如果你想亲自动手练习这些同样的模式，请把它们指向',
+    homePageLinkText: '本站自己的主页',
+    readBeforePost: '，它正是为此而建：稳定的 id、name、class 和文字，不会在你脚下发生变化。',
+    fourInteractionsHeading: '四个交互，统一定义一次',
+    fourInteractionsIntro: '为了避免在每个示例中重复，下面说明下方六个脚本各自做了什么：',
+    item1Strong: '浏览到网站',
+    item1Pre: '——导航到',
+    item1Post: '。',
+    item2Strong: '使用搜索框',
+    item2Pre: '——找到搜索输入框并输入查询内容，例如',
+    item2Post: '。',
+    item3Strong: '点击按钮 / 提交',
+    item3Rest: '——按下回车键，或者找到提交按钮并点击它。',
+    item4Strong: '跟踪一个链接',
+    item4Rest: '——结果加载完成后，找到并点击第一个自然搜索结果的链接。',
+    caveatA:
+      '有一点需要直白地说明，而不是含糊带过：谷歌搜索框的确切标记会随时间漂移，而且很可能会继续漂移。它在历史上曾经是一个',
+    caveatB: '，目前则常常是一个',
+    caveatC: '，但无论哪种情况，它通常都带有',
+    caveatD: '，因此下面的示例用类似',
+    caveatE: '这样的选择器来定位它（或者，对于支持带类型属性定位器的工具，则用',
+    caveatF:
+      '）。这正好说明了为什么按 name/标签选择器不够可靠：当网站的标记在其下发生变化时，它们可能会悄无声息地不再匹配。如果某个工具支持改用可访问性角色和名称来定位（例如一个带有可见“Search”标签的',
+    caveatG: '），那是更稳健的选择，相关示例中也会加以说明。提交按钮在历史上通常带有',
+    caveatH:
+      '，但它一旦被自动补全建议遮挡（这在搜索框获得焦点的瞬间就可能发生），就很难点击到，这也是为什么输入完成后按回车键通常比尝试点击它更可靠的原因之一。',
+    seleniumIntro:
+      'Selenium 是历史最悠久的跨语言浏览器自动化项目——它的 WebDriver 协议正是本页其他几个工具在底层所使用的同一套协议。',
+    seleniumRustA: 'Selenium 项目本身并没有官方的 Rust 绑定——',
+    seleniumRustB: '（其名字致敬了硒的原子序数 34）是事实上的 Rust 版 Selenium/WebDriver 客户端。它需要在指定的 URL 上运行一个',
+    seleniumRustC: '（或类似的东西），就像上面两个示例也需要本地驱动/浏览器一样。',
+    playwrightIntro: 'Playwright 提供官方的 JavaScript、Python、.NET 和 Java 绑定；Rust 支持则由社区维护，而非官方提供。',
+    pwRustA: '请留意你安装的是哪个 crate。',
+    pwRustB: '（',
+    pwRustC: '）目前正在积极维护，但仍处于 1.0 之前、API 尚在稳定阶段——下面用的就是这一个。旧的那个直接以',
+    pwRustD: '（',
+    pwRustE: '）发布在 crates.io 上的 crate 自 2022 年以来已被放弃维护；请不要选用那一个。',
+    backToExamples: '返回示例',
+    googleMapsExamplesLinkText: '谷歌地图示例'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_GB_OXENDICT,
     'en-us': EN_US,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

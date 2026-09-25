@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import { LOCALES, isLocale } from '$lib/i18n/locales';
-import { TOPICS, TOPIC_IDS, topicForSlug } from '$lib/i18n/topics';
+import { TOPICS, TOPIC_IDS, slugForTopic, topicForSlug } from '$lib/i18n/topics';
 import type { EntryGenerator, PageLoad } from './$types';
 
 export const prerender = true;
@@ -9,8 +9,7 @@ export const entries: EntryGenerator = () => {
   const list: { locale: string; slug: string }[] = [];
   for (const locale of LOCALES) {
     for (const topicId of TOPIC_IDS) {
-      const group = locale === 'cy-gb' || locale === 'cy-001' ? 'cy' : 'en';
-      list.push({ locale, slug: TOPICS[topicId].slug[group] });
+      list.push({ locale, slug: slugForTopic(locale, topicId) });
     }
   }
   return list;

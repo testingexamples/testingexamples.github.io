@@ -2,11 +2,19 @@
 // contract (URL scheme, which content is translated vs. kept as-is, and
 // why the home page fixture section never changes).
 
-export type Locale = 'en-001' | 'en-gb' | 'en-gb-oxendict' | 'en-us' | 'cy-001' | 'cy-gb';
+export type Locale = 'en-001' | 'en-gb' | 'en-gb-oxendict' | 'en-us' | 'cy-001' | 'cy-gb' | 'zh-cn';
 
 export const DEFAULT_LOCALE: Locale = 'en-001';
 
-export const LOCALES: Locale[] = ['en-001', 'en-gb', 'en-gb-oxendict', 'en-us', 'cy-001', 'cy-gb'];
+export const LOCALES: Locale[] = [
+  'en-001',
+  'en-gb',
+  'en-gb-oxendict',
+  'en-us',
+  'cy-001',
+  'cy-gb',
+  'zh-cn'
+];
 
 export function isLocale(value: string): value is Locale {
   return (LOCALES as string[]).includes(value);
@@ -26,7 +34,8 @@ export const LOCALE_META: Record<Locale, LocaleMeta> = {
   'en-gb-oxendict': { label: 'English - Great Britain - Oxford', bcp47: 'en-GB-oxendict', dir: 'ltr' },
   'en-us': { label: 'English - United States', bcp47: 'en-US', dir: 'ltr' },
   'cy-001': { label: 'Cymraeg', bcp47: 'cy-001', dir: 'ltr' },
-  'cy-gb': { label: 'Cymraeg - Great Britain', bcp47: 'cy-GB', dir: 'ltr' }
+  'cy-gb': { label: 'Cymraeg - Great Britain', bcp47: 'cy-GB', dir: 'ltr' },
+  'zh-cn': { label: '中文', bcp47: 'zh-CN', dir: 'ltr' }
 };
 
 export const LOCALE_LABELS: Record<Locale, string> = Object.fromEntries(
@@ -44,4 +53,11 @@ export const LOCALE_LABELS: Record<Locale, string> = Object.fromEntries(
  * both would just show the visitor two indistinguishable Welsh options.
  * `cy-001` ("Cymraeg") sorts first, ahead of the English variants.
  */
-export const PICKER_LOCALES: Locale[] = ['cy-001', 'en-001', 'en-gb', 'en-gb-oxendict', 'en-us'];
+export const PICKER_LOCALES: Locale[] = [
+  'cy-001',
+  'en-001',
+  'en-gb',
+  'en-gb-oxendict',
+  'en-us',
+  'zh-cn'
+];

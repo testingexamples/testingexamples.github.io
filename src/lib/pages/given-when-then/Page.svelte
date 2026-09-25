@@ -93,13 +93,42 @@
     seeMoreExamples: 'Gweld mwy o enghreifftiau'
   };
 
+  const ZH: Messages = {
+    title: 'Given-When-Then 示例',
+    metaDescription:
+      '一个场景先写成 Given-When-Then（Gherkin）句子，再展示为等价的 JavaScript 和 Python 版本的 Selenium 与 Playwright 代码。',
+    heading: 'Given-When-Then 示例',
+    intro:
+      '一个用通俗语言描述的场景，写成非程序员会使用的方式，与真正执行它的代码并排展示——涵盖四种工具与语言的组合。',
+    whatHeading: '什么是 Given-When-Then？',
+    whatIsLabel: '是一种用通俗句子而不是代码来编写测试场景的方式：Given',
+    whatP1:
+      '（某个初始状态），When（发生了某件事），Then（某个结果为真）。它源自行为驱动开发（BDD），其特定的纯文本语法通常被称为 Gherkin。',
+    whatP2:
+      '这样做的目的不是取代真正的测试代码——而是在任何人为它编写自动化之前，给团队一个大家都能认同的共同句子：产品负责人、测试人员和开发者都能读懂 "Given I am on the site, When I search, Then I see results"，并认同这就是重要的行为，而不需要任何人先去读 JavaScript 或 Python。而底层的代码——不论用什么方式、哪种工具写成——才是真正证明这句话始终成立的东西。',
+    scenarioHeading: '场景',
+    scenarioIntro: '一个用 Gherkin 写成的场景：',
+    scenarioBody:
+      '下面用四种方式实现了同样的三行内容：两种浏览器自动化工具（Selenium 和 Playwright），各自使用两种语言（JavaScript 和 Python）。每一行代码都注明了它属于哪个 Given/When/Then 步骤，方便你把这句通俗的话直接对应到实现它的代码上。',
+    readNotRunLabel: '请阅读，不要反复运行',
+    readNotRunPre: '这四个示例的目标是 google.com，与本站的',
+    googleSearchExamplesLinkText: '谷歌搜索示例',
+    readNotRunPost:
+      '相同——同样的注意事项也适用：谷歌的服务条款限制对谷歌搜索进行自动化查询，因此请把下面的代码当作了解模式的阅读材料，而不是反复对真实网站运行的脚本。如果你想亲自动手体验同样的 Given/When/Then 结构，可以把同样的步骤指向本站自己的主页。',
+    seleniumHeading: 'Selenium',
+    playwrightHeading: 'Playwright',
+    backHome: '返回首页',
+    seeMoreExamples: '查看更多示例'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_001,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

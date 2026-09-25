@@ -18,9 +18,10 @@ target Google Search or Google Maps illustratively only — never executed
 against the live sites, since Google's Terms of Service restrict
 automated querying — see /locales/en-001/about/ for the complete table.
 
-This site is also available in five more locales — English - Great
+This site is also available in six more locales — English - Great
 Britain, English - Great Britain - Oxford, English - United States,
-Cymraeg, and Cymraeg - Great Britain — at `/locales/<locale>/`; see
+Cymraeg, Cymraeg - Great Britain, and 中文 (Chinese) — at
+`/locales/<locale>/`; see
 [spec/locales/index.md](https://github.com/testingexamples/testingexamples.github.io/blob/main/spec/locales/index.md).
 The links below are the default locale, English (`en-001`).
 

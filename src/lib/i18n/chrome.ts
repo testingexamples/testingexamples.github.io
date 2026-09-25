@@ -95,6 +95,36 @@ const CY_COMMON: ChromeMessages = {
     '{site} — enghreifftiau profi awtomatig porwr, yn rhad ac am ddim ac yn ffynhonnell agored.'
 };
 
+const ZH_COMMON: ChromeMessages = {
+  skipToMainContent: '跳转到主要内容',
+  mainNavLabel: '主导航',
+  siteBrandAriaLabel: '{site} 首页',
+  nav: {
+    home: '首页',
+    learn: '学习',
+    examples: '示例',
+    about: '关于',
+    github: 'GitHub'
+  },
+  pickerLabels: {
+    theme: '主题',
+    locale: '语言',
+    textSize: '文字大小',
+    share: '分享此页面'
+  },
+  shareLabels: {
+    email: '通过电子邮件分享链接',
+    linkedin: '分享到 LinkedIn',
+    reddit: '分享到 Reddit',
+    bluesky: '分享到 Bluesky',
+    mastodon: '分享到 Mastodon',
+    copyLink: '复制链接',
+    copiedLabel: '链接已复制',
+    copyFailedLabel: '无法复制链接'
+  },
+  footerTagline: '{site} — 免费开源的浏览器自动化测试示例。'
+};
+
 // The chrome strings above have no US/UK spelling variance (no colour/
 // organise-style words among them), so all four English locales share one
 // object, and both Welsh locales share the other. Page content, which does
@@ -105,7 +135,8 @@ export const CHROME: Record<Locale, ChromeMessages> = {
   'en-gb-oxendict': EN_COMMON,
   'en-us': EN_COMMON,
   'cy-gb': CY_COMMON,
-  'cy-001': CY_COMMON
+  'cy-001': CY_COMMON,
+  'zh-cn': ZH_COMMON
 };
 
 export function chromeFor(locale: Locale): ChromeMessages {

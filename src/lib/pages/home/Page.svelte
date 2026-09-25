@@ -111,13 +111,45 @@
     }
   };
 
+  const ZH: Messages = {
+    metaDescription:
+      '免费开源的 HTML 测试夹具，用于练习浏览器自动化：通过 id、name、class、链接文字和 XPath 查找元素，并与表单输入交互。',
+    heading: `欢迎来到 ${SITE_NAME}`,
+    intro: `如果你刚接触浏览器自动化，这里正是你该来的地方。${SITE_NAME} 是一个小巧、免费、开源的网站，专为任何想学习让浏览器自动完成操作——点击、输入、搜索、等待、断言——的人打造，无论你从未写过一行代码，还是已经很熟悉，只是想找一个快速参考或一个可靠的地方试试手。`,
+    learnHeading: '学习',
+    learnMoreHeading: '延伸学习',
+    examplesHeading: '示例',
+    practiceHeading: '在这个页面上练习',
+    practiceBody:
+      '下面的内容是一个稳定的测试夹具练习场：固定的 id、name、class 和文字，自动化工具每次都能可靠地找到它们，这正是它适合直接拿来练习的原因——把你的脚本指向它，找到一个元素，与它交互，看看会发生什么。这个页面所遵守的确切约定记录在本仓库的',
+    links: {
+      whatIsAutomaticTesting: '什么是自动化测试？',
+      whatIsThePurpose: '自动化测试的目的是什么？',
+      whatIsTheTestingPyramid: '什么是自动化测试金字塔？',
+      whatIsBrowserAutomation: '什么是浏览器自动化测试？',
+      howToStartLearning: '如何开始学习自动化测试？',
+      whatAreRelatedConcepts: '自动化测试的相关概念是什么？',
+      howDoesAiHelp: '人工智能如何帮助自动化测试？',
+      whatIsContinuousIntegration: '什么是持续集成自动化测试？',
+      whatIsDevOps: '什么是自动化测试的 DevOps？',
+      whatAreFlowMetrics: '哪些指标有助于自动化测试？',
+      whatIsLeanSixSigma: '六西格玛如何引导人工测试进入自动化测试？',
+      googleSearchExamples: '谷歌搜索示例',
+      googleMapsExamples: '谷歌地图示例',
+      givenWhenThenExamples: 'Given-When-Then 示例',
+      demoApp: '演示应用',
+      demoAppSuffix: '登录、导航图标、搜索和标签页，供你练习'
+    }
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_US,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

@@ -63,13 +63,32 @@
       "Mae Telerau Gwasanaeth Google yn cyfyngu ymholi awtomataidd o'i wasanaethau. Mae'r enghreifftiau hyn yn bodoli i ddysgu cystrawen a phatrymau pob offeryn profi — trinwch nhw fel deunydd darllen, nid sgriptiau i'w rhedeg dro ar ôl tro yn erbyn google.com neu Google Maps byw. Mae pob tudalen enghraifft yn ymhelaethu ar hyn ymhellach."
   };
 
+  const ZH: Messages = {
+    title: '示例',
+    metaDescription:
+      '真实场景的浏览器自动化示例：同样的几个交互，用 Selenium 和 Playwright 分别以 JavaScript、Python 和 Rust 实现，共六种写法。',
+    heading: '示例',
+    intro:
+      '本节展示同样几个真实场景的交互——浏览、搜索、点击、滚动——以六种方式实现：两种工具（Selenium 和 Playwright）乘以三种语言（JavaScript、Python、Rust），针对两个知名的真实网站。',
+    sectionHeading: '谷歌搜索和谷歌地图',
+    summaryListLabel: '示例页面',
+    googleSearchLinkText: '谷歌搜索示例',
+    googleSearchDesc: '——搜索、阅读结果并跟踪链接，同一段演练用六种方式写成。',
+    googleMapsLinkText: '谷歌地图示例',
+    googleMapsDesc: '——浏览地图、搜索地点并与页面交互，同一段演练用六种方式写成。',
+    calloutLabel: '请阅读，不要反复运行',
+    calloutP:
+      '谷歌的服务条款限制对其服务进行自动化查询。这些示例的存在是为了讲解各测试工具的语法和模式——请把它们当作阅读材料，而不是反复对真实的 google.com 或谷歌地图运行的脚本。每个示例页面都会对此作进一步说明。'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_001,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

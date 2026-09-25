@@ -74,13 +74,37 @@
     nextLabel: "Nesaf: sut mae Six Sigma yn arwain profi â llaw i mewn i brofi awtomatig? →"
   };
 
+  const ZH: Messages = {
+    title: '哪些指标有助于自动化测试？',
+    metaDescription:
+      '什么是流程指标——周期时间、交付时间、吞吐量、在制品——以及为什么不断增多的被跳过或不稳定的测试本身就是一个流程指标信号，表明测试债务正在累积。',
+    heading: '哪些指标有助于自动化测试？',
+    flowMetricsLabel: '流程指标',
+    introP:
+      '衡量的是工作在流程中实际的流动情况：周期时间（一项工作从开始到结束需要多久）、交付时间、吞吐量，以及在制品数量。关键在于衡量真正在流动的东西，而不是人看起来有多忙。',
+    belongsP:
+      '这就是为什么它出现在一个测试相关的页面上：“从报告一个缺陷到为它建立回归测试”之间的时间，就是一个具体、可追踪的周期时间。而不断增多的被跳过、被忽略或不稳定的测试，本身就是一个流程指标信号——一种并未真正流动的在制品——意味着测试债务正在以比偿还更快的速度累积，无论是否有人在看板上追踪它。',
+    learnMorePre: '可以进一步阅读 Atlassian 的',
+    learnMoreLink1Text: 'Kanban 指南',
+    learnMoreMid: '，或观看 ProKanban 的',
+    learnMorePost: '视频，了解这些指标本身。',
+    askAiHeading: '向 AI 提问的想法',
+    askAi: [
+      '对于团队的日常工作来说，“周期时间”和“吞吐量”用简单的话说到底是什么意思？',
+      '在不购买新工具的情况下，我该如何开始为自己团队的缺陷修复追踪周期时间？',
+      '我该如何利用流程指标，具体地论证不断增多的不稳定测试是真实、可衡量的技术债？'
+    ],
+    nextLabel: '下一步：六西格玛如何引导人工测试进入自动化测试？→'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_001,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);

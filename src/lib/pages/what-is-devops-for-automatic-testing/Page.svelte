@@ -72,13 +72,36 @@
     nextLabel: "Nesaf: pa fetrigau sy'n helpu profi awtomatig? →"
   };
 
+  const ZH: Messages = {
+    title: '什么是自动化测试中的 DevOps？',
+    metaDescription:
+      '什么是 DevOps，以及为什么在生产环境中测试——金丝雀发布、功能开关、部署后观察真实错误率——是对发布前测试的正当补充，而不是取代它。',
+    heading: '什么是自动化测试中的 DevOps？',
+    introP:
+      '是 CI/CD 所处的更广泛实践：打破编写软件的人和在生产环境中运行软件的人之间的隔阂，让这两个群体共同为软件在真实用户接触后是否真的能用负责。',
+    belongsP:
+      '这就是为什么它出现在一个测试相关的页面上：DevOps 正是“在生产环境中测试”——把金丝雀发布放给一小部分真实流量、使用功能开关、在部署后立即观察真实错误率——之所以能成为发布前测试的正当补充、而非替代品的原因。没有任何测试套件能事先覆盖所有真实世界的情况；DevOps 的这些做法，就是为那些被遗漏的情况提供的第二道、实时的安全网。',
+    learnMorePre: '可以进一步阅读 AWS 的',
+    learnMoreLink1Text: 'DevOps 简介',
+    learnMoreMid: '，或者观看 edureka! 的',
+    learnMorePost: '视频介绍。',
+    askAiHeading: '向 AI 提问的想法',
+    askAi: [
+      '用简单的话说，"DevOps" 到底是什么意思，它和只在发布前测试有什么不同？',
+      '什么是金丝雀发布，测试又该如何与它配合，而不是被它取代？',
+      '成熟的团队是如何判断某一类故障应该由哪种安全网来捕获——是发布前测试，还是像功能开关这样的 DevOps 实践？'
+    ],
+    nextLabel: '下一步：哪些指标有助于自动化测试？→'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
     'en-gb-oxendict': EN_001,
     'en-us': EN_001,
     'cy-gb': CY,
-    'cy-001': CY
+    'cy-001': CY,
+    'zh-cn': ZH
   };
 
   const m = $derived(MESSAGES[locale]);
