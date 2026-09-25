@@ -5,7 +5,7 @@
   import { SkipLink } from 'lily-design-system-svelte-headless';
   import PickerBar from 'lily-design-system-svelte-picker-bar';
   import { SITE_NAME, REPO } from '$lib/site';
-  import { DEFAULT_LOCALE, LOCALES, LOCALE_LABELS, isLocale, type Locale } from '$lib/i18n/locales';
+  import { DEFAULT_LOCALE, PICKER_LOCALES, LOCALE_LABELS, isLocale, type Locale } from '$lib/i18n/locales';
   import { chromeFor } from '$lib/i18n/chrome';
   import { localeHref, switchLocaleHref } from '$lib/i18n/paths';
 
@@ -130,7 +130,7 @@
           storageKey: 'testingexamples-theme',
           detectFromSystem: true
         }}
-        locales={LOCALES}
+        locales={PICKER_LOCALES}
         localeProps={{
           value: locale,
           localeLabels: LOCALE_LABELS,
