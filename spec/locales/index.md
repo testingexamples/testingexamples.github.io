@@ -2,14 +2,14 @@
 
 This site supports six locales:
 
-| Locale           | Meaning                          | Slug group |
+| Locale           | Label (see `LOCALE_META` in `src/lib/i18n/locales.ts`) | Slug group |
 | ----------------- | --------------------------------- | ---------- |
-| `en-001`           | English (international) — **default** | English    |
-| `en-gb`            | English (UK)                      | English    |
-| `en-gb-oxendict`   | English (UK, Oxford spelling)     | English    |
-| `en-us`            | English (US)                      | English    |
-| `cy-gb`            | Welsh (UK)                        | Welsh      |
-| `cy-001`           | Welsh (international)             | Welsh      |
+| `en-001`           | English — **default** | English    |
+| `en-gb`            | English - Great Britain           | English    |
+| `en-gb-oxendict`   | English - Great Britain - Oxford  | English    |
+| `en-us`            | English - United States           | English    |
+| `cy-001`           | Cymraeg                           | Welsh      |
+| `cy-gb`            | Cymraeg - Great Britain           | Welsh      |
 
 ## URL scheme
 

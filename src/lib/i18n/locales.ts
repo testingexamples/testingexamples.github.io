@@ -2,11 +2,11 @@
 // contract (URL scheme, which content is translated vs. kept as-is, and
 // why the home page fixture section never changes).
 
-export type Locale = 'en-001' | 'en-gb' | 'en-gb-oxendict' | 'en-us' | 'cy-gb' | 'cy-001';
+export type Locale = 'en-001' | 'en-gb' | 'en-gb-oxendict' | 'en-us' | 'cy-001' | 'cy-gb';
 
 export const DEFAULT_LOCALE: Locale = 'en-001';
 
-export const LOCALES: Locale[] = ['en-001', 'en-gb', 'en-gb-oxendict', 'en-us', 'cy-gb', 'cy-001'];
+export const LOCALES: Locale[] = ['en-001', 'en-gb', 'en-gb-oxendict', 'en-us', 'cy-001', 'cy-gb'];
 
 export function isLocale(value: string): value is Locale {
   return (LOCALES as string[]).includes(value);
@@ -21,12 +21,12 @@ export type LocaleMeta = {
 };
 
 export const LOCALE_META: Record<Locale, LocaleMeta> = {
-  'en-001': { label: 'English (international)', bcp47: 'en-001', dir: 'ltr' },
-  'en-gb': { label: 'English (UK)', bcp47: 'en-GB', dir: 'ltr' },
-  'en-gb-oxendict': { label: 'English (UK, Oxford spelling)', bcp47: 'en-GB-oxendict', dir: 'ltr' },
-  'en-us': { label: 'English (US)', bcp47: 'en-US', dir: 'ltr' },
-  'cy-gb': { label: 'Cymraeg (DU)', bcp47: 'cy-GB', dir: 'ltr' },
-  'cy-001': { label: 'Cymraeg (rhyngwladol)', bcp47: 'cy-001', dir: 'ltr' }
+  'en-001': { label: 'English', bcp47: 'en-001', dir: 'ltr' },
+  'en-gb': { label: 'English - Great Britain', bcp47: 'en-GB', dir: 'ltr' },
+  'en-gb-oxendict': { label: 'English - Great Britain - Oxford', bcp47: 'en-GB-oxendict', dir: 'ltr' },
+  'en-us': { label: 'English - United States', bcp47: 'en-US', dir: 'ltr' },
+  'cy-001': { label: 'Cymraeg', bcp47: 'cy-001', dir: 'ltr' },
+  'cy-gb': { label: 'Cymraeg - Great Britain', bcp47: 'cy-GB', dir: 'ltr' }
 };
 
 export const LOCALE_LABELS: Record<Locale, string> = Object.fromEntries(
