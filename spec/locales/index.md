@@ -94,8 +94,11 @@ locales literally share one message object — there's nothing to vary.
 Welsh: `cy-gb` and `cy-001` share one Welsh translation per page: there
 is no meaningful content difference between them for this site (no
 currency, dates, or GB-specific facts in the prose), so splitting them
-would just be duplication. Machine-assisted, native-review-recommended —
-see the caveat in the top-level summary this spec accompanies.
+would just be duplication. Terminology follows the Welsh Government's
+TermCymru term bank, as recorded in [welsh-glossary.md](welsh-glossary.md),
+which is the reference for any Welsh wording change. Still
+machine-assisted, native-review-recommended — see the caveat in the
+top-level summary this spec accompanies.
 
 Chinese: `zh-cn` gets one Simplified Chinese translation per page, written
 directly (not machine-translated word-for-word), with the same proper-noun

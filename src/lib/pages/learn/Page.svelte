@@ -65,30 +65,30 @@
   const CY: Messages = {
     title: 'Dysgu',
     metaDescription:
-      "Dysgwch beth yw profi awtomatig a sut i ddechrau gydag offer awtomeiddio porwr fel Selenium, WebdriverIO, a Playwright.",
+      "Dysgwch beth yw profi awtomatig a sut i ddechrau gydag offer awtomatiaeth porwr fel Selenium, WebdriverIO, a Playwright.",
     heading: 'Dysgu',
     intro:
-      "Wyth erthygl fer: beth yw profi awtomatig a pham mae'n werth ei wneud, pyramid profi awtomatig a ble mae awtomeiddio porwr yn ffitio ynddo, cyfaddawdau profion porwr, sut mae integreiddio parhaus yn rhedeg y profion hynny'n awtomatig, llwybr ymarferol i chi gael profiad ymarferol o awtomeiddio porwr eich hun, ble mae AI yn ffitio i mewn i hynny i gyd heddiw, a'r offer a'r arferion bob dydd sydd o'i amgylch.",
+      "Wyth erthygl fer: beth yw profi awtomatig a pham mae'n werth ei wneud, pyramid profi awtomatig a ble mae awtomatiaeth porwr yn ffitio ynddo, cyfaddawdau profion porwr, sut mae integreiddio parhaus yn rhedeg y profion hynny'n awtomatig, llwybr ymarferol i chi ddechrau arni ag awtomatiaeth porwr eich hun, ble mae deallusrwydd artiffisial yn ffitio i mewn i hynny i gyd heddiw, a'r offer a'r arferion bob dydd sydd o'i amgylch.",
     whatIsLinkText: 'Beth yw profi awtomatig?',
     whatIsDesc: " — beth yw profi awtomatig, a sut mae'n wahanol i brofi â llaw ac yn ei ategu.",
     purposeLinkText: 'Beth yw diben profi awtomatig?',
     purposeDesc:
-      " — beth mae tîm wir yn ei gael yn ôl am yr ymdrech o ysgrifennu profion awtomatig: namau'n cael eu darganfod yn gynt, ailadrodd diflino, a'r hyder i ryddhau'n aml.",
+      " — beth mae tîm wir yn ei gael yn ôl am yr ymdrech o ysgrifennu profion awtomatig: bygiau'n cael eu darganfod yn gynt, ailadrodd diflino, a'r hyder i ryddhau'n aml.",
     pyramidLinkText: 'Beth yw pyramid profi awtomatig?',
     pyramidDesc:
-      " — tair haen o brofion awtomatig, o brofion uned cyflym, rhad ar y gwaelod i brofion porwr penben-i-benagos realistig ar y brig.",
+      " — tair haen o brofion awtomatig, o brofion uned cyflym, rhad ar y gwaelod i brofion porwr o'r dechrau i'r diwedd realistig ar y brig.",
     browserLinkText: 'Beth yw profi awtomatig porwr?',
     browserDesc:
       " — beth ydyw, a'r cyfaddawdau sy'n dod gyda'i realaeth: arafach, mwy bregus, ac anos ei ddiagnosio na phrawf uned.",
-    ciLinkText: 'Beth yw profi awtomatig integreiddio parhaus?',
+    ciLinkText: 'Beth yw profi integreiddio parhaus awtomatig?',
     ciDesc:
-      " — rhedeg eich set brofion awtomatig yn awtomatig ar bob newid, fel bod cod diffygiol yn cael ei ddal cyn iddo uno yn hytrach nag wedyn.",
+      " — rhedeg eich set brofion awtomatig yn awtomatig ar bob newid, fel bod cod toredig yn cael ei ddal cyn iddo uno yn hytrach nag wedyn.",
     howToStartLinkText: 'Sut i ddechrau dysgu profi awtomatig?',
     howToStartDesc:
-      " — llwybr cam wrth gam: dewiswch iaith, dewiswch offeryn, rhedwch eich sgript gyntaf yn erbyn y safle hwn, yna ymarferwch ar enghreifftiau go iawn wedi'u gweithio.",
+      " — llwybr cam wrth gam: dewiswch iaith, dewiswch offeryn, rhedwch eich sgript gyntaf yn erbyn y wefan hon, yna ymarferwch ar enghreifftiau ymarferol go iawn.",
     aiLinkText: 'Sut mae deallusrwydd artiffisial yn helpu profi awtomatig?',
     aiDesc:
-      " — sut a pham mae AI yn ymddangos wrth ysgrifennu profion, CI/CD, a darganfod ystwyth heddiw, a'r un rhybudd sy'n berthnasol i'r tri.",
+      " — sut a pham mae deallusrwydd artiffisial yn ymddangos wrth ysgrifennu profion, CI/CD, a darganfod ystwyth heddiw, a'r un rhybudd sy'n berthnasol i'r tri.",
     relatedConceptsLinkText: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
     relatedConceptsDesc:
       " — cyflwyniadau cyfeillgar i olygyddion cod, rheoli fersiynau (git a GitHub), a darganfod ystwyth."

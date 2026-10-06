@@ -55,7 +55,7 @@
       "Beth yw pyramid profi awtomatig: profion uned yn y gwaelod, profion integreiddio yn y canol, a phrofion porwr o'r dechrau i'r diwedd ar y brig — a pham mae gan brosiect iach fwy o'r haenau cyflym a llai o'r rhai araf.",
     heading: 'Beth yw pyramid profi awtomatig?',
     intro:
-      "Mae profion awtomatig yn dod mewn haenau, wedi'u llunio fel arfer fel pyramid oherwydd faint o bob math sydd gan brosiect iach fel rheol — llawer o brofion bach, cyflym ar y gwaelod, a chynyddol lai, arafach, ehangach tuag at y brig.",
+      "Mae profion awtomatig yn dod mewn haenau, wedi'u darlunio fel arfer fel pyramid oherwydd faint o bob math sydd gan brosiect iach fel rheol — llawer o brofion bach, cyflym ar y gwaelod, a phrofion yn raddol llai, arafach ac ehangach tuag at y brig.",
     unitHeading: 'Profion uned (y gwaelod)',
     unitP:
       "Mae prawf uned yn gwirio un darn bach o god — un ffwythiant neu ddosbarth — ar wahân, heb unrhyw gronfa ddata, rhwydwaith, na phorwr go iawn yn gysylltiedig. Mae profion uned yn gyflym (gall miloedd redeg mewn eiliadau), yn rhad i'w hysgrifennu, ac yn nodi methiannau'n union. Mae gan brosiect iach lawer o'r rhain.",
@@ -64,14 +64,14 @@
       "Mae prawf integreiddio'n gwirio bod sawl darn yn gweithio'n gywir gyda'i gilydd — ffwythiant sy'n siarad â chronfa ddata go iawn, neu ddau wasanaeth mewnol yn galw ei gilydd. Mae'r rhain yn dal problemau na all profion uned eu gweld (mae'r darnau'n gweithio'n unigol, ond nid gyda'i gilydd), ar draul bod yn arafach ac ychydig yn fwy cymhleth i'w sefydlu.",
     e2eHeading: "Profion o'r dechrau i'r diwedd / porwr (UI) (y brig)",
     e2eP:
-      "Mae prawf o'r dechrau i'r diwedd yn gyrru porwr go iawn yn union fel y byddai defnyddiwr go iawn: mae'n agor tudalen, yn clicio botymau, yn llenwi ffurflenni, ac yn gwirio bod y dudalen yn ymateb yn gywir. Dyma beth mae offer awtomeiddio porwr fel Selenium WebDriver, WebdriverIO, a Playwright yn ei wneud — a dyna mae pob enghraifft ar y safle hwn yn ei ddangos. Mae'r profion hyn yn eistedd ar frig y pyramid: mae llai ohonynt, ond mae pob un yn rhoi hyder uchel, gan ei fod yn ymarfer taith defnyddiwr go iawn drwy'r cymhwysiad gwirioneddol, wedi'i gydosod — blaen, cefn, a phopeth wedi'i gysylltu gyda'i gilydd — yn hytrach nag un darn ynysig ohono.",
-    askAiHeading: 'Syniadau gofyn i AI',
+      "Mae prawf o'r dechrau i'r diwedd yn gyrru porwr go iawn yn union fel y byddai defnyddiwr go iawn: mae'n agor tudalen, yn clicio botymau, yn llenwi ffurflenni, ac yn gwirio bod y dudalen yn ymateb yn gywir. Dyma beth mae offer awtomatiaeth porwr fel Selenium WebDriver, WebdriverIO, a Playwright yn ei wneud — a dyna mae pob enghraifft ar y wefan hon yn ei ddangos. Mae'r profion hyn yn eistedd ar frig y pyramid: mae llai ohonynt, ond mae pob un yn rhoi hyder uchel, gan ei fod yn ymarfer taith defnyddiwr go iawn drwy'r cymhwysiad gwirioneddol, wedi'i gydosod — yr ochr flaen, yr ochr gefn, a phopeth wedi'i gysylltu gyda'i gilydd — yn hytrach nag un darn ynysig ohono.",
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Allwch chi esbonio pyramid profi awtomatig yn syml — beth yw'r gwahaniaeth gwirioneddol rhwng prawf uned, prawf integreiddio, a phrawf o'r dechrau i'r diwedd?",
       "Mae gan fy mhrosiect ddigon o brofion porwr o'r dechrau i'r diwedd ond bron dim profion uned — a yw hynny'n broblem go iawn, a sut fyddwn i'n dechrau cywiro'r cydbwysedd?",
-      "Sut ydw i'n penderfynu, ar gyfer nodwedd newydd benodol, pa haen o'r pyramid y mae prawf newydd yn perthyn iddi yn lle troi'n ddiofyn at brawf o'r dechrau i'r diwedd arall?"
+      "Sut ydw i'n penderfynu, ar gyfer nodwedd newydd benodol, pa haen o'r pyramid y mae prawf newydd yn perthyn iddi yn hytrach na throi'n ddiofyn at brawf arall o'r dechrau i'r diwedd?"
     ],
-    nextLabel: 'Nesaf: beth yw profi awtomeiddio porwr? →'
+    nextLabel: 'Nesaf: beth yw profi awtomatig porwr? →'
   };
 
   const ZH: Messages = {

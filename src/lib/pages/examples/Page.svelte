@@ -46,21 +46,21 @@
   const CY: Messages = {
     title: 'Enghreifftiau',
     metaDescription:
-      "Enghreifftiau go iawn o awtomeiddio porwr: yr un llond dwrn o ryngweithiadau, wedi'u gweithredu chwe ffordd ar draws Selenium a Playwright mewn JavaScript, Python, a Rust.",
+      "Enghreifftiau go iawn o awtomatiaeth porwr: yr un llond dwrn o ryngweithiadau, wedi'u gweithredu mewn chwe ffordd ar draws Selenium a Playwright mewn JavaScript, Python, a Rust.",
     heading: 'Enghreifftiau',
     intro:
-      "Mae'r adran hon yn dangos yr un llond dwrn o ryngweithiadau go iawn — pori, chwilio, clicio, sgrolio — wedi'u gweithredu chwe ffordd: dau offeryn (Selenium a Playwright) wedi'u lluosi â thair iaith (JavaScript, Python, Rust), yn erbyn dau safle go iawn cyfarwydd.",
+      "Mae'r adran hon yn dangos yr un llond dwrn o ryngweithiadau go iawn — pori, chwilio, clicio, sgrolio — wedi'u gweithredu mewn chwe ffordd: dau offeryn (Selenium a Playwright) wedi'u lluosi â thair iaith (JavaScript, Python, Rust), yn erbyn dwy wefan go iawn gyfarwydd.",
     sectionHeading: 'Chwilio Google a Mapiau Google',
     summaryListLabel: 'Tudalennau enghraifft',
     googleSearchLinkText: 'enghreifftiau Chwilio Google',
     googleSearchDesc:
-      " — chwilio, darllen canlyniadau, a dilyn dolen, yr un daith wedi'i hysgrifennu chwe ffordd.",
+      " — chwilio, darllen canlyniadau, a dilyn dolen, yr un daith wedi'i hysgrifennu mewn chwe ffordd.",
     googleMapsLinkText: 'enghreifftiau Mapiau Google',
     googleMapsDesc:
-      " — pori map, chwilio am le, a rhyngweithio â'r dudalen, yr un daith wedi'i hysgrifennu chwe ffordd.",
+      " — pori map, chwilio am le, a rhyngweithio â'r dudalen, yr un daith wedi'i hysgrifennu mewn chwe ffordd.",
     calloutLabel: "Darllenwch, peidiwch â rhedeg dro ar ôl tro",
     calloutP:
-      "Mae Telerau Gwasanaeth Google yn cyfyngu ymholi awtomataidd o'i wasanaethau. Mae'r enghreifftiau hyn yn bodoli i ddysgu cystrawen a phatrymau pob offeryn profi — trinwch nhw fel deunydd darllen, nid sgriptiau i'w rhedeg dro ar ôl tro yn erbyn google.com neu Google Maps byw. Mae pob tudalen enghraifft yn ymhelaethu ar hyn ymhellach."
+      "Mae Telerau Gwasanaeth Google yn cyfyngu ar ymholi awtomatig am ei wasanaethau. Mae'r enghreifftiau hyn yn bodoli i ddysgu cystrawen a phatrymau pob offeryn profi — trinwch nhw fel deunydd darllen, nid sgriptiau i'w rhedeg dro ar ôl tro yn erbyn google.com neu Google Maps byw. Mae pob tudalen enghraifft yn ymhelaethu ar hyn ymhellach."
   };
 
   const ZH: Messages = {

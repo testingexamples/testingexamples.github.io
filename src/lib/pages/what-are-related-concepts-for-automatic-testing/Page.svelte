@@ -271,19 +271,19 @@
   const CY: Messages = {
     title: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
     metaDescription:
-      "Taith gyfeillgar i ddechreuwyr o bum peth sy'n amgylchynu profi awtomatig: golygyddion cod, rheoli fersiwn, darganfod ystwyth, gorchmynion Unix, a chynnal cwmwl — a pham mae pob un yn bwysig unwaith y bydd eich sgript brawf yn tyfu i fyny.",
+      "Taith gyfeillgar i ddechreuwyr o bum peth sy'n amgylchynu profi awtomatig: golygyddion cod, rheoli fersiynau, darganfod ystwyth, gorchmynion Unix, a chynnal ar y cwmwl — a pham mae pob un yn bwysig unwaith y bydd eich sgript brawf yn tyfu i fyny.",
     heading: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
     intro:
-      "Rydych chi newydd ysgrifennu eich sgript awtomeiddio porwr gyntaf. Mae'n gweithio — ar eich peiriant, ar hyn o bryd. Mae'r dudalen hon yn ymwneud â'r llond dwrn o offer ac arferion bob dydd sy'n troi'r sgript honno'n rhywbeth y gall tîm cyfan ddibynnu arno, misoedd o hyn ymlaen, heb i chi sefyll drosto.",
+      "Rydych chi newydd ysgrifennu eich sgript awtomatiaeth porwr gyntaf. Mae'n gweithio — ar eich peiriant, ar hyn o bryd. Mae'r dudalen hon yn ymwneud â'r llond dwrn o offer ac arferion bob dydd sy'n troi'r sgript honno'n rhywbeth y gall tîm cyfan ddibynnu arno, misoedd o hyn ymlaen, heb i chi sefyll drosto.",
     introP:
-      "Nid yw profi awtomatig yn digwydd ar ei ben ei hun. O amgylch pob set brofion ddibynadwy mae clwstwr bach o arferion datblygu meddalwedd cyffredin: golygydd gweddus i ysgrifennu'r cod ynddo, ffordd o olrhain sut mae'r cod hwnnw'n newid dros amser, ffordd o wneud yn siŵr bod y profion mewn gwirionedd yn cael eu rhedeg, ac — hawdd ei anghofio, ond yr un mor real — ffordd o wirio bod y profion yn amddiffyn rhywbeth y mae person go iawn wir yn poeni amdano. Nid yw'r un o'r rhain yn offer profi yn benodol. Mae pob un ohonynt yn gwneud i brofi weithio. Isod mae pump i wybod amdanynt, pob un wedi'i esbonio mewn iaith blaen, pob un â dolen neu ddwy os ydych am fynd yn ddyfnach.",
+      "Nid yw profi awtomatig yn digwydd ar ei ben ei hun. O amgylch pob set brofion ddibynadwy mae clwstwr bach o arferion datblygu meddalwedd cyffredin: golygydd gweddus i ysgrifennu'r cod ynddo, ffordd o olrhain sut mae'r cod hwnnw'n newid dros amser, ffordd o wneud yn siŵr bod y profion mewn gwirionedd yn cael eu rhedeg, ac — hawdd ei anghofio, ond yr un mor real — ffordd o wirio bod y profion yn amddiffyn rhywbeth y mae person go iawn wir yn poeni amdano. Nid yw'r un o'r rhain yn offer profi yn benodol. Mae pob un ohonynt yn gwneud i brofi weithio. Isod mae pump i wybod amdanynt, pob un wedi'i esbonio mewn iaith syml, pob un â dolen neu ddwy os ydych am fynd yn ddyfnach.",
 
     s1Heading: 'Golygyddion cod — e.e. Visual Studio Code',
     s1P1a:
       "Gallwch ysgrifennu sgript brawf mewn unrhyw olygydd testun plaen, ond mae golygydd cod priodol yn rhoi cryn dipyn o gymorth i chi am ddim. ",
     syntaxLabel: 'Amlygu cystrawen',
     s1P1b:
-      " yn lliwio'ch cod wrth i chi deipio, fel bod teipo camgymeriad fel bracer cau ar goll yn neidio allan yn weledol yn lle cuddio nes i chi redeg y sgript a chael gwall dryslyd. ",
+      " yn lliwio'ch cod wrth i chi deipio, fel bod camgymeriad teipio fel braced cau ar goll yn amlwg yn weledol yn lle cuddio nes i chi redeg y sgript a chael gwall dryslyd. ",
     autocompleteLabel: 'Awtogwblhau',
     s1P1c1: " yn dangos i chi beth sydd ar gael mewn gwirionedd wrth i chi deipio — teipiwch ",
     s1P1c2: ' neu ',
@@ -304,61 +304,61 @@
     s1P3Post2: ' (Learn Web Dev with Norbert, 15 munud).',
     s1AskAi: [
       "Dydw i erioed wedi defnyddio golygydd cod priodol o'r blaen — beth yw'r gwahaniaeth gwirioneddol rhwng golygydd cod a rhywbeth fel Notepad, ac a yw Visual Studio Code yn fan cychwyn rhesymol?",
-      "Rwy'n defnyddio VS Code yn achlysurol yn barod — pa estyniadau neu nodweddion fyddai wir yn fy helpu i ysgrifennu a dad-fygio profion awtomeiddio porwr yn benodol?",
-      "Sut ydw i'n sefydlu ffurfweddiad VS Code a rennir — estyniadau, gosodiadau, ffurfweddiad dadfygiwr — fel bod fy nhîm cyfan yn cael profiad ysgrifennu-prawf cyson, nid dim ond fi?"
+      "Rwy'n defnyddio VS Code yn achlysurol yn barod — pa estyniadau neu nodweddion fyddai wir yn fy helpu i ysgrifennu a dadfygio profion awtomatiaeth porwr yn benodol?",
+      "Sut ydw i'n sefydlu ffurfweddiad VS Code a rennir — estyniadau, gosodiadau, ffurfweddiad dadfygiwr — fel bod fy nhîm cyfan yn cael profiad cyson o ysgrifennu profion, nid dim ond fi?"
     ],
 
-    s2Heading: 'Rheoli fersiwn — git a GitHub',
+    s2Heading: 'Rheoli fersiynau — git a GitHub',
     s2P1a:
-      "Heb reoli fersiwn, mae \"trwsio prawf\" fel arfer yn golygu trosysgrifo'r hen ffeil a gobeithio nad oes angen y fersiwn flaenorol yn ôl arnoch. Mae ",
+      "Heb reoli fersiynau, mae \"trwsio prawf\" fel arfer yn golygu trosysgrifo'r hen ffeil a gobeithio nad oes angen y fersiwn flaenorol yn ôl arnoch. Mae ",
     gitLabel: 'Git',
     s2P1b:
       " yn datrys hynny drwy gadw pob fersiwn o bob ffeil y mae'n ei olrhain: mae'n gadael i chi weld yn union beth newidiodd, pryd, a — drwy neges ymrwymo — pam, ac mae'n gadael i chi ddadwneud newid gwael yn ddiogel yn lle ceisio cofio sut roedd y cod arfer edrych.",
     s2P2Label: 'GitHub',
     s2P2a:
       " (neu westeiwr tebyg, fel GitLab neu Bitbucket) yn ychwanegu rhannu a chydweithio ar ben git plaen. Mae'n rhoi cartref i'ch cod y gall pobl eraill ddod o hyd iddo, ei glonio, a'i ddarllen; mae'n gadael i rywun awgrymu newid drwy ",
-    pullRequestLabel: 'pull request',
+    pullRequestLabel: 'cais tynnu',
     s2P2b:
       " — diff arfaethedig y gallwch ei drafod, ei adolygu, a'i uno (neu beidio) — yn lle dim ond e-bostio copi newydd o ffeil yn ôl ac ymlaen.",
-    s2P3a: "Nid yw hyn yn haniaethol i'r safle hwn: mae pob ystorfa arddangos wedi'i chysylltu o dudalennau ",
+    s2P3a: "Nid yw hyn yn haniaethol i'r wefan hon: mae pob ystorfa arddangos y ceir dolen iddi o dudalennau ",
     examplesLinkText: 'enghreifftiau',
     s2P3b: ' ac ',
     aboutLinkText: 'ynghylch',
     s2P3c:
-      " y safle hwn yn ystorfa git go iawn, gyhoeddus. Gallwch glonio unrhyw un ohonynt a darllen hanes llawn sut y daeth y cod profi hwnnw i edrych fel y mae — nid yw hynny'n ddigwyddiadol, dyna sut mae cod profi go iawn wir yn cael ei reoli.",
+      " y wefan hon yn ystorfa git go iawn, gyhoeddus. Gallwch glonio unrhyw un ohonynt a darllen hanes llawn sut y daeth y cod profi hwnnw i edrych fel y mae — nid yw hynny'n ddamweiniol, dyna sut mae cod profi go iawn wir yn cael ei reoli.",
     s2P4Pre: 'Dysgwch fwy yn ',
     s2P4Mid: ' ac yn ',
     s2P4Mid2: ', neu gwyliwch ',
     s2P4Post: ' ar gyfer cyflwyniad fideo.',
     s2AskAi: [
-      "Dydw i erioed wedi defnyddio git o'r blaen — beth mae 'ymrwymo' a 'gwthio' yn ei olygu mewn gwirionedd, mewn termau plaen, a pham mae angen y naill neu'r llall arnaf jyst i ysgrifennu sgript brawf?",
+      "Dydw i erioed wedi defnyddio git o'r blaen — beth mae 'ymrwymo' a 'gwthio' yn ei olygu mewn gwirionedd, mewn termau plaen, a pham mae angen y naill neu'r llall arnaf dim ond i ysgrifennu sgript brawf?",
       "Fe wnes i ymrwymo newid ar ddamwain rydw i am ei ddadwneud — beth yw ffordd ddiogel o'i ddadwneud heb golli gwaith arall?",
-      "Sut dylai tîm strwythuro canghennau git a pull requests yn benodol o amgylch cod profi, fel nad yw prawf pigog neu wedi torri'n rhwystro newidiadau heb gysylltiad?"
+      "Sut dylai tîm strwythuro canghennau git a cheisiadau tynnu yn benodol o amgylch cod profi, fel nad yw prawf ansefydlog neu doredig yn rhwystro newidiadau digyswllt?"
     ],
 
     s3Heading: 'Ystwyth a gweithio gyda defnyddwyr — darganfod',
     s3P1a: 'Mewn termau plaen, mae ',
-    agileLabel: 'agile',
+    agileLabel: 'ystwyth',
     s3P1b:
-      " yn golygu adeiladu meddalwedd mewn cylchoedd byr, ailadroddadwy a chysylltu â'r bobl a fydd wir yn ei ddefnyddio ar hyd y ffordd — yn lle adeiladu am fisoedd yn erbyn sbeswn sefydlog a dim ond dod o hyd ar y diwedd bod y sbeswn yn anghywir. Mae ",
-    discoveryLabel: 'Discovery',
+      " yn golygu adeiladu meddalwedd mewn cylchoedd byr, ailadroddadwy a chysylltu â'r bobl a fydd wir yn ei ddefnyddio ar hyd y ffordd — yn lle adeiladu am fisoedd yn erbyn manyleb sefydlog a dim ond darganfod ar y diwedd fod y fanyleb yn anghywir. Mae ",
+    discoveryLabel: 'darganfod',
     s3P1c:
       " yn arfer penodol o siarad â defnyddwyr go iawn (neu rai cynrychioliadol yn realistig) yn gynnar, i ddysgu beth maen nhw ei angen mewn gwirionedd a sut maen nhw'n ymddwyn mewn gwirionedd, cyn — ac wrth — i chi adeiladu.",
     s3P2a:
-      "Dyma pam mae hynny'n perthyn ar dudalen profi: gall set brofion ond wirio bod meddalwedd yn gwneud yr hyn roeddech chi'n ",
+      "Dyma pam mae hynny'n perthyn i dudalen am brofi: ni all set brofion wneud dim ond gwirio bod meddalwedd yn gwneud yr hyn yr oeddech chi'n ",
     intendedLabel: 'bwriadu',
     s3P2b:
-      " iddo'i wneud. Nid oes ganddo unrhyw ffordd o wirio a oedd y bwriad hwnnw byth yn un cywir. Darganfod yw'r hyn sy'n cadw'r bwriad wedi'i anelu at rywbeth y mae person go iawn wir ei angen, fel bod yr holl wirio awtomataidd gofalus rydych chi'n ei wneud wedyn yn gwirio rhywbeth sy'n werth ei wirio.",
+      " iddo'i wneud. Nid oes ganddi unrhyw ffordd o wirio a oedd y bwriad hwnnw erioed yn un cywir. Darganfod yw'r hyn sy'n cadw'r bwriad wedi'i anelu at rywbeth y mae person go iawn wir ei angen, fel bod yr holl wirio awtomatig gofalus rydych chi'n ei wneud wedyn yn gwirio rhywbeth sy'n werth ei wirio.",
     s3P3:
-      "Mae'n bendant ar y safle hwn ei hun, hefyd: mae'r enghreifftiau ffwythiant ar y dudalen gartref, a'r senarios \"About Us\" a chwilio NHS Cymru y mae ystorfeydd chwaer y safle hwn yn eu hymarfer, yn bodoli oherwydd i rywun nodi taith defnyddiwr go iawn yn werth ei diogelu — cofrestru, chwilio, dod o hyd i wybodaeth ar safle gwasanaeth iechyd. Mae penderfynu bod y daith honno'n bwysig ddigon i ysgrifennu prawf ar ei chyfer yn weithgaredd darganfod ynddo'i hun, nid un technegol yn unig.",
+      "Mae'n bendant ar y wefan hon ei hun, hefyd: mae'r enghreifftiau cynnwys sefydlog ar yr hafan, a'r senarios \"About Us\" a chwilio NHS Cymru y mae ystorfeydd chwaer y wefan hon yn eu hymarfer, yn bodoli oherwydd i rywun nodi taith defnyddiwr go iawn yn werth ei diogelu — cofrestru, chwilio, dod o hyd i wybodaeth ar wefan gwasanaeth iechyd. Mae penderfynu bod y daith honno'n bwysig ddigon i ysgrifennu prawf ar ei chyfer yn weithgaredd darganfod ynddo'i hun, nid un technegol yn unig.",
     s3P4Pre: 'Dysgwch fwy yn y ',
     s3P4Mid: " ac yng nghyflwyniad Nielsen Norman Group i ",
     s3P4Mid2: ', neu gwyliwch ',
     s3P4Post: ' ar gyfer cyflwyniad fideo.',
     s3AskAi: [
-      "Beth mae 'darganfod' yn ei olygu mewn gwirionedd mewn agile, a pham byddai hynny'n bwysig i rywun sydd ond yn ysgrifennu sgriptiau prawf?",
+      "Beth mae 'darganfod' yn ei olygu mewn gwirionedd mewn dull ystwyth, a pham byddai hynny'n bwysig i rywun sydd ond yn ysgrifennu sgriptiau prawf?",
       "Sut ydw i'n troi stori defnyddiwr amwys yn senario pendant, y gellir ei brofi, cyn i mi ddechrau ei hawtomeiddio?",
-      "Sut mae timau profiadol yn cadw darganfod ac ysgrifennu profion yn gysylltiedig yn barhaus, yn lle i ddarganfod ddigwydd unwaith ymlaen llaw a'r profion yn drifftio oddi wrtho'n ddiweddarach?"
+      "Sut mae timau profiadol yn cadw darganfod ac ysgrifennu profion yn gysylltiedig yn barhaus, yn lle i ddarganfod ddigwydd unwaith ymlaen llaw a'r profion yn dargyfeirio oddi wrtho'n ddiweddarach?"
     ],
 
     s4Heading: 'Gorchmynion Unix — y llinell orchymyn',
@@ -373,35 +373,35 @@
     cmdGrep: 'dod o hyd i destun mewn ffeiliau',
     cmdChmod: 'newid modd caniatâd ffeil',
     cmdCurl: 'galw URL fel cyfeiriad gwe http',
-    cmdClaude: 'asiant AI',
-    s4P2a: "Dyma pam mae hynny'n perthyn ar dudalen profi: ",
+    cmdClaude: 'asiant DA',
+    s4P2a: "Dyma pam mae hynny'n perthyn i dudalen am brofi: ",
     s4P2b: ' a ',
     s4P2c:
       " yw sut rydych chi'n dod o hyd i un methiant penodol ymhlith miloedd o linellau o allbwn prawf neu ffeil gofnod, yn lle sgrolio. ",
     s4P2d:
-      " yw sut rydych chi'n gwirio-call API â llaw — yr un pwynt terfyn y gallai prawf UI ei ymarfer hefyd — cyn ysgrifennu'r prawf go iawn. ",
+      " yw sut rydych chi'n gwneud gwiriad cyflym â llaw o API — yr un pwynt terfyn y gallai prawf UI ei ymarfer hefyd — cyn ysgrifennu'r prawf go iawn. ",
     s4P2e:
-      " yw sut mae sgript brawf yn dod yn rhedeg-adwy'n uniongyrchol. Ac mae piben ychydig o orchmynion at ei gilydd yn aml yn sut mae cam CI'n cael ei adeiladu heb estyn am iaith raglennu \"go iawn\" jyst i ludo dau offeryn at ei gilydd.",
+      " yw sut mae sgript brawf yn gallu cael ei rhedeg yn uniongyrchol. Ac mae cysylltu ychydig o orchmynion â'i gilydd mewn piblinell yn aml yn sut mae cam CI yn cael ei adeiladu heb estyn am iaith raglennu \"go iawn\" dim ond i gysylltu dau offeryn â'i gilydd.",
     s4P3Pre: "Dysgwch fwy yng ngwers cragen Unix Software Carpentry, ",
     s4P3Mid: ', neu gwyliwch NetworkChuck yn ',
-    s4P3Post: ' ar gyfer cyflwyniad fideo cyflym ei gyflymder.',
+    s4P3Post: ' ar gyfer cyflwyniad fideo cyflym.',
     s4AskAi: [
       "Dydw i erioed wedi defnyddio llinell orchymyn o'r blaen — beth yw'r llond dwrn o orchmynion Unix sy'n wirioneddol werth eu dysgu gyntaf i rywun sy'n dechrau ym myd profi?",
       "Sut fyddwn i'n defnyddio grep i ddod o hyd i bob prawf sy'n methu mewn cofnod CI enfawr heb sgrolio drwyddo â llaw?",
-      "Sut ydw i'n cadwyno ychydig o orchmynion Unix at ei gilydd yn sgript fach, ddibynadwy ar gyfer cam CI, yn lle estyn am iaith raglennu lawn?"
+      "Sut ydw i'n cysylltu ychydig o orchmynion Unix â'i gilydd mewn piblinell yn sgript fach, ddibynadwy ar gyfer cam CI, yn lle estyn am iaith raglennu lawn?"
     ],
 
-    s5Heading: 'Cynnal cwmwl ar gyfer profi',
-    cloudHostingLabel: 'Cynnal cwmwl',
+    s5Heading: 'Cynnal ar y cwmwl ar gyfer profi',
+    cloudHostingLabel: 'Cynnal ar y cwmwl',
     s5P1Post:
       " yn golygu rhedeg seilwaith — gweinyddion, porwyr, rhedwyr CI — ar gyfrifiaduron rhywun arall yn lle rhai rydych chi'n berchen arnyn nhw, gan dalu am yr hyn rydych chi'n ei ddefnyddio mewn gwirionedd yn hytrach na phrynu a chynnal caledwedd eich hun.",
     s5P2:
-      "Dyma pam mae hynny'n perthyn ar dudalen profi: mae ffermydd porwr cwmwl yn gadael i set brofion redeg yn erbyn dyfeisiau go iawn a dwsinau o gyfuniadau porwr a system-weithredu go iawn na allai neb yn rhesymol eu gosod a'u cynnal yn lleol. Ac mae darparwyr CI cwmwl (mae GitHub Actions, y soniwyd amdano isod o dan CI/CD, yn un) yn rhoi peiriant ffres, tafladwy i bob rhediad prawf — fel na all prawf basio'n dawel dim ond oherwydd cyflwr y digwyddodd rhediad blaenorol ei adael ar ôl, math cynnil o wall sy'n llawer anos ei guddio unwaith mae pob rhediad yn dechrau o ddim.",
+      "Dyma pam mae hynny'n perthyn i dudalen am brofi: mae ffermydd porwr cwmwl yn gadael i set brofion redeg yn erbyn dyfeisiau go iawn a dwsinau o gyfuniadau porwr a system weithredu go iawn na allai neb yn rhesymol eu gosod a'u cynnal yn lleol. Ac mae darparwyr CI cwmwl (mae GitHub Actions, y soniwyd amdano isod o dan CI/CD, yn un) yn rhoi peiriant ffres, tafladwy i bob rhediad prawf — fel na all prawf basio'n dawel dim ond oherwydd cyflwr y digwyddodd rhediad blaenorol ei adael ar ôl, math cynnil o fyg sy'n llawer anos ei guddio unwaith mae pob rhediad yn dechrau o ddim.",
     s5P3Pre: 'Dysgwch fwy yng nghyflwyniad AWS i ',
     s5P3Mid: ', neu gwyliwch ',
     s5P3Post: ' ar gyfer cyflwyniad fideo.',
     s5AskAi: [
-      "Beth mae 'y cwmwl' yn ei olygu mewn gwirionedd mewn termau plaen, a pham fyddai angen set brofion arno yn lle dim ond rhedeg ar fy liniadur fy hun?",
+      "Beth mae 'y cwmwl' yn ei olygu mewn gwirionedd mewn termau plaen, a pham fyddai angen set brofion arno yn lle dim ond rhedeg ar fy ngliniadur fy hun?",
       "Beth yw'r gwahaniaeth ymarferol rhwng rhedeg fy mhrofion ar fy mheiriant fy hun o gymharu â fferm porwr cwmwl, ar gyfer tîm bach?",
       "Sut ydw i'n penderfynu a yw set brofion sy'n tyfu wir yn barod i symud i ddarparwr CI cwmwl, a beth ddylwn i ei wirio cyn gwneud y newid hwnnw?"
     ],
@@ -409,11 +409,11 @@
     closingPre: "Nid oes angen yr un o'r pump hyn i ysgrifennu eich sgript gyntaf — gweler ",
     closingLinkText: 'Sut i ddechrau dysgu profi awtomatig?',
     closingPost:
-      " ar gyfer hynny. Ond mae pob un yn werth ei godi wrth i'ch cod profi dyfu y tu hwnt i un ffeil ar eich peiriant eich hun: gosodiad golygydd a rennir, hanes git, cysylltiad gonest â'r hyn y mae defnyddwyr wir ei angen, ac — unwaith y bydd tîm cyfan yn dibynnu ar eich profion — yr eirfa a rennir ar gyfer siarad am ble mae seilwaith, proses, ac ansawdd profi wir yn byw. Mae pob un hefyd yn bwnc mawr, wedi'i ddogfennu'n dda yn ei hawl ei hun — mae'r dudalen hon yn fap, nid y tiriogaeth.",
+      " ar gyfer hynny. Ond mae pob un yn werth ei godi wrth i'ch cod profi dyfu y tu hwnt i un ffeil ar eich peiriant eich hun: gosodiad golygydd a rennir, hanes git, cysylltiad gonest â'r hyn y mae defnyddwyr wir ei angen, ac — unwaith y bydd tîm cyfan yn dibynnu ar eich profion — yr eirfa a rennir ar gyfer siarad am ble mae seilwaith, proses, ac ansawdd profi wir yn byw. Mae pob un hefyd yn bwnc mawr, wedi'i ddogfennu'n dda yn ei hawl ei hun — mae'r dudalen hon yn fap, nid y diriogaeth.",
     ctaBackToLearn: 'Yn ôl i Dysgu',
     ctaHowToStart: 'Sut i ddechrau dysgu →',
 
-    askAiHeading: 'Syniadau gofyn i AI'
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial"
   };
 
   const ZH: Messages = {

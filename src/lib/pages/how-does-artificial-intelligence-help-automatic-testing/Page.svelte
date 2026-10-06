@@ -126,59 +126,59 @@
   const CY: Messages = {
     title: 'Sut mae deallusrwydd artiffisial yn helpu profi awtomatig?',
     metaDescription:
-      "Golwg ymarferol, wedi'i seilio ar ffeithiau, ar ble mae AI yn ymddangos mewn profi awtomatig heddiw: ysgrifennu a chynnal profion, CI/CD, a darganfod ystwyth — ynghyd â'r rhybudd gonest sy'n berthnasol i'r tri.",
+      "Golwg ymarferol, wedi'i seilio ar ffeithiau, ar ble mae deallusrwydd artiffisial (DA) yn ymddangos mewn profi awtomatig heddiw: ysgrifennu a chynnal profion, CI/CD, a darganfod ystwyth — ynghyd â'r rhybudd gonest sy'n berthnasol i'r tri.",
     heading: 'Sut mae deallusrwydd artiffisial yn helpu profi awtomatig?',
     intro:
-      "Mae offer AI wedi dod yn rhan real o sut mae profi awtomatig, CI/CD, a darganfod ystwyth yn gweithio heddiw. Mae'r dudalen hon yn ymdrin â thair ffordd y mae AI yn ymddangos yn y gwaith hwnnw, ac un rhybudd gonest sy'n berthnasol i'r tri.",
+      "Mae offer DA wedi dod yn rhan go iawn o sut mae profi awtomatig, CI/CD, a darganfod ystwyth yn gweithio heddiw. Mae'r dudalen hon yn ymdrin â thair ffordd y mae DA yn ymddangos yn y gwaith hwnnw, ac un rhybudd gonest sy'n berthnasol i'r tri.",
 
-    h1Heading: 'AI ar gyfer ysgrifennu a chynnal profion',
-    p1: "Gall drafft cyntaf o brawf ddod yn aml erbyn hyn o ddisgrifiad plaen o'r hyn a ddylai ddigwydd — \"ewch i'r dudalen chwilio, chwiliwch am X, gwiriwch fod y canlyniadau'n crybwyll X\" — yn hytrach na dechrau o ffeil wag. Mae sawl offeryn yn gwneud hyn heddiw, gan gynnwys codegen Playwright ei hun, sy'n recordio cliciau go iawn i sgript, wedi'i gyfuno â haen AI sy'n gadael i chi ddisgrifio bwriad mewn iaith naturiol a chael man cychwyn i'w olygu.",
-    p2Pre: 'Mae rhai offer hefyd yn cymhwyso AI at ',
+    h1Heading: 'DA ar gyfer ysgrifennu a chynnal profion',
+    p1: "Gall drafft cyntaf o brawf ddod yn aml erbyn hyn o ddisgrifiad plaen o'r hyn a ddylai ddigwydd — \"ewch i'r dudalen chwilio, chwiliwch am X, gwiriwch fod y canlyniadau'n crybwyll X\" — yn hytrach na dechrau o ffeil wag. Mae sawl offeryn yn gwneud hyn heddiw, gan gynnwys codegen Playwright ei hun, sy'n recordio cliciau go iawn yn sgript, wedi'i gyfuno â haen DA sy'n gadael i chi ddisgrifio bwriad mewn iaith naturiol a chael man cychwyn i'w olygu.",
+    p2Pre: 'Mae rhai offer hefyd yn cymhwyso DA at ',
     locatorsLabel: 'leolyddion',
     p2Mid:
-      " — y dewiswyr y mae prawf yn eu defnyddio i ddod o hyd i elfen ar y dudalen. Mae lleolydd \"hunan-wella\" yn defnyddio AI i ailleoli elfen pan fydd ei ddewisydd yn newid, er enghraifft pan fydd datblygwr yn ailenwi ",
+      " — y dewiswyr y mae prawf yn eu defnyddio i ddod o hyd i elfen ar y dudalen. Mae lleolydd \"hunan-wella\" yn defnyddio DA i ailleoli elfen pan fydd ei ddewisydd yn newid, er enghraifft pan fydd datblygwr yn ailenwi ",
     p2Post: ", yn lle i'r prawf dorri'n syml.",
     calloutWorthKnowingLabel: "Gwerth ei wybod",
     calloutPre:
       "Mae lleolyddion hunan-wella'n lleihau un math o freuder ond yn cyflwyno un arall: gall lleolydd hunan-wella glicio'n dawel ar yr elfen ",
     wrongLabel: 'anghywir',
     calloutPost:
-      " — un sy'n edrych yn debyg yn unig i'r un roedd y prawf yn ei olygu — ac nid yw prawf sy'n dal i redeg ac yn dal i basio o reidrwydd yn brawf sy'n dal yn gywir. Trinwch y math hwn o offeryn fel cymorth rydych chi'n dal i'w adolygu, nid fel rhywbeth i gymryd lle deall beth mae'ch prawf yn ei wirio mewn gwirionedd.",
+      " — un sy'n edrych yn debyg yn unig i'r un yr oedd y prawf yn ei olygu — ac nid yw prawf sy'n dal i redeg ac yn dal i basio o reidrwydd yn brawf sy'n dal yn gywir. Trinwch y math hwn o offeryn fel cymorth rydych chi'n dal i'w adolygu, nid fel dewis arall yn lle deall beth mae eich prawf yn ei wirio mewn gwirionedd.",
 
-    h2Heading: 'AI mewn CI/CD a DevOps',
+    h2Heading: 'DA mewn CI/CD a DevOps',
     p3Pre: 'Unwaith y bydd set brofion yn rhedeg mewn ',
     p3Post:
-      " ar bob ymrwymiad, mae problemau newydd yn ymddangos nad ydynt yn bodoli ond ar raddfa fawr, ac mae dadansoddi seiliedig ar AI wedi dechrau helpu gyda rhai ohonynt:",
-    li1Label: 'Canfod profion pigog.',
+      " ar bob ymrwymiad, mae problemau newydd yn ymddangos nad ydynt yn bodoli ond ar raddfa fawr, ac mae dadansoddi sy'n seiliedig ar DA wedi dechrau helpu gyda rhai ohonynt:",
+    li1Label: 'Canfod profion ansefydlog.',
     li1P:
-      " Gwahaniaethu rhwng \"mae'r prawf hwn yn methu weithiau oherwydd gwall ysbeidiol go iawn\" a \"dim ond wedi'i ysgrifennu'n wael yw'r prawf hwn\" drwy ddadansoddi patrymau pasio/methu hanesyddol, fel nad yw tîm yn gwastraffu oriau'n hela ysbryd nad yw yno mewn gwirionedd.",
+      " Gwahaniaethu rhwng \"mae'r prawf hwn yn methu weithiau oherwydd byg ysbeidiol go iawn\" a \"dim ond wedi'i ysgrifennu'n wael yw'r prawf hwn\" drwy ddadansoddi patrymau pasio/methu hanesyddol, fel nad yw tîm yn gwastraffu oriau'n hela ysbryd nad yw yno mewn gwirionedd.",
     li2Label: 'Dewis profion deallus.',
     li2P:
       " Mewn set brofion fawr, dim ond rhedeg yr is-set o brofion y mae'n debygol iawn eu bod wedi'u heffeithio gan newid cod penodol, i gadw CI/CD yn gyflym yn lle ailredeg popeth ar bob ymrwymiad.",
-    li3Label: 'Dadansoddi cofnodion ac anomaleddau ar ôl defnyddio.',
+    li3Label: "Dadansoddi cofnodion ac anomaleddau ar ôl defnyddio'r cod.",
     li3P:
-      " Codi baner ar batrymau cyfradd-gwall neu oedi anarferol yn awtomatig, yn hytrach na dibynnu ar berson yn gwylio dangosfwrdd ac yn sylwi bod rhywbeth yn edrych o'i le.",
+      " Codi baner ar batrymau cyfradd gwallau neu oedi anarferol yn awtomatig, yn hytrach na dibynnu ar berson yn gwylio dangosfwrdd ac yn sylwi bod rhywbeth yn edrych o'i le.",
     p4Pre: 'Gweler ',
     p4LinkText: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
     p4Post: " am beth yw CI/CD yn y lle cyntaf, os yw'r term hwnnw'n newydd i chi.",
 
-    h3Heading: 'AI mewn darganfod ystwyth — troi syniadau defnyddwyr yn brofion',
-    p5: 'Cyn y gellir ysgrifennu prawf, mae\'n rhaid i rywun benderfynu beth sy\'n werth ei brofi. Gall AI helpu gyda\'r cam cyn hynny: cyfosod pentwr o gyfweliadau defnyddwyr, tocynnau cymorth, neu adborth yn feini prawf derbyn pendant y gellir eu profi. Mae "Fel claf, rwyf am chwilio NHS Cymru am wasanaeth" yn nod amwys; mae "chwiliwch am wasanaeth a chadarnhau bod y dudalen ganlyniadau\'n ei ddangos" yn rhywbeth y gall prawf ei wirio mewn gwirionedd. Gall AI helpu i ddrafftio\'r cyfieithiad hwnnw.',
+    h3Heading: 'DA mewn darganfod ystwyth — troi syniadau defnyddwyr yn brofion',
+    p5: 'Cyn y gellir ysgrifennu prawf, mae\'n rhaid i rywun benderfynu beth sy\'n werth ei brofi. Gall DA helpu gyda\'r cam cyn hynny: crynhoi pentwr o gyfweliadau defnyddwyr, tocynnau cymorth, neu adborth yn feini prawf derbyn pendant y gellir eu profi. Mae "Fel claf, rwyf am chwilio NHS Cymru am wasanaeth" yn nod amwys; mae "chwiliwch am wasanaeth a chadarnhau bod y dudalen ganlyniadau\'n ei ddangos" yn rhywbeth y gall prawf ei wirio mewn gwirionedd. Gall DA helpu i ddrafftio\'r cyfieithiad hwnnw.',
     p6Pre:
-      "Mae ystorfeydd chwaer y safle hwn ei hun yn enghraifft wedi'i gweithio go iawn o'r cyrchfan, er iddynt gael eu hysgrifennu â llaw yn hytrach na chan gam darganfod-AI: nododd rhywun deithiau defnyddwyr go iawn ar safle cyhoeddus go iawn — dod o hyd i'r dudalen gartref, dod o hyd i \"About Us\", chwilio am gymorth — a'u troi'n senarios prawf pendant, wedi'u cadarnhau. Gweler ",
+      "Mae ystorfeydd chwaer y wefan hon ei hun yn enghraifft ymarferol go iawn o'r gyrchfan, er iddynt gael eu hysgrifennu â llaw yn hytrach na chan gam darganfod gan DA: nododd rhywun deithiau defnyddwyr go iawn ar wefan gyhoeddus go iawn — dod o hyd i'r hafan, dod o hyd i \"About Us\", chwilio am gymorth — a'u troi'n senarios prawf pendant sy'n gwirio canlyniadau. Gweler ",
     aboutLinkText: 'Ynghylch',
     p6Mid: ' am y rhestr lawn, neu ',
     p6Post: ' yn uniongyrchol.',
-    p7: "Gall AI helpu gyda'r cam \"troi syniad amwys yn senario pendant\", ond mae'n rhaid i berson barhau i gadarnhau bod yr AI wedi deall gwir angen y defnyddiwr yn gywir. Nid yw'r cam hwnnw'n diflannu — mae'n symud, o ysgrifennu'r meini prawf derbyn â llaw i adolygu'r rhai a ddrafftiwyd gan offeryn.",
+    p7: "Gall DA helpu gyda'r cam \"troi syniad amwys yn senario pendant\", ond mae'n rhaid i berson barhau i gadarnhau bod y DA wedi deall gwir angen y defnyddiwr yn gywir. Nid yw'r cam hwnnw'n diflannu — mae'n symud, o ysgrifennu'r meini prawf derbyn â llaw i adolygu'r rhai a ddrafftiwyd gan offeryn.",
 
     h4Heading: 'Y rhybudd gonest',
-    calloutReadLabel: "Darllenwch beth mae prawf yn ei gadarnhau cyn ymddiried ynddo",
+    calloutReadLabel: "Darllenwch beth mae prawf yn ei wirio cyn ymddiried ynddo",
     calloutReadP:
-      "Gall offer profi â chymorth AI wneud pethau'n anghywir mewn ffyrdd sy'n werth eu henwi'n benodol: rhithweld dewisydd nad yw'n bodoli, camddeall yr hyn roedd defnyddiwr yn ei olygu mewn gwirionedd, neu ysgrifennu cadarnhad sy'n dechnegol wir ond nad yw'n gwirio'r peth iawn — prawf sy'n pasio heb wirio unrhyw beth ystyrlon mewn gwirionedd. Yr un yw'r ateb sy'n berthnasol i gais tynnu unrhyw gyfranwr, dynol neu AI: darllenwch beth mae prawf yn ei gadarnhau mewn gwirionedd cyn ymddiried ei fod yn pasio. Peidiwch â dim ond gwirio am wyrdd.",
+      "Gall offer profi â chymorth DA wneud pethau'n anghywir mewn ffyrdd sy'n werth eu henwi'n benodol: rhith-weld dewisydd nad yw'n bodoli, camddeall yr hyn roedd defnyddiwr yn ei olygu mewn gwirionedd, neu ysgrifennu honiad sy'n dechnegol wir ond nad yw'n gwirio'r peth iawn — prawf sy'n pasio heb wirio unrhyw beth ystyrlon mewn gwirionedd. Yr un yw'r ateb sy'n berthnasol i gais tynnu unrhyw gyfranwr, dynol neu DA: darllenwch beth mae prawf yn ei wirio mewn gwirionedd cyn ymddiried ei fod yn pasio. Peidiwch â chwilio am wyrdd yn unig.",
     p8Pre:
-      "Mae'r safle hwn ei hun yn enghraifft bendant o'r ddisgyblaeth honno'n cael ei chymhwyso, nid dim ond ei disgrifio. Cafodd y safle hwn ei adeiladu â chymorth AI (Claude), o dan gyfarwyddyd cynhaliwr dynol, ac mae ",
+      "Mae'r wefan hon ei hun yn enghraifft bendant o'r ddisgyblaeth honno'n cael ei chymhwyso, nid dim ond ei disgrifio. Adeiladwyd y wefan hon â chymorth DA (Claude), o dan gyfarwyddyd cynhaliwr dynol, ac mae ",
     p8Post:
-      " yn yr ystorfa yn gyfrif gonest o sut — beth oedd wedi'i gynhyrchu gan AI, beth benderfynodd y person, a beth gafodd ei wirio mewn gwirionedd yn hytrach na'i gymryd yn ganiataol.",
+      " yn yr ystorfa yn gyfrif gonest o sut — beth oedd wedi'i gynhyrchu gan DA, beth benderfynodd y person, a beth gafodd ei wirio mewn gwirionedd yn hytrach na'i gymryd yn ganiataol.",
 
     ctaBackToLearn: 'Yn ôl i Dysgu',
     ctaNext: 'Nesaf: beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig? →'

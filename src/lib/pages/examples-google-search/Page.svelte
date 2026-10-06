@@ -166,13 +166,13 @@
   const CY: Messages = {
     title: 'Enghreifftiau Chwilio Google',
     metaDescription:
-      "Yr un rhyngweithiadau pori, chwilio, cyflwyno, a dilyn-dolen yn erbyn Google Search, wedi'u gweithredu chwe ffordd: Selenium a Playwright, pob un yn JavaScript, Python, a Rust.",
+      "Yr un rhyngweithiadau pori, chwilio, cyflwyno, a dilyn-dolen yn erbyn Google Search, wedi'u gweithredu mewn chwe ffordd: Selenium a Playwright, pob un yn JavaScript, Python, a Rust.",
     heading: 'Enghreifftiau Chwilio Google',
     intro:
-      "Un senario gyfarwydd — pori i safle, defnyddio'i flwch chwilio, cyflwyno'r chwiliad, dilyn dolen canlyniad — wedi'i gweithredu chwe ffordd.",
+      "Un senario gyfarwydd — pori i wefan, defnyddio ei blwch chwilio, cyflwyno'r chwiliad, dilyn dolen canlyniad — wedi'i gweithredu mewn chwe ffordd.",
     section1Heading: 'Yr un pedwar rhyngweithiad, chwe gweithrediad',
     scenarioPre: "Mae'r dudalen hon yn dangos un senario — ",
-    strongBrowse: "pori i'r safle",
+    strongBrowse: "pori i'r wefan",
     scenarioMid1: ', ',
     strongFollow: 'dilyn dolen',
     scenarioMid2: ', ',
@@ -180,23 +180,23 @@
     scenarioMid3: ', a ',
     strongClick: 'chlicio botwm',
     scenarioPost:
-      " — wedi'u gweithredu chwe ffordd: dau offeryn awtomeiddio porwr (Selenium a Playwright), pob un mewn tair iaith (JavaScript, Python, Rust). Y targed ar gyfer y chwech yw Google Search, gan ei fod yn flwch chwilio a thudalen canlyniadau y mae bron pob darllenydd eisoes yn gwybod sut i'w defnyddio, sy'n ei gwneud hi'n hawdd gweld beth mae cystrawen pob offeryn yn ei wneud heb orfod dysgu'r dudalen ei hun yn gyntaf.",
+      " — wedi'u gweithredu mewn chwe ffordd: dau offeryn awtomatiaeth porwr (Selenium a Playwright), pob un mewn tair iaith (JavaScript, Python, Rust). Y targed ar gyfer y chwech yw Google Search, gan ei fod yn flwch chwilio a thudalen canlyniadau y mae bron pob darllenydd eisoes yn gwybod sut i'w defnyddio, sy'n ei gwneud hi'n hawdd gweld beth mae cystrawen pob offeryn yn ei wneud heb orfod dysgu'r dudalen ei hun yn gyntaf.",
     calloutLabel: "Darllenwch cyn rhedeg unrhyw un o'r rhain",
     readBeforePre: 'Mae ',
     tosLinkText: 'Telerau Gwasanaeth',
     readBeforeMid1:
-      " Google yn cyfyngu ymholi awtomataidd o Google Search. Mae'r chwe enghraifft hyn yn bodoli i ddangos cystrawen a ",
+      " Google yn cyfyngu ar ymholi awtomatig ar Google Search. Mae'r chwe enghraifft hyn yn bodoli i ddangos cystrawen a ",
     patternsLabel: 'phatrymau',
     readBeforeMid2:
       " rhyngweithio pob offeryn ochr yn ochr — dydyn nhw ddim wedi'u bwriadu i gael eu rhedeg dro ar ôl tro, nac o gwbl, yn erbyn y ",
     readBeforeMid3: " byw. Os hoffech ymarfer yr un patrymau hyn yn ymarferol, anelwch nhw at ",
-    homePageLinkText: 'hafan y safle hwn ei hun',
+    homePageLinkText: 'hafan y wefan hon ei hun',
     readBeforePost:
       " yn lle hynny, a adeiladwyd yn union ar gyfer hynny: ids, names, classes, a thestun sefydlog nad ydynt yn newid oddi tanoch.",
     fourInteractionsHeading: "Y pedwar rhyngweithiad, wedi'u diffinio unwaith",
     fourInteractionsIntro:
       "Yn hytrach na'u hailadrodd ym mhob enghraifft, dyma beth mae pob un o'r chwe sgript isod yn ei wneud:",
-    item1Strong: "Pori i'r safle",
+    item1Strong: "Pori i'r wefan",
     item1Pre: ' — llywio i ',
     item1Post: '.',
     item2Strong: "Defnyddio'r blwch chwilio",
@@ -207,24 +207,24 @@
     item4Strong: 'Dilyn dolen',
     item4Rest: " — ar ôl i'r canlyniadau lwytho, dewch o hyd i ddolen y canlyniad organig cyntaf a'i chlicio.",
     caveatA:
-      "Mae'n werth nodi rhybudd yn blaen yn hytrach na'i anwybyddu: mae marcio union Google ar gyfer y blwch chwilio wedi drifftio dros amser, ac mae'n debygol o barhau i ddrifftio. Yn hanesyddol, mae wedi bod yn ",
+      "Mae'n werth nodi rhybudd yn blaen yn hytrach na'i anwybyddu: mae marcio Google ar gyfer y blwch chwilio wedi newid yn raddol dros amser, ac mae'n debygol o barhau i wneud hynny. Yn hanesyddol, mae wedi bod yn ",
     caveatB: ' ac ar hyn o bryd mae’n aml yn ',
     caveatC: ', ond yn y ddau achos mae wedi cario ',
     caveatD: " yn gyffredin, felly mae'r enghreifftiau isod yn ei leoli â dewisydd fel ",
     caveatE: " (neu, ar gyfer offer sydd â lleolydd priodoledd wedi'i deipio, ",
     caveatF:
-      "). Mae hynny'n enghraifft go iawn o pam mae dewiswyr enw/tag yn fregus: gallant stopio cydweddu'n dawel pan fydd marcio safle'n newid oddi tanynt. Lle mae offeryn yn cefnogi lleoli yn ôl rôl ac enw hygyrch yn lle hynny (er enghraifft ",
+      "). Mae hynny'n enghraifft go iawn o'r rheswm pam mae dewiswyr enw/tag yn fregus: gallant stopio cydweddu'n dawel pan fydd marcio gwefan yn newid oddi tanynt. Lle mae offeryn yn cefnogi lleoli yn ôl rôl ac enw hygyrch yn lle hynny (er enghraifft ",
     caveatG:
-      ' ag arwydd "Search" gweladwy), dyna’r dewis mwy cadarn, ac fe’i nodir yn yr enghraifft berthnasol. Mae’r botwm cyflwyno wedi hanesyddol gario ',
+      ' â label "Search" gweladwy), dyna’r dewis mwy cadarn, ac fe’i nodir yn yr enghraifft berthnasol. Yn hanesyddol, mae’r botwm cyflwyno wedi cario ',
     caveatH:
       ", ond gall gael ei guddio gan awgrymiadau awtogwblhau'r eiliad y bydd y blwch chwilio'n cael ffocws, sy'n un rheswm pam mae pwyso Enter ar ôl teipio fel arfer yn fwy dibynadwy na cheisio'i glicio.",
     seleniumIntro:
-      "Selenium yw'r prosiect awtomeiddio porwr traws-iaith hynaf sydd wedi'i sefydlu — mae ei brotocol WebDriver yr un peth ag y mae sawl un o'r offer eraill ar y dudalen hon yn ei siarad oddi tano.",
+      "Selenium yw'r prosiect awtomatiaeth porwr traws-iaith sydd wedi bodoli hiraf — mae ei brotocol WebDriver yr un peth ag y mae sawl un o'r offer eraill ar y dudalen hon yn ei siarad oddi tano.",
     seleniumRustA: "Does dim rhwymiad Rust swyddogol gan brosiect Selenium ei hun — ",
     seleniumRustB:
       " (mae ei enw'n cyfeirio at rif atomig selenium, 34) yw'r cleient Selenium/WebDriver de facto ar gyfer Rust. Mae angen ",
     seleniumRustC:
-      " (neu rywbeth tebyg) yn rhedeg ar y URL a roddwyd, yr un ffordd ag y mae angen gyrrwr/porwr lleol ar y ddwy enghraifft uchod hefyd.",
+      " (neu rywbeth tebyg) yn rhedeg ar yr URL a roddwyd, yr un ffordd ag y mae angen gyrrwr/porwr lleol ar y ddwy enghraifft uchod hefyd.",
     playwrightIntro:
       "Mae gan Playwright rwymiadau swyddogol yn JavaScript, Python, .NET, a Java; cynhelir cefnogaeth Rust gan y gymuned yn hytrach nag yn swyddogol.",
     pwRustA: "Byddwch yn ofalus pa grât rydych chi'n ei osod. ",

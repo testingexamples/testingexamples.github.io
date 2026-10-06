@@ -41,17 +41,17 @@
   const CY: Messages = {
     title: "Beth yw profi integreiddio parhaus awtomatig?",
     metaDescription:
-      "Beth yw profi integreiddio parhaus (CI): rhedeg eich cyfres profion awtomatig yn awtomatig ar bob newid, fel bod cod wedi torri'n cael ei ddal cyn iddo uno yn hytrach nag wedyn.",
+      "Beth yw profi integreiddio parhaus (CI): rhedeg eich cyfres profion awtomatig yn awtomatig ar bob newid, fel bod cod toredig yn cael ei ddal cyn iddo uno yn hytrach nag wedyn.",
     heading: 'Beth yw profi integreiddio parhaus awtomatig?',
     intro:
       "Mae profi integreiddio parhaus (CI) yn golygu rhedeg eich cyfres profion awtomatig yn awtomatig bob tro y bydd rhywun yn cynnig newid, yn lle dibynnu ar berson i gofio ei redeg â llaw.",
-    p1: "Mae gweinydd CI (mae GitHub Actions, GitLab CI, Jenkins, ac offer tebyg i gyd yn gwneud hyn) yn gwylio ystorfa am ymrwymiadau a chaisiadau tynnu newydd. Ar bob un, mae'n gwirio'r cod allan, yn gosod dibyniaethau, ac yn rhedeg y gyfres profion o'r dechrau, mewn amgylchedd glân, yr un ffordd bob tro — profion uned, profion integreiddio, a hefyd yn aml y profion awtomeiddio porwr y mae'r safle hwn yn ymwneud â nhw, i gyd mewn un rhediad. Adroddir y canlyniad — llwyddiant neu fethiant — yn syth ar y cais tynnu, cyn i adolygydd dynol hyd yn oed ei agor.",
-    p2: "Dyma beth sy'n gwneud i brofion awtomatig dalu ar eu canfed mewn gwirionedd. Mae cyfres brofion sy'n rhedeg dim ond ar liniadur un datblygwr, pan fyddant yn cofio ei redeg, yn dal llawer llai na chyfres sy'n rhedeg ar bob newid unigol, yn awtomatig, ac yn rhwystro'r uno os yw'n methu. CI yw'r mecanwaith sy'n troi \"mae gennym brofion\" yn \"ni all cod wedi torri gyrraedd y gangen ganolog\" — ac fel arfer dyma'r darn cyntaf o seilwaith y mae tîm yn ei ychwanegu unwaith y mae eu profion awtomeiddio porwr yn werth eu trystio.",
-    askAiHeading: 'Syniadau gofyn i AI',
+    p1: "Mae gweinydd CI (mae GitHub Actions, GitLab CI, Jenkins, ac offer tebyg i gyd yn gwneud hyn) yn gwylio ystorfa am ymrwymiadau a chaisiadau tynnu newydd. Ar bob un, mae'n cael copi o'r cod, yn gosod dibyniaethau, ac yn rhedeg y gyfres profion o'r dechrau, mewn amgylchedd glân, yr un ffordd bob tro — profion uned, profion integreiddio, a hefyd yn aml y profion awtomatiaeth porwr y mae'r wefan hon yn ymwneud â nhw, i gyd mewn un rhediad. Adroddir y canlyniad — llwyddiant neu fethiant — yn syth ar y cais tynnu, cyn i adolygydd dynol hyd yn oed ei agor.",
+    p2: "Dyma beth sy'n gwneud i brofion awtomatig dalu ar eu canfed mewn gwirionedd. Mae cyfres brofion sy'n rhedeg dim ond ar liniadur un datblygwr, pan fyddant yn cofio ei redeg, yn dal llawer llai na chyfres sy'n rhedeg ar bob newid unigol, yn awtomatig, ac yn rhwystro'r uno os yw'n methu. CI yw'r mecanwaith sy'n troi \"mae gennym brofion\" yn \"ni all cod toredig gyrraedd y brif gangen\" — ac fel arfer dyma'r darn cyntaf o seilwaith y mae tîm yn ei ychwanegu unwaith y mae eu profion awtomatiaeth porwr yn werth ymddiried ynddynt.",
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
     askAi: [
-      "Beth mae 'CI' wir yn ei olygu, mewn termau plaen, a pham byddai tîm yn trafferthu rhedeg profion yn awtomatig yn lle jyst eu rhedeg eu hunain cyn gwthio?",
-      "Mae gennyf gyfres brofion sy'n gweithio'n lleol — beth yw ffordd syml o'i chael i redeg yn awtomatig ar bob cais tynnu?",
-      "Mae fy nghyflinell CI wedi mynd yn araf oherwydd ei bod yn rhedeg y gyfres brofion porwr gyflawn ar bob ymrwymiad — sut ydw i'n ei hail-strwythuro i aros yn gyflym heb golli hyder?"
+      "Beth mae 'CI' wir yn ei olygu, mewn termau plaen, a pham byddai tîm yn trafferthu rhedeg profion yn awtomatig yn lle dim ond eu rhedeg eu hunain cyn gwthio?",
+      "Mae gen i gyfres brofion sy'n gweithio'n lleol — beth yw ffordd syml o'i chael i redeg yn awtomatig ar bob cais tynnu?",
+      "Mae fy mhiblinell CI wedi mynd yn araf oherwydd ei bod yn rhedeg y gyfres brofion porwr gyflawn ar bob ymrwymiad — sut ydw i'n ei hail-strwythuro i aros yn gyflym heb golli hyder?"
     ],
     nextLabel: 'Nesaf: sut i ddechrau dysgu profi awtomatig? →'
   };

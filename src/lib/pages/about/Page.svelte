@@ -102,41 +102,41 @@
   // spec/locales/index.md), so all four English locales share one copy.
   const CY: Messages = {
     title: 'Ynghylch',
-    metaDescription: `Ynghylch Testing Examples: beth ydyw, y ${DEMO_MATRIX_COUNT} o ystorfeydd arddangos chwaer y mae'n eu cefnogi, a sut mae'r safle hwn wedi'i adeiladu.`,
+    metaDescription: `Ynghylch Testing Examples: beth ydyw, y ${DEMO_MATRIX_COUNT} o ystorfeydd arddangos chwaer y mae'n eu cefnogi, a sut mae'r wefan hon wedi'i hadeiladu.`,
     heading: 'Ynghylch',
-    intro: "Mae Testing Examples yn darparu enghreifftiau profi rhad ac am ddim, yn ffynhonnell agored, ar gyfer awtomeiddio porwr.",
-    whatForHeading: "Diben y safle hwn",
+    intro: "Mae Testing Examples yn darparu enghreifftiau profi cod agored am ddim ar gyfer awtomatiaeth porwr.",
+    whatForHeading: "Diben y wefan hon",
     whatForP:
-      "Mae'r dudalen gartref hon yn dudalen fwriadol blaen o ffwythiannau HTML — elfennau ag ids, names, classes, testun dolen, rhestrau, a mewnbynnau ffurflen hysbys — ar gyfer unrhyw un sy'n dysgu neu'n ymarfer offer awtomeiddio porwr fel Selenium WebDriver, WebdriverIO, neu Playwright. Bwriedir iddi fod yn darged sefydlog: yr un marcio, yr un dynodwyr, yr un testun gweladwy, bob tro.",
+      "Mae'r hafan hon yn dudalen blaen yn fwriadol, o gynnwys HTML sefydlog — elfennau ag ids, names, classes, testun dolen, rhestrau a mewnbynnau ffurflen hysbys — ar gyfer unrhyw un sy'n dysgu neu'n ymarfer offer awtomatiaeth porwr fel Selenium WebDriver, WebdriverIO, neu Playwright. Bwriedir iddi fod yn darged sefydlog: yr un marcio, yr un dynodwyr, yr un testun gweladwy, bob tro.",
     factsLabel: "Ffeithiau'r prosiect",
     factName: 'Enw',
     factLicence: 'Trwydded',
     factAuthor: 'Awdur',
     factRepository: 'Ystorfa',
-    factFixtureContract: 'Cytundeb ffwythiant',
+    factFixtureContract: 'Cytundeb y cynnwys sefydlog',
     factFixtureContractSuffix: 'yn yr ystorfa',
     matrixHeading: `${DEMO_MATRIX_COUNT} o ystorfeydd arddangos, tri offeryn wedi'u lluosi â hyd at bedair iaith wedi'u lluosi â hyd at bedwar targed`,
     matrixP1:
-      "Mae pob ystorfa chwaer yn paru un offeryn awtomeiddio porwr (Selenium, WebdriverIO, neu Playwright) ag un iaith (JavaScript, Python, Rust, neu TypeScript) yn erbyn un targed. Mae dau darged yn arddangosiadau go iawn, y gellir eu rhedeg: tudalen ffwythiant y safle hwn ei hun (pump o'r ystorfeydd hyn — y rhai y mae AGENTS.md a spec/index.md y safle hwn yn trin eu ids, names, classes, a thestun union fel cytundeb) a safle llywodraeth cyhoeddus go iawn nhs.wales. Mae'r ddau darged arall, Google Search a Google Maps, yn enghreifftiol yn unig — mae AGENTS.md pob un o'r ystorfeydd hynny'n datgan yn glir na ddylid byth redeg ei god yn erbyn y safle byw, gan fod Telerau Gwasanaeth Google yn cyfyngu ymholi awtomataidd; gweler",
+      "Mae pob ystorfa chwaer yn paru un offeryn awtomatiaeth porwr (Selenium, WebdriverIO, neu Playwright) ag un iaith (JavaScript, Python, Rust, neu TypeScript) yn erbyn un targed. Mae dau darged yn arddangosiadau go iawn, y gellir eu rhedeg: tudalen cynnwys sefydlog y wefan hon ei hun (pump o'r ystorfeydd hyn — y rhai y mae AGENTS.md a spec/index.md y wefan hon yn trin eu ids, names, classes a'u testun union fel cytundeb) a gwefan gyhoeddus go iawn y llywodraeth, nhs.wales. Mae'r ddau darged arall, Google Search a Google Maps, at ddibenion enghreifftiol yn unig — mae AGENTS.md pob un o'r ystorfeydd hynny'n datgan yn glir na ddylid byth redeg ei god yn erbyn y wefan fyw, gan fod Telerau Gwasanaeth Google yn cyfyngu ar ymholi awtomatig; gweler",
     matrixP2:
-      "am yr un patrwm wedi'i ddangos yn uniongyrchol ar y safle hwn. Mae dwy gell yn wag yn fwriadol — nid oes gan Selenium TypeScript na WebdriverIO TypeScript amrywiad NHS Wales.",
-    tableCaption: "Y teulu ystorfeydd arddangos cyflawn, un rhes fesul offeryn ac iaith, un golofn fesul targed",
+      "am yr un patrwm wedi'i ddangos yn uniongyrchol ar y wefan hon. Mae dwy gell yn wag yn fwriadol — nid oes gan Selenium TypeScript na WebdriverIO TypeScript amrywiad NHS Wales.",
+    tableCaption: "Y teulu cyflawn o ystorfeydd arddangos, un rhes ar gyfer pob offeryn ac iaith, un golofn ar gyfer pob targed",
     columnTool: 'Offeryn',
     columnLanguage: 'Iaith',
-    columnThisSite: 'Y safle hwn',
+    columnThisSite: 'Y wefan hon',
     notBuilt: "Heb ei adeiladu ar gyfer yr iaith hon",
-    walkthroughsHeading: "Teithiau strategaeth-lleolydd (yn targedu'r safle hwn)",
-    workedExampleHeading: 'Enghraifft go iawn wedi’i gweithio (yn targedu nhs.wales)',
+    walkthroughsHeading: "Arweiniadau cam wrth gam i strategaethau lleoli (targed: y wefan hon)",
+    workedExampleHeading: "Enghraifft ymarferol o'r byd go iawn (targed: nhs.wales)",
     workedExampleSuffix: "Mae'r pum ystorfa NHS Wales arall yn dilyn yr un patrwm yn y tabl uchod.",
-    builtHeading: "Sut mae'r safle wedi'i adeiladu",
+    builtHeading: "Sut mae'r wefan wedi'i hadeiladu",
     builtP:
-      "Mae'r safle hwn yn brosiect SvelteKit sy'n defnyddio @sveltejs/adapter-static, wedi'i ragrenderu'n HTML plaen ac wedi'i ddefnyddio i GitHub Pages gan GitHub Actions ar bob push i main.",
+      "Mae'r wefan hon yn brosiect SvelteKit sy'n defnyddio @sveltejs/adapter-static, wedi'i ragrendro'n HTML plaen ac wedi'i ddefnyddio ar GitHub Pages gan GitHub Actions ar bob gwthiad i main.",
     designSystemLabel: 'System ddylunio',
     designSystemP:
-      "Daw'r cydrannau o'r Lily Design System — cydrannau Svelte sy'n rendro HTML semantig ac ARIA cywir, gan gario un bachyn dosbarth sefydlog yr un. Mae'r safle hwn hefyd yn defnyddio themâu swyddogol Lily ei hun: pob un o'r 45 ffeil o dan static/assets/themes/, wedi'u copïo air am air o ystorfa Lily, pob un yn daflen arddull gyflawn, hunangynhwysol sy'n arddulio pob un o ~492 cydran Lily — nid dim ond dau liw wedi'u dewis â llaw. Nid yw static/assets/style.css felly'n arddulio bachau cydrannau Lily ei hun mwyach o gwbl; mae'n dal haen alias fach, cynllun pennawd/llywio/troedyn y safle hwn ei hun (nid cydrannau Lily), a llond dwrn o eithriadau wedi'u dogfennu'n benodol lle nad oedd rhagosodiad Lily'n gweddu i gynllun penodol y safle hwn — gweler sylwad pennawd y ffeil honno ei hun am yn union beth a pham. Mae ThemePicker Lily'n cyfnewid rhwng y 45 thema'n fyw.",
+      "Daw'r cydrannau o'r Lily Design System — cydrannau Svelte sy'n rendro HTML semantig ac ARIA cywir, gan gario un bachyn dosbarth sefydlog yr un. Mae'r wefan hon hefyd yn defnyddio themâu swyddogol Lily ei hun: pob un o'r 45 ffeil o dan static/assets/themes/, wedi'u copïo air am air o ystorfa Lily, pob un yn daflen arddull gyflawn, hunangynhwysol sy'n arddulio pob un o ~492 cydran Lily — nid dim ond dau liw wedi'u dewis â llaw. Nid yw static/assets/style.css felly'n arddulio bachau cydrannau Lily ei hun mwyach o gwbl; mae'n cynnwys haen alias fach, cynllun pennyn/llywio/troedyn y wefan hon ei hun (nid cydrannau Lily), a llond dwrn o eithriadau wedi'u dogfennu'n benodol lle nad oedd rhagosodiad Lily'n gweddu i gynllun penodol y wefan hon — gweler sylw pennyn y ffeil honno ei hun am yn union beth a pham. Mae ThemePicker Lily'n newid rhwng y 45 thema'n fyw.",
     exceptionP:
-      "Yr unig eithriad yw adran ffwythiant y dudalen gartref (Id Examples hyd at Form Input Examples): cedwir yr elfennau hynny fel HTML plaen, nid cydrannau Lily, fel bod eu ids, names, classes, a thestun yn aros yn union fel y mae'r ystorfeydd arddangos chwaer yn eu disgwyl.",
-    runLocallyLabel: "Rhedeg y safle hwn yn lleol",
+      "Yr unig eithriad yw adran cynnwys sefydlog yr hafan (Id Examples hyd at Form Input Examples): cedwir yr elfennau hynny fel HTML plaen, nid cydrannau Lily, fel bod eu ids, names, classes a'u testun yn aros yn union fel y mae'r ystorfeydd arddangos chwaer yn eu disgwyl.",
+    runLocallyLabel: "Rhedeg y wefan hon yn lleol",
     repoCta: "Yr ystorfa ar GitHub"
   };
 

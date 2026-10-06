@@ -43,17 +43,17 @@
   // vocabulary, so all four English locales share one copy. See
   // spec/locales/index.md.
   const CY: Messages = {
-    title: 'Beth yw profi awtomeiddio porwr?',
+    title: 'Beth yw profi awtomatig porwr?',
     metaDescription:
-      "Beth yw profi awtomeiddio porwr, a'r cymrodedd sy'n dod gydag ef: pam mai dyma'r haen fwyaf realistig o'r pyramid profi awtomatig, a phryd i droi ato yn lle prawf uned neu integreiddio.",
-    heading: 'Beth yw profi awtomeiddio porwr?',
+      "Beth yw profi awtomatig porwr, a'r cyfaddawdau sy'n dod gydag ef: pam mai dyma'r haen fwyaf realistig o'r pyramid profi awtomatig, a phryd i droi ato yn lle prawf uned neu integreiddio.",
+    heading: 'Beth yw profi awtomatig porwr?',
     introPre:
-      "Mae profi awtomeiddio porwr (a elwir hefyd yn brofi o'r dechrau i'r diwedd neu'n brofi UI) yn gyrru porwr go iawn yn union fel y byddai defnyddiwr go iawn — agor tudalennau, clicio botymau, llenwi ffurflenni — gan ddefnyddio offer fel Selenium WebDriver, WebdriverIO, a Playwright. Dyma'r haen fwyaf realistig o ",
+      "Mae profi awtomatig porwr (a elwir hefyd yn brofi o'r dechrau i'r diwedd neu'n brofi UI) yn gyrru porwr go iawn yn union fel y byddai defnyddiwr go iawn — agor tudalennau, clicio botymau, llenwi ffurflenni — gan ddefnyddio offer fel Selenium WebDriver, WebdriverIO, a Playwright. Dyma'r haen fwyaf realistig o ",
     introLinkText: "y pyramid profi awtomatig",
     introPost: ", ond mae gan y realaeth honno gost.",
-    p1: "Maent yn arafach na phrofion uned, weithiau o urddau maint, oherwydd eu bod yn golygu cychwyn porwr go iawn, llwytho tudalennau go iawn, ac aros am rendro a gweithgarwch rhwydwaith go iawn. Maent yn fwy bregus: gall prawf UI dorri dim ond oherwydd bod label botwm wedi newid neu elfen wedi symud ar y dudalen, hyd yn oed pan fo'r nodwedd sylfaenol yn dal i weithio'n iawn. Mae angen porwyr go iawn ar gael i redeg, sy'n ychwanegu sefydlu a seilwaith nad oes byth angen ar brawf uned. A phan fydd prawf porwr yn methu, gall fod yn anos dweud yn union pam — ai gwall go iawn ydoedd, mater amseru, neu ddim ond newid cosmetig i'r dudalen? — o gymharu â methiant manwl, un ffwythiant, prawf uned.",
-    p2: "Nid osgoi profion porwr yw'r ateb ymarferol, ond eu defnyddio ar gyfer yr hyn y maent yn arbennig o dda amdano: cadarnhau bod teithiau defnyddiwr go iawn, hanfodol — cofrestru, chwilio, talu — wir yn gweithio o'r dechrau i'r diwedd. Gwthiwch bopeth arall i lawr y pyramid i mewn i brofion uned ac integreiddio cyflymach, rhatach, mwy manwl, a chadwch awtomeiddio porwr ar gyfer y llond dwrn o lifau lle mai dim ond porwr go iawn, yn gwneud yr hyn y mae defnyddiwr go iawn yn ei wneud, a fydd yn dweud y gwir wrthych.",
-    askAiHeading: 'Syniadau gofyn i AI',
+    p1: "Maent yn arafach na phrofion uned, weithiau o urddau maint, oherwydd eu bod yn golygu cychwyn porwr go iawn, llwytho tudalennau go iawn, ac aros am rendro a gweithgarwch rhwydwaith go iawn. Maent yn fwy bregus: gall prawf UI dorri dim ond oherwydd bod label botwm wedi newid neu elfen wedi symud ar y dudalen, hyd yn oed pan fo'r nodwedd sylfaenol yn dal i weithio'n iawn. Mae angen porwyr go iawn ar gael i redeg, sy'n ychwanegu gwaith sefydlu a seilwaith na fyddai byth eu hangen ar brawf uned. A phan fydd prawf porwr yn methu, gall fod yn anos dweud yn union pam — ai byg go iawn ydoedd, mater amseru, neu ddim ond newid cosmetig i'r dudalen? — o gymharu â methiant manwl, un ffwythiant, prawf uned.",
+    p2: "Nid osgoi profion porwr yw'r ateb ymarferol, ond eu defnyddio ar gyfer yr hyn y maent yn arbennig o dda amdano: gwirio bod teithiau defnyddiwr go iawn, hanfodol — cofrestru, chwilio, talu — wir yn gweithio o'r dechrau i'r diwedd. Gwthiwch bopeth arall i lawr y pyramid i mewn i brofion uned ac integreiddio cyflymach, rhatach, mwy manwl, a chadwch awtomatiaeth porwr ar gyfer y llond dwrn o lifau lle mai dim ond porwr go iawn, yn gwneud yr hyn y mae defnyddiwr go iawn yn ei wneud, a fydd yn dweud y gwir wrthych.",
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Pam mae profion porwr yn arafach ac yn fwy bregus na mathau eraill o brofion awtomatig, mewn termau plaen?",
       "Mae fy nghyfres profion porwr wedi mynd yn ansefydlog ac yn araf — beth yw'r pethau cyntaf sy'n werth eu gwirio i'w gwneud yn fwy dibynadwy?",

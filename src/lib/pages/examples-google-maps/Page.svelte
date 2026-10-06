@@ -139,30 +139,30 @@
   const CY: Messages = {
     title: 'Enghreifftiau Mapiau Google',
     metaDescription:
-      "Chwe rhyngweithiad â Mapiau Google — ymweld, chwilio, clicio canlyniad, sgrolio, chwyddo, a newid haen — wedi'u gweithredu chwe ffordd: Selenium a Playwright, pob un yn JavaScript, Python, a Rust.",
+      "Chwe rhyngweithiad â Mapiau Google — ymweld, chwilio, clicio canlyniad, sgrolio, chwyddo, a newid haen — wedi'u gweithredu mewn chwe ffordd: Selenium a Playwright, pob un yn JavaScript, Python, a Rust.",
     heading: 'Enghreifftiau Mapiau Google',
     intro:
-      "Mae'r dudalen hon yn dangos chwe rhyngweithiad â Mapiau Google — ymweld, chwilio, clicio dolen neu ganlyniad, sgrolio, chwyddo, a newid haen — wedi'u gweithredu chwe ffordd: dau offeryn awtomeiddio porwr (Selenium a Playwright) wedi'u lluosi â thair iaith (JavaScript, Python, Rust).",
+      "Mae'r dudalen hon yn dangos chwe rhyngweithiad â Mapiau Google — ymweld, chwilio, clicio dolen neu ganlyniad, sgrolio, chwyddo, a newid haen — wedi'u gweithredu mewn chwe ffordd: dau offeryn awtomatiaeth porwr (Selenium a Playwright) wedi'u lluosi â thair iaith (JavaScript, Python, Rust).",
     section1Heading: "Dau beth i'w gwybod cyn i chi ddechrau",
     calloutLabel: 'Cyn i chi redeg unrhyw beth o hyn',
     calloutP1Pre: 'Mae ',
     tosLinkText: 'Telerau Gwasanaeth',
-    calloutP1Mid: " Google yn cyfyngu ymholi awtomataidd o'i wasanaethau. Mae'r cod isod yn dysgu ",
+    calloutP1Mid: " Google yn cyfyngu ar ymholi awtomatig am ei wasanaethau. Mae'r cod isod yn dysgu ",
     patternsLabel: 'patrymau',
     calloutP1Post:
       " — strategaethau lleoli a thechnegau rhyngweithio — nid sgriptiau i'w rhedeg dro ar ôl tro yn erbyn Mapiau Google byw.",
     calloutP2A:
-      "Mae Mapiau Google hefyd yn darged awtomeiddio llawer anoddach na thudalen nodweddiadol. Mae'r rhan fwyaf o'r map ei hun yn rendro i elfen ",
+      "Mae Mapiau Google hefyd yn darged awtomatiaeth llawer anoddach na thudalen nodweddiadol. Mae'r rhan fwyaf o'r map ei hun yn rendro i elfen ",
     calloutP2B:
       ' (neu WebGL), felly fel arfer ni allwch "ddod o hyd" i stryd neu bin fel y byddech yn dod o hyd i baragraff o destun — rydych yn rhyngweithio â\'r ',
     calloutP2C:
-      " drwy gyfesurynnau a digwyddiadau llygoden (clicio ar safle x/y, olwyn sgrolio dros yr elfen canfas) yn hytrach na dod o hyd i elfen DOM ar ei chyfer. Mae'r cregyn UI o amgylch y canfas — blwch chwilio, botymau chwyddo, dewislen haenau — yn DOM cyffredin, ac yn ddefnyddiol, mae Google yn rhoi priodoleddau ",
+      " drwy gyfesurynnau a digwyddiadau llygoden (clicio ar safle x/y, olwyn sgrolio dros yr elfen canfas) yn hytrach na dod o hyd i elfen DOM ar ei chyfer. Mae gweddill y rhyngwyneb o amgylch y canfas — blwch chwilio, botymau chwyddo, dewislen haenau — yn DOM cyffredin, ac, yn ddefnyddiol, mae Google yn rhoi priodoleddau ",
     calloutP2D:
-      " go iawn, cymharol sefydlog i'r rhan fwyaf o'r cregyn hwnnw ar gyfer hygyrchedd. Mae hynny'n gwneud lleolyddion enw-hygyrch (",
+      " go iawn, cymharol sefydlog i'r rhan fwyaf o'r rhyngwyneb hwnnw ar gyfer hygyrchedd. Mae hynny'n gwneud lleolyddion enw-hygyrch (",
     calloutP2E:
-      ") yn ddewis llawer gwell nag enwau dosbarth CSS a gynhyrchwyd neu a hashiwyd, sy'n newid ar bob defnydd o Maps. Dyma'r wers fwyaf trosglwyddadwy ar y dudalen hon: ",
+      ") yn ddewis llawer gwell nag enwau dosbarth CSS a gynhyrchwyd neu a hashiwyd, sy'n newid ar bob fersiwn newydd o Maps. Dyma'r wers fwyaf trosglwyddadwy ar y dudalen hon: ",
     strongLessonLabel:
-      "ffafriwch leolyddion enw-hygyrch dros leolyddion enw-dosbarth pryd bynnag nad yw marcio safle'n API cyhoeddus rydych chi'n ei reoli",
+      "ffafriwch leolyddion enw-hygyrch dros leolyddion enw-dosbarth pryd bynnag nad yw marcio gwefan yn API cyhoeddus rydych chi'n ei reoli",
     calloutP2F: " — mae hynny'n arfer da ym mhobman, nid dim ond yma.",
     section2Heading: 'Y chwe rhyngweithiad',
     section2Intro:
@@ -173,7 +173,7 @@
     item2Strong: 'Chwilio',
     item2A: ' — lleolwch y blwch chwilio (mae ganddo ',
     item2B:
-      " ym marcio presennol Mapiau Google — sylwer y gallai hyn ddrifftio dros amser fel unrhyw safle trydydd parti) a theipiwch ymholiad, e.e. ",
+      " ym marcio presennol Mapiau Google — sylwer y gallai hyn newid yn raddol dros amser fel unrhyw wefan trydydd parti) a theipiwch ymholiad, e.e. ",
     item2C: ", yna cyflwynwch (Enter, neu'r botwm chwilio, sydd fel arfer â ",
     item2D: ').',
     item3Strong: 'Clicio dolen/canlyniad',
@@ -187,7 +187,7 @@
     item5B: ") neu'r botwm chwyddo-allan (",
     item5C:
       ") — dull llawer mwy dibynadwy na cheisio pinsio neu sgrolio-chwyddo'r canfas yn rhaglenedig, ac yn werth ei nodi fel y dewis pragmatig.",
-    item6Strong: 'Actifadu haen',
+    item6Strong: 'Troi haen ymlaen',
     item6A: ' — agorwch y panel Haenau (botwm ',
     item6B:
       '), yna dewiswch haen fel "Traffic" (fel arfer opsiwn neu fotwm wedi’i labelu unwaith y bydd y panel ar agor — a ddisgrifir isod fel "switsh yr haen draffig" heb honni gormod am ddewisydd union sefydlog).',
@@ -196,7 +196,7 @@
     seleniumIntroB:
       ", y cleient Selenium/WebDriver de facto ar gyfer Rust — does dim un swyddogol, ac mae ei enw'n cyfeirio at rif atomig selenium, 34.",
     playwrightIntroA:
-      "Mae Playwright yn cludo rhwymiadau swyddogol ar gyfer JavaScript, Python, .NET, a Java. Cynhelir Rust gan y gymuned: ",
+      "Mae Playwright yn darparu rhwymiadau swyddogol ar gyfer JavaScript, Python, .NET, a Java. Cynhelir Rust gan y gymuned: ",
     playwrightIntroB: " (wedi'i ddatblygu'n weithredol gan ",
     playwrightIntroC: ", cyn-1.0) yw'r enghraifft isod. Mae'r crât hŷn ",
     playwrightIntroD: ', a gyhoeddwyd ar crates.io fel ',

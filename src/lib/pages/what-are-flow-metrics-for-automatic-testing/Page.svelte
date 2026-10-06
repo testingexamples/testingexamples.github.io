@@ -54,24 +54,24 @@
   const CY: Messages = {
     title: "Pa fetrigau sy'n helpu profi awtomatig?",
     metaDescription:
-      "Beth yw metrigau llif — amser cylchdro, amser arwain, trwygyswllt, gwaith ar y gweill — a pham mae pentwr cynyddol o brofion wedi'u sgipio neu'n ansefydlog yn arwydd metrig-llif ynddo'i hun bod dyled brofi'n cronni.",
+      "Beth yw metrigau llif — amser cylchred, amser arwain, cyfradd brosesu, gwaith ar y gweill — a pham mae pentwr cynyddol o brofion wedi'u hepgor neu'n ansefydlog yn arwydd llif-fetrig ynddo'i hun bod dyled brofi'n cronni.",
     heading: "Pa fetrigau sy'n helpu profi awtomatig?",
     flowMetricsLabel: 'Metrigau llif',
     introP:
-      "yn mesur sut mae gwaith wir yn symud drwy broses: amser cylchdro (pa mor hir mae un eitem yn ei gymryd o'r dechrau i'r diwedd), amser arwain, trwygyswllt, a gwaith ar y gweill. Y pwynt yw mesur beth sy'n symud go iawn, nid pa mor brysur mae pobl yn edrych.",
+      "yn mesur sut mae gwaith wir yn symud drwy broses: amser cylchred (pa mor hir mae un eitem yn ei gymryd o'r dechrau i'r diwedd), amser arwain, cyfradd brosesu, a gwaith ar y gweill. Y pwynt yw mesur beth sy'n symud go iawn, nid pa mor brysur y mae pobl yn ymddangos.",
     belongsP:
-      "Dyma pam mae hynny'n perthyn ar dudalen brofi: mae \"amser o adrodd bod bỳg i brawf atchweliad yn bodoli ar ei gyfer\" yn amser cylchdro pendant, y gellir ei olrhain. Ac mae pentwr cynyddol o brofion wedi'u sgipio, eu hanwybyddu, neu'n ansefydlog yn arwydd metrig-llif ynddo'i hun — gwaith ar y gweill nad yw wir yn symud — sy'n golygu bod dyled brofi'n cronni'n gyflymach nag y mae'n cael ei thalu i lawr, boed rywun yn ei olrhain ar fwrdd ai peidio.",
+      "Dyma pam mae hynny'n perthyn i dudalen am brofi: mae \"yr amser o adrodd am fyg nes bod prawf atchweliad yn bodoli ar ei gyfer\" yn amser cylchred pendant, y gellir ei olrhain. Ac mae pentwr cynyddol o brofion wedi'u hepgor, eu hanwybyddu, neu'n ansefydlog yn arwydd llif-fetrig ynddo'i hun — gwaith ar y gweill nad yw wir yn symud — sy'n golygu bod dyled brofi'n cronni'n gyflymach nag y mae'n cael ei thalu'n ôl, pa un a oes rhywun yn ei olrhain ar fwrdd ai peidio.",
     learnMorePre: 'Dysgwch fwy yn ',
-    learnMoreLink1Text: 'arweiniad Atlassian i Kanban',
+    learnMoreLink1Text: 'canllaw Atlassian i Kanban',
     learnMoreMid: ', neu gwyliwch ',
     learnMorePost: " gan ProKanban ar gyfer cyflwyniad fideo i'r metrigau eu hunain.",
-    askAiHeading: 'Syniadau gofyn i AI',
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
     askAi: [
-      "Beth mae 'amser cylchdro' a 'thrwygyswllt' yn ei olygu mewn gwirionedd, mewn termau plaen, ar gyfer gwaith dydd-i-ddydd tîm?",
-      "Sut fyddwn i'n dechrau olrhain amser cylchdro ar gyfer trwsio bygiau ar fy nhîm fy hun, heb brynu offer newydd?",
+      "Beth mae 'amser cylchred' a 'chyfradd brosesu' yn ei olygu mewn gwirionedd, mewn termau plaen, ar gyfer gwaith dydd-i-ddydd tîm?",
+      "Sut fyddwn i'n dechrau olrhain amser cylchred ar gyfer trwsio bygiau ar fy nhîm fy hun, heb brynu offer newydd?",
       "Sut ydw i'n defnyddio metrigau llif i wneud achos pendant bod pentwr cynyddol o brofion ansefydlog yn ddyled dechnegol wirioneddol, y gellir ei mesur?"
     ],
-    nextLabel: "Nesaf: sut mae Six Sigma yn arwain profi â llaw i mewn i brofi awtomatig? →"
+    nextLabel: "Nesaf: sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig? →"
   };
 
   const ZH: Messages = {

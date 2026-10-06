@@ -51,24 +51,24 @@
   // vocabulary, so all four English locales share one copy. See
   // spec/locales/index.md.
   const CY: Messages = {
-    title: "Sut mae Six Sigma yn arwain profi â llaw i mewn i brofi awtomatig?",
+    title: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
     metaDescription:
-      "Beth yw Six Sigma, a pham mae profi â llaw ei hun yn broblem amrywio y mae'n ei thargedu — nid yw person yn cynhyrchu'r un canlyniad yn ddibynadwy ddwywaith, sef yn union yr hyn y mae awtomeiddio gwiriad yn ei ddileu.",
-    heading: "Sut mae Six Sigma yn arwain profi â llaw i mewn i brofi awtomatig?",
+      "Beth yw Six Sigma, a pham mae profi â llaw ei hun yn broblem amrywiad y mae'n ei thargedu — nid yw person yn cynhyrchu'r un canlyniad yn ddibynadwy ddwywaith, sef yn union yr hyn y mae awtomeiddio gwiriad yn ei ddileu.",
+    heading: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
     introP:
-      "yw disgyblaeth ar gyfer lleihau diffygion drwy leihau amrywiad: dylai'r un mewnbwn gynhyrchu'r un allbwn yn ddibynadwy, a lle nad yw'n gwneud hynny, mae'r amrywiad hwnnw'n cael ei fesur a'i wraidd-achosi yn hytrach na'i anwybyddu. Dechreuodd mewn gweithgynhyrchu ac erbyn hyn caiff ei gymhwyso i unrhyw broses ailadroddadwy — traddodi meddalwedd yn gynwysedig.",
+      "yw disgyblaeth ar gyfer lleihau diffygion drwy leihau amrywiad: dylai'r un mewnbwn gynhyrchu'r un allbwn yn ddibynadwy, a lle nad yw'n gwneud hynny, mae'r amrywiad hwnnw'n cael ei fesur a'i ddadansoddi i ganfod ei wraidd-achos yn hytrach na'i anwybyddu. Dechreuodd mewn gweithgynhyrchu ac erbyn hyn caiff ei gymhwyso i unrhyw broses ailadroddadwy — cyflenwi meddalwedd gan gynnwys.",
     belongsP:
-      "Dyma pam mae hynny'n perthyn ar dudalen brofi: mae profi â llaw ei hun yn broblem amrywio y mae Six Sigma yn ei thargedu. Nid yw person yn rhedeg yr un gwiriad â llaw yn cynhyrchu'r un canlyniad yn ddibynadwy bob tro — mae sylw'n llithro, mae cam yn cael ei sgipio, mae achos ymylol yn cael ei farnu'n wahanol brynhawn dydd Gwener na bore dydd Llun. Mae troi'r gwiriad hwnnw'n brawf awtomatig yn gymhwysiad uniongyrchol o feddylfryd Six Sigma: mae'r un mewnbwn nawr yn cynhyrchu'r un allbwn yn ddibynadwy, bob tro, oherwydd nid oes gan sgript ddiwrnod gwael.",
+      "Dyma pam mae hynny'n perthyn i dudalen am brofi: mae profi â llaw ei hun yn broblem amrywiad y mae Six Sigma yn ei thargedu. Nid yw person yn rhedeg yr un gwiriad â llaw yn cynhyrchu'r un canlyniad yn ddibynadwy bob tro — mae sylw'n llithro, mae cam yn cael ei hepgor, mae achos ymylol yn cael ei farnu'n wahanol brynhawn dydd Gwener na bore dydd Llun. Mae troi'r gwiriad hwnnw'n brawf awtomatig yn gymhwysiad uniongyrchol o feddylfryd Six Sigma: mae'r un mewnbwn bellach yn cynhyrchu'r un allbwn yn ddibynadwy, bob tro, oherwydd nid oes gan sgript ddiwrnod gwael.",
     relocateP:
-      "Nid yw hynny'n gwneud profion awtomatig yn imiwn i amrywiad — mae'n ei adleoli. Mae prawf awtomatig ansefydlog, un sy'n pasio ac yn methu ar yr un cod heb ddim wedi newid, yn union y math o amrywiad y mae Six Sigma yn ei drin fel diffyg sy'n werth ei wraidd-achosi, nid yn niwsans i'w ailredeg nes iddo droi'n wyrdd.",
+      "Nid yw hynny'n gwneud profion awtomatig yn ddiogel rhag amrywiad — mae'n ei adleoli. Mae prawf awtomatig ansefydlog, un sy'n pasio ac yn methu ar yr un cod heb ddim wedi newid, yn union y math o amrywiad y mae Six Sigma yn ei drin fel diffyg sy'n werth canfod ei wraidd-achos, nid yn niwsans i'w ailredeg nes iddo droi'n wyrdd.",
     learnMorePre: 'Dysgwch fwy yn ',
-    learnMoreLinkText: 'arweiniad cychwyn-arni iSixSigma',
+    learnMoreLinkText: 'canllaw dechrau arni iSixSigma',
     learnMorePost: '.',
-    askAiHeading: 'Syniadau gofyn i AI',
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Beth mae 'Six Sigma' yn ei olygu mewn gwirionedd, mewn termau plaen, a pham fyddai lleihau 'amrywiad' o bwys i brofi meddalwedd yn benodol?",
       "Sut mae profi â llaw ei hun yn ffynhonnell amrywiad, yn ystyr Six Sigma, o'i gymharu â phrawf awtomatig sy'n rhedeg yr un ffordd bob tro?",
-      "Sut fyddwn i'n cymhwyso syniad Six Sigma o 'wraidd-achosi amrywiad' i un prawf awtomatig ansefydlog penodol, yn lle ei ailredeg nes iddo basio?"
+      "Sut fyddwn i'n cymhwyso syniad Six Sigma o 'ganfod gwraidd-achos amrywiad' ar gyfer un prawf awtomatig ansefydlog penodol, yn lle ei ailredeg nes iddo basio?"
     ],
     nextLabel: 'Nesaf: beth yw profi integreiddio parhaus awtomatig? →'
   };

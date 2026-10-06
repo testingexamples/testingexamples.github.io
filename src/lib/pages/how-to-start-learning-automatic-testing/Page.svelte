@@ -148,76 +148,76 @@
       "Llwybr ymarferol, cam wrth gam ar gyfer dysgu profi awtomatig porwr: dewiswch iaith, dewiswch offeryn, rhedwch eich sgript gyntaf, yna ymarferwch ar enghreifftiau go iawn.",
     heading: 'Sut i ddechrau dysgu profi awtomatig?',
     intro:
-      'Llwybr ymarferol, nid llwyth o theori. Pum cam o "erioed wedi ysgrifennu prawf porwr" i ddarllen enghreifftiau wedi\'u gweithio mewn dau offeryn a thair iaith.',
-    askAiHeading: 'Syniadau gofyn i AI',
+      'Llwybr ymarferol, nid llwyth o theori. Pum cam o "erioed wedi ysgrifennu prawf porwr" i ddarllen enghreifftiau ymarferol mewn dau offeryn a thair iaith.',
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
 
     s1Heading: 'Dewiswch un iaith raglennu',
     s1Pre:
-      'Mae iaith raglennu yn ffordd fanwl gywir yn unig o ysgrifennu cyfarwyddiadau i gyfrifiadur eu dilyn — ychydig fel rysáit, ond bydd y cyfrifiadur ond yn gwneud yn union yr hyn a ysgrifennwyd, nid yr hyn a olygwyd, felly rhaid i\'r geiriad fod yn union gywir. Mae\'n angenrheidiol ar gyfer awtomeiddio profi oherwydd nid ap annibynnol y clicoch chi o\'i gwmpas yw offeryn awtomeiddio porwr — mae\'n llyfrgell rydych chi\'n ei galw o fewn iaith raglennu, gan ddefnyddio adeiladwaith cyffredin yr iaith honno ei hun (newidynnau, dolenni, datganiadau if) i ddweud pethau fel "agor y dudalen hon," "clicio\'r botwm hwn," "gwirio bod y testun hwn wedi ymddangos." Mae dysgu awtomeiddio porwr eisoes yn golygu dysgu offeryn newydd ',
+      'Dim ond ffordd fanwl gywir o ysgrifennu cyfarwyddiadau i gyfrifiadur eu dilyn yw iaith raglennu — ychydig fel rysáit, ond ni fydd y cyfrifiadur ond yn gwneud yn union yr hyn a ysgrifennwyd, nid yr hyn a olygwyd, felly rhaid i\'r geiriad fod yn union gywir. Mae\'n angenrheidiol ar gyfer awtomatiaeth profi oherwydd nid ap annibynnol i glicio o\'i gwmpas yw offeryn awtomatiaeth porwr — mae\'n llyfrgell rydych chi\'n ei galw o fewn iaith raglennu, gan ddefnyddio blociau adeiladu cyffredin yr iaith honno ei hun (newidynnau, dolenni, datganiadau if) i ddweud pethau fel "agor y dudalen hon," "clicio\'r botwm hwn," "gwirio bod y testun hwn wedi ymddangos." Mae dysgu awtomatiaeth porwr eisoes yn golygu dysgu offeryn newydd ',
     s1And: 'a',
     s1Post:
-      " meddylfryd profi ar yr un pryd, felly peidiwch â cheisio dysgu iaith raglennu newydd sbon yr un eisteddiad hefyd — dewiswch pa un o'r rhain rydych chi eisoes yn weddol gyfforddus ynddi:",
+      " meddylfryd profi ar yr un pryd, felly peidiwch â cheisio dysgu iaith raglennu newydd sbon yn yr un sesiwn hefyd — dewiswch pa un o'r rhain rydych chi eisoes yn weddol gyfforddus ynddi:",
     s1Li1Label: 'JavaScript',
-    s1Li1P: " — yr iaith fwyaf cyffredin ar gyfer profi gwe; os ydych chi wedi ysgrifennu unrhyw god ffrynt-wynebol gwe, dechreuwch yma.",
+    s1Li1P: " — yr iaith fwyaf cyffredin ar gyfer profi gwe; os ydych chi wedi ysgrifennu unrhyw god ochr flaen gwe, dechreuwch yma.",
     s1Li2Label: 'Python',
-    s1Li2P: " — cystrawen lân, hawdd ei darllen; dewis ail poblogaidd, yn enwedig y tu allan i dimau datblygu gwe.",
+    s1Li2P: " — cystrawen lân, hawdd ei darllen; ail ddewis poblogaidd, yn enwedig y tu allan i dimau datblygu gwe.",
     s1AskAi: [
       "Dydw i erioed wedi ysgrifennu llinell o god o'r blaen. Allech chi esbonio, mewn termau plaen, at beth mae JavaScript a Python fel arfer yn cael eu defnyddio, ac argymell un i ddechrau arni ar gyfer profi porwr?",
-      "Rwy'n gwybod ychydig o JavaScript yn barod — beth fyddai angen i mi ei ddysgu'n wahanol i ysgrifennu sgript awtomeiddio porwr ynddi, a beth yw ymarfer cyntaf bach da?",
-      "Rwy'n gyfforddus yn barod mewn un o'r ieithoedd hyn — beth yw manteision ac anfanteision gwirioneddol newid i'r llall yn benodol ar gyfer set profion porwr sy'n tyfu, nid dim ond ar gyfer rhaglennu at ddibenion cyffredinol?"
+      "Rwy'n gwybod ychydig o JavaScript yn barod — beth fyddai angen i mi ei ddysgu'n wahanol i ysgrifennu sgript awtomatiaeth porwr ynddi, a beth yw ymarfer cyntaf bach da?",
+      "Rwy'n gyfforddus yn barod mewn un o'r ieithoedd hyn — beth yw'r cyfaddawdau go iawn wrth newid i'r llall yn benodol ar gyfer set profion porwr sy'n tyfu, nid dim ond ar gyfer rhaglennu at ddibenion cyffredinol?"
     ],
 
-    s2Heading: 'Dewiswch un offeryn awtomeiddio porwr i ddechrau',
-    s2P: "Mae awtomeiddio porwr yn golygu rheoli porwr gwe go iawn â chod yn lle llygoden a bysellfwrdd — agor tudalen, clicio botwm, llenwi ffurflen, darllen yn ôl beth sydd ar y sgrin, i gyd wedi'i wneud yn rhaglennol. Mae'n angenrheidiol ar gyfer awtomeiddio profi oherwydd dyma'r hyn sy'n gwneud gwiriad yn ailadroddadwy: yn lle person yn clicio drwy'ch safle â llaw bob tro mae rhywbeth yn newid ac yn gobeithio eu bod yn cofio pob cam, mae sgript yn gwneud yr un cliciau union yn yr un drefn union bob tro, ac yn dweud wrthych yr eiliad nad yw rhywbeth yn edrych yn iawn. Mae offeryn awtomeiddio porwr yn llyfrgell sy'n rhoi'r eirfa i'ch iaith raglennu i wneud hyn — dod o hyd i elfen, gweithredu arni, aros amdani, ei gwirio. Dechreuwch ag union un o'r rhain — gallwch ddysgu'r lleill yn ddiweddarach unwaith y bydd y syniadau craidd yn clicio:",
+    s2Heading: 'Dewiswch un offeryn awtomatiaeth porwr i ddechrau',
+    s2P: "Mae awtomatiaeth porwr yn golygu rheoli porwr gwe go iawn â chod yn lle llygoden a bysellfwrdd — agor tudalen, clicio botwm, llenwi ffurflen, darllen yn ôl beth sydd ar y sgrin, i gyd wedi'i wneud yn rhaglennol. Mae'n angenrheidiol ar gyfer awtomatiaeth profi oherwydd dyma'r hyn sy'n gwneud gwiriad yn ailadroddadwy: yn lle person yn clicio drwy'ch gwefan â llaw bob tro mae rhywbeth yn newid ac yn gobeithio eu bod yn cofio pob cam, mae sgript yn gwneud yr un cliciau yn union yn yr un drefn yn union bob tro, ac yn dweud wrthych yr eiliad nad yw rhywbeth yn edrych yn iawn. Mae offeryn awtomatiaeth porwr yn llyfrgell sy'n rhoi'r eirfa i'ch iaith raglennu i wneud hyn — dod o hyd i elfen, gweithredu arni, aros amdani, ei gwirio. Dechreuwch ag union un o'r rhain — gallwch ddysgu'r lleill yn ddiweddarach unwaith y bydd y syniadau craidd yn clicio:",
     s2Li1P:
-      " — y dewis mwyaf cyfeillgar i ddechreuwyr heddiw. Dogfennaeth dda, arhosiad-awtomatig wedi'i adeiladu i mewn (gweler cam 4), yn gweithio'r un ffordd ar draws Chromium, Firefox, a WebKit, gyda rhwymiadau swyddogol yn JavaScript, Python, a mwy.",
+      " — y dewis mwyaf cyfeillgar i ddechreuwyr heddiw. Dogfennaeth dda, aros awtomatig wedi'i adeiladu i mewn (gweler cam 4), yn gweithio'r un ffordd ar draws Chromium, Firefox, a WebKit, gyda rhwymiadau swyddogol yn JavaScript, Python, a mwy.",
     s2Li2P:
-      " — yr offeryn awtomeiddio porwr mwyaf sefydledig a mwyaf eang ei ddysgu, gyda'r ecosystem fwyaf a'r mwyaf o diwtorialau, cyrsiau, ac atebion Stack Overflow presennol.",
+      " — yr offeryn awtomatiaeth porwr mwyaf sefydledig a'r un a ddysgir amlaf, gyda'r ecosystem fwyaf a'r nifer fwyaf o diwtorialau, cyrsiau, ac atebion Stack Overflow presennol.",
     s2AskAi: [
       "Dydw i erioed wedi awtomeiddio porwr o'r blaen. Mewn termau plaen, beth mae Playwright a Selenium yn ei wneud mewn gwirionedd, a pha un sydd hawsaf i'w gael i redeg heddiw?",
       "Rwyf am awtomeiddio llif talu aml-gam gyda throellwr llwytho rhwng camau — pa un o Playwright neu Selenium sy'n trin y math hwnnw o aros symlaf?",
-      "Rwyf angen set profion sy'n rhedeg yn ddibynadwy'n gyfochrog ar draws Chromium, Firefox, a WebKit — sut mae Playwright a Selenium wir yn wahanol o ran sut maen nhw'n trin hynny?"
+      "Mae angen set profion arnaf sy'n rhedeg yn ddibynadwy ac yn gyfochrog ar draws Chromium, Firefox, a WebKit — sut mae Playwright a Selenium wir yn wahanol o ran sut maen nhw'n trin hynny?"
     ],
 
-    s3Heading: 'Ei osod a rhedeg un sgript yn erbyn y safle hwn',
+    s3Heading: 'Ei osod a rhedeg un sgript yn erbyn y wefan hon',
     s3P1Pre:
-      "Dilynwch ganllaw \"cychwyn arni\" eich offeryn dewisol ei hun i'w osod, yna anelwch eich sgript gyntaf un at ",
-    s3HomeLinkText: "dudalen gartref y safle hwn ei hun",
+      "Dilynwch ganllaw \"dechrau arni\" eich offeryn dewisol ei hun i'w osod, yna anelwch eich sgript gyntaf un at ",
+    s3HomeLinkText: "hafan y wefan hon ei hun",
     s3P1Post:
-      ". Cafodd y safle hwn ei adeiladu ar gyfer union hynny: mae gan bob elfen ar y dudalen gartref id, name, class, neu destun dolen sefydlog y gallwch ymarfer dod o hyd iddo — dim dyfalu ynghylch a fydd y marcio'n newid oddi tanoch.",
-    s3P2Pre: "Sgript gyntaf resymol: agorwch y dudalen gartref, dewch o hyd i'r elfen ag id ",
+      ". Adeiladwyd y wefan hon ar gyfer union hynny: mae gan bob elfen ar yr hafan id, name, class, neu destun dolen sefydlog y gallwch ymarfer dod o hyd iddo — dim dyfalu ynghylch a fydd y marcio'n newid oddi tanoch.",
+    s3P2Pre: "Sgript gyntaf resymol: agorwch yr hafan, dewch o hyd i'r elfen ag id ",
     s3P2Post:
-      ", ac argraffwch neu gadarnhewch ei thestun. Yna ceisiwch ddod o hyd i elfen wrth ei enw, wrth ei dosbarth, ac wrth destun dolen. Buddugoliaethau bach, bwriadol yn gyntaf.",
+      ", ac argraffwch neu wiriwch ei thestun. Yna ceisiwch ddod o hyd i elfen wrth ei enw, wrth ei dosbarth, ac wrth destun dolen. Buddugoliaethau bach, bwriadol yn gyntaf.",
     s3AskAi: [
-      "Rwyf newydd osod offeryn awtomeiddio porwr am y tro cyntaf ac rwy'n sownd ar wall gosod — beth yw'r problemau rhediad-cyntaf mwyaf cyffredin a sut ydw i'n eu trwsio?",
+      "Rwyf newydd osod offeryn awtomatiaeth porwr am y tro cyntaf ac rwy'n sownd ar wall gosod — beth yw'r problemau mwyaf cyffredin yn y rhediad cyntaf a sut ydw i'n eu trwsio?",
       "Daeth fy sgript gyntaf o hyd i un elfen yn iawn, ond rwyf hefyd am iddi glicio dolen ac yna wirio teitl y dudalen ganlyniadol — beth yw ffordd lân o ysgrifennu hynny fel ail gam?",
       "Rwyf am i'm sgript gyntaf un hefyd redeg heb ben a chymryd sgrinlun yn awtomatig ar fethiant — beth yw'r gosodiad lleiaf i ychwanegu'r ddau?"
     ],
 
     s4Heading: "Ymarfer ar enghreifftiau go iawn, cyfeillgar yn fwriadol",
-    s4P: "Unwaith y bydd y pethau sylfaenol yn clicio, darllenwch god pobl eraill sy'n gweithio, linell wrth linell. Mae ystorfeydd chwaer y prosiect hwn yn enghreifftiau wedi'u gweithio a adeiladwyd ar gyfer union hynny:",
-    s4WalkthroughsHeading: "Teithiau strategaeth-lleolydd (yn targedu'r safle hwn)",
-    s4P2: "Yna darllenwch enghreifftiau wedi'u gweithio'r safle hwn ei hun, sy'n teithio drwy'r un llond dwrn o ryngweithiadau ar draws dau offeryn a thair iaith, gan gynnwys Rust:",
+    s4P: "Unwaith y bydd y pethau sylfaenol yn clicio, darllenwch god pobl eraill sy'n gweithio, linell wrth linell. Mae ystorfeydd chwaer y prosiect hwn yn enghreifftiau ymarferol a adeiladwyd ar gyfer union hynny:",
+    s4WalkthroughsHeading: "Arweiniadau cam wrth gam i strategaethau lleoli (targed: y wefan hon)",
+    s4P2: "Yna darllenwch enghreifftiau ymarferol y wefan hon ei hun, sy'n mynd drwy'r un llond dwrn o ryngweithiadau ar draws dau offeryn a thair iaith, gan gynnwys Rust:",
     googleSearchExamplesLinkText: 'enghreifftiau Chwilio Google',
     googleMapsExamplesLinkText: 'enghreifftiau Mapiau Google',
     s4AskAi: [
-      "Rwyf wedi darllen un o'r enghreifftiau wedi'u gweithio hyn linell wrth linell ond dydw i ddim yn deall beth mae llinell benodol yn ei wneud — beth yw ffordd dda, ddiogel o ofyn i gynorthwyydd AI esbonio god anghyfarwydd fel hyn?",
-      "Rwyf am gymryd enghraifft wedi'i gweithio sydd wedi'i hysgrifennu mewn un iaith a'i hailysgrifennu mewn un arall i ymarfer — beth yw ffordd dda o wirio bod fy ailysgrifeniad wir yn gyfatebol, nid dim ond yn edrych yn debyg?",
-      "Rwyf am droi enghraifft daith-drwodd sydd ond yn argraffu'r hyn y daeth o hyd iddo yn brawf go iawn gyda chadarnhadau priodol — beth yw ffordd ddibynadwy o benderfynu beth sy'n werth ei gadarnhau mewn gwirionedd?"
+      "Rwyf wedi darllen un o'r enghreifftiau ymarferol hyn linell wrth linell ond dydw i ddim yn deall beth mae llinell benodol yn ei wneud — beth yw ffordd dda, ddiogel o ofyn i gynorthwyydd deallusrwydd artiffisial esbonio god anghyfarwydd fel hyn?",
+      "Rwyf am gymryd enghraifft ymarferol sydd wedi'i hysgrifennu mewn un iaith a'i hailysgrifennu mewn un arall i ymarfer — beth yw ffordd dda o wirio bod fy ailysgrifeniad wir yn gyfatebol, nid dim ond yn edrych yn debyg?",
+      "Rwyf am droi enghraifft gam wrth gam sydd ond yn argraffu'r hyn y daeth o hyd iddo yn brawf go iawn â gwiriadau priodol — beth yw ffordd ddibynadwy o benderfynu beth sy'n werth ei wirio mewn gwirionedd?"
     ],
 
-    s5Heading: 'Nodyn ar safleoedd trydydd parti go iawn',
+    s5Heading: 'Nodyn ar wefannau trydydd parti go iawn',
     readNotRunLabel: "Darllenwch, peidiwch â rhedeg dro ar ôl tro",
     readNotRunPre:
-      "Mae awtomeiddio safle trydydd parti go iawn fel Google yn gam i fyny mewn anhawster o awtomeiddio'r safle hwn: nid yw eu marcio'n gytundeb cyhoeddus sefydlog fel y mae tudalen ffwythiant y safle hwn, ac mae eu Telerau Gwasanaeth yn cyfyngu ymholi awtomataidd o'u gwasanaethau. Trinwch ",
+      "Mae awtomeiddio gwefan trydydd parti go iawn fel Google yn gam i fyny o ran anhawster o gymharu ag awtomeiddio'r wefan hon: nid yw eu marcio'n gytundeb cyhoeddus sefydlog fel y mae tudalen cynnwys sefydlog y wefan hon, ac mae eu Telerau Gwasanaeth yn cyfyngu ar ymholi awtomatig am eu gwasanaethau. Trinwch ",
     readNotRunMid: ' a ',
     readNotRunPatternsPre: " fel deunydd darllen ar gyfer y ",
     patternsLabel: 'patrymau',
-    readNotRunPost: " — nid fel sgriptiau i'w rhedeg dro ar ôl tro yn erbyn y safleoedd byw.",
+    readNotRunPost: " — nid fel sgriptiau i'w rhedeg dro ar ôl tro yn erbyn y gwefannau byw.",
     s5AskAi: [
-      "Pam yn union ei bod yn fwy peryglus rhedeg sgript wedi'i hawtomeiddio yn erbyn gwefan fyw go iawn fel Google nag yn erbyn tudalen a adeiladwyd i ymarfer arni?",
-      "Rwyf am ymarfer yn erbyn safle go iawn yn barchus — pa amddiffynfeydd, fel cyfyngu cyfradd, robots.txt, a thelerau gwasanaeth, y dylwn eu gwirio cyn rhedeg unrhyw beth o gwbl, hyd yn oed yn achlysurol?",
-      "Rwyf am adeiladu fy safle ymarfer bach, sefydlog fy hun yn lle dibynnu ar un rhywun arall — beth yw'r lleiafswm sydd angen iddo fod i fod yn wirioneddol ddefnyddiol ar gyfer ymarfer lleolyddion?"
+      "Pam yn union ei bod yn fwy peryglus rhedeg sgript awtomatig yn erbyn gwefan fyw go iawn fel Google nag yn erbyn tudalen a adeiladwyd i ymarfer arni?",
+      "Rwyf am ymarfer yn erbyn gwefan go iawn yn barchus — pa fesurau diogelu, fel cyfyngu cyfradd, robots.txt, a thelerau gwasanaeth, y dylwn eu gwirio cyn rhedeg unrhyw beth o gwbl, hyd yn oed yn achlysurol?",
+      "Rwyf am adeiladu fy ngwefan ymarfer bach, sefydlog fy hun yn lle dibynnu ar un rhywun arall — beth yw'r lleiafswm sydd angen iddo fod i fod yn wirioneddol ddefnyddiol ar gyfer ymarfer lleolyddion?"
     ],
 
     ctaGoogleSearch: 'Gweld yr enghreifftiau Chwilio Google →',

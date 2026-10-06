@@ -82,27 +82,27 @@
 
   const CY: Messages = {
     metaDescription:
-      "Ffwythiannau HTML rhad ac am ddim, yn ffynhonnell agored, ar gyfer ymarfer awtomeiddio porwr: dod o hyd i elfennau yn ôl id, name, class, ac XPath, a rhyngweithio â mewnbynnau ffurflen.",
+      "Cynnwys HTML sefydlog, cod agored ac am ddim, ar gyfer ymarfer awtomatiaeth porwr: dewch o hyd i elfennau yn ôl id, name, class, testun dolen ac XPath, a rhyngweithiwch â mewnbynnau ffurflen.",
     heading: `Croeso i ${SITE_NAME}`,
-    intro: `Os ydych chi'n newydd i awtomeiddio porwr, rydych chi yn y lle iawn. Mae ${SITE_NAME} yn safle bach, rhad ac am ddim ac yn ffynhonnell agored, wedi'i adeiladu ar gyfer unrhyw un sy'n dysgu sut i wneud i borwr wneud pethau'n awtomatig — clicio, teipio, chwilio, aros, cadarnhau — pa un a ydych erioed wedi ysgrifennu llinell o god, neu eisoes yn gwybod y rhychwant ac eisiau cyfeirnod cyflym neu rywle dibynadwy i roi cynnig ar rywbeth.`,
+    intro: `Os ydych chi'n newydd i awtomatiaeth porwr, rydych chi yn y lle iawn. Mae ${SITE_NAME} yn wefan fach, cod agored ac am ddim, a adeiladwyd ar gyfer unrhyw un sy'n dysgu sut i wneud i borwr wneud pethau'n awtomatig — clicio, teipio, chwilio, aros, gwirio — boed nad ydych erioed wedi ysgrifennu llinell o god, neu eich bod eisoes yn gyfarwydd â'r pethau sylfaenol ac eisiau deunydd cyfeirio cyflym neu rywle dibynadwy i roi cynnig ar rywbeth.`,
     learnHeading: 'Dysgu',
     learnMoreHeading: 'Dysgu Mwy',
     examplesHeading: 'Enghreifftiau',
     practiceHeading: "Ymarfer ar y dudalen hon",
     practiceBody:
-      "Mae popeth isod yn faes chwarae ffwythiant sefydlog: ids, names, classes, a thestun sefydlog y gall offer awtomeiddio ddod o hyd iddynt yn ddibynadwy bob tro, sef yn union beth sy'n ei gwneud yn ddefnyddiol i ymarfer arno'n uniongyrchol — anelwch eich sgript ato, dewch o hyd i elfen, rhyngweithiwch â hi, a gweld beth sy'n digwydd. Mae'r cytundeb union y mae'r dudalen hon yn ei gadw wedi'i ddogfennu yn",
+      "Mae popeth isod yn faes chwarae sefydlog: ids, names, classes a thestun penodedig y gall offer awtomatiaeth ddod o hyd iddynt yn ddibynadwy bob tro, a dyna'n union sy'n ei wneud yn ddefnyddiol i ymarfer arno'n uniongyrchol — anelwch eich sgript ato, dewch o hyd i elfen, rhyngweithiwch â hi, a gwelwch beth sy'n digwydd. Mae'r cytundeb manwl y mae'r dudalen hon yn cadw ato wedi'i ddogfennu yn yr ystorfa hon, yn y ffeil",
     links: {
       whatIsAutomaticTesting: "Beth yw profi awtomatig?",
       whatIsThePurpose: 'Beth yw diben profi awtomatig?',
       whatIsTheTestingPyramid: 'Beth yw pyramid profi awtomatig?',
-      whatIsBrowserAutomation: "Beth yw profi awtomeiddio porwr?",
+      whatIsBrowserAutomation: 'Beth yw profi awtomatig porwr?',
       howToStartLearning: 'Sut i ddechrau dysgu profi awtomatig?',
       whatAreRelatedConcepts: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
       howDoesAiHelp: "Sut mae deallusrwydd artiffisial yn helpu profi awtomatig?",
-      whatIsContinuousIntegration: 'Beth yw profi integreiddio parhaus?',
+      whatIsContinuousIntegration: 'Beth yw profi integreiddio parhaus awtomatig?',
       whatIsDevOps: 'Beth yw DevOps ar gyfer profi awtomatig?',
       whatAreFlowMetrics: "Pa fetrigau sy'n helpu profi awtomatig?",
-      whatIsLeanSixSigma: "Sut mae Lean Six Sigma yn arwain profi â llaw i mewn i brofi awtomatig?",
+      whatIsLeanSixSigma: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
       googleSearchExamples: 'Enghreifftiau Chwilio Google',
       googleMapsExamples: 'Enghreifftiau Mapiau Google',
       givenWhenThenExamples: 'Enghreifftiau Given-When-Then',

@@ -60,20 +60,20 @@
       "Beth yw profi awtomatig (wedi'i awtomeiddio), a sut mae'n wahanol i brofi â llaw ac yn ei ategu.",
     heading: 'Beth yw profi awtomatig?',
     intro:
-      "Cyflwyniad iaith blaen i brofi awtomatig, a sut mae'n wahanol i brofi â llaw ac yn ei ategu.",
+      "Cyflwyniad mewn iaith syml i brofi awtomatig, a sut mae'n wahanol i brofi â llaw ac yn ei ategu.",
     compareHeading: 'Profi â llaw yn erbyn profi awtomatig',
     manualLabel: 'Profi â llaw',
     manualP:
-      "yw person yn eistedd wrth fysellfwrdd, yn clicio drwy gymhwysiad, ac yn gwirio â'u llygaid eu hunain ei fod yn ymddwyn yn gywir: a yw'r ffurflen mewngofnodi'n derbyn manylion dilys, a yw'r blwch chwilio'n dychwelyd canlyniadau, a yw'r botwm talu wir yn codi'r swm cywir. Mae'n araf, nid yw'n graddadwy, ac mae'n dibynnu ar sylw a chof y person hwnnw bob tro.",
+      "yw person yn eistedd wrth fysellfwrdd, yn clicio drwy gymhwysiad, ac yn gwirio â'u llygaid eu hunain ei fod yn ymddwyn yn gywir: a yw'r ffurflen mewngofnodi'n derbyn manylion dilys, a yw'r blwch chwilio'n dychwelyd canlyniadau, a yw'r botwm talu wir yn codi'r swm cywir. Mae'n araf, nid yw'n graddio, ac mae'n dibynnu ar sylw a chof y person hwnnw bob tro.",
     automaticLabel: 'Profi awtomatig',
     automaticP:
-      "(a elwir hefyd yn brofi wedi'i awtomeiddio) yw rhaglen — a ysgrifennwyd unwaith gan berson — sy'n gwneud yr un gwiriadau ei hun: mae'n agor y cymhwysiad (neu'n galw ffwythiant, neu'n gyrru porwr go iawn), yn cyflawni rhai camau, ac yn cadarnhau bod y canlyniad yn cyfateb i'r hyn a ddisgwylid. Unwaith y'i hysgrifennir, gall y rhaglen honno redeg mewn eiliadau, mor aml ag y mynn unrhyw un, heb byth flino, cael ei thynnu sylw, na diflasu ar glicio'r un botwm am y filfed tro.",
+      "(a elwir hefyd yn brofi wedi'i awtomeiddio) yw rhaglen — a ysgrifennwyd unwaith gan berson — sy'n gwneud yr un gwiriadau ei hun: mae'n agor y cymhwysiad (neu'n galw ffwythiant, neu'n gyrru porwr go iawn), yn cyflawni rhai camau, ac yn gwirio bod y canlyniad yn cyfateb i'r hyn a ddisgwylid. Unwaith y'i hysgrifennir, gall y rhaglen honno redeg mewn eiliadau, mor aml ag y mynn unrhyw un, heb byth flino, colli sylw, na diflasu ar glicio'r un botwm am y filfed tro.",
     complementPre:
       "Nid yw'r ddau yn wrthwynebwyr gymaint ag y maent yn ategu ei gilydd. Mae profion awtomatig yn arbennig o dda am ailadrodd yr un gwiriad yn union, am byth, yn rhad. Mae profi â llaw — yn enwedig ",
     exploratoryLabel: 'brofi archwiliadol',
     complementPost:
-      ", lle mae person medrus yn pwyo cymhwysiad yn fwriadol i chwilio am yr annisgwyl — yn dda am ddod o hyd i'r math o broblemau na feddyliodd neb i ysgrifennu gwiriad ar eu cyfer. Mae timau aeddfed yn defnyddio'r ddau: awtomeiddio ar gyfer y gwiriadau na chaiff byth ddirywio, a barn ddynol ar gyfer popeth na all rhestr wirio ei ragweld.",
-    askAiHeading: 'Syniadau gofyn i AI',
+      ", lle mae person medrus yn procio cymhwysiad yn fwriadol i chwilio am yr annisgwyl — yn dda am ddod o hyd i'r math o broblemau na feddyliodd neb i ysgrifennu gwiriad ar eu cyfer. Mae timau aeddfed yn defnyddio'r ddau: awtomatiaeth ar gyfer y gwiriadau na chaiff byth ddirywio, a barn ddynol ar gyfer popeth na all rhestr wirio ei ragweld.",
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Beth yw'r gwahaniaeth ymarferol rhwng profi â llaw a phrofi awtomatig, a pham byddai tîm yn trafferthu ysgrifennu sgript yn lle clicio drwy'r ap â llaw?",
       "Mae fy nhîm yn gwneud popeth drwy brofi â llaw ar hyn o bryd — sut ydyn ni'n penderfynu pa wiriadau sy'n werth eu hawtomeiddio gyntaf?",

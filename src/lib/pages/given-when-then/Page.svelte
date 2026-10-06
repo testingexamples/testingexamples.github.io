@@ -71,22 +71,22 @@
       "Un senario wedi'i hysgrifennu fel brawddeg Given-When-Then (Gherkin), yna ei dangos fel y cod Selenium a Playwright cyfatebol mewn JavaScript a Python.",
     heading: 'Enghreifftiau Given-When-Then',
     intro:
-      "Un senario iaith blaen, wedi'i hysgrifennu fel y byddai rhywun nad yw'n rhaglennydd yn ei disgrifio, wrth ymyl y cod gwirioneddol sy'n ei chyflawni — mewn pedwar cyfuniad o offeryn ac iaith.",
+      "Un senario mewn iaith syml, wedi'i hysgrifennu fel y byddai rhywun nad yw'n rhaglennydd yn ei disgrifio, wrth ymyl y cod gwirioneddol sy'n ei chyflawni — mewn pedwar cyfuniad o offeryn ac iaith.",
     whatHeading: 'Beth yw Given-When-Then?',
     whatIsLabel: "yw ffordd o ysgrifennu senario prawf mewn brawddegau plaen yn lle cod: Given",
     whatP1:
       "(o gyflwr cychwynnol penodol), When (mae rhywbeth yn digwydd), Then (mae canlyniad penodol yn wir). Daw o ddatblygiad wedi'i yrru gan ymddygiad (BDD), a gelwir y gystrawen testun plaen benodol ar ei chyfer fel arfer yn Gherkin.",
     whatP2:
-      "Nid y bwriad yw disodli cod prawf go iawn — y bwriad yw rhoi i dîm frawddeg gyffredin y gall pawb gytuno arni cyn i unrhyw un ysgrifennu'r awtomeiddio ar ei chyfer: gall perchennog cynnyrch, profwr, a datblygwr i gyd ddarllen \"Given I am on the site, When I search, Then I see results\" a chytuno mai dyna'r ymddygiad sy'n bwysig, heb i'r un ohonynt orfod darllen JavaScript na Python yn gyntaf. Y cod oddi tano — sut bynnag y'i hysgrifennir, ym mha offeryn bynnag — yw'r hyn sy'n profi mewn gwirionedd bod y frawddeg honno'n aros yn wir.",
+      "Nid y bwriad yw disodli cod prawf go iawn — y bwriad yw rhoi i dîm frawddeg gyffredin y gall pawb gytuno arni cyn i unrhyw un ysgrifennu'r awtomatiaeth ar ei chyfer: gall perchennog cynnyrch, profwr, a datblygwr i gyd ddarllen \"Given I am on the site, When I search, Then I see results\" a chytuno mai dyna'r ymddygiad sy'n bwysig, heb i'r un ohonynt orfod darllen JavaScript na Python yn gyntaf. Y cod oddi tano — sut bynnag y'i hysgrifennir, ym mha offeryn bynnag — yw'r hyn sy'n profi mewn gwirionedd fod y frawddeg honno'n aros yn wir.",
     scenarioHeading: "Y senario",
     scenarioIntro: 'Un senario, wedi’i hysgrifennu yn Gherkin:',
     scenarioBody:
-      "Isod, cyflawnir yr un tair llinell bedair ffordd: dau offeryn awtomeiddio porwr (Selenium a Playwright), pob un mewn dwy iaith (JavaScript a Python). Mae pob llinell o god wedi'i hanodi â pha gam Given/When/Then y mae'n perthyn iddo, fel y gallwch olrhain y frawddeg blaen yn syth i mewn i'r cod sy'n ei gweithredu.",
+      "Isod, cyflawnir yr un tair llinell bedair ffordd: dau offeryn awtomatiaeth porwr (Selenium a Playwright), pob un mewn dwy iaith (JavaScript a Python). Mae pob llinell o god wedi'i hanodi â pha gam Given/When/Then y mae'n perthyn iddo, fel y gallwch olrhain y frawddeg syml yn syth i mewn i'r cod sy'n ei gweithredu.",
     readNotRunLabel: "Darllenwch, peidiwch â rhedeg dro ar ôl tro",
     readNotRunPre: "Mae'r pedair enghraifft hyn yn targedu google.com, yr un peth ag ",
     googleSearchExamplesLinkText: 'enghreifftiau Chwilio Google',
     readNotRunPost:
-      " y safle hwn — ac mae'r un rhybudd yn berthnasol: mae Telerau Gwasanaeth Google yn cyfyngu ymholi awtomataidd o Google Search, felly trinwch y cod isod fel deunydd darllen ar gyfer y patrwm, nid fel sgriptiau i'w rhedeg dro ar ôl tro yn erbyn y safle byw. Os hoffech roi cynnig ymarferol ar yr un siâp Given/When/Then, anelwch yr un camau at dudalen gartref y safle hwn ei hun yn lle hynny.",
+      " y wefan hon — ac mae'r un rhybudd yn berthnasol: mae Telerau Gwasanaeth Google yn cyfyngu ar ymholi awtomatig ar Google Search, felly trinwch y cod isod fel deunydd darllen ar gyfer y patrwm, nid fel sgriptiau i'w rhedeg dro ar ôl tro yn erbyn y wefan fyw. Os hoffech roi cynnig ymarferol ar yr un siâp Given/When/Then, anelwch yr un camau at hafan y wefan hon ei hun yn lle hynny.",
     seleniumHeading: 'Selenium',
     playwrightHeading: 'Playwright',
     backHome: "Yn ôl i'r hafan",

@@ -133,10 +133,10 @@
   const CY: Messages = {
     title: 'Ap Arddangos',
     metaDescription:
-      "Ap arddangos rhyngweithiol bach — cynllun Grail o'r Lily Design System, mewngofnodi wedi'i efelychu, bar llywio eiconau â blwch chwilio, a phanel tri thab — targed sefydlog arall i ymarfer awtomeiddio porwr arno.",
+      "Ap arddangos rhyngweithiol bach — cynllun Grail o'r Lily Design System, mewngofnodi wedi'i efelychu, bar llywio eiconau â blwch chwilio, a phanel tri thab — targed sefydlog arall i ymarfer awtomatiaeth porwr arno.",
     heading: 'Ap Arddangos',
     intro:
-      "Cymhwysiad arddangos bach, hunangynhwysol — mewngofnodi, clicio eiconau llywio, chwilio, newid tabiau — wedi'i adeiladu â chydrannau Lily Design System fel targed sefydlog arall i ymarfer awtomeiddio porwr arno. Nid yw dim yma'n real: does dim cefn-drws, a does dim byd sy'n cael ei deipio ar y dudalen hon yn gadael eich dyfais.",
+      "Cymhwysiad arddangos bach, hunangynhwysol — mewngofnodi, clicio eiconau llywio, chwilio, newid tabiau — wedi'i adeiladu â chydrannau Lily Design System fel targed sefydlog arall i ymarfer awtomatiaeth porwr arno. Nid yw dim yma'n real: does dim ochr gefn, a does dim byd sy'n cael ei deipio ar y dudalen hon yn gadael eich dyfais.",
     demoAppLabel: 'Ap Arddangos',
     navHome: 'Hafan',
     navSettings: 'Gosodiadau',
@@ -145,7 +145,7 @@
     searchPlaceholder: 'Chwilio…',
     aboutHeading: "Ynghylch yr arddangosiad hwn",
     aboutP:
-      "Mae popeth ar y dudalen hon wedi'i efelychu yn y porwr: does dim cyfrif go iawn a does dim cefn-drws go iawn. Mae'n gragen ap fach, realistig — mewngofnodi, eiconau llywio, blwch chwilio, a thabiau — wedi'i hadeiladu'n benodol i gael rhywbeth mwy tebyg i ap na thudalen ffwythiant i awtomeiddio yn ei erbyn.",
+      "Mae popeth ar y dudalen hon wedi'i efelychu yn y porwr: does dim cyfrif go iawn a does dim ochr gefn go iawn. Mae'n gragen ap fach, realistig — mewngofnodi, eiconau llywio, blwch chwilio, a thabiau — wedi'i hadeiladu'n benodol i gael rhywbeth mwy tebyg i ap na thudalen cynnwys sefydlog i awtomeiddio yn ei erbyn.",
     signInHeading: 'Mewngofnodi',
     signInCredsPre: 'Defnyddiwch enw defnyddiwr ',
     signInCredsMid: ' a chyfrinair ',
@@ -166,7 +166,7 @@
     relatedGivenWhenThen: 'Enghreifftiau Given-When-Then',
     relatedHowToStart: 'Sut i ddechrau dysgu profi awtomatig?',
     relatedExamples: 'Enghreifftiau',
-    footerNavLabel: 'Llywio troedyn ap arddangos',
+    footerNavLabel: "Llywio yn nhroedyn yr ap arddangos",
     privacyPolicy: 'Polisi Preifatrwydd',
     termsOfService: 'Telerau Gwasanaeth',
     contact: 'Cysylltu',

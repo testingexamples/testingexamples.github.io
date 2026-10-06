@@ -66,8 +66,8 @@ const EN_COMMON: ChromeMessages = {
 
 const CY_COMMON: ChromeMessages = {
   skipToMainContent: "Neidio i'r prif gynnwys",
-  mainNavLabel: 'Prif lywio',
-  siteBrandAriaLabel: '{site} hafan',
+  mainNavLabel: 'Prif ddewislen',
+  siteBrandAriaLabel: 'Hafan {site}',
   nav: {
     home: 'Hafan',
     learn: 'Dysgu',
@@ -92,7 +92,7 @@ const CY_COMMON: ChromeMessages = {
     copyFailedLabel: "Methwyd copïo'r ddolen"
   },
   footerTagline:
-    '{site} — enghreifftiau profi awtomatig porwr, yn rhad ac am ddim ac yn ffynhonnell agored.'
+    '{site} — enghreifftiau cod agored am ddim o brofi awtomatig ar borwyr.'
 };
 
 const ZH_COMMON: ChromeMessages = {

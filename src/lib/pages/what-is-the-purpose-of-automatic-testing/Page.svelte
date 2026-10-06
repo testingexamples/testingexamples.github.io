@@ -62,30 +62,30 @@
   const CY: Messages = {
     title: 'Beth yw diben profi awtomatig?',
     metaDescription:
-      "Pam mae profi awtomatig yn bodoli: dal atchweliadau'n gynnar, rhedeg yr un gwiriadau'n ddiflino, galluogi rhyddhau'n aml, torri cost namau, a rhyddhau pobl ar gyfer yr hyn na all peiriannau profi ei wneud.",
+      "Pam mae profi awtomatig yn bodoli: dal atchweliadau'n gynnar, rhedeg yr un gwiriadau'n ddiflino, galluogi rhyddhau'n aml, lleihau cost bygiau, a rhyddhau pobl i wneud y profi na all peiriannau ei wneud.",
     heading: 'Beth yw diben profi awtomatig?',
     intro:
       "Mae ysgrifennu profion awtomatig yn cymryd ymdrech go iawn ymlaen llaw. Dyma beth mae tîm yn ei gael yn ôl mewn gwirionedd am yr ymdrech honno.",
     li1Label: 'Dal atchweliadau cyn rhyddhau.',
     li1P:
-      " Mae atchweliad yn rhywbeth a arferai weithio ac a stopiodd weithio'n dawel, fel arfer oherwydd newid heb gysylltiad mewn man arall yn y cod. Mae profion awtomatig yn rhedeg ar bob newid ac yn dal y rhain cyn iddynt gyrraedd defnyddwyr go iawn, yn lle wedyn.",
+      " Mae atchweliad yn rhywbeth a arferai weithio ac a stopiodd weithio'n dawel, fel arfer oherwydd newid digyswllt mewn man arall yn y cod. Mae profion awtomatig yn rhedeg ar bob newid ac yn dal y rhain cyn iddynt gyrraedd defnyddwyr go iawn, yn hytrach nag wedyn.",
     li2Label: 'Rhedeg yr un gwiriad filoedd o weithiau, heb flino.',
     li2P:
       " Bydd person sy'n gwirio'r un ffurflen mewngofnodi am y filfed tro yn olynol yn colli rhywbeth yn y pen draw. Mae sgript yn ei wirio yn union yr un ffordd bob tro, ar unrhyw awr, cynifer o weithiau ag sydd angen.",
     li3Label: 'Rhyddhau hyderus, aml.',
     li3P:
-      " Gall tîm gyda set brofion awtomatig ddibynadwy anfon newidiadau'n ddyddiol, neu sawl gwaith y dydd, oherwydd mae'r set yn dweud wrthynt yn gyflym a yw rhywbeth wedi torri. Dyma sy'n gwneud integreiddio parhaus a chyflenwi parhaus (CI/CD) yn ymarferol: mae pob newid yn cael ei adeiladu, ei brofi, ac — os yw'r profion yn pasio — ei ddefnyddio'n awtomatig.",
-    li4Label: "Mae namau'n rhatach po gynharaf y cânt eu darganfod.",
+      " Gall tîm gyda set brofion awtomatig ddibynadwy rhyddhau newidiadau'n ddyddiol, neu sawl gwaith y dydd, oherwydd mae'r set yn dweud wrthynt yn gyflym a yw rhywbeth wedi torri. Dyma sy'n gwneud integreiddio parhaus a chyflenwi parhaus (CI/CD) yn ymarferol: mae pob newid yn cael ei adeiladu, ei brofi, ac — os yw'r profion yn pasio — ei ddefnyddio'n awtomatig.",
+    li4Label: "Mae bygiau'n rhatach po gynharaf y cânt eu darganfod.",
     li4P:
-      " Mae nam a ddelir tra bo datblygwr yn dal i ysgrifennu'r cod yn costio ychydig funudau i'w drwsio. Mae'r un nam wedi'i ddal mewn adolygiad cod yn costio mwy. Wedi'i ddal gan brofi â llaw cyn rhyddhau, mwy fyth. Wedi'i ddal gan gwsmer mewn cynhyrchu, gall gostio oriau o ymchwilio, trwsiad brys, niwed i enw da, ac weithiau arian go iawn. Mae profion awtomatig yn gwthio eiliad y darganfyddiad mor gynnar â phosibl, lle mae trwsio rataf.",
-    li5Label: "Rhyddhau pobl ar gyfer yr hyn na all y peiriannau profi ei wneud.",
+      " Mae byg a ddelir tra bo datblygwr yn dal i ysgrifennu'r cod yn costio ychydig funudau i'w drwsio. Mae'r un byg wedi'i ddal mewn adolygiad cod yn costio mwy. Wedi'i ddal gan brofi â llaw cyn rhyddhau, mwy fyth. Wedi'i ddal gan gwsmer mewn cynhyrchu, gall gostio oriau o ymchwilio, trwsiad brys, niwed i enw da, ac weithiau arian go iawn. Mae profion awtomatig yn symud eiliad y darganfod mor gynnar â phosibl, lle mae trwsio'r rhataf.",
+    li5Label: "Rhyddhau pobl i wneud y profi na all peiriannau ei wneud.",
     li5P:
-      " Mae pob awr nad yw person yn ei threulio'n ail-wirio â llaw'r un llwybrau hysbys-dda yn awr y gallant ei threulio ar brofi archwiliadol, barn defnyddioldeb, a'r meddwl creadigol, gwrthwynebus sy'n dod o hyd i'r namau na ysgrifennodd neb sgript ar eu cyfer.",
-    askAiHeading: 'Syniadau gofyn i AI',
+      " Mae pob awr nad yw person yn ei threulio'n ail-wirio â llaw'r un llwybrau y gwyddys eu bod yn gweithio yn awr y gallant ei threulio ar brofi archwiliadol, barn ynghylch defnyddioldeb, a'r meddwl creadigol, gwrthwynebol sy'n dod o hyd i'r bygiau na ysgrifennodd neb sgript ar eu cyfer.",
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Mewn termau plaen, beth yw 'atchweliad', a pham mae profion awtomatig yn ei ddal yn well na pherson yn gwirio â llaw?",
-      "Mae fy nhîm yn rhyddhau sawl gwaith yr wythnos ond dal yn dod o hyd i namau mewn cynhyrchu — beth yw'r cysylltiad gwirioneddol rhwng profi awtomatig a rhyddhau'n fwy diogel, yn amlach?",
-      "Sut ydw i'n gwneud yr achos busnes, gyda rhifau gwirioneddol, dros fuddsoddi mwy o amser peirianneg mewn profion awtomatig yn hytrach na QA â llaw?"
+      "Mae fy nhîm yn rhyddhau sawl gwaith yr wythnos ond yn dal i ddod o hyd i fygiau mewn cynhyrchu — beth yw'r cysylltiad gwirioneddol rhwng profi awtomatig a rhyddhau'n fwy diogel, yn amlach?",
+      "Sut ydw i'n gwneud yr achos busnes, gyda ffigurau go iawn, dros fuddsoddi mwy o amser peirianneg mewn profion awtomatig yn hytrach na QA â llaw?"
     ],
     ctaNext: 'Nesaf: beth yw pyramid profi awtomatig? →'
   };

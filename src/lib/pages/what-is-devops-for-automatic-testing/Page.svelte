@@ -53,20 +53,20 @@
   const CY: Messages = {
     title: 'Beth yw DevOps ar gyfer profi awtomatig?',
     metaDescription:
-      "Beth yw DevOps, a pham mae profi mewn cynhyrchiad — rhyddhau canari, baneri nodwedd, gwylio cyfraddau gwallau go iawn ar ôl defnydd — yn ategu profi cyn-rhyddhau'n ddilys yn hytrach na'i ddisodli.",
+      "Beth yw DevOps, a pham mae profi mewn cynhyrchu — rhyddhau canari, baneri nodwedd, gwylio cyfraddau gwallau go iawn ar ôl defnyddio'r cod — yn ategu profi cyn-rhyddhau'n ddilys yn hytrach na'i ddisodli.",
     heading: 'Beth yw DevOps ar gyfer profi awtomatig?',
     introP:
-      "yw'r arfer ehangach y mae CI/CD yn eistedd ynddo: chwalu'r wal rhwng y bobl sy'n ysgrifennu meddalwedd a'r bobl sy'n ei rhedeg mewn cynhyrchiad, fel bod y ddau grŵp yn rhannu cyfrifoldeb am a yw'n gweithio go iawn unwaith y bydd defnyddwyr go iawn yn ei gyffwrdd.",
+      "yw'r arfer ehangach y mae CI/CD yn rhan ohono: chwalu'r wal rhwng y bobl sy'n ysgrifennu meddalwedd a'r bobl sy'n ei rhedeg mewn cynhyrchu, fel bod y ddau grŵp yn rhannu cyfrifoldeb am a yw'n gweithio go iawn unwaith y bydd defnyddwyr go iawn yn ei defnyddio.",
     belongsP:
-      "Dyma pam mae hynny'n perthyn ar dudalen brofi: DevOps yw'r rheswm bod \"profi mewn cynhyrchiad\" — rhyddhau canari i sleisen fach o draffig go iawn, baneri nodwedd, gwylio cyfraddau gwallau go iawn yn syth ar ôl defnydd — yn ategiad dilys i brofi cyn-rhyddhau, nid yn ddisodliad ohono. Ni all unrhyw gyfres brofion gwmpasu pob amod byd-go-iawn ymlaen llaw; arferion DevOps yw'r ail rwyd ddiogelwch fyw ar gyfer y rhai a gollwyd.",
+      "Dyma pam mae hynny'n perthyn i dudalen am brofi: DevOps yw'r rheswm bod \"profi mewn cynhyrchu\" — rhyddhau canari i gyfran fach o draffig go iawn, baneri nodwedd, gwylio cyfraddau gwallau go iawn yn syth ar ôl defnyddio'r cod — yn ategiad dilys i brofi cyn-rhyddhau, nid yn ddisodliad ohono. Ni all unrhyw gyfres brofion gwmpasu pob amod o'r byd go iawn ymlaen llaw; arferion DevOps yw'r ail rwyd ddiogelwch fyw ar gyfer y rhai a gollwyd.",
     learnMorePre: 'Dysgwch fwy yng ',
     learnMoreLink1Text: 'nghyflwyniad AWS i DevOps',
     learnMoreMid: ', neu gwyliwch ',
     learnMorePost: ' gan edureka! ar gyfer cyflwyniad fideo.',
-    askAiHeading: 'Syniadau gofyn i AI',
+    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Beth mae 'DevOps' yn ei olygu mewn gwirionedd, mewn termau plaen, a sut mae'n wahanol i brofi cyn rhyddhau yn unig?",
-      "Beth yw rhyddhad canari, a sut fyddai profi'n cyd-fynd ag un yn lle cael ei ddisodli ganddo?",
+      "Beth yw rhyddhau canari, a sut fyddai profi'n cyd-fynd ag un yn lle cael ei ddisodli ganddo?",
       "Sut mae timau aeddfed yn penderfynu pa rwyd ddiogelwch — profi cyn-rhyddhau neu arfer DevOps fel baneri nodwedd — ddylai ddal math penodol o fethiant?"
     ],
     nextLabel: "Nesaf: pa fetrigau sy'n helpu profi awtomatig? →"
