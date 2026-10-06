@@ -182,6 +182,37 @@
     ctaNext: '다음: 자동화 테스트 피라미드란 무엇인가? →'
   };
 
+  const FR: Messages = {
+    title: 'Quel est le but des tests automatisés ?',
+    metaDescription:
+      "Pourquoi le test automatisé existe : détecter les régressions tôt, exécuter inlassablement les mêmes vérifications, permettre des livraisons fréquentes, réduire le coût des bugs et libérer les personnes pour les tests que les machines ne savent pas faire.",
+    heading: 'Quel est le but des tests automatisés ?',
+    intro:
+      "Écrire des tests automatisés demande un vrai effort au départ. Voici ce qu'une équipe obtient réellement en retour de cet effort.",
+    li1Label: 'Détecter les régressions avant la livraison.',
+    li1P:
+      " Une régression est quelque chose qui fonctionnait et a cessé de fonctionner sans bruit, généralement à cause d'une modification sans rapport ailleurs dans le code. Les tests automatisés s'exécutent à chaque modification et détectent ces cas avant qu'ils n'atteignent de vrais utilisateurs, et non après.",
+    li2Label: 'Exécuter la même vérification des milliers de fois, sans fatigue.',
+    li2P:
+      " Une personne qui contrôle le même formulaire de connexion pour la millième fois d'affilée finira par manquer quelque chose. Un script le vérifie exactement de la même façon à chaque fois, à toute heure, autant de fois que nécessaire.",
+    li3Label: 'Des livraisons fréquentes, en confiance.',
+    li3P:
+      " Une équipe disposant d'une suite de tests automatisés fiable peut livrer des changements chaque jour, voire plusieurs fois par jour, car la suite lui indique rapidement si quelque chose est cassé. C'est ce qui rend l'intégration continue et la livraison continue (CI/CD) praticables : chaque modification est automatiquement construite, testée et — si les tests passent — déployée.",
+    li4Label: "Plus un bug est trouvé tôt, moins il coûte cher.",
+    li4P:
+      " Un bug attrapé pendant que le développeur écrit encore le code coûte quelques minutes à corriger. Le même bug attrapé en revue de code coûte plus. Attrapé par un test manuel avant la livraison, plus encore. Attrapé par un client en production, il peut coûter des heures d'investigation, un correctif en urgence, une atteinte à la réputation et parfois de l'argent bien réel. Les tests automatisés font remonter le moment de la découverte aussi tôt que possible, là où la correction coûte le moins.",
+    li5Label: "Libérer les humains pour les tests que les machines ne savent pas faire.",
+    li5P:
+      " Chaque heure qu'une personne ne passe pas à revérifier manuellement les mêmes parcours connus comme fonctionnels est une heure qu'elle peut consacrer au test exploratoire, au jugement sur l'utilisabilité et à la réflexion créative et adverse qui trouve les bugs pour lesquels personne n'a écrit de script.",
+    askAiHeading: "Idées à demander à l'IA",
+    askAi: [
+      "En termes simples, qu'est-ce qu'une « régression », et pourquoi les tests automatisés la détectent-ils mieux qu'une personne qui vérifie à la main ?",
+      "Mon équipe livre plusieurs fois par semaine mais trouve encore des bugs en production — quel est le lien réel entre test automatisé et livraisons plus sûres et plus fréquentes ?",
+      "Comment présenter l'argumentaire économique, chiffres à l'appui, pour investir davantage de temps d'ingénierie dans les tests automatisés plutôt que dans l'assurance qualité manuelle ?"
+    ],
+    ctaNext: "Suite : qu'est-ce que la pyramide des tests automatisés ? →"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -191,7 +222,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

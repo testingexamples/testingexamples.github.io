@@ -122,6 +122,26 @@
     nextLabel: '다음: 지속적 통합 테스트란 무엇인가? →'
   };
 
+  const FR: Messages = {
+    title: "Qu'est-ce que le test automatisé de navigateur ?",
+    metaDescription:
+      "Ce qu'est le test automatisé de navigateur et les compromis qu'il implique : pourquoi c'est la couche la plus réaliste de la pyramide des tests automatisés, et quand l'utiliser plutôt qu'un test unitaire ou d'intégration.",
+    heading: "Qu'est-ce que le test automatisé de navigateur ?",
+    introPre:
+      "Le test automatisé de navigateur (aussi appelé test de bout en bout ou test d'IHM) pilote un vrai navigateur exactement comme le ferait un vrai utilisateur — ouvrir des pages, cliquer sur des boutons, remplir des formulaires — avec des outils comme Selenium WebDriver, WebdriverIO et Playwright. C'est la couche la plus réaliste de ",
+    introLinkText: 'la pyramide des tests automatisés',
+    introPost: ', mais ce réalisme a un coût.',
+    p1: "Ces tests sont plus lents que les tests unitaires, parfois de plusieurs ordres de grandeur, car ils impliquent de démarrer un vrai navigateur, de charger de vraies pages et d'attendre un vrai rendu et une vraie activité réseau. Ils sont plus fragiles : un test d'IHM peut échouer simplement parce que le libellé d'un bouton a changé ou qu'un élément a bougé dans la page, alors que la fonctionnalité sous-jacente marche très bien. Ils exigent des navigateurs réels pour s'exécuter, ce qui ajoute une mise en place et une infrastructure dont un test unitaire n'a jamais besoin. Et quand un test de navigateur échoue, il peut être plus difficile de dire exactement pourquoi — un vrai bug, un problème de timing, ou simplement un changement cosmétique de la page ? — comparé à l'échec précis, limité à une fonction, d'un test unitaire.",
+    p2: "La réponse pratique n'est pas d'éviter les tests de navigateur, mais de les utiliser pour ce dans quoi ils sont uniques : vérifier que de vrais parcours utilisateur critiques — s'inscrire, rechercher, payer — fonctionnent réellement de bout en bout. Reléguez tout le reste plus bas dans la pyramide, vers des tests unitaires et d'intégration plus rapides, moins coûteux et plus précis, et réservez l'automatisation de navigateur aux quelques parcours où seul un vrai navigateur, faisant ce que fait un vrai utilisateur, vous dira la vérité.",
+    askAiHeading: "Idées à demander à l'IA",
+    askAi: [
+      "Pourquoi les tests de navigateur sont-ils plus lents et plus fragiles que les autres types de tests automatisés, en termes simples ?",
+      "Ma suite de tests de navigateur est devenue instable et lente — quelles sont les premières choses à vérifier pour la rendre plus fiable ?",
+      "Comment décider quels parcours utilisateur méritent vraiment un test de navigateur plutôt que d'être couverts plus bas dans la pyramide ?"
+    ],
+    nextLabel: "Suite : qu'est-ce que le test automatisé d'intégration continue ? →"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -131,7 +151,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

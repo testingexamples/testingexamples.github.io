@@ -149,6 +149,31 @@
     nextLabel: '다음: 브라우저 자동화 테스트란 무엇인가? →'
   };
 
+  const FR: Messages = {
+    title: "Qu'est-ce que la pyramide des tests automatisés ?",
+    metaDescription:
+      "Ce qu'est la pyramide des tests automatisés : des tests unitaires à la base, des tests d'intégration au milieu et des tests de navigateur de bout en bout au sommet — et pourquoi un projet sain compte davantage de couches rapides et moins de couches lentes.",
+    heading: "Qu'est-ce que la pyramide des tests automatisés ?",
+    intro:
+      "Les tests automatisés s'organisent en couches, que l'on représente généralement en pyramide à cause du nombre de chaque type que compte habituellement un projet sain — beaucoup de petits tests rapides à la base, puis de moins en moins de tests, plus lents et plus larges, vers le sommet.",
+    unitHeading: 'Tests unitaires (la base)',
+    unitP:
+      "Un test unitaire vérifie un petit morceau de code — une seule fonction ou classe — de façon isolée, sans base de données, réseau ni navigateur réels. Les tests unitaires sont rapides (des milliers peuvent s'exécuter en quelques secondes), peu coûteux à écrire et localisent précisément les échecs. Un projet sain en compte beaucoup.",
+    integrationHeading: "Tests d'intégration (le milieu)",
+    integrationP:
+      "Un test d'intégration vérifie que plusieurs éléments fonctionnent correctement ensemble — une fonction qui dialogue avec une vraie base de données, ou deux services internes qui s'appellent l'un l'autre. Ils détectent des problèmes que les tests unitaires ne voient pas (les éléments fonctionnent isolément, mais pas ensemble), au prix d'être plus lents et un peu plus complexes à mettre en place.",
+    e2eHeading: 'Tests de bout en bout / de navigateur (IHM) (le sommet)',
+    e2eP:
+      "Un test de bout en bout pilote un vrai navigateur exactement comme le ferait un vrai utilisateur : il ouvre une page, clique sur des boutons, remplit des formulaires et vérifie que la page réagit correctement. C'est ce que font les outils d'automatisation de navigateur comme Selenium WebDriver, WebdriverIO et Playwright — et c'est ce que démontre chaque exemple de ce site. Ces tests se situent au sommet de la pyramide : il y en a moins, mais chacun apporte une grande confiance, car il exerce un vrai parcours utilisateur à travers l'application réelle et assemblée — front-end, back-end et tout ce qui est relié — plutôt qu'un seul élément isolé.",
+    askAiHeading: "Idées à demander à l'IA",
+    askAi: [
+      "Pouvez-vous m'expliquer simplement la pyramide des tests automatisés — quelle est la vraie différence entre un test unitaire, un test d'intégration et un test de bout en bout ?",
+      "Mon projet a beaucoup de tests de navigateur de bout en bout mais presque aucun test unitaire — est-ce vraiment un problème, et comment commencer à rééquilibrer ?",
+      "Comment décider, pour une nouvelle fonctionnalité précise, à quelle couche de la pyramide appartient un nouveau test, plutôt que d'ajouter par défaut un énième test de bout en bout ?"
+    ],
+    nextLabel: "Suite : qu'est-ce que le test automatisé de navigateur ? →"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -158,7 +183,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

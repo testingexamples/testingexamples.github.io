@@ -326,6 +326,55 @@
     msgEnterSearchTerm: '검색어를 입력하세요.'
   };
 
+  const FR: Messages = {
+    title: 'Application de démonstration',
+    metaDescription:
+      "Une petite application de démonstration interactive — une mise en page Grail du Lily Design System, une connexion simulée, une barre de navigation à icônes avec zone de recherche et un panneau à trois onglets — une autre cible stable pour s'exercer à l'automatisation de navigateur.",
+    heading: 'Application de démonstration',
+    intro:
+      "Une petite application de démonstration autonome — se connecter, cliquer sur des icônes de navigation, rechercher, changer d'onglet — construite avec des composants du Lily Design System comme autre cible stable pour s'exercer à l'automatisation de navigateur. Rien ici n'est réel : il n'y a pas de back-end, et rien de ce qui est saisi sur cette page ne quitte votre appareil.",
+    demoAppLabel: 'Application de démonstration',
+    navHome: 'Accueil',
+    navSettings: 'Paramètres',
+    navSignOut: 'Se déconnecter',
+    searchLabel: "Rechercher dans l'application de démonstration",
+    searchPlaceholder: 'Rechercher…',
+    aboutHeading: 'À propos de cette démonstration',
+    aboutP:
+      "Tout ce qui se trouve sur cette page est simulé dans le navigateur : il n'y a ni vrai compte ni vrai back-end. C'est une petite enveloppe d'application réaliste — connexion, icônes de navigation, zone de recherche et onglets — conçue pour offrir une cible d'automatisation plus proche d'une application qu'une page de contenu stable.",
+    signInHeading: 'Connexion',
+    signInCredsPre: "Utilisez l'identifiant ",
+    signInCredsMid: ' et le mot de passe ',
+    signInCredsPost: '.',
+    usernameLabel: 'Identifiant',
+    passwordLabel: 'Mot de passe',
+    signInSubmit: 'Se connecter',
+    welcomeHeading: 'Bienvenue, guest',
+    welcomeP: "Vous êtes connecté. Essayez les onglets ci-dessous, ou les icônes de navigation et la zone de recherche au-dessus.",
+    tabsLabel: 'Onglets de démonstration',
+    tabAlfa: 'Alfa',
+    tabBravo: 'Bravo',
+    tabCharlie: 'Charlie',
+    tabAlfaPanel: "Panneau de l'onglet Alfa",
+    tabBravoPanel: "Panneau de l'onglet Bravo",
+    tabCharliePanel: "Panneau de l'onglet Charlie",
+    relatedHeading: 'Voir aussi',
+    relatedGivenWhenThen: 'Exemples Given-When-Then',
+    relatedHowToStart: 'Comment commencer à apprendre les tests automatisés ?',
+    relatedExamples: 'Exemples',
+    footerNavLabel: "Navigation du pied de page de l'application de démonstration",
+    privacyPolicy: 'Politique de confidentialité',
+    termsOfService: "Conditions d'utilisation",
+    contact: 'Contact',
+    msgSignInSuccess: 'Connexion réussie.',
+    msgSignInFailure: 'Échec de la connexion.',
+    msgHomePage: "Page d'accueil",
+    msgSettingsPage: 'Page des paramètres',
+    msgSignOut: 'Déconnexion',
+    msgSearchResultsFor: (query) => `Résultats de recherche pour « ${query} ».`,
+    msgEnterSearchTerm: 'Saisissez un terme de recherche.'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -335,7 +384,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

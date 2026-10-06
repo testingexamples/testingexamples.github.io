@@ -138,6 +138,28 @@
     nextLabel: '다음: 자동화 테스트에 도움이 되는 지표는 무엇인가? →'
   };
 
+  const FR: Messages = {
+    title: "Qu'est-ce que DevOps pour les tests automatisés ?",
+    metaDescription:
+      "Ce qu'est DevOps, et pourquoi le test en production — déploiements canari, feature flags, surveillance des taux d'erreur réels après un déploiement — complète légitimement les tests avant livraison au lieu de les remplacer.",
+    heading: "Qu'est-ce que DevOps pour les tests automatisés ?",
+    introP:
+      "est la pratique plus large dans laquelle s'inscrit le CI/CD : abattre le mur entre les personnes qui écrivent le logiciel et celles qui l'exploitent en production, afin que les deux groupes partagent la responsabilité de savoir s'il fonctionne réellement une fois que de vrais utilisateurs l'utilisent.",
+    belongsP:
+      "Voici pourquoi cela a sa place sur une page consacrée aux tests : DevOps est la raison pour laquelle le « test en production » — déploiements canari sur une petite part du trafic réel, feature flags, surveillance des taux d'erreur réels juste après un déploiement — est un complément légitime des tests avant livraison, et non un remplacement. Aucune suite de tests ne peut couvrir à l'avance toutes les conditions du monde réel ; les pratiques DevOps constituent le second filet de sécurité, en direct, pour celles qui lui ont échappé.",
+    learnMorePre: "Pour en savoir plus, consultez l'",
+    learnMoreLink1Text: "introduction à DevOps d'AWS",
+    learnMoreMid: ', ou regardez la vidéo ',
+    learnMorePost: " d'edureka! pour une présentation en vidéo.",
+    askAiHeading: "Idées à demander à l'IA",
+    askAi: [
+      "Que signifie réellement « DevOps », en termes simples, et en quoi est-ce différent du simple fait de tester avant la livraison ?",
+      "Qu'est-ce qu'un déploiement canari, et comment les tests s'articuleraient-ils avec lui au lieu d'être remplacés par lui ?",
+      "Comment les équipes matures décident-elles quel filet de sécurité — tests avant livraison ou pratique DevOps comme les feature flags — doit attraper un type d'échec donné ?"
+    ],
+    nextLabel: "Suite : quelles métriques aident les tests automatisés ? →"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -147,7 +169,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

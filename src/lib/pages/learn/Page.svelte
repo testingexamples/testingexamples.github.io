@@ -188,6 +188,38 @@
       ' — 코드 에디터, 버전 관리(git과 GitHub), 애자일 디스커버리에 대한 친절한 입문.'
   };
 
+  const FR: Messages = {
+    title: 'Apprendre',
+    metaDescription:
+      "Découvrez ce qu'est le test automatisé et comment démarrer avec des outils d'automatisation de navigateur comme Selenium, WebdriverIO et Playwright.",
+    heading: 'Apprendre',
+    intro:
+      "Huit courts articles : ce qu'est le test automatisé et pourquoi il vaut la peine, la pyramide des tests automatisés et la place qu'y occupe l'automatisation de navigateur, les compromis des tests de navigateur, comment l'intégration continue exécute ces tests automatiquement, un parcours pratique pour vous initier vous-même à l'automatisation de navigateur, la place de l'IA dans tout cela aujourd'hui, et les outils et pratiques du quotidien qui l'entourent.",
+    whatIsLinkText: "Qu'est-ce que le test automatisé ?",
+    whatIsDesc: " — ce qu'est le test automatisé, en quoi il diffère du test manuel et le complète.",
+    purposeLinkText: "Quel est le but des tests automatisés ?",
+    purposeDesc:
+      " — ce qu'une équipe obtient réellement en retour de l'effort d'écrire des tests automatisés : des bugs détectés plus tôt, une répétition infatigable et la confiance nécessaire pour livrer souvent.",
+    pyramidLinkText: "Qu'est-ce que la pyramide des tests automatisés ?",
+    pyramidDesc:
+      " — les trois couches de tests automatisés, des tests unitaires rapides et peu coûteux à la base aux tests de navigateur de bout en bout réalistes au sommet.",
+    browserLinkText: "Qu'est-ce que le test automatisé de navigateur ?",
+    browserDesc:
+      " — ce que c'est, et les compromis qu'implique son réalisme : plus lent, plus fragile et plus difficile à diagnostiquer qu'un test unitaire.",
+    ciLinkText: "Qu'est-ce que le test automatisé d'intégration continue ?",
+    ciDesc:
+      " — exécuter automatiquement votre suite de tests automatisés à chaque modification, afin que le code défectueux soit détecté avant sa fusion plutôt qu'après.",
+    howToStartLinkText: "Comment commencer à apprendre les tests automatisés ?",
+    howToStartDesc:
+      " — un parcours pas à pas : choisir un langage, choisir un outil, exécuter votre premier script sur ce site, puis vous exercer sur de vrais exemples concrets.",
+    aiLinkText: "Comment l'intelligence artificielle aide-t-elle les tests automatisés ?",
+    aiDesc:
+      " — comment et pourquoi l'intelligence artificielle intervient aujourd'hui dans l'écriture des tests, le CI/CD et la découverte agile, et la mise en garde qui s'applique aux trois.",
+    relatedConceptsLinkText: "Quels sont les concepts liés aux tests automatisés ?",
+    relatedConceptsDesc:
+      " — des introductions accessibles aux éditeurs de code, à la gestion de versions (git et GitHub) et à la découverte agile."
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -197,7 +229,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

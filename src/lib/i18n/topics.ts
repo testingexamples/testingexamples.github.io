@@ -33,43 +33,43 @@ export type TopicId =
   | 'what-is-the-testing-pyramid';
 
 type TopicDefinition = {
-  slug: { en: string; cy: string; zh: string; ar: string; ko: string };
+  slug: { en: string; cy: string; zh: string; ar: string; ko: string; fr: string };
   load: () => Promise<{ default: TopicComponent }>;
 };
 
-function slugFor(en: string, cy: string, zh: string, ar: string, ko: string) {
-  return { en, cy, zh, ar, ko };
+function slugFor(en: string, cy: string, zh: string, ar: string, ko: string, fr: string) {
+  return { en, cy, zh, ar, ko, fr };
 }
 
 export const TOPICS: Record<TopicId, TopicDefinition> = {
   home: {
-    slug: slugFor('', '', '', '', ''),
+    slug: slugFor('', '', '', '', '', ''),
     load: () => import('#lib/pages/home/Page.svelte')
   },
   about: {
-    slug: slugFor('about', 'ynghylch', '关于', 'حول', '소개'),
+    slug: slugFor('about', 'ynghylch', '关于', 'حول', '소개', 'a-propos'),
     load: () => import('#lib/pages/about/Page.svelte')
   },
   app: {
-    slug: slugFor('app', 'ap', '应用', 'التطبيق', '앱'),
+    slug: slugFor('app', 'ap', '应用', 'التطبيق', '앱', 'application'),
     load: () => import('#lib/pages/app/Page.svelte')
   },
   examples: {
-    slug: slugFor('examples', 'enghreifftiau', '示例', 'أمثلة', '예제'),
+    slug: slugFor('examples', 'enghreifftiau', '示例', 'أمثلة', '예제', 'exemples'),
     load: () => import('#lib/pages/examples/Page.svelte')
   },
   'examples-google-search': {
-    slug: slugFor('examples/google-search', 'enghreifftiau/chwilio-google', '示例/谷歌搜索', 'أمثلة/بحث-جوجل', '예제/구글-검색'),
+    slug: slugFor('examples/google-search', 'enghreifftiau/chwilio-google', '示例/谷歌搜索', 'أمثلة/بحث-جوجل', '예제/구글-검색', 'exemples/recherche-google'),
     load: () => import('#lib/pages/examples-google-search/Page.svelte')
   },
   'examples-google-maps': {
-    slug: slugFor('examples/google-maps', 'enghreifftiau/mapiau-google', '示例/谷歌地图', 'أمثلة/خرائط-جوجل', '예제/구글-지도'),
+    slug: slugFor('examples/google-maps', 'enghreifftiau/mapiau-google', '示例/谷歌地图', 'أمثلة/خرائط-جوجل', '예제/구글-지도', 'exemples/google-maps'),
     load: () => import('#lib/pages/examples-google-maps/Page.svelte')
   },
   'given-when-then': {
     // Kept in English for every locale: "Given-When-Then" (Gherkin) is a
     // BDD vocabulary term, not ordinary prose — see spec/locales/index.md.
-    slug: slugFor('given-when-then', 'given-when-then', 'given-when-then', 'given-when-then', 'given-when-then'),
+    slug: slugFor('given-when-then', 'given-when-then', 'given-when-then', 'given-when-then', 'given-when-then', 'given-when-then'),
     load: () => import('#lib/pages/given-when-then/Page.svelte')
   },
   'how-does-artificial-intelligence-help-automatic-testing': {
@@ -78,7 +78,8 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'sut-mae-deallusrwydd-artiffisial-yn-helpu-profi-awtomatig',
       '人工智能如何帮助自动化测试',
       'كيف-يساعد-الذكاء-الاصطناعي-في-الاختبار-الآلي',
-      '인공지능은-자동화-테스트를-어떻게-돕는가'
+      '인공지능은-자동화-테스트를-어떻게-돕는가',
+      'comment-l-intelligence-artificielle-aide-t-elle-les-tests-automatises'
     ),
     load: () => import('#lib/pages/how-does-artificial-intelligence-help-automatic-testing/Page.svelte')
   },
@@ -88,12 +89,13 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'sut-i-ddechrau-dysgu-profi-awtomatig',
       '如何开始学习自动化测试',
       'كيف-تبدأ-تعلم-الاختبار-الآلي',
-      '자동화-테스트-학습-시작-방법'
+      '자동화-테스트-학습-시작-방법',
+      'comment-commencer-a-apprendre-les-tests-automatises'
     ),
     load: () => import('#lib/pages/how-to-start-learning-automatic-testing/Page.svelte')
   },
   learn: {
-    slug: slugFor('learn', 'dysgu', '学习', 'تعلم', '학습'),
+    slug: slugFor('learn', 'dysgu', '学习', 'تعلم', '학습', 'apprendre'),
     load: () => import('#lib/pages/learn/Page.svelte')
   },
   'what-are-flow-metrics-for-automatic-testing': {
@@ -102,7 +104,8 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'beth-yw-metrigau-llif-ar-gyfer-profi-awtomatig',
       '自动化测试的流程指标是什么',
       'ما-هي-مقاييس-التدفق-للاختبار-الآلي',
-      '자동화-테스트에-도움이-되는-지표'
+      '자동화-테스트에-도움이-되는-지표',
+      'quelles-metriques-aident-les-tests-automatises'
     ),
     load: () => import('#lib/pages/what-are-flow-metrics-for-automatic-testing/Page.svelte')
   },
@@ -112,12 +115,13 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'beth-yw-cysyniadau-cysylltiedig-ar-gyfer-profi-awtomatig',
       '自动化测试的相关概念是什么',
       'ما-هي-المفاهيم-ذات-الصلة-بالاختبار-الآلي',
-      '자동화-테스트와-관련된-개념'
+      '자동화-테스트와-관련된-개념',
+      'quels-sont-les-concepts-lies-aux-tests-automatises'
     ),
     load: () => import('#lib/pages/what-are-related-concepts-for-automatic-testing/Page.svelte')
   },
   'what-is-automatic-testing': {
-    slug: slugFor('what-is-automatic-testing', 'beth-yw-profi-awtomatig', '什么是自动化测试', 'ما-هو-الاختبار-الآلي', '자동화-테스트란-무엇인가'),
+    slug: slugFor('what-is-automatic-testing', 'beth-yw-profi-awtomatig', '什么是自动化测试', 'ما-هو-الاختبار-الآلي', '자동화-테스트란-무엇인가', 'qu-est-ce-que-le-test-automatise'),
     load: () => import('#lib/pages/what-is-automatic-testing/Page.svelte')
   },
   'what-is-browser-automation-testing': {
@@ -126,7 +130,8 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'beth-yw-profi-awtomatig-porwr',
       '什么是浏览器自动化测试',
       'ما-هو-اختبار-أتمتة-المتصفح',
-      '브라우저-자동화-테스트란-무엇인가'
+      '브라우저-자동화-테스트란-무엇인가',
+      'qu-est-ce-que-le-test-automatise-de-navigateur'
     ),
     load: () => import('#lib/pages/what-is-browser-automation-testing/Page.svelte')
   },
@@ -136,7 +141,8 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'beth-yw-profi-integreiddio-parhaus-awtomatig',
       '什么是持续集成测试',
       'ما-هو-اختبار-التكامل-المستمر',
-      '지속적-통합-테스트란-무엇인가'
+      '지속적-통합-테스트란-무엇인가',
+      'qu-est-ce-que-le-test-automatise-d-integration-continue'
     ),
     load: () => import('#lib/pages/what-is-continuous-integration-testing/Page.svelte')
   },
@@ -146,7 +152,8 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'beth-yw-devops-ar-gyfer-profi-awtomatig',
       '什么是自动化测试的DevOps',
       'ما-هو-DevOps-للاختبار-الآلي',
-      '자동화-테스트를-위한-DevOps란-무엇인가'
+      '자동화-테스트를-위한-DevOps란-무엇인가',
+      'qu-est-ce-que-devops-pour-les-tests-automatises'
     ),
     load: () => import('#lib/pages/what-is-devops-for-automatic-testing/Page.svelte')
   },
@@ -156,7 +163,8 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'sut-mae-six-sigma-yn-arwain-profi-a-llaw-at-brofi-awtomatig',
       '六西格玛如何引导人工测试进入自动化测试',
       'كيف-يقود-سيكس-سيجما-الاختبار-اليدوي-إلى-الاختبار-الآلي',
-      'Six-Sigma는-수동-테스트를-어떻게-자동화-테스트로-이끄는가'
+      'Six-Sigma는-수동-테스트를-어떻게-자동화-테스트로-이끄는가',
+      'comment-six-sigma-mene-t-il-des-tests-manuels-aux-tests-automatises'
     ),
     load: () => import('#lib/pages/what-is-lean-six-sigma-for-automatic-testing/Page.svelte')
   },
@@ -166,7 +174,8 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'beth-yw-diben-profi-awtomatig',
       '自动化测试的目的是什么',
       'ما-هو-الغرض-من-الاختبار-الآلي',
-      '자동화-테스트의-목적은-무엇인가'
+      '자동화-테스트의-목적은-무엇인가',
+      'quel-est-le-but-des-tests-automatises'
     ),
     load: () => import('#lib/pages/what-is-the-purpose-of-automatic-testing/Page.svelte')
   },
@@ -176,7 +185,8 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'beth-yw-pyramid-profi-awtomatig',
       '什么是自动化测试金字塔',
       'ما-هو-هرم-الاختبار-الآلي',
-      '자동화-테스트-피라미드란-무엇인가'
+      '자동화-테스트-피라미드란-무엇인가',
+      'qu-est-ce-que-la-pyramide-des-tests-automatises'
     ),
     load: () => import('#lib/pages/what-is-the-testing-pyramid/Page.svelte')
   }
@@ -184,11 +194,12 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
 
 export const TOPIC_IDS = Object.keys(TOPICS) as TopicId[];
 
-function slugGroup(locale: Locale): 'en' | 'cy' | 'zh' | 'ar' | 'ko' {
+function slugGroup(locale: Locale): 'en' | 'cy' | 'zh' | 'ar' | 'ko' | 'fr' {
   if (locale === 'cy-gb' || locale === 'cy-001') return 'cy';
   if (locale === 'zh-cn') return 'zh';
   if (locale === 'ar-001') return 'ar';
   if (locale === 'ko-001') return 'ko';
+  if (locale === 'fr-001') return 'fr';
   return 'en';
 }
 

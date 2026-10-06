@@ -142,6 +142,29 @@
     nextLabel: '다음: 지속적 통합 테스트란 무엇인가? →'
   };
 
+  const FR: Messages = {
+    title: 'Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?',
+    metaDescription:
+      "Ce qu'est Six Sigma, et pourquoi le test manuel est lui-même le problème de variation qu'il cible — une personne ne produit pas de façon fiable deux fois le même résultat, ce qu'élimine précisément l'automatisation d'une vérification.",
+    heading: 'Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?',
+    introP:
+      "est une discipline visant à réduire les défauts en réduisant la variation : une même entrée doit produire de façon fiable la même sortie, et là où ce n'est pas le cas, cette variation est mesurée et analysée jusqu'à sa cause racine plutôt qu'écartée d'un haussement d'épaules. Née dans l'industrie manufacturière, elle s'applique aujourd'hui à tout processus répétable — y compris la livraison de logiciels.",
+    belongsP:
+      "Voici pourquoi cela a sa place sur une page consacrée aux tests : le test manuel est lui-même le problème de variation que cible Six Sigma. Une personne qui exécute la même vérification à la main ne produit pas de façon fiable le même résultat à chaque fois — l'attention faiblit, une étape est sautée, un cas limite est jugé différemment un vendredi après-midi et un lundi matin. Transformer cette vérification en test automatisé est une application directe de l'état d'esprit Six Sigma : la même entrée produit désormais de façon fiable la même sortie, à chaque fois, parce qu'un script n'a pas de jour sans.",
+    relocateP:
+      "Cela ne rend pas les tests automatisés immunisés contre la variation — cela la déplace. Un test automatisé instable, qui réussit et échoue sur le même code sans que rien n'ait changé, est exactement le genre de variation que Six Sigma considère comme un défaut dont il faut chercher la cause racine, et non comme une nuisance à relancer jusqu'à ce qu'elle passe au vert.",
+    learnMorePre: "Pour en savoir plus, consultez le ",
+    learnMoreLinkText: "guide de démarrage d'iSixSigma",
+    learnMorePost: '.',
+    askAiHeading: "Idées à demander à l'IA",
+    askAi: [
+      "Que signifie réellement « Six Sigma », en termes simples, et pourquoi réduire la « variation » compterait-il pour le test logiciel en particulier ?",
+      "En quoi le test manuel est-il lui-même une source de variation, au sens de Six Sigma, comparé à un test automatisé qui s'exécute de la même façon à chaque fois ?",
+      "Comment appliquer l'idée de Six Sigma consistant à « chercher la cause racine de la variation » à un test automatisé instable précis, au lieu de simplement le relancer jusqu'à ce qu'il passe ?"
+    ],
+    nextLabel: "Suite : qu'est-ce que le test automatisé d'intégration continue ? →"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -151,7 +174,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

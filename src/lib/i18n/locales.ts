@@ -2,7 +2,7 @@
 // contract (URL scheme, which content is translated vs. kept as-is, and
 // why the home page fixture section never changes).
 
-export type Locale = 'en-001' | 'en-gb' | 'en-gb-oxendict' | 'en-us' | 'cy-001' | 'cy-gb' | 'zh-cn' | 'ar-001' | 'ko-001';
+export type Locale = 'en-001' | 'en-gb' | 'en-gb-oxendict' | 'en-us' | 'cy-001' | 'cy-gb' | 'zh-cn' | 'ar-001' | 'ko-001' | 'fr-001';
 
 export const DEFAULT_LOCALE: Locale = 'en-001';
 
@@ -15,7 +15,8 @@ export const LOCALES: Locale[] = [
   'cy-gb',
   'zh-cn',
   'ar-001',
-  'ko-001'
+  'ko-001',
+  'fr-001'
 ];
 
 export function isLocale(value: string): value is Locale {
@@ -39,7 +40,8 @@ export const LOCALE_META: Record<Locale, LocaleMeta> = {
   'cy-gb': { label: 'Cymraeg - Great Britain', bcp47: 'cy-GB', dir: 'ltr' },
   'zh-cn': { label: '中文', bcp47: 'zh-CN', dir: 'ltr' },
   'ar-001': { label: 'العربية', bcp47: 'ar-001', dir: 'rtl' },
-  'ko-001': { label: '한국어', bcp47: 'ko-001', dir: 'ltr' }
+  'ko-001': { label: '한국어', bcp47: 'ko-001', dir: 'ltr' },
+  'fr-001': { label: 'Français', bcp47: 'fr-001', dir: 'ltr' }
 };
 
 export const LOCALE_LABELS: Record<Locale, string> = Object.fromEntries(
@@ -65,5 +67,6 @@ export const PICKER_LOCALES: Locale[] = [
   'en-us',
   'zh-cn',
   'ar-001',
-  'ko-001'
+  'ko-001',
+  'fr-001'
 ];

@@ -47,9 +47,9 @@ rule applies to that component regardless of which page imports it.
 
 ## Locales
 
-The site is served at `/locales/<locale>/<slug>/` for nine locales
+The site is served at `/locales/<locale>/<slug>/` for ten locales
 (`en-001` default, `en-gb`, `en-gb-oxendict`, `en-us`, `cy-gb`, `cy-001`,
-`zh-cn`, `ar-001`, `ko-001`). `ar-001` is the site's only right-to-left
+`zh-cn`, `ar-001`, `ko-001`, `fr-001`). `ar-001` is the site's only right-to-left
 locale (`dir="rtl"`, set by `src/hooks.server.ts`).
 See `spec/locales/index.md` for the full contract — URL scheme, what's
 translated vs. kept as-is, and why the home page fixture section is

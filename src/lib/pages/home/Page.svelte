@@ -204,6 +204,37 @@
     }
   };
 
+  const FR: Messages = {
+    metaDescription:
+      "Contenu HTML stable, gratuit et open source, pour s'exercer à l'automatisation de navigateur : trouver des éléments par id, name, class, texte de lien et XPath, et interagir avec des champs de formulaire.",
+    heading: `Bienvenue sur ${SITE_NAME}`,
+    intro: `Si l'automatisation de navigateur est nouvelle pour vous, vous êtes au bon endroit. ${SITE_NAME} est un petit site gratuit et open source, conçu pour toute personne qui apprend à faire exécuter des actions automatiquement à un navigateur — cliquer, saisir, rechercher, attendre, vérifier — que vous n'ayez jamais écrit une ligne de code ou que vous connaissiez déjà les bases et cherchiez simplement une référence rapide ou un endroit fiable pour essayer quelque chose.`,
+    learnHeading: 'Apprendre',
+    learnMoreHeading: 'En savoir plus',
+    examplesHeading: 'Exemples',
+    practiceHeading: "S'exercer sur cette page",
+    practiceBody:
+      "Tout ce qui suit est un terrain de jeu stable : des ids, des names, des classes et des textes fixes que les outils d'automatisation retrouvent de façon fiable à chaque fois, ce qui le rend idéal pour s'exercer directement — pointez votre script dessus, trouvez un élément, interagissez avec lui et observez le résultat. Le contrat exact que respecte cette page est documenté dans le fichier",
+    links: {
+      whatIsAutomaticTesting: "Qu'est-ce que le test automatisé ?",
+      whatIsThePurpose: "Quel est le but des tests automatisés ?",
+      whatIsTheTestingPyramid: "Qu'est-ce que la pyramide des tests automatisés ?",
+      whatIsBrowserAutomation: "Qu'est-ce que le test automatisé de navigateur ?",
+      howToStartLearning: "Comment commencer à apprendre les tests automatisés ?",
+      whatAreRelatedConcepts: "Quels sont les concepts liés aux tests automatisés ?",
+      howDoesAiHelp: "Comment l'intelligence artificielle aide-t-elle les tests automatisés ?",
+      whatIsContinuousIntegration: "Qu'est-ce que le test automatisé d'intégration continue ?",
+      whatIsDevOps: "Qu'est-ce que DevOps pour les tests automatisés ?",
+      whatAreFlowMetrics: "Quelles métriques aident les tests automatisés ?",
+      whatIsLeanSixSigma: "Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?",
+      googleSearchExamples: 'Exemples de Recherche Google',
+      googleMapsExamples: 'Exemples de Google Maps',
+      givenWhenThenExamples: 'Exemples Given-When-Then',
+      demoApp: 'Application de démonstration',
+      demoAppSuffix: "connexion, icônes de navigation, recherche et onglets pour s'exercer"
+    }
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -213,7 +244,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

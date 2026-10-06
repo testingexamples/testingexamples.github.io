@@ -851,6 +851,154 @@
     askAiHeading: 'AI에게 물어볼 아이디어'
   };
 
+  const FR: Messages = {
+    title: 'Quels sont les concepts liés aux tests automatisés ?',
+    metaDescription:
+      "Un tour d'horizon accessible aux débutants de cinq éléments qui entourent le test automatisé : éditeurs de code, gestion de versions, découverte agile, commandes Unix et hébergement dans le cloud — et pourquoi chacun compte dès que votre script de test grandit.",
+    heading: 'Quels sont les concepts liés aux tests automatisés ?',
+    intro:
+      "Vous venez d'écrire votre premier script d'automatisation de navigateur. Il fonctionne — sur votre machine, maintenant. Cette page porte sur la poignée d'outils et de pratiques du quotidien qui transforment ce script en quelque chose sur lequel toute une équipe peut compter, des mois plus tard, sans que vous ayez à le surveiller.",
+    introP:
+      "Le test automatisé ne se produit pas en vase clos. Autour de toute suite de tests fiable se trouve un petit ensemble d'habitudes ordinaires du développement logiciel : un éditeur correct pour écrire le code, un moyen de suivre l'évolution de ce code dans le temps, un moyen de s'assurer que les tests sont réellement exécutés et — facile à oublier, mais tout aussi réel — un moyen de vérifier que les tests protègent quelque chose auquel une vraie personne tient vraiment. Aucun de ces éléments n'est un outil de test à proprement parler. Tous font fonctionner le test. Voici cinq éléments à connaître, chacun expliqué simplement, chacun avec un ou deux liens si vous voulez aller plus loin.",
+
+    s1Heading: 'Éditeurs de code — par exemple Visual Studio Code',
+    s1P1a:
+      "Vous pouvez écrire un script de test dans n'importe quel éditeur de texte brut, mais un véritable éditeur de code vous apporte gratuitement une aide étonnante. ",
+    syntaxLabel: 'La coloration syntaxique',
+    s1P1b:
+      " colore votre code pendant que vous le saisissez, de sorte qu'une faute de frappe comme une parenthèse fermante manquante saute aux yeux au lieu de se cacher jusqu'à ce que vous exécutiez le script et obteniez une erreur déroutante. ",
+    autocompleteLabel: "L'autocomplétion",
+    s1P1c1: " vous montre ce qui est réellement disponible pendant que vous tapez — tapez ",
+    s1P1c2: ' ou ',
+    s1P1c3:
+      " dans un éditeur moderne et il listera chaque méthode proposée par la bibliothèque, ce qui est souvent plus rapide que de chercher dans la documentation.",
+    s1P2a: 'Un ',
+    terminalLabel: 'terminal intégré',
+    s1P2b: " vous permet d'exécuter votre script de test sans quitter la fenêtre de l'éditeur, et un ",
+    debuggerLabel: 'débogueur intégré',
+    s1P2c:
+      " vous permet de suspendre un test en échec en cours d'exécution et de regarder réellement ce que le navigateur a trouvé dans la page — l'état réel des choses — plutôt que de deviner à partir d'une série d'instructions ",
+    s1P2d: ". En plus de tout cela, les éditeurs prennent en charge les ",
+    extensionsLabel: 'extensions',
+    s1P2e:
+      " : par exemple, Playwright propose sa propre extension officielle pour VS Code, qui peut lancer vos tests depuis une barre latérale et même générer du nouveau code de test en enregistrant vos clics dans un vrai navigateur.",
+    s1P3Post1:
+      " est gratuit, extrêmement répandu et un choix par défaut très raisonnable si vous n'avez pas déjà d'éditeur favori. Pour une présentation en vidéo, regardez ",
+    s1P3Post2: ' (Learn Web Dev with Norbert, 15 min).',
+    s1AskAi: [
+      "Je n'ai jamais utilisé de véritable éditeur de code — quelle est la vraie différence entre un éditeur de code et quelque chose comme le Bloc-notes, et Visual Studio Code est-il un point de départ raisonnable ?",
+      "J'utilise déjà VS Code de façon occasionnelle — quelles extensions ou fonctionnalités m'aideraient vraiment à écrire et déboguer des tests d'automatisation de navigateur en particulier ?",
+      "Comment mettre en place une configuration VS Code partagée — extensions, paramètres, configuration du débogueur — pour que toute mon équipe ait une expérience d'écriture de tests cohérente, et pas seulement moi ?"
+    ],
+
+    s2Heading: 'Gestion de versions — git et GitHub',
+    s2P1a:
+      "Sans gestion de versions, « corriger un test » signifie généralement écraser l'ancien fichier en espérant ne pas avoir besoin de la version précédente. ",
+    gitLabel: 'Git',
+    s2P1b:
+      " résout cela en conservant chaque version de chaque fichier qu'il suit : il permet de voir exactement ce qui a changé, quand et — grâce au message de commit — pourquoi, et il permet d'annuler sans risque une mauvaise modification plutôt que d'essayer de se souvenir de ce à quoi ressemblait le code.",
+    s2P2Label: 'GitHub',
+    s2P2a:
+      " (ou un hébergeur similaire, comme GitLab ou Bitbucket) ajoute le partage et la collaboration par-dessus git. Il donne à votre code un foyer que d'autres personnes peuvent trouver, cloner et lire ; il permet à quelqu'un de proposer une modification au moyen d'une ",
+    pullRequestLabel: 'pull request',
+    s2P2b:
+      " — un diff proposé que l'on peut discuter, relire et fusionner (ou non) — plutôt que de s'échanger par e-mail une nouvelle copie d'un fichier.",
+    s2P3a: "Ce n'est pas abstrait pour ce site : chaque dépôt de démonstration lié depuis les pages ",
+    examplesLinkText: 'exemples',
+    s2P3b: ' et ',
+    aboutLinkText: 'à propos',
+    s2P3c:
+      " de ce site est un vrai dépôt git public. Vous pouvez cloner n'importe lequel d'entre eux et lire tout l'historique de la façon dont ce code de test a pris sa forme actuelle — ce n'est pas anecdotique, c'est ainsi que le vrai code de test est réellement géré.",
+    s2P4Pre: 'Pour en savoir plus, consultez ',
+    s2P4Mid: ' et ',
+    s2P4Mid2: ", ou regardez la vidéo ",
+    s2P4Post: ' de GitHub pour une présentation en vidéo.',
+    s2AskAi: [
+      "Je n'ai jamais utilisé git — que signifient réellement « commiter » et « pousser », en termes simples, et pourquoi ai-je besoin de l'un ou de l'autre juste pour écrire un script de test ?",
+      "J'ai commité une modification par erreur et je veux l'annuler — quelle est une façon sûre de le faire sans perdre d'autre travail ?",
+      "Comment une équipe devrait-elle structurer ses branches git et ses pull requests autour du code de test, pour qu'un test instable ou cassé ne bloque pas des modifications sans rapport ?"
+    ],
+
+    s3Heading: 'Agilité et travail avec les utilisateurs — la découverte',
+    s3P1a: 'En termes simples, ',
+    agileLabel: "l'agilité",
+    s3P1b:
+      " consiste à construire des logiciels par cycles courts et répétables, en échangeant en chemin avec les personnes qui les utiliseront vraiment — plutôt que de construire pendant des mois à partir d'une spécification figée pour s'apercevoir seulement à la fin que la spécification était fausse. ",
+    discoveryLabel: 'La découverte',
+    s3P1c:
+      " est la pratique précise consistant à parler tôt à de vrais utilisateurs (ou à des représentants réalistes) pour apprendre ce dont ils ont réellement besoin et comment ils se comportent réellement, avant — et pendant — la construction.",
+    s3P2a:
+      "Voici pourquoi cela a sa place sur une page consacrée aux tests : une suite de tests ne peut que vérifier que le logiciel fait ce que vous ",
+    intendedLabel: 'aviez prévu',
+    s3P2b:
+      " qu'il fasse. Elle n'a aucun moyen de vérifier si cette intention était la bonne. La découverte est ce qui maintient l'intention orientée vers ce dont une vraie personne a réellement besoin, afin que toutes les vérifications automatisées minutieuses que vous faites ensuite portent sur quelque chose qui vaut la peine d'être vérifié.",
+    s3P3:
+      "C'est aussi concret sur ce site même : les exemples de contenu stable de la page d'accueil, et les scénarios « About Us » et de recherche NHS Wales que mettent en œuvre les dépôts associés à ce site, existent parce que quelqu'un a identifié un vrai parcours utilisateur à protéger — s'inscrire, rechercher, trouver des informations sur le site d'un service de santé. Décider que ce parcours comptait assez pour écrire un test est en soi une activité de découverte, et non une activité purement technique.",
+    s3P4Pre: 'Pour en savoir plus, consultez le ',
+    s3P4Mid: " et le ",
+    s3P4Mid2: ', ou regardez la vidéo ',
+    s3P4Post: ' pour une présentation en vidéo.',
+    s3AskAi: [
+      "Que signifie réellement la « découverte » dans l'agilité, et pourquoi cela importerait-il à quelqu'un qui écrit simplement des scripts de test ?",
+      "Comment transformer une user story vague en scénario concret et testable avant de commencer à l'automatiser ?",
+      "Comment les équipes expérimentées gardent-elles la découverte et l'écriture des tests reliées en continu, plutôt que de faire la découverte une fois au départ et de laisser les tests s'en éloigner ensuite ?"
+    ],
+
+    s4Heading: 'Commandes Unix — la ligne de commande',
+    unixCommandsLabel: 'Les commandes Unix',
+    s4P1Post:
+      " sont ce que parlent nativement presque tous les environnements de développement, les exécuteurs de CI et les conteneurs Docker, sans interface graphique. Vous n'avez pas besoin de toutes les maîtriser ; une connaissance pratique d'une vingtaine de commandes mène très loin.",
+    cmdLs: 'lister les fichiers et les répertoires',
+    cmdCd: 'changer de répertoire',
+    cmdMv: 'déplacer un fichier ou un répertoire',
+    cmdMore: "afficher le texte d'un fichier, page par page",
+    cmdNano: "modifier le texte d'un fichier, avec des commandes simples",
+    cmdGrep: 'rechercher du texte dans des fichiers',
+    cmdChmod: "modifier le mode des permissions d'un fichier",
+    cmdCurl: 'appeler une URL, comme une adresse web http',
+    cmdClaude: "agent d'IA",
+    s4P2a: "Voici pourquoi cela a sa place sur une page consacrée aux tests : ",
+    s4P2b: ' et ',
+    s4P2c:
+      " permettent de trouver un échec précis parmi des milliers de lignes de sortie de test ou de journal, au lieu de faire défiler. ",
+    s4P2d:
+      " permet de vérifier rapidement une API à la main — le même point d'accès qu'un test d'IHM pourrait aussi solliciter — avant d'écrire le vrai test. ",
+    s4P2e:
+      " est ce qui rend un script de test directement exécutable. Et chaîner quelques commandes avec des pipes est souvent ainsi que se construit une étape de CI sans recourir à un « vrai » langage de programmation juste pour relier deux outils.",
+    s4P3Pre: "Pour en savoir plus, consultez la leçon sur le shell Unix de Software Carpentry, ",
+    s4P3Mid: ', ou regardez la vidéo de NetworkChuck ',
+    s4P3Post: ' pour une présentation en vidéo à un rythme soutenu.',
+    s4AskAi: [
+      "Je n'ai jamais utilisé de ligne de commande — quelles sont les quelques commandes Unix qui valent vraiment la peine d'être apprises en premier pour quelqu'un qui se lance dans le test ?",
+      "Comment utiliser grep pour trouver chaque test en échec dans un énorme journal de CI sans le parcourir à la main ?",
+      "Comment enchaîner quelques commandes Unix dans un petit script fiable pour une étape de CI, plutôt que de recourir à un langage de programmation complet ?"
+    ],
+
+    s5Heading: "L'hébergement dans le cloud pour les tests",
+    cloudHostingLabel: "L'hébergement dans le cloud",
+    s5P1Post:
+      " consiste à faire tourner de l'infrastructure — serveurs, navigateurs, exécuteurs de CI — sur les ordinateurs de quelqu'un d'autre plutôt que sur les vôtres, en payant ce que vous utilisez réellement au lieu d'acheter et de maintenir du matériel vous-même.",
+    s5P2:
+      "Voici pourquoi cela a sa place sur une page consacrée aux tests : les fermes de navigateurs dans le cloud permettent à une suite de tests de s'exécuter sur de vrais appareils et sur des dizaines de combinaisons réelles de navigateurs et de systèmes d'exploitation que personne ne pourrait raisonnablement installer et maintenir en local. Et les fournisseurs de CI dans le cloud (GitHub Actions, mentionné plus bas dans la section CI/CD, en est un) donnent à chaque exécution de test une machine neuve et jetable — de sorte qu'un test ne peut pas passer discrètement uniquement à cause d'un état laissé par une exécution précédente, une classe de bugs subtils bien plus difficile à dissimuler quand chaque exécution repart de zéro.",
+    s5P3Pre: "Pour en savoir plus, consultez ",
+    s5P3Mid: ', ou regardez la vidéo ',
+    s5P3Post: ' pour une présentation en vidéo.',
+    s5AskAi: [
+      "Que signifie réellement « le cloud », en termes simples, et pourquoi une suite de tests en aurait-elle besoin plutôt que de simplement s'exécuter sur mon propre ordinateur portable ?",
+      "Quelle est la différence pratique entre exécuter mes tests sur ma propre machine et sur une ferme de navigateurs dans le cloud, pour une petite équipe ?",
+      "Comment décider si une suite de tests qui grandit est vraiment prête à passer à un fournisseur de CI dans le cloud, et que vérifier avant de faire ce changement ?"
+    ],
+
+    closingPre: "Aucun de ces cinq éléments n'est nécessaire pour écrire votre premier script — voir ",
+    closingLinkText: 'Comment commencer à apprendre les tests automatisés ?',
+    closingPost:
+      " pour cela. Mais chacun vaut la peine d'être adopté à mesure que votre code de test dépasse un seul fichier sur votre propre machine : une configuration d'éditeur partagée, l'historique git, un lien honnête avec ce dont les utilisateurs ont réellement besoin et — dès qu'une équipe entière dépend de vos tests — le vocabulaire commun pour parler de l'endroit où se situent réellement l'infrastructure, le processus et la qualité du test. Chacun est aussi un grand sujet, bien documenté en soi — cette page est une carte, pas le territoire.",
+    ctaBackToLearn: 'Retour à Apprendre',
+    ctaHowToStart: 'Comment commencer à apprendre →',
+
+    askAiHeading: "Idées à demander à l'IA"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -860,7 +1008,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

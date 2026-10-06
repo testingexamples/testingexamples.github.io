@@ -259,6 +259,46 @@
     repoCta: 'GitHub 저장소'
   };
 
+  const FR: Messages = {
+    title: 'À propos',
+    metaDescription: `À propos de Testing Examples : ce que c'est, les ${DEMO_MATRIX_COUNT} dépôts de démonstration associés qu'il prend en charge, et comment ce site est construit.`,
+    heading: 'À propos',
+    intro: "Testing Examples propose des exemples de tests open source et gratuits pour l'automatisation de navigateur.",
+    whatForHeading: 'À quoi sert ce site',
+    whatForP:
+      "Cette page d'accueil est une page volontairement simple de contenu HTML stable — des éléments dotés d'ids, de names, de classes, de textes de lien, de listes et de champs de formulaire connus — destinée à toute personne qui apprend ou pratique des outils d'automatisation de navigateur comme Selenium WebDriver, WebdriverIO ou Playwright. Elle se veut une cible stable : le même balisage, les mêmes identifiants, le même texte visible, à chaque fois.",
+    factsLabel: 'Informations sur le projet',
+    factName: 'Nom',
+    factLicence: 'Licence',
+    factAuthor: 'Auteur',
+    factRepository: 'Dépôt',
+    factFixtureContract: 'Contrat du contenu stable',
+    factFixtureContractSuffix: 'dans le dépôt',
+    matrixHeading: `${DEMO_MATRIX_COUNT} dépôts de démonstration : trois outils fois jusqu'à quatre langages fois jusqu'à quatre cibles`,
+    matrixP1:
+      "Chaque dépôt associé combine un outil d'automatisation de navigateur (Selenium, WebdriverIO ou Playwright) avec un langage (JavaScript, Python, Rust ou TypeScript) face à une cible. Deux cibles sont de vraies démonstrations exécutables : la page de contenu stable de ce site (cinq de ces dépôts — ceux dont les ids, names, classes et textes exacts sont traités comme un contrat par les fichiers AGENTS.md et spec/index.md de ce site) et le vrai site public du gouvernement gallois, nhs.wales. Les deux autres cibles, Google Search et Google Maps, sont purement illustratives — le fichier AGENTS.md de chacun de ces dépôts indique clairement que son code ne doit jamais être exécuté sur le site réel, car les conditions d'utilisation de Google limitent les requêtes automatisées ; voir",
+    matrixP2:
+      "pour le même schéma présenté directement sur ce site. Deux cases sont vides volontairement — Selenium TypeScript et WebdriverIO TypeScript n'ont pas de variante NHS Wales.",
+    tableCaption: "La famille complète des dépôts de démonstration, une ligne par outil et par langage, une colonne par cible",
+    columnTool: 'Outil',
+    columnLanguage: 'Langage',
+    columnThisSite: 'Ce site',
+    notBuilt: "Non réalisé pour ce langage",
+    walkthroughsHeading: "Parcours pas à pas des stratégies de localisation (cible : ce site)",
+    workedExampleHeading: "Un exemple concret du monde réel (cible : nhs.wales)",
+    workedExampleSuffix: "Les cinq autres dépôts NHS Wales suivent le même schéma que dans le tableau ci-dessus.",
+    builtHeading: 'Comment le site est construit',
+    builtP:
+      "Ce site est un projet SvelteKit utilisant @sveltejs/adapter-static, prérendu en HTML simple et déployé sur GitHub Pages par GitHub Actions à chaque push sur main.",
+    designSystemLabel: 'Système de conception',
+    designSystemP:
+      "Les composants proviennent du Lily Design System — des composants Svelte qui produisent du HTML sémantique et des attributs ARIA corrects, chacun avec une classe d'accroche stable. Ce site utilise aussi les thèmes officiels de Lily : les 45 fichiers de static/assets/themes/, copiés tels quels depuis le dépôt de Lily, chacun étant une feuille de style complète et autonome qui met en forme chacun des ~492 composants de Lily — et pas seulement deux couleurs choisies à la main. static/assets/style.css ne met donc plus du tout en forme les accroches des composants de Lily ; il contient une petite couche d'alias, la mise en page de l'en-tête, de la navigation et du pied de page propres à ce site (qui ne sont pas des composants Lily), et une poignée d'exceptions explicitement documentées où une valeur par défaut de Lily ne convenait pas à la mise en page de ce site — voir le commentaire d'en-tête de ce fichier pour le détail et les raisons. Le ThemePicker de Lily permet de passer d'un des 45 thèmes à l'autre en direct.",
+    exceptionP:
+      "La seule exception est la section de contenu stable de la page d'accueil (de Id Examples à Form Input Examples) : ces éléments restent du HTML simple, et non des composants Lily, afin que leurs ids, names, classes et textes restent exactement ce qu'attendent les dépôts de démonstration associés.",
+    runLocallyLabel: 'Exécuter ce site en local',
+    repoCta: 'Le dépôt sur GitHub'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -268,7 +308,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

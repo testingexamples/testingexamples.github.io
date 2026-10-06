@@ -110,6 +110,24 @@
     nextLabel: '다음: 자동화 테스트 학습은 어떻게 시작하나요? →'
   };
 
+  const FR: Messages = {
+    title: "Qu'est-ce que le test automatisé d'intégration continue ?",
+    metaDescription:
+      "Ce qu'est le test d'intégration continue (CI) : exécuter automatiquement votre suite de tests automatisés à chaque modification, afin que le code cassé soit détecté avant sa fusion plutôt qu'après.",
+    heading: "Qu'est-ce que le test automatisé d'intégration continue ?",
+    intro:
+      "Le test d'intégration continue (CI) consiste à exécuter automatiquement votre suite de tests automatisés chaque fois que quelqu'un propose une modification, au lieu de compter sur une personne pour penser à la lancer à la main.",
+    p1: "Un serveur de CI (GitHub Actions, GitLab CI, Jenkins et des outils similaires font tous cela) surveille un dépôt à la recherche de nouveaux commits et de nouvelles pull requests. À chacun, il récupère le code, installe les dépendances et exécute la suite de tests depuis zéro, dans un environnement propre, de la même façon à chaque fois — tests unitaires, tests d'intégration et, souvent, les tests d'automatisation de navigateur dont traite ce site, le tout en une seule exécution. Le résultat — succès ou échec — est signalé directement sur la pull request, avant même qu'un relecteur humain ne l'ouvre.",
+    p2: "C'est ce qui rend les tests automatisés réellement rentables. Une suite de tests qui ne s'exécute que sur l'ordinateur portable d'un développeur, quand il pense à la lancer, détecte bien moins qu'une suite qui s'exécute à chaque modification, automatiquement, et bloque la fusion en cas d'échec. La CI est le mécanisme qui transforme « nous avons des tests » en « du code cassé ne peut pas atteindre la branche principale » — et c'est généralement la première brique d'infrastructure qu'une équipe ajoute dès que ses tests d'automatisation de navigateur méritent d'être crus.",
+    askAiHeading: "Idées à demander à l'IA",
+    askAi: [
+      "Que signifie réellement « CI », en termes simples, et pourquoi une équipe prendrait-elle la peine d'exécuter les tests automatiquement plutôt que de les lancer elle-même avant de pousser ses modifications ?",
+      "J'ai une suite de tests qui fonctionne en local — quel est un moyen simple de la faire s'exécuter automatiquement sur chaque pull request ?",
+      "Mon pipeline de CI est devenu lent parce qu'il exécute toute la suite de tests de navigateur à chaque commit — comment le restructurer pour rester rapide sans perdre en confiance ?"
+    ],
+    nextLabel: "Suite : comment commencer à apprendre les tests automatisés ? →"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -119,7 +137,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

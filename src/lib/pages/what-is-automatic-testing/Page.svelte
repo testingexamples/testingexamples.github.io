@@ -164,6 +164,34 @@
     nextLabel: '다음: 자동화 테스트의 목적은 무엇인가? →'
   };
 
+  const FR: Messages = {
+    title: "Qu'est-ce que le test automatisé ?",
+    metaDescription:
+      "Ce qu'est le test automatisé (ou automatique), en quoi il diffère du test manuel et le complète.",
+    heading: "Qu'est-ce que le test automatisé ?",
+    intro:
+      "Une introduction en langage clair au test automatisé, à ce qui le distingue du test manuel et à la façon dont il le complète.",
+    compareHeading: 'Test manuel et test automatisé',
+    manualLabel: 'Le test manuel',
+    manualP:
+      "consiste pour une personne à s'asseoir devant un clavier, à parcourir une application en cliquant et à vérifier de ses propres yeux qu'elle se comporte correctement : le formulaire de connexion accepte-t-il des identifiants valides, la zone de recherche renvoie-t-elle des résultats, le bouton de paiement débite-t-il vraiment le bon montant. C'est lent, cela ne passe pas à l'échelle, et cela dépend à chaque fois de l'attention et de la mémoire de cette personne.",
+    automaticLabel: 'Le test automatisé',
+    automaticP:
+      "(aussi appelé test automatique) est un programme — écrit une seule fois par une personne — qui effectue lui-même les mêmes vérifications : il ouvre l'application (ou appelle une fonction, ou pilote un vrai navigateur), effectue quelques actions et vérifie que le résultat correspond à ce qui était attendu. Une fois écrit, ce programme peut s'exécuter en quelques secondes, aussi souvent que l'on veut, sans jamais se fatiguer, se distraire ni se lasser de cliquer sur le même bouton pour la millième fois.",
+    complementPre:
+      "Les deux ne sont pas tant des rivaux que des compléments. Les tests automatisés excellent à répéter exactement la même vérification, indéfiniment et à moindre coût. Le test manuel — en particulier le ",
+    exploratoryLabel: 'test exploratoire',
+    complementPost:
+      ", où une personne expérimentée sollicite délibérément une application à la recherche de l'inattendu — excelle à trouver le genre de problèmes pour lesquels personne n'a pensé à écrire une vérification. Les équipes matures utilisent les deux : l'automatisation pour les vérifications qui ne doivent jamais régresser, et le jugement humain pour tout ce qu'une liste de contrôle ne peut anticiper.",
+    askAiHeading: "Idées à demander à l'IA",
+    askAi: [
+      "Quelle est la différence pratique entre le test manuel et le test automatisé, et pourquoi une équipe prendrait-elle la peine d'écrire un script plutôt que de parcourir l'application à la main ?",
+      "Mon équipe fait tout en test manuel pour le moment — comment décider quelles vérifications valent la peine d'être automatisées en premier ?",
+      "Comment les équipes expérimentées décident-elles ce qu'elles gardent volontairement en test manuel exploratoire, même une fois la plupart de leurs vérifications automatisées ?"
+    ],
+    nextLabel: "Suite : quel est le but des tests automatisés ? →"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -173,7 +201,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

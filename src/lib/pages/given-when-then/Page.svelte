@@ -177,6 +177,34 @@
     seeMoreExamples: '더 많은 예제 보기'
   };
 
+  const FR: Messages = {
+    title: 'Exemples Given-When-Then',
+    metaDescription:
+      "Un scénario écrit sous forme de phrase Given-When-Then (Gherkin), puis présenté sous forme de code Selenium et Playwright équivalent en JavaScript et en Python.",
+    heading: 'Exemples Given-When-Then',
+    intro:
+      "Un scénario en langage clair, écrit comme le décrirait une personne qui ne programme pas, à côté du code réel qui l'exécute — selon quatre combinaisons d'outil et de langage.",
+    whatHeading: "Qu'est-ce que Given-When-Then ?",
+    whatIsLabel: "est une manière d'écrire un scénario de test en phrases simples plutôt qu'en code : Given",
+    whatP1:
+      "(un état de départ), When (quelque chose se produit), Then (un résultat est vrai). Cela vient du développement piloté par le comportement (BDD), et la syntaxe en texte brut correspondante s'appelle généralement Gherkin.",
+    whatP2:
+      "L'objectif n'est pas de remplacer le vrai code de test — c'est de donner à une équipe une phrase commune sur laquelle tout le monde peut s'accorder avant que quiconque n'écrive l'automatisation correspondante : un responsable produit, un testeur et un développeur peuvent tous lire « Given I am on the site, When I search, Then I see results » et convenir que c'est bien le comportement qui compte, sans avoir besoin de lire d'abord du JavaScript ou du Python. Le code sous-jacent — quelle que soit la façon dont il est écrit, dans quelque outil que ce soit — est ce qui prouve réellement que cette phrase reste vraie.",
+    scenarioHeading: 'Le scénario',
+    scenarioIntro: 'Un scénario, écrit en Gherkin :',
+    scenarioBody:
+      "Ci-dessous, les trois mêmes lignes sont exécutées de quatre façons : deux outils d'automatisation de navigateur (Selenium et Playwright), chacun dans deux langages (JavaScript et Python). Chaque ligne de code est commentée avec l'étape Given/When/Then à laquelle elle appartient, afin que vous puissiez suivre la phrase simple jusqu'au code qui l'implémente.",
+    readNotRunLabel: "À lire, pas à exécuter à répétition",
+    readNotRunPre: "Ces quatre exemples ciblent google.com, comme les ",
+    googleSearchExamplesLinkText: 'exemples de Recherche Google',
+    readNotRunPost:
+      " de ce site — et la même prudence s'applique : les conditions d'utilisation de Google limitent les requêtes automatisées sur Google Search ; considérez donc le code ci-dessous comme de la documentation à lire pour le schéma, et non comme des scripts à exécuter à répétition sur le site réel. Si vous voulez essayer cette même structure Given/When/Then en pratique, dirigez plutôt les mêmes étapes vers la page d'accueil de ce site.",
+    seleniumHeading: 'Selenium',
+    playwrightHeading: 'Playwright',
+    backHome: "Retour à l'accueil",
+    seeMoreExamples: "Voir d'autres exemples"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -186,7 +214,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

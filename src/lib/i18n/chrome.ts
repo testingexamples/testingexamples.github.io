@@ -185,6 +185,36 @@ const KO_COMMON: ChromeMessages = {
   footerTagline: '{site} — 무료 오픈 소스 브라우저 자동화 테스트 예제.'
 };
 
+const FR_COMMON: ChromeMessages = {
+  skipToMainContent: 'Passer au contenu principal',
+  mainNavLabel: 'Menu principal',
+  siteBrandAriaLabel: 'Accueil {site}',
+  nav: {
+    home: 'Accueil',
+    learn: 'Apprendre',
+    examples: 'Exemples',
+    about: 'À propos',
+    github: 'GitHub'
+  },
+  pickerLabels: {
+    theme: 'Thème',
+    locale: 'Langue',
+    textSize: 'Taille du texte',
+    share: 'Partager cette page'
+  },
+  shareLabels: {
+    email: 'Envoyer le lien par e-mail',
+    linkedin: 'Partager sur LinkedIn',
+    reddit: 'Partager sur Reddit',
+    bluesky: 'Partager sur Bluesky',
+    mastodon: 'Partager sur Mastodon',
+    copyLink: 'Copier le lien',
+    copiedLabel: 'Lien copié',
+    copyFailedLabel: 'Échec de la copie du lien'
+  },
+  footerTagline: '{site} — exemples gratuits et open source de tests automatisés de navigateur.'
+};
+
 // The chrome strings above have no US/UK spelling variance (no colour/
 // organise-style words among them), so all four English locales share one
 // object, and both Welsh locales share the other. Page content, which does
@@ -198,7 +228,8 @@ export const CHROME: Record<Locale, ChromeMessages> = {
   'cy-001': CY_COMMON,
   'zh-cn': ZH_COMMON,
   'ar-001': AR_COMMON,
-  'ko-001': KO_COMMON
+  'ko-001': KO_COMMON,
+  'fr-001': FR_COMMON
 };
 
 export function chromeFor(locale: Locale): ChromeMessages {

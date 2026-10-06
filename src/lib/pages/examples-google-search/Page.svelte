@@ -449,6 +449,79 @@
     googleMapsExamplesLinkText: 'Google Maps 예제'
   };
 
+  const FR: Messages = {
+    title: 'Exemples de Recherche Google',
+    metaDescription:
+      "Les mêmes interactions — parcourir, rechercher, valider et suivre un lien — sur Google Search, réalisées de six façons : Selenium et Playwright, chacun en JavaScript, Python et Rust.",
+    heading: 'Exemples de Recherche Google',
+    intro:
+      "Un scénario familier — accéder à un site, utiliser sa zone de recherche, valider la recherche, suivre un lien de résultat — réalisé de six façons.",
+    section1Heading: 'Les mêmes quatre interactions, six implémentations',
+    scenarioPre: "Cette page présente un scénario — ",
+    strongBrowse: 'accéder au site',
+    scenarioMid1: ', ',
+    strongFollow: 'suivre un lien',
+    scenarioMid2: ', ',
+    strongSearch: 'utiliser la zone de recherche',
+    scenarioMid3: ' et ',
+    strongClick: 'cliquer sur un bouton',
+    scenarioPost:
+      " — réalisé de six façons : deux outils d'automatisation de navigateur (Selenium et Playwright), chacun dans trois langages (JavaScript, Python, Rust). La cible des six est Google Search, car c'est une zone de recherche et une page de résultats que presque tous les lecteurs savent déjà utiliser, ce qui permet de voir facilement ce que fait la syntaxe de chaque outil sans avoir d'abord à apprendre la page elle-même.",
+    calloutLabel: "À lire avant d'exécuter l'un de ces exemples",
+    readBeforePre: "Les ",
+    tosLinkText: "conditions d'utilisation",
+    readBeforeMid1:
+      " de Google limitent les requêtes automatisées sur Google Search. Ces six exemples existent pour montrer côte à côte la syntaxe et les ",
+    patternsLabel: 'schémas',
+    readBeforeMid2:
+      " d'interaction de chaque outil — ils ne sont pas destinés à être exécutés à répétition, ni même une seule fois, sur le ",
+    readBeforeMid3: " réel. Si vous voulez vous exercer à ces mêmes schémas en pratique, dirigez-les vers ",
+    homePageLinkText: "la page d'accueil de ce site",
+    readBeforePost:
+      " à la place, qui a été conçue exactement pour cela : des ids, des names, des classes et des textes stables qui ne bougent pas sous vos pieds.",
+    fourInteractionsHeading: 'Les quatre interactions, définies une fois pour toutes',
+    fourInteractionsIntro: "Plutôt que de les répéter pour chaque exemple, voici ce que fait chacun des six scripts ci-dessous :",
+    item1Strong: 'Accéder au site',
+    item1Pre: ' — naviguer vers ',
+    item1Post: '.',
+    item2Strong: 'Utiliser la zone de recherche',
+    item2Pre: ' — localiser le champ de recherche et saisir une requête, par exemple ',
+    item2Post: '.',
+    item3Strong: 'Cliquer sur un bouton / valider',
+    item3Rest: " — appuyer sur Entrée, ou trouver le bouton de validation et cliquer dessus.",
+    item4Strong: 'Suivre un lien',
+    item4Rest: " — une fois les résultats chargés, trouver le premier lien de résultat organique et cliquer dessus.",
+    caveatA:
+      "Une réserve qu'il vaut mieux énoncer franchement que passer sous silence : le balisage exact de la zone de recherche de Google a évolué au fil du temps et continuera probablement d'évoluer. Il a historiquement été un ",
+    caveatB: " et c'est actuellement souvent un ",
+    caveatC: ', mais dans les deux cas il a couramment porté ',
+    caveatD: ', si bien que les exemples ci-dessous le localisent avec un sélecteur comme ',
+    caveatE: " (ou, pour les outils disposant d'un localisateur d'attribut typé, ",
+    caveatF:
+      "). C'est une illustration concrète de la raison pour laquelle les sélecteurs par name ou par balise sont fragiles : ils peuvent cesser silencieusement de correspondre quand le balisage d'un site change sous eux. Lorsqu'un outil permet plutôt de localiser par rôle et nom accessibles (par exemple un ",
+    caveatG:
+      ' avec un libellé « Search » visible), c\'est le choix le plus robuste, et il est signalé dans l\'exemple concerné. Le bouton de validation a historiquement porté ',
+    caveatH:
+      ", mais il peut être masqué par les suggestions de saisie semi-automatique dès que la zone de recherche prend le focus, ce qui est l'une des raisons pour lesquelles appuyer sur Entrée après la saisie est généralement plus fiable que d'essayer de cliquer dessus.",
+    seleniumIntro:
+      "Selenium est le plus ancien projet d'automatisation de navigateur multilangage — son protocole WebDriver est le même que celui sur lequel reposent plusieurs des autres outils de cette page.",
+    seleniumRustA: "Le projet Selenium ne fournit pas de binding Rust officiel — ",
+    seleniumRustB:
+      " (dont le nom fait allusion au numéro atomique du sélénium, 34) est le client Selenium/WebDriver de fait pour Rust. Il a besoin d'un ",
+    seleniumRustC:
+      " (ou équivalent) en cours d'exécution à l'URL donnée, de la même façon que les deux exemples ci-dessus ont aussi besoin d'un pilote/navigateur local.",
+    playwrightIntro:
+      "Playwright propose des bindings officiels en JavaScript, Python, .NET et Java ; la prise en charge de Rust est assurée par la communauté et non officielle.",
+    pwRustA: 'Attention au crate que vous installez. ',
+    pwRustB: ' (',
+    pwRustC:
+      ") est activement maintenu mais reste antérieur à la version 1.0 et stabilise encore son API — c'est celui utilisé ci-dessous. L'ancien crate publié sur crates.io simplement sous le nom ",
+    pwRustD: ' (',
+    pwRustE: ") est abandonné depuis 2022 ; ne l'utilisez pas.",
+    backToExamples: 'Retour aux exemples',
+    googleMapsExamplesLinkText: 'Exemples de Google Maps'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -458,7 +531,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

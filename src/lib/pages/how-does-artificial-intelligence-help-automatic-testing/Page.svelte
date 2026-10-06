@@ -366,6 +366,67 @@
     ctaNext: '다음: 자동화 테스트와 관련된 개념은 무엇인가? →'
   };
 
+  const FR: Messages = {
+    title: "Comment l'intelligence artificielle aide-t-elle les tests automatisés ?",
+    metaDescription:
+      "Un regard concret et réaliste sur les endroits où l'IA intervient aujourd'hui dans le test automatisé : écriture et maintenance des tests, CI/CD et découverte agile — ainsi que la mise en garde honnête qui s'applique aux trois.",
+    heading: "Comment l'intelligence artificielle aide-t-elle les tests automatisés ?",
+    intro:
+      "Les outils d'IA font désormais réellement partie de la façon dont fonctionnent aujourd'hui le test automatisé, le CI/CD et la découverte agile. Cette page présente trois façons dont l'IA intervient dans ce travail, et une mise en garde honnête qui s'applique aux trois.",
+
+    h1Heading: "L'IA pour écrire et maintenir des tests",
+    p1: "Un premier brouillon de test peut désormais souvent venir d'une simple description de ce qui doit se passer — « va sur la page de recherche, cherche X, vérifie que les résultats mentionnent X » — plutôt que de partir d'un fichier vide. Plusieurs outils le font aujourd'hui, notamment le codegen de Playwright, qui enregistre de vrais clics dans un script, combiné à une couche d'IA qui permet de décrire l'intention en langage naturel et d'obtenir un point de départ à modifier.",
+    p2Pre: "Certains outils appliquent aussi l'IA aux ",
+    locatorsLabel: 'localisateurs',
+    p2Mid:
+      " — les sélecteurs qu'un test utilise pour trouver un élément dans la page. Un localisateur « auto-réparant » utilise l'IA pour retrouver un élément quand son sélecteur change, par exemple quand un développeur renomme un ",
+    p2Post: ", au lieu que le test casse tout simplement.",
+    calloutWorthKnowingLabel: 'Bon à savoir',
+    calloutPre:
+      "Les localisateurs auto-réparants réduisent un type de fragilité mais en introduisent un autre : un localisateur auto-réparant peut cliquer silencieusement sur le ",
+    wrongLabel: 'mauvais',
+    calloutPost:
+      " élément — un élément qui ressemble seulement à celui que visait le test — et un test qui s'exécute toujours et passe toujours n'est pas automatiquement un test encore correct. Traitez ce type d'outil comme une aide que vous continuez à relire, et non comme un substitut à la compréhension de ce que votre test vérifie réellement.",
+
+    h2Heading: "L'IA dans le CI/CD et DevOps",
+    p3Pre: "Une fois qu'une suite de tests s'exécute en ",
+    p3Post:
+      " à chaque commit, de nouveaux problèmes apparaissent qui n'existent qu'à grande échelle, et l'analyse fondée sur l'IA a commencé à aider sur certains d'entre eux :",
+    li1Label: 'Détection des tests instables.',
+    li1P:
+      " Distinguer « ce test échoue parfois à cause d'un vrai bug intermittent » de « ce test est tout simplement mal écrit » en analysant l'historique des réussites et des échecs, pour qu'une équipe ne perde pas des heures à courir après un fantôme qui n'existe pas.",
+    li2Label: 'Sélection intelligente des tests.',
+    li2P:
+      " Dans une grande suite de tests, n'exécuter que le sous-ensemble de tests réellement susceptibles d'être touchés par une modification de code donnée, pour garder un CI/CD rapide au lieu de tout relancer à chaque commit.",
+    li3Label: "Analyse des journaux et des anomalies après un déploiement.",
+    li3P:
+      " Signaler automatiquement des taux d'erreur ou des latences inhabituels, plutôt que de compter sur une personne qui surveille un tableau de bord et remarque que quelque chose semble anormal.",
+    p4Pre: 'Voir ',
+    p4LinkText: 'Quels sont les concepts liés aux tests automatisés ?',
+    p4Post: " pour savoir ce qu'est le CI/CD, si ce terme est nouveau pour vous.",
+
+    h3Heading: "L'IA dans la découverte agile — transformer des idées d'utilisateurs en tests",
+    p5: "Avant qu'un test puisse être écrit, quelqu'un doit décider de ce qui mérite d'être testé. L'IA peut aider à l'étape précédente : synthétiser un tas d'entretiens avec des utilisateurs, de tickets de support ou de retours en critères d'acceptation concrets et testables. « En tant que patient, je veux chercher un service sur NHS Wales » est un objectif vague ; « chercher un service et confirmer que la page de résultats l'affiche » est quelque chose qu'un test peut réellement vérifier. L'IA peut aider à rédiger cette traduction.",
+    p6Pre:
+      "Les propres dépôts associés à ce site sont un exemple concret de la destination, même s'ils ont été écrits à la main plutôt que par une étape de découverte assistée par l'IA : quelqu'un a identifié de vrais parcours d'utilisateurs sur un vrai site public — trouver la page d'accueil, trouver « About Us », chercher de l'aide — et les a transformés en scénarios de test concrets, avec vérifications. Voir la page ",
+    aboutLinkText: 'À propos',
+    p6Mid: ' pour la liste complète, ou ',
+    p6Post: ' directement.',
+    p7: "L'IA peut aider à l'étape qui consiste à « transformer une idée vague en scénario concret », mais un humain doit toujours confirmer que l'IA a bien compris le besoin réel de l'utilisateur. Cette étape ne disparaît pas — elle se déplace, de la rédaction manuelle des critères d'acceptation à la relecture de ceux qu'un outil a rédigés.",
+
+    h4Heading: 'La mise en garde honnête',
+    calloutReadLabel: 'Lisez ce que vérifie un test avant de lui faire confiance',
+    calloutReadP:
+      "Les outils de test assistés par l'IA peuvent se tromper de façons qu'il vaut la peine de nommer précisément : halluciner un sélecteur qui n'existe pas, mal comprendre ce qu'un utilisateur voulait vraiment dire, ou écrire une assertion techniquement vraie mais qui ne vérifie pas la bonne chose — un test qui passe sans rien vérifier de significatif. Le remède est le même que pour la pull request de n'importe quel contributeur, humain ou IA : lisez ce qu'un test vérifie réellement avant de croire qu'il passe. Ne vous contentez pas de regarder si c'est vert.",
+    p8Pre:
+      "Ce site est lui-même un exemple concret de cette discipline mise en pratique, et pas seulement décrite. Il a été construit avec l'aide de l'IA (Claude), sous la direction d'un mainteneur humain, et le fichier ",
+    p8Post:
+      " du dépôt en est le récit honnête — ce qui a été généré par l'IA, ce que l'humain a décidé, et ce qui a été réellement vérifié plutôt que supposé.",
+
+    ctaBackToLearn: 'Retour à Apprendre',
+    ctaNext: 'Suite : quels sont les concepts liés aux tests automatisés ? →'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -375,7 +436,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

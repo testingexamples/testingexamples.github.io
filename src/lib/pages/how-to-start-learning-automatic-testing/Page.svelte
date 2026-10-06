@@ -464,6 +464,87 @@
     ctaGoogleMaps: 'Google Maps 예제 보기 →'
   };
 
+  const FR: Messages = {
+    title: 'Comment commencer à apprendre les tests automatisés ?',
+    metaDescription:
+      "Un parcours pratique, pas à pas, pour apprendre le test automatisé de navigateur : choisir un langage, choisir un outil, exécuter votre premier script, puis vous exercer sur de vrais exemples.",
+    heading: 'Comment commencer à apprendre les tests automatisés ?',
+    intro:
+      "Un parcours pratique, pas un déluge de théorie. Cinq étapes, de « je n'ai jamais écrit de test de navigateur » à la lecture d'exemples concrets avec deux outils et trois langages.",
+    askAiHeading: "Idées à demander à l'IA",
+
+    s1Heading: 'Choisir un langage de programmation',
+    s1Pre:
+      "Un langage de programmation est simplement une façon précise de noter des instructions qu'un ordinateur doit suivre — un peu comme une recette, sauf que l'ordinateur ne fera exactement que ce que vous avez écrit, et non ce que vous aviez en tête, donc la formulation doit être exacte. C'est nécessaire pour l'automatisation des tests, car un outil d'automatisation de navigateur n'est pas une application autonome dans laquelle on clique : c'est une bibliothèque que l'on appelle depuis un langage de programmation, en utilisant les briques ordinaires de ce langage (variables, boucles, instructions if) pour dire des choses comme « ouvre cette page », « clique sur ce bouton », « vérifie que ce texte est apparu ». Apprendre l'automatisation de navigateur, c'est déjà apprendre un nouvel outil ",
+    s1And: 'et',
+    s1Post:
+      " une façon de penser le test en même temps ; n'essayez donc pas d'apprendre en plus un langage de programmation tout neuf dans la même séance — choisissez celui de ces deux-là avec lequel vous êtes déjà un peu à l'aise :",
+    s1Li1Label: 'JavaScript',
+    s1Li1P: " — le langage le plus courant pour tester le web ; si vous avez déjà écrit du code web côté front-end, commencez ici.",
+    s1Li2Label: 'Python',
+    s1Li2P: " — une syntaxe claire et lisible ; un deuxième choix très répandu, surtout en dehors des équipes de développement web.",
+    s1AskAi: [
+      "Je n'ai jamais écrit une ligne de code. Pouvez-vous m'expliquer, en termes simples, à quoi servent généralement JavaScript et Python, et m'en recommander un pour commencer le test de navigateur ?",
+      "Je connais déjà un peu JavaScript — que devrais-je apprendre de différent pour écrire un script d'automatisation de navigateur avec, et quel serait un bon petit premier exercice ?",
+      "Je suis déjà à l'aise dans l'un de ces langages — quels sont les vrais compromis à passer à l'autre spécifiquement pour une suite de tests de navigateur qui grandit, et pas seulement pour la programmation en général ?"
+    ],
+
+    s2Heading: "Choisir un outil d'automatisation de navigateur pour commencer",
+    s2P: "L'automatisation de navigateur consiste à piloter un vrai navigateur web par du code plutôt qu'avec une souris et un clavier — ouvrir une page, cliquer sur un bouton, remplir un formulaire, relire ce qui est affiché à l'écran, le tout par programmation. C'est nécessaire pour l'automatisation des tests parce que c'est ce qui rend une vérification répétable : au lieu qu'une personne parcoure votre site à la main chaque fois que quelque chose change en espérant se rappeler chaque étape, un script effectue exactement les mêmes clics dans le même ordre à chaque fois, et vous prévient dès que quelque chose ne semble pas normal. Un outil d'automatisation de navigateur est la bibliothèque qui donne à votre langage de programmation le vocabulaire pour cela — trouver un élément, agir dessus, l'attendre, le vérifier. Commencez par un seul de ces deux outils — vous pourrez apprendre l'autre plus tard, une fois les idées de base assimilées :",
+    s2Li1P:
+      " — le choix le plus accessible aux débutants aujourd'hui. Bonne documentation, attente automatique intégrée (voir l'étape 4), fonctionne de la même façon sur Chromium, Firefox et WebKit, avec des bindings officiels en JavaScript, Python et d'autres.",
+    s2Li2P:
+      " — l'outil d'automatisation de navigateur le plus établi et le plus enseigné, avec le plus grand écosystème et le plus grand nombre de tutoriels, de cours et de réponses Stack Overflow.",
+    s2AskAi: [
+      "Je n'ai jamais automatisé de navigateur. En termes simples, que font Playwright et Selenium, et lequel est le plus simple à faire fonctionner aujourd'hui ?",
+      "Je veux automatiser un parcours de paiement en plusieurs étapes avec un indicateur de chargement entre les étapes — lequel de Playwright ou Selenium gère ce type d'attente le plus simplement ?",
+      "J'ai besoin d'une suite de tests qui s'exécute de façon fiable en parallèle sur Chromium, Firefox et WebKit — en quoi Playwright et Selenium diffèrent-ils réellement dans leur façon de gérer cela ?"
+    ],
+
+    s3Heading: 'Installer un outil et exécuter un script sur ce site',
+    s3P1Pre: "Suivez le guide « prise en main » de l'outil que vous avez choisi pour l'installer, puis dirigez votre tout premier script vers ",
+    s3HomeLinkText: "la page d'accueil de ce site",
+    s3P1Post:
+      ". Ce site a été conçu exactement pour cela : chaque élément de la page d'accueil possède un id, un name, une classe ou un texte de lien stable que vous pouvez vous exercer à trouver — sans avoir à vous demander si le balisage va changer sous vos pieds.",
+    s3P2Pre: "Un premier script raisonnable : ouvrir la page d'accueil, trouver l'élément d'id ",
+    s3P2Post:
+      ", puis afficher ou vérifier son texte. Essayez ensuite de trouver un élément par name, par classe et par texte de lien. De petites victoires, délibérées, d'abord.",
+    s3AskAi: [
+      "Je viens d'installer un outil d'automatisation de navigateur pour la première fois et je suis bloqué par une erreur d'installation — quels sont les problèmes de première exécution les plus courants et comment les corriger ?",
+      "Mon premier script a bien trouvé un élément, mais je voudrais aussi qu'il clique sur un lien puis vérifie le titre de la page obtenue — quelle est une façon propre d'écrire cela comme deuxième étape ?",
+      "Je veux que mon tout premier script s'exécute aussi en mode headless et prenne automatiquement une capture d'écran en cas d'échec — quelle est la configuration minimale pour ajouter les deux ?"
+    ],
+
+    s4Heading: 'Vous exercer sur de vrais exemples, volontairement accessibles',
+    s4P: "Une fois les bases assimilées, lisez ligne à ligne le code fonctionnel d'autres personnes. Les dépôts associés à ce projet sont des exemples concrets conçus exactement pour cela :",
+    s4WalkthroughsHeading: 'Parcours pas à pas des stratégies de localisation (cible : ce site)',
+    s4P2: "Lisez ensuite les propres exemples concrets de ce site, qui parcourent les mêmes quelques interactions avec deux outils et trois langages, dont Rust :",
+    googleSearchExamplesLinkText: 'exemples de Recherche Google',
+    googleMapsExamplesLinkText: 'exemples de Google Maps',
+    s4AskAi: [
+      "J'ai lu l'un de ces exemples ligne à ligne mais je ne comprends pas ce que fait une ligne précise — quelle est une façon sûre et efficace de demander à un assistant d'IA d'expliquer du code qu'on ne connaît pas ?",
+      "Je veux prendre un exemple écrit dans un langage et le réécrire dans un autre pour m'exercer — comment vérifier que ma réécriture est vraiment équivalente, et pas seulement d'apparence similaire ?",
+      "Je veux transformer un exemple pas à pas qui se contente d'afficher ce qu'il a trouvé en un vrai test avec de vraies assertions — comment décider de façon fiable ce qui vaut réellement la peine d'être vérifié ?"
+    ],
+
+    s5Heading: 'Une remarque sur les vrais sites tiers',
+    readNotRunLabel: "À lire, pas à exécuter à répétition",
+    readNotRunPre:
+      "Automatiser un vrai site tiers comme Google est un cran de difficulté au-dessus de l'automatisation de ce site : leur balisage n'est pas un contrat public stable comme l'est la page de contenu stable de ce site, et leurs conditions d'utilisation limitent les requêtes automatisées sur leurs services. Considérez les ",
+    readNotRunMid: ' et les ',
+    readNotRunPatternsPre: ' comme de la documentation à lire pour les ',
+    patternsLabel: 'schémas',
+    readNotRunPost: " — et non comme des scripts à exécuter à répétition sur les sites réels.",
+    s5AskAi: [
+      "Pourquoi exactement est-il plus risqué d'exécuter un script automatisé sur un vrai site en ligne comme Google que sur une page conçue pour s'exercer ?",
+      "Je veux m'exercer sur un vrai site de façon respectueuse — quels garde-fous, comme la limitation de débit, robots.txt et les conditions d'utilisation, dois-je vérifier avant d'exécuter quoi que ce soit, même occasionnellement ?",
+      "Je veux construire mon propre petit site d'entraînement stable plutôt que de dépendre de celui de quelqu'un d'autre — quel est le minimum pour qu'il soit vraiment utile à l'entraînement à la localisation ?"
+    ],
+
+    ctaGoogleSearch: 'Voir les exemples de Recherche Google →',
+    ctaGoogleMaps: 'Voir les exemples de Google Maps →'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -473,7 +554,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

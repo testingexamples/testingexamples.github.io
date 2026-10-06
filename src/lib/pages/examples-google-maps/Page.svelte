@@ -399,6 +399,74 @@
     googleSearchExamplesLinkText: 'Google Search 예제'
   };
 
+  const FR: Messages = {
+    title: 'Exemples de Google Maps',
+    metaDescription:
+      "Six interactions avec Google Maps — visiter, rechercher, cliquer sur un résultat, faire défiler, zoomer et activer une couche — réalisées de six façons : Selenium et Playwright, chacun en JavaScript, Python et Rust.",
+    heading: 'Exemples de Google Maps',
+    intro:
+      "Cette page présente six interactions avec Google Maps — visiter, rechercher, cliquer sur un lien ou un résultat, faire défiler, zoomer et activer une couche — réalisées de six façons : deux outils d'automatisation de navigateur (Selenium et Playwright) fois trois langages (JavaScript, Python, Rust).",
+    section1Heading: 'Deux choses à savoir avant de commencer',
+    calloutLabel: "Avant d'exécuter quoi que ce soit",
+    calloutP1Pre: "Les ",
+    tosLinkText: "conditions d'utilisation",
+    calloutP1Mid: " de Google limitent les requêtes automatisées sur ses services. Le code ci-dessous enseigne des ",
+    patternsLabel: 'schémas',
+    calloutP1Post:
+      " — stratégies de localisation et techniques d'interaction — et non des scripts destinés à être exécutés à répétition sur le vrai Google Maps.",
+    calloutP2A:
+      "Google Maps est aussi une cible d'automatisation bien plus difficile qu'une page ordinaire. L'essentiel de la carte elle-même est rendu dans un élément ",
+    calloutP2B:
+      ' (ou en WebGL), si bien que l\'on ne peut généralement pas « trouver » une rue ou une épingle comme on trouve un paragraphe de texte — on interagit avec le ',
+    calloutP2C:
+      " par des coordonnées et des événements de souris (clic à une position x/y, molette au-dessus de l'élément canvas) au lieu de chercher un élément du DOM correspondant. L'interface autour du canvas — zone de recherche, boutons de zoom, menu des couches — est du DOM ordinaire et, utilement, Google attribue à la plupart de ces éléments de véritables attributs ",
+    calloutP2D: " relativement stables pour l'accessibilité. Cela fait des localisateurs par nom accessible (",
+    calloutP2E:
+      ") un bien meilleur choix que des noms de classes CSS générés ou hachés, qui changent à chaque déploiement de Maps. C'est la leçon la plus transposable de cette page : ",
+    strongLessonLabel:
+      "préférez les localisateurs par nom accessible aux localisateurs par nom de classe chaque fois que le balisage d'un site n'est pas une API publique que vous maîtrisez",
+    calloutP2F: " — c'est une bonne pratique partout, pas seulement ici.",
+    section2Heading: 'Les six interactions',
+    section2Intro:
+      "Chaque exemple ci-dessous met en œuvre les mêmes six étapes. Elles sont définies une seule fois ici plutôt que répétées dans chaque exemple de code :",
+    item1Strong: 'Visiter',
+    item1Pre: ' — naviguer vers ',
+    item1Post: '.',
+    item2Strong: 'Rechercher',
+    item2A: ' — localiser la zone de recherche (elle a ',
+    item2B:
+      " dans le balisage actuel de Google Maps — notez que cela peut évoluer avec le temps, comme pour tout site tiers) et saisir une requête, par exemple ",
+    item2C: ', puis valider (Entrée, ou le bouton de recherche, qui a généralement ',
+    item2D: ').',
+    item3Strong: 'Cliquer sur un lien / résultat',
+    item3Rest:
+      " — cliquer sur le premier résultat de recherche dans le panneau des résultats (les résultats sont normalement des éléments de liste du DOM, pas du canvas — repérables par rôle ou par texte même si la carte elle-même est un canvas).",
+    item4Strong: 'Faire défiler',
+    item4Rest:
+      " — simuler un défilement ou un déplacement sur le canvas de la carte : pour les outils disposant d'une vraie API de molette ou de défilement, envoyer un événement de molette ou un geste de défilement au-dessus de la boîte englobante de l'élément canvas, et non au-dessus de toute la page.",
+    item5Strong: 'Zoomer',
+    item5A: ' — cliquer sur le bouton de zoom avant (',
+    item5B: ') ou de zoom arrière (',
+    item5C:
+      ") — une approche bien plus fiable que d'essayer de zoomer au pincement ou à la molette par programmation, et qu'il faut souligner comme le choix pragmatique.",
+    item6Strong: 'Activer une couche',
+    item6A: ' — ouvrir le panneau des couches (bouton ',
+    item6B:
+      '), puis choisir une couche comme « Traffic » (généralement une option ou un bouton libellé une fois le panneau ouvert — décrit plus bas comme « la bascule de la couche de trafic », sans prétendre à un sélecteur stable exact).',
+    seleniumIntroA:
+      "Les trois langages ci-dessous utilisent tous des localisateurs basés sur aria-label, conformément à la leçon ci-dessus. L'exemple Rust utilise ",
+    seleniumIntroB:
+      ", le client Selenium/WebDriver de fait pour Rust — il n'y en a pas d'officiel, et son nom fait allusion au numéro atomique du sélénium, 34.",
+    playwrightIntroA:
+      "Playwright fournit des bindings officiels pour JavaScript, Python, .NET et Java. Rust est maintenu par la communauté : ",
+    playwrightIntroB: ' (activement développé par ',
+    playwrightIntroC: ", antérieur à la 1.0) est l'exemple ci-dessous. L'ancien crate ",
+    playwrightIntroD: ', publié sur crates.io sous le nom ',
+    playwrightIntroE: ", est abandonné depuis 2022.",
+    backToExamples: 'Retour aux exemples',
+    googleSearchExamplesLinkText: 'Exemples de Recherche Google'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -408,7 +476,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

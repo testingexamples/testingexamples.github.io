@@ -121,6 +121,26 @@
       'Google의 서비스 약관은 자사 서비스에 대한 자동화된 쿼리를 제한합니다. 이 예제들은 각 테스트 도구의 문법과 패턴을 가르치기 위해 존재합니다. 실제 google.com이나 Google Maps를 상대로 반복해서 실행할 스크립트가 아니라 읽을거리로 다루세요. 각 예제 페이지에서 이 점을 더 자세히 설명합니다.'
   };
 
+  const FR: Messages = {
+    title: 'Exemples',
+    metaDescription:
+      "Des exemples concrets d'automatisation de navigateur : les mêmes interactions, réalisées de six façons avec Selenium et Playwright en JavaScript, Python et Rust.",
+    heading: 'Exemples',
+    intro:
+      "Cette section présente les mêmes interactions concrètes — parcourir, rechercher, cliquer, faire défiler — réalisées de six façons : deux outils (Selenium et Playwright) fois trois langages (JavaScript, Python, Rust), face à deux sites réels bien connus.",
+    sectionHeading: 'Recherche Google et Google Maps',
+    summaryListLabel: "Pages d'exemples",
+    googleSearchLinkText: 'Exemples de Recherche Google',
+    googleSearchDesc:
+      " — rechercher, lire les résultats et suivre un lien, le même parcours écrit de six façons.",
+    googleMapsLinkText: 'Exemples de Google Maps',
+    googleMapsDesc:
+      " — parcourir une carte, rechercher un lieu et interagir avec la page, le même parcours écrit de six façons.",
+    calloutLabel: "À lire, pas à exécuter à répétition",
+    calloutP:
+      "Les conditions d'utilisation de Google limitent les requêtes automatisées sur ses services. Ces exemples existent pour enseigner la syntaxe et les schémas de chaque outil de test — considérez-les comme de la documentation à lire, et non comme des scripts à exécuter à répétition sur le vrai google.com ou Google Maps. Chaque page d'exemples développe ce point."
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -130,7 +150,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);

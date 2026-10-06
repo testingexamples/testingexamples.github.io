@@ -143,6 +143,29 @@
     nextLabel: '다음: Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가? →'
   };
 
+  const FR: Messages = {
+    title: 'Quelles métriques aident les tests automatisés ?',
+    metaDescription:
+      "Ce que sont les métriques de flux — temps de cycle, délai de livraison, débit, travail en cours — et pourquoi un tas croissant de tests ignorés ou instables est en soi un signal de flux indiquant que la dette de test s'accumule.",
+    heading: 'Quelles métriques aident les tests automatisés ?',
+    flowMetricsLabel: 'Les métriques de flux',
+    introP:
+      "mesurent la façon dont le travail avance réellement dans un processus : le temps de cycle (le temps que prend un élément de bout en bout), le délai de livraison, le débit et le travail en cours. L'objectif est de mesurer ce qui avance vraiment, et non l'air affairé des gens.",
+    belongsP:
+      "Voici pourquoi cela a sa place sur une page consacrée aux tests : « le temps écoulé entre le signalement d'un bug et l'existence d'un test de régression pour celui-ci » est un temps de cycle concret et mesurable. Et un tas croissant de tests ignorés, mis de côté ou instables est en soi un signal de flux — du travail en cours qui n'avance pas vraiment — qui signifie que la dette de test s'accumule plus vite qu'elle n'est remboursée, que quelqu'un la suive ou non sur un tableau.",
+    learnMorePre: "Pour en savoir plus, consultez le ",
+    learnMoreLink1Text: "guide Kanban d'Atlassian",
+    learnMoreMid: ', ou regardez la vidéo ',
+    learnMorePost: " de ProKanban pour une présentation en vidéo des métriques elles-mêmes.",
+    askAiHeading: "Idées à demander à l'IA",
+    askAi: [
+      "Que signifient réellement « temps de cycle » et « débit », en termes simples, pour le travail quotidien d'une équipe ?",
+      "Comment commencer à suivre le temps de cycle des corrections de bugs dans ma propre équipe, sans acheter de nouvel outil ?",
+      "Comment utiliser les métriques de flux pour démontrer concrètement qu'un tas croissant de tests instables est une vraie dette technique, mesurable ?"
+    ],
+    nextLabel: "Suite : comment Six Sigma mène-t-il des tests manuels aux tests automatisés ? →"
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -152,7 +175,8 @@
     'cy-001': CY,
     'zh-cn': ZH,
     'ar-001': AR,
-    'ko-001': KO
+    'ko-001': KO,
+    'fr-001': FR
   };
 
   const m = $derived(MESSAGES[locale]);
