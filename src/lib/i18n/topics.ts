@@ -133,7 +133,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
   'what-is-continuous-integration-testing': {
     slug: slugFor(
       'what-is-continuous-integration-testing',
-      'beth-yw-profi-integreiddio-parhaus',
+      'beth-yw-profi-integreiddio-parhaus-awtomatig',
       '什么是持续集成测试',
       'ما-هو-اختبار-التكامل-المستمر',
       '지속적-통합-테스트란-무엇인가'
