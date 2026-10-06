@@ -123,7 +123,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
   'what-is-browser-automation-testing': {
     slug: slugFor(
       'what-is-browser-automation-testing',
-      'beth-yw-profi-awtomeiddio-porwr',
+      'beth-yw-profi-awtomatig-porwr',
       '什么是浏览器自动化测试',
       'ما-هو-اختبار-أتمتة-المتصفح',
       '브라우저-자동화-테스트란-무엇인가'
@@ -153,7 +153,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
   'what-is-lean-six-sigma-for-automatic-testing': {
     slug: slugFor(
       'what-is-lean-six-sigma-for-automatic-testing',
-      'beth-yw-lean-six-sigma-ar-gyfer-profi-awtomatig',
+      'sut-mae-six-sigma-yn-arwain-profi-a-llaw-at-brofi-awtomatig',
       '六西格玛如何引导人工测试进入自动化测试',
       'كيف-يقود-سيكس-سيجما-الاختبار-اليدوي-إلى-الاختبار-الآلي',
       'Six-Sigma는-수동-테스트를-어떻게-자동화-테스트로-이끄는가'
