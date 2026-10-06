@@ -263,6 +263,142 @@
     googleSearchExamplesLinkText: '谷歌搜索示例'
   };
 
+  const AR: Messages = {
+    title: 'أمثلة Google Maps',
+    metaDescription:
+      'ست تفاعلات مع Google Maps — الزيارة والبحث والنقر على نتيجة والتمرير والتكبير وتبديل طبقة — منفّذة بست طرق: Selenium وPlaywright، كل منهما بلغات JavaScript وPython وRust.',
+    heading: 'أمثلة Google Maps',
+    intro:
+      'تعرض هذه الصفحة ست تفاعلات مع Google Maps — الزيارة والبحث والنقر على رابط أو نتيجة والتمرير والتكبير وتبديل طبقة — منفّذة بست طرق: أداتان لأتمتة المتصفح (Selenium وPlaywright) × ثلاث لغات (JavaScript وPython وRust).',
+    section1Heading: 'أمران يجب معرفتهما قبل أن تبدأ',
+    calloutLabel: 'قبل أن تشغّل أيًّا من هذا',
+    calloutP1Pre: 'تقيّد ',
+    tosLinkText: 'شروط خدمة Google',
+    calloutP1Mid: ' الاستعلام الآلي عن خدماتها. يعلّمك الكود أدناه ',
+    patternsLabel: 'أنماطًا',
+    calloutP1Post:
+      ' — استراتيجيات تحديد العناصر وتقنيات التفاعل — لا سكربتات يُراد تشغيلها مرارًا على Google Maps الحي.',
+    calloutP2A:
+      'كما أن Google Maps هدف أتمتة أصعب بكثير من صفحة عادية. فمعظم الخريطة نفسها تُرسم على عنصر ',
+    calloutP2B:
+      ' (أو WebGL)، فلا يمكنك عمومًا «العثور» على شارع أو دبوس كما تعثر على فقرة نصية — بل تتفاعل مع عنصر ',
+    calloutP2C:
+      ' عبر الإحداثيات وأحداث الفأرة (النقر عند موضع x/y، وتدوير عجلة الفأرة فوق عنصر canvas) بدلًا من العثور على عنصر DOM له. أما واجهة المستخدم المحيطة بالـ canvas — مربع البحث وأزرار التكبير وقائمة الطبقات — فهي DOM عادي، ومن المفيد أن Google تمنح معظم هذه الواجهة سمات ',
+    calloutP2D: ' حقيقية ومستقرة نسبيًا لإتاحة الوصول. وهذا يجعل محدِّدات الاسم المتاح (',
+    calloutP2E:
+      ') خيارًا أفضل بكثير من أسماء فئات CSS المولَّدة أو المجزَّأة، التي تتغير مع كل نشر لـ Maps. وهذا هو الدرس الأكثر قابلية للنقل في هذه الصفحة: ',
+    strongLessonLabel:
+      'فضّل محدِّدات الاسم المتاح على محدِّدات أسماء الفئات كلما كانت علامات الموقع ليست واجهة برمجية عامة تتحكم فيها',
+    calloutP2F: ' — فهذه ممارسة جيدة في كل مكان، لا هنا فحسب.',
+    section2Heading: 'التفاعلات الست',
+    section2Intro:
+      'يطبّق كل مثال أدناه الخطوات الست نفسها. وقد عُرّفت مرة واحدة هنا بدلًا من تكرارها في كل نموذج كود:',
+    item1Strong: 'الزيارة',
+    item1Pre: ' — انتقل إلى ',
+    item1Post: '.',
+    item2Strong: 'البحث',
+    item2A: ' — حدّد مربع البحث (وفيه ',
+    item2B:
+      ' في علامات Google Maps الحالية — لاحظ أنها قد تتغير مع الزمن كأي موقع لطرف ثالث) واكتب استعلامًا، مثل ',
+    item2C: '، ثم أرسله (Enter، أو زر البحث الذي يحمل عادةً ',
+    item2D: ').',
+    item3Strong: 'النقر على رابط/نتيجة',
+    item3Rest:
+      ' — انقر على أول نتيجة بحث في لوحة النتائج (النتائج عادةً عناصر قائمة DOM لا canvas — يمكن العثور عليها بالدور أو بالنص حتى لو كانت الخريطة نفسها canvas).',
+    item4Strong: 'التمرير',
+    item4Rest:
+      ' — حاكِ التمرير أو التحريك فوق canvas الخريطة: للأدوات التي لها واجهة حقيقية لعجلة الفأرة أو التمرير، أرسل حدث عجلة أو إيماءة تمرير فوق المستطيل المحيط بعنصر canvas، لا فوق الصفحة كلها.',
+    item5Strong: 'التكبير',
+    item5A: ' — انقر زر التكبير (',
+    item5B: ') أو زر التصغير (',
+    item5C:
+      ') — وهو نهج أوثق بكثير من محاولة التكبير بالقرص أو بعجلة الفأرة برمجيًا على الـ canvas، ويستحق التنويه به بوصفه الخيار العملي.',
+    item6Strong: 'تفعيل طبقة',
+    item6A: ' — افتح لوحة الطبقات (الزر ',
+    item6B:
+      ')، ثم اختر طبقة مثل «Traffic» (وهي عادةً خيار أو زر مسمّى بعد فتح اللوحة — يُوصف أدناه بأنه «مبدّل طبقة حركة المرور» دون ادعاء محدِّد ثابت دقيق).',
+    seleniumIntroA:
+      'تستخدم اللغات الثلاث أدناه محدِّدات قائمة على aria-label في كل موضع، وفقًا للدرس أعلاه. ويستخدم مثال Rust ',
+    seleniumIntroB:
+      '، عميل Selenium/WebDriver المعتمد فعليًا في Rust — لا يوجد عميل رسمي، واسمها إيماءة إلى العدد الذري للسيلينيوم، 34.',
+    playwrightIntroA:
+      'تأتي Playwright بارتباطات رسمية لـ JavaScript وPython و.NET وJava. أما Rust فيصونه المجتمع: ',
+    playwrightIntroB: ' (تُطوَّر بنشاط على يد ',
+    playwrightIntroC: '، قبل الإصدار 1.0) هي المثال أدناه. أما حزمة ',
+    playwrightIntroD: ' الأقدم، المنشورة على crates.io باسم ',
+    playwrightIntroE: '، فقد هُجرت منذ عام 2022.',
+    backToExamples: 'العودة إلى الأمثلة',
+    googleSearchExamplesLinkText: 'أمثلة Google Search'
+  };
+
+  const KO: Messages = {
+    title: 'Google Maps 예제',
+    metaDescription:
+      'Google Maps와의 여섯 가지 상호작용 — 방문, 검색, 결과 클릭, 스크롤, 확대/축소, 레이어 전환 — 을 여섯 가지 방식으로 구현했습니다: Selenium과 Playwright를 각각 JavaScript, Python, Rust로 사용합니다.',
+    heading: 'Google Maps 예제',
+    intro:
+      '이 페이지는 Google Maps와의 여섯 가지 상호작용 — 방문, 검색, 링크나 결과 클릭, 스크롤, 확대/축소, 레이어 전환 — 을 여섯 가지 방식으로 구현해 보여 줍니다. 두 가지 브라우저 자동화 도구(Selenium과 Playwright) × 세 가지 언어(JavaScript, Python, Rust)입니다.',
+    section1Heading: '시작하기 전에 알아 둘 두 가지',
+    calloutLabel: '이 중 어느 것이든 실행하기 전에',
+    calloutP1Pre: 'Google의 ',
+    tosLinkText: '서비스 약관',
+    calloutP1Mid: '은 자사 서비스에 대한 자동화된 쿼리를 제한합니다. 아래 코드가 가르치는 것은 ',
+    patternsLabel: '패턴',
+    calloutP1Post:
+      ' — 로케이터 전략과 상호작용 기법 — 이며, 실제 Google Maps를 상대로 반복 실행하라는 스크립트가 아닙니다.',
+    calloutP2A:
+      '또한 Google Maps는 일반적인 페이지보다 훨씬 자동화하기 어려운 대상입니다. 지도 자체의 대부분은 ',
+    calloutP2B:
+      ' 요소(또는 WebGL)로 렌더링되므로, 텍스트 문단을 찾듯이 거리나 핀을 일반적으로 "찾을" 수는 없습니다. 대신 이 ',
+    calloutP2C:
+      ' 요소에 대해서는 DOM 요소를 찾는 것이 아니라 좌표와 마우스 이벤트(x/y 위치에서 클릭, canvas 요소 위에서 스크롤 휠)로 상호작용합니다. canvas를 둘러싼 UI 영역 — 검색창, 확대/축소 버튼, 레이어 메뉴 — 은 일반 DOM이며, 유용하게도 Google은 접근성을 위해 이 영역 대부분에 실제로 비교적 안정적인 ',
+    calloutP2D: ' 속성을 제공합니다. 그래서 접근 가능한 이름 로케이터(',
+    calloutP2E:
+      ')가 Maps가 배포될 때마다 바뀌는, 생성되거나 해시된 CSS 클래스 이름보다 훨씬 나은 선택입니다. 이것이 이 페이지에서 가장 널리 적용할 수 있는 교훈입니다: ',
+    strongLessonLabel:
+      '사이트의 마크업이 여러분이 제어하는 공개 API가 아닐 때는 언제나 클래스 이름 로케이터보다 접근 가능한 이름 로케이터를 선호하세요',
+    calloutP2F: ' — 이것은 여기서뿐만 아니라 어디서나 좋은 관행입니다.',
+    section2Heading: '여섯 가지 상호작용',
+    section2Intro:
+      '아래의 모든 예제는 같은 여섯 단계를 구현합니다. 각 코드 샘플에서 반복하는 대신 여기에 한 번만 정의합니다:',
+    item1Strong: '방문',
+    item1Pre: ' — 다음 주소로 이동합니다: ',
+    item1Post: '.',
+    item2Strong: '검색',
+    item2A: ' — 검색창을 찾습니다(현재 Google Maps 마크업에서는 ',
+    item2B:
+      '가 있습니다. 다른 제3자 사이트처럼 시간이 지나며 바뀔 수 있음에 유의하세요). 그리고 쿼리를 입력합니다. 예: ',
+    item2C: '. 그런 다음 제출합니다(Enter, 또는 보통 ',
+    item2D: '가 있는 검색 버튼).',
+    item3Strong: '링크/결과 클릭',
+    item3Rest:
+      ' — 결과 패널에서 첫 번째 검색 결과를 클릭합니다(결과는 보통 canvas가 아니라 DOM 목록 항목이므로, 지도 자체는 canvas이더라도 역할이나 텍스트로 찾을 수 있습니다).',
+    item4Strong: '스크롤',
+    item4Rest:
+      ' — 지도 canvas 위에서 스크롤/이동을 시뮬레이션합니다. 실제 마우스 휠/스크롤 API가 있는 도구에서는 페이지 전체가 아니라 canvas 요소의 경계 상자 위에서 휠 이벤트나 스크롤 제스처를 발생시킵니다.',
+    item5Strong: '확대/축소',
+    item5A: ' — 확대 버튼(',
+    item5B: ') 또는 축소 버튼(',
+    item5C:
+      ')을 클릭합니다. canvas를 프로그램으로 핀치하거나 스크롤 확대하려는 것보다 훨씬 신뢰할 수 있는 방식이며, 현실적인 선택으로 짚어 둘 만합니다.',
+    item6Strong: '레이어 활성화',
+    item6A: ' — 레이어 패널을 엽니다(버튼 ',
+    item6B:
+      '). 그런 다음 "Traffic" 같은 레이어를 선택합니다(패널이 열리면 보통 라벨이 붙은 옵션이나 버튼이며, 정확한 안정적 선택자를 과장하지 않기 위해 아래에서는 "교통 레이어 토글"이라고 설명합니다).',
+    seleniumIntroA:
+      '아래 세 가지 언어는 모두 위의 교훈에 따라 처음부터 끝까지 aria-label 기반 로케이터를 사용합니다. Rust 예제는 ',
+    seleniumIntroB:
+      '를 사용합니다. 이것은 Rust용 사실상의 Selenium/WebDriver 클라이언트로, 공식 클라이언트는 없으며 이름은 셀레늄의 원자 번호 34에서 따온 것입니다.',
+    playwrightIntroA:
+      'Playwright는 JavaScript, Python, .NET, Java에 대한 공식 바인딩을 제공합니다. Rust는 커뮤니티에서 유지관리합니다: ',
+    playwrightIntroB: '(',
+    playwrightIntroC: '에서 활발히 개발 중, 1.0 이전)는 아래의 예제입니다. 더 오래된 ',
+    playwrightIntroD: ' 크레이트는 crates.io에 ',
+    playwrightIntroE: '라는 이름으로 게시되었으며, 2022년 이후 방치되었습니다.',
+    backToExamples: '예제로 돌아가기',
+    googleSearchExamplesLinkText: 'Google Search 예제'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -270,7 +406,9 @@
     'en-us': EN_001,
     'cy-gb': CY,
     'cy-001': CY,
-    'zh-cn': ZH
+    'zh-cn': ZH,
+    'ar-001': AR,
+    'ko-001': KO
   };
 
   const m = $derived(MESSAGES[locale]);

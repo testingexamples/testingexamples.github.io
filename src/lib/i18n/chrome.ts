@@ -125,6 +125,66 @@ const ZH_COMMON: ChromeMessages = {
   footerTagline: '{site} — 免费开源的浏览器自动化测试示例。'
 };
 
+const AR_COMMON: ChromeMessages = {
+  skipToMainContent: 'انتقل إلى المحتوى الرئيسي',
+  mainNavLabel: 'التنقل الرئيسي',
+  siteBrandAriaLabel: 'الصفحة الرئيسية لـ {site}',
+  nav: {
+    home: 'الرئيسية',
+    learn: 'تعلّم',
+    examples: 'أمثلة',
+    about: 'حول',
+    github: 'GitHub'
+  },
+  pickerLabels: {
+    theme: 'السمة',
+    locale: 'اللغة',
+    textSize: 'حجم النص',
+    share: 'شارك هذه الصفحة'
+  },
+  shareLabels: {
+    email: 'أرسل الرابط بالبريد الإلكتروني',
+    linkedin: 'شارك على LinkedIn',
+    reddit: 'شارك على Reddit',
+    bluesky: 'شارك على Bluesky',
+    mastodon: 'شارك على Mastodon',
+    copyLink: 'انسخ الرابط',
+    copiedLabel: 'تم نسخ الرابط',
+    copyFailedLabel: 'تعذّر نسخ الرابط'
+  },
+  footerTagline: '{site} — أمثلة مجانية ومفتوحة المصدر لاختبار أتمتة المتصفح.'
+};
+
+const KO_COMMON: ChromeMessages = {
+  skipToMainContent: '본문으로 건너뛰기',
+  mainNavLabel: '주 내비게이션',
+  siteBrandAriaLabel: '{site} 홈',
+  nav: {
+    home: '홈',
+    learn: '학습',
+    examples: '예제',
+    about: '소개',
+    github: 'GitHub'
+  },
+  pickerLabels: {
+    theme: '테마',
+    locale: '언어',
+    textSize: '글자 크기',
+    share: '이 페이지 공유'
+  },
+  shareLabels: {
+    email: '이메일로 링크 보내기',
+    linkedin: 'LinkedIn에 공유',
+    reddit: 'Reddit에 공유',
+    bluesky: 'Bluesky에 공유',
+    mastodon: 'Mastodon에 공유',
+    copyLink: '링크 복사',
+    copiedLabel: '링크가 복사되었습니다',
+    copyFailedLabel: '링크를 복사하지 못했습니다'
+  },
+  footerTagline: '{site} — 무료 오픈 소스 브라우저 자동화 테스트 예제.'
+};
+
 // The chrome strings above have no US/UK spelling variance (no colour/
 // organise-style words among them), so all four English locales share one
 // object, and both Welsh locales share the other. Page content, which does
@@ -136,7 +196,9 @@ export const CHROME: Record<Locale, ChromeMessages> = {
   'en-us': EN_COMMON,
   'cy-gb': CY_COMMON,
   'cy-001': CY_COMMON,
-  'zh-cn': ZH_COMMON
+  'zh-cn': ZH_COMMON,
+  'ar-001': AR_COMMON,
+  'ko-001': KO_COMMON
 };
 
 export function chromeFor(locale: Locale): ChromeMessages {

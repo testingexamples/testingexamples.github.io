@@ -228,6 +228,104 @@
     msgEnterSearchTerm: '请输入搜索词。'
   };
 
+  const AR: Messages = {
+    title: 'تطبيق تجريبي',
+    metaDescription:
+      'تطبيق تجريبي تفاعلي صغير — تخطيط Grail من Lily Design System، وتسجيل دخول محاكى، وشريط تنقل بأيقونات مع مربع بحث، ولوحة بثلاث علامات تبويب — هدف ثابت آخر للتدرب على أتمتة المتصفح.',
+    heading: 'تطبيق تجريبي',
+    intro:
+      'تطبيق تجريبي صغير ومتكامل — سجّل الدخول، وانقر أيقونات التنقل، وابحث، وبدّل بين علامات التبويب — بُني بمكونات Lily Design System كهدف ثابت آخر للتدرب على أتمتة المتصفح. لا شيء هنا حقيقي: لا يوجد خادم خلفي، ولا يغادر جهازك أي شيء تكتبه في هذه الصفحة.',
+    demoAppLabel: 'تطبيق تجريبي',
+    navHome: 'الرئيسية',
+    navSettings: 'الإعدادات',
+    navSignOut: 'تسجيل الخروج',
+    searchLabel: 'ابحث في التطبيق التجريبي',
+    searchPlaceholder: 'بحث…',
+    aboutHeading: 'حول هذا العرض التوضيحي',
+    aboutP:
+      'كل ما في هذه الصفحة محاكى داخل المتصفح: لا يوجد حساب حقيقي ولا خادم خلفي حقيقي. إنه هيكل تطبيق صغير وواقعي — تسجيل دخول وأيقونات تنقل ومربع بحث وعلامات تبويب — بُني خصيصًا ليتوفر هدف أقرب إلى التطبيقات من صفحة التجهيزات لأتمتته.',
+    signInHeading: 'تسجيل الدخول',
+    signInCredsPre: 'استخدم اسم المستخدم ',
+    signInCredsMid: ' وكلمة المرور ',
+    signInCredsPost: '.',
+    usernameLabel: 'اسم المستخدم',
+    passwordLabel: 'كلمة المرور',
+    signInSubmit: 'تسجيل الدخول',
+    welcomeHeading: 'مرحبًا، guest',
+    welcomeP: 'تم تسجيل دخولك. جرّب علامات التبويب أدناه، أو أيقونات التنقل ومربع البحث أعلاه.',
+    tabsLabel: 'علامات التبويب التجريبية',
+    tabAlfa: 'Alfa',
+    tabBravo: 'Bravo',
+    tabCharlie: 'Charlie',
+    tabAlfaPanel: 'لوحة علامة التبويب Alfa',
+    tabBravoPanel: 'لوحة علامة التبويب Bravo',
+    tabCharliePanel: 'لوحة علامة التبويب Charlie',
+    relatedHeading: 'ذو صلة',
+    relatedGivenWhenThen: 'أمثلة Given-When-Then',
+    relatedHowToStart: 'كيف تبدأ تعلم الاختبار الآلي؟',
+    relatedExamples: 'أمثلة',
+    footerNavLabel: 'التنقل في تذييل التطبيق التجريبي',
+    privacyPolicy: 'سياسة الخصوصية',
+    termsOfService: 'شروط الخدمة',
+    contact: 'اتصل بنا',
+    msgSignInSuccess: 'تم تسجيل الدخول بنجاح.',
+    msgSignInFailure: 'فشل تسجيل الدخول.',
+    msgHomePage: 'الصفحة الرئيسية',
+    msgSettingsPage: 'صفحة الإعدادات',
+    msgSignOut: 'تم تسجيل الخروج',
+    msgSearchResultsFor: (query) => `نتائج البحث عن «${query}».`,
+    msgEnterSearchTerm: 'أدخل عبارة بحث.'
+  };
+
+  const KO: Messages = {
+    title: '데모 앱',
+    metaDescription:
+      '작은 대화형 데모 앱 — Lily Design System Grail 레이아웃, 모의 로그인, 검색창이 있는 아이콘 내비게이션 바, 세 개의 탭 패널 — 으로, 브라우저 자동화를 연습하기 위한 또 하나의 안정적인 대상입니다.',
+    heading: '데모 앱',
+    intro:
+      '로그인하고, 내비게이션 아이콘을 클릭하고, 검색하고, 탭을 전환하는 작고 독립적인 데모 애플리케이션으로, 브라우저 자동화를 연습하기 위한 또 하나의 안정적인 대상으로 Lily Design System 컴포넌트를 사용해 만들었습니다. 여기 있는 것은 모두 실제가 아닙니다. 백엔드가 없으며, 이 페이지에 입력한 어떤 것도 기기 밖으로 나가지 않습니다.',
+    demoAppLabel: '데모 앱',
+    navHome: '홈',
+    navSettings: '설정',
+    navSignOut: '로그아웃',
+    searchLabel: '데모 앱 검색',
+    searchPlaceholder: '검색…',
+    aboutHeading: '이 데모에 대하여',
+    aboutP:
+      '이 페이지의 모든 것은 브라우저에서 시뮬레이션됩니다. 실제 계정도, 실제 백엔드도 없습니다. 로그인, 내비게이션 아이콘, 검색창, 탭으로 이루어진 작고 현실적인 앱 셸로, 픽스처 페이지보다 더 앱에 가까운 대상을 자동화해 볼 수 있도록 특별히 만들었습니다.',
+    signInHeading: '로그인',
+    signInCredsPre: '사용자 이름 ',
+    signInCredsMid: '과(와) 비밀번호 ',
+    signInCredsPost: '을(를) 사용하세요.',
+    usernameLabel: '사용자 이름',
+    passwordLabel: '비밀번호',
+    signInSubmit: '로그인',
+    welcomeHeading: '환영합니다, guest',
+    welcomeP: '로그인되었습니다. 아래의 탭이나 위의 내비게이션 아이콘과 검색창을 사용해 보세요.',
+    tabsLabel: '데모 탭',
+    tabAlfa: 'Alfa',
+    tabBravo: 'Bravo',
+    tabCharlie: 'Charlie',
+    tabAlfaPanel: 'Alfa 탭 패널',
+    tabBravoPanel: 'Bravo 탭 패널',
+    tabCharliePanel: 'Charlie 탭 패널',
+    relatedHeading: '관련 항목',
+    relatedGivenWhenThen: 'Given-When-Then 예제',
+    relatedHowToStart: '자동화 테스트 학습은 어떻게 시작하나요?',
+    relatedExamples: '예제',
+    footerNavLabel: '데모 앱 푸터 내비게이션',
+    privacyPolicy: '개인정보 처리방침',
+    termsOfService: '서비스 약관',
+    contact: '문의',
+    msgSignInSuccess: '로그인에 성공했습니다.',
+    msgSignInFailure: '로그인에 실패했습니다.',
+    msgHomePage: '홈 페이지',
+    msgSettingsPage: '설정 페이지',
+    msgSignOut: '로그아웃했습니다',
+    msgSearchResultsFor: (query) => `"${query}"에 대한 검색 결과입니다.`,
+    msgEnterSearchTerm: '검색어를 입력하세요.'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -235,7 +333,9 @@
     'en-us': EN_US,
     'cy-gb': CY,
     'cy-001': CY,
-    'zh-cn': ZH
+    'zh-cn': ZH,
+    'ar-001': AR,
+    'ko-001': KO
   };
 
   const m = $derived(MESSAGES[locale]);

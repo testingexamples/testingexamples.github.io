@@ -335,7 +335,7 @@ p { margin: 0 0 1rem; }
 }
 
 .prose { max-width: var(--prose-max); }
-.prose ul, .prose ol { padding-left: 1.5rem; }
+.prose ul, .prose ol { padding-inline-start: 1.5rem; }
 .prose li { margin-bottom: 0.35rem; }
 
 .section { margin: 4rem 0; }
@@ -375,7 +375,7 @@ p { margin: 0 0 1rem; }
 .demo-matrix th, .demo-matrix td {
   padding: 0.5rem 0.75rem;
   border: 1px solid var(--border-color);
-  text-align: left;
+  text-align: start;
   white-space: nowrap;
 }
 .demo-matrix thead th {
@@ -458,7 +458,7 @@ p { margin: 0 0 1rem; }
 .site-fixtures ol,
 .site-fixtures ul {
   margin: 0.5rem 0 1rem;
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
 }
 .site-fixtures form label {
   display: inline-block;
@@ -497,4 +497,28 @@ p { margin: 0 0 1rem; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Right-to-left locales (e.g. ar-001, <html dir="rtl">).
+ *
+ * Source code, inline code, and the home page's fixture section are
+ * always English / left-to-right, whatever the page's own direction:
+ * code and the fixture contract are never translated (see
+ * spec/locales/index.md). Done in CSS, not by adding a dir attribute,
+ * so the fixture markup stays byte-for-byte what the sibling repos
+ * expect. Everything else in this file uses logical properties
+ * (padding-inline-start, text-align: start) and mirrors automatically.
+ */
+.code-block > pre,
+.code-block > pre > code {
+  direction: ltr;
+  text-align: left;
+}
+.prose code, .page-header code, .information-callout code, .demo-matrix code {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+.site-fixtures {
+  direction: ltr;
+  text-align: left;
 }

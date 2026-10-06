@@ -121,6 +121,62 @@
     seeMoreExamples: '查看更多示例'
   };
 
+  const AR: Messages = {
+    title: 'أمثلة Given-When-Then',
+    metaDescription:
+      'سيناريو واحد مكتوب بصيغة Given-When-Then (Gherkin)، ثم معروضًا بما يعادله من كود Selenium وPlaywright بلغتي JavaScript وPython.',
+    heading: 'أمثلة Given-When-Then',
+    intro:
+      'سيناريو واحد بلغة بسيطة، مكتوب بالطريقة التي يصفه بها غير المبرمج، إلى جانب الكود الفعلي الذي ينفّذه — في أربع توليفات من الأداة واللغة.',
+    whatHeading: 'ما هو Given-When-Then؟',
+    whatIsLabel: 'هو طريقة لكتابة سيناريو اختبار بجمل بسيطة بدلًا من الكود: Given',
+    whatP1:
+      '(حالة بدء ما)، وWhen (يحدث شيء ما)، وThen (تصبح نتيجة ما صحيحة). وهي مستمدة من التطوير الموجَّه بالسلوك (BDD)، ويُسمّى الصيغة النصية البسيطة المحددة لها عادةً Gherkin.',
+    whatP2:
+      'ليس المقصود استبدال كود الاختبار الحقيقي — بل منح الفريق جملة مشتركة يتفق عليها الجميع قبل أن يكتب أحد الأتمتة لها: يستطيع مالك المنتج والمختبِر والمطوّر جميعًا قراءة "Given I am on the site, When I search, Then I see results" والاتفاق على أن هذا هو السلوك المهم، دون أن يحتاج أي منهم إلى قراءة JavaScript أو Python أولًا. أما الكود الكامن تحتها — مهما كُتب وبأي أداة — فهو ما يثبت فعلًا أن هذه الجملة تبقى صحيحة.',
+    scenarioHeading: 'السيناريو',
+    scenarioIntro: 'سيناريو واحد مكتوب بلغة Gherkin:',
+    scenarioBody:
+      'في ما يلي، تُنفَّذ الأسطر الثلاثة نفسها بأربع طرق: أداتان لأتمتة المتصفح (Selenium وPlaywright)، كل منهما بلغتين (JavaScript وPython). وقد وُضع على كل سطر من الكود تعليق يبيّن أي خطوة من Given/When/Then ينتمي إليها، لتتتبع الجملة البسيطة مباشرةً إلى الكود الذي ينفّذها.',
+    readNotRunLabel: 'اقرأ ولا تكرّر التشغيل',
+    readNotRunPre: 'تستهدف هذه الأمثلة الأربعة google.com، مثل ',
+    googleSearchExamplesLinkText: 'أمثلة Google Search',
+    readNotRunPost:
+      ' في هذا الموقع — وينطبق التحذير نفسه: تقيّد شروط خدمة Google الاستعلام الآلي عن Google Search، لذا تعامل مع الكود أدناه كمادة للقراءة لفهم النمط، لا كسكربتات تُشغَّل مرارًا على الموقع الحي. وإن أردت تجربة صيغة Given/When/Then نفسها عمليًا، فوجّه الخطوات نفسها إلى الصفحة الرئيسية لهذا الموقع.',
+    seleniumHeading: 'Selenium',
+    playwrightHeading: 'Playwright',
+    backHome: 'العودة إلى الرئيسية',
+    seeMoreExamples: 'عرض المزيد من الأمثلة'
+  };
+
+  const KO: Messages = {
+    title: 'Given-When-Then 예제',
+    metaDescription:
+      '하나의 시나리오를 Given-When-Then(Gherkin) 문장으로 작성한 다음, 그에 해당하는 JavaScript와 Python의 Selenium 및 Playwright 코드로 보여 줍니다.',
+    heading: 'Given-When-Then 예제',
+    intro:
+      '프로그래머가 아닌 사람이 설명할 법한 방식으로 쓴 하나의 평이한 시나리오를, 그것을 실제로 수행하는 코드와 나란히 보여 줍니다. 도구와 언어의 네 가지 조합으로 제시합니다.',
+    whatHeading: 'Given-When-Then이란 무엇인가?',
+    whatIsLabel: '은 테스트 시나리오를 코드가 아닌 평이한 문장으로 작성하는 방식입니다: Given',
+    whatP1:
+      '(어떤 초기 상태), When(어떤 일이 일어남), Then(어떤 결과가 참임). 이는 행동 주도 개발(BDD)에서 유래했으며, 이를 위한 구체적인 일반 텍스트 문법을 보통 Gherkin이라고 부릅니다.',
+    whatP2:
+      '목적은 실제 테스트 코드를 대체하는 것이 아니라, 누군가 자동화를 작성하기 전에 모두가 동의할 수 있는 공통의 문장을 팀에 주는 것입니다. 제품 책임자, 테스터, 개발자 모두가 "Given I am on the site, When I search, Then I see results"를 읽고 그것이 중요한 동작이라는 데 동의할 수 있으며, 누구도 먼저 JavaScript나 Python을 읽을 필요가 없습니다. 그 밑에 있는 코드는 — 어떤 방식으로, 어떤 도구로 작성되었든 — 그 문장이 계속 참임을 실제로 증명하는 것입니다.',
+    scenarioHeading: '시나리오',
+    scenarioIntro: 'Gherkin으로 작성한 하나의 시나리오:',
+    scenarioBody:
+      '아래에서는 같은 세 줄을 네 가지 방식으로 수행합니다. 브라우저 자동화 도구 두 가지(Selenium과 Playwright)를 각각 두 가지 언어(JavaScript와 Python)로 사용합니다. 코드의 각 줄에는 어느 Given/When/Then 단계에 속하는지 주석이 달려 있어, 평이한 문장에서 그것을 구현하는 코드까지 바로 따라갈 수 있습니다.',
+    readNotRunLabel: '읽기만 하고, 반복 실행하지 마세요',
+    readNotRunPre: '이 네 가지 예제는 이 사이트의 ',
+    googleSearchExamplesLinkText: 'Google Search 예제',
+    readNotRunPost:
+      '와 마찬가지로 google.com을 대상으로 하며, 같은 주의가 적용됩니다. Google의 서비스 약관은 Google Search에 대한 자동화된 쿼리를 제한하므로, 아래 코드는 실제 사이트를 상대로 반복 실행할 스크립트가 아니라 패턴을 이해하기 위한 읽을거리로 다루세요. 같은 Given/When/Then 형태를 직접 해 보고 싶다면, 같은 단계를 이 사이트의 홈페이지에 적용해 보세요.',
+    seleniumHeading: 'Selenium',
+    playwrightHeading: 'Playwright',
+    backHome: '홈으로 돌아가기',
+    seeMoreExamples: '더 많은 예제 보기'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -128,7 +184,9 @@
     'en-us': EN_001,
     'cy-gb': CY,
     'cy-001': CY,
-    'zh-cn': ZH
+    'zh-cn': ZH,
+    'ar-001': AR,
+    'ko-001': KO
   };
 
   const m = $derived(MESSAGES[locale]);

@@ -301,6 +301,154 @@
     googleMapsExamplesLinkText: '谷歌地图示例'
   };
 
+  const AR: Messages = {
+    title: 'أمثلة Google Search',
+    metaDescription:
+      'تفاعلات التصفح والبحث والإرسال واتباع الرابط نفسها على Google Search، منفّذة بست طرق: Selenium وPlaywright، كل منهما بلغات JavaScript وPython وRust.',
+    heading: 'أمثلة Google Search',
+    intro:
+      'سيناريو مألوف واحد — تصفّح موقع، واستخدام مربع البحث فيه، وإرسال البحث، واتباع رابط نتيجة — منفّذًا بست طرق.',
+    section1Heading: 'التفاعلات الأربعة نفسها، ست تنفيذات',
+    scenarioPre: 'تعرض هذه الصفحة سيناريو واحدًا — ',
+    strongBrowse: 'تصفّح الموقع',
+    scenarioMid1: '، ',
+    strongFollow: 'واتباع رابط',
+    scenarioMid2: '، ',
+    strongSearch: 'واستخدام مربع البحث',
+    scenarioMid3: '، و',
+    strongClick: 'النقر على زر',
+    scenarioPost:
+      ' — منفّذًا بست طرق: أداتان لأتمتة المتصفح (Selenium وPlaywright)، كل منهما بثلاث لغات (JavaScript وPython وRust). والهدف في الست كلها هو Google Search، لأنه مربع بحث وصفحة نتائج يعرف كل قارئ تقريبًا كيف يستخدمهما، مما يسهّل رؤية ما تفعله صياغة كل أداة دون الحاجة إلى تعلّم الصفحة نفسها أولًا.',
+    calloutLabel: 'اقرأ قبل تشغيل أي من هذه',
+    readBeforePre: 'تقيّد ',
+    tosLinkText: 'شروط خدمة Google',
+    readBeforeMid1:
+      ' الاستعلام الآلي عن Google Search. وُجدت هذه الأمثلة الستة لعرض صياغة كل أداة و',
+    patternsLabel: 'أنماط',
+    readBeforeMid2:
+      ' التفاعل فيها جنبًا إلى جنب — وليس المقصود تشغيلها مرارًا، ولا حتى مرة واحدة، على موقع ',
+    readBeforeMid3:
+      ' الحي. وإن أردت التدرب على هذه الأنماط نفسها عمليًا فوجّهها إلى ',
+    homePageLinkText: 'الصفحة الرئيسية لهذا الموقع نفسه',
+    readBeforePost:
+      ' بدلًا من ذلك، فقد بُنيت لهذا الغرض بالضبط: معرّفات وأسماء وفئات ونصوص ثابتة لا تتغير من تحتك.',
+    fourInteractionsHeading: 'التفاعلات الأربعة، معرَّفة مرة واحدة',
+    fourInteractionsIntro: 'بدلًا من تكرار هذه لكل مثال، إليك ما يفعله كل سكربت من السكربتات الستة أدناه:',
+    item1Strong: 'تصفّح الموقع',
+    item1Pre: ' — انتقل إلى ',
+    item1Post: '.',
+    item2Strong: 'استخدام مربع البحث',
+    item2Pre: ' — حدّد حقل البحث واكتب استعلامًا، مثل ',
+    item2Post: '.',
+    item3Strong: 'النقر على زر / الإرسال',
+    item3Rest: ' — اضغط Enter، أو اعثر على زر الإرسال وانقر عليه.',
+    item4Strong: 'اتباع رابط',
+    item4Rest: ' — بعد تحميل النتائج، اعثر على أول رابط نتيجة عضوية وانقر عليه.',
+    caveatA:
+      'تنبيه يستحق الذكر بوضوح بدلًا من التمويه عليه: تغيّرت علامات Google الدقيقة لمربع البحث مع الزمن، ومن المرجح أن تستمر في التغير. فقد كان تاريخيًا ',
+    caveatB: ' وهو حاليًا في الغالب ',
+    caveatC: '، لكنه في الحالتين حمل عادةً ',
+    caveatD: '، لذا تحدده الأمثلة أدناه بمحدِّد مثل ',
+    caveatE: ' (أو، للأدوات التي تدعم محدِّدًا بالسمة المكتوبة، ',
+    caveatF:
+      '). وهذا توضيح حقيقي لسبب هشاشة محدِّدات الاسم والوسم: فقد تتوقف عن المطابقة بصمت حين تتغير علامات الموقع من تحتها. وحيث تدعم الأداة التحديد بالدور المتاح والاسم بدلًا من ذلك (مثل عنصر ',
+    caveatG:
+      ' ذي تسمية «Search» مرئية)، فهذا هو الخيار الأكثر متانة، ويُشار إليه في المثال المعني. وقد حمل زر الإرسال تاريخيًا ',
+    caveatH:
+      '، لكن قد تحجبه اقتراحات الإكمال التلقائي بمجرد حصول مربع البحث على التركيز، وهذا أحد أسباب أن الضغط على Enter بعد الكتابة أكثر موثوقية عمومًا من محاولة النقر عليه.',
+    seleniumIntro:
+      'Selenium هو أقدم مشاريع أتمتة المتصفح العابرة للغات — وبروتوكول WebDriver فيه هو نفسه الذي تتحدث به عدة أدوات أخرى في هذه الصفحة من تحتها.',
+    seleniumRustA: 'لا توجد ارتباطات رسمية لـ Rust من مشروع Selenium نفسه — ',
+    seleniumRustB:
+      ' (واسمها إيماءة إلى العدد الذري للسيلينيوم، 34) هي عميل Selenium/WebDriver المعتمد فعليًا في Rust. وتحتاج إلى ',
+    seleniumRustC:
+      ' (أو ما يشابهه) قيد التشغيل على العنوان المعطى، تمامًا كما يحتاج المثالان أعلاه إلى مشغّل/متصفح محلي.',
+    playwrightIntro:
+      'لدى Playwright ارتباطات رسمية بلغات JavaScript وPython و.NET وJava؛ أما دعم Rust فيصونه المجتمع ولا يخضع لجهة رسمية.',
+    pwRustA: 'احذر من الحزمة (crate) التي تثبّتها. ',
+    pwRustB: ' (',
+    pwRustC:
+      ') تُصان بنشاط لكنها لا تزال قبل الإصدار 1.0 وتستقر واجهتها البرمجية — وهي المستخدمة أدناه. أما الحزمة الأقدم المنشورة على crates.io باسم ',
+    pwRustD: ' (',
+    pwRustE: ') فقد هُجرت منذ عام 2022؛ فلا تلجأ إليها.',
+    backToExamples: 'العودة إلى الأمثلة',
+    googleMapsExamplesLinkText: 'أمثلة Google Maps'
+  };
+
+  const KO: Messages = {
+    title: 'Google Search 예제',
+    metaDescription:
+      'Google Search를 대상으로 한 탐색, 검색, 제출, 링크 따라가기 상호작용을 여섯 가지 방식으로 구현했습니다: Selenium과 Playwright를 각각 JavaScript, Python, Rust로 사용합니다.',
+    heading: 'Google Search 예제',
+    intro:
+      '익숙한 시나리오 하나 — 사이트로 이동하고, 검색창을 사용하고, 검색을 제출하고, 결과 링크를 따라가기 — 를 여섯 가지 방식으로 구현했습니다.',
+    section1Heading: '같은 네 가지 상호작용, 여섯 가지 구현',
+    scenarioPre: '이 페이지는 하나의 시나리오, 즉 ',
+    strongBrowse: '사이트로 이동',
+    scenarioMid1: ', ',
+    strongFollow: '링크 따라가기',
+    scenarioMid2: ', ',
+    strongSearch: '검색창 사용',
+    scenarioMid3: ', 그리고 ',
+    strongClick: '버튼 클릭',
+    scenarioPost:
+      '을 여섯 가지 방식으로 구현한 것을 보여 줍니다. 두 가지 브라우저 자동화 도구(Selenium과 Playwright)를 각각 세 가지 언어(JavaScript, Python, Rust)로 사용합니다. 여섯 가지 모두의 대상은 Google Search입니다. 거의 모든 독자가 이미 사용법을 아는 검색창과 결과 페이지이므로, 페이지 자체를 먼저 배우지 않고도 각 도구의 문법이 무엇을 하는지 쉽게 볼 수 있기 때문입니다.',
+    calloutLabel: '이 중 어느 것이든 실행하기 전에 읽으세요',
+    readBeforePre: 'Google의 ',
+    tosLinkText: '서비스 약관',
+    readBeforeMid1:
+      '은 Google Search에 대한 자동화된 쿼리를 제한합니다. 이 여섯 가지 예제는 각 도구의 문법과 상호작용 ',
+    patternsLabel: '패턴',
+    readBeforeMid2:
+      '을 나란히 보여 주기 위해 존재하며, 실제 ',
+    readBeforeMid3:
+      ' 사이트를 상대로 반복해서, 또는 아예 실행하라고 만든 것이 아닙니다. 이 패턴을 직접 연습해 보고 싶다면 대신 ',
+    homePageLinkText: '이 사이트의 홈페이지',
+    readBeforePost:
+      '를 대상으로 삼으세요. 바로 그 목적으로 만들어졌습니다. 발밑에서 바뀌지 않는 안정적인 id, name, class, 텍스트가 있습니다.',
+    fourInteractionsHeading: '네 가지 상호작용, 한 번만 정의',
+    fourInteractionsIntro: '예제마다 반복하는 대신, 아래 여섯 개의 스크립트가 각각 무엇을 하는지 여기에 정리합니다:',
+    item1Strong: '사이트로 이동',
+    item1Pre: ' — 다음 주소로 이동합니다: ',
+    item1Post: '.',
+    item2Strong: '검색창 사용',
+    item2Pre: ' — 검색 입력란을 찾아 쿼리를 입력합니다. 예: ',
+    item2Post: '.',
+    item3Strong: '버튼 클릭 / 제출',
+    item3Rest: ' — Enter를 누르거나, 제출 버튼을 찾아 클릭합니다.',
+    item4Strong: '링크 따라가기',
+    item4Rest: ' — 결과가 로드된 후, 첫 번째 일반(오가닉) 결과 링크를 찾아 클릭합니다.',
+    caveatA:
+      '얼버무리지 않고 분명하게 말해 두어야 할 주의 사항이 있습니다. Google의 검색창 마크업은 시간이 지나면서 바뀌어 왔고 앞으로도 계속 바뀔 가능성이 큽니다. 역사적으로는 ',
+    caveatB: '이었고 현재는 흔히 ',
+    caveatC: '이지만, 두 경우 모두 일반적으로 ',
+    caveatD: '를 가지고 있었기 때문에, 아래 예제는 ',
+    caveatE: ' 같은 선택자(또는 타입이 지정된 속성 로케이터가 있는 도구에서는 ',
+    caveatF:
+      ')로 그것을 찾습니다. 이는 이름/태그 선택자가 왜 깨지기 쉬운지를 보여 주는 실제 사례입니다. 사이트의 마크업이 밑에서 바뀌면 조용히 일치하지 않게 될 수 있습니다. 도구가 대신 접근성 역할과 이름으로 찾는 것을 지원한다면(예: 눈에 보이는 "Search" 라벨이 있는 ',
+    caveatG:
+      '), 그것이 더 견고한 선택이며 해당 예제에 표시되어 있습니다. 제출 버튼은 역사적으로 ',
+    caveatH:
+      '를 가지고 있었지만, 검색창이 포커스를 얻는 순간 자동 완성 제안에 가려질 수 있으며, 이것이 입력 후 버튼을 클릭하려 하기보다 Enter를 누르는 편이 대체로 더 안정적인 이유 중 하나입니다.',
+    seleniumIntro:
+      'Selenium은 가장 오래된 다중 언어 브라우저 자동화 프로젝트이며, 그 WebDriver 프로토콜은 이 페이지의 다른 여러 도구가 내부적으로 사용하는 것과 같은 프로토콜입니다.',
+    seleniumRustA: 'Selenium 프로젝트 자체에서 제공하는 공식 Rust 바인딩은 없습니다. ',
+    seleniumRustB:
+      '(이름은 셀레늄의 원자 번호 34에서 따온 것)이 Rust용 사실상의 Selenium/WebDriver 클라이언트입니다. 지정된 URL에서 실행 중인 ',
+    seleniumRustC:
+      '(또는 유사한 것)이 필요하며, 위의 두 예제도 로컬 드라이버/브라우저가 필요한 것과 같습니다.',
+    playwrightIntro:
+      'Playwright는 JavaScript, Python, .NET, Java에 대한 공식 바인딩을 제공하며, Rust 지원은 공식이 아니라 커뮤니티에서 유지관리합니다.',
+    pwRustA: '어떤 크레이트를 설치하는지 주의하세요. ',
+    pwRustB: '(',
+    pwRustC:
+      ')는 활발히 유지관리되고 있지만 아직 1.0 이전이며 API를 안정화하는 중입니다. 아래에서 사용하는 것이 이것입니다. crates.io에 단순히 ',
+    pwRustD: '(',
+    pwRustE: ')라는 이름으로 게시된 오래된 크레이트는 2022년 이후 방치되었으므로 그것은 선택하지 마세요.',
+    backToExamples: '예제로 돌아가기',
+    googleMapsExamplesLinkText: 'Google Maps 예제'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -308,7 +456,9 @@
     'en-us': EN_US,
     'cy-gb': CY,
     'cy-001': CY,
-    'zh-cn': ZH
+    'zh-cn': ZH,
+    'ar-001': AR,
+    'ko-001': KO
   };
 
   const m = $derived(MESSAGES[locale]);

@@ -1,6 +1,6 @@
 # Locales
 
-This site supports seven locales:
+This site supports nine locales:
 
 | Locale           | Label (see `LOCALE_META` in `src/lib/i18n/locales.ts`) | Slug group |
 | ----------------- | --------------------------------- | ---------- |
@@ -11,10 +11,12 @@ This site supports seven locales:
 | `cy-001`           | Cymraeg                           | Welsh      |
 | `cy-gb`            | Cymraeg - Great Britain           | Welsh      |
 | `zh-cn`            | 中文                               | Chinese    |
+| `ar-001`           | العربية                            | Arabic     |
+| `ko-001`           | 한국어                              | Korean     |
 
 `src/lib/i18n/locales.ts` also exports `PICKER_LOCALES`: what the header's
 LocalePicker actually offers, in display order (`cy-001` first, then the
-four English variants, then `zh-cn`). It omits `cy-gb`, since its content
+four English variants, then `zh-cn`, `ar-001`, and `ko-001`). It omits `cy-gb`, since its content
 is identical to `cy-001` — see "Welsh" below — so showing both would just
 be two indistinguishable options. `cy-gb` still routes and renders for
 anyone who links to it directly; it's a picker-display choice, not a
@@ -31,15 +33,16 @@ Every page lives at `https://testingexamples.github.io/locales/<locale>/<slug>/`
 (`what-is-automatic-testing`, etc.). The two Welsh locales share one
 Welsh slug per page (`beth-yw-profi-awtomatig`, etc.), and `zh-cn` has its
 own Chinese slug per page (`什么是自动化测试`, etc., in native characters,
-percent-encoded in the actual URL like any non-ASCII IRI) — translating
+percent-encoded in the actual URL like any non-ASCII IRI), as do `ar-001`
+(`ما-هو-الاختبار-الآلي`) and `ko-001` (`자동화-테스트란-무엇인가`) — translating
 the URL itself, not just a locale prefix. One exception: `given-when-then`
 keeps its English slug (and English heading term) in every locale,
 because Given-When-Then/Gherkin is BDD vocabulary, not ordinary prose —
 same treatment as any other technical proper noun on this site.
 
 The full slug table lives in `src/lib/i18n/topics.ts`, one entry per page,
-each carrying its English slug, its Welsh slug, its Chinese slug, and a
-lazy import of its Svelte component.
+each carrying its English slug, its Welsh slug, its Chinese slug, its
+Arabic slug, its Korean slug, and a lazy import of its Svelte component.
 
 **Old flat URLs** (`/what-is-automatic-testing/`, `/about/`, etc.) still
 resolve: each one's route now does nothing but
@@ -58,7 +61,7 @@ external sibling repos' test suites depend on, hardcoded to
 unprefixed URL, unlocalized, byte-for-byte unchanged.
 
 That same fixture section is also rendered — identically, in English, on
-every locale including both Welsh ones and `zh-cn` — as part of each
+every locale including both Welsh ones, `zh-cn`, `ar-001`, and `ko-001` — as part of each
 locale's own home page (`/locales/<locale>/`). It is never translated
 anywhere: it is
 a contract/standard, not content, the same category as a code sample or a
@@ -98,6 +101,34 @@ Chinese: `zh-cn` gets one Simplified Chinese translation per page, written
 directly (not machine-translated word-for-word), with the same proper-noun
 and code-sample exclusions as every other locale. Also machine-assisted,
 native-review-recommended.
+
+Arabic: `ar-001` is Modern Standard Arabic, one translation per page,
+written directly rather than word-for-word, with the same proper-noun and
+code-sample exclusions as every other locale. It is the site's only
+right-to-left locale, which has four consequences:
+
+- `LOCALE_META['ar-001'].dir` is `'rtl'`, and `src/hooks.server.ts` writes
+  `dir="rtl"` onto `<html>` at prerender time, so the page is mirrored from
+  first paint.
+- `static/assets/style.css` uses logical properties (`padding-inline-start`,
+  `text-align: start`, `margin-inline-start`) instead of left/right, so
+  layout mirrors automatically. New CSS must do the same.
+- Code samples, inline `code`, and the home page's fixture section are
+  forced left-to-right in CSS (the last block of `style.css`), not by adding
+  a `dir` attribute: the fixture markup must stay byte-for-byte what the
+  sibling repos expect, and none of that content is ever translated.
+- Arrows in call-to-action labels point the other way (`←`, not `→`).
+
+Korean: `ko-001` gets one Korean translation per page in the polite
+formal register (합니다체), written directly, with the same proper-noun and
+code-sample exclusions as every other locale. Also machine-assisted,
+native-review-recommended.
+
+Slugs for `zh-cn`, `ar-001`, and `ko-001` are native characters, so the
+request pathname is percent-encoded while the slug table is not:
+`switchLocaleHref` in `src/lib/i18n/paths.ts` decodes the path before
+looking the topic up. Without that, switching language from a non-ASCII
+page silently falls back to the target locale's home page.
 
 ## Implementation shape
 

@@ -142,6 +142,68 @@
     }
   };
 
+  const AR: Messages = {
+    metaDescription:
+      'تجهيزات HTML مجانية ومفتوحة المصدر للتدرب على أتمتة المتصفح: ابحث عن العناصر بالمعرّف (id) والاسم والفئة ونص الرابط وXPath، وتفاعل مع مدخلات النماذج.',
+    heading: `مرحبًا بك في ${SITE_NAME}`,
+    intro: `إن كنت جديدًا على أتمتة المتصفح، فأنت في المكان الصحيح. ${SITE_NAME} موقع صغير ومجاني ومفتوح المصدر، بُني لكل من يتعلم جعل المتصفح يؤدي المهام تلقائيًا — النقر والكتابة والبحث والانتظار والتحقق — سواء لم تكتب سطر كود من قبل أو كنت تعرف الأساسيات وتريد مرجعًا سريعًا أو مكانًا موثوقًا لتجربة شيء ما.`,
+    learnHeading: 'تعلّم',
+    learnMoreHeading: 'تعلّم المزيد',
+    examplesHeading: 'أمثلة',
+    practiceHeading: 'تدرّب على هذه الصفحة',
+    practiceBody:
+      'كل ما في الأسفل ملعب تجهيزات ثابت: معرّفات وأسماء وفئات ونصوص ثابتة تستطيع أدوات الأتمتة العثور عليها بموثوقية في كل مرة، وهذا بالضبط ما يجعله مفيدًا للتدرب عليه مباشرةً — وجّه السكربت إليه، واعثر على عنصر، وتفاعل معه، وشاهد ما يحدث. والعقد الدقيق الذي تلتزم به هذه الصفحة موثّق في ملف',
+    links: {
+      whatIsAutomaticTesting: 'ما هو الاختبار الآلي؟',
+      whatIsThePurpose: 'ما الغرض من الاختبار الآلي؟',
+      whatIsTheTestingPyramid: 'ما هو هرم الاختبار الآلي؟',
+      whatIsBrowserAutomation: 'ما هو اختبار أتمتة المتصفح؟',
+      howToStartLearning: 'كيف تبدأ تعلم الاختبار الآلي؟',
+      whatAreRelatedConcepts: 'ما هي المفاهيم ذات الصلة بالاختبار الآلي؟',
+      howDoesAiHelp: 'كيف يساعد الذكاء الاصطناعي في الاختبار الآلي؟',
+      whatIsContinuousIntegration: 'ما هو اختبار التكامل المستمر؟',
+      whatIsDevOps: 'ما هو DevOps للاختبار الآلي؟',
+      whatAreFlowMetrics: 'ما المقاييس التي تفيد الاختبار الآلي؟',
+      whatIsLeanSixSigma: 'كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟',
+      googleSearchExamples: 'أمثلة Google Search',
+      googleMapsExamples: 'أمثلة Google Maps',
+      givenWhenThenExamples: 'أمثلة Given-When-Then',
+      demoApp: 'تطبيق تجريبي',
+      demoAppSuffix: 'تسجيل دخول وأيقونات تنقل وبحث وعلامات تبويب للتدرب عليها'
+    }
+  };
+
+  const KO: Messages = {
+    metaDescription:
+      '브라우저 자동화를 연습하기 위한 무료 오픈 소스 HTML 픽스처: id, name, class, 링크 텍스트, XPath로 요소를 찾고 양식 입력과 상호작용해 보세요.',
+    heading: `${SITE_NAME}에 오신 것을 환영합니다`,
+    intro: `브라우저 자동화가 처음이라면 잘 찾아오셨습니다. ${SITE_NAME}은(는) 브라우저가 클릭, 입력, 검색, 대기, 단언 같은 일을 자동으로 하게 만드는 법을 배우는 모든 사람을 위해 만든 작은 무료 오픈 소스 사이트입니다. 코드를 한 줄도 써 본 적이 없든, 이미 요령을 알고 빠른 참고 자료나 믿을 만한 연습 장소가 필요하든 상관없습니다.`,
+    learnHeading: '학습',
+    learnMoreHeading: '더 알아보기',
+    examplesHeading: '예제',
+    practiceHeading: '이 페이지에서 연습하기',
+    practiceBody:
+      '아래의 모든 것은 안정적인 픽스처 놀이터입니다. 자동화 도구가 매번 안정적으로 찾을 수 있는 고정된 id, name, class, 텍스트로 이루어져 있어서, 스크립트를 여기에 겨누고 요소를 찾고 상호작용하며 무슨 일이 일어나는지 보는 식으로 직접 연습하기에 딱 좋습니다. 이 페이지가 지키는 정확한 계약은 이 저장소의 다음 문서에 정리되어 있습니다:',
+    links: {
+      whatIsAutomaticTesting: '자동화 테스트란 무엇인가?',
+      whatIsThePurpose: '자동화 테스트의 목적은 무엇인가?',
+      whatIsTheTestingPyramid: '자동화 테스트 피라미드란 무엇인가?',
+      whatIsBrowserAutomation: '브라우저 자동화 테스트란 무엇인가?',
+      howToStartLearning: '자동화 테스트 학습은 어떻게 시작하나요?',
+      whatAreRelatedConcepts: '자동화 테스트와 관련된 개념은 무엇인가?',
+      howDoesAiHelp: '인공지능은 자동화 테스트를 어떻게 돕는가?',
+      whatIsContinuousIntegration: '지속적 통합 테스트란 무엇인가?',
+      whatIsDevOps: '자동화 테스트를 위한 DevOps란 무엇인가?',
+      whatAreFlowMetrics: '자동화 테스트에 도움이 되는 지표는 무엇인가?',
+      whatIsLeanSixSigma: 'Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가?',
+      googleSearchExamples: 'Google Search 예제',
+      googleMapsExamples: 'Google Maps 예제',
+      givenWhenThenExamples: 'Given-When-Then 예제',
+      demoApp: '데모 앱',
+      demoAppSuffix: '연습할 수 있는 로그인, 내비게이션 아이콘, 검색, 탭'
+    }
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -149,7 +211,9 @@
     'en-us': EN_US,
     'cy-gb': CY,
     'cy-001': CY,
-    'zh-cn': ZH
+    'zh-cn': ZH,
+    'ar-001': AR,
+    'ko-001': KO
   };
 
   const m = $derived(MESSAGES[locale]);
@@ -214,7 +278,7 @@
      /how-to-start-learning-automatic-testing/ keep the line-separator style. */
   .repo-list {
     list-style: disc;
-    padding-left: 1.5rem;
+    padding-inline-start: 1.5rem;
   }
   .repo-list li {
     padding: 0.2rem 0;

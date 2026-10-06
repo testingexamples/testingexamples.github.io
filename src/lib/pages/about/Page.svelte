@@ -179,6 +179,86 @@
     repoCta: 'GitHub 上的仓库'
   };
 
+  const AR: Messages = {
+    title: 'حول',
+    metaDescription: `حول Testing Examples: ما هو، ومستودعات العرض التوضيحي الشقيقة البالغ عددها ${DEMO_MATRIX_COUNT} التي يدعمها، وكيف بُني هذا الموقع.`,
+    heading: 'حول',
+    intro: 'يقدّم Testing Examples أمثلة اختبار مجانية ومفتوحة المصدر لأتمتة المتصفح.',
+    whatForHeading: 'ما الغرض من هذا الموقع',
+    whatForP:
+      'هذه الصفحة الرئيسية صفحة بسيطة عن قصد من تجهيزات HTML — عناصر ذات معرّفات (ids) وأسماء وفئات ونصوص روابط وقوائم ومدخلات نماذج معروفة — لكل من يتعلم أدوات أتمتة المتصفح أو يتدرب عليها مثل Selenium WebDriver أو WebdriverIO أو Playwright. والمقصود أن تكون هدفًا ثابتًا: العلامات نفسها، والمعرّفات نفسها، والنص المرئي نفسه، في كل مرة.',
+    factsLabel: 'حقائق المشروع',
+    factName: 'الاسم',
+    factLicence: 'الترخيص',
+    factAuthor: 'المؤلف',
+    factRepository: 'المستودع',
+    factFixtureContract: 'عقد التجهيزات',
+    factFixtureContractSuffix: 'في المستودع',
+    matrixHeading: `${DEMO_MATRIX_COUNT} مستودع عرض توضيحي: ثلاث أدوات × حتى أربع لغات × حتى أربعة أهداف`,
+    matrixP1:
+      'يجمع كل مستودع شقيق بين أداة أتمتة متصفح واحدة (Selenium أو WebdriverIO أو Playwright) ولغة واحدة (JavaScript أو Python أو Rust أو TypeScript) وهدف واحد. هدفان منها عرضان توضيحيان حقيقيان قابلان للتشغيل: صفحة التجهيزات الخاصة بهذا الموقع (خمسة من هذه المستودعات — تلك التي يعامل ملفا AGENTS.md وspec/index.md في هذا الموقع معرّفاتها وأسماءها وفئاتها ونصوصها بالضبط كعقد) وموقع الحكومة العام الحقيقي nhs.wales. أما الهدفان الآخران، Google Search وGoogle Maps، فتوضيحيان فقط — يذكر ملف AGENTS.md في كل مستودع من هذا النوع بوضوح أنه يجب ألا يُنفَّذ كوده أبدًا على الموقع الحي، لأن شروط خدمة Google تقيّد الاستعلام الآلي؛ انظر',
+    matrixP2:
+      'للاطلاع على النمط نفسه مباشرةً في هذا الموقع. خليتان فارغتان عن قصد — فلا توجد نسخة NHS Wales من Selenium TypeScript ولا من WebdriverIO TypeScript.',
+    tableCaption: 'عائلة مستودعات العرض التوضيحي كاملة، صف لكل أداة ولغة، وعمود لكل هدف',
+    columnTool: 'الأداة',
+    columnLanguage: 'اللغة',
+    columnThisSite: 'هذا الموقع',
+    notBuilt: 'لم يُنشأ لهذه اللغة',
+    walkthroughsHeading: 'شروحات استراتيجيات تحديد العناصر (تستهدف هذا الموقع)',
+    workedExampleHeading: 'مثال عملي واقعي (يستهدف nhs.wales)',
+    workedExampleSuffix: 'تتبع مستودعات NHS Wales الخمسة الأخرى النمط نفسه في الجدول أعلاه.',
+    builtHeading: 'كيف بُني الموقع',
+    builtP:
+      'هذا الموقع مشروع SvelteKit يستخدم @sveltejs/adapter-static، ويُولَّد مسبقًا إلى HTML عادي ويُنشر على GitHub Pages عبر GitHub Actions مع كل دفع إلى main.',
+    designSystemLabel: 'نظام التصميم',
+    designSystemP:
+      'تأتي المكونات من Lily Design System — مكونات Svelte تُخرج HTML دلاليًا وARIA صحيحة، ويحمل كل منها خطّاف فئة ثابتًا واحدًا. ويستخدم هذا الموقع كذلك سمات Lily الرسمية نفسها: جميع الملفات الخمسة والأربعين في static/assets/themes/، منسوخة حرفيًا من مستودع Lily، وكل منها ورقة أنماط كاملة قائمة بذاتها تنسّق كل مكونات Lily البالغ عددها نحو 492 — لا مجرد لونين مختارين يدويًا. ولذلك لم يعد static/assets/style.css ينسّق خطّافات مكونات Lily نفسها على الإطلاق؛ بل يحتوي طبقة صغيرة من الأسماء المستعارة، وتخطيط الرأس والتنقل والتذييل الخاص بهذا الموقع (وهي ليست مكونات Lily)، وحفنة من الاستثناءات الموثقة صراحةً حيث لم يناسب افتراضي Lily تخطيط هذا الموقع المحدد — انظر التعليق في رأس ذلك الملف لمعرفة ما هي وما سببها بالضبط. ويبدّل ThemePicker من Lily بين السمات الخمس والأربعين مباشرةً.',
+    exceptionP:
+      'الاستثناء الوحيد هو قسم التجهيزات في الصفحة الرئيسية (من Id Examples إلى Form Input Examples): تبقى هذه العناصر HTML عاديًا لا مكونات Lily، لتبقى معرّفاتها وأسماؤها وفئاتها ونصوصها كما تتوقعها مستودعات العرض التوضيحي الشقيقة بالضبط.',
+    runLocallyLabel: 'شغّل هذا الموقع محليًا',
+    repoCta: 'المستودع على GitHub'
+  };
+
+  const KO: Messages = {
+    title: '소개',
+    metaDescription: `Testing Examples 소개: 이것이 무엇인지, 지원하는 ${DEMO_MATRIX_COUNT}개의 자매 데모 저장소, 그리고 이 사이트가 어떻게 만들어졌는지 설명합니다.`,
+    heading: '소개',
+    intro: 'Testing Examples는 브라우저 자동화를 위한 무료 오픈 소스 테스트 예제를 제공합니다.',
+    whatForHeading: '이 사이트의 용도',
+    whatForP:
+      '이 홈페이지는 의도적으로 단순하게 만든 HTML 픽스처 페이지입니다. id, name, class, 링크 텍스트, 목록, 양식 입력이 정해져 있는 요소들로, Selenium WebDriver, WebdriverIO, Playwright 같은 브라우저 자동화 도구를 배우거나 연습하는 모든 사람을 위한 것입니다. 안정적인 대상이 되도록 만들어졌습니다. 언제나 같은 마크업, 같은 식별자, 같은 화면 텍스트입니다.',
+    factsLabel: '프로젝트 정보',
+    factName: '이름',
+    factLicence: '라이선스',
+    factAuthor: '저자',
+    factRepository: '저장소',
+    factFixtureContract: '픽스처 계약',
+    factFixtureContractSuffix: '(저장소 내)',
+    matrixHeading: `${DEMO_MATRIX_COUNT}개의 데모 저장소: 도구 세 가지 × 최대 네 가지 언어 × 최대 네 가지 대상`,
+    matrixP1:
+      '모든 자매 저장소는 브라우저 자동화 도구 하나(Selenium, WebdriverIO, Playwright 중 하나)와 언어 하나(JavaScript, Python, Rust, TypeScript 중 하나)를 하나의 대상에 짝지어 놓았습니다. 두 대상은 실제로 실행할 수 있는 데모입니다. 이 사이트 자체의 픽스처 페이지(이 사이트의 AGENTS.md와 spec/index.md가 정확한 id, name, class, 텍스트를 계약으로 다루는 저장소 다섯 개)와 실제 공개 정부 사이트 nhs.wales입니다. 나머지 두 대상인 Google Search와 Google Maps는 설명용일 뿐입니다. 이런 저장소 각각의 AGENTS.md에는 Google의 서비스 약관이 자동화된 쿼리를 제한하므로 그 코드를 실제 사이트를 상대로 절대 실행해서는 안 된다고 분명히 적혀 있습니다. 같은 패턴을 이 사이트에서 직접 보여 주는 것은 다음을 참고하세요:',
+    matrixP2:
+      '두 칸은 의도적으로 비어 있습니다. Selenium TypeScript와 WebdriverIO TypeScript에는 NHS Wales 버전이 없습니다.',
+    tableCaption: '전체 데모 저장소 군: 도구와 언어별로 한 행, 대상별로 한 열',
+    columnTool: '도구',
+    columnLanguage: '언어',
+    columnThisSite: '이 사이트',
+    notBuilt: '이 언어용으로는 만들어지지 않음',
+    walkthroughsHeading: '로케이터 전략 따라 하기 (이 사이트 대상)',
+    workedExampleHeading: '실제 사례 한 가지 (nhs.wales 대상)',
+    workedExampleSuffix: '나머지 다섯 개의 NHS Wales 저장소도 위 표에서 같은 패턴을 따릅니다.',
+    builtHeading: '사이트가 만들어진 방식',
+    builtP:
+      '이 사이트는 @sveltejs/adapter-static을 사용하는 SvelteKit 프로젝트로, 일반 HTML로 미리 렌더링되어 main에 푸시될 때마다 GitHub Actions가 GitHub Pages에 배포합니다.',
+    designSystemLabel: '디자인 시스템',
+    designSystemP:
+      '컴포넌트는 Lily Design System에서 가져왔습니다. 의미론적 HTML과 올바른 ARIA를 렌더링하고 각각 하나의 안정적인 클래스 훅을 가진 Svelte 컴포넌트입니다. 이 사이트는 Lily의 공식 테마도 그대로 사용합니다. static/assets/themes/ 아래의 45개 파일 전부를 Lily 저장소에서 그대로 복사했으며, 각각이 두 가지 색상만 손으로 고른 것이 아니라 Lily의 약 492개 컴포넌트를 모두 스타일링하는 완결된 독립 스타일시트입니다. 따라서 static/assets/style.css는 더 이상 Lily 자체의 컴포넌트 훅을 전혀 스타일링하지 않습니다. 작은 별칭 계층, 이 사이트 고유의 헤더/내비게이션/푸터 레이아웃(Lily 컴포넌트가 아님), 그리고 Lily의 기본값이 이 사이트의 특정 레이아웃에 맞지 않아 명시적으로 문서화한 소수의 예외만 담고 있습니다. 정확히 무엇이 왜 그런지는 해당 파일의 머리말 주석을 참고하세요. Lily의 ThemePicker는 45개 테마를 실시간으로 바꿔 줍니다.',
+    exceptionP:
+      '유일한 예외는 홈페이지의 픽스처 섹션(Id Examples부터 Form Input Examples까지)입니다. 이 요소들은 Lily 컴포넌트가 아닌 일반 HTML로 유지되어, id, name, class, 텍스트가 자매 데모 저장소가 기대하는 그대로 유지됩니다.',
+    runLocallyLabel: '이 사이트를 로컬에서 실행하기',
+    repoCta: 'GitHub 저장소'
+  };
+
   const MESSAGES: Record<Locale, Messages> = {
     'en-001': EN_001,
     'en-gb': EN_001,
@@ -186,7 +266,9 @@
     'en-us': EN_001,
     'cy-gb': CY,
     'cy-001': CY,
-    'zh-cn': ZH
+    'zh-cn': ZH,
+    'ar-001': AR,
+    'ko-001': KO
   };
 
   const m = $derived(MESSAGES[locale]);

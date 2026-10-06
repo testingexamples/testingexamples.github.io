@@ -17,7 +17,15 @@ export function switchLocaleHref(pathname: string, targetLocale: Locale): string
   const match = pathname.match(/^\/locales\/([^/]+)\/(.*)$/);
   if (!match) return localeHref(targetLocale, 'home');
   const [, currentLocale, rest] = match;
-  const topicId = topicForSlug(currentLocale as Locale, rest);
+  // pathname is percent-encoded, but topic slugs for zh-cn and ar-001 are
+  // stored as native characters, so decode before looking the slug up.
+  let slug = rest;
+  try {
+    slug = decodeURIComponent(rest);
+  } catch {
+    // Malformed escape sequence: fall through with the raw segment.
+  }
+  const topicId = topicForSlug(currentLocale as Locale, slug);
   if (!topicId) return localeHref(targetLocale, 'home');
   return localeHref(targetLocale, topicId);
 }
