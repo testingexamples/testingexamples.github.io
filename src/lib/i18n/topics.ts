@@ -44,33 +44,33 @@ function slugFor(en: string, cy: string, zh: string, ar: string, ko: string) {
 export const TOPICS: Record<TopicId, TopicDefinition> = {
   home: {
     slug: slugFor('', '', '', '', ''),
-    load: () => import('$lib/pages/home/Page.svelte')
+    load: () => import('#lib/pages/home/Page.svelte')
   },
   about: {
     slug: slugFor('about', 'ynghylch', '关于', 'حول', '소개'),
-    load: () => import('$lib/pages/about/Page.svelte')
+    load: () => import('#lib/pages/about/Page.svelte')
   },
   app: {
     slug: slugFor('app', 'ap', '应用', 'التطبيق', '앱'),
-    load: () => import('$lib/pages/app/Page.svelte')
+    load: () => import('#lib/pages/app/Page.svelte')
   },
   examples: {
     slug: slugFor('examples', 'enghreifftiau', '示例', 'أمثلة', '예제'),
-    load: () => import('$lib/pages/examples/Page.svelte')
+    load: () => import('#lib/pages/examples/Page.svelte')
   },
   'examples-google-search': {
     slug: slugFor('examples/google-search', 'enghreifftiau/chwilio-google', '示例/谷歌搜索', 'أمثلة/بحث-جوجل', '예제/구글-검색'),
-    load: () => import('$lib/pages/examples-google-search/Page.svelte')
+    load: () => import('#lib/pages/examples-google-search/Page.svelte')
   },
   'examples-google-maps': {
     slug: slugFor('examples/google-maps', 'enghreifftiau/mapiau-google', '示例/谷歌地图', 'أمثلة/خرائط-جوجل', '예제/구글-지도'),
-    load: () => import('$lib/pages/examples-google-maps/Page.svelte')
+    load: () => import('#lib/pages/examples-google-maps/Page.svelte')
   },
   'given-when-then': {
     // Kept in English for every locale: "Given-When-Then" (Gherkin) is a
     // BDD vocabulary term, not ordinary prose — see spec/locales/index.md.
     slug: slugFor('given-when-then', 'given-when-then', 'given-when-then', 'given-when-then', 'given-when-then'),
-    load: () => import('$lib/pages/given-when-then/Page.svelte')
+    load: () => import('#lib/pages/given-when-then/Page.svelte')
   },
   'how-does-artificial-intelligence-help-automatic-testing': {
     slug: slugFor(
@@ -80,7 +80,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'كيف-يساعد-الذكاء-الاصطناعي-في-الاختبار-الآلي',
       '인공지능은-자동화-테스트를-어떻게-돕는가'
     ),
-    load: () => import('$lib/pages/how-does-artificial-intelligence-help-automatic-testing/Page.svelte')
+    load: () => import('#lib/pages/how-does-artificial-intelligence-help-automatic-testing/Page.svelte')
   },
   'how-to-start-learning-automatic-testing': {
     slug: slugFor(
@@ -90,11 +90,11 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'كيف-تبدأ-تعلم-الاختبار-الآلي',
       '자동화-테스트-학습-시작-방법'
     ),
-    load: () => import('$lib/pages/how-to-start-learning-automatic-testing/Page.svelte')
+    load: () => import('#lib/pages/how-to-start-learning-automatic-testing/Page.svelte')
   },
   learn: {
     slug: slugFor('learn', 'dysgu', '学习', 'تعلم', '학습'),
-    load: () => import('$lib/pages/learn/Page.svelte')
+    load: () => import('#lib/pages/learn/Page.svelte')
   },
   'what-are-flow-metrics-for-automatic-testing': {
     slug: slugFor(
@@ -104,7 +104,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'ما-هي-مقاييس-التدفق-للاختبار-الآلي',
       '자동화-테스트에-도움이-되는-지표'
     ),
-    load: () => import('$lib/pages/what-are-flow-metrics-for-automatic-testing/Page.svelte')
+    load: () => import('#lib/pages/what-are-flow-metrics-for-automatic-testing/Page.svelte')
   },
   'what-are-related-concepts-for-automatic-testing': {
     slug: slugFor(
@@ -114,11 +114,11 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'ما-هي-المفاهيم-ذات-الصلة-بالاختبار-الآلي',
       '자동화-테스트와-관련된-개념'
     ),
-    load: () => import('$lib/pages/what-are-related-concepts-for-automatic-testing/Page.svelte')
+    load: () => import('#lib/pages/what-are-related-concepts-for-automatic-testing/Page.svelte')
   },
   'what-is-automatic-testing': {
     slug: slugFor('what-is-automatic-testing', 'beth-yw-profi-awtomatig', '什么是自动化测试', 'ما-هو-الاختبار-الآلي', '자동화-테스트란-무엇인가'),
-    load: () => import('$lib/pages/what-is-automatic-testing/Page.svelte')
+    load: () => import('#lib/pages/what-is-automatic-testing/Page.svelte')
   },
   'what-is-browser-automation-testing': {
     slug: slugFor(
@@ -128,7 +128,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'ما-هو-اختبار-أتمتة-المتصفح',
       '브라우저-자동화-테스트란-무엇인가'
     ),
-    load: () => import('$lib/pages/what-is-browser-automation-testing/Page.svelte')
+    load: () => import('#lib/pages/what-is-browser-automation-testing/Page.svelte')
   },
   'what-is-continuous-integration-testing': {
     slug: slugFor(
@@ -138,7 +138,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'ما-هو-اختبار-التكامل-المستمر',
       '지속적-통합-테스트란-무엇인가'
     ),
-    load: () => import('$lib/pages/what-is-continuous-integration-testing/Page.svelte')
+    load: () => import('#lib/pages/what-is-continuous-integration-testing/Page.svelte')
   },
   'what-is-devops-for-automatic-testing': {
     slug: slugFor(
@@ -148,7 +148,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'ما-هو-DevOps-للاختبار-الآلي',
       '자동화-테스트를-위한-DevOps란-무엇인가'
     ),
-    load: () => import('$lib/pages/what-is-devops-for-automatic-testing/Page.svelte')
+    load: () => import('#lib/pages/what-is-devops-for-automatic-testing/Page.svelte')
   },
   'what-is-lean-six-sigma-for-automatic-testing': {
     slug: slugFor(
@@ -158,7 +158,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'كيف-يقود-سيكس-سيجما-الاختبار-اليدوي-إلى-الاختبار-الآلي',
       'Six-Sigma는-수동-테스트를-어떻게-자동화-테스트로-이끄는가'
     ),
-    load: () => import('$lib/pages/what-is-lean-six-sigma-for-automatic-testing/Page.svelte')
+    load: () => import('#lib/pages/what-is-lean-six-sigma-for-automatic-testing/Page.svelte')
   },
   'what-is-the-purpose-of-automatic-testing': {
     slug: slugFor(
@@ -168,7 +168,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'ما-هو-الغرض-من-الاختبار-الآلي',
       '자동화-테스트의-목적은-무엇인가'
     ),
-    load: () => import('$lib/pages/what-is-the-purpose-of-automatic-testing/Page.svelte')
+    load: () => import('#lib/pages/what-is-the-purpose-of-automatic-testing/Page.svelte')
   },
   'what-is-the-testing-pyramid': {
     slug: slugFor(
@@ -178,7 +178,7 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'ما-هو-هرم-الاختبار-الآلي',
       '자동화-테스트-피라미드란-무엇인가'
     ),
-    load: () => import('$lib/pages/what-is-the-testing-pyramid/Page.svelte')
+    load: () => import('#lib/pages/what-is-the-testing-pyramid/Page.svelte')
   }
 };
 

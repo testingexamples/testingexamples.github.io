@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
-import { LOCALES, isLocale } from '$lib/i18n/locales';
-import { TOPICS, TOPIC_IDS, slugForTopic, topicForSlug } from '$lib/i18n/topics';
+import { LOCALES, isLocale } from '#lib/i18n/locales.js';
+import { TOPICS, TOPIC_IDS, slugForTopic, topicForSlug } from '#lib/i18n/topics.js';
 import type { EntryGenerator, PageLoad } from './$types';
 
 export const prerender = true;

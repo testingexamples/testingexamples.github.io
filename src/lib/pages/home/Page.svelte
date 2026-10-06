@@ -1,9 +1,9 @@
 <script lang="ts">
   import { SectionHeading } from 'lily-design-system-svelte-headless';
-  import SiteFixtures from '$lib/components/SiteFixtures.svelte';
-  import { SITE_NAME } from '$lib/site';
-  import { localeHref } from '$lib/i18n/paths';
-  import type { Locale } from '$lib/i18n/locales';
+  import SiteFixtures from '#lib/components/SiteFixtures.svelte';
+  import { SITE_NAME } from '#lib/site.js';
+  import { localeHref } from '#lib/i18n/paths.js';
+  import type { Locale } from '#lib/i18n/locales.js';
 
   let { locale }: { locale: Locale } = $props();
 

@@ -16,9 +16,9 @@
     DEMO_MATRIX,
     DEMO_MATRIX_COUNT,
     demoRepoUrl
-  } from '$lib/site';
-  import { localeHref } from '$lib/i18n/paths';
-  import type { Locale } from '$lib/i18n/locales';
+  } from '#lib/site.js';
+  import { localeHref } from '#lib/i18n/paths.js';
+  import type { Locale } from '#lib/i18n/locales.js';
 
   let { locale }: { locale: Locale } = $props();
 

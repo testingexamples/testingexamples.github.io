@@ -20,8 +20,8 @@
     PasswordInput,
     SubmitInput
   } from 'lily-design-system-svelte-headless';
-  import { localeHref } from '$lib/i18n/paths';
-  import type { Locale } from '$lib/i18n/locales';
+  import { localeHref } from '#lib/i18n/paths.js';
+  import type { Locale } from '#lib/i18n/locales.js';
 
   let { locale }: { locale: Locale } = $props();
 

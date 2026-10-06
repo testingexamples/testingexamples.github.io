@@ -1,19 +1,16 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { goto, afterNavigate } from '$app/navigation';
-  import { browser } from '$app/environment';
+  import { browser } from '$app/env';
   import { SkipLink } from 'lily-design-system-svelte-headless';
   import PickerBar from 'lily-design-system-svelte-picker-bar';
-  import { SITE_NAME, REPO } from '$lib/site';
-  import { DEFAULT_LOCALE, PICKER_LOCALES, LOCALE_LABELS, isLocale, type Locale } from '$lib/i18n/locales';
-  import { chromeFor } from '$lib/i18n/chrome';
-  import { localeHref, switchLocaleHref } from '$lib/i18n/paths';
+  import { SITE_NAME, REPO } from '#lib/site.js';
+  import { DEFAULT_LOCALE, PICKER_LOCALES, LOCALE_LABELS, isLocale, type Locale } from '#lib/i18n/locales.js';
+  import { chromeFor } from '#lib/i18n/chrome.js';
+  import { localeHref, switchLocaleHref } from '#lib/i18n/paths.js';
 
   let { children } = $props();
-
-  let locale = $derived<Locale>(
-    isLocale(page.params.locale ?? '') ? (page.params.locale as Locale) : DEFAULT_LOCALE
-  );
+  let locale = $derived<Locale>(isLocale(page.params.locale ?? '') ? page.params.locale as Locale : DEFAULT_LOCALE);
   let chrome = $derived(chromeFor(locale));
 
   function handleLocaleChange(nextLocale: string): void {
@@ -28,7 +25,9 @@
   // that <svelte:head> update) has settled, falling back to page.data.title
   // for the legacy redirect-stub routes, which never render at all.
   let shareTitle = $state(browser ? document.title : '');
-  afterNavigate(() => {
+
+  afterNavigate(({ shallow }) => {
+    if (shallow) return;
     if (browser) shareTitle = document.title;
   });
 
@@ -178,9 +177,7 @@
     stroke-linejoin="round"
     aria-hidden="true"
     style="display: block;"
-  >
-    <path d="M2.5 8h11M9 3.5 13.5 8 9 12.5" />
-  </svg>
+  ><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"></path></svg>
 {/snippet}
 
 <main id="main" class="site-main">

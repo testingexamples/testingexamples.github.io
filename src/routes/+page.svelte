@@ -1,6 +1,6 @@
 <script lang="ts">
   import { SectionHeading } from 'lily-design-system-svelte-headless';
-  import SiteFixtures from '$lib/components/SiteFixtures.svelte';
+  import SiteFixtures from '#lib/components/SiteFixtures.svelte';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
