@@ -9,16 +9,20 @@ Pages by `.github/workflows/deploy.yml` on every push to `main`.
 The home page (`src/routes/+page.svelte`) contains a fixture section — the
 markup under the headings "Id Examples" through "Form Input Examples": every
 `id`, `name`, `class`, `href`, and visible text in it. This markup is a
-**contract** depended on directly by five sibling repos' source code:
+**contract** depended on directly by nine sibling repos' source code:
 
 - `../demo-playwright-javascript/src/demo.js`
 - `../demo-playwright-python/src/demo.py`
 - `../demo-selenium-javascript/src/demo.js`
 - `../demo-webdriverio-javascript/test/specs/demo.js`
 - `../demo-playwright-typescript/src/demo.ts`
+- `../demo-selenium-java/src/main/java/demo/Demo.java`
+- `../demo-playwright-java/src/main/java/demo/Demo.java`
+- `../demo-selenium-c-sharp/Program.cs`
+- `../demo-playwright-c-sharp/Program.cs`
 
 If you change any fixture id, name, class, or visible text, **you must
-first check every one of those five repos' source for that selector and
+first check every one of those nine repos' source for that selector and
 coordinate the change** — grep each repo, not just the file paths above, in
 case a `spec/index.md` there also names the selector — or you will silently
 break their tests. Do not add, remove, or rename a fixture id/name/class
@@ -31,7 +35,7 @@ disagree, that is a defect in one of them — fix it before doing anything
 else.
 
 `tests/fixtures.spec.ts` is the mechanical enforcement of that contract: a
-Playwright test that visits `/` and asserts every selector the five sibling
+Playwright test that visits `/` and asserts every selector the nine sibling
 repos use still resolves. Keep it passing.
 
 The fixture markup itself lives in `src/lib/components/SiteFixtures.svelte`

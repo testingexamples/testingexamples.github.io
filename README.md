@@ -6,9 +6,10 @@ The project's centerpiece is a small, deliberately stable web page of HTML
 fixtures — elements with known ids, names, classes, link text, ordered and
 unordered lists, and form inputs — for anyone learning or exercising browser
 automation tools such as Selenium WebDriver, WebdriverIO, or Playwright.
-Eleven sibling repositories exercise this site (or a real-world site) using
-those tools; see [`spec/index.md`](spec/index.md) for the exact contract
-five of them depend on.
+Dozens of sibling repositories exercise this site (or a real-world site) using
+those tools, in JavaScript, TypeScript, Python, Rust, Java, and C#, along with
+Claude Code skills that teach each tool-and-language pair; see
+[`spec/index.md`](spec/index.md) for the exact contract nine of them depend on.
 
 - Live site: <https://testingexamples.github.io>
 - Fixture contract: [`spec/index.md`](spec/index.md) — the authoritative,

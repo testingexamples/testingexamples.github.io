@@ -4,7 +4,7 @@
 
 This site's home page (`/`) is a stable page of HTML fixtures for practicing
 browser automation. Its "Id Examples" through "Form Input Examples" sections
-are a contract: five sibling repos' automatic tests and walkthroughs locate
+are a contract: nine sibling repos' automatic tests and walkthroughs locate
 elements on this exact page by the ids, names, classes, link text, and XPath
 expressions documented below. This document is the single source of truth
 for that contract.
@@ -126,7 +126,7 @@ coordinating with the sibling repos.
 </form>
 ```
 
-### Selectors the five sibling repos actually use
+### Selectors the nine sibling repos actually use
 
 For reference, the selectors each sibling repo exercises against this page
 (a subset of the full contract above, but the exact set that must never
@@ -261,7 +261,7 @@ use headings:
 
 ## Acceptance criteria
 
-- Every id/selector referenced by the five sibling repos (listed in
+- Every id/selector referenced by the nine sibling repos (listed in
   AGENTS.md) still resolves on the deployed home page, exactly as specified
   above.
 - `pnpm build` succeeds (SvelteKit's `strict: true` static prerendering
@@ -287,6 +287,6 @@ markup that used to live directly in `README.md` now lives in
 The previous version of the unordered-list fixture had a duplicate-id bug —
 both "bravo" and "charlie" `<li>` elements shared the id `ul-example-1-li-2`.
 That has been fixed here and in the page: "charlie" now has id
-`ul-example-1-li-3`. None of the five sibling repos reference
+`ul-example-1-li-3`. None of the then-five sibling repos reference
 `ul-example-*` or `ol-example-*` ids in their source (confirmed by grep
-across all five repos before making this change), so the fix was safe.
+across all five repos then in existence, before making this change), so the fix was safe.

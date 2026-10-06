@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 // This suite is the mechanical enforcement of spec/index.md's Acceptance
-// criteria: every selector the five sibling repos use against this site's
+// criteria: every selector the nine sibling repos use against this site's
 // home page must keep resolving, with the exact ids/names/classes/text
 // documented there. See AGENTS.md for why this matters and which repos
 // depend on it.
