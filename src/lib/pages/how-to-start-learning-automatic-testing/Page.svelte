@@ -1,6 +1,6 @@
 <script lang="ts">
   import { SectionHeading, Separator, InformationCallout, CallToAction } from 'lily-design-system-svelte-headless';
-  import { GETTING_STARTED_DEMO_REPOS } from '#lib/site.js';
+  import { GETTING_STARTED_DEMO_REPOS, SITE_URL } from '#lib/site.js';
   import { localeHref } from '#lib/i18n/paths.js';
   import type { Locale } from '#lib/i18n/locales.js';
 
@@ -31,7 +31,7 @@
 
     s3Heading: string;
     s3P1Pre: string;
-    s3HomeLinkText: string;
+    s3PracticeLinkText: string;
     s3P1Post: string;
     s3P2Pre: string;
     s3P2Post: string;
@@ -97,10 +97,10 @@
 
     s3Heading: 'Install it and run one script against this site',
     s3P1Pre: 'Follow your chosen tool\'s own "getting started" guide to install it, then point your very first script at ',
-    s3HomeLinkText: "this site's own home page",
+    s3PracticeLinkText: "the practice page",
     s3P1Post:
-      ". This site was built for exactly that: every element on the home page has a stable id, name, class, or link text you can practice finding — no guesswork about whether the markup will change under you.",
-    s3P2Pre: 'A reasonable first script: open the home page, find the element with id ',
+      ". This site was built for exactly that: every element on the practice page has a stable id, name, class, or link text you can practice finding — no guesswork about whether the markup will change under you.",
+    s3P2Pre: 'A reasonable first script: open the practice page, find the element with id ',
     s3P2Post:
       ', and print or assert its text. Then try finding an element by name, by class, and by link text. Small, deliberate wins first.',
     s3AskAi: [
@@ -182,10 +182,10 @@
     s3Heading: 'Ei osod a rhedeg un sgript yn erbyn y wefan hon',
     s3P1Pre:
       "Dilynwch ganllaw \"dechrau arni\" eich offeryn dewisol ei hun i'w osod, yna anelwch eich sgript gyntaf un at ",
-    s3HomeLinkText: "hafan y wefan hon ei hun",
+    s3PracticeLinkText: "y dudalen ymarfer",
     s3P1Post:
-      ". Adeiladwyd y wefan hon ar gyfer union hynny: mae gan bob elfen ar yr hafan id, name, class, neu destun dolen sefydlog y gallwch ymarfer dod o hyd iddo — dim dyfalu ynghylch a fydd y marcio'n newid oddi tanoch.",
-    s3P2Pre: "Sgript gyntaf resymol: agorwch yr hafan, dewch o hyd i'r elfen ag id ",
+      ". Adeiladwyd y wefan hon ar gyfer union hynny: mae gan bob elfen ar y dudalen ymarfer id, name, class, neu destun dolen sefydlog y gallwch ymarfer dod o hyd iddo — dim dyfalu ynghylch a fydd y marcio'n newid oddi tanoch.",
+    s3P2Pre: "Sgript gyntaf resymol: agorwch y dudalen ymarfer, dewch o hyd i'r elfen ag id ",
     s3P2Post:
       ", ac argraffwch neu wiriwch ei thestun. Yna ceisiwch ddod o hyd i elfen wrth ei enw, wrth ei dosbarth, ac wrth destun dolen. Buddugoliaethau bach, bwriadol yn gyntaf.",
     s3AskAi: [
@@ -261,10 +261,10 @@
 
     s3Heading: '安装它，并对本站运行一个脚本',
     s3P1Pre: '按照你所选工具自己的“入门指南”完成安装，然后把你的第一个脚本指向',
-    s3HomeLinkText: '本站自己的主页',
+    s3PracticeLinkText: '练习页面',
     s3P1Post:
-      '。本站正是为此而建：主页上的每一个元素都有一个稳定的 id、name、class 或链接文字，供你练习查找——不用去猜标记会不会在你脚下发生变化。',
-    s3P2Pre: '一个合理的第一个脚本：打开主页，找到 id 为',
+      '。本站正是为此而建：练习页面上的每一个元素都有一个稳定的 id、name、class 或链接文字，供你练习查找——不用去猜标记会不会在你脚下发生变化。',
+    s3P2Pre: '一个合理的第一个脚本：打开练习页面，找到 id 为',
     s3P2Post: '的元素，并打印或断言它的文字。然后再试着按 name、按 class、按链接文字来查找元素。先拿下一些小而明确的胜利。',
     s3AskAi: [
       '我刚第一次安装了一个浏览器自动化工具，卡在了一个安装错误上——最常见的首次运行问题有哪些，我该如何解决？',
@@ -341,10 +341,10 @@
 
     s3Heading: 'ثبّتها وشغّل سكربتًا واحدًا على هذا الموقع',
     s3P1Pre: 'اتبع دليل «البدء» الخاص بأداتك لتثبيتها، ثم وجّه أول سكربت لك إلى ',
-    s3HomeLinkText: 'الصفحة الرئيسية لهذا الموقع نفسه',
+    s3PracticeLinkText: 'صفحة التدريب',
     s3P1Post:
-      '. بُني هذا الموقع لهذا الغرض بالضبط: لكل عنصر في الصفحة الرئيسية معرّف أو اسم أو فئة أو نص رابط ثابت يمكنك التدرب على العثور عليه — دون تخمين في ما إذا كانت العلامات ستتغير من تحتك.',
-    s3P2Pre: 'سكربت أول معقول: افتح الصفحة الرئيسية، واعثر على العنصر ذي المعرّف ',
+      '. بُني هذا الموقع لهذا الغرض بالضبط: لكل عنصر في صفحة التدريب معرّف أو اسم أو فئة أو نص رابط ثابت يمكنك التدرب على العثور عليه — دون تخمين في ما إذا كانت العلامات ستتغير من تحتك.',
+    s3P2Pre: 'سكربت أول معقول: افتح صفحة التدريب، واعثر على العنصر ذي المعرّف ',
     s3P2Post:
       '، واطبع نصه أو تحقق منه. ثم جرّب العثور على عنصر بالاسم، وبالفئة، وبنص الرابط. انتصارات صغيرة متعمدة أولًا.',
     s3AskAi: [
@@ -422,10 +422,10 @@
 
     s3Heading: '설치하고 이 사이트를 대상으로 스크립트 하나를 실행하세요',
     s3P1Pre: '선택한 도구의 "시작하기" 안내에 따라 설치한 다음, 첫 스크립트를 ',
-    s3HomeLinkText: '이 사이트의 홈페이지',
+    s3PracticeLinkText: '연습 페이지',
     s3P1Post:
-      '에 겨누세요. 이 사이트는 바로 그 목적으로 만들어졌습니다. 홈페이지의 모든 요소에는 찾아서 연습할 수 있는 안정적인 id, name, class, 링크 텍스트가 있어서 마크업이 발밑에서 바뀔지 걱정할 필요가 없습니다.',
-    s3P2Pre: '적당한 첫 스크립트: 홈페이지를 열고 id가 ',
+      '에 겨누세요. 이 사이트는 바로 그 목적으로 만들어졌습니다. 연습 페이지의 모든 요소에는 찾아서 연습할 수 있는 안정적인 id, name, class, 링크 텍스트가 있어서 마크업이 발밑에서 바뀔지 걱정할 필요가 없습니다.',
+    s3P2Pre: '적당한 첫 스크립트: 연습 페이지를 열고 id가 ',
     s3P2Post:
       '인 요소를 찾아 그 텍스트를 출력하거나 단언해 보세요. 그런 다음 name으로, class로, 링크 텍스트로 요소를 찾아 보세요. 작고 의도적인 성공부터 쌓는 것입니다.',
     s3AskAi: [
@@ -503,10 +503,10 @@
 
     s3Heading: 'Installer un outil et exécuter un script sur ce site',
     s3P1Pre: "Suivez le guide « prise en main » de l'outil que vous avez choisi pour l'installer, puis dirigez votre tout premier script vers ",
-    s3HomeLinkText: "la page d'accueil de ce site",
+    s3PracticeLinkText: "la page d'exercices",
     s3P1Post:
-      ". Ce site a été conçu exactement pour cela : chaque élément de la page d'accueil possède un id, un name, une classe ou un texte de lien stable que vous pouvez vous exercer à trouver — sans avoir à vous demander si le balisage va changer sous vos pieds.",
-    s3P2Pre: "Un premier script raisonnable : ouvrir la page d'accueil, trouver l'élément d'id ",
+      ". Ce site a été conçu exactement pour cela : chaque élément de la page d'exercices possède un id, un name, une classe ou un texte de lien stable que vous pouvez vous exercer à trouver — sans avoir à vous demander si le balisage va changer sous vos pieds.",
+    s3P2Pre: "Un premier script raisonnable : ouvrir la page d'exercices, trouver l'élément d'id ",
     s3P2Post:
       ", puis afficher ou vérifier son texte. Essayez ensuite de trouver un élément par name, par classe et par texte de lien. De petites victoires, délibérées, d'abord.",
     s3AskAi: [
@@ -613,7 +613,9 @@
   <SectionHeading class="section-heading-start" heading={m.s3Heading} level={2} />
 
   <p>
-    {m.s3P1Pre}<a href={localeHref(locale, 'home')}>{m.s3HomeLinkText}</a>{m.s3P1Post}
+    {m.s3P1Pre}<a href={localeHref(locale, 'practice')}
+      >{m.s3PracticeLinkText} {SITE_URL}{localeHref(locale, 'practice')}</a
+    >{m.s3P1Post}
   </p>
   <p>{m.s3P2Pre}<code>id-example-1</code>{m.s3P2Post}</p>
 

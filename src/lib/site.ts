@@ -5,6 +5,7 @@
 // repo's own `CITATION.cff` `repository-code:` field. See AGENTS.md.
 
 export const SITE_NAME = 'Testing Examples';
+export const SITE_URL = 'https://testingexamples.github.io';
 export const REPO = 'https://github.com/testingexamples/testingexamples.github.io';
 
 // See LICENSE.md at this repo's root (and each sibling demo repo's own

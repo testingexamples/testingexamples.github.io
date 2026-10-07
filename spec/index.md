@@ -206,7 +206,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   - `/how-to-start-learning-automatic-testing/` — ("How to start learning automatic testing?")
     a step-by-step path for learning browser automation: pick a language
     (JavaScript or Python), pick a tool (Playwright or Selenium), run a
-    first script against this site's own home page, then practice on the
+    first script against this site's own practice page, then practice on the
     sibling demo repos and this site's own `/examples/` pages.
   - `/how-does-artificial-intelligence-help-automatic-testing/` — ("How does
     artificial intelligence help automatic testing?") how and why AI shows
