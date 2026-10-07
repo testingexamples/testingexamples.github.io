@@ -252,7 +252,7 @@
     ctaBackToLearn: 'Back to Learn',
     ctaHowToStart: 'How to start learning →',
 
-    askAiHeading: 'Ask AI ideas'
+    askAiHeading: 'Examples you can ask AI'
   };
 
   // en-us: this page's prose contains two British-only spellings ("colours",
@@ -413,7 +413,7 @@
     ctaBackToLearn: 'Yn ôl i Dysgu',
     ctaHowToStart: 'Sut i ddechrau dysgu →',
 
-    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial"
+    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial"
   };
 
   const ZH: Messages = {
@@ -551,7 +551,7 @@
     ctaBackToLearn: '返回学习',
     ctaHowToStart: '如何开始学习 →',
 
-    askAiHeading: '向 AI 提问的想法'
+    askAiHeading: '可以向 AI 提问的示例'
   };
 
   const AR: Messages = {
@@ -699,7 +699,7 @@
     ctaBackToLearn: 'العودة إلى تعلّم',
     ctaHowToStart: 'كيف تبدأ التعلم ←',
 
-    askAiHeading: 'أفكار لسؤال الذكاء الاصطناعي'
+    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي'
   };
 
   const KO: Messages = {
@@ -848,7 +848,7 @@
     ctaBackToLearn: '학습으로 돌아가기',
     ctaHowToStart: '학습 시작하기 →',
 
-    askAiHeading: 'AI에게 물어볼 아이디어'
+    askAiHeading: 'AI에게 물어볼 수 있는 예시'
   };
 
   const FR: Messages = {
@@ -996,7 +996,7 @@
     ctaBackToLearn: 'Retour à Apprendre',
     ctaHowToStart: 'Comment commencer à apprendre →',
 
-    askAiHeading: "Idées à demander à l'IA"
+    askAiHeading: "Exemples à demander à l'IA"
   };
 
   const MESSAGES: Record<Locale, Messages> = {

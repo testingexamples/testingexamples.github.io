@@ -47,7 +47,7 @@
     li5Label: "Freeing humans for the testing machines can't do.",
     li5P:
       " Every hour a person doesn't spend manually re-checking the same known-good paths is an hour they can spend on exploratory testing, usability judgement, and the creative, adversarial thinking that finds the bugs no one wrote a script for.",
-    askAiHeading: 'Ask AI ideas',
+    askAiHeading: 'Examples you can ask AI',
     askAi: [
       "In plain terms, what's a 'regression', and why do automatic tests catch it better than a person checking by hand?",
       'My team ships several times a week but still finds bugs in production — what\'s the actual connection between automatic testing and safer, more frequent releases?',
@@ -81,7 +81,7 @@
     li5Label: "Rhyddhau pobl i wneud y profi na all peiriannau ei wneud.",
     li5P:
       " Mae pob awr nad yw person yn ei threulio'n ail-wirio â llaw'r un llwybrau y gwyddys eu bod yn gweithio yn awr y gallant ei threulio ar brofi archwiliadol, barn ynghylch defnyddioldeb, a'r meddwl creadigol, gwrthwynebol sy'n dod o hyd i'r bygiau na ysgrifennodd neb sgript ar eu cyfer.",
-    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
+    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Mewn termau plaen, beth yw 'atchweliad', a pham mae profion awtomatig yn ei ddal yn well na pherson yn gwirio â llaw?",
       "Mae fy nhîm yn rhyddhau sawl gwaith yr wythnos ond yn dal i ddod o hyd i fygiau mewn cynhyrchu — beth yw'r cysylltiad gwirioneddol rhwng profi awtomatig a rhyddhau'n fwy diogel, yn amlach?",
@@ -111,7 +111,7 @@
     li5Label: '把人解放出来，去做测试机器做不到的事。',
     li5P:
       ' 一个人每少花一个小时手动重新检查那些已知没问题的路径，就多出一个小时可以用来做探索性测试、可用性判断，以及那种能发现没人为之写过脚本的缺陷的、富有创造性和对抗性的思考。',
-    askAiHeading: '向 AI 提问的想法',
+    askAiHeading: '可以向 AI 提问的示例',
     askAi: [
       '用简单的话说，什么是“回归问题”，为什么自动化测试比人工检查更能捕捉到它？',
       '我的团队每周发布好几次，但仍然会在生产环境中发现缺陷——自动化测试和更安全、更频繁的发布之间到底有什么实际联系？',
@@ -142,7 +142,7 @@
     li5Label: 'تفريغ البشر لما لا تستطيع الآلات اختباره.',
     li5P:
       ' كل ساعة لا يقضيها الشخص في إعادة فحص المسارات السليمة المعروفة يدويًا هي ساعة يستطيع قضاءها في الاختبار الاستكشافي، وتقدير سهولة الاستخدام، والتفكير الإبداعي المعاكس الذي يكتشف الأخطاء التي لم يكتب لها أحد سكربتًا.',
-    askAiHeading: 'أفكار لسؤال الذكاء الاصطناعي',
+    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي',
     askAi: [
       'بعبارات بسيطة، ما هو «التراجع»، ولماذا تلتقطه الاختبارات الآلية أفضل من شخص يفحص يدويًا؟',
       'ينشر فريقي عدة مرات في الأسبوع لكنه لا يزال يجد أخطاء في الإنتاج — ما الصلة الفعلية بين الاختبار الآلي وإصدارات أكثر أمانًا وتكرارًا؟',
@@ -173,7 +173,7 @@
     li5Label: '기계가 할 수 없는 테스트를 위해 사람을 자유롭게 합니다.',
     li5P:
       ' 사람이 이미 검증된 정상 경로를 수동으로 다시 확인하는 데 쓰지 않는 한 시간은, 탐색적 테스트, 사용성 판단, 그리고 아무도 스크립트를 작성하지 않은 버그를 찾아내는 창의적이고 적대적인 사고에 쓸 수 있는 한 시간입니다.',
-    askAiHeading: 'AI에게 물어볼 아이디어',
+    askAiHeading: 'AI에게 물어볼 수 있는 예시',
     askAi: [
       '쉬운 말로 \'회귀\'란 무엇이며, 자동화 테스트가 사람이 직접 확인하는 것보다 이를 더 잘 잡아내는 이유는 무엇인가요?',
       '우리 팀은 일주일에 여러 번 배포하는데도 프로덕션에서 버그를 발견합니다. 자동화 테스트와 더 안전하고 잦은 릴리스 사이의 실제 연관성은 무엇인가요?',
@@ -204,7 +204,7 @@
     li5Label: "Libérer les humains pour les tests que les machines ne savent pas faire.",
     li5P:
       " Chaque heure qu'une personne ne passe pas à revérifier manuellement les mêmes parcours connus comme fonctionnels est une heure qu'elle peut consacrer au test exploratoire, au jugement sur l'utilisabilité et à la réflexion créative et adverse qui trouve les bugs pour lesquels personne n'a écrit de script.",
-    askAiHeading: "Idées à demander à l'IA",
+    askAiHeading: "Exemples à demander à l'IA",
     askAi: [
       "En termes simples, qu'est-ce qu'une « régression », et pourquoi les tests automatisés la détectent-ils mieux qu'une personne qui vérifie à la main ?",
       "Mon équipe livre plusieurs fois par semaine mais trouve encore des bugs en production — quel est le lien réel entre test automatisé et livraisons plus sûres et plus fréquentes ?",

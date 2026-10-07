@@ -37,7 +37,7 @@
     e2eHeading: 'End-to-end / browser (UI) tests (the top)',
     e2eP:
       "An end-to-end test drives a real browser exactly the way a real user would: it opens a page, clicks buttons, fills in forms, and checks that the page responds correctly. This is what browser automation tools like Selenium WebDriver, WebdriverIO, and Playwright do — and it's what every example on this site demonstrates. These tests sit at the top of the pyramid: there are fewer of them, but each one gives high confidence, because it exercises a real user journey through the real, assembled application — front end, back end, and everything wired together — rather than one isolated piece of it.",
-    askAiHeading: 'Ask AI ideas',
+    askAiHeading: 'Examples you can ask AI',
     askAi: [
       "Can you explain the automatic testing pyramid simply — what's the actual difference between a unit test, an integration test, and an end-to-end test?",
       'My project has plenty of end-to-end browser tests but almost no unit tests — is that actually a problem, and how would I start fixing the balance?',
@@ -65,7 +65,7 @@
     e2eHeading: "Profion o'r dechrau i'r diwedd / porwr (UI) (y brig)",
     e2eP:
       "Mae prawf o'r dechrau i'r diwedd yn gyrru porwr go iawn yn union fel y byddai defnyddiwr go iawn: mae'n agor tudalen, yn clicio botymau, yn llenwi ffurflenni, ac yn gwirio bod y dudalen yn ymateb yn gywir. Dyma beth mae offer awtomatiaeth porwr fel Selenium WebDriver, WebdriverIO, a Playwright yn ei wneud — a dyna mae pob enghraifft ar y wefan hon yn ei ddangos. Mae'r profion hyn yn eistedd ar frig y pyramid: mae llai ohonynt, ond mae pob un yn rhoi hyder uchel, gan ei fod yn ymarfer taith defnyddiwr go iawn drwy'r cymhwysiad gwirioneddol, wedi'i gydosod — yr ochr flaen, yr ochr gefn, a phopeth wedi'i gysylltu gyda'i gilydd — yn hytrach nag un darn ynysig ohono.",
-    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
+    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Allwch chi esbonio pyramid profi awtomatig yn syml — beth yw'r gwahaniaeth gwirioneddol rhwng prawf uned, prawf integreiddio, a phrawf o'r dechrau i'r diwedd?",
       "Mae gan fy mhrosiect ddigon o brofion porwr o'r dechrau i'r diwedd ond bron dim profion uned — a yw hynny'n broblem go iawn, a sut fyddwn i'n dechrau cywiro'r cydbwysedd?",
@@ -90,7 +90,7 @@
     e2eHeading: '端到端 / 浏览器（UI）测试（顶层）',
     e2eP:
       '端到端测试会像真实用户一样驱动一个真实的浏览器：打开一个页面、点击按钮、填写表单，并检查页面是否正确响应。这正是 Selenium WebDriver、WebdriverIO 和 Playwright 等浏览器自动化工具所做的事情——也是本站每一个示例所展示的内容。这类测试位于金字塔的顶端：数量较少，但每一个都能带来很高的信心，因为它演练的是贯穿真实、完整组装好的应用——前端、后端以及所有部分连接在一起——的真实用户旅程，而不是其中孤立的一部分。',
-    askAiHeading: '向 AI 提问的想法',
+    askAiHeading: '可以向 AI 提问的示例',
     askAi: [
       '能不能简单解释一下自动化测试金字塔——单元测试、集成测试和端到端测试之间的实际区别是什么？',
       '我的项目有很多端到端浏览器测试，但几乎没有单元测试——这真的是个问题吗？我该如何开始调整这个比例？',
@@ -115,7 +115,7 @@
     e2eHeading: 'اختبارات من البداية إلى النهاية / المتصفح (الواجهة) (القمة)',
     e2eP:
       'يقود اختبار البداية إلى النهاية متصفحًا حقيقيًا تمامًا كما يفعل المستخدم الحقيقي: يفتح صفحة، وينقر الأزرار، ويملأ النماذج، ويتحقق من أن الصفحة تستجيب على النحو الصحيح. هذا ما تفعله أدوات أتمتة المتصفح مثل Selenium WebDriver وWebdriverIO وPlaywright — وهو ما يعرضه كل مثال في هذا الموقع. تقع هذه الاختبارات في قمة الهرم: عددها أقل، لكن كل واحد منها يمنح ثقة عالية، لأنه يختبر رحلة مستخدم حقيقية عبر التطبيق الحقيقي المكتمل التجميع — الواجهة الأمامية والخلفية وكل شيء موصول معًا — بدلًا من جزء معزول منه.',
-    askAiHeading: 'أفكار لسؤال الذكاء الاصطناعي',
+    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي',
     askAi: [
       'هل يمكنك شرح هرم الاختبار الآلي ببساطة — ما الفرق الفعلي بين اختبار الوحدة واختبار التكامل واختبار البداية إلى النهاية؟',
       'يضم مشروعي كثيرًا من اختبارات المتصفح من البداية إلى النهاية لكن يكاد لا يضم اختبارات وحدة — هل هذه مشكلة فعلًا، وكيف أبدأ في إصلاح التوازن؟',
@@ -140,7 +140,7 @@
     e2eHeading: '엔드 투 엔드 / 브라우저(UI) 테스트 (꼭대기)',
     e2eP:
       '엔드 투 엔드 테스트는 실제 사용자가 하는 그대로 실제 브라우저를 조작합니다. 페이지를 열고, 버튼을 클릭하고, 양식을 채우고, 페이지가 올바르게 반응하는지 확인합니다. Selenium WebDriver, WebdriverIO, Playwright 같은 브라우저 자동화 도구가 바로 이런 일을 하며, 이 사이트의 모든 예제가 보여 주는 것도 이것입니다. 이런 테스트는 피라미드의 꼭대기에 위치합니다. 개수는 적지만, 하나하나가 높은 신뢰를 줍니다. 고립된 한 조각이 아니라 실제로 조립된 애플리케이션 — 프런트엔드, 백엔드, 그리고 모든 것이 연결된 상태 — 을 통과하는 실제 사용자 여정을 검증하기 때문입니다.',
-    askAiHeading: 'AI에게 물어볼 아이디어',
+    askAiHeading: 'AI에게 물어볼 수 있는 예시',
     askAi: [
       '자동화 테스트 피라미드를 쉽게 설명해 주실 수 있나요? 단위 테스트, 통합 테스트, 엔드 투 엔드 테스트의 실제 차이는 무엇인가요?',
       '제 프로젝트에는 엔드 투 엔드 브라우저 테스트는 많은데 단위 테스트는 거의 없습니다. 이것이 정말 문제인가요? 균형을 바로잡으려면 어떻게 시작해야 할까요?',
@@ -165,7 +165,7 @@
     e2eHeading: 'Tests de bout en bout / de navigateur (IHM) (le sommet)',
     e2eP:
       "Un test de bout en bout pilote un vrai navigateur exactement comme le ferait un vrai utilisateur : il ouvre une page, clique sur des boutons, remplit des formulaires et vérifie que la page réagit correctement. C'est ce que font les outils d'automatisation de navigateur comme Selenium WebDriver, WebdriverIO et Playwright — et c'est ce que démontre chaque exemple de ce site. Ces tests se situent au sommet de la pyramide : il y en a moins, mais chacun apporte une grande confiance, car il exerce un vrai parcours utilisateur à travers l'application réelle et assemblée — front-end, back-end et tout ce qui est relié — plutôt qu'un seul élément isolé.",
-    askAiHeading: "Idées à demander à l'IA",
+    askAiHeading: "Exemples à demander à l'IA",
     askAi: [
       "Pouvez-vous m'expliquer simplement la pyramide des tests automatisés — quelle est la vraie différence entre un test unitaire, un test d'intégration et un test de bout en bout ?",
       "Mon projet a beaucoup de tests de navigateur de bout en bout mais presque aucun test unitaire — est-ce vraiment un problème, et comment commencer à rééquilibrer ?",

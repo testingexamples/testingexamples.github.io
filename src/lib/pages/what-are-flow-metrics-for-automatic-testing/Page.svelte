@@ -39,7 +39,7 @@
     learnMoreLink1Text: 'guide to Kanban',
     learnMoreMid: ', or watch ProKanban\'s ',
     learnMorePost: ' for a video introduction to the metrics themselves.',
-    askAiHeading: 'Ask AI ideas',
+    askAiHeading: 'Examples you can ask AI',
     askAi: [
       "What do 'cycle time' and 'throughput' actually mean, in plain terms, for a team's day-to-day work?",
       'How would I start tracking cycle time for bug fixes on my own team, without buying new tooling?',
@@ -65,7 +65,7 @@
     learnMoreLink1Text: 'canllaw Atlassian i Kanban',
     learnMoreMid: ', neu gwyliwch ',
     learnMorePost: " gan ProKanban ar gyfer cyflwyniad fideo i'r metrigau eu hunain.",
-    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
+    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Beth mae 'amser cylchred' a 'chyfradd brosesu' yn ei olygu mewn gwirionedd, mewn termau plaen, ar gyfer gwaith dydd-i-ddydd tîm?",
       "Sut fyddwn i'n dechrau olrhain amser cylchred ar gyfer trwsio bygiau ar fy nhîm fy hun, heb brynu offer newydd?",
@@ -88,7 +88,7 @@
     learnMoreLink1Text: 'Kanban 指南',
     learnMoreMid: '，或观看 ProKanban 的',
     learnMorePost: '视频，了解这些指标本身。',
-    askAiHeading: '向 AI 提问的想法',
+    askAiHeading: '可以向 AI 提问的示例',
     askAi: [
       '对于团队的日常工作来说，“周期时间”和“吞吐量”用简单的话说到底是什么意思？',
       '在不购买新工具的情况下，我该如何开始为自己团队的缺陷修复追踪周期时间？',
@@ -111,7 +111,7 @@
     learnMoreLink1Text: 'دليل Atlassian إلى Kanban',
     learnMoreMid: '، أو شاهد فيديو ',
     learnMorePost: ' من ProKanban كمقدمة مرئية إلى المقاييس نفسها.',
-    askAiHeading: 'أفكار لسؤال الذكاء الاصطناعي',
+    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي',
     askAi: [
       'ماذا يعني «زمن الدورة» و«الإنتاجية» فعلًا بعبارات بسيطة في العمل اليومي للفريق؟',
       'كيف أبدأ تتبع زمن الدورة لإصلاحات الأخطاء في فريقي دون شراء أدوات جديدة؟',
@@ -134,7 +134,7 @@
     learnMoreLink1Text: 'Kanban 가이드',
     learnMoreMid: '를 보거나, ProKanban의 ',
     learnMorePost: ' 영상으로 지표 자체에 대한 입문을 해 보세요.',
-    askAiHeading: 'AI에게 물어볼 아이디어',
+    askAiHeading: 'AI에게 물어볼 수 있는 예시',
     askAi: [
       "'사이클 타임'과 '처리량'은 팀의 일상 업무에서 쉬운 말로 실제로 무슨 뜻인가요?",
       '새로운 도구를 구입하지 않고 우리 팀의 버그 수정 사이클 타임을 추적하려면 어떻게 시작해야 할까요?',
@@ -157,7 +157,7 @@
     learnMoreLink1Text: "guide Kanban d'Atlassian",
     learnMoreMid: ', ou regardez la vidéo ',
     learnMorePost: " de ProKanban pour une présentation en vidéo des métriques elles-mêmes.",
-    askAiHeading: "Idées à demander à l'IA",
+    askAiHeading: "Exemples à demander à l'IA",
     askAi: [
       "Que signifient réellement « temps de cycle » et « débit », en termes simples, pour le travail quotidien d'une équipe ?",
       "Comment commencer à suivre le temps de cycle des corrections de bugs dans ma propre équipe, sans acheter de nouvel outil ?",

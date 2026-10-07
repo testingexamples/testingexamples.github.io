@@ -65,7 +65,7 @@
     heading: 'How to start learning automatic testing?',
     intro:
       'A practical path, not a theory dump. Five steps from "never written a browser test" to reading worked examples in two tools and three languages.',
-    askAiHeading: 'Ask AI ideas',
+    askAiHeading: 'Examples you can ask AI',
 
     s1Heading: 'Pick one programming language',
     s1Pre:
@@ -149,7 +149,7 @@
     heading: 'Sut i ddechrau dysgu profi awtomatig?',
     intro:
       'Llwybr ymarferol, nid llwyth o theori. Pum cam o "erioed wedi ysgrifennu prawf porwr" i ddarllen enghreifftiau ymarferol mewn dau offeryn a thair iaith.',
-    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
+    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial",
 
     s1Heading: 'Dewiswch un iaith raglennu',
     s1Pre:
@@ -231,7 +231,7 @@
     heading: '如何开始学习自动化测试？',
     intro:
       '一条实用的路径，而不是理论的堆砌。五个步骤，从“从没写过浏览器测试”到能读懂两种工具、三种语言的实战示例。',
-    askAiHeading: '向 AI 提问的想法',
+    askAiHeading: '可以向 AI 提问的示例',
 
     s1Heading: '选一门编程语言',
     s1Pre:
@@ -309,7 +309,7 @@
     heading: 'كيف تبدأ تعلم الاختبار الآلي؟',
     intro:
       'مسار عملي لا حشد نظري. خمس خطوات من «لم أكتب اختبار متصفح من قبل» إلى قراءة أمثلة عملية بأداتين وثلاث لغات.',
-    askAiHeading: 'أفكار لسؤال الذكاء الاصطناعي',
+    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي',
 
     s1Heading: 'اختر لغة برمجة واحدة',
     s1Pre:
@@ -390,7 +390,7 @@
     heading: '자동화 테스트 학습은 어떻게 시작하나요?',
     intro:
       '이론을 쏟아붓는 것이 아니라 실용적인 경로입니다. "브라우저 테스트를 한 번도 작성해 본 적 없음"에서 두 가지 도구와 세 가지 언어로 된 실제 예제를 읽는 데까지 다섯 단계입니다.',
-    askAiHeading: 'AI에게 물어볼 아이디어',
+    askAiHeading: 'AI에게 물어볼 수 있는 예시',
 
     s1Heading: '프로그래밍 언어 하나를 고르세요',
     s1Pre:
@@ -471,7 +471,7 @@
     heading: 'Comment commencer à apprendre les tests automatisés ?',
     intro:
       "Un parcours pratique, pas un déluge de théorie. Cinq étapes, de « je n'ai jamais écrit de test de navigateur » à la lecture d'exemples concrets avec deux outils et trois langages.",
-    askAiHeading: "Idées à demander à l'IA",
+    askAiHeading: "Exemples à demander à l'IA",
 
     s1Heading: 'Choisir un langage de programmation',
     s1Pre:

@@ -42,7 +42,7 @@
     exploratoryLabel: 'exploratory testing',
     complementPost:
       ', where a skilled person deliberately pokes at an application looking for the unexpected — is good at finding the kinds of problems nobody thought to write a check for. Mature teams use both: automation for the checks that must never regress, and human judgement for everything a checklist cannot anticipate.',
-    askAiHeading: 'Ask AI ideas',
+    askAiHeading: 'Examples you can ask AI',
     askAi: [
       "What's the practical difference between manual testing and automatic testing, and why would a team bother writing a script instead of just clicking through the app by hand?",
       'My team does everything by manual testing right now — how do we decide which checks are worth automating first?',
@@ -73,7 +73,7 @@
     exploratoryLabel: 'brofi archwiliadol',
     complementPost:
       ", lle mae person medrus yn procio cymhwysiad yn fwriadol i chwilio am yr annisgwyl — yn dda am ddod o hyd i'r math o broblemau na feddyliodd neb i ysgrifennu gwiriad ar eu cyfer. Mae timau aeddfed yn defnyddio'r ddau: awtomatiaeth ar gyfer y gwiriadau na chaiff byth ddirywio, a barn ddynol ar gyfer popeth na all rhestr wirio ei ragweld.",
-    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
+    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Beth yw'r gwahaniaeth ymarferol rhwng profi â llaw a phrofi awtomatig, a pham byddai tîm yn trafferthu ysgrifennu sgript yn lle clicio drwy'r ap â llaw?",
       "Mae fy nhîm yn gwneud popeth drwy brofi â llaw ar hyn o bryd — sut ydyn ni'n penderfynu pa wiriadau sy'n werth eu hawtomeiddio gyntaf?",
@@ -99,7 +99,7 @@
     exploratoryLabel: '探索性测试',
     complementPost:
       '，即由一个熟练的人有意地在应用程序中摸索，寻找意料之外的问题——则擅长发现那些没有人想到要为之编写检查的问题。成熟的团队两者都会用：用自动化来保证绝不能出现回归的检查，用人的判断力来处理任何检查清单都无法预见的一切情况。',
-    askAiHeading: '向 AI 提问的想法',
+    askAiHeading: '可以向 AI 提问的示例',
     askAi: [
       '人工测试和自动化测试之间实际的区别是什么？为什么团队会费心编写脚本，而不是直接用手点一遍应用？',
       '我的团队目前所有测试都靠人工完成——我们该如何决定先自动化哪些检查？',
@@ -127,7 +127,7 @@
     exploratoryLabel: 'الاختبار الاستكشافي',
     complementPost:
       '، حيث يتفحص شخص ماهر التطبيق عمدًا بحثًا عن غير المتوقع — فهو بارع في اكتشاف أنواع المشكلات التي لم يخطر لأحد أن يكتب لها فحصًا. وتستخدم الفرق الناضجة الاثنين معًا: الأتمتة للفحوصات التي يجب ألا تتراجع أبدًا، والحكم البشري لكل ما لا تستطيع قائمة المراجعة توقعه.',
-    askAiHeading: 'أفكار لسؤال الذكاء الاصطناعي',
+    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي',
     askAi: [
       'ما الفرق العملي بين الاختبار اليدوي والاختبار الآلي، ولماذا يتكلف فريق عناء كتابة سكربت بدلًا من النقر عبر التطبيق يدويًا؟',
       'يعتمد فريقي حاليًا على الاختبار اليدوي في كل شيء — كيف نقرر أي الفحوصات تستحق الأتمتة أولًا؟',
@@ -155,7 +155,7 @@
     exploratoryLabel: '탐색적 테스트',
     complementPost:
       '는, 숙련된 사람이 예상치 못한 것을 찾기 위해 일부러 애플리케이션을 이리저리 건드려 보는 방식으로 — 아무도 확인 항목을 작성해 두지 않은 종류의 문제를 찾는 데 뛰어납니다. 성숙한 팀은 둘 다 사용합니다. 절대 퇴보해서는 안 되는 확인에는 자동화를, 체크리스트가 예측할 수 없는 모든 것에는 사람의 판단을 씁니다.',
-    askAiHeading: 'AI에게 물어볼 아이디어',
+    askAiHeading: 'AI에게 물어볼 수 있는 예시',
     askAi: [
       '수동 테스트와 자동화 테스트의 실질적인 차이는 무엇이며, 팀이 앱을 직접 클릭해 보는 대신 굳이 스크립트를 작성하는 이유는 무엇인가요?',
       '우리 팀은 지금 모든 것을 수동 테스트로 하고 있습니다. 어떤 확인 항목부터 자동화할 가치가 있는지 어떻게 정해야 할까요?',
@@ -183,7 +183,7 @@
     exploratoryLabel: 'test exploratoire',
     complementPost:
       ", où une personne expérimentée sollicite délibérément une application à la recherche de l'inattendu — excelle à trouver le genre de problèmes pour lesquels personne n'a pensé à écrire une vérification. Les équipes matures utilisent les deux : l'automatisation pour les vérifications qui ne doivent jamais régresser, et le jugement humain pour tout ce qu'une liste de contrôle ne peut anticiper.",
-    askAiHeading: "Idées à demander à l'IA",
+    askAiHeading: "Exemples à demander à l'IA",
     askAi: [
       "Quelle est la différence pratique entre le test manuel et le test automatisé, et pourquoi une équipe prendrait-elle la peine d'écrire un script plutôt que de parcourir l'application à la main ?",
       "Mon équipe fait tout en test manuel pour le moment — comment décider quelles vérifications valent la peine d'être automatisées en premier ?",

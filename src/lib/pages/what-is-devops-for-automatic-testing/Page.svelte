@@ -38,7 +38,7 @@
     learnMoreLink1Text: 'introduction to DevOps',
     learnMoreMid: ", or watch edureka!'s ",
     learnMorePost: ' for a video introduction.',
-    askAiHeading: 'Ask AI ideas',
+    askAiHeading: 'Examples you can ask AI',
     askAi: [
       "What does 'DevOps' actually mean, in plain terms, and how is it different from just testing before release?",
       "What's a canary release, and how would testing fit alongside one instead of being replaced by it?",
@@ -63,7 +63,7 @@
     learnMoreLink1Text: 'nghyflwyniad AWS i DevOps',
     learnMoreMid: ', neu gwyliwch ',
     learnMorePost: ' gan edureka! ar gyfer cyflwyniad fideo.',
-    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
+    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Beth mae 'DevOps' yn ei olygu mewn gwirionedd, mewn termau plaen, a sut mae'n wahanol i brofi cyn rhyddhau yn unig?",
       "Beth yw rhyddhau canari, a sut fyddai profi'n cyd-fynd ag un yn lle cael ei ddisodli ganddo?",
@@ -85,7 +85,7 @@
     learnMoreLink1Text: 'DevOps 简介',
     learnMoreMid: '，或者观看 edureka! 的',
     learnMorePost: '视频介绍。',
-    askAiHeading: '向 AI 提问的想法',
+    askAiHeading: '可以向 AI 提问的示例',
     askAi: [
       '用简单的话说，"DevOps" 到底是什么意思，它和只在发布前测试有什么不同？',
       '什么是金丝雀发布，测试又该如何与它配合，而不是被它取代？',
@@ -107,7 +107,7 @@
     learnMoreLink1Text: 'مقدمة AWS إلى DevOps',
     learnMoreMid: '، أو شاهد فيديو ',
     learnMorePost: ' من edureka! كمقدمة مرئية.',
-    askAiHeading: 'أفكار لسؤال الذكاء الاصطناعي',
+    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي',
     askAi: [
       'ماذا يعني «DevOps» فعلًا بعبارات بسيطة، وبماذا يختلف عن مجرد الاختبار قبل الإصدار؟',
       'ما هو الإصدار التجريبي المحدود (canary)، وكيف يتكامل الاختبار معه بدلًا من أن يُستبدل به؟',
@@ -129,7 +129,7 @@
     learnMoreLink1Text: 'DevOps 소개',
     learnMoreMid: '를 보거나, edureka!의 ',
     learnMorePost: ' 영상으로 입문하세요.',
-    askAiHeading: 'AI에게 물어볼 아이디어',
+    askAiHeading: 'AI에게 물어볼 수 있는 예시',
     askAi: [
       "쉬운 말로 'DevOps'는 실제로 무슨 뜻이며, 단지 릴리스 전에 테스트하는 것과 어떻게 다른가요?",
       '카나리 릴리스란 무엇이며, 테스트가 그것을 대체하지 않고 나란히 놓이려면 어떻게 해야 하나요?',
@@ -151,7 +151,7 @@
     learnMoreLink1Text: "introduction à DevOps d'AWS",
     learnMoreMid: ', ou regardez la vidéo ',
     learnMorePost: " d'edureka! pour une présentation en vidéo.",
-    askAiHeading: "Idées à demander à l'IA",
+    askAiHeading: "Exemples à demander à l'IA",
     askAi: [
       "Que signifie réellement « DevOps », en termes simples, et en quoi est-ce différent du simple fait de tester avant la livraison ?",
       "Qu'est-ce qu'un déploiement canari, et comment les tests s'articuleraient-ils avec lui au lieu d'être remplacés par lui ?",

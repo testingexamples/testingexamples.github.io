@@ -38,7 +38,7 @@
     learnMorePre: "Learn more at iSixSigma's ",
     learnMoreLinkText: 'getting-started guide',
     learnMorePost: '.',
-    askAiHeading: 'Ask AI ideas',
+    askAiHeading: 'Examples you can ask AI',
     askAi: [
       "What does 'Six Sigma' actually mean, in plain terms, and why would reducing 'variation' matter for software testing specifically?",
       'How is manual testing itself a source of variation, in the Six Sigma sense, compared to an automatic test that runs the same way every time?',
@@ -64,7 +64,7 @@
     learnMorePre: 'Dysgwch fwy yn ',
     learnMoreLinkText: 'canllaw dechrau arni iSixSigma',
     learnMorePost: '.',
-    askAiHeading: "Syniadau i'w gofyn i ddeallusrwydd artiffisial",
+    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial",
     askAi: [
       "Beth mae 'Six Sigma' yn ei olygu mewn gwirionedd, mewn termau plaen, a pham fyddai lleihau 'amrywiad' o bwys i brofi meddalwedd yn benodol?",
       "Sut mae profi â llaw ei hun yn ffynhonnell amrywiad, yn ystyr Six Sigma, o'i gymharu â phrawf awtomatig sy'n rhedeg yr un ffordd bob tro?",
@@ -87,7 +87,7 @@
     learnMorePre: '可以进一步阅读 iSixSigma 的',
     learnMoreLinkText: '入门指南',
     learnMorePost: '。',
-    askAiHeading: '向 AI 提问的想法',
+    askAiHeading: '可以向 AI 提问的示例',
     askAi: [
       '用简单的话说，“六西格玛”到底是什么意思，为什么减少“变异”对软件测试尤其重要？',
       '从六西格玛的角度看，相比每次都以同样方式运行的自动化测试，人工测试本身是如何成为变异来源的？',
@@ -110,7 +110,7 @@
     learnMorePre: 'اعرف المزيد في ',
     learnMoreLinkText: 'دليل البدء من iSixSigma',
     learnMorePost: '.',
-    askAiHeading: 'أفكار لسؤال الذكاء الاصطناعي',
+    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي',
     askAi: [
       'ماذا يعني «Six Sigma» فعلًا بعبارات بسيطة، ولماذا يهم تقليل «التباين» في اختبار البرمجيات تحديدًا؟',
       'كيف يكون الاختبار اليدوي نفسه مصدرًا للتباين بمفهوم Six Sigma، مقارنةً باختبار آلي يعمل بالطريقة نفسها في كل مرة؟',
@@ -133,7 +133,7 @@
     learnMorePre: '더 알아보려면 iSixSigma의 ',
     learnMoreLinkText: '시작 가이드',
     learnMorePost: '를 보세요.',
-    askAiHeading: 'AI에게 물어볼 아이디어',
+    askAiHeading: 'AI에게 물어볼 수 있는 예시',
     askAi: [
       "쉬운 말로 'Six Sigma'는 실제로 무슨 뜻이며, 소프트웨어 테스트에서 '변동'을 줄이는 것이 왜 중요한가요?",
       '매번 같은 방식으로 실행되는 자동화 테스트와 비교할 때, 수동 테스트 자체는 Six Sigma의 의미에서 어떻게 변동의 원천이 되나요?',
@@ -156,7 +156,7 @@
     learnMorePre: "Pour en savoir plus, consultez le ",
     learnMoreLinkText: "guide de démarrage d'iSixSigma",
     learnMorePost: '.',
-    askAiHeading: "Idées à demander à l'IA",
+    askAiHeading: "Exemples à demander à l'IA",
     askAi: [
       "Que signifie réellement « Six Sigma », en termes simples, et pourquoi réduire la « variation » compterait-il pour le test logiciel en particulier ?",
       "En quoi le test manuel est-il lui-même une source de variation, au sens de Six Sigma, comparé à un test automatisé qui s'exécute de la même façon à chaque fois ?",
