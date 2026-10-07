@@ -16,9 +16,9 @@ test.describe('language redirect on /', () => {
 
     test.describe('with cy-GB', () => {
       test.use({ locale: 'cy-GB' });
-      test('is sent to /locales/cy-gb/', async ({ page }) => {
+      test('is sent to /cy-gb/', async ({ page }) => {
         await page.goto('/');
-        await expect(page).toHaveURL(/\/locales\/cy-gb\/$/);
+        await expect(page).toHaveURL(/\/cy-gb\/$/);
       });
     });
 
@@ -26,15 +26,15 @@ test.describe('language redirect on /', () => {
       test.use({ locale: 'fr-CA' });
       test('falls back to the French locale', async ({ page }) => {
         await page.goto('/');
-        await expect(page).toHaveURL(/\/locales\/fr-001\/$/);
+        await expect(page).toHaveURL(/\/fr-001\/$/);
       });
     });
 
     test.describe('with en-US', () => {
       test.use({ locale: 'en-US' });
-      test('is sent to /locales/en-us/', async ({ page }) => {
+      test('is sent to /en-us/', async ({ page }) => {
         await page.goto('/');
-        await expect(page).toHaveURL(/\/locales\/en-us\/$/);
+        await expect(page).toHaveURL(/\/en-us\/$/);
       });
     });
 

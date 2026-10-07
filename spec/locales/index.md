@@ -22,7 +22,7 @@ in `LOCALES`, uses the form `<language>-<region>`, all lowercase:
   `fr`).
 - `<region>` is a two-letter ISO 3166-1 code (`gb`, `us`, `cn`) or, for a
   language not tied to one country, a UN M.49 code (`001` is "world").
-- A bare language (`/locales/en/`, `/locales/cy/`) is never a locale
+- A bare language (`/en/`, `/cy/`) is never a locale
   directory, and does not exist. It 404s, like any other unknown locale.
 - The one existing extra part is `en-gb-oxendict`, whose trailing variant
   subtag (`oxendict`) marks Oxford spelling. A new locale should not add one
@@ -40,10 +40,16 @@ support decision.
 
 ## URL scheme
 
-Every page lives at `https://testingexamples.github.io/locales/<locale>/<slug>/`
+Every page lives at `https://testingexamples.github.io/<locale>/<slug>/`
 — including the default locale, which is still prefixed
-(`/locales/en-001/...`), not bare. There is one exception: the site root
+(`/en-001/...`), not bare. There is one exception: the site root
 `/` (see "The home page fixture contract" below).
+
+There is no `/locales/` segment. Earlier versions served these pages under
+`/locales/<locale>/<slug>/`; that prefix was removed, the old URLs are not
+redirected and now 404 (`tests/locales.spec.ts` checks this). The
+`[locale=locale]` route segment sits at the top level, next to the old flat
+redirect routes such as `/about/`, which are static and take precedence.
 
 **Slugs**: the four English locales share one English slug per page
 (`what-is-automatic-testing`, etc.). The two Welsh locales share one
@@ -63,7 +69,7 @@ Arabic slug, its Korean slug, its French slug, and a lazy import of its Svelte c
 
 **Old flat URLs** (`/what-is-automatic-testing/`, `/about/`, etc.) still
 resolve: each one's route now does nothing but
-`redirect(308, '/locales/en-001/<same-slug>/')`, which `adapter-static`
+`redirect(308, '/en-001/<same-slug>/')`, which `adapter-static`
 turns into a static meta-refresh HTML page at build time. This keeps
 existing links and search-engine results working without duplicating
 content.
@@ -83,7 +89,7 @@ The one thing `/` does is send a *person* to the locale that matches their
 browser. On mount, `src/routes/+page.svelte` reads `navigator.languages`
 (falling back to `navigator.language`) and calls `preferredLocale()` from
 `src/lib/i18n/detect.ts`; if that finds a locale it replaces the URL with
-`/locales/<locale>/`. The page's markup is untouched.
+`/<locale>/`. The page's markup is untouched.
 
 - Tags are matched case-insensitively and `_` counts as `-`, so `cy_GB`,
   `cy-GB` and `CY-gb` all give `cy-gb`.
@@ -98,15 +104,15 @@ browser. On mount, `src/routes/+page.svelte` reads `navigator.languages`
   seeing the fixtures at `/`. The redirect is skipped there.
 - The locale picker reports its initial value on mount. `+layout.svelte`
   ignores a change to the locale already showing, because following it would
-  move `/` to `/locales/en-001/`.
+  move `/` to `/en-001/`.
 
 Covered by `tests/detect.spec.ts` (matching rules) and
 `tests/locale-redirect.spec.ts` (the redirect, and that automation stays put).
 
 That same fixture section is also rendered — identically, in English, on
 every locale including both Welsh ones, `zh-cn`, `ar-001`, `ko-001`, and
-`fr-001` — on each locale's Practice page (`/locales/<locale>/<practice slug>/`,
-for example `/locales/en-001/practice/`), not on its home page. The Practice
+`fr-001` — on each locale's Practice page (`/<locale>/<practice slug>/`,
+for example `/en-001/practice/`), not on its home page. The Practice
 page keeps the short "practise on this page" explanation (translated) above
 the fixtures, and each locale's home page links to it from its Examples list.
 Practice slugs: `practice`, `ymarfer`, `练习`, `التدريب`, `연습`, `s-exercer`.
@@ -206,11 +212,15 @@ page silently falls back to the target locale's home page.
 - `src/lib/i18n/chrome.ts` — translated header/footer/PickerBar strings,
   consumed by the root `+layout.svelte`, which also ignores a locale-picker
   change to the locale already showing (see "Language redirect on `/`").
-- `src/routes/locales/[locale]/[...slug]/+page.ts` — resolves
+- `src/params.ts` — the `locale` param matcher for the `[locale=locale]` route
+  segment: any `<language>-<region>` shape (SvelteKit 3 loads it with Node at
+  build time, so it cannot import the locale list); the page loader then
+  rejects a code that is not in `LOCALES`.
+- `src/routes/[locale=locale]/[...slug]/+page.ts` — resolves
   `(locale, slug)` to a `TopicId` via `topicForSlug`, lazy-loads that
   topic's component, and lists every `(locale, slug)` prerender entry via
   `entries()`.
-- `src/routes/locales/[locale]/[...slug]/+page.svelte` — renders the
+- `src/routes/[locale=locale]/[...slug]/+page.svelte` — renders the
   resolved component, passing it `locale`.
 - `src/lib/pages/<topicId>/Page.svelte` — one per topic (the old
   `src/routes/<slug>/+page.svelte`, migrated). Each holds its own

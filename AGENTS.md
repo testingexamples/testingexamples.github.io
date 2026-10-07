@@ -41,13 +41,13 @@ repos use still resolves. Keep it passing.
 The fixture markup itself lives in `src/lib/components/SiteFixtures.svelte`
 and is imported, unmodified, by both `src/routes/+page.svelte` (this
 contract's real target, at `/`) and every locale's Practice page, such as
-`/locales/en-001/practice/` (for completeness — never as a substitute for `/`, which sibling repos hit
+`/en-001/practice/` (for completeness — never as a substitute for `/`, which sibling repos hit
 directly). The same "never translate, never change without coordinating"
 rule applies to that component regardless of which page imports it.
 
 ## Locales
 
-The site is served at `/locales/<locale>/<slug>/` for ten locales
+The site is served at `/<locale>/<slug>/` for ten locales
 (`en-001` default, `en-gb`, `en-gb-oxendict`, `en-us`, `cy-gb`, `cy-001`,
 `zh-cn`, `ar-001`, `ko-001`, `fr-001`). `ar-001` is the site's only right-to-left
 locale (`dir="rtl"`, set by `src/hooks.server.ts`).

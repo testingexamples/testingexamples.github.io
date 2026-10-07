@@ -5,7 +5,7 @@ import { DEFAULT_LOCALE, LOCALE_META, isLocale } from '#lib/i18n/locales.js';
 // prerendered pages carry the right lang from first paint — the
 // LocalePicker component only updates it after a client-side choice.
 export const handle: Handle = async ({ event, resolve }) => {
-  const match = event.url.pathname.match(/^\/locales\/([^/]+)\//);
+  const match = event.url.pathname.match(/^\/([^/]+)\//);
   const localeParam = match?.[1];
   const locale = localeParam && isLocale(localeParam) ? localeParam : DEFAULT_LOCALE;
   const meta = LOCALE_META[locale];

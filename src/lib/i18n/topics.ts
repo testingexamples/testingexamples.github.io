@@ -4,7 +4,7 @@ import type { Locale } from './locales';
 /** Every topic's Page.svelte takes exactly this one prop. */
 export type TopicComponent = Component<{ locale: Locale }>;
 
-// One entry per page that exists under /locales/<locale>/. `slug` is the
+// One entry per page that exists under /<locale>/. `slug` is the
 // path segment(s) after the locale (no leading/trailing slash; '' for the
 // locale's own home page). English-variant locales (en-001, en-gb,
 // en-gb-oxendict, en-us) share one English slug; the two Welsh locales

@@ -16,7 +16,7 @@ const SUMMARIES = [
 
 for (const locale of LOCALES) {
   test(`${locale}: the Given-When-Then page has all eight examples in one section`, async ({ page }) => {
-    await page.goto(`/locales/${locale}/${slugForTopic(locale, 'given-when-then')}/`);
+    await page.goto(`/${locale}/${slugForTopic(locale, 'given-when-then')}/`);
     for (const summary of SUMMARIES) {
       await expect(page.locator('summary', { hasText: summary })).toHaveCount(1);
     }

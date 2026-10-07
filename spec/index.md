@@ -149,15 +149,15 @@ The site is served in ten locales (`en-001` default, `en-gb`,
 `fr-001`). [locales/index.md](locales/index.md) is the full contract; in
 short:
 
-- Every page lives at `/locales/<locale>/<slug>/`. Locale codes are all
-  lowercase `<language>-<region>`; a bare language such as `/locales/en/`
+- Every page lives at `/<locale>/<slug>/`. Locale codes are all
+  lowercase `<language>-<region>`; a bare language such as `/en/`
   does not exist (404).
 - The site root `/` is not a locale. It stays at `/` and keeps the fixture
   contract, but sends a *person* whose browser language matches a locale to
   that locale's home page, never a browser under automation
   (`navigator.webdriver`).
 - The fixture section is rendered identically, in English, on every locale's
-  Practice page (`/locales/<locale>/practice/` in English). It is never translated.
+  Practice page (`/<locale>/practice/` in English). It is never translated.
 - Page content and translations live in `src/lib/pages/<topicId>/Page.svelte`.
   Welsh wording follows the TermCymru term bank, recorded in
   [locales/welsh-glossary.md](locales/welsh-glossary.md).
@@ -169,7 +169,7 @@ site has two further sections. Neither depends on or affects the fixture
 contract; they can change freely.
 
 The paths below are the English slugs. The canonical URL of each is
-`/locales/en-001/<slug>/` (and the other locales translate the slug); the
+`/en-001/<slug>/` (and the other locales translate the slug); the
 old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 
 - `/learn/` — hub page linking to the eight articles below, in this order.
@@ -260,7 +260,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at
-  `/locales/<locale>/practice/` (Welsh `ymarfer`, Chinese `练习`, Arabic
+  `/<locale>/practice/` (Welsh `ymarfer`, Chinese `练习`, Arabic
   `التدريب`, Korean `연습`, French `s-exercer`). Linked from every locale's home
   page Examples list. The site root `/` still carries the fixtures itself.
 - `/app/` — a small interactive demo application (a Lily Design System
