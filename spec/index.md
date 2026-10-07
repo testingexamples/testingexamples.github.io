@@ -254,7 +254,8 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     three languages.
 - `/given-when-then/` — one scenario (search Google, see results) written
   first as a Given-When-Then (Gherkin/BDD) sentence, then as the
-  equivalent Selenium and Playwright code in JavaScript and Python.
+  equivalent Selenium and Playwright code in JavaScript, Python, Rust,
+  and C# (eight examples, all under one "Examples of source code" section).
   Linked from the home page's Examples list.
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which

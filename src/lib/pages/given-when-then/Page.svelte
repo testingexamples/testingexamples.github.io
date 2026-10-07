@@ -31,8 +31,7 @@
     readNotRunPre: string;
     googleSearchExamplesLinkText: string;
     readNotRunPost: string;
-    seleniumHeading: string;
-    playwrightHeading: string;
+    sourceCodeHeading: string;
     backHome: string;
     seeMoreExamples: string;
   };
@@ -40,10 +39,10 @@
   const EN_001: Messages = {
     title: 'Given-When-Then Examples',
     metaDescription:
-      'One scenario written as a Given-When-Then (Gherkin) sentence, then shown as the equivalent Selenium and Playwright code in JavaScript and Python.',
+      'One scenario written as a Given-When-Then (Gherkin) sentence, then shown as the equivalent Selenium and Playwright code in JavaScript, Python, Rust, and C#.',
     heading: 'Given-When-Then Examples',
     intro:
-      'One plain-language scenario, written the way a non-programmer would describe it, next to the actual code that carries it out — in four combinations of tool and language.',
+      'One plain-language scenario, written the way a non-programmer would describe it, next to the actual code that carries it out — in eight combinations of tool and language.',
     whatHeading: 'What is Given-When-Then?',
     whatIsLabel: 'is a way of writing a test scenario in plain sentences instead of code:',
     whatP1:
@@ -53,14 +52,13 @@
     scenarioHeading: 'The scenario',
     scenarioIntro: 'One scenario, written in Gherkin:',
     scenarioBody:
-      'Below, the same three lines are carried out four ways: two browser automation tools (Selenium and Playwright), each in two languages (JavaScript and Python). Each line of code is commented with which Given/When/Then step it belongs to, so you can trace the plain sentence straight into the code that implements it.',
+      'Below, the same three lines are carried out eight ways: two browser automation tools (Selenium and Playwright), each in four languages (JavaScript, Python, Rust, and C#). Each line of code is commented with which Given/When/Then step it belongs to, so you can trace the plain sentence straight into the code that implements it.',
     readNotRunLabel: "Read, don't repeatedly run",
     readNotRunPre: 'These four examples target google.com, the same as this site’s ',
     googleSearchExamplesLinkText: 'Google Search examples',
     readNotRunPost:
       ' — and the same caution applies: Google’s Terms of Service restrict automated querying of Google Search, so treat the code below as reading material for the pattern, not as scripts to run repeatedly against the live site. If you want to try this same Given/When/Then shape hands-on, point the same steps at this site’s own home page instead.',
-    seleniumHeading: 'Selenium',
-    playwrightHeading: 'Playwright',
+    sourceCodeHeading: 'Examples of source code',
     backHome: 'Back to home',
     seeMoreExamples: 'See more examples'
   };
@@ -68,10 +66,10 @@
   const CY: Messages = {
     title: 'Enghreifftiau Given-When-Then',
     metaDescription:
-      "Un senario wedi'i hysgrifennu fel brawddeg Given-When-Then (Gherkin), yna ei dangos fel y cod Selenium a Playwright cyfatebol mewn JavaScript a Python.",
+      "Un senario wedi'i hysgrifennu fel brawddeg Given-When-Then (Gherkin), yna ei dangos fel y cod Selenium a Playwright cyfatebol mewn JavaScript, Python, Rust a C#.",
     heading: 'Enghreifftiau Given-When-Then',
     intro:
-      "Un senario mewn iaith syml, wedi'i hysgrifennu fel y byddai rhywun nad yw'n rhaglennydd yn ei disgrifio, wrth ymyl y cod gwirioneddol sy'n ei chyflawni — mewn pedwar cyfuniad o offeryn ac iaith.",
+      "Un senario mewn iaith syml, wedi'i hysgrifennu fel y byddai rhywun nad yw'n rhaglennydd yn ei disgrifio, wrth ymyl y cod gwirioneddol sy'n ei chyflawni — mewn wyth cyfuniad o offeryn ac iaith.",
     whatHeading: 'Beth yw Given-When-Then?',
     whatIsLabel: "yw ffordd o ysgrifennu senario prawf mewn brawddegau plaen yn lle cod: Given",
     whatP1:
@@ -81,14 +79,13 @@
     scenarioHeading: "Y senario",
     scenarioIntro: 'Un senario, wedi’i hysgrifennu yn Gherkin:',
     scenarioBody:
-      "Isod, cyflawnir yr un tair llinell bedair ffordd: dau offeryn awtomatiaeth porwr (Selenium a Playwright), pob un mewn dwy iaith (JavaScript a Python). Mae pob llinell o god wedi'i hanodi â pha gam Given/When/Then y mae'n perthyn iddo, fel y gallwch olrhain y frawddeg syml yn syth i mewn i'r cod sy'n ei gweithredu.",
+      "Isod, cyflawnir yr un tair llinell mewn wyth ffordd: dau offeryn awtomatiaeth porwr (Selenium a Playwright), pob un mewn pedair iaith (JavaScript, Python, Rust a C#). Mae pob llinell o god wedi'i hanodi â pha gam Given/When/Then y mae'n perthyn iddo, fel y gallwch olrhain y frawddeg syml yn syth i mewn i'r cod sy'n ei gweithredu.",
     readNotRunLabel: "Darllenwch, peidiwch â rhedeg dro ar ôl tro",
     readNotRunPre: "Mae'r pedair enghraifft hyn yn targedu google.com, yr un peth ag ",
     googleSearchExamplesLinkText: 'enghreifftiau Chwilio Google',
     readNotRunPost:
       " y wefan hon — ac mae'r un rhybudd yn berthnasol: mae Telerau Gwasanaeth Google yn cyfyngu ar ymholi awtomatig ar Google Search, felly trinwch y cod isod fel deunydd darllen ar gyfer y patrwm, nid fel sgriptiau i'w rhedeg dro ar ôl tro yn erbyn y wefan fyw. Os hoffech roi cynnig ymarferol ar yr un siâp Given/When/Then, anelwch yr un camau at hafan y wefan hon ei hun yn lle hynny.",
-    seleniumHeading: 'Selenium',
-    playwrightHeading: 'Playwright',
+    sourceCodeHeading: 'Enghreifftiau o god ffynhonnell',
     backHome: "Yn ôl i'r hafan",
     seeMoreExamples: 'Gweld mwy o enghreifftiau'
   };
@@ -96,10 +93,10 @@
   const ZH: Messages = {
     title: 'Given-When-Then 示例',
     metaDescription:
-      '一个场景先写成 Given-When-Then（Gherkin）句子，再展示为等价的 JavaScript 和 Python 版本的 Selenium 与 Playwright 代码。',
+      '一个场景先写成 Given-When-Then（Gherkin）句子，再展示为等价的 JavaScript、Python、Rust 和 C# 版本的 Selenium 与 Playwright 代码。',
     heading: 'Given-When-Then 示例',
     intro:
-      '一个用通俗语言描述的场景，写成非程序员会使用的方式，与真正执行它的代码并排展示——涵盖四种工具与语言的组合。',
+      '一个用通俗语言描述的场景，写成非程序员会使用的方式，与真正执行它的代码并排展示——涵盖八种工具与语言的组合。',
     whatHeading: '什么是 Given-When-Then？',
     whatIsLabel: '是一种用通俗句子而不是代码来编写测试场景的方式：Given',
     whatP1:
@@ -109,14 +106,13 @@
     scenarioHeading: '场景',
     scenarioIntro: '一个用 Gherkin 写成的场景：',
     scenarioBody:
-      '下面用四种方式实现了同样的三行内容：两种浏览器自动化工具（Selenium 和 Playwright），各自使用两种语言（JavaScript 和 Python）。每一行代码都注明了它属于哪个 Given/When/Then 步骤，方便你把这句通俗的话直接对应到实现它的代码上。',
+      '下面用八种方式实现了同样的三行内容：两种浏览器自动化工具（Selenium 和 Playwright），各自使用四种语言（JavaScript、Python、Rust 和 C#）。每一行代码都注明了它属于哪个 Given/When/Then 步骤，方便你把这句通俗的话直接对应到实现它的代码上。',
     readNotRunLabel: '请阅读，不要反复运行',
     readNotRunPre: '这四个示例的目标是 google.com，与本站的',
     googleSearchExamplesLinkText: '谷歌搜索示例',
     readNotRunPost:
       '相同——同样的注意事项也适用：谷歌的服务条款限制对谷歌搜索进行自动化查询，因此请把下面的代码当作了解模式的阅读材料，而不是反复对真实网站运行的脚本。如果你想亲自动手体验同样的 Given/When/Then 结构，可以把同样的步骤指向本站自己的主页。',
-    seleniumHeading: 'Selenium',
-    playwrightHeading: 'Playwright',
+    sourceCodeHeading: '源代码示例',
     backHome: '返回首页',
     seeMoreExamples: '查看更多示例'
   };
@@ -124,10 +120,10 @@
   const AR: Messages = {
     title: 'أمثلة Given-When-Then',
     metaDescription:
-      'سيناريو واحد مكتوب بصيغة Given-When-Then (Gherkin)، ثم معروضًا بما يعادله من كود Selenium وPlaywright بلغتي JavaScript وPython.',
+      'سيناريو واحد مكتوب بصيغة Given-When-Then (Gherkin)، ثم معروضًا بما يعادله من كود Selenium وPlaywright بلغات JavaScript وPython وRust وC#.',
     heading: 'أمثلة Given-When-Then',
     intro:
-      'سيناريو واحد بلغة بسيطة، مكتوب بالطريقة التي يصفه بها غير المبرمج، إلى جانب الكود الفعلي الذي ينفّذه — في أربع توليفات من الأداة واللغة.',
+      'سيناريو واحد بلغة بسيطة، مكتوب بالطريقة التي يصفه بها غير المبرمج، إلى جانب الكود الفعلي الذي ينفّذه — في ثماني توليفات من الأداة واللغة.',
     whatHeading: 'ما هو Given-When-Then؟',
     whatIsLabel: 'هو طريقة لكتابة سيناريو اختبار بجمل بسيطة بدلًا من الكود: Given',
     whatP1:
@@ -137,14 +133,13 @@
     scenarioHeading: 'السيناريو',
     scenarioIntro: 'سيناريو واحد مكتوب بلغة Gherkin:',
     scenarioBody:
-      'في ما يلي، تُنفَّذ الأسطر الثلاثة نفسها بأربع طرق: أداتان لأتمتة المتصفح (Selenium وPlaywright)، كل منهما بلغتين (JavaScript وPython). وقد وُضع على كل سطر من الكود تعليق يبيّن أي خطوة من Given/When/Then ينتمي إليها، لتتتبع الجملة البسيطة مباشرةً إلى الكود الذي ينفّذها.',
+      'في ما يلي، تُنفَّذ الأسطر الثلاثة نفسها بثماني طرق: أداتان لأتمتة المتصفح (Selenium وPlaywright)، كل منهما بأربع لغات (JavaScript وPython وRust وC#). وقد وُضع على كل سطر من الكود تعليق يبيّن أي خطوة من Given/When/Then ينتمي إليها، لتتتبع الجملة البسيطة مباشرةً إلى الكود الذي ينفّذها.',
     readNotRunLabel: 'اقرأ ولا تكرّر التشغيل',
     readNotRunPre: 'تستهدف هذه الأمثلة الأربعة google.com، مثل ',
     googleSearchExamplesLinkText: 'أمثلة Google Search',
     readNotRunPost:
       ' في هذا الموقع — وينطبق التحذير نفسه: تقيّد شروط خدمة Google الاستعلام الآلي عن Google Search، لذا تعامل مع الكود أدناه كمادة للقراءة لفهم النمط، لا كسكربتات تُشغَّل مرارًا على الموقع الحي. وإن أردت تجربة صيغة Given/When/Then نفسها عمليًا، فوجّه الخطوات نفسها إلى الصفحة الرئيسية لهذا الموقع.',
-    seleniumHeading: 'Selenium',
-    playwrightHeading: 'Playwright',
+    sourceCodeHeading: 'أمثلة على الشيفرة المصدرية',
     backHome: 'العودة إلى الرئيسية',
     seeMoreExamples: 'عرض المزيد من الأمثلة'
   };
@@ -152,10 +147,10 @@
   const KO: Messages = {
     title: 'Given-When-Then 예제',
     metaDescription:
-      '하나의 시나리오를 Given-When-Then(Gherkin) 문장으로 작성한 다음, 그에 해당하는 JavaScript와 Python의 Selenium 및 Playwright 코드로 보여 줍니다.',
+      '하나의 시나리오를 Given-When-Then(Gherkin) 문장으로 작성한 다음, 그에 해당하는 JavaScript, Python, Rust, C#의 Selenium 및 Playwright 코드로 보여 줍니다.',
     heading: 'Given-When-Then 예제',
     intro:
-      '프로그래머가 아닌 사람이 설명할 법한 방식으로 쓴 하나의 평이한 시나리오를, 그것을 실제로 수행하는 코드와 나란히 보여 줍니다. 도구와 언어의 네 가지 조합으로 제시합니다.',
+      '프로그래머가 아닌 사람이 설명할 법한 방식으로 쓴 하나의 평이한 시나리오를, 그것을 실제로 수행하는 코드와 나란히 보여 줍니다. 도구와 언어의 여덟 가지 조합으로 제시합니다.',
     whatHeading: 'Given-When-Then이란 무엇인가?',
     whatIsLabel: '은 테스트 시나리오를 코드가 아닌 평이한 문장으로 작성하는 방식입니다: Given',
     whatP1:
@@ -165,14 +160,13 @@
     scenarioHeading: '시나리오',
     scenarioIntro: 'Gherkin으로 작성한 하나의 시나리오:',
     scenarioBody:
-      '아래에서는 같은 세 줄을 네 가지 방식으로 수행합니다. 브라우저 자동화 도구 두 가지(Selenium과 Playwright)를 각각 두 가지 언어(JavaScript와 Python)로 사용합니다. 코드의 각 줄에는 어느 Given/When/Then 단계에 속하는지 주석이 달려 있어, 평이한 문장에서 그것을 구현하는 코드까지 바로 따라갈 수 있습니다.',
+      '아래에서는 같은 세 줄을 여덟 가지 방식으로 수행합니다. 브라우저 자동화 도구 두 가지(Selenium과 Playwright)를 각각 네 가지 언어(JavaScript, Python, Rust, C#)로 사용합니다. 코드의 각 줄에는 어느 Given/When/Then 단계에 속하는지 주석이 달려 있어, 평이한 문장에서 그것을 구현하는 코드까지 바로 따라갈 수 있습니다.',
     readNotRunLabel: '읽기만 하고, 반복 실행하지 마세요',
     readNotRunPre: '이 네 가지 예제는 이 사이트의 ',
     googleSearchExamplesLinkText: 'Google Search 예제',
     readNotRunPost:
       '와 마찬가지로 google.com을 대상으로 하며, 같은 주의가 적용됩니다. Google의 서비스 약관은 Google Search에 대한 자동화된 쿼리를 제한하므로, 아래 코드는 실제 사이트를 상대로 반복 실행할 스크립트가 아니라 패턴을 이해하기 위한 읽을거리로 다루세요. 같은 Given/When/Then 형태를 직접 해 보고 싶다면, 같은 단계를 이 사이트의 홈페이지에 적용해 보세요.',
-    seleniumHeading: 'Selenium',
-    playwrightHeading: 'Playwright',
+    sourceCodeHeading: '소스 코드 예시',
     backHome: '홈으로 돌아가기',
     seeMoreExamples: '더 많은 예제 보기'
   };
@@ -180,10 +174,10 @@
   const FR: Messages = {
     title: 'Exemples Given-When-Then',
     metaDescription:
-      "Un scénario écrit sous forme de phrase Given-When-Then (Gherkin), puis présenté sous forme de code Selenium et Playwright équivalent en JavaScript et en Python.",
+      "Un scénario écrit sous forme de phrase Given-When-Then (Gherkin), puis présenté sous forme de code Selenium et Playwright équivalent en JavaScript, Python, Rust et C#.",
     heading: 'Exemples Given-When-Then',
     intro:
-      "Un scénario en langage clair, écrit comme le décrirait une personne qui ne programme pas, à côté du code réel qui l'exécute — selon quatre combinaisons d'outil et de langage.",
+      "Un scénario en langage clair, écrit comme le décrirait une personne qui ne programme pas, à côté du code réel qui l'exécute — selon huit combinaisons d'outil et de langage.",
     whatHeading: "Qu'est-ce que Given-When-Then ?",
     whatIsLabel: "est une manière d'écrire un scénario de test en phrases simples plutôt qu'en code : Given",
     whatP1:
@@ -193,14 +187,13 @@
     scenarioHeading: 'Le scénario',
     scenarioIntro: 'Un scénario, écrit en Gherkin :',
     scenarioBody:
-      "Ci-dessous, les trois mêmes lignes sont exécutées de quatre façons : deux outils d'automatisation de navigateur (Selenium et Playwright), chacun dans deux langages (JavaScript et Python). Chaque ligne de code est commentée avec l'étape Given/When/Then à laquelle elle appartient, afin que vous puissiez suivre la phrase simple jusqu'au code qui l'implémente.",
+      "Ci-dessous, les trois mêmes lignes sont exécutées de huit façons : deux outils d'automatisation de navigateur (Selenium et Playwright), chacun dans quatre langages (JavaScript, Python, Rust et C#). Chaque ligne de code est commentée avec l'étape Given/When/Then à laquelle elle appartient, afin que vous puissiez suivre la phrase simple jusqu'au code qui l'implémente.",
     readNotRunLabel: "À lire, pas à exécuter à répétition",
     readNotRunPre: "Ces quatre exemples ciblent google.com, comme les ",
     googleSearchExamplesLinkText: 'exemples de Recherche Google',
     readNotRunPost:
       " de ce site — et la même prudence s'applique : les conditions d'utilisation de Google limitent les requêtes automatisées sur Google Search ; considérez donc le code ci-dessous comme de la documentation à lire pour le schéma, et non comme des scripts à exécuter à répétition sur le site réel. Si vous voulez essayer cette même structure Given/When/Then en pratique, dirigez plutôt les mêmes étapes vers la page d'accueil de ce site.",
-    seleniumHeading: 'Selenium',
-    playwrightHeading: 'Playwright',
+    sourceCodeHeading: 'Exemples de code source',
     backHome: "Retour à l'accueil",
     seeMoreExamples: "Voir d'autres exemples"
   };
@@ -269,7 +262,7 @@ Then I see search results
 <Separator label="Section break" />
 
 <section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.seleniumHeading} level={2} />
+  <SectionHeading class="section-heading-start" heading={m.sourceCodeHeading} level={2} />
 
   <Details summary="Selenium + JavaScript" open>
     <CodeBlock label="Selenium · JavaScript · selenium-webdriver (npm)">
@@ -327,14 +320,77 @@ finally:
 `}</code></pre>
     </CodeBlock>
   </Details>
-</section>
 
-<Separator label="Section break" />
+  <Details summary="Selenium + Rust">
+    <CodeBlock label="Selenium · Rust · thirtyfour (crates.io)">
+      <pre><code>{`use std::time::Duration;
 
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.playwrightHeading} level={2} />
+use thirtyfour::prelude::*;
 
-  <Details summary="Playwright + JavaScript" open>
+#[tokio::main]
+async fn main() -> anyhow::Result<()> {
+    // chromedriver must already be listening, e.g. \`chromedriver --port=9515\`.
+    let driver = WebDriver::new("http://localhost:9515", DesiredCapabilities::chrome()).await?;
+
+    // Run the scenario, but always quit the browser afterward.
+    let result = scenario(&driver).await;
+    driver.quit().await?;
+    result
+}
+
+async fn scenario(driver: &WebDriver) -> anyhow::Result<()> {
+    // Given I am on https://google.com
+    driver.goto("https://google.com").await?;
+
+    // When I type in the search box and click submit
+    // Google's search input has commonly carried name="q". thirtyfour has
+    // no By::Name, so use a CSS attribute selector. "\\u{E007}" is the
+    // WebDriver Enter key.
+    let search_box = driver.query(By::Css("[name='q']")).single().await?;
+    search_box.send_keys("testing examples\\u{E007}").await?;
+
+    // Then I see search results
+    let found = driver
+        .query(By::Css("#search"))
+        .wait(Duration::from_secs(10), Duration::from_millis(250))
+        .exists()
+        .await?;
+    assert!(found, "Expected to see search results, but none were found.");
+    Ok(())
+}
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Selenium + C#">
+    <CodeBlock label="Selenium · C# · Selenium.WebDriver (NuGet)">
+      <pre><code>{`using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+
+// Selenium Manager finds or downloads a matching chromedriver.
+// \`using\` quits the browser even if the check below throws.
+using IWebDriver driver = new ChromeDriver();
+
+// Given I am on https://google.com
+driver.Navigate().GoToUrl("https://google.com");
+
+// When I type in the search box and click submit
+// Google's search input has commonly carried name="q".
+var searchBox = driver.FindElement(By.Name("q"));
+searchBox.SendKeys("testing examples" + Keys.Return);
+
+// Then I see search results
+var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10))
+{
+    Message = "Expected to see search results, but none were found."
+};
+wait.Until(d => d.FindElements(By.CssSelector("#search")).Count > 0);
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Playwright + JavaScript">
     <CodeBlock label="Playwright · JavaScript · playwright (npm)">
       <pre><code>{`import { chromium } from 'playwright';
 
@@ -390,6 +446,64 @@ def demo() -> None:
 
 if __name__ == "__main__":
     demo()
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Playwright + Rust">
+    <CodeBlock label="Playwright · Rust · playwright-rs (crates.io)">
+      <pre><code>{`use playwright_rs::{Page, Playwright, WaitUntil};
+
+#[tokio::main]
+async fn main() -> anyhow::Result<()> {
+    let pw = Playwright::launch().await?;
+    let browser = pw.chromium().launch().await?;
+    let page = browser.new_page().await?;
+
+    // Run the scenario, but always close the browser afterward.
+    let result = scenario(&page).await;
+    browser.close().await?;
+    result
+}
+
+async fn scenario(page: &Page) -> anyhow::Result<()> {
+    // Given I am on https://google.com
+    page.goto("https://google.com", None).await?;
+
+    // When I type in the search box and click submit
+    // Google's search input has commonly carried name="q".
+    let search_box = page.locator("[name=\\"q\\"]");
+    search_box.fill("testing examples", None).await?;
+    search_box.press("Enter", None).await?;
+    page.wait_for_load_state(Some(WaitUntil::Load)).await?;
+
+    // Then I see search results
+    let count = page.locator("#search").count().await?;
+    assert!(count > 0, "Expected to see search results, but none were found.");
+    Ok(())
+}
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Playwright + C#">
+    <CodeBlock label="Playwright · C# · Microsoft.Playwright (NuGet)">
+      <pre><code>{`using Microsoft.Playwright;
+
+using var playwright = await Playwright.CreateAsync();
+await using var browser = await playwright.Chromium.LaunchAsync();
+var page = await browser.NewPageAsync();
+
+// Given I am on https://google.com
+await page.GotoAsync("https://google.com");
+
+// When I type in the search box and click submit
+// Google's search input has commonly carried name="q".
+await page.FillAsync("[name=\\"q\\"]", "testing examples");
+await page.Keyboard.PressAsync("Enter");
+
+// Then I see search results
+await page.WaitForSelectorAsync("#search");
 `}</code></pre>
     </CodeBlock>
   </Details>
