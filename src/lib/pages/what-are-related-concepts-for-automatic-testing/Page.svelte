@@ -189,7 +189,7 @@
     s3P2b:
       ' it to do. It has no way of checking whether that intention was ever the right one. Discovery is what keeps the intention pointed at something a real person actually needs, so that all the careful automated checking you do afterwards is checking something worth checking.',
     s3P3:
-      'It\'s concrete on this very site, too: the fixture examples on the home page, and the NHS Wales "About Us" and search scenarios this site\'s sibling repos exercise, exist because someone identified a real user journey worth protecting — signing up, searching, finding information on a health service site. Deciding that journey mattered enough to write a test for is itself a discovery activity, not a purely technical one.',
+      'It\'s concrete on this very site, too: the fixture examples on the practice page, and the NHS Wales "About Us" and search scenarios this site\'s sibling repos exercise, exist because someone identified a real user journey worth protecting — signing up, searching, finding information on a health service site. Deciding that journey mattered enough to write a test for is itself a discovery activity, not a purely technical one.',
     s3P4Pre: 'Learn more at the ',
     s3P4Mid: " and the Nielsen Norman Group's ",
     s3P4Mid2: ', or watch ',
@@ -350,7 +350,7 @@
     s3P2b:
       " iddo'i wneud. Nid oes ganddi unrhyw ffordd o wirio a oedd y bwriad hwnnw erioed yn un cywir. Darganfod yw'r hyn sy'n cadw'r bwriad wedi'i anelu at rywbeth y mae person go iawn wir ei angen, fel bod yr holl wirio awtomatig gofalus rydych chi'n ei wneud wedyn yn gwirio rhywbeth sy'n werth ei wirio.",
     s3P3:
-      "Mae'n bendant ar y wefan hon ei hun, hefyd: mae'r enghreifftiau cynnwys sefydlog ar yr hafan, a'r senarios \"About Us\" a chwilio NHS Cymru y mae ystorfeydd chwaer y wefan hon yn eu hymarfer, yn bodoli oherwydd i rywun nodi taith defnyddiwr go iawn yn werth ei diogelu — cofrestru, chwilio, dod o hyd i wybodaeth ar wefan gwasanaeth iechyd. Mae penderfynu bod y daith honno'n bwysig ddigon i ysgrifennu prawf ar ei chyfer yn weithgaredd darganfod ynddo'i hun, nid un technegol yn unig.",
+      "Mae'n bendant ar y wefan hon ei hun, hefyd: mae'r enghreifftiau cynnwys sefydlog ar y dudalen ymarfer, a'r senarios \"About Us\" a chwilio NHS Cymru y mae ystorfeydd chwaer y wefan hon yn eu hymarfer, yn bodoli oherwydd i rywun nodi taith defnyddiwr go iawn yn werth ei diogelu — cofrestru, chwilio, dod o hyd i wybodaeth ar wefan gwasanaeth iechyd. Mae penderfynu bod y daith honno'n bwysig ddigon i ysgrifennu prawf ar ei chyfer yn weithgaredd darganfod ynddo'i hun, nid un technegol yn unig.",
     s3P4Pre: 'Dysgwch fwy yn y ',
     s3P4Mid: " ac yng nghyflwyniad Nielsen Norman Group i ",
     s3P4Mid2: ', neu gwyliwch ',
@@ -491,7 +491,7 @@
     s3P2b:
       '让它做的事情。它没有办法检查这个“打算”本身是否曾经是正确的。而探索正是让这个“打算”始终指向真实用户真正需要的东西，这样你之后所做的一切细致的自动化检查，才是在检查真正值得检查的东西。',
     s3P3:
-      '这在本站上也是具体可见的：主页上的测试夹具示例，以及本站姐妹仓库所演练的 NHS Wales “About Us”和搜索场景，之所以存在，是因为有人识别出了一个值得保护的真实用户旅程——注册、搜索、在一个医疗服务网站上找到信息。判断这段旅程重要到值得为它写一个测试，本身就是一项探索活动，而不仅仅是一项技术活动。',
+      '这在本站上也是具体可见的：练习页面上的测试夹具示例，以及本站姐妹仓库所演练的 NHS Wales “About Us”和搜索场景，之所以存在，是因为有人识别出了一个值得保护的真实用户旅程——注册、搜索、在一个医疗服务网站上找到信息。判断这段旅程重要到值得为它写一个测试，本身就是一项探索活动，而不仅仅是一项技术活动。',
     s3P4Pre: '可以进一步阅读',
     s3P4Mid: '，以及 Nielsen Norman Group 的',
     s3P4Mid2: '，或观看',
@@ -636,7 +636,7 @@
     s3P2b:
       ' أن تفعله. وليس لديها وسيلة للتحقق من أن ذلك القصد كان هو الصحيح أصلًا. الاستكشاف هو ما يبقي القصد موجّهًا إلى شيء يحتاجه شخص حقيقي فعلًا، فيكون كل الفحص الآلي الدقيق الذي تجريه بعد ذلك فحصًا لشيء يستحق الفحص.',
     s3P3:
-      'وهو ملموس في هذا الموقع نفسه أيضًا: فأمثلة التجهيزات في الصفحة الرئيسية، وسيناريوهات «About Us» والبحث في NHS Wales التي تمارسها المستودعات الشقيقة لهذا الموقع، موجودة لأن أحدهم حدّد رحلة مستخدم حقيقية تستحق الحماية — التسجيل والبحث والعثور على معلومات في موقع خدمة صحية. وقرار أن هذه الرحلة مهمة بما يكفي لكتابة اختبار لها هو بحد ذاته نشاط استكشاف لا نشاط تقني بحت.',
+      'وهو ملموس في هذا الموقع نفسه أيضًا: فأمثلة التجهيزات في صفحة التدريب، وسيناريوهات «About Us» والبحث في NHS Wales التي تمارسها المستودعات الشقيقة لهذا الموقع، موجودة لأن أحدهم حدّد رحلة مستخدم حقيقية تستحق الحماية — التسجيل والبحث والعثور على معلومات في موقع خدمة صحية. وقرار أن هذه الرحلة مهمة بما يكفي لكتابة اختبار لها هو بحد ذاته نشاط استكشاف لا نشاط تقني بحت.',
     s3P4Pre: 'اعرف المزيد في ',
     s3P4Mid: ' وفي ',
     s3P4Mid2: ' من Nielsen Norman Group، أو شاهد ',
@@ -785,7 +785,7 @@
     s3P2b:
       ' 대로 동작하는지만 확인할 수 있습니다. 그 의도가 애초에 옳았는지는 확인할 방법이 없습니다. 디스커버리는 그 의도가 실제 사람이 정말 필요로 하는 것을 향하도록 유지해 주는 것이며, 그래서 이후에 하는 모든 신중한 자동 확인이 확인할 가치가 있는 것을 확인하게 됩니다.',
     s3P3:
-      '바로 이 사이트에서도 구체적입니다. 홈페이지의 픽스처 예제와, 이 사이트의 자매 저장소가 다루는 NHS Wales의 "About Us" 및 검색 시나리오는 누군가 보호할 가치가 있는 실제 사용자 여정 — 가입, 검색, 보건 서비스 사이트에서 정보 찾기 — 을 파악했기 때문에 존재합니다. 그 여정이 테스트를 작성할 만큼 중요하다고 결정하는 것은 그 자체로 순수한 기술 작업이 아니라 디스커버리 활동입니다.',
+      '바로 이 사이트에서도 구체적입니다. 연습 페이지의 픽스처 예제와, 이 사이트의 자매 저장소가 다루는 NHS Wales의 "About Us" 및 검색 시나리오는 누군가 보호할 가치가 있는 실제 사용자 여정 — 가입, 검색, 보건 서비스 사이트에서 정보 찾기 — 을 파악했기 때문에 존재합니다. 그 여정이 테스트를 작성할 만큼 중요하다고 결정하는 것은 그 자체로 순수한 기술 작업이 아니라 디스커버리 활동입니다.',
     s3P4Pre: '더 알아보려면 ',
     s3P4Mid: '와 Nielsen Norman Group의 ',
     s3P4Mid2: '를 보거나, ',
@@ -933,7 +933,7 @@
     s3P2b:
       " qu'il fasse. Elle n'a aucun moyen de vérifier si cette intention était la bonne. La découverte est ce qui maintient l'intention orientée vers ce dont une vraie personne a réellement besoin, afin que toutes les vérifications automatisées minutieuses que vous faites ensuite portent sur quelque chose qui vaut la peine d'être vérifié.",
     s3P3:
-      "C'est aussi concret sur ce site même : les exemples de contenu stable de la page d'accueil, et les scénarios « About Us » et de recherche NHS Wales que mettent en œuvre les dépôts associés à ce site, existent parce que quelqu'un a identifié un vrai parcours utilisateur à protéger — s'inscrire, rechercher, trouver des informations sur le site d'un service de santé. Décider que ce parcours comptait assez pour écrire un test est en soi une activité de découverte, et non une activité purement technique.",
+      "C'est aussi concret sur ce site même : les exemples de contenu stable de la page d'exercices, et les scénarios « About Us » et de recherche NHS Wales que mettent en œuvre les dépôts associés à ce site, existent parce que quelqu'un a identifié un vrai parcours utilisateur à protéger — s'inscrire, rechercher, trouver des informations sur le site d'un service de santé. Décider que ce parcours comptait assez pour écrire un test est en soi une activité de découverte, et non une activité purement technique.",
     s3P4Pre: 'Pour en savoir plus, consultez le ',
     s3P4Mid: " et le ",
     s3P4Mid2: ', ou regardez la vidéo ',

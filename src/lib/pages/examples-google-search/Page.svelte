@@ -36,7 +36,7 @@
     patternsLabel: string;
     readBeforeMid2: string;
     readBeforeMid3: string;
-    homePageLinkText: string;
+    practicePageLinkText: string;
     readBeforePost: string;
     fourInteractionsHeading: string;
     fourInteractionsIntro: string;
@@ -99,7 +99,7 @@
     readBeforeMid2:
       ' of each tool side by side — they are not meant to be run repeatedly, or at all, against the live ',
     readBeforeMid3: '. If you want to practise these same patterns hands-on, point them at ',
-    homePageLinkText: "this site's own home page",
+    practicePageLinkText: "this site's own practice page",
     readBeforePost:
       " instead, which was built exactly for that: stable ids, names, classes, and text that don't shift under you.",
     fourInteractionsHeading: 'The four interactions, defined once',
@@ -190,7 +190,7 @@
     readBeforeMid2:
       " rhyngweithio pob offeryn ochr yn ochr — dydyn nhw ddim wedi'u bwriadu i gael eu rhedeg dro ar ôl tro, nac o gwbl, yn erbyn y ",
     readBeforeMid3: " byw. Os hoffech ymarfer yr un patrymau hyn yn ymarferol, anelwch nhw at ",
-    homePageLinkText: 'hafan y wefan hon ei hun',
+    practicePageLinkText: 'dudalen ymarfer y wefan hon ei hun',
     readBeforePost:
       " yn lle hynny, a adeiladwyd yn union ar gyfer hynny: ids, names, classes, a thestun sefydlog nad ydynt yn newid oddi tanoch.",
     fourInteractionsHeading: "Y pedwar rhyngweithiad, wedi'u diffinio unwaith",
@@ -261,7 +261,7 @@
     patternsLabel: '模式',
     readBeforeMid2: '——它们不打算被反复运行，甚至根本不应该针对真实的',
     readBeforeMid3: '运行。如果你想亲自动手练习这些同样的模式，请把它们指向',
-    homePageLinkText: '本站自己的主页',
+    practicePageLinkText: '本站自己的练习页面',
     readBeforePost: '，它正是为此而建：稳定的 id、name、class 和文字，不会在你脚下发生变化。',
     fourInteractionsHeading: '四个交互，统一定义一次',
     fourInteractionsIntro: '为了避免在每个示例中重复，下面说明下方六个脚本各自做了什么：',
@@ -329,7 +329,7 @@
       ' التفاعل فيها جنبًا إلى جنب — وليس المقصود تشغيلها مرارًا، ولا حتى مرة واحدة، على موقع ',
     readBeforeMid3:
       ' الحي. وإن أردت التدرب على هذه الأنماط نفسها عمليًا فوجّهها إلى ',
-    homePageLinkText: 'الصفحة الرئيسية لهذا الموقع نفسه',
+    practicePageLinkText: 'صفحة التدريب في هذا الموقع نفسه',
     readBeforePost:
       ' بدلًا من ذلك، فقد بُنيت لهذا الغرض بالضبط: معرّفات وأسماء وفئات ونصوص ثابتة لا تتغير من تحتك.',
     fourInteractionsHeading: 'التفاعلات الأربعة، معرَّفة مرة واحدة',
@@ -403,7 +403,7 @@
       '을 나란히 보여 주기 위해 존재하며, 실제 ',
     readBeforeMid3:
       ' 사이트를 상대로 반복해서, 또는 아예 실행하라고 만든 것이 아닙니다. 이 패턴을 직접 연습해 보고 싶다면 대신 ',
-    homePageLinkText: '이 사이트의 홈페이지',
+    practicePageLinkText: '이 사이트의 연습 페이지',
     readBeforePost:
       '를 대상으로 삼으세요. 바로 그 목적으로 만들어졌습니다. 발밑에서 바뀌지 않는 안정적인 id, name, class, 텍스트가 있습니다.',
     fourInteractionsHeading: '네 가지 상호작용, 한 번만 정의',
@@ -476,7 +476,7 @@
     readBeforeMid2:
       " d'interaction de chaque outil — ils ne sont pas destinés à être exécutés à répétition, ni même une seule fois, sur le ",
     readBeforeMid3: " réel. Si vous voulez vous exercer à ces mêmes schémas en pratique, dirigez-les vers ",
-    homePageLinkText: "la page d'accueil de ce site",
+    practicePageLinkText: "la page d'exercices de ce site",
     readBeforePost:
       " à la place, qui a été conçue exactement pour cela : des ids, des names, des classes et des textes stables qui ne bougent pas sous vos pieds.",
     fourInteractionsHeading: 'Les quatre interactions, définies une fois pour toutes',
@@ -561,7 +561,7 @@
     <p>
       {m.readBeforePre}<a href="https://www.google.com/policies/terms/">{m.tosLinkText}</a
       >{m.readBeforeMid1}<em>{m.patternsLabel}</em>{m.readBeforeMid2}<code>google.com</code
-      >{m.readBeforeMid3}<a href={localeHref(locale, 'home')}>{m.homePageLinkText}</a>{m.readBeforePost}
+      >{m.readBeforeMid3}<a href={localeHref(locale, 'practice')}>{m.practicePageLinkText}</a>{m.readBeforePost}
     </p>
   </InformationCallout>
 

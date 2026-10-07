@@ -57,7 +57,7 @@
     readNotRunPre: 'These four examples target google.com, the same as this site’s ',
     googleSearchExamplesLinkText: 'Google Search examples',
     readNotRunPost:
-      ' — and the same caution applies: Google’s Terms of Service restrict automated querying of Google Search, so treat the code below as reading material for the pattern, not as scripts to run repeatedly against the live site. If you want to try this same Given/When/Then shape hands-on, point the same steps at this site’s own home page instead.',
+      ' — and the same caution applies: Google’s Terms of Service restrict automated querying of Google Search, so treat the code below as reading material for the pattern, not as scripts to run repeatedly against the live site. If you want to try this same Given/When/Then shape hands-on, point the same steps at this site’s own practice page instead.',
     sourceCodeHeading: 'Examples of source code',
     backHome: 'Back to home',
     seeMoreExamples: 'See more examples'
@@ -84,7 +84,7 @@
     readNotRunPre: "Mae'r pedair enghraifft hyn yn targedu google.com, yr un peth ag ",
     googleSearchExamplesLinkText: 'enghreifftiau Chwilio Google',
     readNotRunPost:
-      " y wefan hon — ac mae'r un rhybudd yn berthnasol: mae Telerau Gwasanaeth Google yn cyfyngu ar ymholi awtomatig ar Google Search, felly trinwch y cod isod fel deunydd darllen ar gyfer y patrwm, nid fel sgriptiau i'w rhedeg dro ar ôl tro yn erbyn y wefan fyw. Os hoffech roi cynnig ymarferol ar yr un siâp Given/When/Then, anelwch yr un camau at hafan y wefan hon ei hun yn lle hynny.",
+      " y wefan hon — ac mae'r un rhybudd yn berthnasol: mae Telerau Gwasanaeth Google yn cyfyngu ar ymholi awtomatig ar Google Search, felly trinwch y cod isod fel deunydd darllen ar gyfer y patrwm, nid fel sgriptiau i'w rhedeg dro ar ôl tro yn erbyn y wefan fyw. Os hoffech roi cynnig ymarferol ar yr un siâp Given/When/Then, anelwch yr un camau at dudalen ymarfer y wefan hon ei hun yn lle hynny.",
     sourceCodeHeading: 'Enghreifftiau o god ffynhonnell',
     backHome: "Yn ôl i'r hafan",
     seeMoreExamples: 'Gweld mwy o enghreifftiau'
@@ -111,7 +111,7 @@
     readNotRunPre: '这四个示例的目标是 google.com，与本站的',
     googleSearchExamplesLinkText: '谷歌搜索示例',
     readNotRunPost:
-      '相同——同样的注意事项也适用：谷歌的服务条款限制对谷歌搜索进行自动化查询，因此请把下面的代码当作了解模式的阅读材料，而不是反复对真实网站运行的脚本。如果你想亲自动手体验同样的 Given/When/Then 结构，可以把同样的步骤指向本站自己的主页。',
+      '相同——同样的注意事项也适用：谷歌的服务条款限制对谷歌搜索进行自动化查询，因此请把下面的代码当作了解模式的阅读材料，而不是反复对真实网站运行的脚本。如果你想亲自动手体验同样的 Given/When/Then 结构，可以把同样的步骤指向本站自己的练习页面。',
     sourceCodeHeading: '源代码示例',
     backHome: '返回首页',
     seeMoreExamples: '查看更多示例'
@@ -138,7 +138,7 @@
     readNotRunPre: 'تستهدف هذه الأمثلة الأربعة google.com، مثل ',
     googleSearchExamplesLinkText: 'أمثلة Google Search',
     readNotRunPost:
-      ' في هذا الموقع — وينطبق التحذير نفسه: تقيّد شروط خدمة Google الاستعلام الآلي عن Google Search، لذا تعامل مع الكود أدناه كمادة للقراءة لفهم النمط، لا كسكربتات تُشغَّل مرارًا على الموقع الحي. وإن أردت تجربة صيغة Given/When/Then نفسها عمليًا، فوجّه الخطوات نفسها إلى الصفحة الرئيسية لهذا الموقع.',
+      ' في هذا الموقع — وينطبق التحذير نفسه: تقيّد شروط خدمة Google الاستعلام الآلي عن Google Search، لذا تعامل مع الكود أدناه كمادة للقراءة لفهم النمط، لا كسكربتات تُشغَّل مرارًا على الموقع الحي. وإن أردت تجربة صيغة Given/When/Then نفسها عمليًا، فوجّه الخطوات نفسها إلى صفحة التدريب في هذا الموقع.',
     sourceCodeHeading: 'أمثلة على الشيفرة المصدرية',
     backHome: 'العودة إلى الرئيسية',
     seeMoreExamples: 'عرض المزيد من الأمثلة'
@@ -165,7 +165,7 @@
     readNotRunPre: '이 네 가지 예제는 이 사이트의 ',
     googleSearchExamplesLinkText: 'Google Search 예제',
     readNotRunPost:
-      '와 마찬가지로 google.com을 대상으로 하며, 같은 주의가 적용됩니다. Google의 서비스 약관은 Google Search에 대한 자동화된 쿼리를 제한하므로, 아래 코드는 실제 사이트를 상대로 반복 실행할 스크립트가 아니라 패턴을 이해하기 위한 읽을거리로 다루세요. 같은 Given/When/Then 형태를 직접 해 보고 싶다면, 같은 단계를 이 사이트의 홈페이지에 적용해 보세요.',
+      '와 마찬가지로 google.com을 대상으로 하며, 같은 주의가 적용됩니다. Google의 서비스 약관은 Google Search에 대한 자동화된 쿼리를 제한하므로, 아래 코드는 실제 사이트를 상대로 반복 실행할 스크립트가 아니라 패턴을 이해하기 위한 읽을거리로 다루세요. 같은 Given/When/Then 형태를 직접 해 보고 싶다면, 같은 단계를 이 사이트의 연습 페이지에 적용해 보세요.',
     sourceCodeHeading: '소스 코드 예시',
     backHome: '홈으로 돌아가기',
     seeMoreExamples: '더 많은 예제 보기'
@@ -192,7 +192,7 @@
     readNotRunPre: "Ces quatre exemples ciblent google.com, comme les ",
     googleSearchExamplesLinkText: 'exemples de Recherche Google',
     readNotRunPost:
-      " de ce site — et la même prudence s'applique : les conditions d'utilisation de Google limitent les requêtes automatisées sur Google Search ; considérez donc le code ci-dessous comme de la documentation à lire pour le schéma, et non comme des scripts à exécuter à répétition sur le site réel. Si vous voulez essayer cette même structure Given/When/Then en pratique, dirigez plutôt les mêmes étapes vers la page d'accueil de ce site.",
+      " de ce site — et la même prudence s'applique : les conditions d'utilisation de Google limitent les requêtes automatisées sur Google Search ; considérez donc le code ci-dessous comme de la documentation à lire pour le schéma, et non comme des scripts à exécuter à répétition sur le site réel. Si vous voulez essayer cette même structure Given/When/Then en pratique, dirigez plutôt les mêmes étapes vers la page d'exercices de ce site.",
     sourceCodeHeading: 'Exemples de code source',
     backHome: "Retour à l'accueil",
     seeMoreExamples: "Voir d'autres exemples"

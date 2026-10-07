@@ -63,7 +63,7 @@
     intro: 'Testing Examples provides free open source testing examples for browser automation.',
     whatForHeading: 'What this site is for',
     whatForP:
-      'This home page is a deliberately plain page of HTML fixtures — elements with known ids, names, classes, link text, lists, and form inputs — for anyone learning or exercising browser automation tools such as Selenium WebDriver, WebdriverIO, or Playwright. It is meant to be a stable target: the same markup, the same identifiers, the same visible text, every time.',
+      'The practice page is a deliberately plain page of HTML fixtures — elements with known ids, names, classes, link text, lists, and form inputs — for anyone learning or exercising browser automation tools such as Selenium WebDriver, WebdriverIO, or Playwright. It is meant to be a stable target: the same markup, the same identifiers, the same visible text, every time.',
     factsLabel: 'Project facts',
     factName: 'Name',
     factLicence: 'Licence',
@@ -91,7 +91,7 @@
     designSystemP:
       "The components come from the Lily Design System — Svelte components that render semantic HTML and correct ARIA, carrying one stable class hook each. This site uses Lily's own official themes too: all 45 files under static/assets/themes/, copied verbatim from Lily's repository, each a complete, self-contained stylesheet styling every one of Lily's ~492 components — not just two hand-picked colours. static/assets/style.css therefore no longer styles Lily's own component hooks at all; it holds a small alias layer, this site's own header/nav/footer layout (not Lily components), and a handful of explicitly documented exceptions where a Lily default didn't suit this site's specific layout — see that file's own header comment for exactly what and why. Lily's ThemePicker swaps between the 45 themes live.",
     exceptionP:
-      "The one exception is the home page's fixture section (Id Examples through Form Input Examples): those elements are kept as plain HTML, not Lily components, so their ids, names, classes, and text stay exactly what the sibling demo repos expect.",
+      "The one exception is the practice page's fixture section (Id Examples through Form Input Examples): those elements are kept as plain HTML, not Lily components, so their ids, names, classes, and text stay exactly what the sibling demo repos expect.",
     runLocallyLabel: 'Run this site locally',
     repoCta: 'The repository on GitHub'
   };
@@ -107,7 +107,7 @@
     intro: "Mae Testing Examples yn darparu enghreifftiau profi cod agored am ddim ar gyfer awtomatiaeth porwr.",
     whatForHeading: "Diben y wefan hon",
     whatForP:
-      "Mae'r hafan hon yn dudalen blaen yn fwriadol, o gynnwys HTML sefydlog — elfennau ag ids, names, classes, testun dolen, rhestrau a mewnbynnau ffurflen hysbys — ar gyfer unrhyw un sy'n dysgu neu'n ymarfer offer awtomatiaeth porwr fel Selenium WebDriver, WebdriverIO, neu Playwright. Bwriedir iddi fod yn darged sefydlog: yr un marcio, yr un dynodwyr, yr un testun gweladwy, bob tro.",
+      "Mae'r dudalen ymarfer yn dudalen blaen yn fwriadol, o gynnwys HTML sefydlog — elfennau ag ids, names, classes, testun dolen, rhestrau a mewnbynnau ffurflen hysbys — ar gyfer unrhyw un sy'n dysgu neu'n ymarfer offer awtomatiaeth porwr fel Selenium WebDriver, WebdriverIO, neu Playwright. Bwriedir iddi fod yn darged sefydlog: yr un marcio, yr un dynodwyr, yr un testun gweladwy, bob tro.",
     factsLabel: "Ffeithiau'r prosiect",
     factName: 'Enw',
     factLicence: 'Trwydded',
@@ -135,7 +135,7 @@
     designSystemP:
       "Daw'r cydrannau o'r Lily Design System — cydrannau Svelte sy'n rendro HTML semantig ac ARIA cywir, gan gario un bachyn dosbarth sefydlog yr un. Mae'r wefan hon hefyd yn defnyddio themâu swyddogol Lily ei hun: pob un o'r 45 ffeil o dan static/assets/themes/, wedi'u copïo air am air o ystorfa Lily, pob un yn daflen arddull gyflawn, hunangynhwysol sy'n arddulio pob un o ~492 cydran Lily — nid dim ond dau liw wedi'u dewis â llaw. Nid yw static/assets/style.css felly'n arddulio bachau cydrannau Lily ei hun mwyach o gwbl; mae'n cynnwys haen alias fach, cynllun pennyn/llywio/troedyn y wefan hon ei hun (nid cydrannau Lily), a llond dwrn o eithriadau wedi'u dogfennu'n benodol lle nad oedd rhagosodiad Lily'n gweddu i gynllun penodol y wefan hon — gweler sylw pennyn y ffeil honno ei hun am yn union beth a pham. Mae ThemePicker Lily'n newid rhwng y 45 thema'n fyw.",
     exceptionP:
-      "Yr unig eithriad yw adran cynnwys sefydlog yr hafan (Id Examples hyd at Form Input Examples): cedwir yr elfennau hynny fel HTML plaen, nid cydrannau Lily, fel bod eu ids, names, classes a'u testun yn aros yn union fel y mae'r ystorfeydd arddangos chwaer yn eu disgwyl.",
+      "Yr unig eithriad yw adran cynnwys sefydlog y dudalen ymarfer (Id Examples hyd at Form Input Examples): cedwir yr elfennau hynny fel HTML plaen, nid cydrannau Lily, fel bod eu ids, names, classes a'u testun yn aros yn union fel y mae'r ystorfeydd arddangos chwaer yn eu disgwyl.",
     runLocallyLabel: "Rhedeg y wefan hon yn lleol",
     repoCta: "Yr ystorfa ar GitHub"
   };
@@ -147,7 +147,7 @@
     intro: 'Testing Examples 提供免费、开源的浏览器自动化测试示例。',
     whatForHeading: '本站的用途',
     whatForP:
-      '这个主页是一个刻意保持简单的 HTML 测试夹具页面——包含已知 id、name、class、链接文字、列表和表单输入的元素——供任何学习或使用 Selenium WebDriver、WebdriverIO 或 Playwright 等浏览器自动化工具的人使用。它的目的是成为一个稳定的目标：每次都是相同的标记、相同的标识符、相同的可见文字。',
+      '练习页面是一个刻意保持简单的 HTML 测试夹具页面——包含已知 id、name、class、链接文字、列表和表单输入的元素——供任何学习或使用 Selenium WebDriver、WebdriverIO 或 Playwright 等浏览器自动化工具的人使用。它的目的是成为一个稳定的目标：每次都是相同的标记、相同的标识符、相同的可见文字。',
     factsLabel: '项目信息',
     factName: '名称',
     factLicence: '许可证',
@@ -174,7 +174,7 @@
     designSystemP:
       '这些组件来自 Lily Design System——渲染语义化 HTML 和正确 ARIA 的 Svelte 组件，每个都带有一个稳定的类名钩子。本站也使用 Lily 自己的官方主题：static/assets/themes/ 下的全部 45 个文件，逐字复制自 Lily 的仓库，每一个都是完整、自包含的样式表，为 Lily 约 492 个组件中的每一个设置样式——而不仅仅是两种手选的颜色。因此 static/assets/style.css 已经完全不再为 Lily 自己的组件钩子设置样式；它只保留了一个小的别名层、本站自己的页眉/导航/页脚布局（不是 Lily 组件），以及少数几处明确记录的例外，说明 Lily 的默认样式在何处不适合本站的特定布局——具体是什么以及为什么，请参阅该文件自己的头部注释。Lily 的 ThemePicker 可以在这 45 个主题之间实时切换。',
     exceptionP:
-      '唯一的例外是主页的测试夹具部分（从 Id Examples 到 Form Input Examples）：这些元素被保留为纯 HTML，而不是 Lily 组件，以确保它们的 id、name、class 和文字与姐妹演示仓库所期望的完全一致。',
+      '唯一的例外是练习页面的测试夹具部分（从 Id Examples 到 Form Input Examples）：这些元素被保留为纯 HTML，而不是 Lily 组件，以确保它们的 id、name、class 和文字与姐妹演示仓库所期望的完全一致。',
     runLocallyLabel: '在本地运行本站',
     repoCta: 'GitHub 上的仓库'
   };
@@ -186,7 +186,7 @@
     intro: 'يقدّم Testing Examples أمثلة اختبار مجانية ومفتوحة المصدر لأتمتة المتصفح.',
     whatForHeading: 'ما الغرض من هذا الموقع',
     whatForP:
-      'هذه الصفحة الرئيسية صفحة بسيطة عن قصد من تجهيزات HTML — عناصر ذات معرّفات (ids) وأسماء وفئات ونصوص روابط وقوائم ومدخلات نماذج معروفة — لكل من يتعلم أدوات أتمتة المتصفح أو يتدرب عليها مثل Selenium WebDriver أو WebdriverIO أو Playwright. والمقصود أن تكون هدفًا ثابتًا: العلامات نفسها، والمعرّفات نفسها، والنص المرئي نفسه، في كل مرة.',
+      'صفحة التدريب صفحة بسيطة عن قصد من تجهيزات HTML — عناصر ذات معرّفات (ids) وأسماء وفئات ونصوص روابط وقوائم ومدخلات نماذج معروفة — لكل من يتعلم أدوات أتمتة المتصفح أو يتدرب عليها مثل Selenium WebDriver أو WebdriverIO أو Playwright. والمقصود أن تكون هدفًا ثابتًا: العلامات نفسها، والمعرّفات نفسها، والنص المرئي نفسه، في كل مرة.',
     factsLabel: 'حقائق المشروع',
     factName: 'الاسم',
     factLicence: 'الترخيص',
@@ -214,7 +214,7 @@
     designSystemP:
       'تأتي المكونات من Lily Design System — مكونات Svelte تُخرج HTML دلاليًا وARIA صحيحة، ويحمل كل منها خطّاف فئة ثابتًا واحدًا. ويستخدم هذا الموقع كذلك سمات Lily الرسمية نفسها: جميع الملفات الخمسة والأربعين في static/assets/themes/، منسوخة حرفيًا من مستودع Lily، وكل منها ورقة أنماط كاملة قائمة بذاتها تنسّق كل مكونات Lily البالغ عددها نحو 492 — لا مجرد لونين مختارين يدويًا. ولذلك لم يعد static/assets/style.css ينسّق خطّافات مكونات Lily نفسها على الإطلاق؛ بل يحتوي طبقة صغيرة من الأسماء المستعارة، وتخطيط الرأس والتنقل والتذييل الخاص بهذا الموقع (وهي ليست مكونات Lily)، وحفنة من الاستثناءات الموثقة صراحةً حيث لم يناسب افتراضي Lily تخطيط هذا الموقع المحدد — انظر التعليق في رأس ذلك الملف لمعرفة ما هي وما سببها بالضبط. ويبدّل ThemePicker من Lily بين السمات الخمس والأربعين مباشرةً.',
     exceptionP:
-      'الاستثناء الوحيد هو قسم التجهيزات في الصفحة الرئيسية (من Id Examples إلى Form Input Examples): تبقى هذه العناصر HTML عاديًا لا مكونات Lily، لتبقى معرّفاتها وأسماؤها وفئاتها ونصوصها كما تتوقعها مستودعات العرض التوضيحي الشقيقة بالضبط.',
+      'الاستثناء الوحيد هو قسم التجهيزات في صفحة التدريب (من Id Examples إلى Form Input Examples): تبقى هذه العناصر HTML عاديًا لا مكونات Lily، لتبقى معرّفاتها وأسماؤها وفئاتها ونصوصها كما تتوقعها مستودعات العرض التوضيحي الشقيقة بالضبط.',
     runLocallyLabel: 'شغّل هذا الموقع محليًا',
     repoCta: 'المستودع على GitHub'
   };
@@ -226,7 +226,7 @@
     intro: 'Testing Examples는 브라우저 자동화를 위한 무료 오픈 소스 테스트 예제를 제공합니다.',
     whatForHeading: '이 사이트의 용도',
     whatForP:
-      '이 홈페이지는 의도적으로 단순하게 만든 HTML 픽스처 페이지입니다. id, name, class, 링크 텍스트, 목록, 양식 입력이 정해져 있는 요소들로, Selenium WebDriver, WebdriverIO, Playwright 같은 브라우저 자동화 도구를 배우거나 연습하는 모든 사람을 위한 것입니다. 안정적인 대상이 되도록 만들어졌습니다. 언제나 같은 마크업, 같은 식별자, 같은 화면 텍스트입니다.',
+      '연습 페이지는 의도적으로 단순하게 만든 HTML 픽스처 페이지입니다. id, name, class, 링크 텍스트, 목록, 양식 입력이 정해져 있는 요소들로, Selenium WebDriver, WebdriverIO, Playwright 같은 브라우저 자동화 도구를 배우거나 연습하는 모든 사람을 위한 것입니다. 안정적인 대상이 되도록 만들어졌습니다. 언제나 같은 마크업, 같은 식별자, 같은 화면 텍스트입니다.',
     factsLabel: '프로젝트 정보',
     factName: '이름',
     factLicence: '라이선스',
@@ -254,7 +254,7 @@
     designSystemP:
       '컴포넌트는 Lily Design System에서 가져왔습니다. 의미론적 HTML과 올바른 ARIA를 렌더링하고 각각 하나의 안정적인 클래스 훅을 가진 Svelte 컴포넌트입니다. 이 사이트는 Lily의 공식 테마도 그대로 사용합니다. static/assets/themes/ 아래의 45개 파일 전부를 Lily 저장소에서 그대로 복사했으며, 각각이 두 가지 색상만 손으로 고른 것이 아니라 Lily의 약 492개 컴포넌트를 모두 스타일링하는 완결된 독립 스타일시트입니다. 따라서 static/assets/style.css는 더 이상 Lily 자체의 컴포넌트 훅을 전혀 스타일링하지 않습니다. 작은 별칭 계층, 이 사이트 고유의 헤더/내비게이션/푸터 레이아웃(Lily 컴포넌트가 아님), 그리고 Lily의 기본값이 이 사이트의 특정 레이아웃에 맞지 않아 명시적으로 문서화한 소수의 예외만 담고 있습니다. 정확히 무엇이 왜 그런지는 해당 파일의 머리말 주석을 참고하세요. Lily의 ThemePicker는 45개 테마를 실시간으로 바꿔 줍니다.',
     exceptionP:
-      '유일한 예외는 홈페이지의 픽스처 섹션(Id Examples부터 Form Input Examples까지)입니다. 이 요소들은 Lily 컴포넌트가 아닌 일반 HTML로 유지되어, id, name, class, 텍스트가 자매 데모 저장소가 기대하는 그대로 유지됩니다.',
+      '유일한 예외는 연습 페이지의 픽스처 섹션(Id Examples부터 Form Input Examples까지)입니다. 이 요소들은 Lily 컴포넌트가 아닌 일반 HTML로 유지되어, id, name, class, 텍스트가 자매 데모 저장소가 기대하는 그대로 유지됩니다.',
     runLocallyLabel: '이 사이트를 로컬에서 실행하기',
     repoCta: 'GitHub 저장소'
   };
@@ -266,7 +266,7 @@
     intro: "Testing Examples propose des exemples de tests open source et gratuits pour l'automatisation de navigateur.",
     whatForHeading: 'À quoi sert ce site',
     whatForP:
-      "Cette page d'accueil est une page volontairement simple de contenu HTML stable — des éléments dotés d'ids, de names, de classes, de textes de lien, de listes et de champs de formulaire connus — destinée à toute personne qui apprend ou pratique des outils d'automatisation de navigateur comme Selenium WebDriver, WebdriverIO ou Playwright. Elle se veut une cible stable : le même balisage, les mêmes identifiants, le même texte visible, à chaque fois.",
+      "La page d'exercices est une page volontairement simple de contenu HTML stable — des éléments dotés d'ids, de names, de classes, de textes de lien, de listes et de champs de formulaire connus — destinée à toute personne qui apprend ou pratique des outils d'automatisation de navigateur comme Selenium WebDriver, WebdriverIO ou Playwright. Elle se veut une cible stable : le même balisage, les mêmes identifiants, le même texte visible, à chaque fois.",
     factsLabel: 'Informations sur le projet',
     factName: 'Nom',
     factLicence: 'Licence',
@@ -294,7 +294,7 @@
     designSystemP:
       "Les composants proviennent du Lily Design System — des composants Svelte qui produisent du HTML sémantique et des attributs ARIA corrects, chacun avec une classe d'accroche stable. Ce site utilise aussi les thèmes officiels de Lily : les 45 fichiers de static/assets/themes/, copiés tels quels depuis le dépôt de Lily, chacun étant une feuille de style complète et autonome qui met en forme chacun des ~492 composants de Lily — et pas seulement deux couleurs choisies à la main. static/assets/style.css ne met donc plus du tout en forme les accroches des composants de Lily ; il contient une petite couche d'alias, la mise en page de l'en-tête, de la navigation et du pied de page propres à ce site (qui ne sont pas des composants Lily), et une poignée d'exceptions explicitement documentées où une valeur par défaut de Lily ne convenait pas à la mise en page de ce site — voir le commentaire d'en-tête de ce fichier pour le détail et les raisons. Le ThemePicker de Lily permet de passer d'un des 45 thèmes à l'autre en direct.",
     exceptionP:
-      "La seule exception est la section de contenu stable de la page d'accueil (de Id Examples à Form Input Examples) : ces éléments restent du HTML simple, et non des composants Lily, afin que leurs ids, names, classes et textes restent exactement ce qu'attendent les dépôts de démonstration associés.",
+      "La seule exception est la section de contenu stable de la page d'exercices (de Id Examples à Form Input Examples) : ces éléments restent du HTML simple, et non des composants Lily, afin que leurs ids, names, classes et textes restent exactement ce qu'attendent les dépôts de démonstration associés.",
     runLocallyLabel: 'Exécuter ce site en local',
     repoCta: 'Le dépôt sur GitHub'
   };
