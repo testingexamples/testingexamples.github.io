@@ -1,9 +1,26 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+  import { goto } from '$app/navigation';
   import { SectionHeading } from 'lily-design-system-svelte-headless';
   import SiteFixtures from '#lib/components/SiteFixtures.svelte';
+  import { preferredLocale } from '#lib/i18n/detect.js';
+  import { localeHref } from '#lib/i18n/paths.js';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
+
+  // Send visitors whose browser language we have a locale for to that
+  // locale's home page (spec/locales/index.md, "Language redirect on /").
+  // Never for a browser under automation: `navigator.webdriver` is true in
+  // Selenium, WebdriverIO and Playwright, and the sibling repos' tests must
+  // keep seeing this page at `/` (AGENTS.md).
+  onMount(() => {
+    if (navigator.webdriver) return;
+    const locale = preferredLocale(
+      navigator.languages?.length ? navigator.languages : [navigator.language]
+    );
+    if (locale) void goto(localeHref(locale, 'home'), { replaceState: true });
+  });
 </script>
 
 <svelte:head>

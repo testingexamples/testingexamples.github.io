@@ -22,6 +22,7 @@ export type TopicId =
   | 'how-does-artificial-intelligence-help-automatic-testing'
   | 'how-to-start-learning-automatic-testing'
   | 'learn'
+  | 'practice'
   | 'what-are-flow-metrics-for-automatic-testing'
   | 'what-are-related-concepts-for-automatic-testing'
   | 'what-is-automatic-testing'
@@ -93,6 +94,10 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'comment-commencer-a-apprendre-les-tests-automatises'
     ),
     load: () => import('#lib/pages/how-to-start-learning-automatic-testing/Page.svelte')
+  },
+  practice: {
+    slug: slugFor('practice', 'ymarfer', '练习', 'التدريب', '연습', 's-exercer'),
+    load: () => import('#lib/pages/practice/Page.svelte')
   },
   learn: {
     slug: slugFor('learn', 'dysgu', '学习', 'تعلم', '학습', 'apprendre'),

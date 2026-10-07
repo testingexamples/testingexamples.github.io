@@ -40,8 +40,8 @@ repos use still resolves. Keep it passing.
 
 The fixture markup itself lives in `src/lib/components/SiteFixtures.svelte`
 and is imported, unmodified, by both `src/routes/+page.svelte` (this
-contract's real target, at `/`) and every locale's own home page (for
-completeness — never as a substitute for `/`, which sibling repos hit
+contract's real target, at `/`) and every locale's Practice page, such as
+`/locales/en-001/practice/` (for completeness — never as a substitute for `/`, which sibling repos hit
 directly). The same "never translate, never change without coordinating"
 rule applies to that component regardless of which page imports it.
 
@@ -51,6 +51,10 @@ The site is served at `/locales/<locale>/<slug>/` for ten locales
 (`en-001` default, `en-gb`, `en-gb-oxendict`, `en-us`, `cy-gb`, `cy-001`,
 `zh-cn`, `ar-001`, `ko-001`, `fr-001`). `ar-001` is the site's only right-to-left
 locale (`dir="rtl"`, set by `src/hooks.server.ts`).
+`/` redirects a person to the locale matching their browser language, but never a
+browser under automation (`navigator.webdriver`), so the sibling repos still
+see the fixtures at `/` — see "Language redirect on `/`" in
+`spec/locales/index.md`. Keep `tests/locale-redirect.spec.ts` passing.
 See `spec/locales/index.md` for the full contract — URL scheme, what's
 translated vs. kept as-is, and why the home page fixture section is
 exempt from all of it. Every page's own content and translations live in

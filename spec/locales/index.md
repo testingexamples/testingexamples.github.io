@@ -15,6 +15,21 @@ This site supports ten locales:
 | `ko-001`           | 한국어                              | Korean     |
 | `fr-001`           | Français                          | French     |
 
+**Locale directory names.** Every locale directory, and so every locale code
+in `LOCALES`, uses the form `<language>-<region>`, all lowercase:
+
+- `<language>` is a two-letter ISO 639-1 code (`en`, `cy`, `zh`, `ar`, `ko`,
+  `fr`).
+- `<region>` is a two-letter ISO 3166-1 code (`gb`, `us`, `cn`) or, for a
+  language not tied to one country, a UN M.49 code (`001` is "world").
+- A bare language (`/locales/en/`, `/locales/cy/`) is never a locale
+  directory, and does not exist. It 404s, like any other unknown locale.
+- The one existing extra part is `en-gb-oxendict`, whose trailing variant
+  subtag (`oxendict`) marks Oxford spelling. A new locale should not add one
+  without a reason as strong.
+
+`tests/locales.spec.ts` enforces this.
+
 `src/lib/i18n/locales.ts` also exports `PICKER_LOCALES`: what the header's
 LocalePicker actually offers, in display order (`cy-001` first, then the
 four English variants, then `zh-cn`, `ar-001`, `ko-001`, and `fr-001`). It omits `cy-gb`, since its content
@@ -57,20 +72,50 @@ content.
 
 `src/routes/+page.svelte` (site root, `/`) is **not** part of the locale
 system and is never touched by it. AGENTS.md documents why: its "Id
-Examples" through "Form Input Examples" section is a contract five
+Examples" through "Form Input Examples" section is a contract nine
 external sibling repos' test suites depend on, hardcoded to
 `page.goto('/')`. That page, and only that page, keeps its historical
 unprefixed URL, unlocalized, byte-for-byte unchanged.
 
+### Language redirect on `/`
+
+The one thing `/` does is send a *person* to the locale that matches their
+browser. On mount, `src/routes/+page.svelte` reads `navigator.languages`
+(falling back to `navigator.language`) and calls `preferredLocale()` from
+`src/lib/i18n/detect.ts`; if that finds a locale it replaces the URL with
+`/locales/<locale>/`. The page's markup is untouched.
+
+- Tags are matched case-insensitively and `_` counts as `-`, so `cy_GB`,
+  `cy-GB` and `CY-gb` all give `cy-gb`.
+- An exact match wins (`en-US` → `en-us`). Otherwise the first locale with the
+  same language is used (`fr-CA` → `fr-001`, `en-AU` → `en-001`, `cy` →
+  `cy-001`). Traditional Chinese (`zh-TW`, `zh-HK`, `zh-Hant`) gets nothing,
+  since `zh-cn` is Simplified.
+- Preferences are tried in order, so `['de', 'fr']` gives `fr-001`. If no
+  preference matches, the visitor stays on `/`.
+- **Never for a browser under automation.** `navigator.webdriver` is true in
+  Selenium, WebdriverIO and Playwright, and the sibling repos' tests must keep
+  seeing the fixtures at `/`. The redirect is skipped there.
+- The locale picker reports its initial value on mount. `+layout.svelte`
+  ignores a change to the locale already showing, because following it would
+  move `/` to `/locales/en-001/`.
+
+Covered by `tests/detect.spec.ts` (matching rules) and
+`tests/locale-redirect.spec.ts` (the redirect, and that automation stays put).
+
 That same fixture section is also rendered — identically, in English, on
-every locale including both Welsh ones, `zh-cn`, `ar-001`, `ko-001`, and `fr-001` — as part of each
-locale's own home page (`/locales/<locale>/`). It is never translated
-anywhere: it is
-a contract/standard, not content, the same category as a code sample or a
-product name. Both the root page and every localized home page import it
+every locale including both Welsh ones, `zh-cn`, `ar-001`, `ko-001`, and
+`fr-001` — on each locale's Practice page (`/locales/<locale>/<practice slug>/`,
+for example `/locales/en-001/practice/`), not on its home page. The Practice
+page keeps the short "practise on this page" explanation (translated) above
+the fixtures, and each locale's home page links to it from its Examples list.
+Practice slugs: `practice`, `ymarfer`, `练习`, `التدريب`, `연습`, `s-exercer`.
+The fixture section is never translated anywhere: it is a contract/standard,
+not content, the same category as a code sample or a product name. Both the
+root page and every locale's Practice page import it
 from one shared component, `src/lib/components/SiteFixtures.svelte`, so
 the two can never drift apart. **Never edit that component without first
-reading AGENTS.md and coordinating with the five sibling repos it names.**
+reading AGENTS.md and coordinating with the nine sibling repos it names.**
 
 ## What gets translated, and what doesn't
 
@@ -150,13 +195,17 @@ page silently falls back to the target locale's home page.
 - `src/lib/i18n/locales.ts` — the `Locale` type, the locale list, and
   per-locale metadata (endonym label, BCP 47 tag, text direction).
 - `src/lib/i18n/topics.ts` — one entry per page: its slug in each of the
-  two slug groups, and a lazy `import()` of its component.
+  six slug groups (English, Welsh, Chinese, Arabic, Korean, French), and a
+  lazy `import()` of its component.
+- `src/lib/i18n/detect.ts` — `localeForTag()` and `preferredLocale()`, the
+  browser-language matching used only by the redirect on `/`.
 - `src/lib/i18n/paths.ts` — `localeHref(locale, topicId)` (build a URL)
   and `switchLocaleHref(pathname, targetLocale)` (same page, new locale)
   — every internal link and the PickerBar's locale switch both go through
   these, never a hand-built path.
 - `src/lib/i18n/chrome.ts` — translated header/footer/PickerBar strings,
-  consumed by the root `+layout.svelte`.
+  consumed by the root `+layout.svelte`, which also ignores a locale-picker
+  change to the locale already showing (see "Language redirect on `/`").
 - `src/routes/locales/[locale]/[...slug]/+page.ts` — resolves
   `(locale, slug)` to a `TopicId` via `topicForSlug`, lazy-loads that
   topic's component, and lists every `(locale, slug)` prerender entry via
@@ -182,3 +231,14 @@ universal renderer" would either flatten that structure or grow escape
 hatches until it wasn't generic any more. Keeping each page's own Svelte
 component, translating only the strings inside it, was more tractable and
 kept every page's existing markup/structure intact.
+
+## Related topics
+
+- [welsh-glossary.md](welsh-glossary.md) — the Welsh terminology reference
+  (TermCymru), with every term decision made so far
+- [../index.md](../index.md) — the site spec, including the home page fixture
+  contract this document works around
+- [../../AGENTS.md](../../AGENTS.md) — agent instructions
+- `tests/locales.spec.ts` (locale code format), `tests/detect.spec.ts`
+  (browser-language matching) and `tests/locale-redirect.spec.ts` (the
+  redirect on `/`)

@@ -15,6 +15,11 @@
 
   function handleLocaleChange(nextLocale: string): void {
     if (!isLocale(nextLocale)) return;
+    // The picker also reports its initial value when it mounts. On the site
+    // root `/`, which has no locale of its own, that value is the default
+    // locale, and following it would move `/` to `/locales/en-001/` — the
+    // sibling repos' tests depend on `/` staying put (AGENTS.md).
+    if (nextLocale === locale) return;
     goto(switchLocaleHref(page.url.pathname, nextLocale));
   }
 

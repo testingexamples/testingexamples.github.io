@@ -142,11 +142,35 @@ break):
 - `#select-example-1-id` (select with option value `a`, text `alfa`, as the
   first/index-0 option)
 
+## Locales
+
+The site is served in ten locales (`en-001` default, `en-gb`,
+`en-gb-oxendict`, `en-us`, `cy-001`, `cy-gb`, `zh-cn`, `ar-001`, `ko-001`,
+`fr-001`). [locales/index.md](locales/index.md) is the full contract; in
+short:
+
+- Every page lives at `/locales/<locale>/<slug>/`. Locale codes are all
+  lowercase `<language>-<region>`; a bare language such as `/locales/en/`
+  does not exist (404).
+- The site root `/` is not a locale. It stays at `/` and keeps the fixture
+  contract, but sends a *person* whose browser language matches a locale to
+  that locale's home page, never a browser under automation
+  (`navigator.webdriver`).
+- The fixture section is rendered identically, in English, on every locale's
+  Practice page (`/locales/<locale>/practice/` in English). It is never translated.
+- Page content and translations live in `src/lib/pages/<topicId>/Page.svelte`.
+  Welsh wording follows the TermCymru term bank, recorded in
+  [locales/welsh-glossary.md](locales/welsh-glossary.md).
+
 ## Content areas
 
 Besides the home page's fixture contract (above) and the `/about/` page, the
 site has two further sections. Neither depends on or affects the fixture
 contract; they can change freely.
+
+The paths below are the English slugs. The canonical URL of each is
+`/locales/en-001/<slug>/` (and the other locales translate the slug); the
+old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 
 - `/learn/` — hub page linking to the eight articles below, in this order.
   - `/what-is-automatic-testing/` — what automatic testing is, and how
@@ -232,6 +256,12 @@ contract; they can change freely.
   first as a Given-When-Then (Gherkin/BDD) sentence, then as the
   equivalent Selenium and Playwright code in JavaScript and Python.
   Linked from the home page's Examples list.
+- `/practice/` — the stable fixture playground: the short "practise on this
+  page" explanation above the fixture section (the contract above), which
+  used to sit on each locale's home page and now lives here, at
+  `/locales/<locale>/practice/` (Welsh `ymarfer`, Chinese `练习`, Arabic
+  `التدريب`, Korean `연습`, French `s-exercer`). Linked from every locale's home
+  page Examples list. The site root `/` still carries the fixtures itself.
 - `/app/` — a small interactive demo application (a Lily Design System
   Grail layout: simulated sign-in, a post-sign-in nav bar with a search
   box, and a three-tab panel), built as another stable target to practice
@@ -268,7 +298,12 @@ use headings:
   fails the build if any route errors, which doubles as a correctness
   check).
 - `pnpm test` passes — `tests/fixtures.spec.ts` mechanically asserts the
-  selectors above.
+  selectors above, and the locale specs (`tests/locales.spec.ts`,
+  `tests/detect.spec.ts`, `tests/locale-redirect.spec.ts`) assert the locale
+  code format, the browser-language matching, and that `/` stays put for
+  automated browsers.
+- Every locale has a translation of every page (`pnpm build` fails otherwise,
+  since each page is prerendered per locale).
 
 ## Related topics
 
@@ -277,6 +312,8 @@ use headings:
   non-negotiable coordination rule for changing this contract
 - [../src/routes/+page.svelte](../src/routes/+page.svelte) — where this
   contract is implemented
+- [locales/index.md](locales/index.md) — locales: URL scheme, what is
+  translated, the redirect on `/`
 
 ## Sources
 

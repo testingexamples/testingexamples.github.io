@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { SectionHeading } from 'lily-design-system-svelte-headless';
-  import SiteFixtures from '#lib/components/SiteFixtures.svelte';
   import { SITE_NAME } from '#lib/site.js';
   import { localeHref } from '#lib/i18n/paths.js';
   import type { Locale } from '#lib/i18n/locales.js';
@@ -14,8 +12,6 @@
     learnHeading: string;
     learnMoreHeading: string;
     examplesHeading: string;
-    practiceHeading: string;
-    practiceBody: string;
     links: {
       whatIsAutomaticTesting: string;
       whatIsThePurpose: string;
@@ -33,6 +29,8 @@
       givenWhenThenExamples: string;
       demoApp: string;
       demoAppSuffix: string;
+      practice: string;
+      practiceSuffix: string;
     };
   };
 
@@ -44,9 +42,6 @@
     learnHeading: 'Learn',
     learnMoreHeading: 'Learn More',
     examplesHeading: 'Examples',
-    practiceHeading: 'Practise on this page',
-    practiceBody:
-      'Everything below is a stable fixture playground: fixed ids, names, classes, and text that automation tools can reliably find every time, which is exactly what makes it useful to practise on directly — point your script at it, find an element, interact with it, and see what happens. The exact contract this page keeps is documented in this repo’s',
     links: {
       whatIsAutomaticTesting: 'What is automatic testing?',
       whatIsThePurpose: 'What is the purpose of automatic testing?',
@@ -63,7 +58,9 @@
       googleMapsExamples: 'Google Maps Examples',
       givenWhenThenExamples: 'Given-When-Then Examples',
       demoApp: 'Demo App',
-      demoAppSuffix: 'sign in, nav icons, search, and tabs to practise on'
+      demoAppSuffix: 'sign in, nav icons, search, and tabs to practise on',
+      practice: 'Practice',
+      practiceSuffix: 'stable ids, names, classes, and text to find and interact with'
     }
   };
 
@@ -71,9 +68,6 @@
     ...EN_001,
     metaDescription:
       'Free open source HTML fixtures for practicing browser automation: find elements by id, name, class, link text, and XPath, and interact with form inputs.',
-    practiceHeading: 'Practice on this page',
-    practiceBody:
-      'Everything below is a stable fixture playground: fixed ids, names, classes, and text that automation tools can reliably find every time, which is exactly what makes it useful to practice on directly — point your script at it, find an element, interact with it, and see what happens. The exact contract this page keeps is documented in this repo’s',
     links: {
       ...EN_001.links,
       demoAppSuffix: 'sign in, nav icons, search, and tabs to practice on'
@@ -88,9 +82,6 @@
     learnHeading: 'Dysgu',
     learnMoreHeading: 'Dysgu Mwy',
     examplesHeading: 'Enghreifftiau',
-    practiceHeading: "Ymarfer ar y dudalen hon",
-    practiceBody:
-      "Mae popeth isod yn faes chwarae sefydlog: ids, names, classes a thestun penodedig y gall offer awtomatiaeth ddod o hyd iddynt yn ddibynadwy bob tro, a dyna'n union sy'n ei wneud yn ddefnyddiol i ymarfer arno'n uniongyrchol — anelwch eich sgript ato, dewch o hyd i elfen, rhyngweithiwch â hi, a gwelwch beth sy'n digwydd. Mae'r cytundeb manwl y mae'r dudalen hon yn cadw ato wedi'i ddogfennu yn yr ystorfa hon, yn y ffeil",
     links: {
       whatIsAutomaticTesting: "Beth yw profi awtomatig?",
       whatIsThePurpose: 'Beth yw diben profi awtomatig?',
@@ -107,7 +98,9 @@
       googleMapsExamples: 'Enghreifftiau Mapiau Google',
       givenWhenThenExamples: 'Enghreifftiau Given-When-Then',
       demoApp: 'Ap Arddangos',
-      demoAppSuffix: 'mewngofnodi, eiconau llywio, chwilio, a thabiau i ymarfer arnynt'
+      demoAppSuffix: 'mewngofnodi, eiconau llywio, chwilio, a thabiau i ymarfer arnynt',
+      practice: 'Ymarfer',
+      practiceSuffix: "ids, names, classes, a thestun sefydlog i ddod o hyd iddynt a rhyngweithio â nhw"
     }
   };
 
@@ -119,9 +112,6 @@
     learnHeading: '学习',
     learnMoreHeading: '延伸学习',
     examplesHeading: '示例',
-    practiceHeading: '在这个页面上练习',
-    practiceBody:
-      '下面的内容是一个稳定的测试夹具练习场：固定的 id、name、class 和文字，自动化工具每次都能可靠地找到它们，这正是它适合直接拿来练习的原因——把你的脚本指向它，找到一个元素，与它交互，看看会发生什么。这个页面所遵守的确切约定记录在本仓库的',
     links: {
       whatIsAutomaticTesting: '什么是自动化测试？',
       whatIsThePurpose: '自动化测试的目的是什么？',
@@ -138,7 +128,9 @@
       googleMapsExamples: '谷歌地图示例',
       givenWhenThenExamples: 'Given-When-Then 示例',
       demoApp: '演示应用',
-      demoAppSuffix: '登录、导航图标、搜索和标签页，供你练习'
+      demoAppSuffix: '登录、导航图标、搜索和标签页，供你练习',
+      practice: '练习',
+      practiceSuffix: '稳定的 id、name、class 和文字，供查找与交互'
     }
   };
 
@@ -150,9 +142,6 @@
     learnHeading: 'تعلّم',
     learnMoreHeading: 'تعلّم المزيد',
     examplesHeading: 'أمثلة',
-    practiceHeading: 'تدرّب على هذه الصفحة',
-    practiceBody:
-      'كل ما في الأسفل ملعب تجهيزات ثابت: معرّفات وأسماء وفئات ونصوص ثابتة تستطيع أدوات الأتمتة العثور عليها بموثوقية في كل مرة، وهذا بالضبط ما يجعله مفيدًا للتدرب عليه مباشرةً — وجّه السكربت إليه، واعثر على عنصر، وتفاعل معه، وشاهد ما يحدث. والعقد الدقيق الذي تلتزم به هذه الصفحة موثّق في ملف',
     links: {
       whatIsAutomaticTesting: 'ما هو الاختبار الآلي؟',
       whatIsThePurpose: 'ما الغرض من الاختبار الآلي؟',
@@ -169,7 +158,9 @@
       googleMapsExamples: 'أمثلة Google Maps',
       givenWhenThenExamples: 'أمثلة Given-When-Then',
       demoApp: 'تطبيق تجريبي',
-      demoAppSuffix: 'تسجيل دخول وأيقونات تنقل وبحث وعلامات تبويب للتدرب عليها'
+      demoAppSuffix: 'تسجيل دخول وأيقونات تنقل وبحث وعلامات تبويب للتدرب عليها',
+      practice: 'التدريب',
+      practiceSuffix: 'معرّفات وأسماء وفئات ونصوص ثابتة للعثور عليها والتفاعل معها'
     }
   };
 
@@ -181,9 +172,6 @@
     learnHeading: '학습',
     learnMoreHeading: '더 알아보기',
     examplesHeading: '예제',
-    practiceHeading: '이 페이지에서 연습하기',
-    practiceBody:
-      '아래의 모든 것은 안정적인 픽스처 놀이터입니다. 자동화 도구가 매번 안정적으로 찾을 수 있는 고정된 id, name, class, 텍스트로 이루어져 있어서, 스크립트를 여기에 겨누고 요소를 찾고 상호작용하며 무슨 일이 일어나는지 보는 식으로 직접 연습하기에 딱 좋습니다. 이 페이지가 지키는 정확한 계약은 이 저장소의 다음 문서에 정리되어 있습니다:',
     links: {
       whatIsAutomaticTesting: '자동화 테스트란 무엇인가?',
       whatIsThePurpose: '자동화 테스트의 목적은 무엇인가?',
@@ -200,7 +188,9 @@
       googleMapsExamples: 'Google Maps 예제',
       givenWhenThenExamples: 'Given-When-Then 예제',
       demoApp: '데모 앱',
-      demoAppSuffix: '연습할 수 있는 로그인, 내비게이션 아이콘, 검색, 탭'
+      demoAppSuffix: '연습할 수 있는 로그인, 내비게이션 아이콘, 검색, 탭',
+      practice: '연습',
+      practiceSuffix: '찾고 상호작용해 볼 수 있는 안정적인 id, name, class, 텍스트'
     }
   };
 
@@ -212,9 +202,6 @@
     learnHeading: 'Apprendre',
     learnMoreHeading: 'En savoir plus',
     examplesHeading: 'Exemples',
-    practiceHeading: "S'exercer sur cette page",
-    practiceBody:
-      "Tout ce qui suit est un terrain de jeu stable : des ids, des names, des classes et des textes fixes que les outils d'automatisation retrouvent de façon fiable à chaque fois, ce qui le rend idéal pour s'exercer directement — pointez votre script dessus, trouvez un élément, interagissez avec lui et observez le résultat. Le contrat exact que respecte cette page est documenté dans le fichier",
     links: {
       whatIsAutomaticTesting: "Qu'est-ce que le test automatisé ?",
       whatIsThePurpose: "Quel est le but des tests automatisés ?",
@@ -231,7 +218,9 @@
       googleMapsExamples: 'Exemples de Google Maps',
       givenWhenThenExamples: 'Exemples Given-When-Then',
       demoApp: 'Application de démonstration',
-      demoAppSuffix: "connexion, icônes de navigation, recherche et onglets pour s'exercer"
+      demoAppSuffix: "connexion, icônes de navigation, recherche et onglets pour s'exercer",
+      practice: "S'exercer",
+      practiceSuffix: "ids, names, classes et textes stables à trouver et avec lesquels interagir"
     }
   };
 
@@ -288,20 +277,9 @@
     <li><a href={localeHref(locale, 'examples-google-maps')}>{m.links.googleMapsExamples}</a></li>
     <li><a href={localeHref(locale, 'given-when-then')}>{m.links.givenWhenThenExamples}</a></li>
     <li><a href={localeHref(locale, 'app')}>{m.links.demoApp}</a> — {m.links.demoAppSuffix}</li>
+    <li><a href={localeHref(locale, 'practice')}>{m.links.practice}</a> — {m.links.practiceSuffix}</li>
   </ul>
 </section>
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.practiceHeading} level={2} />
-  <p>
-    {m.practiceBody}
-    <code>spec/index.md</code>.
-  </p>
-</section>
-
-<hr />
-
-<SiteFixtures />
 
 <style>
   /* Override the shared .repo-list rule (static/assets/style.css) for this
