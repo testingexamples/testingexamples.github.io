@@ -60,7 +60,7 @@ The links below are the default locale, English (`en-001`).
 - [Version control systems such as Git and GitHub](https://testingexamples.github.io/en-001/topics/version-control/): a related concept for automatic testing
 - [Agile discovery](https://testingexamples.github.io/en-001/topics/agile-discovery/): a related concept for automatic testing
 - [Unix commands such as for file browsing](https://testingexamples.github.io/en-001/topics/unix-shell/): a related concept for automatic testing
-- [Cloud hosting](https://testingexamples.github.io/en-001/topics/cloud-hosting/): a related concept for automatic testing
+- [Cloud hosting such as for servers](https://testingexamples.github.io/en-001/topics/cloud-hosting/): a related concept for automatic testing
 
 ## Examples
 

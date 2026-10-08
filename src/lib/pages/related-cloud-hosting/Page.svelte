@@ -29,7 +29,7 @@
       "What's the practical difference between running my tests on my own machine versus a cloud browser farm, for a small team?",
       "How do I decide whether a growing test suite is genuinely ready to move to a cloud CI provider, and what should I check before making that switch?"
     ],
-    s5Heading: "Cloud hosting for testing",
+    s5Heading: "Cloud hosting such as for servers",
     s5P1Post: " means running infrastructure — servers, browsers, CI runners — on someone else's computers instead of ones you own, paying for what you actually use rather than buying and maintaining hardware yourself.",
     s5P2: "Here's why that belongs on a testing page: cloud browser farms let a test suite run against real devices and dozens of real browser and operating-system combinations that nobody could reasonably install and maintain locally. And cloud CI providers (GitHub Actions, mentioned below under CI/CD, is one) give every test run a fresh, disposable machine — so a test can't quietly pass only because of state a previous run happened to leave behind, a subtle bug class that's much harder to hide once every run starts from nothing.",
     s5P3Mid: ", or watch ",

@@ -69,7 +69,7 @@
       whatIsVersionControl: "Version control systems such as Git and GitHub",
       whatIsAgileDiscovery: "Agile and working with users — discovery",
       whatIsUnixShell: "Unix commands such as for file browsing",
-      whatIsCloudHosting: "Cloud hosting for testing"
+      whatIsCloudHosting: "Cloud hosting such as for servers"
     }
   };
 
