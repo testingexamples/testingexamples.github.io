@@ -390,6 +390,44 @@ wait.Until(d => d.FindElements(By.CssSelector("#search")).Count > 0);
     </CodeBlock>
   </Details>
 
+  <Details summary="Selenium + Java">
+    <CodeBlock label="Selenium · Java · selenium-java (Maven)">
+      <pre><code>{`import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Demo {
+    public static void main(String[] args) {
+        // Selenium Manager finds or downloads a matching chromedriver.
+        WebDriver driver = new ChromeDriver();
+
+        try {
+            // Given I am on https://google.com
+            driver.get("https://google.com");
+
+            // When I type in the search box and click submit
+            // Google's search input has commonly carried name="q".
+            WebElement searchBox = driver.findElement(By.name("q"));
+            searchBox.sendKeys("testing examples" + Keys.RETURN);
+
+            // Then I see search results
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(d -> !d.findElements(By.cssSelector("#search")).isEmpty());
+        } finally {
+            driver.quit();
+        }
+    }
+}
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
   <Details summary="Playwright + JavaScript">
     <CodeBlock label="Playwright · JavaScript · playwright (npm)">
       <pre><code>{`import { chromium } from 'playwright';
@@ -504,6 +542,38 @@ await page.Keyboard.PressAsync("Enter");
 
 // Then I see search results
 await page.WaitForSelectorAsync("#search");
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Playwright + Java">
+    <CodeBlock label="Playwright · Java · playwright (Maven)">
+      <pre><code>{`import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+
+public class Demo {
+    public static void main(String[] args) {
+        // try-with-resources shuts down the driver even if a step throws.
+        try (Playwright playwright = Playwright.create()) {
+            Browser browser = playwright.chromium().launch();
+            Page page = browser.newPage();
+
+            // Given I am on https://google.com
+            page.navigate("https://google.com");
+
+            // When I type in the search box and click submit
+            // Google's search input has commonly carried name="q".
+            page.fill("[name=\\"q\\"]", "testing examples");
+            page.keyboard().press("Enter");
+
+            // Then I see search results
+            page.waitForSelector("#search");
+
+            browser.close();
+        }
+    }
+}
 `}</code></pre>
     </CodeBlock>
   </Details>

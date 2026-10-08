@@ -5,6 +5,7 @@
   import SiteFixtures from '#lib/components/SiteFixtures.svelte';
   import { preferredLocale } from '#lib/i18n/detect.js';
   import { localeHref } from '#lib/i18n/paths.js';
+  import { DEMO_REPOS, DEMO_REPOS_URL } from '#lib/demos.js';
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
@@ -68,6 +69,13 @@
     <li><a href="/examples/google-maps/">Google Maps Examples</a></li>
     <li><a href="/given-when-then/">Given-When-Then Examples</a></li>
     <li><a href="/app/">Demo App</a> — sign in, nav icons, search, and tabs to practice on</li>
+  </ul>
+
+  <h3>Examples as repositories</h3>
+  <ul class="repo-list">
+    {#each DEMO_REPOS as repo (repo)}
+      <li><a href={DEMO_REPOS_URL + repo}>{repo}</a></li>
+    {/each}
   </ul>
 </section>
 

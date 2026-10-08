@@ -255,8 +255,13 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 - `/given-when-then/` — one scenario (search Google, see results) written
   first as a Given-When-Then (Gherkin/BDD) sentence, then as the
   equivalent Selenium and Playwright code in JavaScript, Python, Rust,
-  and C# (eight examples, all under one "Examples of source code" section).
+  C#, and Java (ten examples, all under one "Examples of source code" section).
   Linked from the home page's Examples list.
+- The "Examples as repositories" section on the root home page (`/`) and each
+  locale home page — one link per demo
+  repository (every `demo-*` repo under <https://github.com/testingexamples>),
+  generated from the list in `src/lib/demos.ts`, which must match the
+  `demos/demo-*` entries in the monorepo's `subtrees.tsv`.
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at

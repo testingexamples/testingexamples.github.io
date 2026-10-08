@@ -1,6 +1,7 @@
 <script lang="ts">
   import { SITE_NAME } from '#lib/site.js';
   import { localeHref } from '#lib/i18n/paths.js';
+  import { DEMO_REPOS, DEMO_REPOS_URL } from '#lib/demos.js';
   import type { Locale } from '#lib/i18n/locales.js';
 
   let { locale }: { locale: Locale } = $props();
@@ -12,6 +13,7 @@
     learnHeading: string;
     learnMoreHeading: string;
     examplesHeading: string;
+    reposHeading: string;
     links: {
       whatIsAutomaticTesting: string;
       whatIsThePurpose: string;
@@ -42,6 +44,7 @@
     learnHeading: 'Learn',
     learnMoreHeading: 'Learn More',
     examplesHeading: 'Examples',
+    reposHeading: 'Examples as repositories',
     links: {
       whatIsAutomaticTesting: 'What is automatic testing?',
       whatIsThePurpose: 'What is the purpose of automatic testing?',
@@ -82,6 +85,7 @@
     learnHeading: 'Dysgu',
     learnMoreHeading: 'Dysgu Mwy',
     examplesHeading: 'Enghreifftiau',
+    reposHeading: 'Enghreifftiau fel storfeydd',
     links: {
       whatIsAutomaticTesting: "Beth yw profi awtomatig?",
       whatIsThePurpose: 'Beth yw diben profi awtomatig?',
@@ -112,6 +116,7 @@
     learnHeading: '学习',
     learnMoreHeading: '延伸学习',
     examplesHeading: '示例',
+    reposHeading: '以代码仓库形式提供的示例',
     links: {
       whatIsAutomaticTesting: '什么是自动化测试？',
       whatIsThePurpose: '自动化测试的目的是什么？',
@@ -142,6 +147,7 @@
     learnHeading: 'تعلّم',
     learnMoreHeading: 'تعلّم المزيد',
     examplesHeading: 'أمثلة',
+    reposHeading: 'أمثلة كمستودعات',
     links: {
       whatIsAutomaticTesting: 'ما هو الاختبار الآلي؟',
       whatIsThePurpose: 'ما الغرض من الاختبار الآلي؟',
@@ -172,6 +178,7 @@
     learnHeading: '학습',
     learnMoreHeading: '더 알아보기',
     examplesHeading: '예제',
+    reposHeading: '저장소로 된 예제',
     links: {
       whatIsAutomaticTesting: '자동화 테스트란 무엇인가?',
       whatIsThePurpose: '자동화 테스트의 목적은 무엇인가?',
@@ -202,6 +209,7 @@
     learnHeading: 'Apprendre',
     learnMoreHeading: 'En savoir plus',
     examplesHeading: 'Exemples',
+    reposHeading: 'Exemples sous forme de dépôts',
     links: {
       whatIsAutomaticTesting: "Qu'est-ce que le test automatisé ?",
       whatIsThePurpose: "Quel est le but des tests automatisés ?",
@@ -278,6 +286,13 @@
     <li><a href={localeHref(locale, 'given-when-then')}>{m.links.givenWhenThenExamples}</a></li>
     <li><a href={localeHref(locale, 'app')}>{m.links.demoApp}</a> — {m.links.demoAppSuffix}</li>
     <li><a href={localeHref(locale, 'practice')}>{m.links.practice}</a> — {m.links.practiceSuffix}</li>
+  </ul>
+
+  <h3>{m.reposHeading}</h3>
+  <ul class="repo-list">
+    {#each DEMO_REPOS as repo (repo)}
+      <li><a href={DEMO_REPOS_URL + repo}>{repo}</a></li>
+    {/each}
   </ul>
 </section>
 
