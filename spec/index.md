@@ -306,15 +306,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     since only `build/` is deployed) as a live example of the disclosure
     it describes — this site itself was built with AI assistance under the
     maintainer's direction.
-  - `/what-are-related-concepts-for-automatic-testing/` — ("What are
-    related concepts for automatic testing?") code editors, version
-    control (git and GitHub), and agile discovery: the everyday tools and
-    practices that surround automatic testing, for a reader who just wrote
-    their first script. Originally covered eight topics; three (DevOps,
-    flow metrics, Lean Six Sigma) were extracted into their own pages,
-    listed below.
-- The `/topics/` page's "Learn More" list — bonus topics extracted from
-  `/what-are-related-concepts-for-automatic-testing/`, chained together by
+- The `/topics/` page's "Learn More" list — bonus topics chained together by
   their own closing calls to action, the last of which loops back to
   `/what-is-continuous-integration-testing/` above.
   - `/what-is-devops-for-automatic-testing/` — what DevOps is, and why
@@ -361,9 +353,9 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   list, after the unit test page.
 - `/topics/code-editors/`, `/topics/version-control/`,
   `/topics/agile-discovery/`, `/topics/unix-shell/`, `/topics/cloud-hosting/` —
-  the five "related concepts" that used to be sections of
-  `/what-are-related-concepts-for-automatic-testing/`, each now its own page
-  with the same text. That page remains as a short hub linking to all five.
+  the five "related concepts" pages. They used to be sections of a single
+  "What are related concepts for automatic testing?" page, which has been
+  deleted: each is its own page and is reached from `/topics/`.
   The five are listed in `/topics/`'s "Related concepts" section. Slugs are
   `<topics slug>/<name>` in every locale.
 - `/topics/shift-left-for-automatic-testing/` — "Shift left for automatic testing":

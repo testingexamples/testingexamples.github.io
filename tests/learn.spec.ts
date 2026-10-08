@@ -11,7 +11,6 @@ const ARTICLES = [
   'what-is-the-testing-pyramid',
   'what-is-browser-automation-testing',
   'how-to-start-learning-automatic-testing',
-  'what-are-related-concepts-for-automatic-testing',
   'how-does-artificial-intelligence-help-automatic-testing',
   'what-is-continuous-integration-testing',
   'what-is-devops-for-automatic-testing',
@@ -102,12 +101,6 @@ for (const locale of LOCALES) {
     });
   }
 
-  test(`${locale}: the related concepts hub links to all five concept pages`, async ({ page }) => {
-    await page.goto(`/${locale}/${slugForTopic(locale, 'what-are-related-concepts-for-automatic-testing')}/`);
-    for (const topic of RELATED) {
-      await expect(page.locator(`main a[href="/${locale}/${slugForTopic(locale, topic)}/"]`)).toHaveCount(1);
-    }
-  });
 }
 
 for (const locale of LOCALES) {

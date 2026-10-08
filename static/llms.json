@@ -78,22 +78,6 @@
           "description": "How and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three."
         },
         {
-          "title": "What are related concepts for automatic testing?",
-          "url": "https://testingexamples.github.io/en-001/what-are-related-concepts-for-automatic-testing/",
-          "description": "Friendly introductions to code editors, version control (git and GitHub), and agile discovery."
-        }
-      ]
-    },
-    {
-      "title": "Learn More",
-      "description": "Bonus topics extracted from the related concepts page.",
-      "links": [
-        {
-          "title": "Devops for automatic testing",
-          "url": "https://testingexamples.github.io/en-001/what-is-devops-for-automatic-testing/",
-          "description": "What DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it."
-        },
-        {
           "title": "Metrics for automatic testing",
           "url": "https://testingexamples.github.io/en-001/what-are-flow-metrics-for-automatic-testing/",
           "description": "Cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal."

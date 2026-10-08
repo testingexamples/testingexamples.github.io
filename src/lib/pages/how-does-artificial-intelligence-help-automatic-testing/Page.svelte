@@ -93,7 +93,7 @@
     li3P:
       ' Flagging unusual error-rate or latency patterns automatically, rather than relying on a human watching a dashboard and noticing something looks off.',
     p4Pre: 'See ',
-    p4LinkText: 'What are related concepts for automatic testing?',
+    p4LinkText: 'Continuous integration for automatic testing',
     p4Post: ' for what CI/CD is in the first place, if that term is new to you.',
 
     h3Heading: 'AI in agile discovery — turning user ideas into tests',
@@ -115,7 +115,7 @@
       ' in the repository is the honest account of how — what was AI-generated, what the human decided, and what was actually verified rather than assumed.',
 
     ctaBackToLearn: 'Back to Learn',
-    ctaNext: 'Next: what are related concepts for automatic testing? →'
+    ctaNext: "How to start learning →"
   };
 
   // No British/American/Oxford spelling divergence in this page's
@@ -159,7 +159,7 @@
     li3P:
       " Codi baner ar batrymau cyfradd gwallau neu oedi anarferol yn awtomatig, yn hytrach na dibynnu ar berson yn gwylio dangosfwrdd ac yn sylwi bod rhywbeth yn edrych o'i le.",
     p4Pre: 'Gweler ',
-    p4LinkText: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
+    p4LinkText: 'Beth yw profi integreiddio parhaus awtomatig?',
     p4Post: " am beth yw CI/CD yn y lle cyntaf, os yw'r term hwnnw'n newydd i chi.",
 
     h3Heading: 'DA mewn darganfod ystwyth — troi syniadau defnyddwyr yn brofion',
@@ -181,7 +181,7 @@
       " yn yr ystorfa yn gyfrif gonest o sut — beth oedd wedi'i gynhyrchu gan DA, beth benderfynodd y person, a beth gafodd ei wirio mewn gwirionedd yn hytrach na'i gymryd yn ganiataol.",
 
     ctaBackToLearn: 'Yn ôl i Dysgu',
-    ctaNext: 'Nesaf: beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig? →'
+    ctaNext: "Sut i ddechrau dysgu →"
   };
 
   const ZH: Messages = {
@@ -219,7 +219,7 @@
     li3Label: '部署后的日志与异常分析。',
     li3P: ' 自动标记异常的错误率或延迟模式，而不是依赖人工盯着仪表盘、留意有什么地方看起来不对劲。',
     p4Pre: '如果你对这个术语还不熟悉，可以参阅',
-    p4LinkText: '自动化测试的相关概念是什么？',
+    p4LinkText: '什么是持续集成自动化测试？',
     p4Post: '，了解 CI/CD 究竟是什么。',
 
     h3Heading: 'AI 在敏捷探索中的应用——把用户想法变成测试',
@@ -241,7 +241,7 @@
       '是对这个过程的诚实记录——哪些是 AI 生成的，哪些是人类决定的，哪些是经过真正验证而不是被想当然接受的。',
 
     ctaBackToLearn: '返回学习',
-    ctaNext: '下一步：自动化测试的相关概念是什么？→'
+    ctaNext: "如何开始学习 →"
   };
 
   const AR: Messages = {
@@ -280,7 +280,7 @@
     li3P:
       ' الإشارة تلقائيًا إلى أنماط غير عادية في معدل الأخطاء أو زمن الاستجابة، بدلًا من الاعتماد على شخص يراقب لوحة معلومات ويلاحظ أن شيئًا ما يبدو غير طبيعي.',
     p4Pre: 'انظر ',
-    p4LinkText: 'ما هي المفاهيم ذات الصلة بالاختبار الآلي؟',
+    p4LinkText: 'ما هو اختبار التكامل المستمر؟',
     p4Post: ' لمعرفة ما هو CI/CD أصلًا، إن كان هذا المصطلح جديدًا عليك.',
 
     h3Heading: 'الذكاء الاصطناعي في الاستكشاف الرشيق — تحويل أفكار المستخدمين إلى اختبارات',
@@ -302,7 +302,7 @@
       ' في المستودع هو الحساب الصريح لكيفية ذلك — ما الذي ولّده الذكاء الاصطناعي، وما الذي قرره الإنسان، وما الذي جرى التحقق منه فعلًا بدلًا من افتراضه.',
 
     ctaBackToLearn: 'العودة إلى تعلّم',
-    ctaNext: 'التالي: ما هي المفاهيم ذات الصلة بالاختبار الآلي؟ ←'
+    ctaNext: "كيف تبدأ التعلم ←"
   };
 
   const KO: Messages = {
@@ -341,7 +341,7 @@
     li3P:
       ' 사람이 대시보드를 지켜보다가 뭔가 이상하다고 알아채는 데 의존하는 대신, 비정상적인 오류율이나 지연 시간 패턴을 자동으로 표시합니다.',
     p4Pre: 'CI/CD가 애초에 무엇인지 낯설다면 ',
-    p4LinkText: '자동화 테스트와 관련된 개념은 무엇인가?',
+    p4LinkText: '지속적 통합 테스트란 무엇인가?',
     p4Post: '를 참고하세요.',
 
     h3Heading: '애자일 디스커버리에서의 AI — 사용자 아이디어를 테스트로',
@@ -363,7 +363,7 @@
       '는 그 과정에 대한 솔직한 기록입니다. 무엇이 AI로 생성되었고, 사람이 무엇을 결정했으며, 가정이 아니라 실제로 검증된 것이 무엇인지 담겨 있습니다.',
 
     ctaBackToLearn: '학습으로 돌아가기',
-    ctaNext: '다음: 자동화 테스트와 관련된 개념은 무엇인가? →'
+    ctaNext: "학습 시작하기 →"
   };
 
   const FR: Messages = {
@@ -402,7 +402,7 @@
     li3P:
       " Signaler automatiquement des taux d'erreur ou des latences inhabituels, plutôt que de compter sur une personne qui surveille un tableau de bord et remarque que quelque chose semble anormal.",
     p4Pre: 'Voir ',
-    p4LinkText: 'Quels sont les concepts liés aux tests automatisés ?',
+    p4LinkText: "Qu'est-ce que le test automatisé d'intégration continue ?",
     p4Post: " pour savoir ce qu'est le CI/CD, si ce terme est nouveau pour vous.",
 
     h3Heading: "L'IA dans la découverte agile — transformer des idées d'utilisateurs en tests",
@@ -424,7 +424,7 @@
       " du dépôt en est le récit honnête — ce qui a été généré par l'IA, ce que l'humain a décidé, et ce qui a été réellement vérifié plutôt que supposé.",
 
     ctaBackToLearn: 'Retour à Apprendre',
-    ctaNext: 'Suite : quels sont les concepts liés aux tests automatisés ? →'
+    ctaNext: "Comment commencer à apprendre →"
   };
 
   const MESSAGES: Record<Locale, Messages> = {
@@ -473,7 +473,7 @@
   <SectionHeading class="section-heading-start" heading={m.h2Heading} level={2} />
 
   <p>
-    {m.p3Pre}<a href={localeHref(locale, 'what-are-related-concepts-for-automatic-testing')}>CI/CD</a
+    {m.p3Pre}<a href={localeHref(locale, 'what-is-continuous-integration-testing')}>CI/CD</a
     >{m.p3Post}
   </p>
 
@@ -484,7 +484,7 @@
   </ul>
 
   <p>
-    {m.p4Pre}<a href={localeHref(locale, 'what-are-related-concepts-for-automatic-testing')}
+    {m.p4Pre}<a href={localeHref(locale, 'what-is-continuous-integration-testing')}
       >{m.p4LinkText}</a
     >{m.p4Post}
   </p>
@@ -529,7 +529,7 @@
     >
     <CallToAction
       class="button button-secondary"
-      href={localeHref(locale, 'what-are-related-concepts-for-automatic-testing')}
+      href={localeHref(locale, 'how-to-start-learning-automatic-testing')}
       style="margin-inline-start: 0.75rem;">{m.ctaNext}</CallToAction
     >
   </p>

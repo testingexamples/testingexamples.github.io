@@ -34,7 +34,6 @@ export type TopicId =
   | 'related-cloud-hosting'
   | 'practice'
   | 'what-are-flow-metrics-for-automatic-testing'
-  | 'what-are-related-concepts-for-automatic-testing'
   | 'what-is-automatic-testing'
   | 'what-is-browser-automation-testing'
   | 'what-is-continuous-integration-testing'
@@ -226,17 +225,6 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'quelles-metriques-aident-les-tests-automatises'
     ),
     load: () => import('#lib/pages/what-are-flow-metrics-for-automatic-testing/Page.svelte')
-  },
-  'what-are-related-concepts-for-automatic-testing': {
-    slug: slugFor(
-      'what-are-related-concepts-for-automatic-testing',
-      'beth-yw-cysyniadau-cysylltiedig-ar-gyfer-profi-awtomatig',
-      '自动化测试的相关概念是什么',
-      'ما-هي-المفاهيم-ذات-الصلة-بالاختبار-الآلي',
-      '자동화-테스트와-관련된-개념',
-      'quels-sont-les-concepts-lies-aux-tests-automatises'
-    ),
-    load: () => import('#lib/pages/what-are-related-concepts-for-automatic-testing/Page.svelte')
   },
   'what-is-automatic-testing': {
     slug: slugFor('what-is-automatic-testing', 'beth-yw-profi-awtomatig', '什么是自动化测试', 'ما-هو-الاختبار-الآلي', '자동화-테스트란-무엇인가', 'qu-est-ce-que-le-test-automatise'),

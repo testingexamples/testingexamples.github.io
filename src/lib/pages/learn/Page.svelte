@@ -18,7 +18,6 @@
       whatIsTheTestingPyramid: string;
       whatIsBrowserAutomation: string;
       howToStartLearning: string;
-      whatAreRelatedConcepts: string;
       howDoesAiHelp: string;
       whatIsContinuousIntegration: string;
       whatIsDevOps: string;
@@ -51,7 +50,6 @@
       whatIsTheTestingPyramid: 'What is the automatic testing pyramid?',
       whatIsBrowserAutomation: 'What is browser testing?',
       howToStartLearning: 'How to start learning automatic testing?',
-      whatAreRelatedConcepts: 'What are related concepts for automatic testing?',
       howDoesAiHelp: 'How does artificial intelligence help automatic testing?',
       whatIsContinuousIntegration: 'Continuous integration for automatic testing',
       whatIsDevOps: 'Devops for automatic testing',
@@ -87,7 +85,6 @@
       whatIsTheTestingPyramid: 'Beth yw pyramid profi awtomatig?',
       whatIsBrowserAutomation: 'Beth yw profi awtomatig porwr?',
       howToStartLearning: 'Sut i ddechrau dysgu profi awtomatig?',
-      whatAreRelatedConcepts: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
       howDoesAiHelp: "Sut mae deallusrwydd artiffisial yn helpu profi awtomatig?",
       whatIsContinuousIntegration: 'Beth yw profi integreiddio parhaus awtomatig?',
       whatIsDevOps: 'Beth yw DevOps ar gyfer profi awtomatig?',
@@ -120,7 +117,6 @@
       whatIsTheTestingPyramid: '什么是自动化测试金字塔？',
       whatIsBrowserAutomation: '什么是浏览器自动化测试？',
       howToStartLearning: '如何开始学习自动化测试？',
-      whatAreRelatedConcepts: '自动化测试的相关概念是什么？',
       howDoesAiHelp: '人工智能如何帮助自动化测试？',
       whatIsContinuousIntegration: '什么是持续集成自动化测试？',
       whatIsDevOps: '什么是自动化测试的 DevOps？',
@@ -153,7 +149,6 @@
       whatIsTheTestingPyramid: 'ما هو هرم الاختبار الآلي؟',
       whatIsBrowserAutomation: 'ما هو اختبار أتمتة المتصفح؟',
       howToStartLearning: 'كيف تبدأ تعلم الاختبار الآلي؟',
-      whatAreRelatedConcepts: 'ما هي المفاهيم ذات الصلة بالاختبار الآلي؟',
       howDoesAiHelp: 'كيف يساعد الذكاء الاصطناعي في الاختبار الآلي؟',
       whatIsContinuousIntegration: 'ما هو اختبار التكامل المستمر؟',
       whatIsDevOps: 'ما هو DevOps للاختبار الآلي؟',
@@ -186,7 +181,6 @@
       whatIsTheTestingPyramid: '자동화 테스트 피라미드란 무엇인가?',
       whatIsBrowserAutomation: '브라우저 자동화 테스트란 무엇인가?',
       howToStartLearning: '자동화 테스트 학습은 어떻게 시작하나요?',
-      whatAreRelatedConcepts: '자동화 테스트와 관련된 개념은 무엇인가?',
       howDoesAiHelp: '인공지능은 자동화 테스트를 어떻게 돕는가?',
       whatIsContinuousIntegration: '지속적 통합 테스트란 무엇인가?',
       whatIsDevOps: '자동화 테스트를 위한 DevOps란 무엇인가?',
@@ -219,7 +213,6 @@
       whatIsTheTestingPyramid: "Qu'est-ce que la pyramide des tests automatisés ?",
       whatIsBrowserAutomation: "Qu'est-ce que le test automatisé de navigateur ?",
       howToStartLearning: "Comment commencer à apprendre les tests automatisés ?",
-      whatAreRelatedConcepts: "Quels sont les concepts liés aux tests automatisés ?",
       howDoesAiHelp: "Comment l'intelligence artificielle aide-t-elle les tests automatisés ?",
       whatIsContinuousIntegration: "Qu'est-ce que le test automatisé d'intégration continue ?",
       whatIsDevOps: "Qu'est-ce que DevOps pour les tests automatisés ?",
@@ -274,7 +267,6 @@
 
   <h2>{m.learnMoreHeading}</h2>
   <ul class="repo-list">
-    <li><a href={localeHref(locale, 'what-are-related-concepts-for-automatic-testing')}>{m.links.whatAreRelatedConcepts}</a></li>
     <li><a href={localeHref(locale, 'how-does-artificial-intelligence-help-automatic-testing')}>{m.links.howDoesAiHelp}</a></li>
     <li><a href={localeHref(locale, 'what-is-continuous-integration-testing')}>{m.links.whatIsContinuousIntegration}</a></li>
     <li><a href={localeHref(locale, 'what-is-devops-for-automatic-testing')}>{m.links.whatIsDevOps}</a></li>
