@@ -344,7 +344,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 - `/given-when-then/` — one scenario (search Google, see results) written
   as a Given-When-Then (Gherkin/BDD) sentence, with the caution about not
   running Google examples repeatedly. The equivalent Selenium and Playwright
-  code (JavaScript, Python, Rust, C#, and Java: ten examples, all under one
+  code (JavaScript, Python, Rust, C#, Java, Elixir, Go, and Kotlin: sixteen examples, all under one
   "Examples of source code" section) was moved to each locale's home page.
   Linked from the home page's Examples list.
 - `/topics/gherkin/` — "What is Gherkin?": the Given-When-Then syntax, its

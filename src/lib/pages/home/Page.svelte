@@ -373,6 +373,108 @@ public class Demo {
     </CodeBlock>
   </Details>
 
+  <Details summary="Selenium + Elixir">
+    <CodeBlock label="Selenium · Elixir · wallaby (Hex)">
+      <pre><code>{`require Wallaby.Browser
+alias Wallaby.{Browser, Query}
+
+{:ok, _} = Application.ensure_all_started(:wallaby)
+{:ok, session} = Wallaby.start_session()
+
+try do
+  # Given I am on https://google.com
+  session = Browser.visit(session, "https://google.com")
+
+  # When I type in the search box and click submit
+  # Google's search input has commonly carried name="q".
+  session |> Browser.send_keys(Query.css("[name='q']"), ["testing examples", :enter])
+
+  # Then I see search results
+  Browser.assert_has(session, Query.css("#search"))
+after
+  Wallaby.end_session(session)
+end
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Selenium + Go">
+    <CodeBlock label="Selenium · Go · tebeka/selenium (Go modules)">
+      <pre><code>{`package main
+
+import (
+	"time"
+
+	"github.com/tebeka/selenium"
+)
+
+func main() {
+	// chromedriver must already be running on port 9515.
+	driver, err := selenium.NewRemote(selenium.Capabilities{"browserName": "chrome"}, "http://localhost:9515")
+	if err != nil {
+		panic(err)
+	}
+	defer driver.Quit()
+
+	// Given I am on https://google.com
+	if err := driver.Get("https://google.com"); err != nil {
+		panic(err)
+	}
+
+	// When I type in the search box and click submit
+	// Google's search input has commonly carried name="q".
+	searchBox, err := driver.FindElement(selenium.ByName, "q")
+	if err != nil {
+		panic(err)
+	}
+	if err := searchBox.SendKeys("testing examples" + selenium.EnterKey); err != nil {
+		panic(err)
+	}
+
+	// Then I see search results
+	err = driver.WaitWithTimeout(func(d selenium.WebDriver) (bool, error) {
+		results, err := d.FindElements(selenium.ByCSSSelector, "#search")
+		return err == nil && len(results) > 0, nil
+	}, 10*time.Second)
+	if err != nil {
+		panic("Expected to see search results, but none were found.")
+	}
+}
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Selenium + Kotlin">
+    <CodeBlock label="Selenium · Kotlin · selenium-java (Maven)">
+      <pre><code>{`import java.time.Duration
+import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.support.ui.WebDriverWait
+
+fun main() {
+    // Selenium Manager finds or downloads a matching chromedriver.
+    val driver = ChromeDriver()
+
+    try {
+        // Given I am on https://google.com
+        driver.get("https://google.com")
+
+        // When I type in the search box and click submit
+        // Google's search input has commonly carried name="q".
+        driver.findElement(By.name("q")).sendKeys("testing examples" + Keys.RETURN)
+
+        // Then I see search results
+        WebDriverWait(driver, Duration.ofSeconds(10))
+            .until { driver.findElements(By.cssSelector("#search")).isNotEmpty() }
+    } finally {
+        driver.quit()
+    }
+}
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
   <Details summary="Playwright + JavaScript">
     <CodeBlock label="Playwright · JavaScript · playwright (npm)">
       <pre><code>{`import { chromium } from 'playwright';
@@ -517,6 +619,104 @@ public class Demo {
 
             browser.close();
         }
+    }
+}
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Playwright + Elixir">
+    <CodeBlock label="Playwright · Elixir · playwright (Hex)">
+      <pre><code>{`alias Playwright.{Browser, Locator, Page}
+
+{:ok, browser} = Playwright.launch(:chromium)
+page = Browser.new_page(browser)
+
+# Given I am on https://google.com
+Page.goto(page, "https://google.com")
+
+# When I type in the search box and click submit
+# Google's search input has commonly carried name="q".
+page |> Page.locator("[name='q']") |> Locator.fill("testing examples")
+page |> Page.locator("[name='q']") |> Locator.press("Enter")
+
+# Then I see search results
+page |> Page.locator("#search") |> Locator.wait_for()
+
+Browser.close(browser)
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Playwright + Go">
+    <CodeBlock label="Playwright · Go · playwright-go (Go modules)">
+      <pre><code>{`package main
+
+import "github.com/playwright-community/playwright-go"
+
+func main() {
+	pw, err := playwright.Run()
+	if err != nil {
+		panic(err)
+	}
+	defer pw.Stop()
+
+	browser, err := pw.Chromium.Launch()
+	if err != nil {
+		panic(err)
+	}
+	defer browser.Close()
+
+	page, err := browser.NewPage()
+	if err != nil {
+		panic(err)
+	}
+
+	// Given I am on https://google.com
+	if _, err := page.Goto("https://google.com"); err != nil {
+		panic(err)
+	}
+
+	// When I type in the search box and click submit
+	// Google's search input has commonly carried name="q".
+	if err := page.Locator("[name=\\"q\\"]").Fill("testing examples"); err != nil {
+		panic(err)
+	}
+	if err := page.Keyboard().Press("Enter"); err != nil {
+		panic(err)
+	}
+
+	// Then I see search results
+	if err := page.Locator("#search").WaitFor(); err != nil {
+		panic(err)
+	}
+}
+`}</code></pre>
+    </CodeBlock>
+  </Details>
+
+  <Details summary="Playwright + Kotlin">
+    <CodeBlock label="Playwright · Kotlin · playwright (Maven)">
+      <pre><code>{`import com.microsoft.playwright.Playwright
+
+fun main() {
+    // \`use\` shuts down the driver even if a step throws.
+    Playwright.create().use { playwright ->
+        val browser = playwright.chromium().launch()
+        val page = browser.newPage()
+
+        // Given I am on https://google.com
+        page.navigate("https://google.com")
+
+        // When I type in the search box and click submit
+        // Google's search input has commonly carried name="q".
+        page.fill("[name=\\"q\\"]", "testing examples")
+        page.keyboard().press("Enter")
+
+        // Then I see search results
+        page.waitForSelector("#search")
+
+        browser.close()
     }
 }
 `}</code></pre>
