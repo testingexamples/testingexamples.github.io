@@ -26,6 +26,7 @@ export type TopicId =
   | 'learn-gherkin'
   | 'learn-unit-test'
   | 'learn-browser-test'
+  | 'learn-shift-left'
   | 'related-code-editors'
   | 'related-version-control'
   | 'related-agile-discovery'
@@ -203,6 +204,17 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'sujets/cloud-hosting'
     ),
     load: () => import('#lib/pages/related-cloud-hosting/Page.svelte')
+  },
+  'learn-shift-left': {
+    slug: slugFor(
+      'topics/shift-left-for-automatic-testing',
+      'pynciau/shift-left-for-automatic-testing',
+      '主题/shift-left-for-automatic-testing',
+      'المواضيع/shift-left-for-automatic-testing',
+      '주제/shift-left-for-automatic-testing',
+      'sujets/shift-left-for-automatic-testing'
+    ),
+    load: () => import('#lib/pages/learn-shift-left/Page.svelte')
   },
   'what-are-flow-metrics-for-automatic-testing': {
     slug: slugFor(

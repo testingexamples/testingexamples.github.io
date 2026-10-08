@@ -25,6 +25,7 @@
       whatAreFlowMetrics: string;
       whatIsLeanSixSigma: string;
       whatIsGherkin: string;
+      shiftLeft: string;
       whatIsUnitTest: string;
       whatIsBrowserTest: string;
       whatIsCodeEditors: string;
@@ -57,6 +58,7 @@
       whatAreFlowMetrics: 'Metrics for automatic testing',
       whatIsLeanSixSigma: 'Lean Six Sigma for automatic testing',
       whatIsGherkin: "What is Gherkin?",
+      shiftLeft: "Shift left for automatic testing",
       whatIsUnitTest: "What is a unit test?",
       whatIsBrowserTest: "What is a browser-based test?",
       whatIsCodeEditors: "Code editors — e.g. Visual Studio Code",
@@ -92,6 +94,7 @@
       whatAreFlowMetrics: "Pa fetrigau sy'n helpu profi awtomatig?",
       whatIsLeanSixSigma: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
       whatIsGherkin: "Beth yw Gherkin?",
+      shiftLeft: "Symud i’r chwith ar gyfer profi awtomatig",
       whatIsUnitTest: "Beth yw prawf uned?",
       whatIsBrowserTest: "Beth yw prawf sy’n seiliedig ar borwr?",
       whatIsCodeEditors: "Golygyddion cod — e.e. Visual Studio Code",
@@ -124,6 +127,7 @@
       whatAreFlowMetrics: '哪些指标有助于自动化测试？',
       whatIsLeanSixSigma: '六西格玛如何引导人工测试进入自动化测试？',
       whatIsGherkin: "什么是 Gherkin？",
+      shiftLeft: "自动化测试的左移",
       whatIsUnitTest: "什么是单元测试？",
       whatIsBrowserTest: "什么是基于浏览器的测试？",
       whatIsCodeEditors: "代码编辑器——例如 Visual Studio Code",
@@ -156,6 +160,7 @@
       whatAreFlowMetrics: 'ما المقاييس التي تفيد الاختبار الآلي؟',
       whatIsLeanSixSigma: 'كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟',
       whatIsGherkin: "ما هو Gherkin؟",
+      shiftLeft: "الانتقال لليسار في الاختبار الآلي",
       whatIsUnitTest: "ما هو اختبار الوحدة؟",
       whatIsBrowserTest: "ما هو الاختبار القائم على المتصفح؟",
       whatIsCodeEditors: "محررات الكود — مثل Visual Studio Code",
@@ -188,6 +193,7 @@
       whatAreFlowMetrics: '자동화 테스트에 도움이 되는 지표는 무엇인가?',
       whatIsLeanSixSigma: 'Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가?',
       whatIsGherkin: "Gherkin이란 무엇인가?",
+      shiftLeft: "자동화 테스트의 시프트 레프트",
       whatIsUnitTest: "단위 테스트란 무엇인가?",
       whatIsBrowserTest: "브라우저 기반 테스트란 무엇인가?",
       whatIsCodeEditors: "코드 에디터 — 예: Visual Studio Code",
@@ -220,6 +226,7 @@
       whatAreFlowMetrics: "Quelles métriques aident les tests automatisés ?",
       whatIsLeanSixSigma: "Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?",
       whatIsGherkin: "Qu'est-ce que Gherkin ?",
+      shiftLeft: "Le shift left pour les tests automatisés",
       whatIsUnitTest: "Qu'est-ce qu'un test unitaire ?",
       whatIsBrowserTest: "Qu'est-ce qu'un test basé sur le navigateur ?",
       whatIsCodeEditors: "Éditeurs de code — par exemple Visual Studio Code",
@@ -274,6 +281,7 @@
     <li><a href={localeHref(locale, 'what-are-flow-metrics-for-automatic-testing')}>{m.links.whatAreFlowMetrics}</a></li>
     <li><a href={localeHref(locale, 'what-is-lean-six-sigma-for-automatic-testing')}>{m.links.whatIsLeanSixSigma}</a></li>
     <li><a href={localeHref(locale, 'learn-gherkin')}>{m.links.whatIsGherkin}</a></li>
+    <li><a href={localeHref(locale, 'learn-shift-left')}>{m.links.shiftLeft}</a></li>
   </ul>
 
   <h2>{m.kindsHeading}</h2>

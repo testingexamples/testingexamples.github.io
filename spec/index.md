@@ -366,6 +366,11 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   with the same text. That page remains as a short hub linking to all five.
   The five are listed in `/topics/`'s "Related concepts" section. Slugs are
   `<topics slug>/<name>` in every locale.
+- `/topics/shift-left-for-automatic-testing/` — "Shift left for automatic testing":
+  what shifting left means (testing earlier in the lifecycle), why, four ways
+  to do it, and why to shift right too, linking to
+  `/what-is-devops-for-automatic-testing/` and `/what-is-the-testing-pyramid/`.
+  Linked after Gherkin at the end of `/topics/`'s Learn More list.
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at

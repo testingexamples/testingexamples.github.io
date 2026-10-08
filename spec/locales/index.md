@@ -130,7 +130,9 @@ The unit test page is nested the same way: `topics/unit-test`,
 `sujets/browser-test`. The five related-concept pages follow the same
 pattern with the leaf names `code-editors`, `version-control`,
 `agile-discovery`, `unix-shell`, and `cloud-hosting` (for example
-`pynciau/unix-shell`).
+`pynciau/unix-shell`). The shift left page uses the leaf
+`shift-left-for-automatic-testing` (for example
+`sujets/shift-left-for-automatic-testing`).
 The fixture section is never translated anywhere: it is a contract/standard,
 not content, the same category as a code sample or a product name. Both the
 root page and every locale's Practice page import it

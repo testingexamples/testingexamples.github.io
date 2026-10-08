@@ -20,6 +20,7 @@ const ARTICLES = [
   'learn-gherkin',
   'learn-unit-test',
   'learn-browser-test',
+  'learn-shift-left',
   'related-code-editors',
   'related-version-control',
   'related-agile-discovery',
@@ -104,6 +105,18 @@ for (const locale of LOCALES) {
   test(`${locale}: the related concepts hub links to all five concept pages`, async ({ page }) => {
     await page.goto(`/${locale}/${slugForTopic(locale, 'what-are-related-concepts-for-automatic-testing')}/`);
     for (const topic of RELATED) {
+      await expect(page.locator(`main a[href="/${locale}/${slugForTopic(locale, topic)}/"]`)).toHaveCount(1);
+    }
+  });
+}
+
+for (const locale of LOCALES) {
+  test(`${locale}: the shift left page has the practices and links to devops and the pyramid`, async ({ page }) => {
+    await page.goto(`/${locale}/${slugForTopic(locale, 'learn-shift-left')}/`);
+    await expect(page.locator('main h1')).toHaveCount(1);
+    await expect(page.locator('main li strong')).toHaveCount(4);
+    await expect(page.locator('main pre')).toContainText('shift left');
+    for (const topic of ['what-is-devops-for-automatic-testing', 'what-is-the-testing-pyramid'] as const) {
       await expect(page.locator(`main a[href="/${locale}/${slugForTopic(locale, topic)}/"]`)).toHaveCount(1);
     }
   });
