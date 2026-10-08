@@ -7,7 +7,7 @@ Pages by `.github/workflows/deploy.yml` on every push to `main`.
 ## The critical non-negotiable
 
 The home page (`src/routes/+page.svelte`) contains a fixture section — the
-markup under the headings "Id Examples" through "Form Input Examples": every
+markup under the headings "Id Examples" through "Input Submit Example": every
 `id`, `name`, `class`, `href`, and visible text in it. This markup is a
 **contract** depended on directly by nine sibling repos' source code:
 

@@ -64,7 +64,7 @@ being acted on, rather than taken on faith:
 
 - **The home page fixture contract.** The home page's fixture markup — every
   `id`, `name`, `class`, `href`, and visible text under "Id Examples" through
-  "Form Input Examples" — is a contract that five sibling repos' automated
+  "Input Submit Example" — is a contract that five sibling repos' automated
   tests depend on byte-for-byte (see `AGENTS.md`). Before any change to that
   markup, those five repos' actual source was cross-checked directly, not
   assumed from memory of what a "typical" fixture page might contain.

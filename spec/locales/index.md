@@ -78,7 +78,7 @@ content.
 
 `src/routes/+page.svelte` (site root, `/`) is **not** part of the locale
 system and is never touched by it. AGENTS.md documents why: its "Id
-Examples" through "Form Input Examples" section is a contract nine
+Examples" through "Input Submit Example" section is a contract nine
 external sibling repos' test suites depend on, hardcoded to
 `page.goto('/')`. That page, and only that page, keeps its historical
 unprefixed URL, unlocalized, byte-for-byte unchanged.

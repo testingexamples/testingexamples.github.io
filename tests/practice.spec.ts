@@ -25,8 +25,8 @@ for (const locale of LOCALES) {
 
     test('the practice page has the Select Multiple example after the Select example', async ({ page }) => {
       await page.goto(`/${locale}/${slugForTopic(locale, 'practice')}/`);
-      const headings = await page.locator('.site-fixtures h3').allTextContents();
-      expect(headings.indexOf('Select Multiple Example')).toBe(headings.indexOf('Select Example') + 1);
+      const headings = await page.locator('.site-fixtures h2').allTextContents();
+      expect(headings.indexOf('Input Select Multiple Example')).toBe(headings.indexOf('Input Select Example') + 1);
       await page.locator('#select-multiple-example-1-id').selectOption(['a', 'b']);
       await expect(page.locator('#select-multiple-example-1-id')).toHaveValues(['a', 'b']);
     });
@@ -39,8 +39,9 @@ for (const locale of LOCALES) {
         await expect(input).toHaveAttribute('type', type);
         await expect(input).toHaveAttribute('name', `${type}-example-1-name`);
       }
-      const headings = await page.locator('.site-fixtures h3').allTextContents();
-      expect(headings.at(-1)).toBe('Submit Example');
+      const headings = await page.locator('.site-fixtures h2').allTextContents();
+      expect(headings.at(-1)).toBe('Input Submit Example');
+      expect(headings.at(-2)).toBe('Input Reset Example');
       await page.locator('#range-example-1-id').fill('75');
       await expect(page.locator('#range-example-1-id')).toHaveValue('75');
       await page.locator('#date-example-1-id').fill('2026-02-20');
