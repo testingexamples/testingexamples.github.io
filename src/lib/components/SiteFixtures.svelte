@@ -91,6 +91,74 @@
       <option id="select-multiple-example-1-option-3-id" value="c">charlie</option>
     </select>
 
+    <h3>Color Example</h3>
+    <label for="color-example-1-id">Color Example 1</label>
+    <input type="color" id="color-example-1-id" name="color-example-1-name" value="#336699">
+
+    <h3>Date Example</h3>
+    <label for="date-example-1-id">Date Example 1</label>
+    <input type="date" id="date-example-1-id" name="date-example-1-name" value="2026-01-15">
+
+    <h3>Date and Time Example</h3>
+    <label for="datetime-local-example-1-id">Date and Time Example 1</label>
+    <input type="datetime-local" id="datetime-local-example-1-id" name="datetime-local-example-1-name" value="2026-01-15T09:30">
+
+    <h3>Email Example</h3>
+    <label for="email-example-1-id">Email Example 1</label>
+    <input type="email" id="email-example-1-id" name="email-example-1-name" value="example@example.com">
+
+    <h3>File Example</h3>
+    <label for="file-example-1-id">File Example 1</label>
+    <input type="file" id="file-example-1-id" name="file-example-1-name">
+
+    <h3>Hidden Example</h3>
+    <input type="hidden" id="hidden-example-1-id" name="hidden-example-1-name" value="Hidden Example 1 Value">
+
+    <h3>Image Example</h3>
+    <input type="image" id="image-example-1-id" name="image-example-1-name" alt="Image Example 1" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='32' height='32' fill='%23336699'/%3E%3C/svg%3E" width="32" height="32">
+
+    <h3>Month Example</h3>
+    <label for="month-example-1-id">Month Example 1</label>
+    <input type="month" id="month-example-1-id" name="month-example-1-name" value="2026-01">
+
+    <h3>Number Example</h3>
+    <label for="number-example-1-id">Number Example 1</label>
+    <input type="number" id="number-example-1-id" name="number-example-1-name" value="42">
+
+    <h3>Password Example</h3>
+    <label for="password-example-1-id">Password Example 1</label>
+    <input type="password" id="password-example-1-id" name="password-example-1-name" value="Password Example 1 Value">
+
+    <h3>Slider Example</h3>
+    <label for="range-example-1-id">Slider Example 1</label>
+    <input type="range" id="range-example-1-id" name="range-example-1-name" value="50">
+
+    <h3>Search Example</h3>
+    <label for="search-example-1-id">Search Example 1</label>
+    <input type="search" id="search-example-1-id" name="search-example-1-name" value="Search Example 1 Value">
+
+    <h3>Telephone Example</h3>
+    <label for="tel-example-1-id">Telephone Example 1</label>
+    <input type="tel" id="tel-example-1-id" name="tel-example-1-name" value="+1-555-0100">
+
+    <h3>Time Example</h3>
+    <label for="time-example-1-id">Time Example 1</label>
+    <input type="time" id="time-example-1-id" name="time-example-1-name" value="09:30">
+
+    <h3>URL Example</h3>
+    <label for="url-example-1-id">URL Example 1</label>
+    <input type="url" id="url-example-1-id" name="url-example-1-name" value="https://example.com">
+
+    <h3>Week Example</h3>
+    <label for="week-example-1-id">Week Example 1</label>
+    <input type="week" id="week-example-1-id" name="week-example-1-name" value="2026-W03">
+
+    <h3>Button Example</h3>
+    <input type="button" id="button-example-1-id" name="button-example-1-name" value="Button Example 1">
+
+    <h3>Reset Example</h3>
+    <input type="reset" id="reset-example-1-id" name="reset-example-1-name" value="Reset Example 1">
+
     <h3>Submit Example</h3>
 
     <input type="submit" value="Submit">
