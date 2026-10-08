@@ -177,6 +177,11 @@
 
 <div class="page-header">
   <h1>{m.heading}</h1>
+</div>
+
+<section class="section prose">
+  <p>{m.intro}</p>
+
   <p class="hero-actions">
     <CallToAction class="button button-primary" href={localeHref(locale, 'learn')}
       >{m.hero.learn}</CallToAction
@@ -188,10 +193,6 @@
       >{m.hero.code}</CallToAction
     >
   </p>
-</div>
-
-<section class="section prose">
-  <p>{m.intro}</p>
 
   <h3>{m.examplesHeading}</h3>
   <ul class="repo-list">
@@ -528,7 +529,14 @@ public class Demo {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-block: 1.5rem 0;
+    margin-block: 1.5rem;
+  }
+  /* The shared plain-`a` underline (static/assets/style.css) is wrong for
+     buttons; remove it here only. */
+  .hero-actions :global(a.button),
+  .hero-actions :global(a.button:hover),
+  .hero-actions :global(a.button:focus) {
+    text-decoration: none;
   }
   /* Override the shared .repo-list rule (static/assets/style.css) for this
      page only: bullet points instead of the border-bottom line separator

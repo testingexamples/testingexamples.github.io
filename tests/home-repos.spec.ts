@@ -24,9 +24,14 @@ for (const locale of LOCALES) {
     await page.goto(`/${locale}/`);
     for (const topic of ['learn', 'practice', 'code'] as const) {
       const href = `/${locale}/${slugForTopic(locale, topic)}/`;
-      await expect(page.locator(`.page-header a.button[href="${href}"]`)).toHaveCount(1);
+      await expect(page.locator(`.hero-actions a.button[href="${href}"]`)).toHaveCount(1);
     }
     await expect(page.locator(`main a[href^="${DEMO_REPOS_URL}"]`)).toHaveCount(0);
+    // The buttons sit below the intro paragraph and have no underline.
+    const order = await page.locator('main p').evaluateAll((ps) => ps.findIndex((p) => p.classList.contains('hero-actions')));
+    expect(order).toBe(1);
+    const decoration = await page.locator('.hero-actions a.button').first().evaluate((a) => getComputedStyle(a).textDecorationLine);
+    expect(decoration).toBe('none');
   });
 }
 
