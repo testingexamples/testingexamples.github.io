@@ -441,7 +441,8 @@ p { margin: 0 0 1rem; }
  * ---------------------------------------------------------------- */
 .site-fixtures {
   max-width: var(--prose-max);
-  margin: 2rem auto 0;
+  /* Left-justified, aligned with the prose above it (not centered). */
+  margin: 2rem 0 0;
 }
 .site-fixtures h2 {
   margin-top: 2.5rem;
