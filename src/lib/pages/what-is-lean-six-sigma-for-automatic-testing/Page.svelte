@@ -25,10 +25,10 @@
   };
 
   const EN_001: Messages = {
-    title: 'How does Six Sigma lead manual testing into automatic testing?',
+    title: 'Lean Six Sigma for automatic testing',
     metaDescription:
       "What Six Sigma is, and why manual testing is itself the variation problem it targets — a person doesn't reliably produce the same result twice, which is exactly what automating a check eliminates.",
-    heading: 'How does Six Sigma lead manual testing into automatic testing?',
+    heading: 'Lean Six Sigma for automatic testing',
     introP:
       "is a discipline for reducing defects by reducing variation: the same input should reliably produce the same output, and where it doesn't, that variation gets measured and root-caused rather than shrugged off. It started in manufacturing and now gets applied to any repeatable process — software delivery included.",
     belongsP:
@@ -44,7 +44,7 @@
       'How is manual testing itself a source of variation, in the Six Sigma sense, compared to an automatic test that runs the same way every time?',
       "How would I apply Six Sigma's idea of 'root-causing variation' to one specific flaky automatic test, instead of just re-running it until it passes?"
     ],
-    nextLabel: 'Next: what is continuous integration for automatic testing? →'
+    nextLabel: 'Next: continuous integration for automatic testing →'
   };
 
   // No British/American/Oxford spelling divergence occurs in this page's

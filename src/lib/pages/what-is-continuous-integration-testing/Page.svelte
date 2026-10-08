@@ -18,10 +18,10 @@
   };
 
   const EN_001: Messages = {
-    title: 'What is continuous integration for automatic testing?',
+    title: 'Continuous integration for automatic testing',
     metaDescription:
       'What continuous integration (CI) testing is: running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after.',
-    heading: 'What is continuous integration for automatic testing?',
+    heading: 'Continuous integration for automatic testing',
     intro:
       'Continuous integration (CI) testing is running your automatic test suite automatically every time someone proposes a change, instead of relying on a person to remember to run it by hand.',
     p1: 'A CI server (GitHub Actions, GitLab CI, Jenkins, and similar tools all do this) watches a repository for new commits and pull requests. On every one, it checks out the code, installs dependencies, and runs the test suite from scratch, in a clean environment, the same way every time — unit tests, integration tests, and often the browser automation tests this site is about, all in one run. The result — pass or fail — is reported right on the pull request, before a human reviewer even opens it.',

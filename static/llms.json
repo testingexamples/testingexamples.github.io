@@ -63,7 +63,7 @@
           "description": "What it is, and the trade-offs that come with its realism \u2014 slower, more brittle, and harder to diagnose than a unit test."
         },
         {
-          "title": "What is continuous integration for automatic testing?",
+          "title": "Continuous integration for automatic testing",
           "url": "https://testingexamples.github.io/en-001/what-is-continuous-integration-testing/",
           "description": "Running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after."
         },
@@ -89,17 +89,17 @@
       "description": "Bonus topics extracted from the related concepts page.",
       "links": [
         {
-          "title": "What is devops for automatic testing?",
+          "title": "Devops for automatic testing",
           "url": "https://testingexamples.github.io/en-001/what-is-devops-for-automatic-testing/",
           "description": "What DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it."
         },
         {
-          "title": "What metrics help automatic testing?",
+          "title": "Metrics for automatic testing",
           "url": "https://testingexamples.github.io/en-001/what-are-flow-metrics-for-automatic-testing/",
           "description": "Cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal."
         },
         {
-          "title": "How does Six Sigma lead manual testing into automatic testing?",
+          "title": "Lean Six Sigma for automatic testing",
           "url": "https://testingexamples.github.io/en-001/what-is-lean-six-sigma-for-automatic-testing/",
           "description": "Lean and Six Sigma, and why a flaky test is literally \"variation\" worth root-causing rather than re-running until it goes green."
         },

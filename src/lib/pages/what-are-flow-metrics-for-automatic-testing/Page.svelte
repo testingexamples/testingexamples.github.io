@@ -26,10 +26,10 @@
   };
 
   const EN_001: Messages = {
-    title: 'What metrics help automatic testing?',
+    title: 'Metrics for automatic testing',
     metaDescription:
       "What flow metrics are — cycle time, lead time, throughput, work in progress — and why a growing pile of skipped or flaky tests is itself a flow-metric signal that testing debt is piling up.",
-    heading: 'What metrics help automatic testing?',
+    heading: 'Metrics for automatic testing',
     flowMetricsLabel: 'Flow metrics',
     introP:
       "measure how work actually moves through a process: cycle time (how long one item takes end to end), lead time, throughput, and work in progress. The point is measuring what's actually moving, not how busy people look.",
@@ -45,7 +45,7 @@
       'How would I start tracking cycle time for bug fixes on my own team, without buying new tooling?',
       'How do I use flow metrics to make a concrete case that a growing pile of flaky tests is real, measurable technical debt?'
     ],
-    nextLabel: 'Next: how does Six Sigma lead manual testing into automatic testing? →'
+    nextLabel: 'Next: Lean Six Sigma for automatic testing →'
   };
 
   // No British/American/Oxford spelling divergence occurs in this page's

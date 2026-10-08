@@ -26,10 +26,10 @@
   };
 
   const EN_001: Messages = {
-    title: 'What is devops for automatic testing?',
+    title: 'Devops for automatic testing',
     metaDescription:
       'What DevOps is, and why testing in production — canary releases, feature flags, watching real error rates after a deploy — legitimately complements pre-release testing rather than replacing it.',
-    heading: 'What is devops for automatic testing?',
+    heading: 'Devops for automatic testing',
     introP:
       'is the broader practice CI/CD sits inside: breaking down the wall between the people who write software and the people who run it in production, so both groups share responsibility for whether it actually works once real users touch it.',
     belongsP:
@@ -44,7 +44,7 @@
       "What's a canary release, and how would testing fit alongside one instead of being replaced by it?",
       'How do mature teams decide which safety net — pre-release testing or a DevOps practice like feature flags — should catch a given kind of failure?'
     ],
-    nextLabel: 'Next: what metrics help automatic testing? →'
+    nextLabel: 'Next: metrics for automatic testing →'
   };
 
   // No British/American/Oxford spelling divergence occurs in this page's
