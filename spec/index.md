@@ -172,7 +172,7 @@ The paths below are the English slugs. The canonical URL of each is
 `/en-001/<slug>/` (and the other locales translate the slug); the
 old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 
-- `/learn/` — the hub page for the articles below: a "Learn" list (five
+- `/topics/` — (formerly `/learn/`; `/learn/` on the site root still redirects here) the hub page for the articles below: a "Learn" list (five
   articles) and a "Learn More" list (six articles), moved here from each
   locale's home page, which no longer carries them. The site root `/` still
   has its own copy of both lists.
@@ -183,24 +183,24 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     early, tireless repetition, confident frequent releases, cheaper bugs,
     freeing humans for what tests can't do), extracted from
     `/what-is-automatic-testing/`'s "What automated tests buy you"
-    section into its own page. Linked from the `/learn/` page's Learn list; `/what-is-automatic-testing/`'s closing call to
+    section into its own page. Linked from the `/topics/` page's Learn list; `/what-is-automatic-testing/`'s closing call to
     action continues here, and this page's own call to action continues to
     `/what-is-the-testing-pyramid/`.
   - `/what-is-the-testing-pyramid/` — the three layers of automatic tests
     (unit, integration, end-to-end/browser), extracted from
     `/what-is-automatic-testing/` into its own page. Linked from the
-    `/learn/`'s Learn list.
+    `/topics/`'s Learn list.
   - `/what-is-browser-automation-testing/` — what browser automatic testing
     is and the trade-offs of its realism (slower, more brittle, harder to
     diagnose than a unit test), extracted from
     `/what-is-automatic-testing/` into its own page. Linked from the
-    `/learn/`'s Learn list, and from
+    `/topics/`'s Learn list, and from
     `/what-is-the-testing-pyramid/`'s closing call to action; its own call
     to action continues to `/what-is-continuous-integration-testing/`.
   - `/what-is-continuous-integration-testing/` — what CI is (running the
     automatic test suite on every commit/pull request in a clean
     environment) and why it's what makes a test suite actually pay off.
-    Linked from `/learn/`'s Learn More list and from
+    Linked from `/topics/`'s Learn More list and from
     `/what-is-browser-automation-testing/`'s closing call to action; its own
     call to action continues to `/how-to-start-learning-automatic-testing/`.
     Also the closing link in the Learn More chain below, which loops back
@@ -226,7 +226,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     their first script. Originally covered eight topics; three (DevOps,
     flow metrics, Lean Six Sigma) were extracted into their own pages,
     listed below.
-- The `/learn/` page's "Learn More" list — bonus topics extracted from
+- The `/topics/` page's "Learn More" list — bonus topics extracted from
   `/what-are-related-concepts-for-automatic-testing/`, chained together by
   their own closing calls to action, the last of which loops back to
   `/what-is-continuous-integration-testing/` above.
@@ -260,6 +260,10 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   code (JavaScript, Python, Rust, C#, and Java: ten examples, all under one
   "Examples of source code" section) was moved to each locale's home page.
   Linked from the home page's Examples list.
+- `/topics/gherkin/` — "What is Gherkin?": the Given-When-Then syntax, its
+  keywords, a short example, and a link to `/given-when-then/`. Linked from
+  the end of `/topics/`'s Learn More list. Its slug is `<topics slug>/gherkin`
+  in every locale (for example `/cy-gb/pynciau/gherkin/`).
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at

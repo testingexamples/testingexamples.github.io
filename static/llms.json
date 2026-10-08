@@ -23,7 +23,7 @@
         },
         {
           "title": "Learn",
-          "url": "https://testingexamples.github.io/en-001/learn/",
+          "url": "https://testingexamples.github.io/en-001/topics/",
           "description": "Hub page listing the Learn and Learn More articles."
         },
         {
@@ -105,7 +105,7 @@
         },
         {
           "title": "What is Gherkin?",
-          "url": "https://testingexamples.github.io/en-001/learn/gherkin/",
+          "url": "https://testingexamples.github.io/en-001/topics/gherkin/",
           "description": "The plain-language Given-When-Then syntax, its keywords, and a short example."
         }
       ]

@@ -119,8 +119,9 @@ Practice slugs: `practice`, `ymarfer`, `练习`, `التدريب`, `연습`, `s-
 
 Code slugs: `code`, `cod`, `代码`, `الكود`, `코드`, `code`.
 
-Gherkin slugs (nested under Learn): `learn/gherkin`, `dysgu/gherkin`,
-`学习/gherkin`, `تعلم/gherkin`, `학습/gherkin`, `apprendre/gherkin`.
+Topics slugs (the former Learn hub): `topics`, `pynciau`, `主题`, `المواضيع`, `주제`,
+`sujets`. Gherkin is nested under it: `topics/gherkin`, `pynciau/gherkin`,
+`主题/gherkin`, `المواضيع/gherkin`, `주제/gherkin`, `sujets/gherkin`.
 The fixture section is never translated anywhere: it is a contract/standard,
 not content, the same category as a code sample or a product name. Both the
 root page and every locale's Practice page import it

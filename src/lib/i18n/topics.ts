@@ -106,17 +106,17 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
     load: () => import('#lib/pages/practice/Page.svelte')
   },
   learn: {
-    slug: slugFor('learn', 'dysgu', '学习', 'تعلم', '학습', 'apprendre'),
+    slug: slugFor('topics', 'pynciau', '主题', 'المواضيع', '주제', 'sujets'),
     load: () => import('#lib/pages/learn/Page.svelte')
   },
   'learn-gherkin': {
     slug: slugFor(
-      'learn/gherkin',
-      'dysgu/gherkin',
-      '学习/gherkin',
-      'تعلم/gherkin',
-      '학습/gherkin',
-      'apprendre/gherkin'
+      'topics/gherkin',
+      'pynciau/gherkin',
+      '主题/gherkin',
+      'المواضيع/gherkin',
+      '주제/gherkin',
+      'sujets/gherkin'
     ),
     load: () => import('#lib/pages/learn-gherkin/Page.svelte')
   },

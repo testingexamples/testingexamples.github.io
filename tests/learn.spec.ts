@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { LOCALES } from '../src/lib/i18n/locales';
 import { slugForTopic } from '../src/lib/i18n/topics';
 
-// The Learn and Learn More lists live on /<locale>/learn/, not on the
+// The Learn and Learn More lists live on /<locale>/topics/, not on the
 // locale's home page (spec/index.md).
 
 const ARTICLES = [

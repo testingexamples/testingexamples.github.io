@@ -30,7 +30,7 @@ The links below are the default locale, English (`en-001`).
 
 - [Home](https://testingexamples.github.io/): the fixture page itself — ids, names, classes, links, lists, and form inputs
 - [About](https://testingexamples.github.io/en-001/about/): what this project is, the full sibling demo repo family, and how the site is built
-- [Learn](https://testingexamples.github.io/en-001/learn/): hub page listing the Learn and Learn More articles below
+- [Learn](https://testingexamples.github.io/en-001/topics/): hub page listing the Learn and Learn More articles below
 - [Examples](https://testingexamples.github.io/en-001/examples/): hub page linking to the two Examples pages below
 - [Repository](https://github.com/testingexamples/testingexamples.github.io): source for this site, including `spec/index.md`, the normative fixture contract
 
@@ -50,7 +50,7 @@ The links below are the default locale, English (`en-001`).
 - [What is devops for automatic testing?](https://testingexamples.github.io/en-001/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
 - [What metrics help automatic testing?](https://testingexamples.github.io/en-001/what-are-flow-metrics-for-automatic-testing/): cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal
 - [How does Six Sigma lead manual testing into automatic testing?](https://testingexamples.github.io/en-001/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
-- [What is Gherkin?](https://testingexamples.github.io/en-001/learn/gherkin/): the plain-language Given-When-Then syntax, its keywords, and a short example
+- [What is Gherkin?](https://testingexamples.github.io/en-001/topics/gherkin/): the plain-language Given-When-Then syntax, its keywords, and a short example
 
 ## Examples
 
