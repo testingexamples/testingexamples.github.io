@@ -57,7 +57,7 @@
       whatIsLeanSixSigma: 'Lean Six Sigma for automatic testing',
       whatIsGherkin: "Gherkin syntax for automatic testing",
       shiftLeft: "Shift left for automatic testing",
-      whatIsUnitTest: "What is a unit test?",
+      whatIsUnitTest: "Unit test",
       whatIsBrowserTest: "What is a browser-based test?",
       whatIsCodeEditors: "Code editors — e.g. Visual Studio Code",
       whatIsVersionControl: "Version control — git and GitHub",

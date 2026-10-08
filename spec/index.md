@@ -343,7 +343,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   keywords, a short example, and a link to `/given-when-then/`. Linked from
   the end of `/topics/`'s Learn More list. Its slug is `<topics slug>/gherkin`
   in every locale (for example `/cy-gb/pynciau/gherkin/`).
-- `/topics/unit-test/` — "What is a unit test?": what makes a unit test good,
+- `/topics/unit-test/` — "Unit test": what makes a unit test good,
   the Arrange-Act-Assert shape with a short JavaScript example, and a link to
   `/what-is-the-testing-pyramid/`. Linked from `/topics/`'s "Kinds of tests" list. Its slug is `<topics slug>/unit-test`.
 - `/topics/browser-test/` — "What is a browser-based test?": what one is,

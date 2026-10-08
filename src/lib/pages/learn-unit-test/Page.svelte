@@ -21,10 +21,10 @@
   };
 
   const EN_001: Messages = {
-    title: "What is a unit test?",
+    title: "Unit test",
     metaDescription:
       "A unit test checks one small piece of code in isolation, quickly and repeatably, and sits at the base of the automatic testing pyramid.",
-    heading: "What is a unit test?",
+    heading: "Unit test",
     intro:
       "A unit test is a small automatic test that checks one tiny piece of code — usually a single function or method — on its own, without a browser, a network, or a database. It runs in milliseconds, so a project can have thousands of them and run them on every change.",
     traitsHeading: "What makes a good unit test",

@@ -98,7 +98,7 @@
           "description": "Testing earlier in the development lifecycle, and why it pays off."
         },
         {
-          "title": "What is a unit test?",
+          "title": "Unit test",
           "url": "https://testingexamples.github.io/en-001/topics/unit-test/",
           "description": "What makes a unit test good, the Arrange-Act-Assert shape, and a short example."
         },
