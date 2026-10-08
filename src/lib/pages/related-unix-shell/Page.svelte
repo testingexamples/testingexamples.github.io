@@ -50,7 +50,7 @@
       "How would I use grep to find every failing test in a huge CI log without scrolling through it by hand?",
       "How do I chain a few Unix commands together into a small, reliable script for a CI step, instead of reaching for a full programming language?"
     ],
-    s4Heading: "Unix commands — the command line",
+    s4Heading: "Unix commands such as for file browsing",
     s4P1Post: " are what almost every dev environment, CI runner, and Docker container speaks natively, no GUI required. You don't need to master all of them; a working knowledge of a couple dozen goes a very long way.",
     s4P2a: "Here's why that belongs on a testing page: ",
     s4P2b: " and ",
