@@ -18,6 +18,14 @@ for (const locale of LOCALES) {
       await expect(page.locator('#select-example-1-id')).toBeVisible();
     });
 
+    test('the practice page has the Select Multiple example after the Select example', async ({ page }) => {
+      await page.goto(`/${locale}/${slugForTopic(locale, 'practice')}/`);
+      const headings = await page.locator('.site-fixtures h3').allTextContents();
+      expect(headings.indexOf('Select Multiple Example')).toBe(headings.indexOf('Select Example') + 1);
+      await page.locator('#select-multiple-example-1-id').selectOption(['a', 'b']);
+      await expect(page.locator('#select-multiple-example-1-id')).toHaveValues(['a', 'b']);
+    });
+
     test('the home page no longer has the fixtures, and links to practice', async ({ page }) => {
       await page.goto(`/${locale}/`);
       await expect(page.locator('#id-example-1')).toHaveCount(0);

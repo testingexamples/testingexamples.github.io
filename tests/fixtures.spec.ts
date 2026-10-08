@@ -100,4 +100,14 @@ test.describe('Ordered and unordered list examples', () => {
     await expect(page.locator('#ul-example-1-li-2')).toHaveCount(1);
     await expect(page.locator('#ul-example-1-li-3')).toHaveCount(1);
   });
+
+  test('the select multiple allows choosing more than one option', async ({ page }) => {
+    await page.goto('/');
+    const select = page.locator('#select-multiple-example-1-id');
+    await expect(select).toHaveAttribute('name', 'select-multiple-example-1-name');
+    await expect(select).toHaveAttribute('multiple', '');
+    await expect(select.locator('option')).toHaveText(['alfa', 'bravo', 'charlie']);
+    await select.selectOption(['a', 'c']);
+    await expect(select).toHaveValues(['a', 'c']);
+  });
 });

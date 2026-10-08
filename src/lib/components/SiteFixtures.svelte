@@ -83,6 +83,14 @@
       <option id="select-example-1-option-3-id" value="c">charlie</option>
     </select>
 
+    <h3>Select Multiple Example</h3>
+
+    <select id="select-multiple-example-1-id" name="select-multiple-example-1-name" multiple>
+      <option id="select-multiple-example-1-option-1-id" value="a">alfa</option>
+      <option id="select-multiple-example-1-option-2-id" value="b">bravo</option>
+      <option id="select-multiple-example-1-option-3-id" value="c">charlie</option>
+    </select>
+
     <h3>Submit Example</h3>
 
     <input type="submit" value="Submit">
