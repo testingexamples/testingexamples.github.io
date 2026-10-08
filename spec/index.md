@@ -173,7 +173,8 @@ The paths below are the English slugs. The canonical URL of each is
 old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 
 - `/topics/` — (formerly `/learn/`; `/learn/` on the site root still redirects here) the hub page for the articles below: a "Learn" list (five
-  articles) and a "Learn More" list (six articles), moved here from each
+  articles), a "Learn More" list (six articles plus Gherkin), and a "Kinds of tests"
+  list (the unit test and browser test pages), moved here from each
   locale's home page, which no longer carries them. The site root `/` still
   has its own copy of both lists.
   - `/what-is-automatic-testing/` — what automatic testing is, and how
@@ -266,8 +267,12 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   in every locale (for example `/cy-gb/pynciau/gherkin/`).
 - `/topics/unit-test/` — "What is a unit test?": what makes a unit test good,
   the Arrange-Act-Assert shape with a short JavaScript example, and a link to
-  `/what-is-the-testing-pyramid/`. Linked after Gherkin at the end of
-  `/topics/`'s Learn More list. Its slug is `<topics slug>/unit-test`.
+  `/what-is-the-testing-pyramid/`. Linked from `/topics/`'s "Kinds of tests" list. Its slug is `<topics slug>/unit-test`.
+- `/topics/browser-test/` — "What is a browser-based test?": what one is,
+  the tools you will meet (Selenium, Playwright, WebdriverIO, Cypress,
+  Puppeteer, TestCafe), what to expect (realistic but slow and brittle), and
+  links to `/practice/` and `/code/`. Linked from `/topics/`'s "Kinds of tests"
+  list, after the unit test page.
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at

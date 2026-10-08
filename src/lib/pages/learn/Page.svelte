@@ -10,6 +10,7 @@
     heading: string;
     learnHeading: string;
     learnMoreHeading: string;
+    kindsHeading: string;
     links: {
       whatIsAutomaticTesting: string;
       whatIsThePurpose: string;
@@ -24,6 +25,7 @@
       whatIsLeanSixSigma: string;
       whatIsGherkin: string;
       whatIsUnitTest: string;
+      whatIsBrowserTest: string;
     };
   };
 
@@ -34,6 +36,7 @@
     heading: 'Learn',
     learnHeading: 'Learn',
     learnMoreHeading: 'Learn More',
+    kindsHeading: "Kinds of tests",
     links: {
       whatIsAutomaticTesting: 'What is automatic testing?',
       whatIsThePurpose: 'What is the purpose of automatic testing?',
@@ -47,7 +50,8 @@
       whatAreFlowMetrics: 'What metrics help automatic testing?',
       whatIsLeanSixSigma: 'How does Six Sigma lead manual testing into automatic testing?',
       whatIsGherkin: "What is Gherkin?",
-      whatIsUnitTest: "What is a unit test?"
+      whatIsUnitTest: "What is a unit test?",
+      whatIsBrowserTest: "What is a browser-based test?"
     }
   };
 
@@ -61,6 +65,7 @@
     heading: 'Dysgu',
     learnHeading: 'Dysgu',
     learnMoreHeading: 'Dysgu Mwy',
+    kindsHeading: "Mathau o brofion",
     links: {
       whatIsAutomaticTesting: "Beth yw profi awtomatig?",
       whatIsThePurpose: 'Beth yw diben profi awtomatig?',
@@ -74,7 +79,8 @@
       whatAreFlowMetrics: "Pa fetrigau sy'n helpu profi awtomatig?",
       whatIsLeanSixSigma: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
       whatIsGherkin: "Beth yw Gherkin?",
-      whatIsUnitTest: "Beth yw prawf uned?"
+      whatIsUnitTest: "Beth yw prawf uned?",
+      whatIsBrowserTest: "Beth yw prawf sy’n seiliedig ar borwr?"
     }
   };
 
@@ -85,6 +91,7 @@
     heading: '学习',
     learnHeading: '学习',
     learnMoreHeading: '延伸学习',
+    kindsHeading: "测试的种类",
     links: {
       whatIsAutomaticTesting: '什么是自动化测试？',
       whatIsThePurpose: '自动化测试的目的是什么？',
@@ -98,7 +105,8 @@
       whatAreFlowMetrics: '哪些指标有助于自动化测试？',
       whatIsLeanSixSigma: '六西格玛如何引导人工测试进入自动化测试？',
       whatIsGherkin: "什么是 Gherkin？",
-      whatIsUnitTest: "什么是单元测试？"
+      whatIsUnitTest: "什么是单元测试？",
+      whatIsBrowserTest: "什么是基于浏览器的测试？"
     }
   };
 
@@ -109,6 +117,7 @@
     heading: 'تعلّم',
     learnHeading: 'تعلّم',
     learnMoreHeading: 'تعلّم المزيد',
+    kindsHeading: "أنواع الاختبارات",
     links: {
       whatIsAutomaticTesting: 'ما هو الاختبار الآلي؟',
       whatIsThePurpose: 'ما الغرض من الاختبار الآلي؟',
@@ -122,7 +131,8 @@
       whatAreFlowMetrics: 'ما المقاييس التي تفيد الاختبار الآلي؟',
       whatIsLeanSixSigma: 'كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟',
       whatIsGherkin: "ما هو Gherkin؟",
-      whatIsUnitTest: "ما هو اختبار الوحدة؟"
+      whatIsUnitTest: "ما هو اختبار الوحدة؟",
+      whatIsBrowserTest: "ما هو الاختبار القائم على المتصفح؟"
     }
   };
 
@@ -133,6 +143,7 @@
     heading: '학습',
     learnHeading: '학습',
     learnMoreHeading: '더 알아보기',
+    kindsHeading: "테스트의 종류",
     links: {
       whatIsAutomaticTesting: '자동화 테스트란 무엇인가?',
       whatIsThePurpose: '자동화 테스트의 목적은 무엇인가?',
@@ -146,7 +157,8 @@
       whatAreFlowMetrics: '자동화 테스트에 도움이 되는 지표는 무엇인가?',
       whatIsLeanSixSigma: 'Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가?',
       whatIsGherkin: "Gherkin이란 무엇인가?",
-      whatIsUnitTest: "단위 테스트란 무엇인가?"
+      whatIsUnitTest: "단위 테스트란 무엇인가?",
+      whatIsBrowserTest: "브라우저 기반 테스트란 무엇인가?"
     }
   };
 
@@ -157,6 +169,7 @@
     heading: 'Apprendre',
     learnHeading: 'Apprendre',
     learnMoreHeading: 'En savoir plus',
+    kindsHeading: "Types de tests",
     links: {
       whatIsAutomaticTesting: "Qu'est-ce que le test automatisé ?",
       whatIsThePurpose: "Quel est le but des tests automatisés ?",
@@ -170,7 +183,8 @@
       whatAreFlowMetrics: "Quelles métriques aident les tests automatisés ?",
       whatIsLeanSixSigma: "Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?",
       whatIsGherkin: "Qu'est-ce que Gherkin ?",
-      whatIsUnitTest: "Qu'est-ce qu'un test unitaire ?"
+      whatIsUnitTest: "Qu'est-ce qu'un test unitaire ?",
+      whatIsBrowserTest: "Qu'est-ce qu'un test basé sur le navigateur ?"
     }
   };
 
@@ -218,7 +232,12 @@
     <li><a href={localeHref(locale, 'what-are-flow-metrics-for-automatic-testing')}>{m.links.whatAreFlowMetrics}</a></li>
     <li><a href={localeHref(locale, 'what-is-lean-six-sigma-for-automatic-testing')}>{m.links.whatIsLeanSixSigma}</a></li>
     <li><a href={localeHref(locale, 'learn-gherkin')}>{m.links.whatIsGherkin}</a></li>
+  </ul>
+
+  <h2>{m.kindsHeading}</h2>
+  <ul class="repo-list">
     <li><a href={localeHref(locale, 'learn-unit-test')}>{m.links.whatIsUnitTest}</a></li>
+    <li><a href={localeHref(locale, 'learn-browser-test')}>{m.links.whatIsBrowserTest}</a></li>
   </ul>
 </section>
 

@@ -52,6 +52,7 @@ The links below are the default locale, English (`en-001`).
 - [How does Six Sigma lead manual testing into automatic testing?](https://testingexamples.github.io/en-001/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
 - [What is Gherkin?](https://testingexamples.github.io/en-001/topics/gherkin/): the plain-language Given-When-Then syntax, its keywords, and a short example
 - [What is a unit test?](https://testingexamples.github.io/en-001/topics/unit-test/): what makes a unit test good, the Arrange-Act-Assert shape, and a short example
+- [What is a browser-based test?](https://testingexamples.github.io/en-001/topics/browser-test/): what a browser-based test is, the tools you will meet (Selenium, Playwright, and others), and what to expect
 
 ## Examples
 

@@ -25,6 +25,7 @@ export type TopicId =
   | 'learn'
   | 'learn-gherkin'
   | 'learn-unit-test'
+  | 'learn-browser-test'
   | 'practice'
   | 'what-are-flow-metrics-for-automatic-testing'
   | 'what-are-related-concepts-for-automatic-testing'
@@ -131,6 +132,17 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'sujets/unit-test'
     ),
     load: () => import('#lib/pages/learn-unit-test/Page.svelte')
+  },
+  'learn-browser-test': {
+    slug: slugFor(
+      'topics/browser-test',
+      'pynciau/browser-test',
+      '主题/browser-test',
+      'المواضيع/browser-test',
+      '주제/browser-test',
+      'sujets/browser-test'
+    ),
+    load: () => import('#lib/pages/learn-browser-test/Page.svelte')
   },
   'what-are-flow-metrics-for-automatic-testing': {
     slug: slugFor(

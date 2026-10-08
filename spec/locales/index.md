@@ -124,7 +124,10 @@ Topics slugs (the former Learn hub): `topics`, `pynciau`, `主题`, `الموا�
 `主题/gherkin`, `المواضيع/gherkin`, `주제/gherkin`, `sujets/gherkin`.
 The unit test page is nested the same way: `topics/unit-test`,
 `pynciau/unit-test`, `主题/unit-test`, `المواضيع/unit-test`, `주제/unit-test`,
-`sujets/unit-test`.
+`sujets/unit-test`. The browser-based test page likewise: `topics/browser-test`,
+`pynciau/browser-test`, `主题/browser-test`,
+`المواضيع/browser-test`, `주제/browser-test`,
+`sujets/browser-test`.
 The fixture section is never translated anywhere: it is a contract/standard,
 not content, the same category as a code sample or a product name. Both the
 root page and every locale's Practice page import it

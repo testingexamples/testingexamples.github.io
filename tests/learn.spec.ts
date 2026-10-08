@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { LOCALES } from '../src/lib/i18n/locales';
 import { slugForTopic } from '../src/lib/i18n/topics';
 
-// The Learn and Learn More lists live on /<locale>/topics/, not on the
+// The Learn, Learn More, and Kinds of tests lists live on /<locale>/topics/, not on the
 // locale's home page (spec/index.md).
 
 const ARTICLES = [
@@ -18,13 +18,14 @@ const ARTICLES = [
   'what-are-flow-metrics-for-automatic-testing',
   'what-is-lean-six-sigma-for-automatic-testing',
   'learn-gherkin',
-  'learn-unit-test'
+  'learn-unit-test',
+  'learn-browser-test'
 ] as const;
 
 for (const locale of LOCALES) {
   test(`${locale}: the Learn page has the Learn and Learn More lists`, async ({ page }) => {
     await page.goto(`/${locale}/${slugForTopic(locale, 'learn')}/`);
-    await expect(page.locator('main h2')).toHaveCount(2);
+    await expect(page.locator('main h2')).toHaveCount(3);
     for (const topic of ARTICLES) {
       const href = `/${locale}/${slugForTopic(locale, topic)}/`;
       await expect(page.locator(`main a[href="${href}"]`)).toHaveCount(1);
@@ -61,5 +62,18 @@ for (const locale of LOCALES) {
     await expect(page.locator('main pre')).toContainText('expect(result).toBe(5);');
     const pyramid = `/${locale}/${slugForTopic(locale, 'what-is-the-testing-pyramid')}/`;
     await expect(page.locator(`main a[href="${pyramid}"]`)).toHaveCount(1);
+  });
+}
+
+for (const locale of LOCALES) {
+  test(`${locale}: the browser-based test page lists the tools and links to practice and code`, async ({ page }) => {
+    await page.goto(`/${locale}/${slugForTopic(locale, 'learn-browser-test')}/`);
+    await expect(page.locator('main h1')).toHaveCount(1);
+    for (const tool of ['Selenium', 'Playwright', 'WebdriverIO', 'Cypress', 'Puppeteer', 'TestCafe']) {
+      await expect(page.locator('main li strong', { hasText: new RegExp(`^${tool}$`) })).toHaveCount(1);
+    }
+    for (const topic of ['practice', 'code'] as const) {
+      await expect(page.locator(`main a[href="/${locale}/${slugForTopic(locale, topic)}/"]`)).toHaveCount(1);
+    }
   });
 }
