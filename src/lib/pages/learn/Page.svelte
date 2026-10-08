@@ -41,7 +41,7 @@
       'Learn what automatic testing is and how to get started with browser automation tools like Selenium, WebdriverIO, and Playwright.',
     heading: 'Learn',
     learnHeading: 'Learn',
-    learnMoreHeading: 'Learn More',
+    learnMoreHeading: "Related concepts",
     kindsHeading: "Kinds of tests",
     relatedHeading: "Related concepts",
     links: {
@@ -76,7 +76,7 @@
       "Dysgwch beth yw profi awtomatig a sut i ddechrau gydag offer awtomatiaeth porwr fel Selenium, WebdriverIO, a Playwright.",
     heading: 'Dysgu',
     learnHeading: 'Dysgu',
-    learnMoreHeading: 'Dysgu Mwy',
+    learnMoreHeading: "Cysyniadau cysylltiedig",
     kindsHeading: "Mathau o brofion",
     relatedHeading: "Cysyniadau cysylltiedig",
     links: {
@@ -108,7 +108,7 @@
       '了解什么是自动化测试，以及如何开始使用 Selenium、WebdriverIO 和 Playwright 等浏览器自动化工具。',
     heading: '学习',
     learnHeading: '学习',
-    learnMoreHeading: '延伸学习',
+    learnMoreHeading: "相关概念",
     kindsHeading: "测试的种类",
     relatedHeading: "相关概念",
     links: {
@@ -140,7 +140,7 @@
       'تعرّف على ماهية الاختبار الآلي وكيف تبدأ مع أدوات أتمتة المتصفح مثل Selenium وWebdriverIO وPlaywright.',
     heading: 'تعلّم',
     learnHeading: 'تعلّم',
-    learnMoreHeading: 'تعلّم المزيد',
+    learnMoreHeading: "مفاهيم ذات صلة",
     kindsHeading: "أنواع الاختبارات",
     relatedHeading: "مفاهيم ذات صلة",
     links: {
@@ -172,7 +172,7 @@
       '자동화 테스트가 무엇인지, 그리고 Selenium, WebdriverIO, Playwright 같은 브라우저 자동화 도구로 시작하는 방법을 알아보세요.',
     heading: '학습',
     learnHeading: '학습',
-    learnMoreHeading: '더 알아보기',
+    learnMoreHeading: "관련 개념",
     kindsHeading: "테스트의 종류",
     relatedHeading: "관련 개념",
     links: {
@@ -204,7 +204,7 @@
       "Découvrez ce qu'est le test automatisé et comment démarrer avec des outils d'automatisation de navigateur comme Selenium, WebdriverIO et Playwright.",
     heading: 'Apprendre',
     learnHeading: 'Apprendre',
-    learnMoreHeading: 'En savoir plus',
+    learnMoreHeading: "Concepts liés",
     kindsHeading: "Types de tests",
     relatedHeading: "Concepts liés",
     links: {

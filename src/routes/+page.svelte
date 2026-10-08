@@ -53,7 +53,7 @@
     <li><a href="/how-to-start-learning-automatic-testing/">How to start learning automatic testing?</a></li>
   </ul>
 
-  <h3>Learn More</h3>
+  <h3>Related concepts</h3>
   <ul class="repo-list">
     <li><a href="/how-does-artificial-intelligence-help-automatic-testing/">Artificial intelligence for automatic testing</a></li>
     <li><a href="/what-is-continuous-integration-testing/">Continuous integration for automatic testing</a></li>

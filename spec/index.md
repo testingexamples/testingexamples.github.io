@@ -259,7 +259,7 @@ The paths below are the English slugs. The canonical URL of each is
 old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 
 - `/topics/` — (formerly `/learn/`; `/learn/` on the site root still redirects here) the hub page for the articles below: a "Learn" list (five
-  articles), a "Learn More" list (six articles plus Gherkin), and a "Kinds of tests"
+  articles), a "Related concepts" list (formerly "Learn More"; six articles plus Gherkin), and a "Kinds of tests"
   list (the unit test and browser test pages), moved here from each
   locale's home page, which no longer carries them. The site root `/` still
   has its own copy of both lists.

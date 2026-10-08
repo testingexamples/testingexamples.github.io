@@ -30,7 +30,7 @@ The links below are the default locale, English (`en-001`).
 
 - [Home](https://testingexamples.github.io/): the fixture page itself — ids, names, classes, links, lists, and form inputs
 - [About](https://testingexamples.github.io/en-001/about/): what this project is, the full sibling demo repo family, and how the site is built
-- [Learn](https://testingexamples.github.io/en-001/topics/): hub page listing the Learn and Learn More articles below
+- [Learn](https://testingexamples.github.io/en-001/topics/): hub page listing the Learn and Related concepts articles below
 - [Examples](https://testingexamples.github.io/en-001/examples/): hub page linking to the two Examples pages below
 - [Repository](https://github.com/testingexamples/testingexamples.github.io): source for this site, including `spec/index.md`, the normative fixture contract
 
@@ -44,7 +44,7 @@ The links below are the default locale, English (`en-001`).
 - [How to start learning automatic testing?](https://testingexamples.github.io/en-001/how-to-start-learning-automatic-testing/): a step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples
 - [Artificial intelligence for automatic testing](https://testingexamples.github.io/en-001/how-does-artificial-intelligence-help-automatic-testing/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
 
-## Learn More
+## Related concepts
 
 - [Devops for automatic testing](https://testingexamples.github.io/en-001/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
 - [Metrics for automatic testing](https://testingexamples.github.io/en-001/what-are-flow-metrics-for-automatic-testing/): cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal
