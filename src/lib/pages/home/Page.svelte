@@ -53,7 +53,7 @@
       howToStartLearning: 'How to start learning automatic testing?',
       whatAreRelatedConcepts: 'What are related concepts for automatic testing?',
       howDoesAiHelp: 'How does artificial intelligence help automatic testing?',
-      whatIsContinuousIntegration: 'What is continuous integration automatic testing?',
+      whatIsContinuousIntegration: 'What is continuous integration for automatic testing?',
       whatIsDevOps: 'What is DevOps for automatic testing?',
       whatAreFlowMetrics: 'What metrics help automatic testing?',
       whatIsLeanSixSigma: 'How does Six Sigma lead manual testing into automatic testing?',

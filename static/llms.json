@@ -63,7 +63,7 @@
           "description": "What it is, and the trade-offs that come with its realism \u2014 slower, more brittle, and harder to diagnose than a unit test."
         },
         {
-          "title": "What is continuous integration automatic testing?",
+          "title": "What is continuous integration for automatic testing?",
           "url": "https://testingexamples.github.io/en-001/what-is-continuous-integration-testing/",
           "description": "Running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after."
         },

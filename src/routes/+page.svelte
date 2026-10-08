@@ -57,7 +57,7 @@
   <ul class="repo-list">
     <li><a href="/what-are-related-concepts-for-automatic-testing/">What are related concepts for automatic testing?</a></li>
     <li><a href="/how-does-artificial-intelligence-help-automatic-testing/">How does artificial intelligence help automatic testing?</a></li>
-    <li><a href="/what-is-continuous-integration-testing/">What is continuous integration automatic testing?</a></li>
+    <li><a href="/what-is-continuous-integration-testing/">What is continuous integration for automatic testing?</a></li>
     <li><a href="/what-is-devops-for-automatic-testing/">What is DevOps for automatic testing?</a></li>
     <li><a href="/what-are-flow-metrics-for-automatic-testing/">What metrics help automatic testing?</a></li>
     <li><a href="/what-is-lean-six-sigma-for-automatic-testing/">How does Six Sigma lead manual testing into automatic testing?</a></li>

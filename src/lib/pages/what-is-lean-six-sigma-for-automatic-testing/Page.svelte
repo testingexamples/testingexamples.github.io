@@ -44,7 +44,7 @@
       'How is manual testing itself a source of variation, in the Six Sigma sense, compared to an automatic test that runs the same way every time?',
       "How would I apply Six Sigma's idea of 'root-causing variation' to one specific flaky automatic test, instead of just re-running it until it passes?"
     ],
-    nextLabel: 'Next: what is continuous integration automatic testing? →'
+    nextLabel: 'Next: what is continuous integration for automatic testing? →'
   };
 
   // No British/American/Oxford spelling divergence occurs in this page's

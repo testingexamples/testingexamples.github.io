@@ -45,7 +45,7 @@
     browserLinkText: 'What is browser automatic testing?',
     browserDesc:
       ' — what it is, and the trade-offs that come with its realism: slower, more brittle, and harder to diagnose than a unit test.',
-    ciLinkText: 'What is continuous integration automatic testing?',
+    ciLinkText: 'What is continuous integration for automatic testing?',
     ciDesc:
       ' — running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after.',
     howToStartLinkText: 'How to start learning automatic testing?',

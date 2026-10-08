@@ -36,7 +36,7 @@
       'My browser test suite has gotten flaky and slow — what are the first things worth checking to make it more reliable?',
       'How do I decide which user journeys genuinely deserve a browser test versus being covered lower down the pyramid instead?'
     ],
-    nextLabel: 'Next: what is continuous integration automatic testing? →'
+    nextLabel: 'Next: what is continuous integration for automatic testing? →'
   };
 
   // No British/American/Oxford spelling divergence occurs in this page's
