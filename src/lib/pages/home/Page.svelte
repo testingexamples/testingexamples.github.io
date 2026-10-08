@@ -1,7 +1,7 @@
 <script lang="ts">
   import { SITE_NAME } from '#lib/site.js';
+  import { CallToAction } from 'lily-design-system-svelte-headless';
   import { localeHref } from '#lib/i18n/paths.js';
-  import { DEMO_REPOS, DEMO_REPOS_URL } from '#lib/demos.js';
   import type { Locale } from '#lib/i18n/locales.js';
 
   let { locale }: { locale: Locale } = $props();
@@ -11,7 +11,7 @@
     heading: string;
     intro: string;
     examplesHeading: string;
-    reposHeading: string;
+    hero: { learn: string; practice: string; code: string };
     links: {
       googleSearchExamples: string;
       googleMapsExamples: string;
@@ -29,7 +29,7 @@
     heading: `Welcome to ${SITE_NAME}`,
     intro: `If you're new to browser automation, you're in the right place. ${SITE_NAME} is a small, free, open source site built for anyone learning to make a browser do things automatically — click, type, search, wait, assert — whether you've never written a line of code or you already know the ropes and just want a quick reference or somewhere reliable to try something out.`,
     examplesHeading: 'Examples',
-    reposHeading: 'Examples as repositories',
+    hero: { learn: 'Learn', practice: 'Practice', code: 'Code' },
     links: {
       googleSearchExamples: 'Google Search Examples',
       googleMapsExamples: 'Google Maps Examples',
@@ -57,7 +57,7 @@
     heading: `Croeso i ${SITE_NAME}`,
     intro: `Os ydych chi'n newydd i awtomatiaeth porwr, rydych chi yn y lle iawn. Mae ${SITE_NAME} yn wefan fach, cod agored ac am ddim, a adeiladwyd ar gyfer unrhyw un sy'n dysgu sut i wneud i borwr wneud pethau'n awtomatig — clicio, teipio, chwilio, aros, gwirio — boed nad ydych erioed wedi ysgrifennu llinell o god, neu eich bod eisoes yn gyfarwydd â'r pethau sylfaenol ac eisiau deunydd cyfeirio cyflym neu rywle dibynadwy i roi cynnig ar rywbeth.`,
     examplesHeading: 'Enghreifftiau',
-    reposHeading: 'Enghreifftiau fel storfeydd',
+    hero: { learn: 'Dysgu', practice: 'Ymarfer', code: 'Cod' },
     links: {
       googleSearchExamples: 'Enghreifftiau Chwilio Google',
       googleMapsExamples: 'Enghreifftiau Mapiau Google',
@@ -75,7 +75,7 @@
     heading: `欢迎来到 ${SITE_NAME}`,
     intro: `如果你刚接触浏览器自动化，这里正是你该来的地方。${SITE_NAME} 是一个小巧、免费、开源的网站，专为任何想学习让浏览器自动完成操作——点击、输入、搜索、等待、断言——的人打造，无论你从未写过一行代码，还是已经很熟悉，只是想找一个快速参考或一个可靠的地方试试手。`,
     examplesHeading: '示例',
-    reposHeading: '以代码仓库形式提供的示例',
+    hero: { learn: '学习', practice: '练习', code: '代码' },
     links: {
       googleSearchExamples: '谷歌搜索示例',
       googleMapsExamples: '谷歌地图示例',
@@ -93,7 +93,7 @@
     heading: `مرحبًا بك في ${SITE_NAME}`,
     intro: `إن كنت جديدًا على أتمتة المتصفح، فأنت في المكان الصحيح. ${SITE_NAME} موقع صغير ومجاني ومفتوح المصدر، بُني لكل من يتعلم جعل المتصفح يؤدي المهام تلقائيًا — النقر والكتابة والبحث والانتظار والتحقق — سواء لم تكتب سطر كود من قبل أو كنت تعرف الأساسيات وتريد مرجعًا سريعًا أو مكانًا موثوقًا لتجربة شيء ما.`,
     examplesHeading: 'أمثلة',
-    reposHeading: 'أمثلة كمستودعات',
+    hero: { learn: 'تعلّم', practice: 'التدريب', code: 'الكود' },
     links: {
       googleSearchExamples: 'أمثلة Google Search',
       googleMapsExamples: 'أمثلة Google Maps',
@@ -111,7 +111,7 @@
     heading: `${SITE_NAME}에 오신 것을 환영합니다`,
     intro: `브라우저 자동화가 처음이라면 잘 찾아오셨습니다. ${SITE_NAME}은(는) 브라우저가 클릭, 입력, 검색, 대기, 단언 같은 일을 자동으로 하게 만드는 법을 배우는 모든 사람을 위해 만든 작은 무료 오픈 소스 사이트입니다. 코드를 한 줄도 써 본 적이 없든, 이미 요령을 알고 빠른 참고 자료나 믿을 만한 연습 장소가 필요하든 상관없습니다.`,
     examplesHeading: '예제',
-    reposHeading: '저장소로 된 예제',
+    hero: { learn: '학습', practice: '연습', code: '코드' },
     links: {
       googleSearchExamples: 'Google Search 예제',
       googleMapsExamples: 'Google Maps 예제',
@@ -129,7 +129,7 @@
     heading: `Bienvenue sur ${SITE_NAME}`,
     intro: `Si l'automatisation de navigateur est nouvelle pour vous, vous êtes au bon endroit. ${SITE_NAME} est un petit site gratuit et open source, conçu pour toute personne qui apprend à faire exécuter des actions automatiquement à un navigateur — cliquer, saisir, rechercher, attendre, vérifier — que vous n'ayez jamais écrit une ligne de code ou que vous connaissiez déjà les bases et cherchiez simplement une référence rapide ou un endroit fiable pour essayer quelque chose.`,
     examplesHeading: 'Exemples',
-    reposHeading: 'Exemples sous forme de dépôts',
+    hero: { learn: 'Apprendre', practice: "S'exercer", code: 'Code' },
     links: {
       googleSearchExamples: 'Exemples de Recherche Google',
       googleMapsExamples: 'Exemples de Google Maps',
@@ -164,6 +164,17 @@
 
 <div class="page-header">
   <h1>{m.heading}</h1>
+  <p class="hero-actions">
+    <CallToAction class="button button-primary" href={localeHref(locale, 'learn')}
+      >{m.hero.learn}</CallToAction
+    >
+    <CallToAction class="button button-secondary" href={localeHref(locale, 'practice')}
+      >{m.hero.practice}</CallToAction
+    >
+    <CallToAction class="button button-secondary" href={localeHref(locale, 'code')}
+      >{m.hero.code}</CallToAction
+    >
+  </p>
 </div>
 
 <section class="section prose">
@@ -177,16 +188,15 @@
     <li><a href={localeHref(locale, 'app')}>{m.links.demoApp}</a> — {m.links.demoAppSuffix}</li>
     <li><a href={localeHref(locale, 'practice')}>{m.links.practice}</a> — {m.links.practiceSuffix}</li>
   </ul>
-
-  <h3>{m.reposHeading}</h3>
-  <ul class="repo-list">
-    {#each DEMO_REPOS as repo (repo)}
-      <li><a href={DEMO_REPOS_URL + repo}>{repo}</a></li>
-    {/each}
-  </ul>
 </section>
 
 <style>
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-block: 1.5rem 0;
+  }
   /* Override the shared .repo-list rule (static/assets/style.css) for this
      page only: bullet points instead of the border-bottom line separator
      between items. Scoped to this component, so /about/, /app/, and

@@ -15,6 +15,7 @@ export type TopicId =
   | 'home'
   | 'about'
   | 'app'
+  | 'code'
   | 'examples'
   | 'examples-google-search'
   | 'examples-google-maps'
@@ -22,6 +23,7 @@ export type TopicId =
   | 'how-does-artificial-intelligence-help-automatic-testing'
   | 'how-to-start-learning-automatic-testing'
   | 'learn'
+  | 'learn-gherkin'
   | 'practice'
   | 'what-are-flow-metrics-for-automatic-testing'
   | 'what-are-related-concepts-for-automatic-testing'
@@ -54,6 +56,10 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
   app: {
     slug: slugFor('app', 'ap', '应用', 'التطبيق', '앱', 'application'),
     load: () => import('#lib/pages/app/Page.svelte')
+  },
+  code: {
+    slug: slugFor('code', 'cod', '代码', 'الكود', '코드', 'code'),
+    load: () => import('#lib/pages/code/Page.svelte')
   },
   examples: {
     slug: slugFor('examples', 'enghreifftiau', '示例', 'أمثلة', '예제', 'exemples'),
@@ -102,6 +108,17 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
   learn: {
     slug: slugFor('learn', 'dysgu', '学习', 'تعلم', '학습', 'apprendre'),
     load: () => import('#lib/pages/learn/Page.svelte')
+  },
+  'learn-gherkin': {
+    slug: slugFor(
+      'learn/gherkin',
+      'dysgu/gherkin',
+      '学习/gherkin',
+      'تعلم/gherkin',
+      '학습/gherkin',
+      'apprendre/gherkin'
+    ),
+    load: () => import('#lib/pages/learn-gherkin/Page.svelte')
   },
   'what-are-flow-metrics-for-automatic-testing': {
     slug: slugFor(

@@ -116,6 +116,11 @@ for example `/en-001/practice/`), not on its home page. The Practice
 page keeps the short "practise on this page" explanation (translated) above
 the fixtures, and each locale's home page links to it from its Examples list.
 Practice slugs: `practice`, `ymarfer`, `练习`, `التدريب`, `연습`, `s-exercer`.
+
+Code slugs: `code`, `cod`, `代码`, `الكود`, `코드`, `code`.
+
+Gherkin slugs (nested under Learn): `learn/gherkin`, `dysgu/gherkin`,
+`学习/gherkin`, `تعلم/gherkin`, `학습/gherkin`, `apprendre/gherkin`.
 The fixture section is never translated anywhere: it is a contract/standard,
 not content, the same category as a code sample or a product name. Both the
 root page and every locale's Practice page import it

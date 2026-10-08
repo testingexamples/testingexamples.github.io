@@ -16,7 +16,8 @@ const ARTICLES = [
   'what-is-continuous-integration-testing',
   'what-is-devops-for-automatic-testing',
   'what-are-flow-metrics-for-automatic-testing',
-  'what-is-lean-six-sigma-for-automatic-testing'
+  'what-is-lean-six-sigma-for-automatic-testing',
+  'learn-gherkin'
 ] as const;
 
 for (const locale of LOCALES) {
@@ -35,5 +36,18 @@ for (const locale of LOCALES) {
       const href = `/${locale}/${slugForTopic(locale, topic)}/`;
       await expect(page.locator(`main a[href="${href}"]`)).toHaveCount(0);
     }
+  });
+}
+
+for (const locale of LOCALES) {
+  test(`${locale}: the Gherkin page explains the keywords and links to Given-When-Then`, async ({ page }) => {
+    await page.goto(`/${locale}/${slugForTopic(locale, 'learn-gherkin')}/`);
+    await expect(page.locator('main h1')).toHaveCount(1);
+    for (const keyword of ['Feature', 'Scenario', 'Given', 'When', 'Then']) {
+      await expect(page.locator('main li strong', { hasText: new RegExp(`^${keyword}$`) })).toHaveCount(1);
+    }
+    await expect(page.locator('main pre')).toContainText('Given I am on https://google.com');
+    const gwt = `/${locale}/${slugForTopic(locale, 'given-when-then')}/`;
+    await expect(page.locator(`main a[href="${gwt}"]`)).toHaveCount(1);
   });
 }

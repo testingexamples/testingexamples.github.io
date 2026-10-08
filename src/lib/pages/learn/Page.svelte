@@ -22,6 +22,7 @@
       whatIsDevOps: string;
       whatAreFlowMetrics: string;
       whatIsLeanSixSigma: string;
+      whatIsGherkin: string;
     };
   };
 
@@ -43,7 +44,8 @@
       whatIsContinuousIntegration: 'What is continuous integration for automatic testing?',
       whatIsDevOps: 'What is devops for automatic testing?',
       whatAreFlowMetrics: 'What metrics help automatic testing?',
-      whatIsLeanSixSigma: 'How does Six Sigma lead manual testing into automatic testing?'
+      whatIsLeanSixSigma: 'How does Six Sigma lead manual testing into automatic testing?',
+      whatIsGherkin: "What is Gherkin?"
     }
   };
 
@@ -68,7 +70,8 @@
       whatIsContinuousIntegration: 'Beth yw profi integreiddio parhaus awtomatig?',
       whatIsDevOps: 'Beth yw DevOps ar gyfer profi awtomatig?',
       whatAreFlowMetrics: "Pa fetrigau sy'n helpu profi awtomatig?",
-      whatIsLeanSixSigma: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?'
+      whatIsLeanSixSigma: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
+      whatIsGherkin: "Beth yw Gherkin?"
     }
   };
 
@@ -90,7 +93,8 @@
       whatIsContinuousIntegration: '什么是持续集成自动化测试？',
       whatIsDevOps: '什么是自动化测试的 DevOps？',
       whatAreFlowMetrics: '哪些指标有助于自动化测试？',
-      whatIsLeanSixSigma: '六西格玛如何引导人工测试进入自动化测试？'
+      whatIsLeanSixSigma: '六西格玛如何引导人工测试进入自动化测试？',
+      whatIsGherkin: "什么是 Gherkin？"
     }
   };
 
@@ -112,7 +116,8 @@
       whatIsContinuousIntegration: 'ما هو اختبار التكامل المستمر؟',
       whatIsDevOps: 'ما هو DevOps للاختبار الآلي؟',
       whatAreFlowMetrics: 'ما المقاييس التي تفيد الاختبار الآلي؟',
-      whatIsLeanSixSigma: 'كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟'
+      whatIsLeanSixSigma: 'كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟',
+      whatIsGherkin: "ما هو Gherkin؟"
     }
   };
 
@@ -134,7 +139,8 @@
       whatIsContinuousIntegration: '지속적 통합 테스트란 무엇인가?',
       whatIsDevOps: '자동화 테스트를 위한 DevOps란 무엇인가?',
       whatAreFlowMetrics: '자동화 테스트에 도움이 되는 지표는 무엇인가?',
-      whatIsLeanSixSigma: 'Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가?'
+      whatIsLeanSixSigma: 'Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가?',
+      whatIsGherkin: "Gherkin이란 무엇인가?"
     }
   };
 
@@ -156,7 +162,8 @@
       whatIsContinuousIntegration: "Qu'est-ce que le test automatisé d'intégration continue ?",
       whatIsDevOps: "Qu'est-ce que DevOps pour les tests automatisés ?",
       whatAreFlowMetrics: "Quelles métriques aident les tests automatisés ?",
-      whatIsLeanSixSigma: "Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?"
+      whatIsLeanSixSigma: "Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?",
+      whatIsGherkin: "Qu'est-ce que Gherkin ?"
     }
   };
 
@@ -203,6 +210,7 @@
     <li><a href={localeHref(locale, 'what-is-devops-for-automatic-testing')}>{m.links.whatIsDevOps}</a></li>
     <li><a href={localeHref(locale, 'what-are-flow-metrics-for-automatic-testing')}>{m.links.whatAreFlowMetrics}</a></li>
     <li><a href={localeHref(locale, 'what-is-lean-six-sigma-for-automatic-testing')}>{m.links.whatIsLeanSixSigma}</a></li>
+    <li><a href={localeHref(locale, 'learn-gherkin')}>{m.links.whatIsGherkin}</a></li>
   </ul>
 </section>
 

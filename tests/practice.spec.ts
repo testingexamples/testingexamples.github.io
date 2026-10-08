@@ -21,7 +21,8 @@ for (const locale of LOCALES) {
     test('the home page no longer has the fixtures, and links to practice', async ({ page }) => {
       await page.goto(`/${locale}/`);
       await expect(page.locator('#id-example-1')).toHaveCount(0);
-      await expect(page.locator(`a[href="/${locale}/${slugForTopic(locale, 'practice')}/"]`)).toHaveCount(1);
+      // Two links: the "Practice" hero button and the Examples list entry.
+      await expect(page.locator(`a[href="/${locale}/${slugForTopic(locale, 'practice')}/"]`)).toHaveCount(2);
     });
   });
 }

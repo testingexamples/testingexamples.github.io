@@ -102,6 +102,11 @@
           "title": "How does Six Sigma lead manual testing into automatic testing?",
           "url": "https://testingexamples.github.io/en-001/what-is-lean-six-sigma-for-automatic-testing/",
           "description": "Lean and Six Sigma, and why a flaky test is literally \"variation\" worth root-causing rather than re-running until it goes green."
+        },
+        {
+          "title": "What is Gherkin?",
+          "url": "https://testingexamples.github.io/en-001/learn/gherkin/",
+          "description": "The plain-language Given-When-Then syntax, its keywords, and a short example."
         }
       ]
     },
