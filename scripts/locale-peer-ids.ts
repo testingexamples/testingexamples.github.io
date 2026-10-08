@@ -5,14 +5,18 @@
 // locale's version of the same topic regardless of its slug, so a page can
 // be resolved in any locale.
 //
-// The ids are RANDOM, not derived from anything. A topic gets its random id
-// the first time it appears and keeps it forever, so the id is stored in
-// `src/lib/i18n/peer-ids.json` (topic id -> id), which is committed. A topic
-// that is removed loses its entry; a topic that is renamed in this registry
-// by hand keeps its id.
+// The ids are RANDOM, not derived from anything, and there is no registry:
+// the `.locale-peer-id` files under `static/` are the only record. A topic
+// that already has files keeps the id it has (read from any of its locales);
+// only a topic with no files yet gets a new random id. Files that no longer
+// belong to a current locale and slug (a deleted topic) are removed.
+//
+// If you change a topic's slug in every locale at once, first `git mv` its
+// `.locale-peer-id` files to the new directories, or the topic will get a
+// new id.
 //
 // The files live under `static/` so they are copied into the build as-is.
-// Run after adding, renaming, or removing a topic or a locale:
+// Run after adding or removing a topic or a locale:
 //
 //   pnpm locale-peer-ids
 //
@@ -25,38 +29,49 @@ import { LOCALES } from '../src/lib/i18n/locales.ts';
 import { TOPIC_IDS, slugForTopic } from '../src/lib/i18n/topics.ts';
 
 const STATIC = new URL('../static/', import.meta.url).pathname;
-const REGISTRY = new URL('../src/lib/i18n/peer-ids.json', import.meta.url).pathname;
+const FILE = '.locale-peer-id';
+const ID = /^[0-9a-f]{32}\n$/;
 
-const HEX32 = /^[0-9a-f]{32}$/;
+const dirFor = (locale: string, topicId: (typeof TOPIC_IDS)[number]) =>
+  join(STATIC, locale, slugForTopic(locale as (typeof LOCALES)[number], topicId));
 
-// Load the registry (it may not exist yet).
-let known: Record<string, string> = {};
-try {
-  known = JSON.parse(readFileSync(REGISTRY, 'utf8'));
-} catch {
-  // First run: every topic gets a new random id.
+// Read the id a topic already has, from the first locale that has a valid file.
+function existingId(topicId: (typeof TOPIC_IDS)[number]): string | undefined {
+  for (const locale of LOCALES) {
+    try {
+      const text = readFileSync(join(dirFor(locale, topicId), FILE), 'utf8');
+      if (ID.test(text)) return text.trim();
+    } catch {
+      // No file here.
+    }
+  }
+  return undefined;
 }
 
-// Keep only current topics; give any new topic a fresh random id.
-const registry: Record<string, string> = {};
+// Decide every topic's id before touching any file.
+const ids = new Map<string, string>();
 let created = 0;
 for (const topicId of TOPIC_IDS) {
-  const existing = known[topicId];
-  if (existing && HEX32.test(existing)) {
-    registry[topicId] = existing;
-  } else {
-    registry[topicId] = randomBytes(16).toString('hex');
-    created++;
-  }
+  const id = existingId(topicId) ?? randomBytes(16).toString('hex');
+  if (!existingId(topicId)) created++;
+  ids.set(topicId, id);
 }
-writeFileSync(REGISTRY, JSON.stringify(registry, null, 2) + '\n');
 
-// Remove stale files first, so a deleted or renamed topic does not leave one behind.
+// The files that should exist after this run.
+const wanted = new Set<string>();
+for (const locale of LOCALES) {
+  for (const topicId of TOPIC_IDS) wanted.add(join(dirFor(locale, topicId), FILE));
+}
+
+// Remove files that no longer belong to a current topic or locale.
 function removeStale(dir: string): void {
   for (const entry of readdirSync(dir)) {
     const path = join(dir, entry);
-    if (entry === '.locale-peer-id') rmSync(path);
-    else if (statSync(path).isDirectory()) removeStale(path);
+    if (entry === FILE) {
+      if (!wanted.has(path)) rmSync(path);
+    } else if (statSync(path).isDirectory()) {
+      removeStale(path);
+    }
   }
 }
 for (const locale of LOCALES) {
@@ -70,10 +85,10 @@ for (const locale of LOCALES) {
 let count = 0;
 for (const locale of LOCALES) {
   for (const topicId of TOPIC_IDS) {
-    const dir = join(STATIC, locale, slugForTopic(locale, topicId));
+    const dir = dirFor(locale, topicId);
     mkdirSync(dir, { recursive: true });
-    writeFileSync(join(dir, '.locale-peer-id'), `${registry[topicId]}\n`);
+    writeFileSync(join(dir, FILE), `${ids.get(topicId)}\n`);
     count++;
   }
 }
-console.log(`wrote ${count} .locale-peer-id files (${created} new random ids)`);
+console.log(`wrote ${count} ${FILE} files (${created} new random ids)`);
