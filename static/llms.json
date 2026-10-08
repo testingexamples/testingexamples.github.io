@@ -89,7 +89,7 @@
       "description": "Bonus topics extracted from the related concepts page.",
       "links": [
         {
-          "title": "What is DevOps for automatic testing?",
+          "title": "What is devops for automatic testing?",
           "url": "https://testingexamples.github.io/en-001/what-is-devops-for-automatic-testing/",
           "description": "What DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it."
         },

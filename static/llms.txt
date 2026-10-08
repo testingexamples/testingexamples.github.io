@@ -47,7 +47,7 @@ The links below are the default locale, English (`en-001`).
 
 ## Learn More
 
-- [What is DevOps for automatic testing?](https://testingexamples.github.io/en-001/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
+- [What is devops for automatic testing?](https://testingexamples.github.io/en-001/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
 - [What metrics help automatic testing?](https://testingexamples.github.io/en-001/what-are-flow-metrics-for-automatic-testing/): cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal
 - [How does Six Sigma lead manual testing into automatic testing?](https://testingexamples.github.io/en-001/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
 

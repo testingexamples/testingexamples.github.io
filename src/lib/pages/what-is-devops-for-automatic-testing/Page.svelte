@@ -26,10 +26,10 @@
   };
 
   const EN_001: Messages = {
-    title: 'What is DevOps for automatic testing?',
+    title: 'What is devops for automatic testing?',
     metaDescription:
       'What DevOps is, and why testing in production — canary releases, feature flags, watching real error rates after a deploy — legitimately complements pre-release testing rather than replacing it.',
-    heading: 'What is DevOps for automatic testing?',
+    heading: 'What is devops for automatic testing?',
     introP:
       'is the broader practice CI/CD sits inside: breaking down the wall between the people who write software and the people who run it in production, so both groups share responsibility for whether it actually works once real users touch it.',
     belongsP:
