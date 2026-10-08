@@ -58,10 +58,10 @@
   };
 
   const EN_001: Messages = {
-    title: 'How does artificial intelligence help automatic testing?',
+    title: 'Artificial intelligence for automatic testing',
     metaDescription:
       'A grounded, practical look at where AI shows up in automatic testing today: writing and maintaining tests, CI/CD, and agile discovery — plus the honest caveat that applies to all three.',
-    heading: 'How does artificial intelligence help automatic testing?',
+    heading: 'Artificial intelligence for automatic testing',
     intro:
       'AI tools have become a real part of how automatic testing, CI/CD, and agile discovery work today. This page covers three ways AI shows up in that work, and one honest caveat that applies to all three.',
 

@@ -42,7 +42,7 @@ The links below are the default locale, English (`en-001`).
 - [What is browser testing?](https://testingexamples.github.io/en-001/what-is-browser-automation-testing/): what it is, and the trade-offs that come with its realism — slower, more brittle, and harder to diagnose than a unit test
 - [Continuous integration for automatic testing](https://testingexamples.github.io/en-001/what-is-continuous-integration-testing/): running your automatic test suite automatically on every change, so broken code is caught before it merges rather than after
 - [How to start learning automatic testing?](https://testingexamples.github.io/en-001/how-to-start-learning-automatic-testing/): a step-by-step path — pick a language, pick a tool, run a first script against this site, then practice on real examples
-- [How does artificial intelligence help automatic testing?](https://testingexamples.github.io/en-001/how-does-artificial-intelligence-help-automatic-testing/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
+- [Artificial intelligence for automatic testing](https://testingexamples.github.io/en-001/how-does-artificial-intelligence-help-automatic-testing/): how and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three
 
 ## Learn More
 

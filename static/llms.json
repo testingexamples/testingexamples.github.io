@@ -73,7 +73,7 @@
           "description": "A step-by-step path \u2014 pick a language, pick a tool, run a first script against this site, then practice on real examples."
         },
         {
-          "title": "How does artificial intelligence help automatic testing?",
+          "title": "Artificial intelligence for automatic testing",
           "url": "https://testingexamples.github.io/en-001/how-does-artificial-intelligence-help-automatic-testing/",
           "description": "How and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three."
         },

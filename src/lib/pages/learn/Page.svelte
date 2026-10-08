@@ -50,7 +50,7 @@
       whatIsTheTestingPyramid: 'What is the automatic testing pyramid?',
       whatIsBrowserAutomation: 'What is browser testing?',
       howToStartLearning: 'How to start learning automatic testing?',
-      howDoesAiHelp: 'How does artificial intelligence help automatic testing?',
+      howDoesAiHelp: 'Artificial intelligence for automatic testing',
       whatIsContinuousIntegration: 'Continuous integration for automatic testing',
       whatIsDevOps: 'Devops for automatic testing',
       whatAreFlowMetrics: 'Metrics for automatic testing',

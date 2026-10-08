@@ -55,7 +55,7 @@
 
   <h3>Learn More</h3>
   <ul class="repo-list">
-    <li><a href="/how-does-artificial-intelligence-help-automatic-testing/">How does artificial intelligence help automatic testing?</a></li>
+    <li><a href="/how-does-artificial-intelligence-help-automatic-testing/">Artificial intelligence for automatic testing</a></li>
     <li><a href="/what-is-continuous-integration-testing/">Continuous integration for automatic testing</a></li>
     <li><a href="/what-is-devops-for-automatic-testing/">Devops for automatic testing</a></li>
     <li><a href="/what-are-flow-metrics-for-automatic-testing/">Metrics for automatic testing</a></li>
