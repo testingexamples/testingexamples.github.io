@@ -339,7 +339,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   code (JavaScript, Python, Rust, C#, Java, Elixir, Go, and Kotlin: sixteen examples, all under one
   "Examples of source code" section) was moved to each locale's home page.
   Linked from the home page's Examples list.
-- `/topics/gherkin/` — "What is Gherkin?": the Given-When-Then syntax, its
+- `/topics/gherkin/` — "Gherkin syntax for automatic testing": the Given-When-Then syntax, its
   keywords, a short example, and a link to `/given-when-then/`. Linked from
   the end of `/topics/`'s Learn More list. Its slug is `<topics slug>/gherkin`
   in every locale (for example `/cy-gb/pynciau/gherkin/`).

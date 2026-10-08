@@ -49,7 +49,7 @@ The links below are the default locale, English (`en-001`).
 - [Devops for automatic testing](https://testingexamples.github.io/en-001/what-is-devops-for-automatic-testing/): what DevOps is, and why testing in production legitimately complements pre-release testing rather than replacing it
 - [Metrics for automatic testing](https://testingexamples.github.io/en-001/what-are-flow-metrics-for-automatic-testing/): cycle time, lead time, throughput, and work in progress, and why a growing pile of flaky tests is itself a flow-metric signal
 - [Lean Six Sigma for automatic testing](https://testingexamples.github.io/en-001/what-is-lean-six-sigma-for-automatic-testing/): Lean and Six Sigma, and why a flaky test is literally "variation" worth root-causing rather than re-running until it goes green
-- [What is Gherkin?](https://testingexamples.github.io/en-001/topics/gherkin/): the plain-language Given-When-Then syntax, its keywords, and a short example
+- [Gherkin syntax for automatic testing](https://testingexamples.github.io/en-001/topics/gherkin/): the plain-language Given-When-Then syntax, its keywords, and a short example
 - [Shift left for automatic testing](https://testingexamples.github.io/en-001/topics/shift-left-for-automatic-testing/): testing earlier in the development lifecycle, and why it pays off
 - [What is a unit test?](https://testingexamples.github.io/en-001/topics/unit-test/): what makes a unit test good, the Arrange-Act-Assert shape, and a short example
 - [What is a browser-based test?](https://testingexamples.github.io/en-001/topics/browser-test/): what a browser-based test is, the tools you will meet (Selenium, Playwright, and others), and what to expect

@@ -21,10 +21,10 @@
   };
 
   const EN_001: Messages = {
-    title: "What is Gherkin?",
+    title: "Gherkin syntax for automatic testing",
     metaDescription:
       "Gherkin is the plain-language Given-When-Then syntax used to describe how software should behave, and to drive automatic tests.",
-    heading: "What is Gherkin?",
+    heading: "Gherkin syntax for automatic testing",
     intro:
       "Gherkin is a small, plain-language syntax for writing down how software should behave, as examples anyone on a team can read. Tools such as Cucumber can then run those examples as automatic tests. It is the format behind behaviour-driven development (BDD).",
     keywordsHeading: "The keywords",

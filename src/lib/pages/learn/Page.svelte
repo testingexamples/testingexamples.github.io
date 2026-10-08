@@ -55,7 +55,7 @@
       whatIsDevOps: 'Devops for automatic testing',
       whatAreFlowMetrics: 'Metrics for automatic testing',
       whatIsLeanSixSigma: 'Lean Six Sigma for automatic testing',
-      whatIsGherkin: "What is Gherkin?",
+      whatIsGherkin: "Gherkin syntax for automatic testing",
       shiftLeft: "Shift left for automatic testing",
       whatIsUnitTest: "What is a unit test?",
       whatIsBrowserTest: "What is a browser-based test?",
