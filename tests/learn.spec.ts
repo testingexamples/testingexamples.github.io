@@ -19,6 +19,9 @@ const ARTICLES = [
   'learn-gherkin',
   'learn-unit-test',
   'learn-browser-test',
+  'learn-regression-test',
+  'learn-integration-test',
+  'learn-benchmark-test',
   'learn-shift-left',
   'related-code-editors',
   'related-version-control',
@@ -113,4 +116,18 @@ for (const locale of LOCALES) {
       await expect(page.locator(`main a[href="/${locale}/${slugForTopic(locale, topic)}/"]`)).toHaveCount(1);
     }
   });
+}
+
+const KINDS = ['learn-regression-test', 'learn-integration-test', 'learn-benchmark-test'] as const;
+
+for (const locale of LOCALES) {
+  for (const topic of KINDS) {
+    test(`${locale}: the ${topic} page has four traits, an example, and one related link`, async ({ page }) => {
+      await page.goto(`/${locale}/${slugForTopic(locale, topic)}/`);
+      await expect(page.locator('main h1')).toHaveCount(1);
+      await expect(page.locator('main li strong')).toHaveCount(4);
+      await expect(page.locator('main pre code')).not.toBeEmpty();
+      await expect(page.locator('main p a')).toHaveCount(1);
+    });
+  }
 }

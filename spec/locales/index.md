@@ -132,7 +132,9 @@ pattern with the leaf names `code-editors`, `version-control`,
 `agile-discovery`, `unix-shell`, and `cloud-hosting` (for example
 `pynciau/unix-shell`). The shift left page uses the leaf
 `shift-left-for-automatic-testing` (for example
-`sujets/shift-left-for-automatic-testing`).
+`sujets/shift-left-for-automatic-testing`). The regression, integration, and
+benchmark test pages use the leaves `regression-test`, `integration-test`, and
+`benchmark-test`.
 The fixture section is never translated anywhere: it is a contract/standard,
 not content, the same category as a code sample or a product name. Both the
 root page and every locale's Practice page import it

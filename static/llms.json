@@ -108,6 +108,21 @@
           "description": "What a browser-based test is, the tools you will meet (Selenium, Playwright, and others), and what to expect."
         },
         {
+          "title": "Regression test",
+          "url": "https://testingexamples.github.io/en-001/topics/regression-test/",
+          "description": "A kind of test."
+        },
+        {
+          "title": "Integration test",
+          "url": "https://testingexamples.github.io/en-001/topics/integration-test/",
+          "description": "A kind of test."
+        },
+        {
+          "title": "Benchmark test",
+          "url": "https://testingexamples.github.io/en-001/topics/benchmark-test/",
+          "description": "A kind of test."
+        },
+        {
           "title": "Code editors such as Visual Studio Code",
           "url": "https://testingexamples.github.io/en-001/topics/code-editors/",
           "description": "A related concept for automatic testing."

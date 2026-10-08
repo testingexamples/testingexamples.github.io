@@ -363,6 +363,13 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   to do it, and why to shift right too, linking to
   `/what-is-devops-for-automatic-testing/` and `/what-is-the-testing-pyramid/`.
   Linked after Gherkin at the end of `/topics/`'s Learn More list.
+- `/topics/regression-test/`, `/topics/integration-test/`,
+  `/topics/benchmark-test/` — the "Regression test", "Integration test", and
+  "Benchmark test" pages: what each kind of test is, four traits of a good
+  one, a short JavaScript example, and one related link (continuous
+  integration, the testing pyramid, and continuous integration
+  respectively). Linked from `/topics/`'s "Kinds of tests" list after the
+  browser test page.
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at

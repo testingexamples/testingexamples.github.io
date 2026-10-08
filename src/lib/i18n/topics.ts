@@ -26,6 +26,9 @@ export type TopicId =
   | 'learn-gherkin'
   | 'learn-unit-test'
   | 'learn-browser-test'
+  | 'learn-regression-test'
+  | 'learn-integration-test'
+  | 'learn-benchmark-test'
   | 'learn-shift-left'
   | 'related-code-editors'
   | 'related-version-control'
@@ -203,6 +206,39 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'sujets/cloud-hosting'
     ),
     load: () => import('#lib/pages/related-cloud-hosting/Page.svelte')
+  },
+  'learn-regression-test': {
+    slug: slugFor(
+      'topics/regression-test',
+      'pynciau/regression-test',
+      '主题/regression-test',
+      'المواضيع/regression-test',
+      '주제/regression-test',
+      'sujets/regression-test'
+    ),
+    load: () => import('#lib/pages/learn-regression-test/Page.svelte')
+  },
+  'learn-integration-test': {
+    slug: slugFor(
+      'topics/integration-test',
+      'pynciau/integration-test',
+      '主题/integration-test',
+      'المواضيع/integration-test',
+      '주제/integration-test',
+      'sujets/integration-test'
+    ),
+    load: () => import('#lib/pages/learn-integration-test/Page.svelte')
+  },
+  'learn-benchmark-test': {
+    slug: slugFor(
+      'topics/benchmark-test',
+      'pynciau/benchmark-test',
+      '主题/benchmark-test',
+      'المواضيع/benchmark-test',
+      '주제/benchmark-test',
+      'sujets/benchmark-test'
+    ),
+    load: () => import('#lib/pages/learn-benchmark-test/Page.svelte')
   },
   'learn-shift-left': {
     slug: slugFor(

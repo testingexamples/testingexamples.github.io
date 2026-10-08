@@ -27,6 +27,9 @@
       shiftLeft: string;
       whatIsUnitTest: string;
       whatIsBrowserTest: string;
+      regressionTest: string;
+      integrationTest: string;
+      benchmarkTest: string;
       whatIsCodeEditors: string;
       whatIsVersionControl: string;
       whatIsAgileDiscovery: string;
@@ -59,6 +62,9 @@
       shiftLeft: "Shift left for automatic testing",
       whatIsUnitTest: "Unit test",
       whatIsBrowserTest: "Browser test",
+      regressionTest: "Regression test",
+      integrationTest: "Integration test",
+      benchmarkTest: "Benchmark test",
       whatIsCodeEditors: "Code editors such as Visual Studio Code",
       whatIsVersionControl: "Version control systems such as Git and GitHub",
       whatIsAgileDiscovery: "Agile and working with users — discovery",
@@ -94,6 +100,9 @@
       shiftLeft: "Symud i’r chwith ar gyfer profi awtomatig",
       whatIsUnitTest: "Beth yw prawf uned?",
       whatIsBrowserTest: "Beth yw prawf sy’n seiliedig ar borwr?",
+      regressionTest: "Prawf atchweliad",
+      integrationTest: "Prawf integreiddio",
+      benchmarkTest: "Prawf meincnod",
       whatIsCodeEditors: "Golygyddion cod — e.e. Visual Studio Code",
       whatIsVersionControl: "Rheoli fersiynau — git a GitHub",
       whatIsAgileDiscovery: "Ystwyth a gweithio gyda defnyddwyr — darganfod",
@@ -126,6 +135,9 @@
       shiftLeft: "自动化测试的左移",
       whatIsUnitTest: "什么是单元测试？",
       whatIsBrowserTest: "什么是基于浏览器的测试？",
+      regressionTest: "回归测试",
+      integrationTest: "集成测试",
+      benchmarkTest: "基准测试",
       whatIsCodeEditors: "代码编辑器——例如 Visual Studio Code",
       whatIsVersionControl: "版本控制——git 和 GitHub",
       whatIsAgileDiscovery: "敏捷与用户协作——探索",
@@ -158,6 +170,9 @@
       shiftLeft: "الانتقال لليسار في الاختبار الآلي",
       whatIsUnitTest: "ما هو اختبار الوحدة؟",
       whatIsBrowserTest: "ما هو الاختبار القائم على المتصفح؟",
+      regressionTest: "اختبار الانحدار",
+      integrationTest: "اختبار التكامل",
+      benchmarkTest: "اختبار الأداء المرجعي",
       whatIsCodeEditors: "محررات الكود — مثل Visual Studio Code",
       whatIsVersionControl: "التحكم في الإصدارات — git وGitHub",
       whatIsAgileDiscovery: "الرشاقة والعمل مع المستخدمين — الاستكشاف",
@@ -190,6 +205,9 @@
       shiftLeft: "자동화 테스트의 시프트 레프트",
       whatIsUnitTest: "단위 테스트란 무엇인가?",
       whatIsBrowserTest: "브라우저 기반 테스트란 무엇인가?",
+      regressionTest: "회귀 테스트",
+      integrationTest: "통합 테스트",
+      benchmarkTest: "벤치마크 테스트",
       whatIsCodeEditors: "코드 에디터 — 예: Visual Studio Code",
       whatIsVersionControl: "버전 관리 — git과 GitHub",
       whatIsAgileDiscovery: "애자일과 사용자와 함께 일하기 — 디스커버리",
@@ -222,6 +240,9 @@
       shiftLeft: "Le shift left pour les tests automatisés",
       whatIsUnitTest: "Qu'est-ce qu'un test unitaire ?",
       whatIsBrowserTest: "Qu'est-ce qu'un test basé sur le navigateur ?",
+      regressionTest: "Test de régression",
+      integrationTest: "Test d'intégration",
+      benchmarkTest: "Test de benchmark",
       whatIsCodeEditors: "Éditeurs de code — par exemple Visual Studio Code",
       whatIsVersionControl: "Gestion de versions — git et GitHub",
       whatIsAgileDiscovery: "Agilité et travail avec les utilisateurs — la découverte",
@@ -280,6 +301,9 @@
   <ul class="repo-list">
     <li><a href={localeHref(locale, 'learn-unit-test')}>{m.links.whatIsUnitTest}</a></li>
     <li><a href={localeHref(locale, 'learn-browser-test')}>{m.links.whatIsBrowserTest}</a></li>
+    <li><a href={localeHref(locale, 'learn-regression-test')}>{m.links.regressionTest}</a></li>
+    <li><a href={localeHref(locale, 'learn-integration-test')}>{m.links.integrationTest}</a></li>
+    <li><a href={localeHref(locale, 'learn-benchmark-test')}>{m.links.benchmarkTest}</a></li>
   </ul>
 
   <h2>{m.relatedHeading}</h2>
