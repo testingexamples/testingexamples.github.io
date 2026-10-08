@@ -4,8 +4,7 @@
     Separator,
     InformationCallout,
     CallToAction,
-    CodeBlock,
-    Details
+    CodeBlock
   } from 'lily-design-system-svelte-headless';
   import { localeHref } from '#lib/i18n/paths.js';
   import type { Locale } from '#lib/i18n/locales.js';
@@ -31,7 +30,6 @@
     readNotRunPre: string;
     googleSearchExamplesLinkText: string;
     readNotRunPost: string;
-    sourceCodeHeading: string;
     backHome: string;
     seeMoreExamples: string;
   };
@@ -58,7 +56,6 @@
     googleSearchExamplesLinkText: 'Google Search examples',
     readNotRunPost:
       ' — and the same caution applies: Google’s Terms of Service restrict automated querying of Google Search, so treat the code below as reading material for the pattern, not as scripts to run repeatedly against the live site. If you want to try this same Given/When/Then shape hands-on, point the same steps at this site’s own practice page instead.',
-    sourceCodeHeading: 'Examples of source code',
     backHome: 'Back to home',
     seeMoreExamples: 'See more examples'
   };
@@ -85,7 +82,6 @@
     googleSearchExamplesLinkText: 'enghreifftiau Chwilio Google',
     readNotRunPost:
       " y wefan hon — ac mae'r un rhybudd yn berthnasol: mae Telerau Gwasanaeth Google yn cyfyngu ar ymholi awtomatig ar Google Search, felly trinwch y cod isod fel deunydd darllen ar gyfer y patrwm, nid fel sgriptiau i'w rhedeg dro ar ôl tro yn erbyn y wefan fyw. Os hoffech roi cynnig ymarferol ar yr un siâp Given/When/Then, anelwch yr un camau at dudalen ymarfer y wefan hon ei hun yn lle hynny.",
-    sourceCodeHeading: 'Enghreifftiau o god ffynhonnell',
     backHome: "Yn ôl i'r hafan",
     seeMoreExamples: 'Gweld mwy o enghreifftiau'
   };
@@ -112,7 +108,6 @@
     googleSearchExamplesLinkText: '谷歌搜索示例',
     readNotRunPost:
       '相同——同样的注意事项也适用：谷歌的服务条款限制对谷歌搜索进行自动化查询，因此请把下面的代码当作了解模式的阅读材料，而不是反复对真实网站运行的脚本。如果你想亲自动手体验同样的 Given/When/Then 结构，可以把同样的步骤指向本站自己的练习页面。',
-    sourceCodeHeading: '源代码示例',
     backHome: '返回首页',
     seeMoreExamples: '查看更多示例'
   };
@@ -139,7 +134,6 @@
     googleSearchExamplesLinkText: 'أمثلة Google Search',
     readNotRunPost:
       ' في هذا الموقع — وينطبق التحذير نفسه: تقيّد شروط خدمة Google الاستعلام الآلي عن Google Search، لذا تعامل مع الكود أدناه كمادة للقراءة لفهم النمط، لا كسكربتات تُشغَّل مرارًا على الموقع الحي. وإن أردت تجربة صيغة Given/When/Then نفسها عمليًا، فوجّه الخطوات نفسها إلى صفحة التدريب في هذا الموقع.',
-    sourceCodeHeading: 'أمثلة على الشيفرة المصدرية',
     backHome: 'العودة إلى الرئيسية',
     seeMoreExamples: 'عرض المزيد من الأمثلة'
   };
@@ -166,7 +160,6 @@
     googleSearchExamplesLinkText: 'Google Search 예제',
     readNotRunPost:
       '와 마찬가지로 google.com을 대상으로 하며, 같은 주의가 적용됩니다. Google의 서비스 약관은 Google Search에 대한 자동화된 쿼리를 제한하므로, 아래 코드는 실제 사이트를 상대로 반복 실행할 스크립트가 아니라 패턴을 이해하기 위한 읽을거리로 다루세요. 같은 Given/When/Then 형태를 직접 해 보고 싶다면, 같은 단계를 이 사이트의 연습 페이지에 적용해 보세요.',
-    sourceCodeHeading: '소스 코드 예시',
     backHome: '홈으로 돌아가기',
     seeMoreExamples: '더 많은 예제 보기'
   };
@@ -193,7 +186,6 @@
     googleSearchExamplesLinkText: 'exemples de Recherche Google',
     readNotRunPost:
       " de ce site — et la même prudence s'applique : les conditions d'utilisation de Google limitent les requêtes automatisées sur Google Search ; considérez donc le code ci-dessous comme de la documentation à lire pour le schéma, et non comme des scripts à exécuter à répétition sur le site réel. Si vous voulez essayer cette même structure Given/When/Then en pratique, dirigez plutôt les mêmes étapes vers la page d'exercices de ce site.",
-    sourceCodeHeading: 'Exemples de code source',
     backHome: "Retour à l'accueil",
     seeMoreExamples: "Voir d'autres exemples"
   };
@@ -257,326 +249,6 @@ Then I see search results
       >{m.readNotRunPost}
     </p>
   </InformationCallout>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.sourceCodeHeading} level={2} />
-
-  <Details summary="Selenium + JavaScript" open>
-    <CodeBlock label="Selenium · JavaScript · selenium-webdriver (npm)">
-      <pre><code>{`import { Builder, By, Key } from 'selenium-webdriver';
-
-async function demo() {
-  const driver = await new Builder().forBrowser('chrome').build();
-
-  try {
-    // Given I am on https://google.com
-    await driver.get('https://google.com');
-
-    // When I type in the search box and click submit
-    // Google's search input has commonly carried name="q".
-    const searchBox = await driver.findElement(By.name('q'));
-    await searchBox.sendKeys('testing examples', Key.RETURN);
-
-    // Then I see search results
-    const results = await driver.findElements(By.css('#search'));
-    if (results.length === 0) {
-      throw new Error('Expected to see search results, but none were found.');
-    }
-  } finally {
-    await driver.quit();
-  }
-}
-
-demo().catch((err) => console.error(err));
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Selenium + Python">
-    <CodeBlock label="Selenium · Python · selenium (PyPI)">
-      <pre><code>{`from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-
-driver = webdriver.Chrome()
-
-try:
-    # Given I am on https://google.com
-    driver.get("https://google.com")
-
-    # When I type in the search box and click submit
-    # Google's search input has commonly carried name="q".
-    search_box = driver.find_element(By.NAME, "q")
-    search_box.send_keys("testing examples", Keys.RETURN)
-
-    # Then I see search results
-    results = driver.find_elements(By.CSS_SELECTOR, "#search")
-    assert len(results) > 0, "Expected to see search results, but none were found."
-finally:
-    driver.quit()
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Selenium + Rust">
-    <CodeBlock label="Selenium · Rust · thirtyfour (crates.io)">
-      <pre><code>{`use std::time::Duration;
-
-use thirtyfour::prelude::*;
-
-#[tokio::main]
-async fn main() -> anyhow::Result<()> {
-    // chromedriver must already be listening, e.g. \`chromedriver --port=9515\`.
-    let driver = WebDriver::new("http://localhost:9515", DesiredCapabilities::chrome()).await?;
-
-    // Run the scenario, but always quit the browser afterward.
-    let result = scenario(&driver).await;
-    driver.quit().await?;
-    result
-}
-
-async fn scenario(driver: &WebDriver) -> anyhow::Result<()> {
-    // Given I am on https://google.com
-    driver.goto("https://google.com").await?;
-
-    // When I type in the search box and click submit
-    // Google's search input has commonly carried name="q". thirtyfour has
-    // no By::Name, so use a CSS attribute selector. "\\u{E007}" is the
-    // WebDriver Enter key.
-    let search_box = driver.query(By::Css("[name='q']")).single().await?;
-    search_box.send_keys("testing examples\\u{E007}").await?;
-
-    // Then I see search results
-    let found = driver
-        .query(By::Css("#search"))
-        .wait(Duration::from_secs(10), Duration::from_millis(250))
-        .exists()
-        .await?;
-    assert!(found, "Expected to see search results, but none were found.");
-    Ok(())
-}
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Selenium + C#">
-    <CodeBlock label="Selenium · C# · Selenium.WebDriver (NuGet)">
-      <pre><code>{`using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
-
-// Selenium Manager finds or downloads a matching chromedriver.
-// \`using\` quits the browser even if the check below throws.
-using IWebDriver driver = new ChromeDriver();
-
-// Given I am on https://google.com
-driver.Navigate().GoToUrl("https://google.com");
-
-// When I type in the search box and click submit
-// Google's search input has commonly carried name="q".
-var searchBox = driver.FindElement(By.Name("q"));
-searchBox.SendKeys("testing examples" + Keys.Return);
-
-// Then I see search results
-var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10))
-{
-    Message = "Expected to see search results, but none were found."
-};
-wait.Until(d => d.FindElements(By.CssSelector("#search")).Count > 0);
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Selenium + Java">
-    <CodeBlock label="Selenium · Java · selenium-java (Maven)">
-      <pre><code>{`import java.time.Duration;
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-public class Demo {
-    public static void main(String[] args) {
-        // Selenium Manager finds or downloads a matching chromedriver.
-        WebDriver driver = new ChromeDriver();
-
-        try {
-            // Given I am on https://google.com
-            driver.get("https://google.com");
-
-            // When I type in the search box and click submit
-            // Google's search input has commonly carried name="q".
-            WebElement searchBox = driver.findElement(By.name("q"));
-            searchBox.sendKeys("testing examples" + Keys.RETURN);
-
-            // Then I see search results
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            wait.until(d -> !d.findElements(By.cssSelector("#search")).isEmpty());
-        } finally {
-            driver.quit();
-        }
-    }
-}
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Playwright + JavaScript">
-    <CodeBlock label="Playwright · JavaScript · playwright (npm)">
-      <pre><code>{`import { chromium } from 'playwright';
-
-const browser = await chromium.launch();
-
-try {
-  const page = await browser.newPage();
-
-  // Given I am on https://google.com
-  await page.goto('https://google.com');
-
-  // When I type in the search box and click submit
-  // Google's search input has commonly carried name="q".
-  await page.fill('[name="q"]', 'testing examples');
-  await page.keyboard.press('Enter');
-
-  // Then I see search results
-  await page.waitForSelector('#search');
-} finally {
-  await browser.close();
-}
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Playwright + Python">
-    <CodeBlock label="Playwright · Python · playwright (PyPI)">
-      <pre><code>{`from playwright.sync_api import sync_playwright
-
-
-def demo() -> None:
-    """Search Google and check that results appear."""
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-
-        try:
-            page = browser.new_page()
-
-            # Given I am on https://google.com
-            page.goto("https://google.com")
-
-            # When I type in the search box and click submit
-            # Google's search input has commonly carried name="q".
-            page.fill('[name="q"]', "testing examples")
-            page.keyboard.press("Enter")
-
-            # Then I see search results
-            page.wait_for_selector("#search")
-        finally:
-            browser.close()
-
-
-if __name__ == "__main__":
-    demo()
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Playwright + Rust">
-    <CodeBlock label="Playwright · Rust · playwright-rs (crates.io)">
-      <pre><code>{`use playwright_rs::{Page, Playwright, WaitUntil};
-
-#[tokio::main]
-async fn main() -> anyhow::Result<()> {
-    let pw = Playwright::launch().await?;
-    let browser = pw.chromium().launch().await?;
-    let page = browser.new_page().await?;
-
-    // Run the scenario, but always close the browser afterward.
-    let result = scenario(&page).await;
-    browser.close().await?;
-    result
-}
-
-async fn scenario(page: &Page) -> anyhow::Result<()> {
-    // Given I am on https://google.com
-    page.goto("https://google.com", None).await?;
-
-    // When I type in the search box and click submit
-    // Google's search input has commonly carried name="q".
-    let search_box = page.locator("[name=\\"q\\"]");
-    search_box.fill("testing examples", None).await?;
-    search_box.press("Enter", None).await?;
-    page.wait_for_load_state(Some(WaitUntil::Load)).await?;
-
-    // Then I see search results
-    let count = page.locator("#search").count().await?;
-    assert!(count > 0, "Expected to see search results, but none were found.");
-    Ok(())
-}
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Playwright + C#">
-    <CodeBlock label="Playwright · C# · Microsoft.Playwright (NuGet)">
-      <pre><code>{`using Microsoft.Playwright;
-
-using var playwright = await Playwright.CreateAsync();
-await using var browser = await playwright.Chromium.LaunchAsync();
-var page = await browser.NewPageAsync();
-
-// Given I am on https://google.com
-await page.GotoAsync("https://google.com");
-
-// When I type in the search box and click submit
-// Google's search input has commonly carried name="q".
-await page.FillAsync("[name=\\"q\\"]", "testing examples");
-await page.Keyboard.PressAsync("Enter");
-
-// Then I see search results
-await page.WaitForSelectorAsync("#search");
-`}</code></pre>
-    </CodeBlock>
-  </Details>
-
-  <Details summary="Playwright + Java">
-    <CodeBlock label="Playwright · Java · playwright (Maven)">
-      <pre><code>{`import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
-
-public class Demo {
-    public static void main(String[] args) {
-        // try-with-resources shuts down the driver even if a step throws.
-        try (Playwright playwright = Playwright.create()) {
-            Browser browser = playwright.chromium().launch();
-            Page page = browser.newPage();
-
-            // Given I am on https://google.com
-            page.navigate("https://google.com");
-
-            // When I type in the search box and click submit
-            // Google's search input has commonly carried name="q".
-            page.fill("[name=\\"q\\"]", "testing examples");
-            page.keyboard().press("Enter");
-
-            // Then I see search results
-            page.waitForSelector("#search");
-
-            browser.close();
-        }
-    }
-}
-`}</code></pre>
-    </CodeBlock>
-  </Details>
 </section>
 
 <Separator label="Section break" />

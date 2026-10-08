@@ -255,22 +255,11 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     map, searching for a place) implemented across the same two tools and
     three languages.
 - `/given-when-then/` — one scenario (search Google, see results) written
-  first as a Given-When-Then (Gherkin/BDD) sentence, then as the
-  equivalent Selenium and Playwright code in JavaScript, Python, Rust,
-  C#, and Java (ten examples, all under one "Examples of source code" section).
+  as a Given-When-Then (Gherkin/BDD) sentence, with the caution about not
+  running Google examples repeatedly. The equivalent Selenium and Playwright
+  code (JavaScript, Python, Rust, C#, and Java: ten examples, all under one
+  "Examples of source code" section) was moved to each locale's home page.
   Linked from the home page's Examples list.
-- `/code/` — lists every demo repository (every `demo-*` repo under
-  <https://github.com/testingexamples>), generated from `src/lib/demos.ts`,
-  which must match the `demos/demo-*` entries in the monorepo's
-  `subtrees.tsv`. Linked from the "Code" hero button on each locale home
-  page. The site root `/` has no `/code/` route and keeps its own
-  "Examples as repositories" section.
-- Each locale home page has three hero buttons under its heading: "Learn"
-  (`/learn/`), "Practice" (`/practice/`), and "Code" (`/code/`).
-- `/learn/gherkin/` — "What is Gherkin?": the Given-When-Then syntax, its
-  keywords, a short example, and a link to `/given-when-then/`. Linked from
-  the end of `/learn/`'s Learn More list. Its slug is `<learn slug>/gherkin`
-  in every locale (for example `/cy-gb/dysgu/gherkin/`).
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at
