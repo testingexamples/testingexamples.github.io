@@ -21,10 +21,10 @@
   };
 
   const EN_001: Messages = {
-    title: "What is a browser-based test?",
+    title: "Browser test",
     metaDescription:
       "A browser-based test drives a real web browser the way a person would. Selenium, Playwright, and other tools make this automatic.",
-    heading: "What is a browser-based test?",
+    heading: "Browser test",
     intro:
       "A browser-based test opens a real web browser, then does what a person would do: go to a page, find a button or a field, click and type, and check what appears. A tool does it for you, so the same journey can run on every change, in seconds, without anyone sitting at the keyboard.",
     toolsHeading: "Tools you will meet",

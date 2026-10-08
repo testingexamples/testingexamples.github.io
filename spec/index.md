@@ -346,7 +346,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
 - `/topics/unit-test/` — "Unit test": what makes a unit test good,
   the Arrange-Act-Assert shape with a short JavaScript example, and a link to
   `/what-is-the-testing-pyramid/`. Linked from `/topics/`'s "Kinds of tests" list. Its slug is `<topics slug>/unit-test`.
-- `/topics/browser-test/` — "What is a browser-based test?": what one is,
+- `/topics/browser-test/` — "Browser test": what one is,
   the tools you will meet (Selenium, Playwright, WebdriverIO, Cypress,
   Puppeteer, TestCafe), what to expect (realistic but slow and brittle), and
   links to `/practice/` and `/code/`. Linked from `/topics/`'s "Kinds of tests"

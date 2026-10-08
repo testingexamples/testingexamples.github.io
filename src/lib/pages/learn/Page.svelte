@@ -58,7 +58,7 @@
       whatIsGherkin: "Gherkin syntax for automatic testing",
       shiftLeft: "Shift left for automatic testing",
       whatIsUnitTest: "Unit test",
-      whatIsBrowserTest: "What is a browser-based test?",
+      whatIsBrowserTest: "Browser test",
       whatIsCodeEditors: "Code editors — e.g. Visual Studio Code",
       whatIsVersionControl: "Version control — git and GitHub",
       whatIsAgileDiscovery: "Agile and working with users — discovery",

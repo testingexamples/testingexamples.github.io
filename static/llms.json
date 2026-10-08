@@ -103,7 +103,7 @@
           "description": "What makes a unit test good, the Arrange-Act-Assert shape, and a short example."
         },
         {
-          "title": "What is a browser-based test?",
+          "title": "Browser test",
           "url": "https://testingexamples.github.io/en-001/topics/browser-test/",
           "description": "What a browser-based test is, the tools you will meet (Selenium, Playwright, and others), and what to expect."
         },
