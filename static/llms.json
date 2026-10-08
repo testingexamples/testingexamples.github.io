@@ -108,7 +108,7 @@
           "description": "What a browser-based test is, the tools you will meet (Selenium, Playwright, and others), and what to expect."
         },
         {
-          "title": "Code editors",
+          "title": "Code editors such as Visual Studio Code",
           "url": "https://testingexamples.github.io/en-001/topics/code-editors/",
           "description": "A related concept for automatic testing."
         },

@@ -59,7 +59,7 @@
       shiftLeft: "Shift left for automatic testing",
       whatIsUnitTest: "Unit test",
       whatIsBrowserTest: "Browser test",
-      whatIsCodeEditors: "Code editors — e.g. Visual Studio Code",
+      whatIsCodeEditors: "Code editors such as Visual Studio Code",
       whatIsVersionControl: "Version control — git and GitHub",
       whatIsAgileDiscovery: "Agile and working with users — discovery",
       whatIsUnixShell: "Unix commands — the command line",

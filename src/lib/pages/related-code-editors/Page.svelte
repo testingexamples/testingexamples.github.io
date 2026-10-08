@@ -42,7 +42,7 @@
       "I already use VS Code casually — what extensions or features would actually help me write and debug browser automation tests specifically?",
       "How do I set up a shared VS Code configuration — extensions, settings, debugger config — so my whole team gets a consistent test-writing experience, not just me?"
     ],
-    s1Heading: "Code editors — e.g. Visual Studio Code",
+    s1Heading: "Code editors such as Visual Studio Code",
     s1P1a: "You can write a test script in any plain text editor, but a proper code editor gives you back a surprising amount of help for free. ",
     s1P1b: " colours your code as you type, so a typo like a missing closing bracket jumps out visually instead of hiding until you run the script and get a confusing error. ",
     s1P1c1: " shows you what's actually available as you type — type ",
