@@ -42,7 +42,7 @@
       "I accidentally committed a change I want to undo — what's a safe way to undo it without losing other work?",
       "How should a team structure git branches and pull requests specifically around test code, so a flaky or broken test doesn't block unrelated changes?"
     ],
-    s2Heading: "Version control — git and GitHub",
+    s2Heading: "Version control systems such as Git and GitHub",
     s2P1a: "Without version control, \"fixing a test\" usually means overwriting the old file and hoping you don't need the previous version back. ",
     s2P1b: " solves that by keeping every version of every file it tracks: it lets you see exactly what changed, when, and — via a commit message — why, and it lets you undo a bad change safely instead of trying to remember what the code used to look like.",
     s2P2Label: "GitHub",

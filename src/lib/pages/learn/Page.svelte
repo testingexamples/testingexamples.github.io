@@ -60,7 +60,7 @@
       whatIsUnitTest: "Unit test",
       whatIsBrowserTest: "Browser test",
       whatIsCodeEditors: "Code editors such as Visual Studio Code",
-      whatIsVersionControl: "Version control — git and GitHub",
+      whatIsVersionControl: "Version control systems such as Git and GitHub",
       whatIsAgileDiscovery: "Agile and working with users — discovery",
       whatIsUnixShell: "Unix commands — the command line",
       whatIsCloudHosting: "Cloud hosting for testing"
