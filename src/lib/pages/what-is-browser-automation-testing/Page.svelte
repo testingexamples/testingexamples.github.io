@@ -43,10 +43,10 @@
   // vocabulary, so all four English locales share one copy. See
   // spec/locales/index.md.
   const CY: Messages = {
-    title: 'Beth yw profi awtomatig porwr?',
+    title: 'Beth yw profi porwr?',
     metaDescription:
       "Beth yw profi awtomatig porwr, a'r cyfaddawdau sy'n dod gydag ef: pam mai dyma'r haen fwyaf realistig o'r pyramid profi awtomatig, a phryd i droi ato yn lle prawf uned neu integreiddio.",
-    heading: 'Beth yw profi awtomatig porwr?',
+    heading: 'Beth yw profi porwr?',
     introPre:
       "Mae profi awtomatig porwr (a elwir hefyd yn brofi o'r dechrau i'r diwedd neu'n brofi UI) yn gyrru porwr go iawn yn union fel y byddai defnyddiwr go iawn — agor tudalennau, clicio botymau, llenwi ffurflenni — gan ddefnyddio offer fel Selenium WebDriver, WebdriverIO, a Playwright. Dyma'r haen fwyaf realistig o ",
     introLinkText: "y pyramid profi awtomatig",
@@ -59,14 +59,14 @@
       "Mae fy nghyfres profion porwr wedi mynd yn ansefydlog ac yn araf — beth yw'r pethau cyntaf sy'n werth eu gwirio i'w gwneud yn fwy dibynadwy?",
       "Sut ydw i'n penderfynu pa deithiau defnyddiwr sy'n haeddu prawf porwr go iawn yn hytrach na chael eu cwmpasu'n is i lawr y pyramid?"
     ],
-    nextLabel: 'Nesaf: beth yw profi integreiddio parhaus awtomatig? →'
+    nextLabel: 'Nesaf: integreiddio parhaus ar gyfer profi awtomatig →'
   };
 
   const ZH: Messages = {
-    title: '什么是浏览器自动化测试？',
+    title: '什么是浏览器测试？',
     metaDescription:
       '什么是浏览器自动化测试，以及它带来的取舍：为什么它是自动化测试金字塔中最贴近真实的一层，以及什么时候该选择它而不是单元测试或集成测试。',
-    heading: '什么是浏览器自动化测试？',
+    heading: '什么是浏览器测试？',
     introPre:
       '浏览器自动化测试（也称为端到端测试或 UI 测试）会像真实用户一样驱动一个真实的浏览器——打开页面、点击按钮、填写表单——使用 Selenium WebDriver、WebdriverIO 和 Playwright 之类的工具。它是',
     introLinkText: '自动化测试金字塔',
@@ -79,14 +79,14 @@
       '我的浏览器测试套件变得不稳定又缓慢——有哪些首先值得检查的地方可以让它更可靠？',
       '我该如何判断哪些用户旅程真正值得用浏览器测试来覆盖，而不是放到金字塔更下层去覆盖？'
     ],
-    nextLabel: '下一步：什么是持续集成自动化测试？→'
+    nextLabel: '下一步：自动化测试的持续集成→'
   };
 
   const AR: Messages = {
-    title: 'ما هو اختبار أتمتة المتصفح؟',
+    title: 'ما هو اختبار المتصفح؟',
     metaDescription:
       'ما هو اختبار أتمتة المتصفح، وما المقايضات المصاحبة له: لماذا هو الطبقة الأكثر واقعية في هرم الاختبار الآلي، ومتى نلجأ إليه بدلًا من اختبار الوحدة أو التكامل.',
-    heading: 'ما هو اختبار أتمتة المتصفح؟',
+    heading: 'ما هو اختبار المتصفح؟',
     introPre:
       'اختبار أتمتة المتصفح (ويُسمّى أيضًا الاختبار من البداية إلى النهاية أو اختبار الواجهة) يقود متصفحًا حقيقيًا تمامًا كما يفعل المستخدم الحقيقي — يفتح الصفحات وينقر الأزرار ويملأ النماذج — باستخدام أدوات مثل Selenium WebDriver وWebdriverIO وPlaywright. وهو الطبقة الأكثر واقعية في ',
     introLinkText: 'هرم الاختبار الآلي',
@@ -99,14 +99,14 @@
       'أصبحت مجموعة اختبارات المتصفح لديّ غير مستقرة وبطيئة — ما أول الأشياء التي يستحق فحصها لجعلها أكثر موثوقية؟',
       'كيف أقرر أي رحلات المستخدم تستحق فعلًا اختبار متصفح، وأيها يكفي تغطيتها في مستوى أدنى من الهرم؟'
     ],
-    nextLabel: 'التالي: ما هو اختبار التكامل المستمر؟ ←'
+    nextLabel: 'التالي: التكامل المستمر للاختبار الآلي ←'
   };
 
   const KO: Messages = {
-    title: '브라우저 자동화 테스트란 무엇인가?',
+    title: '브라우저 테스트란 무엇인가?',
     metaDescription:
       '브라우저 자동화 테스트란 무엇이며 어떤 트레이드오프가 따르는지: 왜 자동화 테스트 피라미드에서 가장 현실적인 계층인지, 그리고 단위 테스트나 통합 테스트 대신 언제 이것을 선택해야 하는지 설명합니다.',
-    heading: '브라우저 자동화 테스트란 무엇인가?',
+    heading: '브라우저 테스트란 무엇인가?',
     introPre:
       '브라우저 자동화 테스트(엔드 투 엔드 또는 UI 테스트라고도 함)는 Selenium WebDriver, WebdriverIO, Playwright 같은 도구를 사용해 실제 사용자가 하는 그대로 — 페이지를 열고, 버튼을 클릭하고, 양식을 채우며 — 실제 브라우저를 조작합니다. 이것은 ',
     introLinkText: '자동화 테스트 피라미드',
@@ -119,14 +119,14 @@
       '제 브라우저 테스트 스위트가 불안정하고 느려졌습니다. 더 믿을 만하게 만들려면 가장 먼저 무엇을 확인해야 할까요?',
       '어떤 사용자 여정이 정말로 브라우저 테스트를 받을 가치가 있고, 어떤 것은 피라미드 아래쪽에서 다루면 되는지 어떻게 판단하나요?'
     ],
-    nextLabel: '다음: 지속적 통합 테스트란 무엇인가? →'
+    nextLabel: '다음: 자동화 테스트를 위한 지속적 통합 →'
   };
 
   const FR: Messages = {
-    title: "Qu'est-ce que le test automatisé de navigateur ?",
+    title: "Qu'est-ce que le test de navigateur ?",
     metaDescription:
       "Ce qu'est le test automatisé de navigateur et les compromis qu'il implique : pourquoi c'est la couche la plus réaliste de la pyramide des tests automatisés, et quand l'utiliser plutôt qu'un test unitaire ou d'intégration.",
-    heading: "Qu'est-ce que le test automatisé de navigateur ?",
+    heading: "Qu'est-ce que le test de navigateur ?",
     introPre:
       "Le test automatisé de navigateur (aussi appelé test de bout en bout ou test d'IHM) pilote un vrai navigateur exactement comme le ferait un vrai utilisateur — ouvrir des pages, cliquer sur des boutons, remplir des formulaires — avec des outils comme Selenium WebDriver, WebdriverIO et Playwright. C'est la couche la plus réaliste de ",
     introLinkText: 'la pyramide des tests automatisés',
@@ -139,7 +139,7 @@
       "Ma suite de tests de navigateur est devenue instable et lente — quelles sont les premières choses à vérifier pour la rendre plus fiable ?",
       "Comment décider quels parcours utilisateur méritent vraiment un test de navigateur plutôt que d'être couverts plus bas dans la pyramide ?"
     ],
-    nextLabel: "Suite : qu'est-ce que le test automatisé d'intégration continue ? →"
+    nextLabel: "Suite : l'intégration continue pour les tests automatisés →"
   };
 
   const MESSAGES: Record<Locale, Messages> = {

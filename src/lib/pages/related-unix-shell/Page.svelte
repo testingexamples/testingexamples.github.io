@@ -85,7 +85,7 @@
       "Sut fyddwn i'n defnyddio grep i ddod o hyd i bob prawf sy'n methu mewn cofnod CI enfawr heb sgrolio drwyddo â llaw?",
       "Sut ydw i'n cysylltu ychydig o orchmynion Unix â'i gilydd mewn piblinell yn sgript fach, ddibynadwy ar gyfer cam CI, yn lle estyn am iaith raglennu lawn?"
     ],
-    s4Heading: "Gorchmynion Unix — y llinell orchymyn",
+    s4Heading: "Gorchmynion Unix fel rhai ar gyfer pori ffeiliau",
     s4P1Post: " yw'r hyn y mae bron pob amgylchedd datblygu, rhedwr CI, a chynhwysydd Docker yn ei siarad yn naturiol, heb angen GUI. Nid oes angen i chi feistroli pob un ohonynt; mae gwybodaeth weithio o ryw ddau ddwsin yn mynd yn bell iawn.",
     s4P2a: "Dyma pam mae hynny'n perthyn i dudalen am brofi: ",
     s4P2b: " a ",
@@ -116,7 +116,7 @@
       "我该如何用 grep 在一份庞大的 CI 日志中找到每一个失败的测试，而不用手动一行行滚动查看？",
       "我该如何把几个 Unix 命令串联成一个小巧、可靠的脚本用于 CI 步骤，而不是动用一整套编程语言？"
     ],
-    s4Heading: "Unix 命令——命令行",
+    s4Heading: "Unix 命令，例如用于浏览文件的命令",
     s4P1Post: "是几乎每个开发环境、CI 运行器和 Docker 容器都能原生识别的语言，不需要任何图形界面。你不需要精通所有命令；能熟练使用其中二十来个，就已经非常有用了。",
     s4P2a: "这就是为什么它出现在一个测试相关的页面上：",
     s4P2b: "和",
@@ -147,7 +147,7 @@
       "كيف أستخدم grep للعثور على كل اختبار فاشل في سجل CI ضخم دون تمريره يدويًا؟",
       "كيف أسلسل بضعة أوامر Unix في سكربت صغير موثوق لخطوة CI، بدلًا من اللجوء إلى لغة برمجة كاملة؟"
     ],
-    s4Heading: "أوامر Unix — سطر الأوامر",
+    s4Heading: "أوامر Unix مثل أوامر تصفح الملفات",
     s4P1Post: " هي ما تتحدثه تقريبًا كل بيئة تطوير ومشغّل CI وحاوية Docker بشكل أصلي، دون حاجة إلى واجهة رسومية. لا تحتاج إلى إتقانها جميعًا؛ فمعرفة عملية بنحو عشرين أو ثلاثين منها تذهب بك بعيدًا جدًا.",
     s4P2a: "وإليك لماذا ينتمي هذا إلى صفحة عن الاختبار: ",
     s4P2b: " و",
@@ -178,7 +178,7 @@
       "엄청나게 큰 CI 로그에서 직접 스크롤하지 않고 grep으로 실패한 모든 테스트를 찾으려면 어떻게 해야 하나요?",
       "완전한 프로그래밍 언어를 쓰는 대신, 몇 개의 Unix 명령어를 엮어 CI 단계를 위한 작고 믿을 만한 스크립트를 만들려면 어떻게 해야 하나요?"
     ],
-    s4Heading: "Unix 명령어 — 명령줄",
+    s4Heading: "파일 탐색용 명령 같은 Unix 명령어",
     s4P1Post: "는 거의 모든 개발 환경, CI 러너, Docker 컨테이너가 GUI 없이 기본적으로 사용하는 언어입니다. 전부 능숙해질 필요는 없으며, 스무 개에서 서른 개 정도만 실무적으로 알아도 아주 멀리 갈 수 있습니다.",
     s4P2a: "이것이 테스트 페이지에 속하는 이유는 다음과 같습니다. ",
     s4P2b: "과(와) ",
@@ -209,7 +209,7 @@
       "Comment utiliser grep pour trouver chaque test en échec dans un énorme journal de CI sans le parcourir à la main ?",
       "Comment enchaîner quelques commandes Unix dans un petit script fiable pour une étape de CI, plutôt que de recourir à un langage de programmation complet ?"
     ],
-    s4Heading: "Commandes Unix — la ligne de commande",
+    s4Heading: "Les commandes Unix comme celles pour parcourir les fichiers",
     s4P1Post: " sont ce que parlent nativement presque tous les environnements de développement, les exécuteurs de CI et les conteneurs Docker, sans interface graphique. Vous n'avez pas besoin de toutes les maîtriser ; une connaissance pratique d'une vingtaine de commandes mène très loin.",
     s4P2a: "Voici pourquoi cela a sa place sur une page consacrée aux tests : ",
     s4P2b: " et ",

@@ -43,10 +43,10 @@
   };
 
   const CY: Messages = {
-    title: "Beth yw prawf uned?",
+    title: "Prawf uned",
     metaDescription:
       "Mae prawf uned yn gwirio un darn bach o god ar ei ben ei hun, yn gyflym ac yn ailadroddadwy, ac mae ar waelod pyramid profi awtomatig.",
-    heading: "Beth yw prawf uned?",
+    heading: "Prawf uned",
     intro:
       "Prawf awtomatig bach yw prawf uned sy'n gwirio un darn bach o god — fel arfer un ffwythiant neu ddull — ar ei ben ei hun, heb borwr, rhwydwaith na chronfa ddata. Mae'n rhedeg mewn milieiliadau, felly gall prosiect gael miloedd ohonynt a'u rhedeg ar bob newid.",
     traitsHeading: "Beth sy'n gwneud prawf uned da",
@@ -65,10 +65,10 @@
   };
 
   const ZH: Messages = {
-    title: "什么是单元测试？",
+    title: "单元测试",
     metaDescription:
       "单元测试在隔离环境中快速、可重复地检查一小段代码，位于自动化测试金字塔的底层。",
-    heading: "什么是单元测试？",
+    heading: "单元测试",
     intro:
       "单元测试是一种小型自动化测试，用来单独检查一小段代码（通常是一个函数或方法），不需要浏览器、网络或数据库。它在几毫秒内运行完毕，因此项目可以拥有成千上万个单元测试，并在每次改动时运行。",
     traitsHeading: "好的单元测试具备什么特点",
@@ -87,10 +87,10 @@
   };
 
   const AR: Messages = {
-    title: "ما هو اختبار الوحدة؟",
+    title: "اختبار الوحدة",
     metaDescription:
       "اختبار الوحدة يفحص جزءًا صغيرًا من الشيفرة بمعزل عن غيره، بسرعة وبشكل قابل للتكرار، ويقع في قاعدة هرم الاختبار الآلي.",
-    heading: "ما هو اختبار الوحدة؟",
+    heading: "اختبار الوحدة",
     intro:
       "اختبار الوحدة اختبار آلي صغير يفحص جزءًا صغيرًا من الشيفرة — عادةً دالة أو أسلوبًا واحدًا — بمفرده، دون متصفح أو شبكة أو قاعدة بيانات. يعمل في أجزاء من الثانية، لذا يمكن للمشروع أن يضم آلاف الاختبارات وتشغيلها عند كل تغيير.",
     traitsHeading: "ما الذي يجعل اختبار الوحدة جيدًا",
@@ -109,10 +109,10 @@
   };
 
   const KO: Messages = {
-    title: "단위 테스트란 무엇인가?",
+    title: "단위 테스트",
     metaDescription:
       "단위 테스트는 코드의 작은 부분 하나를 격리하여 빠르고 반복 가능하게 검사하며, 자동화 테스트 피라미드의 맨 아래에 놓입니다.",
-    heading: "단위 테스트란 무엇인가?",
+    heading: "단위 테스트",
     intro:
       "단위 테스트는 브라우저, 네트워크, 데이터베이스 없이 코드의 아주 작은 부분(보통 함수나 메서드 하나)만 따로 검사하는 작은 자동화 테스트입니다. 몇 밀리초 만에 실행되므로 프로젝트에 수천 개를 두고 변경할 때마다 실행할 수 있습니다.",
     traitsHeading: "좋은 단위 테스트의 조건",
@@ -131,10 +131,10 @@
   };
 
   const FR: Messages = {
-    title: "Qu'est-ce qu'un test unitaire ?",
+    title: "Test unitaire",
     metaDescription:
       "Un test unitaire vérifie un petit morceau de code de façon isolée, rapide et reproductible, et se trouve à la base de la pyramide des tests automatisés.",
-    heading: "Qu'est-ce qu'un test unitaire ?",
+    heading: "Test unitaire",
     intro:
       "Un test unitaire est un petit test automatisé qui vérifie un tout petit morceau de code — généralement une seule fonction ou méthode — à lui seul, sans navigateur, réseau ni base de données. Il s'exécute en quelques millisecondes : un projet peut donc en compter des milliers et les lancer à chaque modification.",
     traitsHeading: "Ce qui fait un bon test unitaire",

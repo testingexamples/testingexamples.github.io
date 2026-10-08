@@ -47,10 +47,10 @@
   };
 
   const CY: Messages = {
-    title: "Beth yw prawf sy’n seiliedig ar borwr?",
+    title: "Prawf porwr",
     metaDescription:
       "Mae prawf sy’n seiliedig ar borwr yn gyrru porwr gwe go iawn fel y byddai person. Mae Selenium, Playwright ac offer eraill yn gwneud hyn yn awtomatig.",
-    heading: "Beth yw prawf sy’n seiliedig ar borwr?",
+    heading: "Prawf porwr",
     intro:
       "Mae prawf sy’n seiliedig ar borwr yn agor porwr gwe go iawn, yna’n gwneud yr hyn y byddai person yn ei wneud: mynd i dudalen, dod o hyd i fotwm neu faes, clicio a theipio, a gwirio beth sy’n ymddangos. Mae offeryn yn ei wneud i chi, felly gall yr un daith redeg ar bob newid, mewn eiliadau, heb i neb eistedd wrth y bysellfwrdd.",
     toolsHeading: "Offer y byddwch yn eu cyfarfod",
@@ -73,10 +73,10 @@
   };
 
   const ZH: Messages = {
-    title: "什么是基于浏览器的测试？",
+    title: "浏览器测试",
     metaDescription:
       "基于浏览器的测试像真人一样驱动真实的网页浏览器。Selenium、Playwright 等工具让这一切自动完成。",
-    heading: "什么是基于浏览器的测试？",
+    heading: "浏览器测试",
     intro:
       "基于浏览器的测试会打开一个真实的网页浏览器，然后做真人会做的事：访问页面、找到按钮或输入框、点击和输入，并检查出现的内容。由工具代劳，因此同一流程可以在每次改动时几秒钟内自动运行，无需任何人坐在键盘前。",
     toolsHeading: "你会遇到的工具",
@@ -99,10 +99,10 @@
   };
 
   const AR: Messages = {
-    title: "ما هو الاختبار القائم على المتصفح؟",
+    title: "اختبار المتصفح",
     metaDescription:
       "الاختبار القائم على المتصفح يقود متصفح ويب حقيقيًا كما يفعل الشخص. وتجعل أدوات مثل Selenium وPlaywright ذلك آليًا.",
-    heading: "ما هو الاختبار القائم على المتصفح؟",
+    heading: "اختبار المتصفح",
     intro:
       "يفتح الاختبار القائم على المتصفح متصفح ويب حقيقيًا، ثم يفعل ما يفعله الشخص: ينتقل إلى صفحة، ويجد زرًا أو حقلًا، وينقر ويكتب، ويتحقق مما يظهر. وتقوم أداة بذلك نيابةً عنك، فيمكن تشغيل الرحلة نفسها عند كل تغيير خلال ثوانٍ دون أن يجلس أحد أمام لوحة المفاتيح.",
     toolsHeading: "أدوات ستصادفها",
@@ -125,10 +125,10 @@
   };
 
   const KO: Messages = {
-    title: "브라우저 기반 테스트란 무엇인가?",
+    title: "브라우저 테스트",
     metaDescription:
       "브라우저 기반 테스트는 사람처럼 실제 웹 브라우저를 조작합니다. Selenium, Playwright 같은 도구가 이를 자동으로 해 줍니다.",
-    heading: "브라우저 기반 테스트란 무엇인가?",
+    heading: "브라우저 테스트",
     intro:
       "브라우저 기반 테스트는 실제 웹 브라우저를 열고 사람이 하는 일을 합니다. 페이지로 이동하고, 버튼이나 입력란을 찾고, 클릭하고 입력하고, 나타나는 내용을 확인합니다. 도구가 대신 해 주므로 같은 흐름을 변경할 때마다 몇 초 만에, 키보드 앞에 아무도 없어도 실행할 수 있습니다.",
     toolsHeading: "만나게 될 도구",
@@ -151,10 +151,10 @@
   };
 
   const FR: Messages = {
-    title: "Qu'est-ce qu'un test basé sur le navigateur ?",
+    title: "Test de navigateur",
     metaDescription:
       "Un test basé sur le navigateur pilote un vrai navigateur web comme le ferait une personne. Selenium, Playwright et d'autres outils l'automatisent.",
-    heading: "Qu'est-ce qu'un test basé sur le navigateur ?",
+    heading: "Test de navigateur",
     intro:
       "Un test basé sur le navigateur ouvre un vrai navigateur web, puis fait ce que ferait une personne : aller sur une page, trouver un bouton ou un champ, cliquer et saisir, et vérifier ce qui s'affiche. Un outil le fait à votre place : le même parcours peut donc s'exécuter à chaque modification, en quelques secondes, sans que personne soit devant le clavier.",
     toolsHeading: "Les outils que vous rencontrerez",

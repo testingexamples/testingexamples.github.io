@@ -51,7 +51,7 @@
       "Beth yw'r gwahaniaeth ymarferol rhwng rhedeg fy mhrofion ar fy mheiriant fy hun o gymharu â fferm porwr cwmwl, ar gyfer tîm bach?",
       "Sut ydw i'n penderfynu a yw set brofion sy'n tyfu wir yn barod i symud i ddarparwr CI cwmwl, a beth ddylwn i ei wirio cyn gwneud y newid hwnnw?"
     ],
-    s5Heading: "Cynnal ar y cwmwl ar gyfer profi",
+    s5Heading: "Cynnal ar y cwmwl fel ar gyfer gweinyddion",
     s5P1Post: " yn golygu rhedeg seilwaith — gweinyddion, porwyr, rhedwyr CI — ar gyfrifiaduron rhywun arall yn lle rhai rydych chi'n berchen arnyn nhw, gan dalu am yr hyn rydych chi'n ei ddefnyddio mewn gwirionedd yn hytrach na phrynu a chynnal caledwedd eich hun.",
     s5P2: "Dyma pam mae hynny'n perthyn i dudalen am brofi: mae ffermydd porwr cwmwl yn gadael i set brofion redeg yn erbyn dyfeisiau go iawn a dwsinau o gyfuniadau porwr a system weithredu go iawn na allai neb yn rhesymol eu gosod a'u cynnal yn lleol. Ac mae darparwyr CI cwmwl (mae GitHub Actions, y soniwyd amdano isod o dan CI/CD, yn un) yn rhoi peiriant ffres, tafladwy i bob rhediad prawf — fel na all prawf basio'n dawel dim ond oherwydd cyflwr y digwyddodd rhediad blaenorol ei adael ar ôl, math cynnil o fyg sy'n llawer anos ei guddio unwaith mae pob rhediad yn dechrau o ddim.",
     s5P3Mid: ", neu gwyliwch ",
@@ -69,7 +69,7 @@
       "对于一个小团队来说，在自己的机器上运行测试和在云端浏览器集群上运行测试，实际的区别是什么？",
       "我该如何判断一个不断增长的测试套件是否真的到了该迁移到云端 CI 提供商的时候？在做这个切换之前该检查什么？"
     ],
-    s5Heading: "用于测试的云托管",
+    s5Heading: "云托管，例如用于服务器",
     s5P1Post: "是指在别人的计算机上运行基础设施——服务器、浏览器、CI 运行器——而不是自己拥有的机器上，按实际使用量付费，而不用自己购买和维护硬件。",
     s5P2: "这就是为什么它出现在一个测试相关的页面上：云端浏览器集群让测试套件能够针对真实设备和几十种真实的浏览器/操作系统组合运行，而这些组合没有人能合理地在本地全部安装和维护。而云端 CI 提供商（下面提到的 CI/CD 部分中的 GitHub Actions 就是其中之一）会为每一次测试运行提供一台全新的、用完即弃的机器——这样测试就不可能仅仅因为上一次运行碰巧留下的某些状态而悄悄通过，一旦每次运行都从零开始，这类隐蔽的缺陷就更难藏身。",
     s5P3Mid: "，或观看",
@@ -87,7 +87,7 @@
       "ما الفرق العملي بين تشغيل اختباراتي على جهازي ومزرعة متصفحات سحابية لفريق صغير؟",
       "كيف أقرر ما إذا كانت مجموعة اختبارات متنامية جاهزة فعلًا للانتقال إلى مزوّد CI سحابي، وما الذي ينبغي فحصه قبل ذلك الانتقال؟"
     ],
-    s5Heading: "الاستضافة السحابية للاختبار",
+    s5Heading: "الاستضافة السحابية مثل استضافة الخوادم",
     s5P1Post: " تعني تشغيل البنية التحتية — الخوادم والمتصفحات ومشغّلات CI — على حواسيب شخص آخر بدلًا من حواسيب تملكها، والدفع مقابل ما تستخدمه فعلًا بدلًا من شراء العتاد وصيانته بنفسك.",
     s5P2: "وإليك لماذا ينتمي هذا إلى صفحة عن الاختبار: تتيح مزارع المتصفحات السحابية لمجموعة الاختبارات أن تعمل على أجهزة حقيقية وعشرات التوليفات الحقيقية من المتصفحات وأنظمة التشغيل التي لا يستطيع أحد تثبيتها وصيانتها محليًا بشكل معقول. ويمنح مزودو CI السحابيون (ومنهم GitHub Actions المذكور أدناه في CI/CD) كل تشغيل اختبار جهازًا جديدًا قابلًا للتخلص منه — فلا ينجح الاختبار بصمت بسبب حالة تركها تشغيل سابق فحسب، وهي فئة أخطاء خفية يصعب إخفاؤها كثيرًا حين يبدأ كل تشغيل من الصفر.",
     s5P3Mid: " من AWS، أو شاهد ",
@@ -105,7 +105,7 @@
       "작은 팀에게 내 컴퓨터에서 테스트를 실행하는 것과 클라우드 브라우저 팜에서 실행하는 것의 실질적인 차이는 무엇인가요?",
       "커져 가는 테스트 스위트가 클라우드 CI 제공업체로 옮길 준비가 정말 되었는지 어떻게 판단하며, 옮기기 전에 무엇을 확인해야 하나요?"
     ],
-    s5Heading: "테스트를 위한 클라우드 호스팅",
+    s5Heading: "서버용 같은 클라우드 호스팅",
     s5P1Post: "은 서버, 브라우저, CI 러너 같은 인프라를 내가 소유한 컴퓨터가 아니라 다른 사람의 컴퓨터에서 실행하고, 하드웨어를 직접 사서 유지하는 대신 실제로 사용한 만큼만 비용을 내는 것을 뜻합니다.",
     s5P2: "이것이 테스트 페이지에 속하는 이유는 다음과 같습니다. 클라우드 브라우저 팜을 이용하면 테스트 스위트를 실제 기기와, 누구도 로컬에 합리적으로 설치하고 유지할 수 없는 수십 가지 실제 브라우저와 운영 체제 조합에서 실행할 수 있습니다. 그리고 클라우드 CI 제공업체(아래 CI/CD에서 언급하는 GitHub Actions도 그중 하나입니다)는 모든 테스트 실행에 새로 만든 일회용 머신을 제공하므로, 이전 실행이 우연히 남겨 둔 상태 덕분에 테스트가 조용히 통과하는 일이 없습니다. 모든 실행이 아무것도 없는 상태에서 시작되면 숨기기가 훨씬 어려워지는, 미묘한 버그 종류입니다.",
     s5P3Mid: "를 보거나, ",
@@ -123,7 +123,7 @@
       "Quelle est la différence pratique entre exécuter mes tests sur ma propre machine et sur une ferme de navigateurs dans le cloud, pour une petite équipe ?",
       "Comment décider si une suite de tests qui grandit est vraiment prête à passer à un fournisseur de CI dans le cloud, et que vérifier avant de faire ce changement ?"
     ],
-    s5Heading: "L'hébergement dans le cloud pour les tests",
+    s5Heading: "L'hébergement cloud, par exemple pour des serveurs",
     s5P1Post: " consiste à faire tourner de l'infrastructure — serveurs, navigateurs, exécuteurs de CI — sur les ordinateurs de quelqu'un d'autre plutôt que sur les vôtres, en payant ce que vous utilisez réellement au lieu d'acheter et de maintenir du matériel vous-même.",
     s5P2: "Voici pourquoi cela a sa place sur une page consacrée aux tests : les fermes de navigateurs dans le cloud permettent à une suite de tests de s'exécuter sur de vrais appareils et sur des dizaines de combinaisons réelles de navigateurs et de systèmes d'exploitation que personne ne pourrait raisonnablement installer et maintenir en local. Et les fournisseurs de CI dans le cloud (GitHub Actions, mentionné plus bas dans la section CI/CD, en est un) donnent à chaque exécution de test une machine neuve et jetable — de sorte qu'un test ne peut pas passer discrètement uniquement à cause d'un état laissé par une exécution précédente, une classe de bugs subtils bien plus difficile à dissimuler quand chaque exécution repart de zéro.",
     s5P3Mid: ", ou regardez la vidéo ",

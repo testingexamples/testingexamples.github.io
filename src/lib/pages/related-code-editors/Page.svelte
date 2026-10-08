@@ -77,7 +77,7 @@
       "Rwy'n defnyddio VS Code yn achlysurol yn barod — pa estyniadau neu nodweddion fyddai wir yn fy helpu i ysgrifennu a dadfygio profion awtomatiaeth porwr yn benodol?",
       "Sut ydw i'n sefydlu ffurfweddiad VS Code a rennir — estyniadau, gosodiadau, ffurfweddiad dadfygiwr — fel bod fy nhîm cyfan yn cael profiad cyson o ysgrifennu profion, nid dim ond fi?"
     ],
-    s1Heading: "Golygyddion cod — e.e. Visual Studio Code",
+    s1Heading: "Golygyddion cod fel Visual Studio Code",
     s1P1a: "Gallwch ysgrifennu sgript brawf mewn unrhyw olygydd testun plaen, ond mae golygydd cod priodol yn rhoi cryn dipyn o gymorth i chi am ddim. ",
     s1P1b: " yn lliwio'ch cod wrth i chi deipio, fel bod camgymeriad teipio fel braced cau ar goll yn amlwg yn weledol yn lle cuddio nes i chi redeg y sgript a chael gwall dryslyd. ",
     s1P1c1: " yn dangos i chi beth sydd ar gael mewn gwirionedd wrth i chi deipio — teipiwch ",
@@ -106,7 +106,7 @@
       "我已经偶尔在用 VS Code 了——有哪些扩展或功能能真正帮助我专门编写和调试浏览器自动化测试？",
       "我该如何设置一套团队共享的 VS Code 配置——扩展、设置、调试器配置——让我的整个团队都获得一致的测试编写体验，而不只是我一个人？"
     ],
-    s1Heading: "代码编辑器——例如 Visual Studio Code",
+    s1Heading: "代码编辑器，例如 Visual Studio Code",
     s1P1a: "你可以用任何纯文本编辑器写测试脚本，但一个正经的代码编辑器能免费给你意想不到的帮助。",
     s1P1b: "会在你输入代码时为其上色，因此像漏掉一个右括号这样的拼写错误会在视觉上一下子跳出来，而不是一直隐藏，直到你运行脚本得到一个莫名其妙的错误。",
     s1P1c1: "会在你输入时实时显示实际可用的内容——在现代编辑器里输入",
@@ -135,7 +135,7 @@
       "أستخدم VS Code بشكل عابر بالفعل — ما الإضافات أو الميزات التي ستفيدني فعلًا في كتابة اختبارات أتمتة المتصفح وتصحيحها تحديدًا؟",
       "كيف أُعدّ تكوينًا مشتركًا لـ VS Code — الإضافات والإعدادات وتكوين المصحّح — ليحصل فريقي كله على تجربة متسقة في كتابة الاختبارات، لا أنا وحدي؟"
     ],
-    s1Heading: "محررات الكود — مثل Visual Studio Code",
+    s1Heading: "محررات الكود مثل Visual Studio Code",
     s1P1a: "يمكنك كتابة سكربت اختبار في أي محرر نصوص عادي، لكن محرر الكود الحقيقي يعيد إليك قدرًا مفاجئًا من المساعدة مجانًا. ",
     s1P1b: " يلوّن الكود أثناء كتابتك، فيبرز الخطأ المطبعي مثل قوس إغلاق ناقص بصريًا بدلًا من أن يختبئ حتى تشغّل السكربت وتحصل على خطأ محيّر. ",
     s1P1c1: " يريك ما هو متاح فعلًا أثناء الكتابة — اكتب ",
@@ -164,7 +164,7 @@
       "저는 이미 VS Code를 가볍게 쓰고 있습니다. 브라우저 자동화 테스트를 작성하고 디버깅하는 데 구체적으로 어떤 확장 기능이나 기능이 도움이 될까요?",
       "확장 기능, 설정, 디버거 구성 같은 공유 VS Code 구성을 어떻게 만들어야 저뿐만 아니라 팀 전체가 일관된 테스트 작성 경험을 얻을 수 있을까요?"
     ],
-    s1Heading: "코드 에디터 — 예: Visual Studio Code",
+    s1Heading: "Visual Studio Code 같은 코드 에디터",
     s1P1a: "테스트 스크립트는 어떤 일반 텍스트 에디터에서도 작성할 수 있지만, 제대로 된 코드 에디터는 놀랄 만큼 많은 도움을 공짜로 돌려줍니다. ",
     s1P1b: "는 입력하는 동안 코드에 색을 입혀, 닫는 괄호가 빠진 것 같은 오타가 스크립트를 실행해 헷갈리는 오류를 받을 때까지 숨어 있지 않고 눈에 확 띄게 해 줍니다. ",
     s1P1c1: "은 입력하는 동안 실제로 사용할 수 있는 것을 보여 줍니다. 최신 에디터에서 ",
@@ -193,7 +193,7 @@
       "J'utilise déjà VS Code de façon occasionnelle — quelles extensions ou fonctionnalités m'aideraient vraiment à écrire et déboguer des tests d'automatisation de navigateur en particulier ?",
       "Comment mettre en place une configuration VS Code partagée — extensions, paramètres, configuration du débogueur — pour que toute mon équipe ait une expérience d'écriture de tests cohérente, et pas seulement moi ?"
     ],
-    s1Heading: "Éditeurs de code — par exemple Visual Studio Code",
+    s1Heading: "Les éditeurs de code comme Visual Studio Code",
     s1P1a: "Vous pouvez écrire un script de test dans n'importe quel éditeur de texte brut, mais un véritable éditeur de code vous apporte gratuitement une aide étonnante. ",
     s1P1b: " colore votre code pendant que vous le saisissez, de sorte qu'une faute de frappe comme une parenthèse fermante manquante saute aux yeux au lieu de se cacher jusqu'à ce que vous exécutiez le script et obteniez une erreur déroutante. ",
     s1P1c1: " vous montre ce qui est réellement disponible pendant que vous tapez — tapez ",

@@ -71,7 +71,7 @@
       "Mae gan fy mhrosiect ddigon o brofion porwr o'r dechrau i'r diwedd ond bron dim profion uned — a yw hynny'n broblem go iawn, a sut fyddwn i'n dechrau cywiro'r cydbwysedd?",
       "Sut ydw i'n penderfynu, ar gyfer nodwedd newydd benodol, pa haen o'r pyramid y mae prawf newydd yn perthyn iddi yn hytrach na throi'n ddiofyn at brawf arall o'r dechrau i'r diwedd?"
     ],
-    nextLabel: 'Nesaf: beth yw profi awtomatig porwr? →'
+    nextLabel: 'Nesaf: beth yw profi porwr? →'
   };
 
   const ZH: Messages = {
@@ -96,7 +96,7 @@
       '我的项目有很多端到端浏览器测试，但几乎没有单元测试——这真的是个问题吗？我该如何开始调整这个比例？',
       '对于某个具体的新功能，我该如何判断一个新测试应该属于金字塔的哪一层，而不是默认再写一个端到端测试？'
     ],
-    nextLabel: '下一步：什么是浏览器自动化测试？→'
+    nextLabel: '下一步：什么是浏览器测试？→'
   };
 
   const AR: Messages = {
@@ -121,7 +121,7 @@
       'يضم مشروعي كثيرًا من اختبارات المتصفح من البداية إلى النهاية لكن يكاد لا يضم اختبارات وحدة — هل هذه مشكلة فعلًا، وكيف أبدأ في إصلاح التوازن؟',
       'كيف أقرر، لميزة جديدة بعينها، في أي طبقة من الهرم ينتمي اختبار جديد بدلًا من اللجوء تلقائيًا إلى اختبار آخر من البداية إلى النهاية؟'
     ],
-    nextLabel: 'التالي: ما هو اختبار أتمتة المتصفح؟ ←'
+    nextLabel: 'التالي: ما هو اختبار المتصفح؟ ←'
   };
 
   const KO: Messages = {
@@ -146,7 +146,7 @@
       '제 프로젝트에는 엔드 투 엔드 브라우저 테스트는 많은데 단위 테스트는 거의 없습니다. 이것이 정말 문제인가요? 균형을 바로잡으려면 어떻게 시작해야 할까요?',
       '새 기능 하나를 놓고, 습관적으로 엔드 투 엔드 테스트를 또 하나 만들지 않고 새 테스트가 피라미드의 어느 계층에 속해야 하는지 어떻게 판단하나요?'
     ],
-    nextLabel: '다음: 브라우저 자동화 테스트란 무엇인가? →'
+    nextLabel: '다음: 브라우저 테스트란 무엇인가? →'
   };
 
   const FR: Messages = {
@@ -171,7 +171,7 @@
       "Mon projet a beaucoup de tests de navigateur de bout en bout mais presque aucun test unitaire — est-ce vraiment un problème, et comment commencer à rééquilibrer ?",
       "Comment décider, pour une nouvelle fonctionnalité précise, à quelle couche de la pyramide appartient un nouveau test, plutôt que d'ajouter par défaut un énième test de bout en bout ?"
     ],
-    nextLabel: "Suite : qu'est-ce que le test automatisé de navigateur ? →"
+    nextLabel: "Suite : qu'est-ce que le test de navigateur ? →"
   };
 
   const MESSAGES: Record<Locale, Messages> = {

@@ -124,10 +124,10 @@
   // isn't one of the -ise/-ize pairs Oxford spelling affects), so all four
   // English locales share one copy. See spec/locales/index.md.
   const CY: Messages = {
-    title: 'Sut mae deallusrwydd artiffisial yn helpu profi awtomatig?',
+    title: 'Deallusrwydd artiffisial ar gyfer profi awtomatig',
     metaDescription:
       "Golwg ymarferol, wedi'i seilio ar ffeithiau, ar ble mae deallusrwydd artiffisial (DA) yn ymddangos mewn profi awtomatig heddiw: ysgrifennu a chynnal profion, CI/CD, a darganfod ystwyth — ynghyd â'r rhybudd gonest sy'n berthnasol i'r tri.",
-    heading: 'Sut mae deallusrwydd artiffisial yn helpu profi awtomatig?',
+    heading: 'Deallusrwydd artiffisial ar gyfer profi awtomatig',
     intro:
       "Mae offer DA wedi dod yn rhan go iawn o sut mae profi awtomatig, CI/CD, a darganfod ystwyth yn gweithio heddiw. Mae'r dudalen hon yn ymdrin â thair ffordd y mae DA yn ymddangos yn y gwaith hwnnw, ac un rhybudd gonest sy'n berthnasol i'r tri.",
 
@@ -159,7 +159,7 @@
     li3P:
       " Codi baner ar batrymau cyfradd gwallau neu oedi anarferol yn awtomatig, yn hytrach na dibynnu ar berson yn gwylio dangosfwrdd ac yn sylwi bod rhywbeth yn edrych o'i le.",
     p4Pre: 'Gweler ',
-    p4LinkText: 'Beth yw profi integreiddio parhaus awtomatig?',
+    p4LinkText: 'Integreiddio parhaus ar gyfer profi awtomatig',
     p4Post: " am beth yw CI/CD yn y lle cyntaf, os yw'r term hwnnw'n newydd i chi.",
 
     h3Heading: 'DA mewn darganfod ystwyth — troi syniadau defnyddwyr yn brofion',
@@ -185,10 +185,10 @@
   };
 
   const ZH: Messages = {
-    title: '人工智能如何帮助自动化测试？',
+    title: '自动化测试中的人工智能',
     metaDescription:
       '一份务实、脚踏实地的介绍：AI 如今在自动化测试中的实际应用——编写和维护测试、CI/CD、以及敏捷探索——以及适用于这三者的一个诚实的提醒。',
-    heading: '人工智能如何帮助自动化测试？',
+    heading: '自动化测试中的人工智能',
     intro:
       'AI 工具已经成为如今自动化测试、CI/CD 和敏捷探索工作方式中真实的一部分。本页介绍 AI 在这项工作中出现的三种方式，以及适用于这三者的一个诚实的提醒。',
 
@@ -219,7 +219,7 @@
     li3Label: '部署后的日志与异常分析。',
     li3P: ' 自动标记异常的错误率或延迟模式，而不是依赖人工盯着仪表盘、留意有什么地方看起来不对劲。',
     p4Pre: '如果你对这个术语还不熟悉，可以参阅',
-    p4LinkText: '什么是持续集成自动化测试？',
+    p4LinkText: '自动化测试的持续集成',
     p4Post: '，了解 CI/CD 究竟是什么。',
 
     h3Heading: 'AI 在敏捷探索中的应用——把用户想法变成测试',
@@ -245,10 +245,10 @@
   };
 
   const AR: Messages = {
-    title: 'كيف يساعد الذكاء الاصطناعي في الاختبار الآلي؟',
+    title: 'الذكاء الاصطناعي للاختبار الآلي',
     metaDescription:
       'نظرة عملية واقعية على مواضع ظهور الذكاء الاصطناعي في الاختبار الآلي اليوم: كتابة الاختبارات وصيانتها، وCI/CD، والاستكشاف الرشيق — مع التحفظ الصريح الذي ينطبق على الثلاثة.',
-    heading: 'كيف يساعد الذكاء الاصطناعي في الاختبار الآلي؟',
+    heading: 'الذكاء الاصطناعي للاختبار الآلي',
     intro:
       'أصبحت أدوات الذكاء الاصطناعي جزءًا حقيقيًا من طريقة عمل الاختبار الآلي وCI/CD والاستكشاف الرشيق اليوم. تتناول هذه الصفحة ثلاث طرق يظهر بها الذكاء الاصطناعي في هذا العمل، وتحفظًا صريحًا واحدًا ينطبق على الثلاثة.',
 
@@ -280,7 +280,7 @@
     li3P:
       ' الإشارة تلقائيًا إلى أنماط غير عادية في معدل الأخطاء أو زمن الاستجابة، بدلًا من الاعتماد على شخص يراقب لوحة معلومات ويلاحظ أن شيئًا ما يبدو غير طبيعي.',
     p4Pre: 'انظر ',
-    p4LinkText: 'ما هو اختبار التكامل المستمر؟',
+    p4LinkText: 'التكامل المستمر للاختبار الآلي',
     p4Post: ' لمعرفة ما هو CI/CD أصلًا، إن كان هذا المصطلح جديدًا عليك.',
 
     h3Heading: 'الذكاء الاصطناعي في الاستكشاف الرشيق — تحويل أفكار المستخدمين إلى اختبارات',
@@ -306,10 +306,10 @@
   };
 
   const KO: Messages = {
-    title: '인공지능은 자동화 테스트를 어떻게 돕는가?',
+    title: '자동화 테스트를 위한 인공지능',
     metaDescription:
       '오늘날 자동화 테스트에서 AI가 어디에 등장하는지에 대한 현실적이고 실용적인 고찰: 테스트 작성과 유지보수, CI/CD, 애자일 디스커버리 — 그리고 세 가지 모두에 해당하는 솔직한 유의점.',
-    heading: '인공지능은 자동화 테스트를 어떻게 돕는가?',
+    heading: '자동화 테스트를 위한 인공지능',
     intro:
       'AI 도구는 오늘날 자동화 테스트, CI/CD, 애자일 디스커버리가 작동하는 방식의 실질적인 일부가 되었습니다. 이 페이지는 AI가 그 작업에 등장하는 세 가지 방식과, 세 가지 모두에 해당하는 솔직한 유의점 하나를 다룹니다.',
 
@@ -341,7 +341,7 @@
     li3P:
       ' 사람이 대시보드를 지켜보다가 뭔가 이상하다고 알아채는 데 의존하는 대신, 비정상적인 오류율이나 지연 시간 패턴을 자동으로 표시합니다.',
     p4Pre: 'CI/CD가 애초에 무엇인지 낯설다면 ',
-    p4LinkText: '지속적 통합 테스트란 무엇인가?',
+    p4LinkText: '자동화 테스트를 위한 지속적 통합',
     p4Post: '를 참고하세요.',
 
     h3Heading: '애자일 디스커버리에서의 AI — 사용자 아이디어를 테스트로',
@@ -367,10 +367,10 @@
   };
 
   const FR: Messages = {
-    title: "Comment l'intelligence artificielle aide-t-elle les tests automatisés ?",
+    title: "L'intelligence artificielle pour les tests automatisés",
     metaDescription:
       "Un regard concret et réaliste sur les endroits où l'IA intervient aujourd'hui dans le test automatisé : écriture et maintenance des tests, CI/CD et découverte agile — ainsi que la mise en garde honnête qui s'applique aux trois.",
-    heading: "Comment l'intelligence artificielle aide-t-elle les tests automatisés ?",
+    heading: "L'intelligence artificielle pour les tests automatisés",
     intro:
       "Les outils d'IA font désormais réellement partie de la façon dont fonctionnent aujourd'hui le test automatisé, le CI/CD et la découverte agile. Cette page présente trois façons dont l'IA intervient dans ce travail, et une mise en garde honnête qui s'applique aux trois.",
 
@@ -402,7 +402,7 @@
     li3P:
       " Signaler automatiquement des taux d'erreur ou des latences inhabituels, plutôt que de compter sur une personne qui surveille un tableau de bord et remarque que quelque chose semble anormal.",
     p4Pre: 'Voir ',
-    p4LinkText: "Qu'est-ce que le test automatisé d'intégration continue ?",
+    p4LinkText: "L'intégration continue pour les tests automatisés",
     p4Post: " pour savoir ce qu'est le CI/CD, si ce terme est nouveau pour vous.",
 
     h3Heading: "L'IA dans la découverte agile — transformer des idées d'utilisateurs en tests",

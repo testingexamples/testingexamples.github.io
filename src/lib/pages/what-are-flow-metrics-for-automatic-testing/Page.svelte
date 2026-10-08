@@ -52,10 +52,10 @@
   // vocabulary, so all four English locales share one copy. See
   // spec/locales/index.md.
   const CY: Messages = {
-    title: "Pa fetrigau sy'n helpu profi awtomatig?",
+    title: "Metrigau ar gyfer profi awtomatig",
     metaDescription:
       "Beth yw metrigau llif — amser cylchred, amser arwain, cyfradd brosesu, gwaith ar y gweill — a pham mae pentwr cynyddol o brofion wedi'u hepgor neu'n ansefydlog yn arwydd llif-fetrig ynddo'i hun bod dyled brofi'n cronni.",
-    heading: "Pa fetrigau sy'n helpu profi awtomatig?",
+    heading: "Metrigau ar gyfer profi awtomatig",
     flowMetricsLabel: 'Metrigau llif',
     introP:
       "yn mesur sut mae gwaith wir yn symud drwy broses: amser cylchred (pa mor hir mae un eitem yn ei gymryd o'r dechrau i'r diwedd), amser arwain, cyfradd brosesu, a gwaith ar y gweill. Y pwynt yw mesur beth sy'n symud go iawn, nid pa mor brysur y mae pobl yn ymddangos.",
@@ -71,14 +71,14 @@
       "Sut fyddwn i'n dechrau olrhain amser cylchred ar gyfer trwsio bygiau ar fy nhîm fy hun, heb brynu offer newydd?",
       "Sut ydw i'n defnyddio metrigau llif i wneud achos pendant bod pentwr cynyddol o brofion ansefydlog yn ddyled dechnegol wirioneddol, y gellir ei mesur?"
     ],
-    nextLabel: "Nesaf: sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig? →"
+    nextLabel: "Nesaf: lean Six Sigma ar gyfer profi awtomatig →"
   };
 
   const ZH: Messages = {
-    title: '哪些指标有助于自动化测试？',
+    title: '自动化测试的指标',
     metaDescription:
       '什么是流程指标——周期时间、交付时间、吞吐量、在制品——以及为什么不断增多的被跳过或不稳定的测试本身就是一个流程指标信号，表明测试债务正在累积。',
-    heading: '哪些指标有助于自动化测试？',
+    heading: '自动化测试的指标',
     flowMetricsLabel: '流程指标',
     introP:
       '衡量的是工作在流程中实际的流动情况：周期时间（一项工作从开始到结束需要多久）、交付时间、吞吐量，以及在制品数量。关键在于衡量真正在流动的东西，而不是人看起来有多忙。',
@@ -94,14 +94,14 @@
       '在不购买新工具的情况下，我该如何开始为自己团队的缺陷修复追踪周期时间？',
       '我该如何利用流程指标，具体地论证不断增多的不稳定测试是真实、可衡量的技术债？'
     ],
-    nextLabel: '下一步：六西格玛如何引导人工测试进入自动化测试？→'
+    nextLabel: '下一步：自动化测试的精益六西格玛→'
   };
 
   const AR: Messages = {
-    title: 'ما المقاييس التي تفيد الاختبار الآلي؟',
+    title: 'المقاييس للاختبار الآلي',
     metaDescription:
       'ما هي مقاييس التدفق — زمن الدورة وزمن الإنجاز والإنتاجية والعمل قيد التنفيذ — ولماذا يُعدّ تراكم الاختبارات المتجاوَزة أو غير المستقرة مؤشرًا بحد ذاته على تراكم دَين الاختبار.',
-    heading: 'ما المقاييس التي تفيد الاختبار الآلي؟',
+    heading: 'المقاييس للاختبار الآلي',
     flowMetricsLabel: 'مقاييس التدفق',
     introP:
       'تقيس كيف ينتقل العمل فعلًا عبر العملية: زمن الدورة (المدة التي يستغرقها عنصر واحد من البداية إلى النهاية)، وزمن الإنجاز، والإنتاجية، والعمل قيد التنفيذ. والمقصود قياس ما يتحرك فعلًا، لا مدى انشغال الناس في الظاهر.',
@@ -117,14 +117,14 @@
       'كيف أبدأ تتبع زمن الدورة لإصلاحات الأخطاء في فريقي دون شراء أدوات جديدة؟',
       'كيف أستخدم مقاييس التدفق لبناء حجة ملموسة بأن تراكم الاختبارات غير المستقرة دَين تقني حقيقي يمكن قياسه؟'
     ],
-    nextLabel: 'التالي: كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟ ←'
+    nextLabel: 'التالي: Lean Six Sigma للاختبار الآلي ←'
   };
 
   const KO: Messages = {
-    title: '자동화 테스트에 도움이 되는 지표는 무엇인가?',
+    title: '자동화 테스트를 위한 지표',
     metaDescription:
       '플로 지표란 무엇인가 — 사이클 타임, 리드 타임, 처리량, 진행 중인 작업 — 그리고 건너뛰거나 불안정한 테스트가 쌓여 가는 것이 왜 그 자체로 테스트 부채가 쌓이고 있다는 플로 지표 신호인지 설명합니다.',
-    heading: '자동화 테스트에 도움이 되는 지표는 무엇인가?',
+    heading: '자동화 테스트를 위한 지표',
     flowMetricsLabel: '플로 지표',
     introP:
       '는 작업이 프로세스를 통해 실제로 어떻게 흘러가는지를 측정합니다. 사이클 타임(항목 하나가 처음부터 끝까지 걸리는 시간), 리드 타임, 처리량, 진행 중인 작업이 그것입니다. 핵심은 사람들이 얼마나 바빠 보이는가가 아니라 실제로 움직이는 것을 측정하는 것입니다.',
@@ -140,14 +140,14 @@
       '새로운 도구를 구입하지 않고 우리 팀의 버그 수정 사이클 타임을 추적하려면 어떻게 시작해야 할까요?',
       '불안정한 테스트가 쌓여 가는 것이 실제로 측정 가능한 기술 부채라는 구체적인 근거를 플로 지표로 어떻게 만들 수 있을까요?'
     ],
-    nextLabel: '다음: Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가? →'
+    nextLabel: '다음: 자동화 테스트를 위한 린 식스 시그마 →'
   };
 
   const FR: Messages = {
-    title: 'Quelles métriques aident les tests automatisés ?',
+    title: 'Les métriques pour les tests automatisés',
     metaDescription:
       "Ce que sont les métriques de flux — temps de cycle, délai de livraison, débit, travail en cours — et pourquoi un tas croissant de tests ignorés ou instables est en soi un signal de flux indiquant que la dette de test s'accumule.",
-    heading: 'Quelles métriques aident les tests automatisés ?',
+    heading: 'Les métriques pour les tests automatisés',
     flowMetricsLabel: 'Les métriques de flux',
     introP:
       "mesurent la façon dont le travail avance réellement dans un processus : le temps de cycle (le temps que prend un élément de bout en bout), le délai de livraison, le débit et le travail en cours. L'objectif est de mesurer ce qui avance vraiment, et non l'air affairé des gens.",
@@ -163,7 +163,7 @@
       "Comment commencer à suivre le temps de cycle des corrections de bugs dans ma propre équipe, sans acheter de nouvel outil ?",
       "Comment utiliser les métriques de flux pour démontrer concrètement qu'un tas croissant de tests instables est une vraie dette technique, mesurable ?"
     ],
-    nextLabel: "Suite : comment Six Sigma mène-t-il des tests manuels aux tests automatisés ? →"
+    nextLabel: "Suite : lean Six Sigma pour les tests automatisés →"
   };
 
   const MESSAGES: Record<Locale, Messages> = {

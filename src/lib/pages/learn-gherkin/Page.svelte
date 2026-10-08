@@ -45,10 +45,10 @@
   };
 
   const CY: Messages = {
-    title: "Beth yw Gherkin?",
+    title: "Cystrawen Gherkin ar gyfer profi awtomatig",
     metaDescription:
       "Gherkin yw'r gystrawen Given-When-Then mewn iaith blaen a ddefnyddir i ddisgrifio sut y dylai meddalwedd ymddwyn, ac i yrru profion awtomatig.",
-    heading: "Beth yw Gherkin?",
+    heading: "Cystrawen Gherkin ar gyfer profi awtomatig",
     intro:
       "Mae Gherkin yn gystrawen fach, mewn iaith blaen, ar gyfer ysgrifennu sut y dylai meddalwedd ymddwyn, fel enghreifftiau y gall unrhyw un yn y tîm eu darllen. Gall offer fel Cucumber redeg yr enghreifftiau hynny fel profion awtomatig. Dyma'r fformat y tu ôl i ddatblygu ar sail ymddygiad (BDD).",
     keywordsHeading: "Yr allweddeiriau",
@@ -69,10 +69,10 @@
   };
 
   const ZH: Messages = {
-    title: "什么是 Gherkin？",
+    title: "自动化测试的 Gherkin 语法",
     metaDescription:
       "Gherkin 是用平实语言书写的 Given-When-Then 语法，用来描述软件应有的行为，并驱动自动化测试。",
-    heading: "什么是 Gherkin？",
+    heading: "自动化测试的 Gherkin 语法",
     intro:
       "Gherkin 是一种小巧的平实语言语法，用来把软件应有的行为写成团队中任何人都能读懂的示例。Cucumber 等工具可以把这些示例当作自动化测试来运行。它是行为驱动开发（BDD）背后的格式。",
     keywordsHeading: "关键字",
@@ -93,10 +93,10 @@
   };
 
   const AR: Messages = {
-    title: "ما هو Gherkin؟",
+    title: "صيغة Gherkin للاختبار الآلي",
     metaDescription:
       "Gherkin هو صيغة Given-When-Then بلغة بسيطة تُستخدم لوصف كيف ينبغي أن يتصرف البرنامج ولتشغيل الاختبارات الآلية.",
-    heading: "ما هو Gherkin؟",
+    heading: "صيغة Gherkin للاختبار الآلي",
     intro:
       "Gherkin صيغة صغيرة بلغة بسيطة لكتابة كيف ينبغي أن يتصرف البرنامج، على شكل أمثلة يستطيع أي فرد في الفريق قراءتها. ويمكن لأدوات مثل Cucumber تشغيل تلك الأمثلة كاختبارات آلية. وهي الصيغة التي يقوم عليها التطوير الموجَّه بالسلوك (BDD).",
     keywordsHeading: "الكلمات المفتاحية",
@@ -117,10 +117,10 @@
   };
 
   const KO: Messages = {
-    title: "Gherkin이란 무엇인가?",
+    title: "자동화 테스트를 위한 Gherkin 문법",
     metaDescription:
       "Gherkin은 소프트웨어가 어떻게 동작해야 하는지 설명하고 자동화 테스트를 실행하는 데 쓰는 평이한 언어의 Given-When-Then 문법입니다.",
-    heading: "Gherkin이란 무엇인가?",
+    heading: "자동화 테스트를 위한 Gherkin 문법",
     intro:
       "Gherkin은 소프트웨어가 어떻게 동작해야 하는지를 팀의 누구나 읽을 수 있는 예제로 적는, 작고 평이한 언어의 문법입니다. Cucumber 같은 도구가 이 예제를 자동화 테스트로 실행할 수 있습니다. 행동 주도 개발(BDD)의 바탕이 되는 형식입니다.",
     keywordsHeading: "키워드",
@@ -141,10 +141,10 @@
   };
 
   const FR: Messages = {
-    title: "Qu'est-ce que Gherkin ?",
+    title: "La syntaxe Gherkin pour les tests automatisés",
     metaDescription:
       "Gherkin est la syntaxe Given-When-Then en langage courant qui sert à décrire le comportement attendu d'un logiciel et à piloter des tests automatisés.",
-    heading: "Qu'est-ce que Gherkin ?",
+    heading: "La syntaxe Gherkin pour les tests automatisés",
     intro:
       "Gherkin est une petite syntaxe en langage courant pour décrire le comportement attendu d'un logiciel sous forme d'exemples que chaque membre de l'équipe peut lire. Des outils comme Cucumber peuvent ensuite exécuter ces exemples comme des tests automatisés. C'est le format qui sous-tend le développement piloté par le comportement (BDD).",
     keywordsHeading: "Les mots-clés",

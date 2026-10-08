@@ -51,10 +51,10 @@
   // vocabulary, so all four English locales share one copy. See
   // spec/locales/index.md.
   const CY: Messages = {
-    title: 'Beth yw DevOps ar gyfer profi awtomatig?',
+    title: 'Devops ar gyfer profi awtomatig',
     metaDescription:
       "Beth yw DevOps, a pham mae profi mewn cynhyrchu — rhyddhau canari, baneri nodwedd, gwylio cyfraddau gwallau go iawn ar ôl defnyddio'r cod — yn ategu profi cyn-rhyddhau'n ddilys yn hytrach na'i ddisodli.",
-    heading: 'Beth yw DevOps ar gyfer profi awtomatig?',
+    heading: 'Devops ar gyfer profi awtomatig',
     introP:
       "yw'r arfer ehangach y mae CI/CD yn rhan ohono: chwalu'r wal rhwng y bobl sy'n ysgrifennu meddalwedd a'r bobl sy'n ei rhedeg mewn cynhyrchu, fel bod y ddau grŵp yn rhannu cyfrifoldeb am a yw'n gweithio go iawn unwaith y bydd defnyddwyr go iawn yn ei defnyddio.",
     belongsP:
@@ -69,14 +69,14 @@
       "Beth yw rhyddhau canari, a sut fyddai profi'n cyd-fynd ag un yn lle cael ei ddisodli ganddo?",
       "Sut mae timau aeddfed yn penderfynu pa rwyd ddiogelwch — profi cyn-rhyddhau neu arfer DevOps fel baneri nodwedd — ddylai ddal math penodol o fethiant?"
     ],
-    nextLabel: "Nesaf: pa fetrigau sy'n helpu profi awtomatig? →"
+    nextLabel: "Nesaf: metrigau ar gyfer profi awtomatig →"
   };
 
   const ZH: Messages = {
-    title: '什么是自动化测试中的 DevOps？',
+    title: '自动化测试的 devops',
     metaDescription:
       '什么是 DevOps，以及为什么在生产环境中测试——金丝雀发布、功能开关、部署后观察真实错误率——是对发布前测试的正当补充，而不是取代它。',
-    heading: '什么是自动化测试中的 DevOps？',
+    heading: '自动化测试的 devops',
     introP:
       '是 CI/CD 所处的更广泛实践：打破编写软件的人和在生产环境中运行软件的人之间的隔阂，让这两个群体共同为软件在真实用户接触后是否真的能用负责。',
     belongsP:
@@ -91,14 +91,14 @@
       '什么是金丝雀发布，测试又该如何与它配合，而不是被它取代？',
       '成熟的团队是如何判断某一类故障应该由哪种安全网来捕获——是发布前测试，还是像功能开关这样的 DevOps 实践？'
     ],
-    nextLabel: '下一步：哪些指标有助于自动化测试？→'
+    nextLabel: '下一步：自动化测试的指标→'
   };
 
   const AR: Messages = {
-    title: 'ما هو DevOps للاختبار الآلي؟',
+    title: 'Devops للاختبار الآلي',
     metaDescription:
       'ما هو DevOps، ولماذا يكمّل الاختبار في بيئة الإنتاج — الإصدارات التجريبية المحدودة (canary) وأعلام الميزات ومراقبة معدلات الأخطاء الفعلية بعد النشر — الاختبار قبل الإصدار بدلًا من أن يحلّ محله.',
-    heading: 'ما هو DevOps للاختبار الآلي؟',
+    heading: 'Devops للاختبار الآلي',
     introP:
       'هو الممارسة الأوسع التي يندرج فيها CI/CD: هدم الجدار بين من يكتبون البرمجيات ومن يشغّلونها في بيئة الإنتاج، ليتشارك الفريقان المسؤولية عن عملها فعلًا حين يلمسها المستخدمون الحقيقيون.',
     belongsP:
@@ -113,14 +113,14 @@
       'ما هو الإصدار التجريبي المحدود (canary)، وكيف يتكامل الاختبار معه بدلًا من أن يُستبدل به؟',
       'كيف تقرر الفرق الناضجة أي شبكة أمان — الاختبار قبل الإصدار أم ممارسة DevOps مثل أعلام الميزات — ينبغي أن تلتقط نوعًا معينًا من الإخفاقات؟'
     ],
-    nextLabel: 'التالي: ما المقاييس التي تفيد الاختبار الآلي؟ ←'
+    nextLabel: 'التالي: المقاييس للاختبار الآلي ←'
   };
 
   const KO: Messages = {
-    title: '자동화 테스트를 위한 DevOps란 무엇인가?',
+    title: '자동화 테스트를 위한 devops',
     metaDescription:
       'DevOps란 무엇이며, 프로덕션에서의 테스트 — 카나리 릴리스, 기능 플래그, 배포 직후 실제 오류율 관찰 — 가 왜 릴리스 전 테스트를 대체하는 것이 아니라 정당하게 보완하는지 설명합니다.',
-    heading: '자동화 테스트를 위한 DevOps란 무엇인가?',
+    heading: '자동화 테스트를 위한 devops',
     introP:
       '는 CI/CD가 속해 있는 더 넓은 관행입니다. 소프트웨어를 작성하는 사람과 프로덕션에서 운영하는 사람 사이의 벽을 허물어, 실제 사용자가 사용하기 시작한 뒤 소프트웨어가 정말로 동작하는지에 대한 책임을 두 집단이 함께 지도록 하는 것입니다.',
     belongsP:
@@ -135,14 +135,14 @@
       '카나리 릴리스란 무엇이며, 테스트가 그것을 대체하지 않고 나란히 놓이려면 어떻게 해야 하나요?',
       '성숙한 팀은 특정 종류의 실패를 릴리스 전 테스트가 잡아야 할지, 기능 플래그 같은 DevOps 관행이 잡아야 할지 어떻게 결정하나요?'
     ],
-    nextLabel: '다음: 자동화 테스트에 도움이 되는 지표는 무엇인가? →'
+    nextLabel: '다음: 자동화 테스트를 위한 지표 →'
   };
 
   const FR: Messages = {
-    title: "Qu'est-ce que DevOps pour les tests automatisés ?",
+    title: "Le devops pour les tests automatisés",
     metaDescription:
       "Ce qu'est DevOps, et pourquoi le test en production — déploiements canari, feature flags, surveillance des taux d'erreur réels après un déploiement — complète légitimement les tests avant livraison au lieu de les remplacer.",
-    heading: "Qu'est-ce que DevOps pour les tests automatisés ?",
+    heading: "Le devops pour les tests automatisés",
     introP:
       "est la pratique plus large dans laquelle s'inscrit le CI/CD : abattre le mur entre les personnes qui écrivent le logiciel et celles qui l'exploitent en production, afin que les deux groupes partagent la responsabilité de savoir s'il fonctionne réellement une fois que de vrais utilisateurs l'utilisent.",
     belongsP:
@@ -157,7 +157,7 @@
       "Qu'est-ce qu'un déploiement canari, et comment les tests s'articuleraient-ils avec lui au lieu d'être remplacés par lui ?",
       "Comment les équipes matures décident-elles quel filet de sécurité — tests avant livraison ou pratique DevOps comme les feature flags — doit attraper un type d'échec donné ?"
     ],
-    nextLabel: "Suite : quelles métriques aident les tests automatisés ? →"
+    nextLabel: "Suite : les métriques pour les tests automatisés →"
   };
 
   const MESSAGES: Record<Locale, Messages> = {

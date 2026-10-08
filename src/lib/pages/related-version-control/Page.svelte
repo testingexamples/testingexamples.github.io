@@ -74,7 +74,7 @@
       "Fe wnes i ymrwymo newid ar ddamwain rydw i am ei ddadwneud — beth yw ffordd ddiogel o'i ddadwneud heb golli gwaith arall?",
       "Sut dylai tîm strwythuro canghennau git a cheisiadau tynnu yn benodol o amgylch cod profi, fel nad yw prawf ansefydlog neu doredig yn rhwystro newidiadau digyswllt?"
     ],
-    s2Heading: "Rheoli fersiynau — git a GitHub",
+    s2Heading: "Systemau rheoli fersiynau fel Git a GitHub",
     s2P1a: "Heb reoli fersiynau, mae \"trwsio prawf\" fel arfer yn golygu trosysgrifo'r hen ffeil a gobeithio nad oes angen y fersiwn flaenorol yn ôl arnoch. Mae ",
     s2P1b: " yn datrys hynny drwy gadw pob fersiwn o bob ffeil y mae'n ei olrhain: mae'n gadael i chi weld yn union beth newidiodd, pryd, a — drwy neges ymrwymo — pam, ac mae'n gadael i chi ddadwneud newid gwael yn ddiogel yn lle ceisio cofio sut roedd y cod arfer edrych.",
     s2P2Label: "GitHub",
@@ -102,7 +102,7 @@
       "我不小心提交了一个想撤销的改动——有什么安全的方法可以撤销它而不丢失其他工作？",
       "团队应该如何专门围绕测试代码来组织 git 分支和 pull request，才能让一个不稳定或损坏的测试不会阻塞其他无关的改动？"
     ],
-    s2Heading: "版本控制——git 和 GitHub",
+    s2Heading: "Git 和 GitHub 等版本控制系统",
     s2P1a: "没有版本控制，“修复一个测试”通常意味着覆盖旧文件，然后祈祷自己不需要把之前的版本要回来。",
     s2P1b: "通过保留它所追踪的每个文件的每一个版本来解决这个问题：它让你能确切看到什么发生了改变、何时改变的，以及——通过提交信息——为什么改变，并让你能安全地撤销一次糟糕的改动，而不用去回想代码原来是什么样子的。",
     s2P2Label: "GitHub",
@@ -130,7 +130,7 @@
       "أودعتُ عن طريق الخطأ تغييرًا أريد التراجع عنه — ما الطريقة الآمنة للتراجع عنه دون فقدان عمل آخر؟",
       "كيف ينبغي للفريق تنظيم فروع git وطلبات الدمج حول كود الاختبار تحديدًا، بحيث لا يعطّل اختبار غير مستقر أو معطوب تغييرات غير ذات صلة؟"
     ],
-    s2Heading: "التحكم في الإصدارات — git وGitHub",
+    s2Heading: "أنظمة التحكم في الإصدارات مثل Git وGitHub",
     s2P1a: "من دون التحكم في الإصدارات، يعني «إصلاح اختبار» عادةً الكتابة فوق الملف القديم والأمل ألا تحتاج إلى النسخة السابقة. ",
     s2P1b: " يحل ذلك بالاحتفاظ بكل إصدار من كل ملف يتتبعه: فهو يتيح لك رؤية ما تغيّر بالضبط، ومتى، و— عبر رسالة الإيداع — لماذا، ويتيح لك التراجع عن تغيير سيئ بأمان بدلًا من محاولة تذكّر كيف كان الكود.",
     s2P2Label: "GitHub",
@@ -158,7 +158,7 @@
       "실수로 되돌리고 싶은 변경을 커밋했습니다. 다른 작업을 잃지 않고 안전하게 되돌리는 방법은 무엇인가요?",
       "팀이 테스트 코드를 중심으로 git 브랜치와 풀 리퀘스트를 어떻게 구성해야 불안정하거나 깨진 테스트가 관련 없는 변경을 막지 않을까요?"
     ],
-    s2Heading: "버전 관리 — git과 GitHub",
+    s2Heading: "Git과 GitHub 같은 버전 관리 시스템",
     s2P1a: "버전 관리가 없으면 \"테스트 고치기\"는 보통 이전 파일을 덮어쓰고 이전 버전이 필요 없기를 바라는 것을 뜻합니다. ",
     s2P1b: "은 추적하는 모든 파일의 모든 버전을 보관하여 이를 해결합니다. 무엇이 언제 바뀌었는지, 그리고 커밋 메시지를 통해 왜 바뀌었는지 정확히 볼 수 있고, 코드가 예전에 어땠는지 기억하려고 애쓰는 대신 나쁜 변경을 안전하게 되돌릴 수 있습니다.",
     s2P2Label: "GitHub",
@@ -186,7 +186,7 @@
       "J'ai commité une modification par erreur et je veux l'annuler — quelle est une façon sûre de le faire sans perdre d'autre travail ?",
       "Comment une équipe devrait-elle structurer ses branches git et ses pull requests autour du code de test, pour qu'un test instable ou cassé ne bloque pas des modifications sans rapport ?"
     ],
-    s2Heading: "Gestion de versions — git et GitHub",
+    s2Heading: "Les systèmes de gestion de versions comme Git et GitHub",
     s2P1a: "Sans gestion de versions, « corriger un test » signifie généralement écraser l'ancien fichier en espérant ne pas avoir besoin de la version précédente. ",
     s2P1b: " résout cela en conservant chaque version de chaque fichier qu'il suit : il permet de voir exactement ce qui a changé, quand et — grâce au message de commit — pourquoi, et il permet d'annuler sans risque une mauvaise modification plutôt que d'essayer de se souvenir de ce à quoi ressemblait le code.",
     s2P2Label: "GitHub",

@@ -51,10 +51,10 @@
   // vocabulary, so all four English locales share one copy. See
   // spec/locales/index.md.
   const CY: Messages = {
-    title: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
+    title: 'Lean Six Sigma ar gyfer profi awtomatig',
     metaDescription:
       "Beth yw Six Sigma, a pham mae profi â llaw ei hun yn broblem amrywiad y mae'n ei thargedu — nid yw person yn cynhyrchu'r un canlyniad yn ddibynadwy ddwywaith, sef yn union yr hyn y mae awtomeiddio gwiriad yn ei ddileu.",
-    heading: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
+    heading: 'Lean Six Sigma ar gyfer profi awtomatig',
     introP:
       "yw disgyblaeth ar gyfer lleihau diffygion drwy leihau amrywiad: dylai'r un mewnbwn gynhyrchu'r un allbwn yn ddibynadwy, a lle nad yw'n gwneud hynny, mae'r amrywiad hwnnw'n cael ei fesur a'i ddadansoddi i ganfod ei wraidd-achos yn hytrach na'i anwybyddu. Dechreuodd mewn gweithgynhyrchu ac erbyn hyn caiff ei gymhwyso i unrhyw broses ailadroddadwy — cyflenwi meddalwedd gan gynnwys.",
     belongsP:
@@ -70,14 +70,14 @@
       "Sut mae profi â llaw ei hun yn ffynhonnell amrywiad, yn ystyr Six Sigma, o'i gymharu â phrawf awtomatig sy'n rhedeg yr un ffordd bob tro?",
       "Sut fyddwn i'n cymhwyso syniad Six Sigma o 'ganfod gwraidd-achos amrywiad' ar gyfer un prawf awtomatig ansefydlog penodol, yn lle ei ailredeg nes iddo basio?"
     ],
-    nextLabel: 'Nesaf: beth yw profi integreiddio parhaus awtomatig? →'
+    nextLabel: 'Nesaf: integreiddio parhaus ar gyfer profi awtomatig →'
   };
 
   const ZH: Messages = {
-    title: '六西格玛如何引导人工测试进入自动化测试？',
+    title: '自动化测试的精益六西格玛',
     metaDescription:
       '什么是六西格玛，以及为什么人工测试本身正是它所针对的“变异”问题——一个人不会可靠地两次做出同样的结果，而这恰恰是把某项检查自动化之后能消除的东西。',
-    heading: '六西格玛如何引导人工测试进入自动化测试？',
+    heading: '自动化测试的精益六西格玛',
     introP:
       '是一门通过减少变异来减少缺陷的学科：相同的输入应该可靠地产生相同的输出，而当情况不是这样时，这种变异会被度量并追溯到根本原因，而不是被耸耸肩带过。它起源于制造业，如今被应用到任何可重复的流程中——软件交付也不例外。',
     belongsP:
@@ -93,14 +93,14 @@
       '从六西格玛的角度看，相比每次都以同样方式运行的自动化测试，人工测试本身是如何成为变异来源的？',
       '我该如何把六西格玛“追溯变异根本原因”的理念，应用到某一个具体的不稳定自动化测试上，而不是反复重跑直到它通过？'
     ],
-    nextLabel: '下一步：什么是持续集成自动化测试？→'
+    nextLabel: '下一步：自动化测试的持续集成→'
   };
 
   const AR: Messages = {
-    title: 'كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟',
+    title: 'Lean Six Sigma للاختبار الآلي',
     metaDescription:
       'ما هو Six Sigma، ولماذا يُعدّ الاختبار اليدوي نفسه مشكلة التباين التي يستهدفها — فالشخص لا ينتج النتيجة نفسها مرتين على نحو موثوق، وهذا بالضبط ما تزيله أتمتة الفحص.',
-    heading: 'كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟',
+    heading: 'Lean Six Sigma للاختبار الآلي',
     introP:
       'هو منهج لتقليل العيوب عن طريق تقليل التباين: ينبغي أن يُنتج المدخل نفسه المخرج نفسه على نحو موثوق، وحيث لا يحدث ذلك يُقاس هذا التباين ويُبحث عن جذر سببه بدلًا من التغاضي عنه. نشأ في التصنيع، ويُطبَّق الآن على أي عملية قابلة للتكرار — بما فيها تسليم البرمجيات.',
     belongsP:
@@ -116,14 +116,14 @@
       'كيف يكون الاختبار اليدوي نفسه مصدرًا للتباين بمفهوم Six Sigma، مقارنةً باختبار آلي يعمل بالطريقة نفسها في كل مرة؟',
       'كيف أطبّق فكرة Six Sigma عن «البحث عن جذر التباين» على اختبار آلي واحد غير مستقر، بدلًا من إعادة تشغيله حتى ينجح؟'
     ],
-    nextLabel: 'التالي: ما هو اختبار التكامل المستمر؟ ←'
+    nextLabel: 'التالي: التكامل المستمر للاختبار الآلي ←'
   };
 
   const KO: Messages = {
-    title: 'Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가?',
+    title: '자동화 테스트를 위한 린 식스 시그마',
     metaDescription:
       'Six Sigma란 무엇이며, 수동 테스트 자체가 왜 그것이 겨냥하는 변동 문제인가 — 사람은 같은 결과를 두 번 안정적으로 만들어 내지 못하며, 이것이 바로 확인을 자동화하면 사라지는 것입니다.',
-    heading: 'Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가?',
+    heading: '자동화 테스트를 위한 린 식스 시그마',
     introP:
       '는 변동을 줄여 결함을 줄이는 방법론입니다. 같은 입력은 안정적으로 같은 출력을 내야 하고, 그렇지 않은 곳에서는 그 변동을 대충 넘기지 않고 측정하여 근본 원인을 찾습니다. 제조업에서 시작되었으며, 지금은 소프트웨어 전달을 포함해 반복 가능한 모든 프로세스에 적용됩니다.',
     belongsP:
@@ -139,14 +139,14 @@
       '매번 같은 방식으로 실행되는 자동화 테스트와 비교할 때, 수동 테스트 자체는 Six Sigma의 의미에서 어떻게 변동의 원천이 되나요?',
       "불안정한 자동화 테스트 하나에 대해, 통과할 때까지 다시 실행하는 대신 Six Sigma의 '변동의 근본 원인 찾기'를 어떻게 적용할 수 있을까요?"
     ],
-    nextLabel: '다음: 지속적 통합 테스트란 무엇인가? →'
+    nextLabel: '다음: 자동화 테스트를 위한 지속적 통합 →'
   };
 
   const FR: Messages = {
-    title: 'Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?',
+    title: 'Lean Six Sigma pour les tests automatisés',
     metaDescription:
       "Ce qu'est Six Sigma, et pourquoi le test manuel est lui-même le problème de variation qu'il cible — une personne ne produit pas de façon fiable deux fois le même résultat, ce qu'élimine précisément l'automatisation d'une vérification.",
-    heading: 'Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?',
+    heading: 'Lean Six Sigma pour les tests automatisés',
     introP:
       "est une discipline visant à réduire les défauts en réduisant la variation : une même entrée doit produire de façon fiable la même sortie, et là où ce n'est pas le cas, cette variation est mesurée et analysée jusqu'à sa cause racine plutôt qu'écartée d'un haussement d'épaules. Née dans l'industrie manufacturière, elle s'applique aujourd'hui à tout processus répétable — y compris la livraison de logiciels.",
     belongsP:
@@ -162,7 +162,7 @@
       "En quoi le test manuel est-il lui-même une source de variation, au sens de Six Sigma, comparé à un test automatisé qui s'exécute de la même façon à chaque fois ?",
       "Comment appliquer l'idée de Six Sigma consistant à « chercher la cause racine de la variation » à un test automatisé instable précis, au lieu de simplement le relancer jusqu'à ce qu'il passe ?"
     ],
-    nextLabel: "Suite : qu'est-ce que le test automatisé d'intégration continue ? →"
+    nextLabel: "Suite : l'intégration continue pour les tests automatisés →"
   };
 
   const MESSAGES: Record<Locale, Messages> = {

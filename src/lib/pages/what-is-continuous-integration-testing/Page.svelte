@@ -39,10 +39,10 @@
   // vocabulary, so all four English locales share one copy. See
   // spec/locales/index.md.
   const CY: Messages = {
-    title: "Beth yw profi integreiddio parhaus awtomatig?",
+    title: "Integreiddio parhaus ar gyfer profi awtomatig",
     metaDescription:
       "Beth yw profi integreiddio parhaus (CI): rhedeg eich cyfres profion awtomatig yn awtomatig ar bob newid, fel bod cod toredig yn cael ei ddal cyn iddo uno yn hytrach nag wedyn.",
-    heading: 'Beth yw profi integreiddio parhaus awtomatig?',
+    heading: 'Integreiddio parhaus ar gyfer profi awtomatig',
     intro:
       "Mae profi integreiddio parhaus (CI) yn golygu rhedeg eich cyfres profion awtomatig yn awtomatig bob tro y bydd rhywun yn cynnig newid, yn lle dibynnu ar berson i gofio ei redeg â llaw.",
     p1: "Mae gweinydd CI (mae GitHub Actions, GitLab CI, Jenkins, ac offer tebyg i gyd yn gwneud hyn) yn gwylio ystorfa am ymrwymiadau a chaisiadau tynnu newydd. Ar bob un, mae'n cael copi o'r cod, yn gosod dibyniaethau, ac yn rhedeg y gyfres profion o'r dechrau, mewn amgylchedd glân, yr un ffordd bob tro — profion uned, profion integreiddio, a hefyd yn aml y profion awtomatiaeth porwr y mae'r wefan hon yn ymwneud â nhw, i gyd mewn un rhediad. Adroddir y canlyniad — llwyddiant neu fethiant — yn syth ar y cais tynnu, cyn i adolygydd dynol hyd yn oed ei agor.",
@@ -57,10 +57,10 @@
   };
 
   const ZH: Messages = {
-    title: '什么是持续集成自动化测试？',
+    title: '自动化测试的持续集成',
     metaDescription:
       '什么是持续集成（CI）测试：在每次更改时自动运行你的自动化测试套件，以便在合并之前发现有问题的代码，而不是之后。',
-    heading: '什么是持续集成自动化测试？',
+    heading: '自动化测试的持续集成',
     intro:
       '持续集成（CI）测试是指每次有人提出更改时都自动运行你的自动化测试套件，而不是依赖某个人记得手动运行它。',
     p1: 'CI 服务器（GitHub Actions、GitLab CI、Jenkins 等工具都能做到这一点）会监视代码仓库中的新提交和拉取请求。每次都会检出代码、安装依赖项，并在干净的环境中从头运行测试套件，每次都以相同的方式运行——单元测试、集成测试，通常还包括本站介绍的浏览器自动化测试，全部在一次运行中完成。结果——通过或失败——会直接在拉取请求上报告，甚至在人工审阅者打开它之前。',
@@ -75,10 +75,10 @@
   };
 
   const AR: Messages = {
-    title: 'ما هو اختبار التكامل المستمر؟',
+    title: 'التكامل المستمر للاختبار الآلي',
     metaDescription:
       'ما هو اختبار التكامل المستمر (CI): تشغيل مجموعة اختباراتك الآلية تلقائيًا مع كل تغيير، فيُكتشف الكود المعطوب قبل دمجه لا بعده.',
-    heading: 'ما هو اختبار التكامل المستمر؟',
+    heading: 'التكامل المستمر للاختبار الآلي',
     intro:
       'اختبار التكامل المستمر (CI) هو تشغيل مجموعة اختباراتك الآلية تلقائيًا في كل مرة يقترح فيها أحدهم تغييرًا، بدلًا من الاعتماد على شخص يتذكر تشغيلها يدويًا.',
     p1: 'يراقب خادم CI (وهذا ما تفعله GitHub Actions وGitLab CI وJenkins وأدوات مشابهة) المستودع بحثًا عن عمليات الإيداع وطلبات الدمج الجديدة. ومع كل واحدة منها يسحب الكود، ويثبّت الاعتماديات، ويشغّل مجموعة الاختبارات من الصفر في بيئة نظيفة، بالطريقة نفسها في كل مرة — اختبارات الوحدة واختبارات التكامل، وغالبًا اختبارات أتمتة المتصفح التي يدور حولها هذا الموقع، كلها في تشغيل واحد. وتُعرض النتيجة — نجاح أو فشل — مباشرةً على طلب الدمج، قبل أن يفتحه أي مراجع بشري.',
@@ -93,10 +93,10 @@
   };
 
   const KO: Messages = {
-    title: '지속적 통합 테스트란 무엇인가?',
+    title: '자동화 테스트를 위한 지속적 통합',
     metaDescription:
       '지속적 통합(CI) 테스트란 무엇인가: 변경이 있을 때마다 자동화 테스트 스위트를 자동으로 실행하여, 깨진 코드를 병합 후가 아니라 병합 전에 잡아냅니다.',
-    heading: '지속적 통합 테스트란 무엇인가?',
+    heading: '자동화 테스트를 위한 지속적 통합',
     intro:
       '지속적 통합(CI) 테스트는 누군가 변경을 제안할 때마다 사람이 직접 실행하기를 기억하는 데 의존하지 않고, 자동화 테스트 스위트를 자동으로 실행하는 것입니다.',
     p1: 'CI 서버(GitHub Actions, GitLab CI, Jenkins 등의 도구가 모두 이 역할을 합니다)는 저장소의 새 커밋과 풀 리퀘스트를 지켜봅니다. 그 하나하나마다 코드를 체크아웃하고, 의존성을 설치하고, 깨끗한 환경에서 테스트 스위트를 처음부터, 매번 같은 방식으로 실행합니다. 단위 테스트, 통합 테스트, 그리고 이 사이트가 다루는 브라우저 자동화 테스트까지 한 번의 실행에 모두 포함됩니다. 통과 또는 실패라는 결과는 사람 리뷰어가 풀 리퀘스트를 열기도 전에 풀 리퀘스트 위에 바로 보고됩니다.',
@@ -111,10 +111,10 @@
   };
 
   const FR: Messages = {
-    title: "Qu'est-ce que le test automatisé d'intégration continue ?",
+    title: "L'intégration continue pour les tests automatisés",
     metaDescription:
       "Ce qu'est le test d'intégration continue (CI) : exécuter automatiquement votre suite de tests automatisés à chaque modification, afin que le code cassé soit détecté avant sa fusion plutôt qu'après.",
-    heading: "Qu'est-ce que le test automatisé d'intégration continue ?",
+    heading: "L'intégration continue pour les tests automatisés",
     intro:
       "Le test d'intégration continue (CI) consiste à exécuter automatiquement votre suite de tests automatisés chaque fois que quelqu'un propose une modification, au lieu de compter sur une personne pour penser à la lancer à la main.",
     p1: "Un serveur de CI (GitHub Actions, GitLab CI, Jenkins et des outils similaires font tous cela) surveille un dépôt à la recherche de nouveaux commits et de nouvelles pull requests. À chacun, il récupère le code, installe les dépendances et exécute la suite de tests depuis zéro, dans un environnement propre, de la même façon à chaque fois — tests unitaires, tests d'intégration et, souvent, les tests d'automatisation de navigateur dont traite ce site, le tout en une seule exécution. Le résultat — succès ou échec — est signalé directement sur la pull request, avant même qu'un relecteur humain ne l'ouvre.",
