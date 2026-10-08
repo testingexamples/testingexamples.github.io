@@ -122,6 +122,9 @@ Code slugs: `code`, `cod`, `代码`, `الكود`, `코드`, `code`.
 Topics slugs (the former Learn hub): `topics`, `pynciau`, `主题`, `المواضيع`, `주제`,
 `sujets`. Gherkin is nested under it: `topics/gherkin`, `pynciau/gherkin`,
 `主题/gherkin`, `المواضيع/gherkin`, `주제/gherkin`, `sujets/gherkin`.
+The unit test page is nested the same way: `topics/unit-test`,
+`pynciau/unit-test`, `主题/unit-test`, `المواضيع/unit-test`, `주제/unit-test`,
+`sujets/unit-test`.
 The fixture section is never translated anywhere: it is a contract/standard,
 not content, the same category as a code sample or a product name. Both the
 root page and every locale's Practice page import it

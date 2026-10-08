@@ -264,6 +264,10 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   keywords, a short example, and a link to `/given-when-then/`. Linked from
   the end of `/topics/`'s Learn More list. Its slug is `<topics slug>/gherkin`
   in every locale (for example `/cy-gb/pynciau/gherkin/`).
+- `/topics/unit-test/` — "What is a unit test?": what makes a unit test good,
+  the Arrange-Act-Assert shape with a short JavaScript example, and a link to
+  `/what-is-the-testing-pyramid/`. Linked after Gherkin at the end of
+  `/topics/`'s Learn More list. Its slug is `<topics slug>/unit-test`.
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at

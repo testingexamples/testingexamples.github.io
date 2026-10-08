@@ -24,6 +24,7 @@ export type TopicId =
   | 'how-to-start-learning-automatic-testing'
   | 'learn'
   | 'learn-gherkin'
+  | 'learn-unit-test'
   | 'practice'
   | 'what-are-flow-metrics-for-automatic-testing'
   | 'what-are-related-concepts-for-automatic-testing'
@@ -119,6 +120,17 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'sujets/gherkin'
     ),
     load: () => import('#lib/pages/learn-gherkin/Page.svelte')
+  },
+  'learn-unit-test': {
+    slug: slugFor(
+      'topics/unit-test',
+      'pynciau/unit-test',
+      '主题/unit-test',
+      'المواضيع/unit-test',
+      '주제/unit-test',
+      'sujets/unit-test'
+    ),
+    load: () => import('#lib/pages/learn-unit-test/Page.svelte')
   },
   'what-are-flow-metrics-for-automatic-testing': {
     slug: slugFor(

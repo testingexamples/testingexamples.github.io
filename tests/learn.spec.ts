@@ -17,7 +17,8 @@ const ARTICLES = [
   'what-is-devops-for-automatic-testing',
   'what-are-flow-metrics-for-automatic-testing',
   'what-is-lean-six-sigma-for-automatic-testing',
-  'learn-gherkin'
+  'learn-gherkin',
+  'learn-unit-test'
 ] as const;
 
 for (const locale of LOCALES) {
@@ -49,5 +50,16 @@ for (const locale of LOCALES) {
     await expect(page.locator('main pre')).toContainText('Given I am on https://google.com');
     const gwt = `/${locale}/${slugForTopic(locale, 'given-when-then')}/`;
     await expect(page.locator(`main a[href="${gwt}"]`)).toHaveCount(1);
+  });
+}
+
+for (const locale of LOCALES) {
+  test(`${locale}: the unit test page has the traits, an example, and links to the testing pyramid`, async ({ page }) => {
+    await page.goto(`/${locale}/${slugForTopic(locale, 'learn-unit-test')}/`);
+    await expect(page.locator('main h1')).toHaveCount(1);
+    await expect(page.locator('main li strong')).toHaveCount(4);
+    await expect(page.locator('main pre')).toContainText('expect(result).toBe(5);');
+    const pyramid = `/${locale}/${slugForTopic(locale, 'what-is-the-testing-pyramid')}/`;
+    await expect(page.locator(`main a[href="${pyramid}"]`)).toHaveCount(1);
   });
 }
