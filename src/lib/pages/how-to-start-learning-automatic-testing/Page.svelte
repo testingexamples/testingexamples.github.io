@@ -61,7 +61,7 @@
   const EN_001: Messages = {
     title: 'How to start learning automatic testing?',
     metaDescription:
-      'A practical, step-by-step path for learning browser automatic testing: pick a language, pick a tool, run your first script, then practice on real examples.',
+      'A practical, step-by-step path for learning browser testing: pick a language, pick a tool, run your first script, then practice on real examples.',
     heading: 'How to start learning automatic testing?',
     intro:
       'A practical path, not a theory dump. Five steps from "never written a browser test" to reading worked examples in two tools and three languages.',

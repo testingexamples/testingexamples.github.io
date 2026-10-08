@@ -84,7 +84,7 @@ Keep these consistent across all pages.
 | English | Welsh | Why |
 | --- | --- | --- |
 | browser automation (noun) | awtomatiaeth porwr | TermCymru `awtomatiaeth` (B, TGCh); the verb stays `awtomeiddio` |
-| browser automatic testing | profi awtomatig porwr | mirrors the English title |
+| browser testing | profi awtomatig porwr | mirrors the English title |
 | bug | byg | TermCymru (B, TGCh); not `nam` |
 | defect (Six Sigma sense) | diffyg | |
 | unit / integration test | prawf uned / prawf integreiddio | |

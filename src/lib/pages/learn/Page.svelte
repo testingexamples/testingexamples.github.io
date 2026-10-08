@@ -11,6 +11,7 @@
     learnHeading: string;
     learnMoreHeading: string;
     kindsHeading: string;
+    relatedHeading: string;
     links: {
       whatIsAutomaticTesting: string;
       whatIsThePurpose: string;
@@ -26,6 +27,11 @@
       whatIsGherkin: string;
       whatIsUnitTest: string;
       whatIsBrowserTest: string;
+      whatIsCodeEditors: string;
+      whatIsVersionControl: string;
+      whatIsAgileDiscovery: string;
+      whatIsUnixShell: string;
+      whatIsCloudHosting: string;
     };
   };
 
@@ -37,11 +43,12 @@
     learnHeading: 'Learn',
     learnMoreHeading: 'Learn More',
     kindsHeading: "Kinds of tests",
+    relatedHeading: "Related concepts",
     links: {
       whatIsAutomaticTesting: 'What is automatic testing?',
       whatIsThePurpose: 'What is the purpose of automatic testing?',
       whatIsTheTestingPyramid: 'What is the automatic testing pyramid?',
-      whatIsBrowserAutomation: 'What is browser automatic testing?',
+      whatIsBrowserAutomation: 'What is browser testing?',
       howToStartLearning: 'How to start learning automatic testing?',
       whatAreRelatedConcepts: 'What are related concepts for automatic testing?',
       howDoesAiHelp: 'How does artificial intelligence help automatic testing?',
@@ -51,7 +58,12 @@
       whatIsLeanSixSigma: 'How does Six Sigma lead manual testing into automatic testing?',
       whatIsGherkin: "What is Gherkin?",
       whatIsUnitTest: "What is a unit test?",
-      whatIsBrowserTest: "What is a browser-based test?"
+      whatIsBrowserTest: "What is a browser-based test?",
+      whatIsCodeEditors: "Code editors — e.g. Visual Studio Code",
+      whatIsVersionControl: "Version control — git and GitHub",
+      whatIsAgileDiscovery: "Agile and working with users — discovery",
+      whatIsUnixShell: "Unix commands — the command line",
+      whatIsCloudHosting: "Cloud hosting for testing"
     }
   };
 
@@ -66,6 +78,7 @@
     learnHeading: 'Dysgu',
     learnMoreHeading: 'Dysgu Mwy',
     kindsHeading: "Mathau o brofion",
+    relatedHeading: "Cysyniadau cysylltiedig",
     links: {
       whatIsAutomaticTesting: "Beth yw profi awtomatig?",
       whatIsThePurpose: 'Beth yw diben profi awtomatig?',
@@ -80,7 +93,12 @@
       whatIsLeanSixSigma: 'Sut mae Six Sigma yn arwain profi â llaw at brofi awtomatig?',
       whatIsGherkin: "Beth yw Gherkin?",
       whatIsUnitTest: "Beth yw prawf uned?",
-      whatIsBrowserTest: "Beth yw prawf sy’n seiliedig ar borwr?"
+      whatIsBrowserTest: "Beth yw prawf sy’n seiliedig ar borwr?",
+      whatIsCodeEditors: "Golygyddion cod — e.e. Visual Studio Code",
+      whatIsVersionControl: "Rheoli fersiynau — git a GitHub",
+      whatIsAgileDiscovery: "Ystwyth a gweithio gyda defnyddwyr — darganfod",
+      whatIsUnixShell: "Gorchmynion Unix — y llinell orchymyn",
+      whatIsCloudHosting: "Cynnal ar y cwmwl ar gyfer profi"
     }
   };
 
@@ -92,6 +110,7 @@
     learnHeading: '学习',
     learnMoreHeading: '延伸学习',
     kindsHeading: "测试的种类",
+    relatedHeading: "相关概念",
     links: {
       whatIsAutomaticTesting: '什么是自动化测试？',
       whatIsThePurpose: '自动化测试的目的是什么？',
@@ -106,7 +125,12 @@
       whatIsLeanSixSigma: '六西格玛如何引导人工测试进入自动化测试？',
       whatIsGherkin: "什么是 Gherkin？",
       whatIsUnitTest: "什么是单元测试？",
-      whatIsBrowserTest: "什么是基于浏览器的测试？"
+      whatIsBrowserTest: "什么是基于浏览器的测试？",
+      whatIsCodeEditors: "代码编辑器——例如 Visual Studio Code",
+      whatIsVersionControl: "版本控制——git 和 GitHub",
+      whatIsAgileDiscovery: "敏捷与用户协作——探索",
+      whatIsUnixShell: "Unix 命令——命令行",
+      whatIsCloudHosting: "用于测试的云托管"
     }
   };
 
@@ -118,6 +142,7 @@
     learnHeading: 'تعلّم',
     learnMoreHeading: 'تعلّم المزيد',
     kindsHeading: "أنواع الاختبارات",
+    relatedHeading: "مفاهيم ذات صلة",
     links: {
       whatIsAutomaticTesting: 'ما هو الاختبار الآلي؟',
       whatIsThePurpose: 'ما الغرض من الاختبار الآلي؟',
@@ -132,7 +157,12 @@
       whatIsLeanSixSigma: 'كيف يقود Six Sigma الاختبار اليدوي إلى الاختبار الآلي؟',
       whatIsGherkin: "ما هو Gherkin؟",
       whatIsUnitTest: "ما هو اختبار الوحدة؟",
-      whatIsBrowserTest: "ما هو الاختبار القائم على المتصفح؟"
+      whatIsBrowserTest: "ما هو الاختبار القائم على المتصفح؟",
+      whatIsCodeEditors: "محررات الكود — مثل Visual Studio Code",
+      whatIsVersionControl: "التحكم في الإصدارات — git وGitHub",
+      whatIsAgileDiscovery: "الرشاقة والعمل مع المستخدمين — الاستكشاف",
+      whatIsUnixShell: "أوامر Unix — سطر الأوامر",
+      whatIsCloudHosting: "الاستضافة السحابية للاختبار"
     }
   };
 
@@ -144,6 +174,7 @@
     learnHeading: '학습',
     learnMoreHeading: '더 알아보기',
     kindsHeading: "테스트의 종류",
+    relatedHeading: "관련 개념",
     links: {
       whatIsAutomaticTesting: '자동화 테스트란 무엇인가?',
       whatIsThePurpose: '자동화 테스트의 목적은 무엇인가?',
@@ -158,7 +189,12 @@
       whatIsLeanSixSigma: 'Six Sigma는 수동 테스트를 어떻게 자동화 테스트로 이끄는가?',
       whatIsGherkin: "Gherkin이란 무엇인가?",
       whatIsUnitTest: "단위 테스트란 무엇인가?",
-      whatIsBrowserTest: "브라우저 기반 테스트란 무엇인가?"
+      whatIsBrowserTest: "브라우저 기반 테스트란 무엇인가?",
+      whatIsCodeEditors: "코드 에디터 — 예: Visual Studio Code",
+      whatIsVersionControl: "버전 관리 — git과 GitHub",
+      whatIsAgileDiscovery: "애자일과 사용자와 함께 일하기 — 디스커버리",
+      whatIsUnixShell: "Unix 명령어 — 명령줄",
+      whatIsCloudHosting: "테스트를 위한 클라우드 호스팅"
     }
   };
 
@@ -170,6 +206,7 @@
     learnHeading: 'Apprendre',
     learnMoreHeading: 'En savoir plus',
     kindsHeading: "Types de tests",
+    relatedHeading: "Concepts liés",
     links: {
       whatIsAutomaticTesting: "Qu'est-ce que le test automatisé ?",
       whatIsThePurpose: "Quel est le but des tests automatisés ?",
@@ -184,7 +221,12 @@
       whatIsLeanSixSigma: "Comment Six Sigma mène-t-il des tests manuels aux tests automatisés ?",
       whatIsGherkin: "Qu'est-ce que Gherkin ?",
       whatIsUnitTest: "Qu'est-ce qu'un test unitaire ?",
-      whatIsBrowserTest: "Qu'est-ce qu'un test basé sur le navigateur ?"
+      whatIsBrowserTest: "Qu'est-ce qu'un test basé sur le navigateur ?",
+      whatIsCodeEditors: "Éditeurs de code — par exemple Visual Studio Code",
+      whatIsVersionControl: "Gestion de versions — git et GitHub",
+      whatIsAgileDiscovery: "Agilité et travail avec les utilisateurs — la découverte",
+      whatIsUnixShell: "Commandes Unix — la ligne de commande",
+      whatIsCloudHosting: "L'hébergement dans le cloud pour les tests"
     }
   };
 
@@ -238,6 +280,15 @@
   <ul class="repo-list">
     <li><a href={localeHref(locale, 'learn-unit-test')}>{m.links.whatIsUnitTest}</a></li>
     <li><a href={localeHref(locale, 'learn-browser-test')}>{m.links.whatIsBrowserTest}</a></li>
+  </ul>
+
+  <h2>{m.relatedHeading}</h2>
+  <ul class="repo-list">
+    <li><a href={localeHref(locale, 'related-code-editors')}>{m.links.whatIsCodeEditors}</a></li>
+    <li><a href={localeHref(locale, 'related-version-control')}>{m.links.whatIsVersionControl}</a></li>
+    <li><a href={localeHref(locale, 'related-agile-discovery')}>{m.links.whatIsAgileDiscovery}</a></li>
+    <li><a href={localeHref(locale, 'related-unix-shell')}>{m.links.whatIsUnixShell}</a></li>
+    <li><a href={localeHref(locale, 'related-cloud-hosting')}>{m.links.whatIsCloudHosting}</a></li>
   </ul>
 </section>
 

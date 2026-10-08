@@ -127,7 +127,10 @@ The unit test page is nested the same way: `topics/unit-test`,
 `sujets/unit-test`. The browser-based test page likewise: `topics/browser-test`,
 `pynciau/browser-test`, `主题/browser-test`,
 `المواضيع/browser-test`, `주제/browser-test`,
-`sujets/browser-test`.
+`sujets/browser-test`. The five related-concept pages follow the same
+pattern with the leaf names `code-editors`, `version-control`,
+`agile-discovery`, `unix-shell`, and `cloud-hosting` (for example
+`pynciau/unix-shell`).
 The fixture section is never translated anywhere: it is a contract/standard,
 not content, the same category as a code sample or a product name. Both the
 root page and every locale's Practice page import it

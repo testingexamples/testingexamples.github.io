@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { SectionHeading, Separator, CallToAction } from 'lily-design-system-svelte-headless';
+  import { CallToAction, Separator } from 'lily-design-system-svelte-headless';
   import { localeHref } from '#lib/i18n/paths.js';
   import type { Locale } from '#lib/i18n/locales.js';
 
@@ -11,992 +11,128 @@
     heading: string;
     intro: string;
     introP: string;
-
     s1Heading: string;
-    s1P1a: string;
-    syntaxLabel: string;
-    s1P1b: string;
-    autocompleteLabel: string;
-    s1P1c1: string;
-    s1P1c2: string;
-    s1P1c3: string;
-    s1P2a: string;
-    terminalLabel: string;
-    s1P2b: string;
-    debuggerLabel: string;
-    s1P2c: string;
-    s1P2d: string;
-    extensionsLabel: string;
-    s1P2e: string;
-    s1P3Post1: string;
-    s1P3Post2: string;
-    s1AskAi: string[];
-
     s2Heading: string;
-    s2P1a: string;
-    gitLabel: string;
-    s2P1b: string;
-    s2P2Label: string;
-    s2P2a: string;
-    pullRequestLabel: string;
-    s2P2b: string;
-    s2P3a: string;
-    examplesLinkText: string;
-    s2P3b: string;
-    aboutLinkText: string;
-    s2P3c: string;
-    s2P4Pre: string;
-    s2P4Mid: string;
-    s2P4Mid2: string;
-    s2P4Post: string;
-    s2AskAi: string[];
-
     s3Heading: string;
-    s3P1a: string;
-    agileLabel: string;
-    s3P1b: string;
-    discoveryLabel: string;
-    s3P1c: string;
-    s3P2a: string;
-    intendedLabel: string;
-    s3P2b: string;
-    s3P3: string;
-    s3P4Pre: string;
-    s3P4Mid: string;
-    s3P4Mid2: string;
-    s3P4Post: string;
-    s3AskAi: string[];
-
     s4Heading: string;
-    unixCommandsLabel: string;
-    s4P1Post: string;
-    cmdLs: string;
-    cmdCd: string;
-    cmdMv: string;
-    cmdMore: string;
-    cmdNano: string;
-    cmdGrep: string;
-    cmdChmod: string;
-    cmdCurl: string;
-    cmdClaude: string;
-    s4P2a: string;
-    s4P2b: string;
-    s4P2c: string;
-    s4P2d: string;
-    s4P2e: string;
-    s4P3Pre: string;
-    s4P3Mid: string;
-    s4P3Post: string;
-    s4AskAi: string[];
-
     s5Heading: string;
-    cloudHostingLabel: string;
-    s5P1Post: string;
-    s5P2: string;
-    s5P3Pre: string;
-    s5P3Mid: string;
-    s5P3Post: string;
-    s5AskAi: string[];
-
     closingPre: string;
     closingLinkText: string;
     closingPost: string;
     ctaBackToLearn: string;
     ctaHowToStart: string;
-
-    askAiHeading: string;
   };
 
   const EN_001: Messages = {
-    title: 'What are related concepts for automatic testing?',
-    metaDescription:
-      'A beginner-friendly tour of five things that surround automatic testing: code editors, version control, agile discovery, Unix commands, and cloud hosting — and why each one matters once your test script grows up.',
-    heading: 'What are related concepts for automatic testing?',
-    intro:
-      "You've just written your first browser automation script. It works — on your machine, right now. This page is about the handful of everyday tools and practices that turn that one script into something a whole team can rely on, months from now, without you standing over it.",
-    introP:
-      'Automatic testing doesn\'t happen in isolation. Around every reliable test suite sits a small cluster of ordinary software-development habits: a decent editor to write the code in, a way to track how that code changes over time, a way to make sure the tests actually get run, and — easy to forget, but just as real — a way of checking that the tests are protecting something a real person actually cares about. None of these are testing tools specifically. All of them make testing work. Below are five to know about, each explained in plain language, each with a link or two if you want to go deeper.',
-
-    s1Heading: 'Code editors — e.g. Visual Studio Code',
-    s1P1a:
-      'You can write a test script in any plain text editor, but a proper code editor gives you back a surprising amount of help for free. ',
-    syntaxLabel: 'Syntax highlighting',
-    s1P1b:
-      ' colours your code as you type, so a typo like a missing closing bracket jumps out visually instead of hiding until you run the script and get a confusing error. ',
-    autocompleteLabel: 'Autocomplete',
-    s1P1c1: " shows you what's actually available as you type — type ",
-    s1P1c2: ' or ',
-    s1P1c3:
-      " in a modern editor and it'll list every method the library offers, which is often faster than searching the docs.",
-    s1P2a: 'An ',
-    terminalLabel: 'integrated terminal',
-    s1P2b: ' lets you run your test script without leaving the editor window, and a ',
-    debuggerLabel: 'built-in debugger',
-    s1P2c:
-      ' lets you pause a failing test mid-run and actually look at what the browser found on the page — the real state of things — rather than guessing from a trail of ',
-    s1P2d: ' statements. On top of all that, editors support ',
-    extensionsLabel: 'extensions',
-    s1P2e:
-      ": for example, Playwright ships its own official VS Code extension, which can run your tests from a sidebar and even generate new test code by recording your clicks in a real browser.",
-    s1P3Post1:
-      " is free, extremely widely used, and a very reasonable default if you don't already have a favourite editor. For a video introduction, watch ",
-    s1P3Post2: ' (Learn Web Dev with Norbert, 15 min).',
-    s1AskAi: [
-      "I've never used a proper code editor before — what's the real difference between a code editor and something like Notepad, and is Visual Studio Code a reasonable place to start?",
-      'I already use VS Code casually — what extensions or features would actually help me write and debug browser automation tests specifically?',
-      'How do I set up a shared VS Code configuration — extensions, settings, debugger config — so my whole team gets a consistent test-writing experience, not just me?'
-    ],
-
-    s2Heading: 'Version control — git and GitHub',
-    s2P1a:
-      'Without version control, "fixing a test" usually means overwriting the old file and hoping you don\'t need the previous version back. ',
-    gitLabel: 'Git',
-    s2P1b:
-      ' solves that by keeping every version of every file it tracks: it lets you see exactly what changed, when, and — via a commit message — why, and it lets you undo a bad change safely instead of trying to remember what the code used to look like.',
-    s2P2Label: 'GitHub',
-    s2P2a:
-      ' (or a similar host, like GitLab or Bitbucket) adds sharing and collaboration on top of plain git. It gives your code a home other people can find, clone, and read; it lets someone suggest a change via a ',
-    pullRequestLabel: 'pull request',
-    s2P2b:
-      ' — a proposed diff you can discuss, review, and merge (or not) — rather than just emailing a new copy of a file back and forth.',
-    s2P3a: "This isn't abstract for this site: every demo repo linked from this site's ",
-    examplesLinkText: 'examples',
-    s2P3b: ' and ',
-    aboutLinkText: 'about',
-    s2P3c:
-      " pages is a real, public git repository. You can clone any of them and read the full history of how that testing code came to look the way it does — that's not incidental, it's how real testing code actually gets managed.",
-    s2P4Pre: 'Learn more at ',
-    s2P4Mid: ' and ',
-    s2P4Mid2: ', or watch GitHub\'s own ',
-    s2P4Post: ' for a video introduction.',
-    s2AskAi: [
-      "I've never used git before — what does 'committing' and 'pushing' actually mean, in plain terms, and why do I need either one just to write a test script?",
-      "I accidentally committed a change I want to undo — what's a safe way to undo it without losing other work?",
-      "How should a team structure git branches and pull requests specifically around test code, so a flaky or broken test doesn't block unrelated changes?"
-    ],
-
-    s3Heading: 'Agile and working with users — discovery',
-    s3P1a: 'In plain terms, ',
-    agileLabel: 'agile',
-    s3P1b:
-      " means building software in short, repeatable cycles and checking in with the people who'll actually use it along the way — instead of building for months against a fixed spec and only finding out at the end that the spec was wrong. ",
-    discoveryLabel: 'Discovery',
-    s3P1c:
-      ' is the specific practice of talking to real (or realistically representative) users early, to learn what they actually need and how they actually behave, before — and while — you build.',
-    s3P2a:
-      "Here's why that belongs on a testing page: a test suite can only check that software does what you ",
-    intendedLabel: 'intended',
-    s3P2b:
-      ' it to do. It has no way of checking whether that intention was ever the right one. Discovery is what keeps the intention pointed at something a real person actually needs, so that all the careful automated checking you do afterwards is checking something worth checking.',
-    s3P3:
-      'It\'s concrete on this very site, too: the fixture examples on the practice page, and the NHS Wales "About Us" and search scenarios this site\'s sibling repos exercise, exist because someone identified a real user journey worth protecting — signing up, searching, finding information on a health service site. Deciding that journey mattered enough to write a test for is itself a discovery activity, not a purely technical one.',
-    s3P4Pre: 'Learn more at the ',
-    s3P4Mid: " and the Nielsen Norman Group's ",
-    s3P4Mid2: ', or watch ',
-    s3P4Post: ' for a video introduction.',
-    s3AskAi: [
-      "What does 'discovery' actually mean in agile, and why would that matter to someone who just writes test scripts?",
-      'How do I turn a vague user story into a concrete, testable scenario before I start automating it?',
-      'How do experienced teams keep discovery and test-writing connected on an ongoing basis, rather than discovery happening once up front and the tests drifting from it later?'
-    ],
-
-    s4Heading: 'Unix commands — the command line',
-    unixCommandsLabel: 'Unix commands',
-    s4P1Post:
-      ' are what almost every dev environment, CI runner, and Docker container speaks natively, no GUI required. You don\'t need to master all of them; a working knowledge of a couple dozen goes a very long way.',
-    cmdLs: 'list files and directories',
-    cmdCd: 'change directory',
-    cmdMv: 'move a file or directory',
-    cmdMore: "view a file's text, one page at a time",
-    cmdNano: "edit a file's text, with simple commands",
-    cmdGrep: 'find text in files',
-    cmdChmod: 'change mode of file permissions',
-    cmdCurl: 'call a URL such as an http web address',
-    cmdClaude: 'AI agent',
-    s4P2a: "Here's why that belongs on a testing page: ",
-    s4P2b: ' and ',
-    s4P2c:
-      ' are how you find one specific failure in thousands of lines of test output or a log file, instead of scrolling. ',
-    s4P2d:
-      ' is how you sanity-check an API by hand — the same endpoint a UI test might also exercise — before writing the real test. ',
-    s4P2e:
-      ' is how a test script becomes directly runnable. And piping a few commands together is often how a CI step gets built without reaching for a "real" programming language just to glue two tools together.',
-    s4P3Pre: "Learn more at Software Carpentry's ",
-    s4P3Mid: ', or watch NetworkChuck\'s ',
-    s4P3Post: ' for a fast-paced video introduction.',
-    s4AskAi: [
-      "I've never used a command line before — what are the handful of Unix commands actually worth learning first for someone getting into testing?",
-      'How would I use grep to find every failing test in a huge CI log without scrolling through it by hand?',
-      'How do I chain a few Unix commands together into a small, reliable script for a CI step, instead of reaching for a full programming language?'
-    ],
-
-    s5Heading: 'Cloud hosting for testing',
-    cloudHostingLabel: 'Cloud hosting',
-    s5P1Post:
-      " means running infrastructure — servers, browsers, CI runners — on someone else's computers instead of ones you own, paying for what you actually use rather than buying and maintaining hardware yourself.",
-    s5P2:
-      "Here's why that belongs on a testing page: cloud browser farms let a test suite run against real devices and dozens of real browser and operating-system combinations that nobody could reasonably install and maintain locally. And cloud CI providers (GitHub Actions, mentioned below under CI/CD, is one) give every test run a fresh, disposable machine — so a test can't quietly pass only because of state a previous run happened to leave behind, a subtle bug class that's much harder to hide once every run starts from nothing.",
-    s5P3Pre: "Learn more at AWS's ",
-    s5P3Mid: ', or watch ',
-    s5P3Post: ' for a video introduction.',
-    s5AskAi: [
-      "What does 'the cloud' actually mean in plain terms, and why would a test suite need it instead of just running on my own laptop?",
-      "What's the practical difference between running my tests on my own machine versus a cloud browser farm, for a small team?",
-      'How do I decide whether a growing test suite is genuinely ready to move to a cloud CI provider, and what should I check before making that switch?'
-    ],
-
+    title: "What are related concepts for automatic testing?",
+    metaDescription: "A beginner-friendly tour of five things that surround automatic testing: code editors, version control, agile discovery, Unix commands, and cloud hosting — and why each one matters once your test script grows up.",
+    heading: "What are related concepts for automatic testing?",
+    intro: "You've just written your first browser automation script. It works — on your machine, right now. This page is about the handful of everyday tools and practices that turn that one script into something a whole team can rely on, months from now, without you standing over it.",
+    introP: "Automatic testing doesn't happen in isolation. Around every reliable test suite sits a small cluster of ordinary software-development habits: a decent editor to write the code in, a way to track how that code changes over time, a way to make sure the tests actually get run, and — easy to forget, but just as real — a way of checking that the tests are protecting something a real person actually cares about. None of these are testing tools specifically. All of them make testing work. Below are five to know about, each explained in plain language, each with a link or two if you want to go deeper.",
+    s1Heading: "Code editors — e.g. Visual Studio Code",
+    s2Heading: "Version control — git and GitHub",
+    s3Heading: "Agile and working with users — discovery",
+    s4Heading: "Unix commands — the command line",
+    s5Heading: "Cloud hosting for testing",
     closingPre: "None of these five are required to write your first script — see ",
-    closingLinkText: 'How to start learning automatic testing?',
-    closingPost:
-      ' for that. But each one is worth picking up as your testing code grows past a single file on your own machine: a shared editor setup, a git history, an honest connection to what users actually need, and — once a whole team depends on your tests — the shared vocabulary for talking about where testing infrastructure, process, and quality actually live. Each is also a large, well-documented subject in its own right — this page is a map, not the territory.',
-    ctaBackToLearn: 'Back to Learn',
-    ctaHowToStart: 'How to start learning →',
-
-    askAiHeading: 'Examples you can ask AI'
+    closingLinkText: "How to start learning automatic testing?",
+    closingPost: " for that. But each one is worth picking up as your testing code grows past a single file on your own machine: a shared editor setup, a git history, an honest connection to what users actually need, and — once a whole team depends on your tests — the shared vocabulary for talking about where testing infrastructure, process, and quality actually live. Each is also a large, well-documented subject in its own right — this page is a map, not the territory.",
+    ctaBackToLearn: "Back to Learn",
+    ctaHowToStart: "How to start learning →"
   };
 
-  // en-us: this page's prose contains two British-only spellings ("colours",
-  // "favourite") that genuinely diverge for American readers — see
-  // spec/locales/index.md.
   const EN_US: Messages = {
-    ...EN_001,
-    s1P1b:
-      ' colors your code as you type, so a typo like a missing closing bracket jumps out visually instead of hiding until you run the script and get a confusing error. ',
-    s1P3Post1:
-      " is free, extremely widely used, and a very reasonable default if you don't already have a favorite editor. For a video introduction, watch "
+    ...EN_001
   };
 
-  // No -ise/-ize divergence occurs in this page's vocabulary, so Oxford
-  // spelling reuses EN_001 as-is.
   const CY: Messages = {
-    title: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
-    metaDescription:
-      "Taith gyfeillgar i ddechreuwyr o bum peth sy'n amgylchynu profi awtomatig: golygyddion cod, rheoli fersiynau, darganfod ystwyth, gorchmynion Unix, a chynnal ar y cwmwl — a pham mae pob un yn bwysig unwaith y bydd eich sgript brawf yn tyfu i fyny.",
-    heading: 'Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?',
-    intro:
-      "Rydych chi newydd ysgrifennu eich sgript awtomatiaeth porwr gyntaf. Mae'n gweithio — ar eich peiriant, ar hyn o bryd. Mae'r dudalen hon yn ymwneud â'r llond dwrn o offer ac arferion bob dydd sy'n troi'r sgript honno'n rhywbeth y gall tîm cyfan ddibynnu arno, misoedd o hyn ymlaen, heb i chi sefyll drosto.",
-    introP:
-      "Nid yw profi awtomatig yn digwydd ar ei ben ei hun. O amgylch pob set brofion ddibynadwy mae clwstwr bach o arferion datblygu meddalwedd cyffredin: golygydd gweddus i ysgrifennu'r cod ynddo, ffordd o olrhain sut mae'r cod hwnnw'n newid dros amser, ffordd o wneud yn siŵr bod y profion mewn gwirionedd yn cael eu rhedeg, ac — hawdd ei anghofio, ond yr un mor real — ffordd o wirio bod y profion yn amddiffyn rhywbeth y mae person go iawn wir yn poeni amdano. Nid yw'r un o'r rhain yn offer profi yn benodol. Mae pob un ohonynt yn gwneud i brofi weithio. Isod mae pump i wybod amdanynt, pob un wedi'i esbonio mewn iaith syml, pob un â dolen neu ddwy os ydych am fynd yn ddyfnach.",
-
-    s1Heading: 'Golygyddion cod — e.e. Visual Studio Code',
-    s1P1a:
-      "Gallwch ysgrifennu sgript brawf mewn unrhyw olygydd testun plaen, ond mae golygydd cod priodol yn rhoi cryn dipyn o gymorth i chi am ddim. ",
-    syntaxLabel: 'Amlygu cystrawen',
-    s1P1b:
-      " yn lliwio'ch cod wrth i chi deipio, fel bod camgymeriad teipio fel braced cau ar goll yn amlwg yn weledol yn lle cuddio nes i chi redeg y sgript a chael gwall dryslyd. ",
-    autocompleteLabel: 'Awtogwblhau',
-    s1P1c1: " yn dangos i chi beth sydd ar gael mewn gwirionedd wrth i chi deipio — teipiwch ",
-    s1P1c2: ' neu ',
-    s1P1c3:
-      " mewn golygydd modern a bydd yn rhestru pob dull mae'r llyfrgell yn ei gynnig, sy'n aml yn gyflymach na chwilio'r ddogfennaeth.",
-    s1P2a: 'Mae ',
-    terminalLabel: "derfynell integredig",
-    s1P2b: " yn gadael i chi redeg eich sgript brawf heb adael ffenestr y golygydd, ac mae ",
-    debuggerLabel: "dadfygiwr wedi'i adeiladu i mewn",
-    s1P2c:
-      " yn gadael i chi oedi prawf sy'n methu hanner ffordd drwodd ac edrych mewn gwirionedd ar beth ddaeth y porwr o hyd iddo ar y dudalen — gwir gyflwr pethau — yn hytrach na dyfalu o gyfres o ddatganiadau ",
-    s1P2d: ". Ar ben hynny i gyd, mae golygyddion yn cefnogi ",
-    extensionsLabel: 'estyniadau',
-    s1P2e:
-      ": er enghraifft, mae Playwright yn cynhyrchu ei estyniad VS Code swyddogol ei hun, sy'n gallu rhedeg eich profion o far ochr a hyd yn oed gynhyrchu cod prawf newydd drwy recordio'ch cliciau mewn porwr go iawn.",
-    s1P3Post1:
-      " yn rhad ac am ddim, yn cael ei ddefnyddio'n eang iawn, ac yn ddewis rhagosodedig rhesymol iawn os nad oes gennych olygydd ffefryn eisoes. Ar gyfer cyflwyniad fideo, gwyliwch ",
-    s1P3Post2: ' (Learn Web Dev with Norbert, 15 munud).',
-    s1AskAi: [
-      "Dydw i erioed wedi defnyddio golygydd cod priodol o'r blaen — beth yw'r gwahaniaeth gwirioneddol rhwng golygydd cod a rhywbeth fel Notepad, ac a yw Visual Studio Code yn fan cychwyn rhesymol?",
-      "Rwy'n defnyddio VS Code yn achlysurol yn barod — pa estyniadau neu nodweddion fyddai wir yn fy helpu i ysgrifennu a dadfygio profion awtomatiaeth porwr yn benodol?",
-      "Sut ydw i'n sefydlu ffurfweddiad VS Code a rennir — estyniadau, gosodiadau, ffurfweddiad dadfygiwr — fel bod fy nhîm cyfan yn cael profiad cyson o ysgrifennu profion, nid dim ond fi?"
-    ],
-
-    s2Heading: 'Rheoli fersiynau — git a GitHub',
-    s2P1a:
-      "Heb reoli fersiynau, mae \"trwsio prawf\" fel arfer yn golygu trosysgrifo'r hen ffeil a gobeithio nad oes angen y fersiwn flaenorol yn ôl arnoch. Mae ",
-    gitLabel: 'Git',
-    s2P1b:
-      " yn datrys hynny drwy gadw pob fersiwn o bob ffeil y mae'n ei olrhain: mae'n gadael i chi weld yn union beth newidiodd, pryd, a — drwy neges ymrwymo — pam, ac mae'n gadael i chi ddadwneud newid gwael yn ddiogel yn lle ceisio cofio sut roedd y cod arfer edrych.",
-    s2P2Label: 'GitHub',
-    s2P2a:
-      " (neu westeiwr tebyg, fel GitLab neu Bitbucket) yn ychwanegu rhannu a chydweithio ar ben git plaen. Mae'n rhoi cartref i'ch cod y gall pobl eraill ddod o hyd iddo, ei glonio, a'i ddarllen; mae'n gadael i rywun awgrymu newid drwy ",
-    pullRequestLabel: 'cais tynnu',
-    s2P2b:
-      " — diff arfaethedig y gallwch ei drafod, ei adolygu, a'i uno (neu beidio) — yn lle dim ond e-bostio copi newydd o ffeil yn ôl ac ymlaen.",
-    s2P3a: "Nid yw hyn yn haniaethol i'r wefan hon: mae pob ystorfa arddangos y ceir dolen iddi o dudalennau ",
-    examplesLinkText: 'enghreifftiau',
-    s2P3b: ' ac ',
-    aboutLinkText: 'ynghylch',
-    s2P3c:
-      " y wefan hon yn ystorfa git go iawn, gyhoeddus. Gallwch glonio unrhyw un ohonynt a darllen hanes llawn sut y daeth y cod profi hwnnw i edrych fel y mae — nid yw hynny'n ddamweiniol, dyna sut mae cod profi go iawn wir yn cael ei reoli.",
-    s2P4Pre: 'Dysgwch fwy yn ',
-    s2P4Mid: ' ac yn ',
-    s2P4Mid2: ', neu gwyliwch ',
-    s2P4Post: ' ar gyfer cyflwyniad fideo.',
-    s2AskAi: [
-      "Dydw i erioed wedi defnyddio git o'r blaen — beth mae 'ymrwymo' a 'gwthio' yn ei olygu mewn gwirionedd, mewn termau plaen, a pham mae angen y naill neu'r llall arnaf dim ond i ysgrifennu sgript brawf?",
-      "Fe wnes i ymrwymo newid ar ddamwain rydw i am ei ddadwneud — beth yw ffordd ddiogel o'i ddadwneud heb golli gwaith arall?",
-      "Sut dylai tîm strwythuro canghennau git a cheisiadau tynnu yn benodol o amgylch cod profi, fel nad yw prawf ansefydlog neu doredig yn rhwystro newidiadau digyswllt?"
-    ],
-
-    s3Heading: 'Ystwyth a gweithio gyda defnyddwyr — darganfod',
-    s3P1a: 'Mewn termau plaen, mae ',
-    agileLabel: 'ystwyth',
-    s3P1b:
-      " yn golygu adeiladu meddalwedd mewn cylchoedd byr, ailadroddadwy a chysylltu â'r bobl a fydd wir yn ei ddefnyddio ar hyd y ffordd — yn lle adeiladu am fisoedd yn erbyn manyleb sefydlog a dim ond darganfod ar y diwedd fod y fanyleb yn anghywir. Mae ",
-    discoveryLabel: 'darganfod',
-    s3P1c:
-      " yn arfer penodol o siarad â defnyddwyr go iawn (neu rai cynrychioliadol yn realistig) yn gynnar, i ddysgu beth maen nhw ei angen mewn gwirionedd a sut maen nhw'n ymddwyn mewn gwirionedd, cyn — ac wrth — i chi adeiladu.",
-    s3P2a:
-      "Dyma pam mae hynny'n perthyn i dudalen am brofi: ni all set brofion wneud dim ond gwirio bod meddalwedd yn gwneud yr hyn yr oeddech chi'n ",
-    intendedLabel: 'bwriadu',
-    s3P2b:
-      " iddo'i wneud. Nid oes ganddi unrhyw ffordd o wirio a oedd y bwriad hwnnw erioed yn un cywir. Darganfod yw'r hyn sy'n cadw'r bwriad wedi'i anelu at rywbeth y mae person go iawn wir ei angen, fel bod yr holl wirio awtomatig gofalus rydych chi'n ei wneud wedyn yn gwirio rhywbeth sy'n werth ei wirio.",
-    s3P3:
-      "Mae'n bendant ar y wefan hon ei hun, hefyd: mae'r enghreifftiau cynnwys sefydlog ar y dudalen ymarfer, a'r senarios \"About Us\" a chwilio NHS Cymru y mae ystorfeydd chwaer y wefan hon yn eu hymarfer, yn bodoli oherwydd i rywun nodi taith defnyddiwr go iawn yn werth ei diogelu — cofrestru, chwilio, dod o hyd i wybodaeth ar wefan gwasanaeth iechyd. Mae penderfynu bod y daith honno'n bwysig ddigon i ysgrifennu prawf ar ei chyfer yn weithgaredd darganfod ynddo'i hun, nid un technegol yn unig.",
-    s3P4Pre: 'Dysgwch fwy yn y ',
-    s3P4Mid: " ac yng nghyflwyniad Nielsen Norman Group i ",
-    s3P4Mid2: ', neu gwyliwch ',
-    s3P4Post: ' ar gyfer cyflwyniad fideo.',
-    s3AskAi: [
-      "Beth mae 'darganfod' yn ei olygu mewn gwirionedd mewn dull ystwyth, a pham byddai hynny'n bwysig i rywun sydd ond yn ysgrifennu sgriptiau prawf?",
-      "Sut ydw i'n troi stori defnyddiwr amwys yn senario pendant, y gellir ei brofi, cyn i mi ddechrau ei hawtomeiddio?",
-      "Sut mae timau profiadol yn cadw darganfod ac ysgrifennu profion yn gysylltiedig yn barhaus, yn lle i ddarganfod ddigwydd unwaith ymlaen llaw a'r profion yn dargyfeirio oddi wrtho'n ddiweddarach?"
-    ],
-
-    s4Heading: 'Gorchmynion Unix — y llinell orchymyn',
-    unixCommandsLabel: 'Gorchmynion Unix',
-    s4P1Post:
-      " yw'r hyn y mae bron pob amgylchedd datblygu, rhedwr CI, a chynhwysydd Docker yn ei siarad yn naturiol, heb angen GUI. Nid oes angen i chi feistroli pob un ohonynt; mae gwybodaeth weithio o ryw ddau ddwsin yn mynd yn bell iawn.",
-    cmdLs: 'rhestru ffeiliau a chyfeiriaduron',
-    cmdCd: 'newid cyfeiriadur',
-    cmdMv: 'symud ffeil neu gyfeiriadur',
-    cmdMore: 'gweld testun ffeil, un dudalen ar y tro',
-    cmdNano: 'golygu testun ffeil, gyda gorchmynion syml',
-    cmdGrep: 'dod o hyd i destun mewn ffeiliau',
-    cmdChmod: 'newid modd caniatâd ffeil',
-    cmdCurl: 'galw URL fel cyfeiriad gwe http',
-    cmdClaude: 'asiant DA',
-    s4P2a: "Dyma pam mae hynny'n perthyn i dudalen am brofi: ",
-    s4P2b: ' a ',
-    s4P2c:
-      " yw sut rydych chi'n dod o hyd i un methiant penodol ymhlith miloedd o linellau o allbwn prawf neu ffeil gofnod, yn lle sgrolio. ",
-    s4P2d:
-      " yw sut rydych chi'n gwneud gwiriad cyflym â llaw o API — yr un pwynt terfyn y gallai prawf UI ei ymarfer hefyd — cyn ysgrifennu'r prawf go iawn. ",
-    s4P2e:
-      " yw sut mae sgript brawf yn gallu cael ei rhedeg yn uniongyrchol. Ac mae cysylltu ychydig o orchmynion â'i gilydd mewn piblinell yn aml yn sut mae cam CI yn cael ei adeiladu heb estyn am iaith raglennu \"go iawn\" dim ond i gysylltu dau offeryn â'i gilydd.",
-    s4P3Pre: "Dysgwch fwy yng ngwers cragen Unix Software Carpentry, ",
-    s4P3Mid: ', neu gwyliwch NetworkChuck yn ',
-    s4P3Post: ' ar gyfer cyflwyniad fideo cyflym.',
-    s4AskAi: [
-      "Dydw i erioed wedi defnyddio llinell orchymyn o'r blaen — beth yw'r llond dwrn o orchmynion Unix sy'n wirioneddol werth eu dysgu gyntaf i rywun sy'n dechrau ym myd profi?",
-      "Sut fyddwn i'n defnyddio grep i ddod o hyd i bob prawf sy'n methu mewn cofnod CI enfawr heb sgrolio drwyddo â llaw?",
-      "Sut ydw i'n cysylltu ychydig o orchmynion Unix â'i gilydd mewn piblinell yn sgript fach, ddibynadwy ar gyfer cam CI, yn lle estyn am iaith raglennu lawn?"
-    ],
-
-    s5Heading: 'Cynnal ar y cwmwl ar gyfer profi',
-    cloudHostingLabel: 'Cynnal ar y cwmwl',
-    s5P1Post:
-      " yn golygu rhedeg seilwaith — gweinyddion, porwyr, rhedwyr CI — ar gyfrifiaduron rhywun arall yn lle rhai rydych chi'n berchen arnyn nhw, gan dalu am yr hyn rydych chi'n ei ddefnyddio mewn gwirionedd yn hytrach na phrynu a chynnal caledwedd eich hun.",
-    s5P2:
-      "Dyma pam mae hynny'n perthyn i dudalen am brofi: mae ffermydd porwr cwmwl yn gadael i set brofion redeg yn erbyn dyfeisiau go iawn a dwsinau o gyfuniadau porwr a system weithredu go iawn na allai neb yn rhesymol eu gosod a'u cynnal yn lleol. Ac mae darparwyr CI cwmwl (mae GitHub Actions, y soniwyd amdano isod o dan CI/CD, yn un) yn rhoi peiriant ffres, tafladwy i bob rhediad prawf — fel na all prawf basio'n dawel dim ond oherwydd cyflwr y digwyddodd rhediad blaenorol ei adael ar ôl, math cynnil o fyg sy'n llawer anos ei guddio unwaith mae pob rhediad yn dechrau o ddim.",
-    s5P3Pre: 'Dysgwch fwy yng nghyflwyniad AWS i ',
-    s5P3Mid: ', neu gwyliwch ',
-    s5P3Post: ' ar gyfer cyflwyniad fideo.',
-    s5AskAi: [
-      "Beth mae 'y cwmwl' yn ei olygu mewn gwirionedd mewn termau plaen, a pham fyddai angen set brofion arno yn lle dim ond rhedeg ar fy ngliniadur fy hun?",
-      "Beth yw'r gwahaniaeth ymarferol rhwng rhedeg fy mhrofion ar fy mheiriant fy hun o gymharu â fferm porwr cwmwl, ar gyfer tîm bach?",
-      "Sut ydw i'n penderfynu a yw set brofion sy'n tyfu wir yn barod i symud i ddarparwr CI cwmwl, a beth ddylwn i ei wirio cyn gwneud y newid hwnnw?"
-    ],
-
+    title: "Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?",
+    metaDescription: "Taith gyfeillgar i ddechreuwyr o bum peth sy'n amgylchynu profi awtomatig: golygyddion cod, rheoli fersiynau, darganfod ystwyth, gorchmynion Unix, a chynnal ar y cwmwl — a pham mae pob un yn bwysig unwaith y bydd eich sgript brawf yn tyfu i fyny.",
+    heading: "Beth yw cysyniadau cysylltiedig ar gyfer profi awtomatig?",
+    intro: "Rydych chi newydd ysgrifennu eich sgript awtomatiaeth porwr gyntaf. Mae'n gweithio — ar eich peiriant, ar hyn o bryd. Mae'r dudalen hon yn ymwneud â'r llond dwrn o offer ac arferion bob dydd sy'n troi'r sgript honno'n rhywbeth y gall tîm cyfan ddibynnu arno, misoedd o hyn ymlaen, heb i chi sefyll drosto.",
+    introP: "Nid yw profi awtomatig yn digwydd ar ei ben ei hun. O amgylch pob set brofion ddibynadwy mae clwstwr bach o arferion datblygu meddalwedd cyffredin: golygydd gweddus i ysgrifennu'r cod ynddo, ffordd o olrhain sut mae'r cod hwnnw'n newid dros amser, ffordd o wneud yn siŵr bod y profion mewn gwirionedd yn cael eu rhedeg, ac — hawdd ei anghofio, ond yr un mor real — ffordd o wirio bod y profion yn amddiffyn rhywbeth y mae person go iawn wir yn poeni amdano. Nid yw'r un o'r rhain yn offer profi yn benodol. Mae pob un ohonynt yn gwneud i brofi weithio. Isod mae pump i wybod amdanynt, pob un wedi'i esbonio mewn iaith syml, pob un â dolen neu ddwy os ydych am fynd yn ddyfnach.",
+    s1Heading: "Golygyddion cod — e.e. Visual Studio Code",
+    s2Heading: "Rheoli fersiynau — git a GitHub",
+    s3Heading: "Ystwyth a gweithio gyda defnyddwyr — darganfod",
+    s4Heading: "Gorchmynion Unix — y llinell orchymyn",
+    s5Heading: "Cynnal ar y cwmwl ar gyfer profi",
     closingPre: "Nid oes angen yr un o'r pump hyn i ysgrifennu eich sgript gyntaf — gweler ",
-    closingLinkText: 'Sut i ddechrau dysgu profi awtomatig?',
-    closingPost:
-      " ar gyfer hynny. Ond mae pob un yn werth ei godi wrth i'ch cod profi dyfu y tu hwnt i un ffeil ar eich peiriant eich hun: gosodiad golygydd a rennir, hanes git, cysylltiad gonest â'r hyn y mae defnyddwyr wir ei angen, ac — unwaith y bydd tîm cyfan yn dibynnu ar eich profion — yr eirfa a rennir ar gyfer siarad am ble mae seilwaith, proses, ac ansawdd profi wir yn byw. Mae pob un hefyd yn bwnc mawr, wedi'i ddogfennu'n dda yn ei hawl ei hun — mae'r dudalen hon yn fap, nid y diriogaeth.",
-    ctaBackToLearn: 'Yn ôl i Dysgu',
-    ctaHowToStart: 'Sut i ddechrau dysgu →',
-
-    askAiHeading: "Enghreifftiau y gallwch eu gofyn i ddeallusrwydd artiffisial"
+    closingLinkText: "Sut i ddechrau dysgu profi awtomatig?",
+    closingPost: " ar gyfer hynny. Ond mae pob un yn werth ei godi wrth i'ch cod profi dyfu y tu hwnt i un ffeil ar eich peiriant eich hun: gosodiad golygydd a rennir, hanes git, cysylltiad gonest â'r hyn y mae defnyddwyr wir ei angen, ac — unwaith y bydd tîm cyfan yn dibynnu ar eich profion — yr eirfa a rennir ar gyfer siarad am ble mae seilwaith, proses, ac ansawdd profi wir yn byw. Mae pob un hefyd yn bwnc mawr, wedi'i ddogfennu'n dda yn ei hawl ei hun — mae'r dudalen hon yn fap, nid y diriogaeth.",
+    ctaBackToLearn: "Yn ôl i Dysgu",
+    ctaHowToStart: "Sut i ddechrau dysgu →"
   };
 
   const ZH: Messages = {
-    title: '自动化测试的相关概念是什么？',
-    metaDescription:
-      '一次对自动化测试周边五件事的新手友好介绍：代码编辑器、版本控制、敏捷探索、Unix 命令和云托管——以及为什么当你的测试脚本“长大”之后，每一件都会变得重要。',
-    heading: '自动化测试的相关概念是什么？',
-    intro:
-      '你刚刚写出了第一个浏览器自动化脚本。它能运行——就在你的电脑上，现在就能跑。这个页面要讲的，是把那一个脚本变成几个月后整个团队都能依赖、而不需要你时刻盯着的那一小撮日常工具和实践。',
-    introP:
-      '自动化测试不是孤立存在的。每一个可靠的测试套件周围，都有一小圈普通的软件开发习惯：一个像样的编辑器来写代码，一种追踪代码随时间变化的方式，一种确保测试真的会被运行的方式，以及——容易被忽略，但同样真实——一种检查这些测试是否真的在保护某个真实用户在意的东西的方式。这些都不是专门的测试工具。但它们全部都让测试真正发挥作用。下面是值得了解的五件事，每一件都用通俗的语言解释，并附上一两个链接供你深入了解。',
-
-    s1Heading: '代码编辑器——例如 Visual Studio Code',
-    s1P1a: '你可以用任何纯文本编辑器写测试脚本，但一个正经的代码编辑器能免费给你意想不到的帮助。',
-    syntaxLabel: '语法高亮',
-    s1P1b:
-      '会在你输入代码时为其上色，因此像漏掉一个右括号这样的拼写错误会在视觉上一下子跳出来，而不是一直隐藏，直到你运行脚本得到一个莫名其妙的错误。',
-    autocompleteLabel: '自动补全',
-    s1P1c1: '会在你输入时实时显示实际可用的内容——在现代编辑器里输入',
-    s1P1c2: '或',
-    s1P1c3: '，它就会列出该库提供的每一个方法，这通常比查文档更快。',
-    s1P2a: '一个',
-    terminalLabel: '集成终端',
-    s1P2b: '让你无需离开编辑器窗口就能运行测试脚本，而一个',
-    debuggerLabel: '内置调试器',
-    s1P2c:
-      '则让你能在一个失败的测试运行到一半时暂停下来，真正查看浏览器在页面上找到了什么——事物的真实状态——而不是靠一堆',
-    s1P2d: '语句去猜测。除此之外，编辑器还支持',
-    extensionsLabel: '扩展',
-    s1P2e:
-      '：例如，Playwright 自带官方 VS Code 扩展，可以从侧边栏运行你的测试，甚至能通过录制你在真实浏览器中的点击操作来生成新的测试代码。',
-    s1P3Post1: '免费、使用极其广泛，如果你还没有喜欢的编辑器，它是一个非常合理的默认选择。想看视频介绍，可以观看',
-    s1P3Post2: '（Learn Web Dev with Norbert，15 分钟）。',
-    s1AskAi: [
-      '我以前从没用过正经的代码编辑器——代码编辑器和记事本之类的东西实际有什么区别？Visual Studio Code 是一个合理的起点吗？',
-      '我已经偶尔在用 VS Code 了——有哪些扩展或功能能真正帮助我专门编写和调试浏览器自动化测试？',
-      '我该如何设置一套团队共享的 VS Code 配置——扩展、设置、调试器配置——让我的整个团队都获得一致的测试编写体验，而不只是我一个人？'
-    ],
-
-    s2Heading: '版本控制——git 和 GitHub',
-    s2P1a: '没有版本控制，“修复一个测试”通常意味着覆盖旧文件，然后祈祷自己不需要把之前的版本要回来。',
-    gitLabel: 'Git',
-    s2P1b:
-      '通过保留它所追踪的每个文件的每一个版本来解决这个问题：它让你能确切看到什么发生了改变、何时改变的，以及——通过提交信息——为什么改变，并让你能安全地撤销一次糟糕的改动，而不用去回想代码原来是什么样子的。',
-    s2P2Label: 'GitHub',
-    s2P2a:
-      '（或类似的托管平台，比如 GitLab 或 Bitbucket）在纯 git 之上增加了分享和协作功能。它为你的代码提供了一个别人可以找到、克隆和阅读的地方；它让别人可以通过一个',
-    pullRequestLabel: 'pull request（拉取请求）',
-    s2P2b: '——一份你可以讨论、审查并合并（或不合并）的改动提案——来提出修改建议，而不用来回发邮件传文件的新版本。',
-    s2P3a: '这对本站来说并不是抽象概念：本站',
-    examplesLinkText: '示例',
-    s2P3b: '和',
-    aboutLinkText: '关于',
-    s2P3c:
-      '页面链接的每一个演示仓库都是一个真实、公开的 git 仓库。你可以克隆其中任何一个，阅读那份测试代码是如何一步步变成现在这个样子的完整历史——这不是偶然的，真实的测试代码就是这样被管理的。',
-    s2P4Pre: '可以进一步阅读',
-    s2P4Mid: '和',
-    s2P4Mid2: '，或观看 GitHub 自己的',
-    s2P4Post: '视频介绍。',
-    s2AskAi: [
-      '我以前从没用过 git——用简单的话说，“commit”和“push”到底是什么意思？为什么我只是想写个测试脚本，也需要用到它们？',
-      '我不小心提交了一个想撤销的改动——有什么安全的方法可以撤销它而不丢失其他工作？',
-      '团队应该如何专门围绕测试代码来组织 git 分支和 pull request，才能让一个不稳定或损坏的测试不会阻塞其他无关的改动？'
-    ],
-
-    s3Heading: '敏捷与用户协作——探索',
-    s3P1a: '用简单的话说，',
-    agileLabel: '敏捷（agile）',
-    s3P1b:
-      '是指以短小、可重复的周期来构建软件，并在过程中不断与真正会使用它的人核对——而不是照着一份固定的规格文档埋头做上几个月，最后才发现规格本身就是错的。',
-    discoveryLabel: '探索（Discovery）',
-    s3P1c: '则是一种具体的实践：在你动手构建之前和构建过程中，尽早与真实（或足够具有代表性）的用户交流，了解他们真正的需求以及他们真实的行为方式。',
-    s3P2a: '这就是为什么它出现在一个测试相关的页面上：测试套件只能检查软件是否做到了你',
-    intendedLabel: '打算',
-    s3P2b:
-      '让它做的事情。它没有办法检查这个“打算”本身是否曾经是正确的。而探索正是让这个“打算”始终指向真实用户真正需要的东西，这样你之后所做的一切细致的自动化检查，才是在检查真正值得检查的东西。',
-    s3P3:
-      '这在本站上也是具体可见的：练习页面上的测试夹具示例，以及本站姐妹仓库所演练的 NHS Wales “About Us”和搜索场景，之所以存在，是因为有人识别出了一个值得保护的真实用户旅程——注册、搜索、在一个医疗服务网站上找到信息。判断这段旅程重要到值得为它写一个测试，本身就是一项探索活动，而不仅仅是一项技术活动。',
-    s3P4Pre: '可以进一步阅读',
-    s3P4Mid: '，以及 Nielsen Norman Group 的',
-    s3P4Mid2: '，或观看',
-    s3P4Post: '视频介绍。',
-    s3AskAi: [
-      '在敏捷中，“探索”到底是什么意思？为什么这对一个只负责写测试脚本的人也很重要？',
-      '在开始自动化之前，我该如何把一个模糊的用户故事变成一个具体、可测试的场景？',
-      '经验丰富的团队是如何让探索和测试编写持续保持联系，而不是让探索只在最初做一次，之后测试就慢慢与它脱节的？'
-    ],
-
-    s4Heading: 'Unix 命令——命令行',
-    unixCommandsLabel: 'Unix 命令',
-    s4P1Post:
-      '是几乎每个开发环境、CI 运行器和 Docker 容器都能原生识别的语言，不需要任何图形界面。你不需要精通所有命令；能熟练使用其中二十来个，就已经非常有用了。',
-    cmdLs: '列出文件和目录',
-    cmdCd: '切换目录',
-    cmdMv: '移动文件或目录',
-    cmdMore: '逐页查看文件文字内容',
-    cmdNano: '用简单的命令编辑文件文字内容',
-    cmdGrep: '在文件中查找文字',
-    cmdChmod: '修改文件权限模式',
-    cmdCurl: '调用一个 URL，例如某个 http 网址',
-    cmdClaude: 'AI 代理',
-    s4P2a: '这就是为什么它出现在一个测试相关的页面上：',
-    s4P2b: '和',
-    s4P2c: '是你在成千上万行测试输出或日志文件中找到某一个具体失败的方式，而不用一行行滚动查看。',
-    s4P2d: '是你在写真正的测试之前，手动“健全性检查”一个 API——也就是 UI 测试可能会用到的同一个接口——的方式。',
-    s4P2e: '是一个测试脚本变得可以直接运行的方式。而把几个命令用管道串在一起，往往就是在不需要动用一门“正经”编程语言来粘合两个工具的情况下，构建出一个 CI 步骤的方式。',
-    s4P3Pre: '可以进一步阅读 Software Carpentry 的',
-    s4P3Mid: '，或观看 NetworkChuck 的',
-    s4P3Post: '，作为一个节奏很快的视频介绍。',
-    s4AskAi: [
-      '我以前从没用过命令行——对于一个刚接触测试的人来说，最值得先学的几个 Unix 命令是哪些？',
-      '我该如何用 grep 在一份庞大的 CI 日志中找到每一个失败的测试，而不用手动一行行滚动查看？',
-      '我该如何把几个 Unix 命令串联成一个小巧、可靠的脚本用于 CI 步骤，而不是动用一整套编程语言？'
-    ],
-
-    s5Heading: '用于测试的云托管',
-    cloudHostingLabel: '云托管',
-    s5P1Post:
-      '是指在别人的计算机上运行基础设施——服务器、浏览器、CI 运行器——而不是自己拥有的机器上，按实际使用量付费，而不用自己购买和维护硬件。',
-    s5P2:
-      '这就是为什么它出现在一个测试相关的页面上：云端浏览器集群让测试套件能够针对真实设备和几十种真实的浏览器/操作系统组合运行，而这些组合没有人能合理地在本地全部安装和维护。而云端 CI 提供商（下面提到的 CI/CD 部分中的 GitHub Actions 就是其中之一）会为每一次测试运行提供一台全新的、用完即弃的机器——这样测试就不可能仅仅因为上一次运行碰巧留下的某些状态而悄悄通过，一旦每次运行都从零开始，这类隐蔽的缺陷就更难藏身。',
-    s5P3Pre: '可以进一步阅读 AWS 的',
-    s5P3Mid: '，或观看',
-    s5P3Post: '视频介绍。',
-    s5AskAi: [
-      '用简单的话说，“云”到底是什么意思？为什么一个测试套件需要用到它，而不是直接在自己的笔记本电脑上运行？',
-      '对于一个小团队来说，在自己的机器上运行测试和在云端浏览器集群上运行测试，实际的区别是什么？',
-      '我该如何判断一个不断增长的测试套件是否真的到了该迁移到云端 CI 提供商的时候？在做这个切换之前该检查什么？'
-    ],
-
-    closingPre: '要写出你的第一个脚本，这五件事都不是必须的——想了解那个，请参阅',
-    closingLinkText: '如何开始学习自动化测试？',
-    closingPost:
-      '。但当你的测试代码在自己电脑上从单个文件慢慢“长大”时，每一件都值得逐步培养：一套共享的编辑器配置、一份 git 历史、一份与用户真实需求之间诚实的联系，以及——一旦整个团队都依赖你的测试之后——用来讨论测试基础设施、流程和质量究竟“住”在哪里的共同语言。每一件也都是一个庞大、有充分文档记录的独立主题——这个页面只是一张地图，不是那片领土本身。',
-    ctaBackToLearn: '返回学习',
-    ctaHowToStart: '如何开始学习 →',
-
-    askAiHeading: '可以向 AI 提问的示例'
+    title: "自动化测试的相关概念是什么？",
+    metaDescription: "一次对自动化测试周边五件事的新手友好介绍：代码编辑器、版本控制、敏捷探索、Unix 命令和云托管——以及为什么当你的测试脚本“长大”之后，每一件都会变得重要。",
+    heading: "自动化测试的相关概念是什么？",
+    intro: "你刚刚写出了第一个浏览器自动化脚本。它能运行——就在你的电脑上，现在就能跑。这个页面要讲的，是把那一个脚本变成几个月后整个团队都能依赖、而不需要你时刻盯着的那一小撮日常工具和实践。",
+    introP: "自动化测试不是孤立存在的。每一个可靠的测试套件周围，都有一小圈普通的软件开发习惯：一个像样的编辑器来写代码，一种追踪代码随时间变化的方式，一种确保测试真的会被运行的方式，以及——容易被忽略，但同样真实——一种检查这些测试是否真的在保护某个真实用户在意的东西的方式。这些都不是专门的测试工具。但它们全部都让测试真正发挥作用。下面是值得了解的五件事，每一件都用通俗的语言解释，并附上一两个链接供你深入了解。",
+    s1Heading: "代码编辑器——例如 Visual Studio Code",
+    s2Heading: "版本控制——git 和 GitHub",
+    s3Heading: "敏捷与用户协作——探索",
+    s4Heading: "Unix 命令——命令行",
+    s5Heading: "用于测试的云托管",
+    closingPre: "要写出你的第一个脚本，这五件事都不是必须的——想了解那个，请参阅",
+    closingLinkText: "如何开始学习自动化测试？",
+    closingPost: "。但当你的测试代码在自己电脑上从单个文件慢慢“长大”时，每一件都值得逐步培养：一套共享的编辑器配置、一份 git 历史、一份与用户真实需求之间诚实的联系，以及——一旦整个团队都依赖你的测试之后——用来讨论测试基础设施、流程和质量究竟“住”在哪里的共同语言。每一件也都是一个庞大、有充分文档记录的独立主题——这个页面只是一张地图，不是那片领土本身。",
+    ctaBackToLearn: "返回学习",
+    ctaHowToStart: "如何开始学习 →"
   };
 
   const AR: Messages = {
-    title: 'ما هي المفاهيم ذات الصلة بالاختبار الآلي؟',
-    metaDescription:
-      'جولة ودّية للمبتدئين في خمسة أشياء تحيط بالاختبار الآلي: محررات الكود، والتحكم في الإصدارات، والاستكشاف الرشيق، وأوامر Unix، والاستضافة السحابية — ولماذا يهم كل منها حين ينضج سكربت الاختبار لديك.',
-    heading: 'ما هي المفاهيم ذات الصلة بالاختبار الآلي؟',
-    intro:
-      'لقد كتبت للتو أول سكربت أتمتة متصفح لك. إنه يعمل — على جهازك، الآن. تتناول هذه الصفحة حفنة الأدوات والممارسات اليومية التي تحوّل ذلك السكربت الواحد إلى شيء يستطيع فريق كامل الاعتماد عليه، بعد شهور، دون أن تقف فوقه.',
-    introP:
-      'لا يحدث الاختبار الآلي بمعزل عن غيره. فحول كل مجموعة اختبارات موثوقة عنقود صغير من عادات تطوير البرمجيات العادية: محرر جيد لكتابة الكود فيه، وطريقة لتتبع كيف يتغير ذلك الكود بمرور الوقت، وطريقة للتأكد من أن الاختبارات تُشغَّل فعلًا، و— من السهل نسيانه لكنه حقيقي بالقدر نفسه — طريقة للتحقق من أن الاختبارات تحمي شيئًا يهم شخصًا حقيقيًا فعلًا. ليس أي من هذه أدوات اختبار تحديدًا. لكنها كلها تجعل الاختبار يعمل. وفي ما يلي خمسة أشياء ينبغي معرفتها، يُشرح كل منها بلغة بسيطة، ومعه رابط أو اثنان إن أردت التعمق.',
-
-    s1Heading: 'محررات الكود — مثل Visual Studio Code',
-    s1P1a:
-      'يمكنك كتابة سكربت اختبار في أي محرر نصوص عادي، لكن محرر الكود الحقيقي يعيد إليك قدرًا مفاجئًا من المساعدة مجانًا. ',
-    syntaxLabel: 'تلوين الصياغة',
-    s1P1b:
-      ' يلوّن الكود أثناء كتابتك، فيبرز الخطأ المطبعي مثل قوس إغلاق ناقص بصريًا بدلًا من أن يختبئ حتى تشغّل السكربت وتحصل على خطأ محيّر. ',
-    autocompleteLabel: 'الإكمال التلقائي',
-    s1P1c1: ' يريك ما هو متاح فعلًا أثناء الكتابة — اكتب ',
-    s1P1c2: ' أو ',
-    s1P1c3:
-      ' في محرر حديث وسيعرض لك كل دالة تقدمها المكتبة، وهذا غالبًا أسرع من البحث في التوثيق.',
-    s1P2a: 'تتيح لك ',
-    terminalLabel: 'الطرفية المدمجة',
-    s1P2b: ' تشغيل سكربت الاختبار دون مغادرة نافذة المحرر، ويتيح لك ',
-    debuggerLabel: 'مصحّح الأخطاء المدمج',
-    s1P2c:
-      ' إيقاف اختبار فاشل في منتصف التشغيل والنظر فعلًا في ما وجده المتصفح في الصفحة — الحالة الحقيقية للأمور — بدلًا من التخمين من سلسلة عبارات ',
-    s1P2d: '. وفوق ذلك كله تدعم المحررات ',
-    extensionsLabel: 'الإضافات',
-    s1P2e:
-      ': فعلى سبيل المثال تأتي Playwright بإضافتها الرسمية لـ VS Code، التي تستطيع تشغيل اختباراتك من شريط جانبي وحتى توليد كود اختبار جديد بتسجيل نقراتك في متصفح حقيقي.',
-    s1P3Post1:
-      ' مجاني وواسع الاستخدام جدًا، وهو افتراضي معقول جدًا إن لم يكن لديك محرر مفضل. وللحصول على مقدمة مرئية، شاهد ',
-    s1P3Post2: ' (Learn Web Dev with Norbert، 15 دقيقة).',
-    s1AskAi: [
-      'لم أستخدم محرر كود حقيقيًا من قبل — ما الفرق الفعلي بين محرر الكود وشيء مثل Notepad، وهل Visual Studio Code مكان معقول للبدء؟',
-      'أستخدم VS Code بشكل عابر بالفعل — ما الإضافات أو الميزات التي ستفيدني فعلًا في كتابة اختبارات أتمتة المتصفح وتصحيحها تحديدًا؟',
-      'كيف أُعدّ تكوينًا مشتركًا لـ VS Code — الإضافات والإعدادات وتكوين المصحّح — ليحصل فريقي كله على تجربة متسقة في كتابة الاختبارات، لا أنا وحدي؟'
-    ],
-
-    s2Heading: 'التحكم في الإصدارات — git وGitHub',
-    s2P1a:
-      'من دون التحكم في الإصدارات، يعني «إصلاح اختبار» عادةً الكتابة فوق الملف القديم والأمل ألا تحتاج إلى النسخة السابقة. ',
-    gitLabel: 'Git',
-    s2P1b:
-      ' يحل ذلك بالاحتفاظ بكل إصدار من كل ملف يتتبعه: فهو يتيح لك رؤية ما تغيّر بالضبط، ومتى، و— عبر رسالة الإيداع — لماذا، ويتيح لك التراجع عن تغيير سيئ بأمان بدلًا من محاولة تذكّر كيف كان الكود.',
-    s2P2Label: 'GitHub',
-    s2P2a:
-      ' (أو مضيف مشابه مثل GitLab أو Bitbucket) يضيف المشاركة والتعاون فوق git العادي. فهو يمنح كودك بيتًا يستطيع الآخرون العثور عليه واستنساخه وقراءته؛ ويتيح لشخص ما اقتراح تغيير عبر ',
-    pullRequestLabel: 'طلب دمج (pull request)',
-    s2P2b:
-      ' — فرق مقترح يمكنك مناقشته ومراجعته ودمجه (أو لا) — بدلًا من تبادل نسخة جديدة من ملف بالبريد الإلكتروني ذهابًا وإيابًا.',
-    s2P3a: 'وهذا ليس مجردًا في هذا الموقع: فكل مستودع عرض توضيحي مرتبط من صفحتَي ',
-    examplesLinkText: 'الأمثلة',
-    s2P3b: ' و',
-    aboutLinkText: 'حول',
-    s2P3c:
-      ' في هذا الموقع هو مستودع git عام حقيقي. يمكنك استنساخ أي منها وقراءة السجل الكامل لكيف صار كود الاختبار على ما هو عليه — وهذا ليس عرضيًا، بل هو الطريقة التي يُدار بها كود الاختبار الحقيقي فعلًا.',
-    s2P4Pre: 'اعرف المزيد في ',
-    s2P4Mid: ' و',
-    s2P4Mid2: '، أو شاهد فيديو GitHub نفسها ',
-    s2P4Post: ' كمقدمة مرئية.',
-    s2AskAi: [
-      'لم أستخدم git من قبل — ماذا تعني «الإيداع» (commit) و«الدفع» (push) فعلًا بعبارات بسيطة، ولماذا أحتاج إلى أي منهما لمجرد كتابة سكربت اختبار؟',
-      'أودعتُ عن طريق الخطأ تغييرًا أريد التراجع عنه — ما الطريقة الآمنة للتراجع عنه دون فقدان عمل آخر؟',
-      'كيف ينبغي للفريق تنظيم فروع git وطلبات الدمج حول كود الاختبار تحديدًا، بحيث لا يعطّل اختبار غير مستقر أو معطوب تغييرات غير ذات صلة؟'
-    ],
-
-    s3Heading: 'الرشاقة والعمل مع المستخدمين — الاستكشاف',
-    s3P1a: 'بعبارات بسيطة، ',
-    agileLabel: 'الرشاقة (agile)',
-    s3P1b:
-      ' تعني بناء البرمجيات في دورات قصيرة قابلة للتكرار، والتواصل مع من سيستخدمونها فعلًا في أثناء ذلك — بدلًا من البناء لشهور وفق مواصفات ثابتة ثم اكتشاف النهاية أن المواصفات كانت خاطئة. ',
-    discoveryLabel: 'الاستكشاف (Discovery)',
-    s3P1c:
-      ' هو الممارسة المحددة للتحدث مع مستخدمين حقيقيين (أو ممثلين واقعيين لهم) مبكرًا، لمعرفة ما يحتاجونه فعلًا وكيف يتصرفون فعلًا، قبل البناء — وأثناءه.',
-    s3P2a:
-      'وإليك لماذا ينتمي هذا إلى صفحة عن الاختبار: مجموعة الاختبارات لا تستطيع إلا التحقق من أن البرمجيات تفعل ما ',
-    intendedLabel: 'قصدتَ',
-    s3P2b:
-      ' أن تفعله. وليس لديها وسيلة للتحقق من أن ذلك القصد كان هو الصحيح أصلًا. الاستكشاف هو ما يبقي القصد موجّهًا إلى شيء يحتاجه شخص حقيقي فعلًا، فيكون كل الفحص الآلي الدقيق الذي تجريه بعد ذلك فحصًا لشيء يستحق الفحص.',
-    s3P3:
-      'وهو ملموس في هذا الموقع نفسه أيضًا: فأمثلة التجهيزات في صفحة التدريب، وسيناريوهات «About Us» والبحث في NHS Wales التي تمارسها المستودعات الشقيقة لهذا الموقع، موجودة لأن أحدهم حدّد رحلة مستخدم حقيقية تستحق الحماية — التسجيل والبحث والعثور على معلومات في موقع خدمة صحية. وقرار أن هذه الرحلة مهمة بما يكفي لكتابة اختبار لها هو بحد ذاته نشاط استكشاف لا نشاط تقني بحت.',
-    s3P4Pre: 'اعرف المزيد في ',
-    s3P4Mid: ' وفي ',
-    s3P4Mid2: ' من Nielsen Norman Group، أو شاهد ',
-    s3P4Post: ' كمقدمة مرئية.',
-    s3AskAi: [
-      'ماذا يعني «الاستكشاف» فعلًا في الرشاقة، ولماذا يهم من يكتب سكربتات الاختبار فحسب؟',
-      'كيف أحوّل قصة مستخدم غامضة إلى سيناريو ملموس قابل للاختبار قبل أن أبدأ أتمتته؟',
-      'كيف تُبقي الفرق ذات الخبرة الاستكشاف وكتابة الاختبارات مترابطين على نحو مستمر، بدلًا من أن يحدث الاستكشاف مرة واحدة في البداية ثم تنجرف الاختبارات عنه لاحقًا؟'
-    ],
-
-    s4Heading: 'أوامر Unix — سطر الأوامر',
-    unixCommandsLabel: 'أوامر Unix',
-    s4P1Post:
-      ' هي ما تتحدثه تقريبًا كل بيئة تطوير ومشغّل CI وحاوية Docker بشكل أصلي، دون حاجة إلى واجهة رسومية. لا تحتاج إلى إتقانها جميعًا؛ فمعرفة عملية بنحو عشرين أو ثلاثين منها تذهب بك بعيدًا جدًا.',
-    cmdLs: 'عرض الملفات والمجلدات',
-    cmdCd: 'تغيير المجلد',
-    cmdMv: 'نقل ملف أو مجلد',
-    cmdMore: 'عرض نص ملف، صفحة واحدة في كل مرة',
-    cmdNano: 'تحرير نص ملف بأوامر بسيطة',
-    cmdGrep: 'البحث عن نص في الملفات',
-    cmdChmod: 'تغيير وضع صلاحيات الملف',
-    cmdCurl: 'استدعاء عنوان URL مثل عنوان ويب http',
-    cmdClaude: 'وكيل ذكاء اصطناعي',
-    s4P2a: 'وإليك لماذا ينتمي هذا إلى صفحة عن الاختبار: ',
-    s4P2b: ' و',
-    s4P2c:
-      ' هما الطريقة التي تجد بها إخفاقًا محددًا واحدًا بين آلاف الأسطر من مخرجات الاختبار أو ملف السجل، بدلًا من التمرير. ',
-    s4P2d:
-      ' هو الطريقة التي تتحقق بها يدويًا من سلامة واجهة برمجية — وهي نقطة النهاية نفسها التي قد يختبرها اختبار واجهة أيضًا — قبل كتابة الاختبار الحقيقي. ',
-    s4P2e:
-      ' هو الطريقة التي يصبح بها سكربت الاختبار قابلًا للتشغيل مباشرةً. كما أن ربط بضعة أوامر معًا هو غالبًا الطريقة التي تُبنى بها خطوة CI دون اللجوء إلى لغة برمجة «حقيقية» لمجرد لصق أداتين.',
-    s4P3Pre: 'اعرف المزيد في ',
-    s4P3Mid: ' من Software Carpentry، أو شاهد فيديو NetworkChuck ',
-    s4P3Post: ' كمقدمة مرئية سريعة الإيقاع.',
-    s4AskAi: [
-      'لم أستخدم سطر أوامر من قبل — ما حفنة أوامر Unix التي تستحق التعلم أولًا فعلًا لمن يدخل عالم الاختبار؟',
-      'كيف أستخدم grep للعثور على كل اختبار فاشل في سجل CI ضخم دون تمريره يدويًا؟',
-      'كيف أسلسل بضعة أوامر Unix في سكربت صغير موثوق لخطوة CI، بدلًا من اللجوء إلى لغة برمجة كاملة؟'
-    ],
-
-    s5Heading: 'الاستضافة السحابية للاختبار',
-    cloudHostingLabel: 'الاستضافة السحابية',
-    s5P1Post:
-      ' تعني تشغيل البنية التحتية — الخوادم والمتصفحات ومشغّلات CI — على حواسيب شخص آخر بدلًا من حواسيب تملكها، والدفع مقابل ما تستخدمه فعلًا بدلًا من شراء العتاد وصيانته بنفسك.',
-    s5P2:
-      'وإليك لماذا ينتمي هذا إلى صفحة عن الاختبار: تتيح مزارع المتصفحات السحابية لمجموعة الاختبارات أن تعمل على أجهزة حقيقية وعشرات التوليفات الحقيقية من المتصفحات وأنظمة التشغيل التي لا يستطيع أحد تثبيتها وصيانتها محليًا بشكل معقول. ويمنح مزودو CI السحابيون (ومنهم GitHub Actions المذكور أدناه في CI/CD) كل تشغيل اختبار جهازًا جديدًا قابلًا للتخلص منه — فلا ينجح الاختبار بصمت بسبب حالة تركها تشغيل سابق فحسب، وهي فئة أخطاء خفية يصعب إخفاؤها كثيرًا حين يبدأ كل تشغيل من الصفر.',
-    s5P3Pre: 'اعرف المزيد في ',
-    s5P3Mid: ' من AWS، أو شاهد ',
-    s5P3Post: ' كمقدمة مرئية.',
-    s5AskAi: [
-      'ماذا تعني «السحابة» فعلًا بعبارات بسيطة، ولماذا تحتاج مجموعة اختبارات إليها بدلًا من العمل على حاسوبي المحمول فحسب؟',
-      'ما الفرق العملي بين تشغيل اختباراتي على جهازي ومزرعة متصفحات سحابية لفريق صغير؟',
-      'كيف أقرر ما إذا كانت مجموعة اختبارات متنامية جاهزة فعلًا للانتقال إلى مزوّد CI سحابي، وما الذي ينبغي فحصه قبل ذلك الانتقال؟'
-    ],
-
-    closingPre: 'لا يُشترط أي من هذه الخمسة لكتابة أول سكربت لك — انظر ',
-    closingLinkText: 'كيف تبدأ تعلم الاختبار الآلي؟',
-    closingPost:
-      ' لذلك. لكن كلًّا منها يستحق اكتسابه حين يتجاوز كود الاختبار لديك ملفًا واحدًا على جهازك: إعداد محرر مشترك، وسجل git، وصلة صادقة بما يحتاجه المستخدمون فعلًا، و— حين يعتمد فريق كامل على اختباراتك — المفردات المشتركة للحديث عن أين تقع بنية الاختبار التحتية وعمليته وجودته فعلًا. وكل منها أيضًا موضوع كبير وموثّق جيدًا بحد ذاته — وهذه الصفحة خريطة لا أرض.',
-    ctaBackToLearn: 'العودة إلى تعلّم',
-    ctaHowToStart: 'كيف تبدأ التعلم ←',
-
-    askAiHeading: 'أمثلة يمكنك طرحها على الذكاء الاصطناعي'
+    title: "ما هي المفاهيم ذات الصلة بالاختبار الآلي؟",
+    metaDescription: "جولة ودّية للمبتدئين في خمسة أشياء تحيط بالاختبار الآلي: محررات الكود، والتحكم في الإصدارات، والاستكشاف الرشيق، وأوامر Unix، والاستضافة السحابية — ولماذا يهم كل منها حين ينضج سكربت الاختبار لديك.",
+    heading: "ما هي المفاهيم ذات الصلة بالاختبار الآلي؟",
+    intro: "لقد كتبت للتو أول سكربت أتمتة متصفح لك. إنه يعمل — على جهازك، الآن. تتناول هذه الصفحة حفنة الأدوات والممارسات اليومية التي تحوّل ذلك السكربت الواحد إلى شيء يستطيع فريق كامل الاعتماد عليه، بعد شهور، دون أن تقف فوقه.",
+    introP: "لا يحدث الاختبار الآلي بمعزل عن غيره. فحول كل مجموعة اختبارات موثوقة عنقود صغير من عادات تطوير البرمجيات العادية: محرر جيد لكتابة الكود فيه، وطريقة لتتبع كيف يتغير ذلك الكود بمرور الوقت، وطريقة للتأكد من أن الاختبارات تُشغَّل فعلًا، و— من السهل نسيانه لكنه حقيقي بالقدر نفسه — طريقة للتحقق من أن الاختبارات تحمي شيئًا يهم شخصًا حقيقيًا فعلًا. ليس أي من هذه أدوات اختبار تحديدًا. لكنها كلها تجعل الاختبار يعمل. وفي ما يلي خمسة أشياء ينبغي معرفتها، يُشرح كل منها بلغة بسيطة، ومعه رابط أو اثنان إن أردت التعمق.",
+    s1Heading: "محررات الكود — مثل Visual Studio Code",
+    s2Heading: "التحكم في الإصدارات — git وGitHub",
+    s3Heading: "الرشاقة والعمل مع المستخدمين — الاستكشاف",
+    s4Heading: "أوامر Unix — سطر الأوامر",
+    s5Heading: "الاستضافة السحابية للاختبار",
+    closingPre: "لا يُشترط أي من هذه الخمسة لكتابة أول سكربت لك — انظر ",
+    closingLinkText: "كيف تبدأ تعلم الاختبار الآلي؟",
+    closingPost: " لذلك. لكن كلًّا منها يستحق اكتسابه حين يتجاوز كود الاختبار لديك ملفًا واحدًا على جهازك: إعداد محرر مشترك، وسجل git، وصلة صادقة بما يحتاجه المستخدمون فعلًا، و— حين يعتمد فريق كامل على اختباراتك — المفردات المشتركة للحديث عن أين تقع بنية الاختبار التحتية وعمليته وجودته فعلًا. وكل منها أيضًا موضوع كبير وموثّق جيدًا بحد ذاته — وهذه الصفحة خريطة لا أرض.",
+    ctaBackToLearn: "العودة إلى تعلّم",
+    ctaHowToStart: "كيف تبدأ التعلم ←"
   };
 
   const KO: Messages = {
-    title: '자동화 테스트와 관련된 개념은 무엇인가?',
-    metaDescription:
-      '자동화 테스트를 둘러싼 다섯 가지에 대한 초보자 친화적인 안내: 코드 에디터, 버전 관리, 애자일 디스커버리, Unix 명령어, 클라우드 호스팅 — 그리고 테스트 스크립트가 커졌을 때 각각이 왜 중요한지 설명합니다.',
-    heading: '자동화 테스트와 관련된 개념은 무엇인가?',
-    intro:
-      '방금 첫 브라우저 자동화 스크립트를 작성했습니다. 지금 이 순간, 여러분의 컴퓨터에서는 동작합니다. 이 페이지는 그 스크립트 하나를, 몇 달 뒤에도 여러분이 지켜보지 않아도 팀 전체가 믿고 쓸 수 있는 무언가로 바꿔 주는 몇 가지 일상적인 도구와 관행에 관한 것입니다.',
-    introP:
-      '자동화 테스트는 고립되어 일어나지 않습니다. 신뢰할 수 있는 모든 테스트 스위트의 주위에는 평범한 소프트웨어 개발 습관이 작은 무리를 이루고 있습니다. 코드를 작성할 괜찮은 에디터, 그 코드가 시간에 따라 어떻게 바뀌는지 추적하는 방법, 테스트가 실제로 실행되도록 보장하는 방법, 그리고 — 잊기 쉽지만 똑같이 실재하는 — 테스트가 실제 사람이 정말 신경 쓰는 무언가를 보호하고 있는지 확인하는 방법입니다. 이들 중 어느 것도 특별히 테스트 도구는 아닙니다. 하지만 모두가 테스트가 제대로 작동하게 만듭니다. 아래에 알아 두면 좋은 다섯 가지를 쉬운 말로 설명했으며, 더 깊이 들어가고 싶다면 각각 링크가 한두 개씩 있습니다.',
-
-    s1Heading: '코드 에디터 — 예: Visual Studio Code',
-    s1P1a:
-      '테스트 스크립트는 어떤 일반 텍스트 에디터에서도 작성할 수 있지만, 제대로 된 코드 에디터는 놀랄 만큼 많은 도움을 공짜로 돌려줍니다. ',
-    syntaxLabel: '구문 강조',
-    s1P1b:
-      '는 입력하는 동안 코드에 색을 입혀, 닫는 괄호가 빠진 것 같은 오타가 스크립트를 실행해 헷갈리는 오류를 받을 때까지 숨어 있지 않고 눈에 확 띄게 해 줍니다. ',
-    autocompleteLabel: '자동 완성',
-    s1P1c1: '은 입력하는 동안 실제로 사용할 수 있는 것을 보여 줍니다. 최신 에디터에서 ',
-    s1P1c2: ' 또는 ',
-    s1P1c3:
-      '를 입력하면 라이브러리가 제공하는 모든 메서드를 나열해 주는데, 문서를 검색하는 것보다 빠른 경우가 많습니다.',
-    s1P2a: '',
-    terminalLabel: '통합 터미널',
-    s1P2b: '을 사용하면 에디터 창을 떠나지 않고 테스트 스크립트를 실행할 수 있고, ',
-    debuggerLabel: '내장 디버거',
-    s1P2c:
-      '를 사용하면 실패하는 테스트를 실행 도중에 일시 중지하고, 줄줄이 이어진 ',
-    s1P2d:
-      ' 문으로 추측하는 대신 브라우저가 페이지에서 실제로 무엇을 발견했는지 — 사물의 실제 상태 — 를 직접 살펴볼 수 있습니다. 이 모든 것에 더해 에디터는 ',
-    extensionsLabel: '확장 기능',
-    s1P2e:
-      '을 지원합니다. 예를 들어 Playwright는 공식 VS Code 확장 기능을 제공하며, 사이드바에서 테스트를 실행하고 실제 브라우저에서 클릭을 기록해 새 테스트 코드를 생성하기까지 할 수 있습니다.',
-    s1P3Post1:
-      '는 무료이고 매우 널리 쓰이며, 좋아하는 에디터가 아직 없다면 아주 합리적인 기본 선택입니다. 영상으로 입문하려면 ',
-    s1P3Post2: ' (Learn Web Dev with Norbert, 15분)을 보세요.',
-    s1AskAi: [
-      '저는 제대로 된 코드 에디터를 써 본 적이 없습니다. 코드 에디터와 메모장 같은 것의 실제 차이는 무엇이며, Visual Studio Code는 시작하기에 적당한 곳인가요?',
-      '저는 이미 VS Code를 가볍게 쓰고 있습니다. 브라우저 자동화 테스트를 작성하고 디버깅하는 데 구체적으로 어떤 확장 기능이나 기능이 도움이 될까요?',
-      '확장 기능, 설정, 디버거 구성 같은 공유 VS Code 구성을 어떻게 만들어야 저뿐만 아니라 팀 전체가 일관된 테스트 작성 경험을 얻을 수 있을까요?'
-    ],
-
-    s2Heading: '버전 관리 — git과 GitHub',
-    s2P1a:
-      '버전 관리가 없으면 "테스트 고치기"는 보통 이전 파일을 덮어쓰고 이전 버전이 필요 없기를 바라는 것을 뜻합니다. ',
-    gitLabel: 'Git',
-    s2P1b:
-      '은 추적하는 모든 파일의 모든 버전을 보관하여 이를 해결합니다. 무엇이 언제 바뀌었는지, 그리고 커밋 메시지를 통해 왜 바뀌었는지 정확히 볼 수 있고, 코드가 예전에 어땠는지 기억하려고 애쓰는 대신 나쁜 변경을 안전하게 되돌릴 수 있습니다.',
-    s2P2Label: 'GitHub',
-    s2P2a:
-      '(또는 GitLab, Bitbucket 같은 비슷한 호스트)는 일반 git 위에 공유와 협업을 더합니다. 다른 사람들이 찾고, 복제하고, 읽을 수 있는 코드의 집을 제공하며, 파일의 새 사본을 이메일로 주고받는 대신 ',
-    pullRequestLabel: '풀 리퀘스트',
-    s2P2b:
-      '를 통해 누군가 변경을 제안할 수 있게 해 줍니다. 토론하고, 검토하고, 병합할 수 있는(또는 하지 않을 수 있는) 제안된 diff입니다.',
-    s2P3a: '이 사이트에서 이것은 추상적인 이야기가 아닙니다. 이 사이트의 ',
-    examplesLinkText: '예제',
-    s2P3b: ' 및 ',
-    aboutLinkText: '소개',
-    s2P3c:
-      ' 페이지에서 링크된 모든 데모 저장소는 실제 공개 git 저장소입니다. 그중 아무거나 복제해서 그 테스트 코드가 어떻게 지금의 모습이 되었는지 전체 이력을 읽어 볼 수 있습니다. 이것은 우연이 아니라 실제 테스트 코드가 실제로 관리되는 방식입니다.',
-    s2P4Pre: '더 알아보려면 ',
-    s2P4Mid: ' 및 ',
-    s2P4Mid2: '를 보거나, GitHub 자체의 ',
-    s2P4Post: ' 영상으로 입문하세요.',
-    s2AskAi: [
-      '저는 git을 써 본 적이 없습니다. \'커밋\'과 \'푸시\'는 실제로 쉬운 말로 무슨 뜻이며, 테스트 스크립트를 작성하는 데 왜 둘 중 하나라도 필요한가요?',
-      '실수로 되돌리고 싶은 변경을 커밋했습니다. 다른 작업을 잃지 않고 안전하게 되돌리는 방법은 무엇인가요?',
-      '팀이 테스트 코드를 중심으로 git 브랜치와 풀 리퀘스트를 어떻게 구성해야 불안정하거나 깨진 테스트가 관련 없는 변경을 막지 않을까요?'
-    ],
-
-    s3Heading: '애자일과 사용자와 함께 일하기 — 디스커버리',
-    s3P1a: '쉬운 말로, ',
-    agileLabel: '애자일',
-    s3P1b:
-      '은 소프트웨어를 짧고 반복 가능한 주기로 만들면서, 몇 달 동안 고정된 명세에 맞춰 만들다가 마지막에야 그 명세가 틀렸다는 것을 알게 되는 대신, 그 소프트웨어를 실제로 사용할 사람들과 도중에 계속 확인하는 것을 뜻합니다. ',
-    discoveryLabel: '디스커버리',
-    s3P1c:
-      '는 만들기 전에, 그리고 만드는 동안, 실제(또는 현실적으로 대표성 있는) 사용자와 일찍 이야기하여 그들이 실제로 무엇을 필요로 하고 실제로 어떻게 행동하는지 알아내는 구체적인 관행입니다.',
-    s3P2a:
-      '이것이 테스트 페이지에 속하는 이유는 다음과 같습니다. 테스트 스위트는 소프트웨어가 여러분이 ',
-    intendedLabel: '의도한',
-    s3P2b:
-      ' 대로 동작하는지만 확인할 수 있습니다. 그 의도가 애초에 옳았는지는 확인할 방법이 없습니다. 디스커버리는 그 의도가 실제 사람이 정말 필요로 하는 것을 향하도록 유지해 주는 것이며, 그래서 이후에 하는 모든 신중한 자동 확인이 확인할 가치가 있는 것을 확인하게 됩니다.',
-    s3P3:
-      '바로 이 사이트에서도 구체적입니다. 연습 페이지의 픽스처 예제와, 이 사이트의 자매 저장소가 다루는 NHS Wales의 "About Us" 및 검색 시나리오는 누군가 보호할 가치가 있는 실제 사용자 여정 — 가입, 검색, 보건 서비스 사이트에서 정보 찾기 — 을 파악했기 때문에 존재합니다. 그 여정이 테스트를 작성할 만큼 중요하다고 결정하는 것은 그 자체로 순수한 기술 작업이 아니라 디스커버리 활동입니다.',
-    s3P4Pre: '더 알아보려면 ',
-    s3P4Mid: '와 Nielsen Norman Group의 ',
-    s3P4Mid2: '를 보거나, ',
-    s3P4Post: ' 영상으로 입문하세요.',
-    s3AskAi: [
-      "애자일에서 '디스커버리'는 실제로 무슨 뜻이며, 테스트 스크립트만 작성하는 사람에게 그것이 왜 중요한가요?",
-      '자동화를 시작하기 전에 모호한 사용자 스토리를 구체적이고 테스트 가능한 시나리오로 바꾸려면 어떻게 해야 하나요?',
-      '경험 많은 팀은 디스커버리를 처음에 한 번만 하고 테스트가 나중에 거기서 벗어나게 두는 대신, 디스커버리와 테스트 작성을 지속적으로 어떻게 연결해 두나요?'
-    ],
-
-    s4Heading: 'Unix 명령어 — 명령줄',
-    unixCommandsLabel: 'Unix 명령어',
-    s4P1Post:
-      '는 거의 모든 개발 환경, CI 러너, Docker 컨테이너가 GUI 없이 기본적으로 사용하는 언어입니다. 전부 능숙해질 필요는 없으며, 스무 개에서 서른 개 정도만 실무적으로 알아도 아주 멀리 갈 수 있습니다.',
-    cmdLs: '파일과 디렉터리 목록 보기',
-    cmdCd: '디렉터리 변경',
-    cmdMv: '파일이나 디렉터리 이동',
-    cmdMore: '파일의 텍스트를 한 페이지씩 보기',
-    cmdNano: '간단한 명령으로 파일의 텍스트 편집',
-    cmdGrep: '파일에서 텍스트 찾기',
-    cmdChmod: '파일 권한 모드 변경',
-    cmdCurl: 'http 웹 주소 같은 URL 호출',
-    cmdClaude: 'AI 에이전트',
-    s4P2a: '이것이 테스트 페이지에 속하는 이유는 다음과 같습니다. ',
-    s4P2b: '과(와) ',
-    s4P2c:
-      '는 수천 줄의 테스트 출력이나 로그 파일에서 스크롤하는 대신 특정 실패 하나를 찾는 방법입니다. ',
-    s4P2d:
-      '은 실제 테스트를 작성하기 전에 UI 테스트가 다룰 수도 있는 같은 엔드포인트인 API를 손으로 점검하는 방법입니다. ',
-    s4P2e:
-      '는 테스트 스크립트를 직접 실행 가능하게 만드는 방법입니다. 그리고 몇 개의 명령을 파이프로 연결하는 것은 두 도구를 이어 붙이기 위해 "진짜" 프로그래밍 언어를 꺼내지 않고도 CI 단계를 만드는 방법인 경우가 많습니다.',
-    s4P3Pre: '더 알아보려면 Software Carpentry의 ',
-    s4P3Mid: '를 보거나, NetworkChuck의 ',
-    s4P3Post: ' 영상으로 빠른 속도의 입문을 해 보세요.',
-    s4AskAi: [
-      '저는 명령줄을 써 본 적이 없습니다. 테스트에 입문하는 사람이 가장 먼저 배울 만한 Unix 명령어는 실제로 어떤 것들인가요?',
-      '엄청나게 큰 CI 로그에서 직접 스크롤하지 않고 grep으로 실패한 모든 테스트를 찾으려면 어떻게 해야 하나요?',
-      '완전한 프로그래밍 언어를 쓰는 대신, 몇 개의 Unix 명령어를 엮어 CI 단계를 위한 작고 믿을 만한 스크립트를 만들려면 어떻게 해야 하나요?'
-    ],
-
-    s5Heading: '테스트를 위한 클라우드 호스팅',
-    cloudHostingLabel: '클라우드 호스팅',
-    s5P1Post:
-      '은 서버, 브라우저, CI 러너 같은 인프라를 내가 소유한 컴퓨터가 아니라 다른 사람의 컴퓨터에서 실행하고, 하드웨어를 직접 사서 유지하는 대신 실제로 사용한 만큼만 비용을 내는 것을 뜻합니다.',
-    s5P2:
-      '이것이 테스트 페이지에 속하는 이유는 다음과 같습니다. 클라우드 브라우저 팜을 이용하면 테스트 스위트를 실제 기기와, 누구도 로컬에 합리적으로 설치하고 유지할 수 없는 수십 가지 실제 브라우저와 운영 체제 조합에서 실행할 수 있습니다. 그리고 클라우드 CI 제공업체(아래 CI/CD에서 언급하는 GitHub Actions도 그중 하나입니다)는 모든 테스트 실행에 새로 만든 일회용 머신을 제공하므로, 이전 실행이 우연히 남겨 둔 상태 덕분에 테스트가 조용히 통과하는 일이 없습니다. 모든 실행이 아무것도 없는 상태에서 시작되면 숨기기가 훨씬 어려워지는, 미묘한 버그 종류입니다.',
-    s5P3Pre: '더 알아보려면 AWS의 ',
-    s5P3Mid: '를 보거나, ',
-    s5P3Post: ' 영상으로 입문하세요.',
-    s5AskAi: [
-      "'클라우드'는 실제로 쉬운 말로 무슨 뜻이며, 테스트 스위트가 제 노트북에서만 실행되는 대신 왜 그것을 필요로 하나요?",
-      '작은 팀에게 내 컴퓨터에서 테스트를 실행하는 것과 클라우드 브라우저 팜에서 실행하는 것의 실질적인 차이는 무엇인가요?',
-      '커져 가는 테스트 스위트가 클라우드 CI 제공업체로 옮길 준비가 정말 되었는지 어떻게 판단하며, 옮기기 전에 무엇을 확인해야 하나요?'
-    ],
-
-    closingPre: '이 다섯 가지 중 어느 것도 첫 스크립트를 작성하는 데 필수는 아닙니다. 그에 대해서는 ',
-    closingLinkText: '자동화 테스트 학습은 어떻게 시작하나요?',
-    closingPost:
-      '를 참고하세요. 하지만 테스트 코드가 내 컴퓨터의 파일 하나를 넘어 커지면 각각을 익혀 둘 가치가 있습니다. 공유 에디터 설정, git 이력, 사용자가 실제로 필요로 하는 것과의 정직한 연결, 그리고 — 팀 전체가 여러분의 테스트에 의존하게 되면 — 테스트 인프라, 프로세스, 품질이 실제로 어디에 있는지 이야기하기 위한 공통 어휘입니다. 각각은 그 자체로 크고 문서화가 잘 된 주제이기도 합니다. 이 페이지는 영토가 아니라 지도입니다.',
-    ctaBackToLearn: '학습으로 돌아가기',
-    ctaHowToStart: '학습 시작하기 →',
-
-    askAiHeading: 'AI에게 물어볼 수 있는 예시'
+    title: "자동화 테스트와 관련된 개념은 무엇인가?",
+    metaDescription: "자동화 테스트를 둘러싼 다섯 가지에 대한 초보자 친화적인 안내: 코드 에디터, 버전 관리, 애자일 디스커버리, Unix 명령어, 클라우드 호스팅 — 그리고 테스트 스크립트가 커졌을 때 각각이 왜 중요한지 설명합니다.",
+    heading: "자동화 테스트와 관련된 개념은 무엇인가?",
+    intro: "방금 첫 브라우저 자동화 스크립트를 작성했습니다. 지금 이 순간, 여러분의 컴퓨터에서는 동작합니다. 이 페이지는 그 스크립트 하나를, 몇 달 뒤에도 여러분이 지켜보지 않아도 팀 전체가 믿고 쓸 수 있는 무언가로 바꿔 주는 몇 가지 일상적인 도구와 관행에 관한 것입니다.",
+    introP: "자동화 테스트는 고립되어 일어나지 않습니다. 신뢰할 수 있는 모든 테스트 스위트의 주위에는 평범한 소프트웨어 개발 습관이 작은 무리를 이루고 있습니다. 코드를 작성할 괜찮은 에디터, 그 코드가 시간에 따라 어떻게 바뀌는지 추적하는 방법, 테스트가 실제로 실행되도록 보장하는 방법, 그리고 — 잊기 쉽지만 똑같이 실재하는 — 테스트가 실제 사람이 정말 신경 쓰는 무언가를 보호하고 있는지 확인하는 방법입니다. 이들 중 어느 것도 특별히 테스트 도구는 아닙니다. 하지만 모두가 테스트가 제대로 작동하게 만듭니다. 아래에 알아 두면 좋은 다섯 가지를 쉬운 말로 설명했으며, 더 깊이 들어가고 싶다면 각각 링크가 한두 개씩 있습니다.",
+    s1Heading: "코드 에디터 — 예: Visual Studio Code",
+    s2Heading: "버전 관리 — git과 GitHub",
+    s3Heading: "애자일과 사용자와 함께 일하기 — 디스커버리",
+    s4Heading: "Unix 명령어 — 명령줄",
+    s5Heading: "테스트를 위한 클라우드 호스팅",
+    closingPre: "이 다섯 가지 중 어느 것도 첫 스크립트를 작성하는 데 필수는 아닙니다. 그에 대해서는 ",
+    closingLinkText: "자동화 테스트 학습은 어떻게 시작하나요?",
+    closingPost: "를 참고하세요. 하지만 테스트 코드가 내 컴퓨터의 파일 하나를 넘어 커지면 각각을 익혀 둘 가치가 있습니다. 공유 에디터 설정, git 이력, 사용자가 실제로 필요로 하는 것과의 정직한 연결, 그리고 — 팀 전체가 여러분의 테스트에 의존하게 되면 — 테스트 인프라, 프로세스, 품질이 실제로 어디에 있는지 이야기하기 위한 공통 어휘입니다. 각각은 그 자체로 크고 문서화가 잘 된 주제이기도 합니다. 이 페이지는 영토가 아니라 지도입니다.",
+    ctaBackToLearn: "학습으로 돌아가기",
+    ctaHowToStart: "학습 시작하기 →"
   };
 
   const FR: Messages = {
-    title: 'Quels sont les concepts liés aux tests automatisés ?',
-    metaDescription:
-      "Un tour d'horizon accessible aux débutants de cinq éléments qui entourent le test automatisé : éditeurs de code, gestion de versions, découverte agile, commandes Unix et hébergement dans le cloud — et pourquoi chacun compte dès que votre script de test grandit.",
-    heading: 'Quels sont les concepts liés aux tests automatisés ?',
-    intro:
-      "Vous venez d'écrire votre premier script d'automatisation de navigateur. Il fonctionne — sur votre machine, maintenant. Cette page porte sur la poignée d'outils et de pratiques du quotidien qui transforment ce script en quelque chose sur lequel toute une équipe peut compter, des mois plus tard, sans que vous ayez à le surveiller.",
-    introP:
-      "Le test automatisé ne se produit pas en vase clos. Autour de toute suite de tests fiable se trouve un petit ensemble d'habitudes ordinaires du développement logiciel : un éditeur correct pour écrire le code, un moyen de suivre l'évolution de ce code dans le temps, un moyen de s'assurer que les tests sont réellement exécutés et — facile à oublier, mais tout aussi réel — un moyen de vérifier que les tests protègent quelque chose auquel une vraie personne tient vraiment. Aucun de ces éléments n'est un outil de test à proprement parler. Tous font fonctionner le test. Voici cinq éléments à connaître, chacun expliqué simplement, chacun avec un ou deux liens si vous voulez aller plus loin.",
-
-    s1Heading: 'Éditeurs de code — par exemple Visual Studio Code',
-    s1P1a:
-      "Vous pouvez écrire un script de test dans n'importe quel éditeur de texte brut, mais un véritable éditeur de code vous apporte gratuitement une aide étonnante. ",
-    syntaxLabel: 'La coloration syntaxique',
-    s1P1b:
-      " colore votre code pendant que vous le saisissez, de sorte qu'une faute de frappe comme une parenthèse fermante manquante saute aux yeux au lieu de se cacher jusqu'à ce que vous exécutiez le script et obteniez une erreur déroutante. ",
-    autocompleteLabel: "L'autocomplétion",
-    s1P1c1: " vous montre ce qui est réellement disponible pendant que vous tapez — tapez ",
-    s1P1c2: ' ou ',
-    s1P1c3:
-      " dans un éditeur moderne et il listera chaque méthode proposée par la bibliothèque, ce qui est souvent plus rapide que de chercher dans la documentation.",
-    s1P2a: 'Un ',
-    terminalLabel: 'terminal intégré',
-    s1P2b: " vous permet d'exécuter votre script de test sans quitter la fenêtre de l'éditeur, et un ",
-    debuggerLabel: 'débogueur intégré',
-    s1P2c:
-      " vous permet de suspendre un test en échec en cours d'exécution et de regarder réellement ce que le navigateur a trouvé dans la page — l'état réel des choses — plutôt que de deviner à partir d'une série d'instructions ",
-    s1P2d: ". En plus de tout cela, les éditeurs prennent en charge les ",
-    extensionsLabel: 'extensions',
-    s1P2e:
-      " : par exemple, Playwright propose sa propre extension officielle pour VS Code, qui peut lancer vos tests depuis une barre latérale et même générer du nouveau code de test en enregistrant vos clics dans un vrai navigateur.",
-    s1P3Post1:
-      " est gratuit, extrêmement répandu et un choix par défaut très raisonnable si vous n'avez pas déjà d'éditeur favori. Pour une présentation en vidéo, regardez ",
-    s1P3Post2: ' (Learn Web Dev with Norbert, 15 min).',
-    s1AskAi: [
-      "Je n'ai jamais utilisé de véritable éditeur de code — quelle est la vraie différence entre un éditeur de code et quelque chose comme le Bloc-notes, et Visual Studio Code est-il un point de départ raisonnable ?",
-      "J'utilise déjà VS Code de façon occasionnelle — quelles extensions ou fonctionnalités m'aideraient vraiment à écrire et déboguer des tests d'automatisation de navigateur en particulier ?",
-      "Comment mettre en place une configuration VS Code partagée — extensions, paramètres, configuration du débogueur — pour que toute mon équipe ait une expérience d'écriture de tests cohérente, et pas seulement moi ?"
-    ],
-
-    s2Heading: 'Gestion de versions — git et GitHub',
-    s2P1a:
-      "Sans gestion de versions, « corriger un test » signifie généralement écraser l'ancien fichier en espérant ne pas avoir besoin de la version précédente. ",
-    gitLabel: 'Git',
-    s2P1b:
-      " résout cela en conservant chaque version de chaque fichier qu'il suit : il permet de voir exactement ce qui a changé, quand et — grâce au message de commit — pourquoi, et il permet d'annuler sans risque une mauvaise modification plutôt que d'essayer de se souvenir de ce à quoi ressemblait le code.",
-    s2P2Label: 'GitHub',
-    s2P2a:
-      " (ou un hébergeur similaire, comme GitLab ou Bitbucket) ajoute le partage et la collaboration par-dessus git. Il donne à votre code un foyer que d'autres personnes peuvent trouver, cloner et lire ; il permet à quelqu'un de proposer une modification au moyen d'une ",
-    pullRequestLabel: 'pull request',
-    s2P2b:
-      " — un diff proposé que l'on peut discuter, relire et fusionner (ou non) — plutôt que de s'échanger par e-mail une nouvelle copie d'un fichier.",
-    s2P3a: "Ce n'est pas abstrait pour ce site : chaque dépôt de démonstration lié depuis les pages ",
-    examplesLinkText: 'exemples',
-    s2P3b: ' et ',
-    aboutLinkText: 'à propos',
-    s2P3c:
-      " de ce site est un vrai dépôt git public. Vous pouvez cloner n'importe lequel d'entre eux et lire tout l'historique de la façon dont ce code de test a pris sa forme actuelle — ce n'est pas anecdotique, c'est ainsi que le vrai code de test est réellement géré.",
-    s2P4Pre: 'Pour en savoir plus, consultez ',
-    s2P4Mid: ' et ',
-    s2P4Mid2: ", ou regardez la vidéo ",
-    s2P4Post: ' de GitHub pour une présentation en vidéo.',
-    s2AskAi: [
-      "Je n'ai jamais utilisé git — que signifient réellement « commiter » et « pousser », en termes simples, et pourquoi ai-je besoin de l'un ou de l'autre juste pour écrire un script de test ?",
-      "J'ai commité une modification par erreur et je veux l'annuler — quelle est une façon sûre de le faire sans perdre d'autre travail ?",
-      "Comment une équipe devrait-elle structurer ses branches git et ses pull requests autour du code de test, pour qu'un test instable ou cassé ne bloque pas des modifications sans rapport ?"
-    ],
-
-    s3Heading: 'Agilité et travail avec les utilisateurs — la découverte',
-    s3P1a: 'En termes simples, ',
-    agileLabel: "l'agilité",
-    s3P1b:
-      " consiste à construire des logiciels par cycles courts et répétables, en échangeant en chemin avec les personnes qui les utiliseront vraiment — plutôt que de construire pendant des mois à partir d'une spécification figée pour s'apercevoir seulement à la fin que la spécification était fausse. ",
-    discoveryLabel: 'La découverte',
-    s3P1c:
-      " est la pratique précise consistant à parler tôt à de vrais utilisateurs (ou à des représentants réalistes) pour apprendre ce dont ils ont réellement besoin et comment ils se comportent réellement, avant — et pendant — la construction.",
-    s3P2a:
-      "Voici pourquoi cela a sa place sur une page consacrée aux tests : une suite de tests ne peut que vérifier que le logiciel fait ce que vous ",
-    intendedLabel: 'aviez prévu',
-    s3P2b:
-      " qu'il fasse. Elle n'a aucun moyen de vérifier si cette intention était la bonne. La découverte est ce qui maintient l'intention orientée vers ce dont une vraie personne a réellement besoin, afin que toutes les vérifications automatisées minutieuses que vous faites ensuite portent sur quelque chose qui vaut la peine d'être vérifié.",
-    s3P3:
-      "C'est aussi concret sur ce site même : les exemples de contenu stable de la page d'exercices, et les scénarios « About Us » et de recherche NHS Wales que mettent en œuvre les dépôts associés à ce site, existent parce que quelqu'un a identifié un vrai parcours utilisateur à protéger — s'inscrire, rechercher, trouver des informations sur le site d'un service de santé. Décider que ce parcours comptait assez pour écrire un test est en soi une activité de découverte, et non une activité purement technique.",
-    s3P4Pre: 'Pour en savoir plus, consultez le ',
-    s3P4Mid: " et le ",
-    s3P4Mid2: ', ou regardez la vidéo ',
-    s3P4Post: ' pour une présentation en vidéo.',
-    s3AskAi: [
-      "Que signifie réellement la « découverte » dans l'agilité, et pourquoi cela importerait-il à quelqu'un qui écrit simplement des scripts de test ?",
-      "Comment transformer une user story vague en scénario concret et testable avant de commencer à l'automatiser ?",
-      "Comment les équipes expérimentées gardent-elles la découverte et l'écriture des tests reliées en continu, plutôt que de faire la découverte une fois au départ et de laisser les tests s'en éloigner ensuite ?"
-    ],
-
-    s4Heading: 'Commandes Unix — la ligne de commande',
-    unixCommandsLabel: 'Les commandes Unix',
-    s4P1Post:
-      " sont ce que parlent nativement presque tous les environnements de développement, les exécuteurs de CI et les conteneurs Docker, sans interface graphique. Vous n'avez pas besoin de toutes les maîtriser ; une connaissance pratique d'une vingtaine de commandes mène très loin.",
-    cmdLs: 'lister les fichiers et les répertoires',
-    cmdCd: 'changer de répertoire',
-    cmdMv: 'déplacer un fichier ou un répertoire',
-    cmdMore: "afficher le texte d'un fichier, page par page",
-    cmdNano: "modifier le texte d'un fichier, avec des commandes simples",
-    cmdGrep: 'rechercher du texte dans des fichiers',
-    cmdChmod: "modifier le mode des permissions d'un fichier",
-    cmdCurl: 'appeler une URL, comme une adresse web http',
-    cmdClaude: "agent d'IA",
-    s4P2a: "Voici pourquoi cela a sa place sur une page consacrée aux tests : ",
-    s4P2b: ' et ',
-    s4P2c:
-      " permettent de trouver un échec précis parmi des milliers de lignes de sortie de test ou de journal, au lieu de faire défiler. ",
-    s4P2d:
-      " permet de vérifier rapidement une API à la main — le même point d'accès qu'un test d'IHM pourrait aussi solliciter — avant d'écrire le vrai test. ",
-    s4P2e:
-      " est ce qui rend un script de test directement exécutable. Et chaîner quelques commandes avec des pipes est souvent ainsi que se construit une étape de CI sans recourir à un « vrai » langage de programmation juste pour relier deux outils.",
-    s4P3Pre: "Pour en savoir plus, consultez la leçon sur le shell Unix de Software Carpentry, ",
-    s4P3Mid: ', ou regardez la vidéo de NetworkChuck ',
-    s4P3Post: ' pour une présentation en vidéo à un rythme soutenu.',
-    s4AskAi: [
-      "Je n'ai jamais utilisé de ligne de commande — quelles sont les quelques commandes Unix qui valent vraiment la peine d'être apprises en premier pour quelqu'un qui se lance dans le test ?",
-      "Comment utiliser grep pour trouver chaque test en échec dans un énorme journal de CI sans le parcourir à la main ?",
-      "Comment enchaîner quelques commandes Unix dans un petit script fiable pour une étape de CI, plutôt que de recourir à un langage de programmation complet ?"
-    ],
-
+    title: "Quels sont les concepts liés aux tests automatisés ?",
+    metaDescription: "Un tour d'horizon accessible aux débutants de cinq éléments qui entourent le test automatisé : éditeurs de code, gestion de versions, découverte agile, commandes Unix et hébergement dans le cloud — et pourquoi chacun compte dès que votre script de test grandit.",
+    heading: "Quels sont les concepts liés aux tests automatisés ?",
+    intro: "Vous venez d'écrire votre premier script d'automatisation de navigateur. Il fonctionne — sur votre machine, maintenant. Cette page porte sur la poignée d'outils et de pratiques du quotidien qui transforment ce script en quelque chose sur lequel toute une équipe peut compter, des mois plus tard, sans que vous ayez à le surveiller.",
+    introP: "Le test automatisé ne se produit pas en vase clos. Autour de toute suite de tests fiable se trouve un petit ensemble d'habitudes ordinaires du développement logiciel : un éditeur correct pour écrire le code, un moyen de suivre l'évolution de ce code dans le temps, un moyen de s'assurer que les tests sont réellement exécutés et — facile à oublier, mais tout aussi réel — un moyen de vérifier que les tests protègent quelque chose auquel une vraie personne tient vraiment. Aucun de ces éléments n'est un outil de test à proprement parler. Tous font fonctionner le test. Voici cinq éléments à connaître, chacun expliqué simplement, chacun avec un ou deux liens si vous voulez aller plus loin.",
+    s1Heading: "Éditeurs de code — par exemple Visual Studio Code",
+    s2Heading: "Gestion de versions — git et GitHub",
+    s3Heading: "Agilité et travail avec les utilisateurs — la découverte",
+    s4Heading: "Commandes Unix — la ligne de commande",
     s5Heading: "L'hébergement dans le cloud pour les tests",
-    cloudHostingLabel: "L'hébergement dans le cloud",
-    s5P1Post:
-      " consiste à faire tourner de l'infrastructure — serveurs, navigateurs, exécuteurs de CI — sur les ordinateurs de quelqu'un d'autre plutôt que sur les vôtres, en payant ce que vous utilisez réellement au lieu d'acheter et de maintenir du matériel vous-même.",
-    s5P2:
-      "Voici pourquoi cela a sa place sur une page consacrée aux tests : les fermes de navigateurs dans le cloud permettent à une suite de tests de s'exécuter sur de vrais appareils et sur des dizaines de combinaisons réelles de navigateurs et de systèmes d'exploitation que personne ne pourrait raisonnablement installer et maintenir en local. Et les fournisseurs de CI dans le cloud (GitHub Actions, mentionné plus bas dans la section CI/CD, en est un) donnent à chaque exécution de test une machine neuve et jetable — de sorte qu'un test ne peut pas passer discrètement uniquement à cause d'un état laissé par une exécution précédente, une classe de bugs subtils bien plus difficile à dissimuler quand chaque exécution repart de zéro.",
-    s5P3Pre: "Pour en savoir plus, consultez ",
-    s5P3Mid: ', ou regardez la vidéo ',
-    s5P3Post: ' pour une présentation en vidéo.',
-    s5AskAi: [
-      "Que signifie réellement « le cloud », en termes simples, et pourquoi une suite de tests en aurait-elle besoin plutôt que de simplement s'exécuter sur mon propre ordinateur portable ?",
-      "Quelle est la différence pratique entre exécuter mes tests sur ma propre machine et sur une ferme de navigateurs dans le cloud, pour une petite équipe ?",
-      "Comment décider si une suite de tests qui grandit est vraiment prête à passer à un fournisseur de CI dans le cloud, et que vérifier avant de faire ce changement ?"
-    ],
-
     closingPre: "Aucun de ces cinq éléments n'est nécessaire pour écrire votre premier script — voir ",
-    closingLinkText: 'Comment commencer à apprendre les tests automatisés ?',
-    closingPost:
-      " pour cela. Mais chacun vaut la peine d'être adopté à mesure que votre code de test dépasse un seul fichier sur votre propre machine : une configuration d'éditeur partagée, l'historique git, un lien honnête avec ce dont les utilisateurs ont réellement besoin et — dès qu'une équipe entière dépend de vos tests — le vocabulaire commun pour parler de l'endroit où se situent réellement l'infrastructure, le processus et la qualité du test. Chacun est aussi un grand sujet, bien documenté en soi — cette page est une carte, pas le territoire.",
-    ctaBackToLearn: 'Retour à Apprendre',
-    ctaHowToStart: 'Comment commencer à apprendre →',
-
-    askAiHeading: "Exemples à demander à l'IA"
+    closingLinkText: "Comment commencer à apprendre les tests automatisés ?",
+    closingPost: " pour cela. Mais chacun vaut la peine d'être adopté à mesure que votre code de test dépasse un seul fichier sur votre propre machine : une configuration d'éditeur partagée, l'historique git, un lien honnête avec ce dont les utilisateurs ont réellement besoin et — dès qu'une équipe entière dépend de vos tests — le vocabulaire commun pour parler de l'endroit où se situent réellement l'infrastructure, le processus et la qualité du test. Chacun est aussi un grand sujet, bien documenté en soi — cette page est une carte, pas le territoire.",
+    ctaBackToLearn: "Retour à Apprendre",
+    ctaHowToStart: "Comment commencer à apprendre →"
   };
 
   const MESSAGES: Record<Locale, Messages> = {
@@ -1013,20 +149,6 @@
   };
 
   const m = $derived(MESSAGES[locale]);
-
-  const UNIX_COMMANDS = $derived(
-    [
-      { code: 'ls', description: m.cmdLs },
-      { code: 'cd', description: m.cmdCd },
-      { code: 'mv', description: m.cmdMv },
-      { code: 'more', description: m.cmdMore },
-      { code: 'nano', description: m.cmdNano },
-      { code: 'grep', description: m.cmdGrep },
-      { code: 'chmod', description: m.cmdChmod },
-      { code: 'curl', description: m.cmdCurl },
-      { code: 'claude', description: m.cmdClaude }
-    ]
-  );
 </script>
 
 <svelte:head>
@@ -1041,162 +163,13 @@
 
 <section class="section prose">
   <p>{m.introP}</p>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.s1Heading} level={2} />
-
-  <p>
-    {m.s1P1a}<strong>{m.syntaxLabel}</strong>{m.s1P1b}<strong>{m.autocompleteLabel}</strong
-    >{m.s1P1c1}<code>page.</code>{m.s1P1c2}<code>driver.</code>{m.s1P1c3}
-  </p>
-
-  <p>
-    {m.s1P2a}<strong>{m.terminalLabel}</strong>{m.s1P2b}<strong>{m.debuggerLabel}</strong
-    >{m.s1P2c}<code>console.log</code>{m.s1P2d}<strong>{m.extensionsLabel}</strong>{m.s1P2e}
-  </p>
-
-  <p>
-    <a href="https://code.visualstudio.com/">Visual Studio Code</a>{m.s1P3Post1}<a
-      href="https://www.youtube.com/watch?v=rPITZvwyoMc"
-      >"Master Visual Studio Code Crash Course for beginners in just 15 min"</a
-    >{m.s1P3Post2}
-  </p>
-
-  <h3>{m.askAiHeading}</h3>
-  <ul>
-    {#each m.s1AskAi as question (question)}
-      <li>{question}</li>
-    {/each}
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.s2Heading} level={2} />
-
-  <p>
-    {m.s2P1a}<strong>{m.gitLabel}</strong>{m.s2P1b}
-  </p>
-
-  <p>
-    <strong>{m.s2P2Label}</strong>{m.s2P2a}<em>{m.pullRequestLabel}</em>{m.s2P2b}
-  </p>
-
-  <p>
-    {m.s2P3a}<a href={localeHref(locale, 'examples')}>{m.examplesLinkText}</a>{m.s2P3b}<a
-      href={localeHref(locale, 'about')}>{m.aboutLinkText}</a
-    >{m.s2P3c}
-  </p>
-
-  <p>
-    {m.s2P4Pre}<a href="https://git-scm.com/">git-scm.com</a>{m.s2P4Mid}<a
-      href="https://docs.github.com/get-started">GitHub's own "Get started" docs</a
-    >{m.s2P4Mid2}<a href="https://www.youtube.com/watch?v=r8jQ9hVA2qs"
-      >"A brief introduction to Git for beginners"</a
-    >{m.s2P4Post}
-  </p>
-
-  <h3>{m.askAiHeading}</h3>
-  <ul>
-    {#each m.s2AskAi as question (question)}
-      <li>{question}</li>
-    {/each}
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.s3Heading} level={2} />
-
-  <p>
-    {m.s3P1a}<strong>{m.agileLabel}</strong>{m.s3P1b}<strong>{m.discoveryLabel}</strong>{m.s3P1c}
-  </p>
-
-  <p>
-    {m.s3P2a}<em>{m.intendedLabel}</em>{m.s3P2b}
-  </p>
-
-  <p>{m.s3P3}</p>
-
-  <p>
-    {m.s3P4Pre}<a href="https://agilemanifesto.org/">Agile Manifesto</a>{m.s3P4Mid}<a
-      href="https://www.nngroup.com/articles/user-research/">introduction to user research</a
-    >{m.s3P4Mid2}<a href="https://www.youtube.com/watch?v=vLpQg-al2RU"
-      >"Agile Methodology Explained in 5 Minutes"</a
-    >{m.s3P4Post}
-  </p>
-
-  <h3>{m.askAiHeading}</h3>
-  <ul>
-    {#each m.s3AskAi as question (question)}
-      <li>{question}</li>
-    {/each}
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.s4Heading} level={2} />
-
-  <p>
-    <strong>{m.unixCommandsLabel}</strong>{m.s4P1Post}
-  </p>
 
   <ul>
-    {#each UNIX_COMMANDS as cmd (cmd.code)}
-      <li><code>{cmd.code}</code> = {cmd.description}</li>
-    {/each}
-  </ul>
-
-  <p>
-    {m.s4P2a}<code>grep</code>{m.s4P2b}<code>sed</code>{m.s4P2c}<code>curl</code
-    >{m.s4P2d}<code>chmod +x</code>{m.s4P2e}
-  </p>
-
-  <p>
-    {m.s4P3Pre}<a href="https://swcarpentry.github.io/shell-novice/">Unix shell lesson</a
-    >{m.s4P3Mid}<a href="https://www.youtube.com/watch?v=gd7BXuUQ91w"
-      >"60 Linux Commands you NEED to know (in 10 minutes)"</a
-    >{m.s4P3Post}
-  </p>
-
-  <h3>{m.askAiHeading}</h3>
-  <ul>
-    {#each m.s4AskAi as question (question)}
-      <li>{question}</li>
-    {/each}
-  </ul>
-</section>
-
-<Separator label="Section break" />
-
-<section class="section prose">
-  <SectionHeading class="section-heading-start" heading={m.s5Heading} level={2} />
-
-  <p>
-    <strong>{m.cloudHostingLabel}</strong>{m.s5P1Post}
-  </p>
-
-  <p>{m.s5P2}</p>
-
-  <p>
-    {m.s5P3Pre}<a href="https://aws.amazon.com/what-is-cloud-computing/">introduction to cloud computing</a
-    >{m.s5P3Mid}<a href="https://www.youtube.com/watch?v=8sNAPqJ_c7c"
-      >"A Beginner's Guide To Cloud Computing In Under 8 Minutes"</a
-    >{m.s5P3Post}
-  </p>
-
-  <h3>{m.askAiHeading}</h3>
-  <ul>
-    {#each m.s5AskAi as question (question)}
-      <li>{question}</li>
-    {/each}
+    <li><a href={localeHref(locale, 'related-code-editors')}>{m.s1Heading}</a></li>
+    <li><a href={localeHref(locale, 'related-version-control')}>{m.s2Heading}</a></li>
+    <li><a href={localeHref(locale, 'related-agile-discovery')}>{m.s3Heading}</a></li>
+    <li><a href={localeHref(locale, 'related-unix-shell')}>{m.s4Heading}</a></li>
+    <li><a href={localeHref(locale, 'related-cloud-hosting')}>{m.s5Heading}</a></li>
   </ul>
 </section>
 

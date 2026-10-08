@@ -26,6 +26,11 @@ export type TopicId =
   | 'learn-gherkin'
   | 'learn-unit-test'
   | 'learn-browser-test'
+  | 'related-code-editors'
+  | 'related-version-control'
+  | 'related-agile-discovery'
+  | 'related-unix-shell'
+  | 'related-cloud-hosting'
   | 'practice'
   | 'what-are-flow-metrics-for-automatic-testing'
   | 'what-are-related-concepts-for-automatic-testing'
@@ -143,6 +148,61 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
       'sujets/browser-test'
     ),
     load: () => import('#lib/pages/learn-browser-test/Page.svelte')
+  },
+  'related-code-editors': {
+    slug: slugFor(
+      'topics/code-editors',
+      'pynciau/code-editors',
+      '主题/code-editors',
+      'المواضيع/code-editors',
+      '주제/code-editors',
+      'sujets/code-editors'
+    ),
+    load: () => import('#lib/pages/related-code-editors/Page.svelte')
+  },
+  'related-version-control': {
+    slug: slugFor(
+      'topics/version-control',
+      'pynciau/version-control',
+      '主题/version-control',
+      'المواضيع/version-control',
+      '주제/version-control',
+      'sujets/version-control'
+    ),
+    load: () => import('#lib/pages/related-version-control/Page.svelte')
+  },
+  'related-agile-discovery': {
+    slug: slugFor(
+      'topics/agile-discovery',
+      'pynciau/agile-discovery',
+      '主题/agile-discovery',
+      'المواضيع/agile-discovery',
+      '주제/agile-discovery',
+      'sujets/agile-discovery'
+    ),
+    load: () => import('#lib/pages/related-agile-discovery/Page.svelte')
+  },
+  'related-unix-shell': {
+    slug: slugFor(
+      'topics/unix-shell',
+      'pynciau/unix-shell',
+      '主题/unix-shell',
+      'المواضيع/unix-shell',
+      '주제/unix-shell',
+      'sujets/unix-shell'
+    ),
+    load: () => import('#lib/pages/related-unix-shell/Page.svelte')
+  },
+  'related-cloud-hosting': {
+    slug: slugFor(
+      'topics/cloud-hosting',
+      'pynciau/cloud-hosting',
+      '主题/cloud-hosting',
+      'المواضيع/cloud-hosting',
+      '주제/cloud-hosting',
+      'sujets/cloud-hosting'
+    ),
+    load: () => import('#lib/pages/related-cloud-hosting/Page.svelte')
   },
   'what-are-flow-metrics-for-automatic-testing': {
     slug: slugFor(

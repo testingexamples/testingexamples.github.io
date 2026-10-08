@@ -61,7 +61,7 @@ const EN_COMMON: ChromeMessages = {
     copiedLabel: 'Link copied',
     copyFailedLabel: 'Could not copy link'
   },
-  footerTagline: '{site} — free open source browser automatic testing examples.'
+  footerTagline: '{site} — free open source browser testing examples.'
 };
 
 const CY_COMMON: ChromeMessages = {

@@ -43,7 +43,7 @@
       'My project has plenty of end-to-end browser tests but almost no unit tests — is that actually a problem, and how would I start fixing the balance?',
       'How do I decide, for a specific new feature, which layer of the pyramid a new test belongs in rather than defaulting to another end-to-end test?'
     ],
-    nextLabel: 'Next: what is browser automatic testing? →'
+    nextLabel: 'Next: what is browser testing? →'
   };
 
   // No British/American/Oxford spelling divergence occurs in this page's

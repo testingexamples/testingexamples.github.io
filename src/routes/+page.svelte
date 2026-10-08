@@ -49,7 +49,7 @@
     <li><a href="/what-is-automatic-testing/">What is automatic testing?</a></li>
     <li><a href="/what-is-the-purpose-of-automatic-testing/">What is the purpose of automatic testing?</a></li>
     <li><a href="/what-is-the-testing-pyramid/">What is the automatic testing pyramid?</a></li>
-    <li><a href="/what-is-browser-automation-testing/">What is browser automatic testing?</a></li>
+    <li><a href="/what-is-browser-automation-testing/">What is browser testing?</a></li>
     <li><a href="/how-to-start-learning-automatic-testing/">How to start learning automatic testing?</a></li>
   </ul>
 

@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { LOCALES } from '../src/lib/i18n/locales';
 import { slugForTopic } from '../src/lib/i18n/topics';
 
-// The Learn, Learn More, and Kinds of tests lists live on /<locale>/topics/, not on the
+// The Learn, Learn More, Kinds of tests, and Related concepts lists live on /<locale>/topics/, not on the
 // locale's home page (spec/index.md).
 
 const ARTICLES = [
@@ -19,13 +19,18 @@ const ARTICLES = [
   'what-is-lean-six-sigma-for-automatic-testing',
   'learn-gherkin',
   'learn-unit-test',
-  'learn-browser-test'
+  'learn-browser-test',
+  'related-code-editors',
+  'related-version-control',
+  'related-agile-discovery',
+  'related-unix-shell',
+  'related-cloud-hosting'
 ] as const;
 
 for (const locale of LOCALES) {
   test(`${locale}: the Learn page has the Learn and Learn More lists`, async ({ page }) => {
     await page.goto(`/${locale}/${slugForTopic(locale, 'learn')}/`);
-    await expect(page.locator('main h2')).toHaveCount(3);
+    await expect(page.locator('main h2')).toHaveCount(4);
     for (const topic of ARTICLES) {
       const href = `/${locale}/${slugForTopic(locale, topic)}/`;
       await expect(page.locator(`main a[href="${href}"]`)).toHaveCount(1);
@@ -73,6 +78,32 @@ for (const locale of LOCALES) {
       await expect(page.locator('main li strong', { hasText: new RegExp(`^${tool}$`) })).toHaveCount(1);
     }
     for (const topic of ['practice', 'code'] as const) {
+      await expect(page.locator(`main a[href="/${locale}/${slugForTopic(locale, topic)}/"]`)).toHaveCount(1);
+    }
+  });
+}
+
+const RELATED = [
+  'related-code-editors',
+  'related-version-control',
+  'related-agile-discovery',
+  'related-unix-shell',
+  'related-cloud-hosting'
+] as const;
+
+for (const locale of LOCALES) {
+  for (const topic of RELATED) {
+    test(`${locale}: the ${topic} page has one heading and links back to the topics hub`, async ({ page }) => {
+      await page.goto(`/${locale}/${slugForTopic(locale, topic)}/`);
+      await expect(page.locator('main h1')).toHaveCount(1);
+      await expect(page.locator('main h1')).not.toBeEmpty();
+      await expect(page.locator(`main a[href="/${locale}/${slugForTopic(locale, 'learn')}/"]`)).toHaveCount(1);
+    });
+  }
+
+  test(`${locale}: the related concepts hub links to all five concept pages`, async ({ page }) => {
+    await page.goto(`/${locale}/${slugForTopic(locale, 'what-are-related-concepts-for-automatic-testing')}/`);
+    for (const topic of RELATED) {
       await expect(page.locator(`main a[href="/${locale}/${slugForTopic(locale, topic)}/"]`)).toHaveCount(1);
     }
   });

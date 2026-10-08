@@ -58,7 +58,7 @@
           "description": "The three layers of automatic tests, from fast, cheap unit tests at the base to realistic end-to-end browser tests at the top."
         },
         {
-          "title": "What is browser automatic testing?",
+          "title": "What is browser testing?",
           "url": "https://testingexamples.github.io/en-001/what-is-browser-automation-testing/",
           "description": "What it is, and the trade-offs that come with its realism \u2014 slower, more brittle, and harder to diagnose than a unit test."
         },
@@ -117,6 +117,31 @@
           "title": "What is a browser-based test?",
           "url": "https://testingexamples.github.io/en-001/topics/browser-test/",
           "description": "What a browser-based test is, the tools you will meet (Selenium, Playwright, and others), and what to expect."
+        },
+        {
+          "title": "Code editors",
+          "url": "https://testingexamples.github.io/en-001/topics/code-editors/",
+          "description": "A related concept for automatic testing."
+        },
+        {
+          "title": "Version control",
+          "url": "https://testingexamples.github.io/en-001/topics/version-control/",
+          "description": "A related concept for automatic testing."
+        },
+        {
+          "title": "Agile discovery",
+          "url": "https://testingexamples.github.io/en-001/topics/agile-discovery/",
+          "description": "A related concept for automatic testing."
+        },
+        {
+          "title": "The Unix shell",
+          "url": "https://testingexamples.github.io/en-001/topics/unix-shell/",
+          "description": "A related concept for automatic testing."
+        },
+        {
+          "title": "Cloud hosting",
+          "url": "https://testingexamples.github.io/en-001/topics/cloud-hosting/",
+          "description": "A related concept for automatic testing."
         }
       ]
     },

@@ -191,7 +191,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     (unit, integration, end-to-end/browser), extracted from
     `/what-is-automatic-testing/` into its own page. Linked from the
     `/topics/`'s Learn list.
-  - `/what-is-browser-automation-testing/` — what browser automatic testing
+  - `/what-is-browser-automation-testing/` — what browser testing
     is and the trade-offs of its realism (slower, more brittle, harder to
     diagnose than a unit test), extracted from
     `/what-is-automatic-testing/` into its own page. Linked from the
@@ -273,6 +273,13 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
   Puppeteer, TestCafe), what to expect (realistic but slow and brittle), and
   links to `/practice/` and `/code/`. Linked from `/topics/`'s "Kinds of tests"
   list, after the unit test page.
+- `/topics/code-editors/`, `/topics/version-control/`,
+  `/topics/agile-discovery/`, `/topics/unix-shell/`, `/topics/cloud-hosting/` —
+  the five "related concepts" that used to be sections of
+  `/what-are-related-concepts-for-automatic-testing/`, each now its own page
+  with the same text. That page remains as a short hub linking to all five.
+  The five are listed in `/topics/`'s "Related concepts" section. Slugs are
+  `<topics slug>/<name>` in every locale.
 - `/practice/` — the stable fixture playground: the short "practise on this
   page" explanation above the fixture section (the contract above), which
   used to sit on each locale's home page and now lives here, at
