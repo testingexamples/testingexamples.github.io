@@ -26,10 +26,10 @@
   };
 
   const EN_001: Messages = {
-    title: "Formal learning phases",
+    title: "How to learn in phases?",
     metaDescription:
       "Four formal learning phases for automatic testing, each with a success gate: programming language, browser automation framework, and AI assistant; text editor, version control, and manual-to-automatic process; then software, quality, and value metrics; then a book/video/course, a quality standard, and an IT management framework.',\n    heading: 'Formal learning phases",
-    heading: "Formal learning phases",
+    heading: "How to learn in phases?",
     examplesLabel: "Examples:",
     goalsLabel: "Goals:",
     unsure: "If you're unsure which one, then choose the first.",
@@ -121,10 +121,10 @@
   // vocabulary, so all four English locales share one copy. See
   // spec/locales/index.md.
   const CY: Messages = {
-    title: "Cyfnodau dysgu ffurfiol",
+    title: "Sut i ddysgu mewn cyfnodau?",
     metaDescription:
       "Pedwar cyfnod dysgu ffurfiol ar gyfer profi awtomatig, pob un â phorth llwyddiant: iaith raglennu, fframwaith awtomeiddio porwr a chynorthwyydd deallusrwydd artiffisial; golygydd testun, system rheoli fersiynau a phroses o law i awtomatig; yna metrigau meddalwedd, ansawdd a gwerth; yna llyfr/fideo/cwrs, safon ansawdd a fframwaith rheoli TG.',\n    heading: 'Cyfnodau dysgu ffurfiol",
-    heading: "Cyfnodau dysgu ffurfiol",
+    heading: "Sut i ddysgu mewn cyfnodau?",
     examplesLabel: "Enghreifftiau:",
     goalsLabel: "Nodau:",
     unsure: "Os nad ydych yn siŵr pa un, dewiswch y cyntaf.",
@@ -213,10 +213,10 @@
   };
 
   const ZH: Messages = {
-    title: "正式学习阶段",
+    title: "如何分阶段学习？",
     metaDescription:
       "自动化测试的四个正式学习阶段，每个阶段都有一道成功关卡：编程语言、浏览器自动化框架和 AI 助手；文本编辑器、版本控制系统和从手动到自动的流程；然后是软件度量、质量度量和价值度量；最后是书籍/视频/课程、质量标准和 IT 管理框架。',\n    heading: '正式学习阶段",
-    heading: "正式学习阶段",
+    heading: "如何分阶段学习？",
     examplesLabel: "示例：",
     goalsLabel: "目标：",
     unsure: "如果不确定选哪一个，就选第一个。",
@@ -305,10 +305,10 @@
   };
 
   const AR: Messages = {
-    title: "مراحل التعلم الرسمية",
+    title: "كيف تتعلم على مراحل؟",
     metaDescription:
       "أربع مراحل تعلم رسمية للاختبار الآلي، لكل منها بوابة نجاح: لغة برمجة وإطار أتمتة المتصفح ومساعد ذكاء اصطناعي؛ محرر نصوص ونظام تحكم في الإصدارات وعملية الانتقال من اليدوي إلى الآلي؛ ثم مقاييس البرمجيات والجودة والقيمة؛ ثم كتاب/فيديو/دورة ومعيار جودة وإطار لإدارة تقنية المعلومات.',\n    heading: 'مراحل التعلم الرسمية",
-    heading: "مراحل التعلم الرسمية",
+    heading: "كيف تتعلم على مراحل؟",
     examplesLabel: "أمثلة:",
     goalsLabel: "الأهداف:",
     unsure: "إذا لم تكن متأكدًا من الاختيار، فاختر الأول.",
@@ -397,10 +397,10 @@
   };
 
   const KO: Messages = {
-    title: "정식 학습 단계",
+    title: "단계별 학습 방법",
     metaDescription:
       "자동화 테스트를 위한 네 가지 정식 학습 단계와 각 단계의 성공 관문: 프로그래밍 언어, 브라우저 자동화 프레임워크, AI 어시스턴트; 텍스트 편집기, 버전 관리 시스템, 수동에서 자동으로의 전환 과정; 소프트웨어, 품질, 가치 지표; 그리고 책/동영상/강좌, 품질 표준, IT 관리 프레임워크.',\n    heading: '정식 학습 단계",
-    heading: "정식 학습 단계",
+    heading: "단계별 학습 방법",
     examplesLabel: "예시:",
     goalsLabel: "목표:",
     unsure: "어느 것을 고를지 모르겠다면 첫 번째를 고르세요.",
@@ -489,10 +489,10 @@
   };
 
   const FR: Messages = {
-    title: "Phases d'apprentissage formelles",
+    title: "Comment apprendre par phases ?",
     metaDescription:
       "Quatre phases d'apprentissage formelles pour les tests automatisés, chacune avec un critère de réussite : langage de programmation, framework d'automatisation de navigateur et assistant IA ; éditeur de texte, gestion de versions et processus du manuel à l'automatique ; puis métriques logicielles, de qualité et de valeur ; puis livre/vidéo/cours, norme de qualité et cadre de gestion informatique.\",\n    heading: \"Phases d'apprentissage formelles",
-    heading: "Phases d'apprentissage formelles",
+    heading: "Comment apprendre par phases ?",
     examplesLabel: "Exemples :",
     goalsLabel: "Objectifs :",
     unsure: "Si vous hésitez, choisissez le premier.",

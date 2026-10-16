@@ -19,7 +19,7 @@ export type TopicId =
   | 'examples'
   | 'examples-google-search'
   | 'examples-google-maps'
-  | 'formal-learning-phases'
+  | 'how-to-learn-in-phases'
   | 'given-when-then'
   | 'how-does-artificial-intelligence-help-automatic-testing'
   | 'how-to-start-learning-automatic-testing'
@@ -84,16 +84,16 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
     slug: slugFor('examples/google-maps', 'enghreifftiau/mapiau-google', '示例/谷歌地图', 'أمثلة/خرائط-جوجل', '예제/구글-지도', 'exemples/google-maps'),
     load: () => import('#lib/pages/examples-google-maps/Page.svelte')
   },
-  'formal-learning-phases': {
+  'how-to-learn-in-phases': {
     slug: slugFor(
-      'formal-learning-phases',
-      'cyfnodau-dysgu-ffurfiol',
-      '正式学习阶段',
-      'مراحل-التعلم-الرسمية',
-      '정식-학습-단계',
-      'phases-d-apprentissage-formelles'
+      'how-to-learn-in-phases',
+      'sut-i-ddysgu-mewn-cyfnodau',
+      '如何分阶段学习',
+      'كيف-تتعلم-على-مراحل',
+      '단계별-학습-방법',
+      'comment-apprendre-par-phases'
     ),
-    load: () => import('#lib/pages/formal-learning-phases/Page.svelte')
+    load: () => import('#lib/pages/how-to-learn-in-phases/Page.svelte')
   },
   'given-when-then': {
     // Kept in English for every locale: "Given-When-Then" (Gherkin) is a

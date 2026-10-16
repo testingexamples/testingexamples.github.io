@@ -3,4 +3,4 @@
 allowBuilds:
   esbuild: true
 minimumReleaseAgeExclude:
-  - lily-design-system-svelte-picker-bar@0.1.0
+  - '@lilydesignsystem/svelte-picker-bar@0.4.0'

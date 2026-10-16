@@ -1,7 +1,7 @@
 /* Testing Examples site stylesheet
  *
  * This site uses Lily Design System components (lily-design-system-svelte-
- * headless and friends) AND Lily's own official themes — the 45 files
+ * headless and friends) AND Lily's own official themes — the 57 files
  * under static/assets/themes/, copied verbatim from
  * https://github.com/LilyDesignSystem/lily-design-system's themes/
  * directory. Each of those files is a complete, self-contained stylesheet:
@@ -98,7 +98,7 @@
 :root {
   /* Alias layer — see the file-header comment above. Lily's canonical
    * names are on the right; every theme file under static/assets/themes/
-   * defines them identically, so this mapping holds across all 45. */
+   * defines them identically, so this mapping holds across all 57. */
   --page-bg: var(--lily-surface);
   --card-bg: var(--lily-surface-alt);
   --row-hover-bg: var(--lily-surface-alt);

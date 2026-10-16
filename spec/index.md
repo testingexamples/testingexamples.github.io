@@ -297,7 +297,7 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     (JavaScript or Python), pick a tool (Playwright or Selenium), run a
     first script against this site's own practice page, then practice on the
     sibling demo repos and this site's own `/examples/` pages.
-  - `/formal-learning-phases/` — ("Formal learning phases") four phases of
+  - `/how-to-learn-in-phases/` — ("How to learn in phases?") four phases of
     three skills each: an h2 per phase, an h3 per skill, then its Examples
     (with an "if unsure, choose the first" line) and Goals. Phase 1: a
     programming language, a browser automation framework, an AI assistant.

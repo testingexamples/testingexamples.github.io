@@ -16,6 +16,10 @@ export type ChromeMessages = {
     github: string;
   };
   pickerLabels: {
+    link: string;
+    search: string;
+    searchInput: string;
+    searchSubmit: string;
     theme: string;
     locale: string;
     textSize: string;
@@ -46,6 +50,10 @@ const EN_COMMON: ChromeMessages = {
     github: 'GitHub'
   },
   pickerLabels: {
+    link: 'Pages',
+    search: 'Search this site',
+    searchInput: 'Search terms',
+    searchSubmit: 'Search',
     theme: 'Theme',
     locale: 'Language',
     textSize: 'Text size',
@@ -76,6 +84,10 @@ const CY_COMMON: ChromeMessages = {
     github: 'GitHub'
   },
   pickerLabels: {
+    link: 'Tudalennau',
+    search: "Chwilio'r wefan hon",
+    searchInput: 'Termau chwilio',
+    searchSubmit: 'Chwilio',
     theme: 'Thema',
     locale: 'Iaith',
     textSize: 'Maint testun',
@@ -107,6 +119,10 @@ const ZH_COMMON: ChromeMessages = {
     github: 'GitHub'
   },
   pickerLabels: {
+    link: '页面',
+    search: '搜索本站',
+    searchInput: '搜索词',
+    searchSubmit: '搜索',
     theme: '主题',
     locale: '语言',
     textSize: '文字大小',
@@ -137,6 +153,10 @@ const AR_COMMON: ChromeMessages = {
     github: 'GitHub'
   },
   pickerLabels: {
+    link: 'الصفحات',
+    search: 'ابحث في هذا الموقع',
+    searchInput: 'كلمات البحث',
+    searchSubmit: 'بحث',
     theme: 'السمة',
     locale: 'اللغة',
     textSize: 'حجم النص',
@@ -167,6 +187,10 @@ const KO_COMMON: ChromeMessages = {
     github: 'GitHub'
   },
   pickerLabels: {
+    link: '페이지',
+    search: '이 사이트 검색',
+    searchInput: '검색어',
+    searchSubmit: '검색',
     theme: '테마',
     locale: '언어',
     textSize: '글자 크기',
@@ -197,6 +221,10 @@ const FR_COMMON: ChromeMessages = {
     github: 'GitHub'
   },
   pickerLabels: {
+    link: 'Pages',
+    search: 'Rechercher sur ce site',
+    searchInput: 'Termes de recherche',
+    searchSubmit: 'Rechercher',
     theme: 'Thème',
     locale: 'Langue',
     textSize: 'Taille du texte',

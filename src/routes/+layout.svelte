@@ -3,7 +3,7 @@
   import { goto, afterNavigate } from '$app/navigation';
   import { browser } from '$app/env';
   import { SkipLink } from 'lily-design-system-svelte-headless';
-  import PickerBar from 'lily-design-system-svelte-picker-bar';
+  import PickerBar from '@lilydesignsystem/svelte-picker-bar';
   import { SITE_NAME, REPO } from '#lib/site.js';
   import { DEFAULT_LOCALE, PICKER_LOCALES, LOCALE_LABELS, isLocale, type Locale } from '#lib/i18n/locales.js';
   import { chromeFor } from '#lib/i18n/chrome.js';
@@ -38,7 +38,7 @@
 
   // Short labels for the 8 public-sector theme slugs (UK Gov Design
   // System, the six NHS England/Scotland/Wales variants, US Web Design
-  // System) — PickerBar's own DEFAULT_THEMES already lists all 45 Lily
+  // System) — PickerBar's own DEFAULT_THEMES already lists all 57 Lily
   // reference themes (see static/assets/themes/) in the right order, so
   // only the label override is site-local.
   const LILY_THEME_LABELS: Record<string, string> = {
@@ -95,6 +95,22 @@
     { href: localeHref(locale, 'about'), label: chrome.nav.about }
   ]);
 
+  // The LinkPicker's dropdown: the same pages as the header nav, with the
+  // current page marked.
+  let pickerLinks = $derived(
+    navLinks.map((link) => ({ ...link, current: isCurrent(link.href) }))
+  );
+
+  // The site has no search backend, so a search goes to a Google search
+  // limited to this site. SearchPicker hands `navigate` the `/?<query>` URL
+  // it would otherwise visit; the query is read back out of that.
+  function searchSite(href: string): void {
+    const query = decodeURIComponent(href.slice(href.indexOf('?') + 1));
+    window.location.assign(
+      `https://www.google.com/search?q=${encodeURIComponent(`site:testingexamples.github.io ${query}`)}`
+    );
+  }
+
   function isCurrent(href: string): boolean {
     return page.url.pathname === href;
   }
@@ -123,11 +139,18 @@
     <div class="site-controls">
       <PickerBar
         labels={{
+          link: chrome.pickerLabels.link,
+          search: chrome.pickerLabels.search,
+          searchInput: chrome.pickerLabels.searchInput,
+          searchSubmit: chrome.pickerLabels.searchSubmit,
           theme: chrome.pickerLabels.theme,
           locale: chrome.pickerLabels.locale,
           textSize: chrome.pickerLabels.textSize,
           share: chrome.pickerLabels.share
         }}
+        links={pickerLinks}
+        linkProps={{ navigate: (href: string) => goto(href) }}
+        searchProps={{ navigate: searchSite }}
         themesUrl="/assets/themes/"
         themeProps={{
           themeLabels: LILY_THEME_LABELS,
