@@ -297,13 +297,14 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     (JavaScript or Python), pick a tool (Playwright or Selenium), run a
     first script against this site's own practice page, then practice on the
     sibling demo repos and this site's own `/examples/` pages.
-  - `/formal-learning-phases/` — ("Formal learning phases") four phases,
-    each with a success gate. Phase 1: a programming language, a browser
-    automation framework, and an AI assistant. Phase 2: a text editor, a
-    version control system, and a manual-to-automatic process. Phase 3:
-    software metrics, quality metrics, and value metrics. Phase 4:
-    a book/video/course, a sector quality standard, and an IT management
-    framework. Linked from
+  - `/formal-learning-phases/` — ("Formal learning phases") four phases of
+    three skills each: an h2 per phase, an h3 per skill, then its Examples
+    (with an "if unsure, choose the first" line) and Goals. Phase 1: a
+    programming language, a browser automation framework, an AI assistant.
+    Phase 2: a text editor, a version control system, a manual-to-automatic
+    conversion. Phase 3: software stage, quality line, and true value
+    metrics. Phase 4: a book/video/course, a sector quality standard, an IT
+    management framework. Linked from
     the `/topics/` page's Learn list.
   - `/how-does-artificial-intelligence-help-automatic-testing/` — ("How does
     artificial intelligence help automatic testing?") how and why AI shows
