@@ -109,7 +109,7 @@
         },
         {
           heading: "Learn the basics of an IT management framework",
-          examples: "ITIL 5, or COBIT 5, or whatever specific published worldwide framework your team uses.",
+          examples: "ITIL 5, or COBIT, or whatever specific published worldwide framework your team uses.",
           goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
         }
         ]
@@ -204,7 +204,7 @@
         },
         {
           heading: "Dysgu hanfodion fframwaith rheoli TG",
-          examples: "ITIL 5, neu COBIT 5, neu pa bynnag fframwaith penodol a gyhoeddwyd ledled y byd y mae eich tîm yn ei ddefnyddio.",
+          examples: "ITIL 5, neu COBIT, neu pa bynnag fframwaith penodol a gyhoeddwyd ledled y byd y mae eich tîm yn ei ddefnyddio.",
           goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
         }
         ]
@@ -226,17 +226,17 @@
         skills: [
         {
           heading: "学习编程语言的基础知识",
-          examples: "JavaScript，或 Python，或 你的团队使用的任何一种.",
+          examples: "JavaScript，或Python，或你的团队使用的任何一种。",
           goals: "你能够创建并运行一个程序（可以随意选择任何方案），该程序要求你输入一个你选择的单词和一个你选择的网页 URL，然后获取该 URL，并根据你选择的单词是否出现在该网页 URL 的网页内容中，输出 true 或 false。"
         },
         {
           heading: "学习网页浏览器自动化框架的基础知识",
-          examples: "Selenium，或 Playwright，或 你的团队使用的任何一种.",
+          examples: "Selenium，或Playwright，或你的团队使用的任何一种。",
           goals: "你能够创建并运行一个自动化测试（可以随意选择任何方案），该测试用至少三种输入类型填写你选择的网页表单，然后提交表单，再验证响应中包含你选择的单词。"
         },
         {
           heading: "学习 AI 助手的基础知识",
-          examples: "Google Gemini，或 Anthropic Claude，或 你的团队使用的任何一种.",
+          examples: "Google Gemini，或Anthropic Claude，或你的团队使用的任何一种。",
           goals: "你能够演示如何把自己的网页浏览器自动化代码提供给 AI 助手（例如通过复制粘贴、编辑器或命令行），然后请 AI 解释这段代码并提出改进建议。"
         }
         ]
@@ -246,17 +246,17 @@
         skills: [
         {
           heading: "学习文本编辑器的基础知识",
-          examples: "Visual Studio Code，或 vim，或 你的团队使用的任何一种.",
+          examples: "Visual Studio Code，或vim，或你的团队使用的任何一种。",
           goals: "你能够创建和编辑文件，一次性在项目的所有文件中搜索文本，在输入时使用编辑器的自动建议，查看两个文件之间的差异，并使用编辑器的 AI 进行修改。"
         },
         {
           heading: "学习版本控制系统的基础知识",
-          examples: "GitHub，或 Azure DevOps，或 你的团队使用的任何一种.",
+          examples: "GitHub，或Azure DevOps，或你的团队使用的任何一种。",
           goals: "你能够使用版本控制系统浏览文件，查看现有分支和提交信息，创建主题分支并提交文件，制造一个合并冲突然后解决它。"
         },
         {
           heading: "学习从手动到自动转换的基础知识",
-          examples: "从 Gherkin 到 Selenium，或 从用户故事到 Playwright，或 你的团队使用的任何一种.",
+          examples: "从 Gherkin 到 Selenium，或从用户故事到 Playwright，或你的团队使用的任何一种。",
           goals: "你能够在一个新的主题分支上，把一个现有的手动测试转换成一个新的自动化测试，提交该测试、运行它，并得到成功的结果。"
         }
         ]
@@ -266,17 +266,17 @@
         skills: [
         {
           heading: "学习软件阶段度量的基础知识",
-          examples: "流动指标（Flow metrics），或 DORA 指标，或 你的团队使用的任何一种.",
+          examples: "流动指标（Flow metrics），或DORA 指标，或你的团队使用的任何一种。",
           goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
         },
         {
           heading: "学习质量流水线度量的基础知识",
-          examples: "六西格玛，或 价值流图，或 你的团队使用的任何一种.",
+          examples: "六西格玛，或价值流图，或你的团队使用的任何一种。",
           goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
         },
         {
           heading: "学习真实价值度量的基础知识",
-          examples: "公共价值指标，或 卫生经济学指标，或 你的团队使用的任何一种.",
+          examples: "公共价值指标，或卫生经济学指标，或你的团队使用的任何一种。",
           goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
         }
         ]
@@ -286,17 +286,17 @@
         skills: [
         {
           heading: "学习软件自动化书籍/视频/课程的基础知识",
-          examples: "[Automation Full Course](https://www.youtube.com/watch?v=3shZi2Ych4Q)，或 [Test Automation Guide](https://github.com/SixArm/test-automation-guide/raw/main/test-automation-guide.pdf)，或 你的团队使用的任何一种.",
+          examples: "[Automation Full Course](https://www.youtube.com/watch?v=3shZi2Ych4Q)，或[Test Automation Guide](https://github.com/SixArm/test-automation-guide/raw/main/test-automation-guide.pdf)，或你的团队使用的任何一种。",
           goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
         },
         {
           heading: "学习行业质量标准的基础知识",
-          examples: "ISO 9000/9001，或 IEEE 730/1012/1028/1061，或 你的团队使用的任何具体的已发布国际标准.",
+          examples: "ISO 9000/9001，或IEEE 730/1012/1028/1061，或你的团队使用的任何具体的已发布国际标准。",
           goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
         },
         {
           heading: "学习 IT 管理框架的基础知识",
-          examples: "ITIL 5，或 COBIT 5，或 你的团队使用的任何具体的已发布国际框架.",
+          examples: "ITIL 5，或COBIT，或你的团队使用的任何具体的已发布国际框架。",
           goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
         }
         ]
@@ -388,7 +388,7 @@
         },
         {
           heading: "تعلّم أساسيات إطار لإدارة تقنية المعلومات",
-          examples: "ITIL 5، أو COBIT 5، أو أي إطار عالمي منشور محدد يستخدمه فريقك.",
+          examples: "ITIL 5، أو COBIT، أو أي إطار عالمي منشور محدد يستخدمه فريقك.",
           goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
         }
         ]
@@ -480,7 +480,7 @@
         },
         {
           heading: "IT 관리 프레임워크의 기초 배우기",
-          examples: "ITIL 5, 또는 COBIT 5, 또는 팀에서 사용하는 구체적인 공개 국제 프레임워크.",
+          examples: "ITIL 5, 또는 COBIT, 또는 팀에서 사용하는 구체적인 공개 국제 프레임워크.",
           goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
         }
         ]
@@ -572,7 +572,7 @@
         },
         {
           heading: "Apprendre les bases d'un cadre de gestion informatique",
-          examples: "ITIL 5, ou COBIT 5, ou tout cadre mondial publié et précis que votre équipe utilise.",
+          examples: "ITIL 5, ou COBIT, ou tout cadre mondial publié et précis que votre équipe utilise.",
           goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
         }
         ]
