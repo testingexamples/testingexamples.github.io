@@ -18,6 +18,7 @@
       whatIsTheTestingPyramid: string;
       whatIsBrowserAutomation: string;
       howToStartLearning: string;
+      formalLearningPhases: string;
       howDoesAiHelp: string;
       whatIsContinuousIntegration: string;
       whatIsDevOps: string;
@@ -53,6 +54,7 @@
       whatIsTheTestingPyramid: 'What is the automatic testing pyramid?',
       whatIsBrowserAutomation: 'What is browser testing?',
       howToStartLearning: 'How to start learning automatic testing?',
+      formalLearningPhases: 'Formal learning phases',
       howDoesAiHelp: 'Artificial intelligence for automatic testing',
       whatIsContinuousIntegration: 'Continuous integration for automatic testing',
       whatIsDevOps: 'Devops for automatic testing',
@@ -91,6 +93,7 @@
       whatIsTheTestingPyramid: 'Beth yw pyramid profi awtomatig?',
       whatIsBrowserAutomation: 'Beth yw profi porwr?',
       howToStartLearning: 'Sut i ddechrau dysgu profi awtomatig?',
+      formalLearningPhases: 'Cyfnodau dysgu ffurfiol',
       howDoesAiHelp: "Deallusrwydd artiffisial ar gyfer profi awtomatig",
       whatIsContinuousIntegration: 'Integreiddio parhaus ar gyfer profi awtomatig',
       whatIsDevOps: 'Devops ar gyfer profi awtomatig',
@@ -126,6 +129,7 @@
       whatIsTheTestingPyramid: '什么是自动化测试金字塔？',
       whatIsBrowserAutomation: '什么是浏览器测试？',
       howToStartLearning: '如何开始学习自动化测试？',
+      formalLearningPhases: '正式学习阶段',
       howDoesAiHelp: '自动化测试中的人工智能',
       whatIsContinuousIntegration: '自动化测试的持续集成',
       whatIsDevOps: '自动化测试的 devops',
@@ -161,6 +165,7 @@
       whatIsTheTestingPyramid: 'ما هو هرم الاختبار الآلي؟',
       whatIsBrowserAutomation: 'ما هو اختبار المتصفح؟',
       howToStartLearning: 'كيف تبدأ تعلم الاختبار الآلي؟',
+      formalLearningPhases: 'مراحل التعلم الرسمية',
       howDoesAiHelp: 'الذكاء الاصطناعي للاختبار الآلي',
       whatIsContinuousIntegration: 'التكامل المستمر للاختبار الآلي',
       whatIsDevOps: 'Devops للاختبار الآلي',
@@ -196,6 +201,7 @@
       whatIsTheTestingPyramid: '자동화 테스트 피라미드란 무엇인가?',
       whatIsBrowserAutomation: '브라우저 테스트란 무엇인가?',
       howToStartLearning: '자동화 테스트 학습은 어떻게 시작하나요?',
+      formalLearningPhases: '정식 학습 단계',
       howDoesAiHelp: '자동화 테스트를 위한 인공지능',
       whatIsContinuousIntegration: '자동화 테스트를 위한 지속적 통합',
       whatIsDevOps: '자동화 테스트를 위한 devops',
@@ -231,6 +237,7 @@
       whatIsTheTestingPyramid: "Qu'est-ce que la pyramide des tests automatisés ?",
       whatIsBrowserAutomation: "Qu'est-ce que le test de navigateur ?",
       howToStartLearning: "Comment commencer à apprendre les tests automatisés ?",
+      formalLearningPhases: "Phases d'apprentissage formelles",
       howDoesAiHelp: "L'intelligence artificielle pour les tests automatisés",
       whatIsContinuousIntegration: "L'intégration continue pour les tests automatisés",
       whatIsDevOps: "Le devops pour les tests automatisés",
@@ -284,6 +291,7 @@
     <li><a href={localeHref(locale, 'what-is-the-testing-pyramid')}>{m.links.whatIsTheTestingPyramid}</a></li>
     <li><a href={localeHref(locale, 'what-is-browser-automation-testing')}>{m.links.whatIsBrowserAutomation}</a></li>
     <li><a href={localeHref(locale, 'how-to-start-learning-automatic-testing')}>{m.links.howToStartLearning}</a></li>
+    <li><a href={localeHref(locale, 'formal-learning-phases')}>{m.links.formalLearningPhases}</a></li>
   </ul>
 
   <h2>{m.learnMoreHeading}</h2>

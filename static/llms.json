@@ -73,6 +73,11 @@
           "description": "A step-by-step path \u2014 pick a language, pick a tool, run a first script against this site, then practice on real examples."
         },
         {
+          "title": "Formal learning phases",
+          "url": "https://testingexamples.github.io/en-001/formal-learning-phases/",
+          "description": "Four learning phases, each with a success gate: programming language, browser automation framework, and AI assistant; text editor, version control, and manual-to-automatic process; software, quality, and value metrics; then a book/video/course, quality standard, and IT management framework."
+        },
+        {
           "title": "Artificial intelligence for automatic testing",
           "url": "https://testingexamples.github.io/en-001/how-does-artificial-intelligence-help-automatic-testing/",
           "description": "How and why AI shows up in writing tests, CI/CD, and agile discovery today, and the caveat that applies to all three."

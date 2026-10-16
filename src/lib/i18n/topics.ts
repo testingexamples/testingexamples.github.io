@@ -19,6 +19,7 @@ export type TopicId =
   | 'examples'
   | 'examples-google-search'
   | 'examples-google-maps'
+  | 'formal-learning-phases'
   | 'given-when-then'
   | 'how-does-artificial-intelligence-help-automatic-testing'
   | 'how-to-start-learning-automatic-testing'
@@ -82,6 +83,17 @@ export const TOPICS: Record<TopicId, TopicDefinition> = {
   'examples-google-maps': {
     slug: slugFor('examples/google-maps', 'enghreifftiau/mapiau-google', '示例/谷歌地图', 'أمثلة/خرائط-جوجل', '예제/구글-지도', 'exemples/google-maps'),
     load: () => import('#lib/pages/examples-google-maps/Page.svelte')
+  },
+  'formal-learning-phases': {
+    slug: slugFor(
+      'formal-learning-phases',
+      'cyfnodau-dysgu-ffurfiol',
+      '正式学习阶段',
+      'مراحل-التعلم-الرسمية',
+      '정식-학습-단계',
+      'phases-d-apprentissage-formelles'
+    ),
+    load: () => import('#lib/pages/formal-learning-phases/Page.svelte')
   },
   'given-when-then': {
     // Kept in English for every locale: "Given-When-Then" (Gherkin) is a
