@@ -302,9 +302,9 @@ old flat path, such as `/what-is-automatic-testing/`, only redirects there.
     (with an "if unsure, choose the first" line) and Goals. Phase 1: a
     programming language, a browser automation framework, an AI assistant.
     Phase 2: a text editor, a version control system, a manual-to-automatic
-    conversion. Phase 3: software stage, quality line, and true value
-    metrics. Phase 4: a book/video/course, a sector quality standard, an IT
-    management framework. Linked from
+    conversion. Phase 3: a book/video/course, a sector quality standard, an IT
+    management framework. Phase 4: software stage, quality line, and true
+    value metrics. Linked from
     the `/topics/` page's Learn list.
   - `/how-does-artificial-intelligence-help-automatic-testing/` — ("How does
     artificial intelligence help automatic testing?") how and why AI shows

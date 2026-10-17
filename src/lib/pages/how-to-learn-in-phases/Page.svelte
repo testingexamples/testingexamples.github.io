@@ -28,7 +28,7 @@
   const EN_001: Messages = {
     title: "How to learn in phases?",
     metaDescription:
-      "Four formal learning phases for automatic testing, each with a success gate: programming language, browser automation framework, and AI assistant; text editor, version control, and manual-to-automatic process; then software, quality, and value metrics; then a book/video/course, a quality standard, and an IT management framework.',\n    heading: 'Formal learning phases",
+      "Four formal learning phases for automatic testing, each with a success gate: programming language, browser automation framework, and AI assistant; text editor, version control, and manual-to-automatic process; then a book/video/course, a quality standard, and an IT management framework; then software, quality, and value metrics.',\n    heading: 'Formal learning phases",
     heading: "How to learn in phases?",
     examplesLabel: "Examples:",
     goalsLabel: "Goals:",
@@ -78,26 +78,6 @@
         heading: "Phase 3",
         skills: [
         {
-          heading: "Learn the basics of software stage metrics",
-          examples: "Flow metrics, or DORA metrics, or whatever your team uses.",
-          goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
-        },
-        {
-          heading: "Learn the basics of quality line metrics",
-          examples: "Six Sigma, or Value Stream Map, or whatever your team uses.",
-          goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
-        },
-        {
-          heading: "Learn the basics of true value metrics",
-          examples: "Public Value metrics, or Health Economics metrics, or whatever your team uses.",
-          goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
-        }
-        ]
-      },
-      {
-        heading: "Phase 4",
-        skills: [
-        {
           heading: "Learn the basics of a software automation book/video/course",
           examples: "[Automation Full Course](https://www.youtube.com/watch?v=3shZi2Ych4Q), or [Test Automation Guide](https://github.com/SixArm/test-automation-guide/raw/main/test-automation-guide.pdf), or whatever your team uses.",
           goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
@@ -113,6 +93,26 @@
           goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
         }
         ]
+      },
+      {
+        heading: "Phase 4",
+        skills: [
+        {
+          heading: "Learn the basics of software stage metrics",
+          examples: "Flow metrics, or DORA metrics, or whatever your team uses.",
+          goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
+        },
+        {
+          heading: "Learn the basics of quality line metrics",
+          examples: "Six Sigma, or Value Stream Map, or whatever your team uses.",
+          goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
+        },
+        {
+          heading: "Learn the basics of true value metrics",
+          examples: "Public Value metrics, or Health Economics metrics, or whatever your team uses.",
+          goals: "Explain the top three specifics that are relevant to you, in writing. Ask your AI assistant to assess your answer then suggest improvements. Create a topic branch with programming code and automatic test for one of them; commit it and run it."
+        }
+        ]
       }
     ]
   };
@@ -123,7 +123,7 @@
   const CY: Messages = {
     title: "Sut i ddysgu mewn cyfnodau?",
     metaDescription:
-      "Pedwar cyfnod dysgu ffurfiol ar gyfer profi awtomatig, pob un â phorth llwyddiant: iaith raglennu, fframwaith awtomeiddio porwr a chynorthwyydd deallusrwydd artiffisial; golygydd testun, system rheoli fersiynau a phroses o law i awtomatig; yna metrigau meddalwedd, ansawdd a gwerth; yna llyfr/fideo/cwrs, safon ansawdd a fframwaith rheoli TG.',\n    heading: 'Cyfnodau dysgu ffurfiol",
+      "Pedwar cyfnod dysgu ffurfiol ar gyfer profi awtomatig, pob un â phorth llwyddiant: iaith raglennu, fframwaith awtomeiddio porwr a chynorthwyydd deallusrwydd artiffisial; golygydd testun, system rheoli fersiynau a phroses o law i awtomatig; yna llyfr/fideo/cwrs, safon ansawdd a fframwaith rheoli TG; yna metrigau meddalwedd, ansawdd a gwerth.',\n    heading: 'Cyfnodau dysgu ffurfiol",
     heading: "Sut i ddysgu mewn cyfnodau?",
     examplesLabel: "Enghreifftiau:",
     goalsLabel: "Nodau:",
@@ -173,26 +173,6 @@
         heading: "Cyfnod 3",
         skills: [
         {
-          heading: "Dysgu hanfodion metrigau cam meddalwedd",
-          examples: "metrigau Llif, neu metrigau DORA, neu beth bynnag y mae eich tîm yn ei ddefnyddio.",
-          goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
-        },
-        {
-          heading: "Dysgu hanfodion metrigau llinell ansawdd",
-          examples: "Six Sigma, neu Map Ffrwd Gwerth, neu beth bynnag y mae eich tîm yn ei ddefnyddio.",
-          goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
-        },
-        {
-          heading: "Dysgu hanfodion metrigau gwir werth",
-          examples: "metrigau Gwerth Cyhoeddus, neu metrigau Economeg Iechyd, neu beth bynnag y mae eich tîm yn ei ddefnyddio.",
-          goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
-        }
-        ]
-      },
-      {
-        heading: "Cyfnod 4",
-        skills: [
-        {
           heading: "Dysgu hanfodion llyfr/fideo/cwrs awtomeiddio meddalwedd",
           examples: "[Automation Full Course](https://www.youtube.com/watch?v=3shZi2Ych4Q), neu [Test Automation Guide](https://github.com/SixArm/test-automation-guide/raw/main/test-automation-guide.pdf), neu beth bynnag y mae eich tîm yn ei ddefnyddio.",
           goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
@@ -208,6 +188,26 @@
           goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
         }
         ]
+      },
+      {
+        heading: "Cyfnod 4",
+        skills: [
+        {
+          heading: "Dysgu hanfodion metrigau cam meddalwedd",
+          examples: "metrigau Llif, neu metrigau DORA, neu beth bynnag y mae eich tîm yn ei ddefnyddio.",
+          goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
+        },
+        {
+          heading: "Dysgu hanfodion metrigau llinell ansawdd",
+          examples: "Six Sigma, neu Map Ffrwd Gwerth, neu beth bynnag y mae eich tîm yn ei ddefnyddio.",
+          goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
+        },
+        {
+          heading: "Dysgu hanfodion metrigau gwir werth",
+          examples: "metrigau Gwerth Cyhoeddus, neu metrigau Economeg Iechyd, neu beth bynnag y mae eich tîm yn ei ddefnyddio.",
+          goals: "Eglurwch y tri manylyn uchaf sy'n berthnasol i chi, yn ysgrifenedig. Gofynnwch i'ch cynorthwyydd deallusrwydd artiffisial asesu eich ateb ac awgrymu gwelliannau. Crëwch gangen pwnc gyda chod rhaglennu a phrawf awtomatig ar gyfer un ohonynt; ymrwymwch ef a'i redeg."
+        }
+        ]
       }
     ]
   };
@@ -215,7 +215,7 @@
   const ZH: Messages = {
     title: "如何分阶段学习？",
     metaDescription:
-      "自动化测试的四个正式学习阶段，每个阶段都有一道成功关卡：编程语言、浏览器自动化框架和 AI 助手；文本编辑器、版本控制系统和从手动到自动的流程；然后是软件度量、质量度量和价值度量；最后是书籍/视频/课程、质量标准和 IT 管理框架。',\n    heading: '正式学习阶段",
+      "自动化测试的四个正式学习阶段，每个阶段都有一道成功关卡：编程语言、浏览器自动化框架和 AI 助手；文本编辑器、版本控制系统和从手动到自动的流程；然后是书籍/视频/课程、质量标准和 IT 管理框架；最后是软件度量、质量度量和价值度量。',\n    heading: '正式学习阶段",
     heading: "如何分阶段学习？",
     examplesLabel: "示例：",
     goalsLabel: "目标：",
@@ -265,26 +265,6 @@
         heading: "第 3 阶段",
         skills: [
         {
-          heading: "学习软件阶段度量的基础知识",
-          examples: "流动指标（Flow metrics），或DORA 指标，或你的团队使用的任何一种。",
-          goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
-        },
-        {
-          heading: "学习质量流水线度量的基础知识",
-          examples: "六西格玛，或价值流图，或你的团队使用的任何一种。",
-          goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
-        },
-        {
-          heading: "学习真实价值度量的基础知识",
-          examples: "公共价值指标，或卫生经济学指标，或你的团队使用的任何一种。",
-          goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
-        }
-        ]
-      },
-      {
-        heading: "第 4 阶段",
-        skills: [
-        {
           heading: "学习软件自动化书籍/视频/课程的基础知识",
           examples: "[Automation Full Course](https://www.youtube.com/watch?v=3shZi2Ych4Q)，或[Test Automation Guide](https://github.com/SixArm/test-automation-guide/raw/main/test-automation-guide.pdf)，或你的团队使用的任何一种。",
           goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
@@ -300,6 +280,26 @@
           goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
         }
         ]
+      },
+      {
+        heading: "第 4 阶段",
+        skills: [
+        {
+          heading: "学习软件阶段度量的基础知识",
+          examples: "流动指标（Flow metrics），或DORA 指标，或你的团队使用的任何一种。",
+          goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
+        },
+        {
+          heading: "学习质量流水线度量的基础知识",
+          examples: "六西格玛，或价值流图，或你的团队使用的任何一种。",
+          goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
+        },
+        {
+          heading: "学习真实价值度量的基础知识",
+          examples: "公共价值指标，或卫生经济学指标，或你的团队使用的任何一种。",
+          goals: "用文字解释与你相关的前三个具体要点。请你的 AI 助手评估你的答案并提出改进建议。创建一个主题分支，为其中一个要点编写程序代码和自动化测试；提交并运行它。"
+        }
+        ]
       }
     ]
   };
@@ -307,7 +307,7 @@
   const AR: Messages = {
     title: "كيف تتعلم على مراحل؟",
     metaDescription:
-      "أربع مراحل تعلم رسمية للاختبار الآلي، لكل منها بوابة نجاح: لغة برمجة وإطار أتمتة المتصفح ومساعد ذكاء اصطناعي؛ محرر نصوص ونظام تحكم في الإصدارات وعملية الانتقال من اليدوي إلى الآلي؛ ثم مقاييس البرمجيات والجودة والقيمة؛ ثم كتاب/فيديو/دورة ومعيار جودة وإطار لإدارة تقنية المعلومات.',\n    heading: 'مراحل التعلم الرسمية",
+      "أربع مراحل تعلم رسمية للاختبار الآلي، لكل منها بوابة نجاح: لغة برمجة وإطار أتمتة المتصفح ومساعد ذكاء اصطناعي؛ محرر نصوص ونظام تحكم في الإصدارات وعملية الانتقال من اليدوي إلى الآلي؛ ثم كتاب/فيديو/دورة ومعيار جودة وإطار لإدارة تقنية المعلومات؛ ثم مقاييس البرمجيات والجودة والقيمة.',\n    heading: 'مراحل التعلم الرسمية",
     heading: "كيف تتعلم على مراحل؟",
     examplesLabel: "أمثلة:",
     goalsLabel: "الأهداف:",
@@ -357,26 +357,6 @@
         heading: "المرحلة 3",
         skills: [
         {
-          heading: "تعلّم أساسيات مقاييس مراحل البرمجيات",
-          examples: "مقاييس التدفق (Flow)، أو مقاييس DORA، أو أي شيء يستخدمه فريقك.",
-          goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
-        },
-        {
-          heading: "تعلّم أساسيات مقاييس خط الجودة",
-          examples: "Six Sigma، أو خريطة تدفق القيمة، أو أي شيء يستخدمه فريقك.",
-          goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
-        },
-        {
-          heading: "تعلّم أساسيات مقاييس القيمة الحقيقية",
-          examples: "مقاييس القيمة العامة، أو مقاييس اقتصاديات الصحة، أو أي شيء يستخدمه فريقك.",
-          goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
-        }
-        ]
-      },
-      {
-        heading: "المرحلة 4",
-        skills: [
-        {
           heading: "تعلّم أساسيات كتاب/فيديو/دورة في أتمتة البرمجيات",
           examples: "[Automation Full Course](https://www.youtube.com/watch?v=3shZi2Ych4Q)، أو [Test Automation Guide](https://github.com/SixArm/test-automation-guide/raw/main/test-automation-guide.pdf)، أو أي شيء يستخدمه فريقك.",
           goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
@@ -392,6 +372,26 @@
           goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
         }
         ]
+      },
+      {
+        heading: "المرحلة 4",
+        skills: [
+        {
+          heading: "تعلّم أساسيات مقاييس مراحل البرمجيات",
+          examples: "مقاييس التدفق (Flow)، أو مقاييس DORA، أو أي شيء يستخدمه فريقك.",
+          goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
+        },
+        {
+          heading: "تعلّم أساسيات مقاييس خط الجودة",
+          examples: "Six Sigma، أو خريطة تدفق القيمة، أو أي شيء يستخدمه فريقك.",
+          goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
+        },
+        {
+          heading: "تعلّم أساسيات مقاييس القيمة الحقيقية",
+          examples: "مقاييس القيمة العامة، أو مقاييس اقتصاديات الصحة، أو أي شيء يستخدمه فريقك.",
+          goals: "اشرح كتابةً أهم ثلاث تفاصيل ذات صلة بك. اطلب من مساعد الذكاء الاصطناعي تقييم إجابتك ثم اقتراح تحسينات. أنشئ فرعًا موضوعيًا يحتوي على كود برمجي واختبار آلي لأحدها؛ أودعه وشغّله."
+        }
+        ]
       }
     ]
   };
@@ -399,7 +399,7 @@
   const KO: Messages = {
     title: "단계별 학습 방법",
     metaDescription:
-      "자동화 테스트를 위한 네 가지 정식 학습 단계와 각 단계의 성공 관문: 프로그래밍 언어, 브라우저 자동화 프레임워크, AI 어시스턴트; 텍스트 편집기, 버전 관리 시스템, 수동에서 자동으로의 전환 과정; 소프트웨어, 품질, 가치 지표; 그리고 책/동영상/강좌, 품질 표준, IT 관리 프레임워크.',\n    heading: '정식 학습 단계",
+      "자동화 테스트를 위한 네 가지 정식 학습 단계와 각 단계의 성공 관문: 프로그래밍 언어, 브라우저 자동화 프레임워크, AI 어시스턴트; 텍스트 편집기, 버전 관리 시스템, 수동에서 자동으로의 전환 과정; 책/동영상/강좌, 품질 표준, IT 관리 프레임워크; 그리고 소프트웨어, 품질, 가치 지표.',\n    heading: '정식 학습 단계",
     heading: "단계별 학습 방법",
     examplesLabel: "예시:",
     goalsLabel: "목표:",
@@ -449,26 +449,6 @@
         heading: "3단계",
         skills: [
         {
-          heading: "소프트웨어 단계 지표의 기초 배우기",
-          examples: "플로 지표(Flow metrics), 또는 DORA 지표, 또는 팀에서 사용하는 것.",
-          goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
-        },
-        {
-          heading: "품질 라인 지표의 기초 배우기",
-          examples: "Six Sigma, 또는 가치 흐름 지도, 또는 팀에서 사용하는 것.",
-          goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
-        },
-        {
-          heading: "진정한 가치 지표의 기초 배우기",
-          examples: "공공 가치 지표, 또는 보건경제학 지표, 또는 팀에서 사용하는 것.",
-          goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
-        }
-        ]
-      },
-      {
-        heading: "4단계",
-        skills: [
-        {
           heading: "소프트웨어 자동화 책/동영상/강좌의 기초 배우기",
           examples: "[Automation Full Course](https://www.youtube.com/watch?v=3shZi2Ych4Q), 또는 [Test Automation Guide](https://github.com/SixArm/test-automation-guide/raw/main/test-automation-guide.pdf), 또는 팀에서 사용하는 것.",
           goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
@@ -484,6 +464,26 @@
           goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
         }
         ]
+      },
+      {
+        heading: "4단계",
+        skills: [
+        {
+          heading: "소프트웨어 단계 지표의 기초 배우기",
+          examples: "플로 지표(Flow metrics), 또는 DORA 지표, 또는 팀에서 사용하는 것.",
+          goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
+        },
+        {
+          heading: "품질 라인 지표의 기초 배우기",
+          examples: "Six Sigma, 또는 가치 흐름 지도, 또는 팀에서 사용하는 것.",
+          goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
+        },
+        {
+          heading: "진정한 가치 지표의 기초 배우기",
+          examples: "공공 가치 지표, 또는 보건경제학 지표, 또는 팀에서 사용하는 것.",
+          goals: "자신과 관련된 상위 세 가지 구체적인 내용을 글로 설명하세요. AI 어시스턴트에게 답변을 평가하고 개선점을 제안해 달라고 요청하세요. 그중 하나에 대한 프로그래밍 코드와 자동화 테스트가 담긴 토픽 브랜치를 만들고, 커밋한 뒤 실행하세요."
+        }
+        ]
       }
     ]
   };
@@ -491,7 +491,7 @@
   const FR: Messages = {
     title: "Comment apprendre par phases ?",
     metaDescription:
-      "Quatre phases d'apprentissage formelles pour les tests automatisés, chacune avec un critère de réussite : langage de programmation, framework d'automatisation de navigateur et assistant IA ; éditeur de texte, gestion de versions et processus du manuel à l'automatique ; puis métriques logicielles, de qualité et de valeur ; puis livre/vidéo/cours, norme de qualité et cadre de gestion informatique.\",\n    heading: \"Phases d'apprentissage formelles",
+      "Quatre phases d'apprentissage formelles pour les tests automatisés, chacune avec un critère de réussite : langage de programmation, framework d'automatisation de navigateur et assistant IA ; éditeur de texte, gestion de versions et processus du manuel à l'automatique ; puis livre/vidéo/cours, norme de qualité et cadre de gestion informatique ; puis métriques logicielles, de qualité et de valeur.\",\n    heading: \"Phases d'apprentissage formelles",
     heading: "Comment apprendre par phases ?",
     examplesLabel: "Exemples :",
     goalsLabel: "Objectifs :",
@@ -541,26 +541,6 @@
         heading: "Phase 3",
         skills: [
         {
-          heading: "Apprendre les bases des métriques d'étapes logicielles",
-          examples: "métriques de flux (Flow), ou métriques DORA, ou celui que votre équipe utilise.",
-          goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
-        },
-        {
-          heading: "Apprendre les bases des métriques de ligne de qualité",
-          examples: "Six Sigma, ou cartographie de la chaîne de valeur, ou celui que votre équipe utilise.",
-          goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
-        },
-        {
-          heading: "Apprendre les bases des métriques de valeur réelle",
-          examples: "métriques de valeur publique, ou métriques d'économie de la santé, ou celui que votre équipe utilise.",
-          goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
-        }
-        ]
-      },
-      {
-        heading: "Phase 4",
-        skills: [
-        {
           heading: "Apprendre les bases d'un livre/d'une vidéo/d'un cours sur l'automatisation logicielle",
           examples: "[Automation Full Course](https://www.youtube.com/watch?v=3shZi2Ych4Q), ou [Test Automation Guide](https://github.com/SixArm/test-automation-guide/raw/main/test-automation-guide.pdf), ou celui que votre équipe utilise.",
           goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
@@ -573,6 +553,26 @@
         {
           heading: "Apprendre les bases d'un cadre de gestion informatique",
           examples: "ITIL 5, ou COBIT, ou tout cadre mondial publié et précis que votre équipe utilise.",
+          goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
+        }
+        ]
+      },
+      {
+        heading: "Phase 4",
+        skills: [
+        {
+          heading: "Apprendre les bases des métriques d'étapes logicielles",
+          examples: "métriques de flux (Flow), ou métriques DORA, ou celui que votre équipe utilise.",
+          goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
+        },
+        {
+          heading: "Apprendre les bases des métriques de ligne de qualité",
+          examples: "Six Sigma, ou cartographie de la chaîne de valeur, ou celui que votre équipe utilise.",
+          goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
+        },
+        {
+          heading: "Apprendre les bases des métriques de valeur réelle",
+          examples: "métriques de valeur publique, ou métriques d'économie de la santé, ou celui que votre équipe utilise.",
           goals: "Expliquez par écrit les trois principaux points précis qui vous concernent. Demandez à votre assistant IA d'évaluer votre réponse puis de suggérer des améliorations. Créez une branche thématique avec du code et un test automatisé pour l'un d'eux ; commitez-la et exécutez-la."
         }
         ]
